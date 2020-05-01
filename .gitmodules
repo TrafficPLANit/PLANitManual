@@ -1,0 +1,3 @@
+[submodule "PLANitHugo"]
+	path = .
+	url = https://github.sydney.edu.au/PLANit/PLANitHugo.git
