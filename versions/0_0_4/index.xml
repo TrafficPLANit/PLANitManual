@@ -1,10 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit User manual – Docsy Blog</title>
+    <title>PLANit User manual – Versions</title>
     <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/</link>
-    <description>Recent content in Docsy Blog on PLANit User manual</description>
+    <description>Recent content in Versions on PLANit User manual</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +16,7 @@
     <item>
       <title>Versions: News About Docsy</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/news/</link>
-      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/news/</guid>
       <description>
@@ -30,7 +29,7 @@
     <item>
       <title>Versions: New Releases</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/releases/</link>
-      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/releases/</guid>
       <description>
