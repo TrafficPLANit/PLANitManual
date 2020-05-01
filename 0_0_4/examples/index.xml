@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit User manual – Examples</title>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/0_0_4/examples/</link>
+    <description>Recent content in Examples on PLANit User manual</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/0_0_4/examples/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
