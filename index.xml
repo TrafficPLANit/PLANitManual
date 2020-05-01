@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit User manual – PLANit User Manual</title>
+    <title>PLANit – PLANit User Manual</title>
     <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/</link>
-    <description>Recent content in PLANit User Manual on PLANit User manual</description>
+    <description>Recent content in PLANit User Manual on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/index.xml" rel="self" type="application/rss+xml" />
