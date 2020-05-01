@@ -1,11 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit User manual – New Releases</title>
-    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/blog/releases/</link>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/releases/</link>
     <description>Recent content in New Releases on PLANit User manual</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/blog/releases/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/releases/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -14,11 +15,11 @@
     
     
     <item>
-      <title>Blog: Another Great Release</title>
-      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/blog/2018/01/04/another-great-release/</link>
+      <title>Versions: Another Great Release</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/releases/in-depth-monoliths-detailed-spec/</link>
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/blog/2018/01/04/another-great-release/</guid>
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/versions/0_0_4/releases/in-depth-monoliths-detailed-spec/</guid>
       <description>
         
         
