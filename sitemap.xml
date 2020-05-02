@@ -13,43 +13,22 @@
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/reference/0_0_4/</loc>
-    <lastmod>2020-05-01T18:52:52+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/0_0_4/</loc>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/beds/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/getting-started/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/ponycopters/configuring-ponycopters/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/examples/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/getting-started/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/examples/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/ponycopters/launching-ponycopters/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tutorials/multi-bear/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/porridge/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/tutorials/multi-bear/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -63,33 +42,34 @@
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/task/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/tutorials/tutorial2/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tutorials/tutorial2/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/tutorials/</loc>
+    <lastmod>2017-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tutorials/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/installation/</loc>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/reference/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/installation/planit-java/</loc>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/contribution-guidelines/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/installation/planit-python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/input-output/</loc>
   </url>
   
   <url>
@@ -98,18 +78,27 @@
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/getting-started/example-page/</loc>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/java/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/contribution-guidelines/</loc>
     <lastmod>2020-04-29T14:27:10+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/reference/parameter-reference/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/getting-started/example-page/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/tasks/ponycopters/</loc>
-    <lastmod>2020-04-29T14:27:10+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/parameter-reference/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
