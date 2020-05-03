@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/getting-started/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,15 +21,18 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>PLANit-Python manual | PLANit</title><meta property="og:title" content="PLANit-Python manual" />
-<meta property="og:description" content="Documentation and resources for the PLANit open-source project" />
+<title>Getting started | PLANit</title><meta property="og:title" content="Getting started" />
+<meta property="og:description" content="Getting Started with PLANit - Java or Python?
+" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/getting-started/" />
 <meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="PLANit-Python manual">
-<meta itemprop="description" content="Documentation and resources for the PLANit open-source project"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PLANit-Python manual"/>
-<meta name="twitter:description" content="Documentation and resources for the PLANit open-source project"/>
+<meta itemprop="name" content="Getting started">
+<meta itemprop="description" content="Getting Started with PLANit - Java or Python?
+"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting started"/>
+<meta name="twitter:description" content="Getting Started with PLANit - Java or Python?
+"/>
 
 
 
@@ -187,10 +190,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting started</a>
+    <a  href="/PLANit/PLANitManual/docs/getting-started/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Getting started</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocsgetting-started">
+    <li class="collapse show" id="planitplanitmanualdocsgetting-started">
       
       
       
@@ -256,10 +259,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">PLANit-Python manual</a>
+    <a  href="/PLANit/PLANitManual/docs/python/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit-Python manual</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspython">
+    <li class="collapse " id="planitplanitmanualdocspython">
       
       
       
@@ -526,7 +529,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/">PLANit-Python manual</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/getting-started/">Getting started</a>
 </li>
 
 	</ol>
@@ -534,16 +537,56 @@
 
             
 <div class="td-content">
-	<h1>PLANit-Python manual</h1>
-        
+	<h1>Getting started</h1>
+        <div class="lead">Getting Started with PLANit - Java or Python?</div>
 	
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
-
-</div>
-
+	<p>PLANit comes either as a Java API or as a Python API. It depends on your needs which one will suit you best. To help you make the best decision we provide you with some key differences and similarities between the two.</p>
+<h2 id="planit-python">PLANit-Python</h2>
+<p>Some key features</p>
+<ul>
+<li>Focussed on traffic assignment applications</li>
+<li>Minimal configuration effort</li>
+<li>Minimal programming knowledge required</li>
+<li>Maximum simplicity</li>
+<li>Support for PLANit native input format for networks, demand, and zoning structure</li>
+<li>Support for PLANit native output format for persistence of results to disk</li>
+<li>Support for PLANit memory output format for access of results in Python directly</li>
+</ul>
+<p>What PLANit-Python does not do</p>
+<ul>
+<li>Access to stand-alone algorithms and components</li>
+<li>Embedding of custom implementations of PLANit components (for example a custom input/output pipeline)</li>
+<li>Separation between assignments and projects, in PLANit-Python the assignment is the project</li>
+<li>PLANit-Python is a wrapper around the Java code base, it is therefore inevitably slightly less efficient</li>
+<li>No graphical user interface</li>
+</ul>
+<p>If you choose to use PLANit-Python continue with</p>
+<ul>
+<li><a href="../../Installation/PLANit-Python">Installing PLANit-Python</a></li>
+<li><a href="/../Python/Getting%20started/">Getting started with PLANit-Python</a></li>
+</ul>
+<h2 id="planit-java">PLANit-Java</h2>
+<p>Some key features</p>
+<ul>
+<li>It can do everything PLANit_Python can do</li>
+<li>Potentially better performance than PLANit-Python</li>
+<li>More configuration possibilities than PLANit-Python</li>
+<li>Support for third-party components to be integrated (input format, output format, assignment algorithms, route choice, etc.)</li>
+<li>Separation between projects and assignments, allowing the user to structure multiple assignments in the same project</li>
+<li>Access to stand-alone algorithms used in traffic simulation, (shortest-path, MSA, etc.)</li>
+<li>Access to all traffic assignment components programmatically</li>
+</ul>
+<p>Note that there already exist some extensions implemented for PLANit, most notably support for the TNTP format (see also <a href="../Input%20Output">data formats</a>)</p>
+<p>What PLANit-Java does not do</p>
+<ul>
+<li>No graphical user interface</li>
+<li>It requires some programming knowledge</li>
+</ul>
+<p>If you choose to use PLANit-Python continue with</p>
+<ul>
+<li><a href="../../Installation/PLANit-Java">Installing PLANit-Java</a></li>
+<li><a href="/../Java/Getting%20started/">Getting started with PLANit-Java</a></li>
+</ul>
 
         <div class="section-index">
     
@@ -561,23 +604,7 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/getting-started/">Getting Started</a>
-                    </h5>
-                    <p>What does your user need to know to try your project?</p>
-                </div>
-            
         
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/examples/">Examples</a>
-                    </h5>
-                    <p>See your project in action!</p>
-                </div>
             
         
             
@@ -593,12 +620,7 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/">PLANit-Python Reference</a>
-                    </h5>
-                    <p>Reference manual for all user configurable options in PLANit-Python</p>
-                </div>
+        
             
         
             
@@ -614,7 +636,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 2, 2020: <a  href="/commit/51e26643903136b190e2dc5e161316bfa013578c">- restructured documentation - added Java and Python specific entries - added data format specific entry (51e2664)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/c8cfcf6c7cb80b0a88ca577fb3f24b4d8a29b1ca">- created sample pages for reference documentation for Python - wrote some very basic top-level documentation (c8cfcf6)</a>
 </div>
 </div>
 
