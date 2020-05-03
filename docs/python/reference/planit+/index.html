@@ -283,12 +283,6 @@
       
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythongetting-startedexample-page" href="/PLANit/PLANitManual/docs/python/getting-started/example-page/">Example Page</a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -561,18 +555,14 @@
         <div class="lead">Top-level PLANit instance</div>
 	
 	<h5 id="description">Description</h5>
-<p><code> instance = PLANit(project_path=None)</code> is the starting point for any PLANit traffic assignment run.</p>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-When project_path is not set, the current working directory is used to locate the input files.
-</div>
-
+<p>This class is the starting point for all PLANit traffic assignment runs. It either reads in inputs from a <em><strong>specific location</strong></em> or from
+the <em><strong>current working directory</strong></em> upon creation of the object. Further configuration for the run is left to the user.</p>
+<h5 id="use">Use</h5>
+<p>Create an instance via <code> instance = PLANit()</code> to construct a PLANit instance that utilises the current working directory. Alternatively, provide a project path as a parameter.</p>
 <h5 id="type">Type</h5>
 <p>Class PLANit</p>
 <h5 id="parameters">Parameters</h5>
-<p>PLANit allows one optional parameter upon construction <code>instance = PLANit(project_path)</code></p>
+<p>Available parameters upon construction:</p>
 <table>
 <thead>
 <tr>
@@ -622,7 +612,7 @@ When project_path is not set, the current working directory is used to locate th
 </tbody>
 </table>
 <h5 id="properties">Properties</h5>
-<p>The following properties are available on <code>instance = PLANit()</code>.</p>
+<p>Planit exposes the follogin properties</p>
 <table>
 <thead>
 <tr>
@@ -669,13 +659,6 @@ When project_path is not set, the current working directory is used to locate th
 </tr>
 </tbody>
 </table>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-Some properties remain <code>None</code> until after they have been initialised. This dependency is indicated in the Availability column using &lsquo;post&rsquo; to indicate the fact that there is a prerequisite that must be performed before you can access the property.
-</div>
-
 <h5 id="example-1">Example 1</h5>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># Create a PLANit instance using &#34;.&#34; as the location for the input files</span>
@@ -690,7 +673,7 @@ Some properties remain <code>None</code> until after they have been initialised.
 
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Note</h4>
-For complete examples we refer the reader to the PLANit-Python <a href="../../examples">Examples</a> section.
+For comprehensive examples, please have a look at the PLANit-Python <a href="../../examples">Examples</a> section.
 </div>
 
 
@@ -749,14 +732,12 @@ For complete examples we refer the reader to the PLANit-Python <a href="../../ex
         
             
         
-            
-        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/c8cfcf6c7cb80b0a88ca577fb3f24b4d8a29b1ca">- created sample pages for reference documentation for Python - wrote some very basic top-level documentation (c8cfcf6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/70fac99b3c5d15253b2b311a3ea38b44f131dc4e">streamlining structure and content of pages (70fac99)</a>
 </div>
 </div>
 

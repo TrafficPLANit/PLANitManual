@@ -20,23 +20,23 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>TrafficAssignment.TRADITIONAL_STATIC | PLANit</title><meta property="og:title" content="TrafficAssignment.TRADITIONAL_STATIC" />
-<meta property="og:description" content="Traditional static assignment instance
+<title>Traditional static assignment | PLANit</title><meta property="og:title" content="Traditional static assignment" />
+<meta property="og:description" content="TrafficAssignment.TRADITIONAL_STATIC
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/assignment/traditional_static/" />
-<meta property="article:modified_time" content="2020-05-03T17:02:35+10:00" /><meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="TrafficAssignment.TRADITIONAL_STATIC">
-<meta itemprop="description" content="Traditional static assignment instance
+<meta property="article:modified_time" content="2020-05-03T18:08:40+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="Traditional static assignment">
+<meta itemprop="description" content="TrafficAssignment.TRADITIONAL_STATIC
 ">
-<meta itemprop="dateModified" content="2020-05-03T17:02:35&#43;10:00" />
-<meta itemprop="wordCount" content="104">
+<meta itemprop="dateModified" content="2020-05-03T18:08:40&#43;10:00" />
+<meta itemprop="wordCount" content="107">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TrafficAssignment.TRADITIONAL_STATIC"/>
-<meta name="twitter:description" content="Traditional static assignment instance
+<meta name="twitter:title" content="Traditional static assignment"/>
+<meta name="twitter:description" content="TrafficAssignment.TRADITIONAL_STATIC
 "/>
 
 
@@ -286,12 +286,6 @@
   <ul>
     <li class="collapse " id="planitplanitmanualdocspythongetting-started">
       
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythongetting-startedexample-page" href="/PLANit/PLANitManual/docs/python/getting-started/example-page/">Example Page</a>
       
       
     </li>
@@ -582,15 +576,16 @@
 
             
 <div class="td-content">
-	<h1>TrafficAssignment.TRADITIONAL_STATIC</h1>
-    <div class="lead">Traditional static assignment instance</div>
+	<h1>Traditional static assignment</h1>
+    <div class="lead">TrafficAssignment.TRADITIONAL_STATIC</div>
 	       
 	<h5 id="description">Description</h5>
 <p>The traditional static traffic assignment instance let&rsquo;s you configure the most well-known of all traffic assignment methods. Implementation is based on Beckmann (1956)<sup>1</sup> supporting multiple time periods and modes.</p>
-<p>It is accessible on any <code>instance = PLANit()</code> via <code>instance.assignment</code> assuming it has been set as the chosen assignment type.</p>
 <p><em><sup>1</sup> Beckmann, M., McGuire, C. B., &amp; Winsten, B. W. (1956). Studies in the economics of transportation. New Haven CT, USA: Yale University Press.</em></p>
+<h5 id="use">Use</h5>
+<p>Assuming <code>instance = PLANit()</code> is available, instantiate traditional static assignment via <code>instance.set( TrafficAssignment.TRADITIONAL_STATIC)</code>. After this, the assignment instance can be accessed via <code>instance.assignment</code></p>
 <h5 id="type">Type</h5>
-<p>TraditionalStaticTrafficAssignmentWrapper in <code>src/wrappers.py</code></p>
+<p>Class <code>TraditionalStaticAssignmentWrapper</code></p>
 <h5 id="see-also">See also</h5>
 <p><a href="../../planit_set+"><code>instance.set(+)</code></a> to see how to set the traffic assignment type<br>
 <a href="../"><code>instance.assignment</code></a> to see how to use the .assignment property</p>
@@ -601,7 +596,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/c8cfcf6c7cb80b0a88ca577fb3f24b4d8a29b1ca">- created sample pages for reference documentation for Python - wrote some very basic top-level documentation (c8cfcf6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/70fac99b3c5d15253b2b311a3ea38b44f131dc4e">streamlining structure and content of pages (70fac99)</a>
 </div>
 </div>
 

@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: TrafficAssignment.TRADITIONAL_STATIC</title>
+      <title>Docs: Traditional static assignment</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/assignment/traditional_static/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,10 +24,11 @@
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
 &lt;p&gt;The traditional static traffic assignment instance let&amp;rsquo;s you configure the most well-known of all traffic assignment methods. Implementation is based on Beckmann (1956)&lt;sup&gt;1&lt;/sup&gt; supporting multiple time periods and modes.&lt;/p&gt;
-&lt;p&gt;It is accessible on any &lt;code&gt;instance = PLANit()&lt;/code&gt; via &lt;code&gt;instance.assignment&lt;/code&gt; assuming it has been set as the chosen assignment type.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;sup&gt;1&lt;/sup&gt; Beckmann, M., McGuire, C. B., &amp;amp; Winsten, B. W. (1956). Studies in the economics of transportation. New Haven CT, USA: Yale University Press.&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, instantiate traditional static assignment via &lt;code&gt;instance.set( TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt;. After this, the assignment instance can be accessed via &lt;code&gt;instance.assignment&lt;/code&gt;&lt;/p&gt;
 &lt;h5 id=&#34;type&#34;&gt;Type&lt;/h5&gt;
-&lt;p&gt;TraditionalStaticTrafficAssignmentWrapper in &lt;code&gt;src/wrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;TraditionalStaticAssignmentWrapper&lt;/code&gt;&lt;/p&gt;
 &lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&#34;../../planit_set+&#34;&gt;&lt;code&gt;instance.set(+)&lt;/code&gt;&lt;/a&gt; to see how to set the traffic assignment type&lt;br&gt;
 &lt;a href=&#34;../&#34;&gt;&lt;code&gt;instance.assignment&lt;/code&gt;&lt;/a&gt; to see how to use the .assignment property&lt;/p&gt;
