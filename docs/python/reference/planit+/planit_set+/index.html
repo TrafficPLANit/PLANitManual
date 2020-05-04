@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/" />
-<meta property="article:modified_time" content="2020-05-03T18:08:40+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-04T11:52:28+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content=".set(&#43;)">
 <meta itemprop="description" content="PLANit method 
 ">
-<meta itemprop="dateModified" content="2020-05-03T18:08:40&#43;10:00" />
-<meta itemprop="wordCount" content="66">
+<meta itemprop="dateModified" content="2020-05-04T11:52:28&#43;10:00" />
+<meta itemprop="wordCount" content="76">
 
 
 
@@ -354,7 +354,37 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_activate" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/">.activate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_deactivate" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/">.deactivate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_run" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_run/">.run()</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceplanitplanit_set" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_assignment" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/">.assignment</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
       
@@ -367,17 +397,28 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/assignment/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">.assignment</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Assignment</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocspythonreferenceplanitassignment">
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignment">
       
       
       
       
       
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Traditional static</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignmenttraditionalstatic">
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitassignmenttraditional_static" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/assignment/traditional_static/">Traditional static</a>
       
       
     </li>
@@ -413,6 +454,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputformattertype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/">OutputFormatter</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumstrafficassignmenttype" href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment</a>
       
       
     </li>
@@ -573,6 +620,10 @@
 <p>This set allows you to set the type of traffic assignment to use on your planit instance.</p>
 <h5 id="use">Use</h5>
 <p>Assuming <code>instance = PLANit()</code> is available, set your choice of assignment via <code>instance.set(TrafficAssignment.&lt;enum&gt;)</code>.</p>
+<h5 id="return-type">Return type</h5>
+<p>N/A</p>
+<h5 id="see-also">See also</h5>
+<p><a href="../../enums/trafficassignmenttype">TrafficAssignment.&lt;enum&gt;</a> for supported assignment types</p>
 <h5 id="parameters">Parameters</h5>
 <table>
 <thead>
@@ -586,10 +637,10 @@
 </thead>
 <tbody>
 <tr>
-<td><code>TrafficAssignment.&lt;enum&gt;</code></td>
+<td><a href="../../enums/trafficassignmenttype"><code>TrafficAssignment.&lt;enum&gt;</code></a></td>
 <td align="center">yes</td>
 <td align="left">N/A</td>
-<td align="left">TrafficAssignmentType</td>
+<td align="left">Enum</td>
 <td align="left">Type of traffic assignment to apply</td>
 </tr>
 </tbody>
@@ -603,7 +654,7 @@
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/70fac99b3c5d15253b2b311a3ea38b44f131dc4e">streamlining structure and content of pages (70fac99)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/21d2613de4ebd956c5d19620b8a851fc42dd989e">- improved structure of python manual documents - added content for python manual (21d2613)</a>
 </div>
 </div>
 

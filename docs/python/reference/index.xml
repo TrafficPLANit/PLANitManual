@@ -28,7 +28,7 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
 &lt;p&gt;Create an instance via &lt;code&gt; instance = PLANit()&lt;/code&gt; to construct a PLANit instance that utilises the current working directory. Alternatively, provide a project path as a parameter.&lt;/p&gt;
 &lt;h5 id=&#34;type&#34;&gt;Type&lt;/h5&gt;
-&lt;p&gt;Class PLANit&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 &lt;h5 id=&#34;parameters&#34;&gt;Parameters&lt;/h5&gt;
 &lt;p&gt;Available parameters upon construction:&lt;/p&gt;
 &lt;table&gt;
@@ -91,7 +91,7 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;assignment&#34;&gt;&lt;code&gt;.assignment&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_assignment&#34;&gt;&lt;code&gt;.assignment&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;planit_set+&#34;&gt;.set(+)&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to assignment instance&lt;/td&gt;
 &lt;/tr&gt;
@@ -144,6 +144,24 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&#34;../../examples&#34;&gt;Examples&lt;/a&gt; section.
 &lt;/div&gt;
 
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Assignment</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all traffic assignment implementations available.&lt;/p&gt;
+&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for related assignment type enums&lt;br&gt;
+&lt;a href=&#34;../planit+/planit_assignment&#34;&gt;planit(+).assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
+&lt;p&gt;Currently the following assignment implementations are supported:&lt;/p&gt;
 
       </description>
     </item>
