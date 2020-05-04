@@ -30,8 +30,8 @@
 &lt;h5 id=&#34;type&#34;&gt;Type&lt;/h5&gt;
 &lt;p&gt;Class &lt;code&gt;TraditionalStaticAssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;&lt;code&gt;instance.set(+)&lt;/code&gt;&lt;/a&gt; to see how to set the traffic assignment type&lt;br&gt;
-&lt;a href=&#34;../planit+/planit_assignment&#34;&gt;planit(+).assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt; to see how to set the traffic assignment type&lt;br&gt;
+&lt;a href=&#34;../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
 &lt;h5 id=&#34;methods&#34;&gt;Methods&lt;/h5&gt;
 &lt;p&gt;Traditional static assignment exposes the following methods&lt;/p&gt;
 &lt;table&gt;

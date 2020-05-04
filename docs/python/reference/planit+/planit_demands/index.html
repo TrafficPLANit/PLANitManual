@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +20,23 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>PLANit(&#43;) | PLANit</title><meta property="og:title" content="PLANit(&#43;)" />
-<meta property="og:description" content="Top-level PLANit instance 
+<title>.demands | PLANit</title><meta property="og:title" content=".demands" />
+<meta property="og:description" content="PLANit property
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/" />
-<meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="PLANit(&#43;)">
-<meta itemprop="description" content="Top-level PLANit instance 
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PLANit(&#43;)"/>
-<meta name="twitter:description" content="Top-level PLANit instance 
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/" />
+<meta property="article:modified_time" content="2020-05-04T12:59:01+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content=".demands">
+<meta itemprop="description" content="PLANit property
+">
+<meta itemprop="dateModified" content="2020-05-04T12:59:01&#43;10:00" />
+<meta itemprop="wordCount" content="62">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=".demands"/>
+<meta name="twitter:description" content="PLANit property
 "/>
 
 
@@ -49,7 +54,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -379,7 +384,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_demands" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceplanitplanit_demands" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
       
       
       
@@ -644,6 +649,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -665,8 +673,15 @@
 
 
 
-<li class="breadcrumb-item active" aria-current="page">
+<li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/">PLANit(&#43;)</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
 </li>
 
 	</ol>
@@ -674,275 +689,30 @@
 
             
 <div class="td-content">
-	<h1>PLANit(&#43;)</h1>
-        <div class="lead">Top-level PLANit instance</div>
-	
+	<h1>.demands</h1>
+    <div class="lead">PLANit property</div>
+	       
 	<h5 id="description">Description</h5>
-<p>This class is the starting point for all PLANit traffic assignment runs. It either reads in inputs from a <em><strong>specific location</strong></em> or from
-the <em><strong>current working directory</strong></em> upon creation of the object. Further configuration for the run is left to the user.</p>
+<p>The .demands property allows access to the in-memory version of the parsed input demands</p>
 <h5 id="use">Use</h5>
-<p>Create an instance via <code> instance = PLANit()</code> to construct a PLANit instance that utilises the current working directory. Alternatively, provide a project path as a parameter.</p>
-<h5 id="type">Type</h5>
-<p>Class <code>PLANit</code> in <code>PLANit.py</code></p>
-<h5 id="parameters">Parameters</h5>
-<p>Available parameters upon construction:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th align="center">Compulsory</th>
-<th align="left">Default</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>project_path</td>
-<td align="center">no</td>
-<td align="left">None</td>
-<td align="left">String</td>
-<td align="left">Location of directory to find input files</td>
-</tr>
-</tbody>
-</table>
-<h5 id="methods">Methods</h5>
-<p>PLANit exposes the following methods</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="planit_set+">.set(+)</a></td>
-<td align="left">Set the type of traffic assignment method to use</td>
-</tr>
-<tr>
-<td><a href="planit_activate+">.activate(+)</a></td>
-<td align="left">Activate additional types of output that are to be generated</td>
-</tr>
-<tr>
-<td><a href="planit_deactivate+">.deactivate(+)</a></td>
-<td align="left">Deactivate previously activated types of output</td>
-</tr>
-<tr>
-<td><a href="planit_run">.run()</a></td>
-<td align="left">Run simulation</td>
-</tr>
-</tbody>
-</table>
-<h5 id="properties">Properties</h5>
-<p>Planit exposes the follogin properties</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th align="left">Availability</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="planit_assignment"><code>.assignment</code></a></td>
-<td align="left">Post calling <a href="planit_set+">.set(+)</a></td>
-<td align="left">Access to assignment instance</td>
-</tr>
-<tr>
-<td><a href="planit_demands"><code>.demands</code></a></td>
-<td align="left">Always</td>
-<td align="left">Access to in memory version of the demand inputs</td>
-</tr>
-<tr>
-<td>.initial_costs</td>
-<td align="left">Always</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="planit_memory"><code>.memory</code></a></td>
-<td align="left">Post calling <a href="planit_set+">.set(+)</a> and <a href="planit_activate+"><code>.activate(+)</code></a></td>
-<td align="left">Access to in-memory configuration of results </br> including results themselves (Post calling <a href="planit_run+">.run(+)</a>)</td>
-</tr>
-<tr>
-<td><a href="planit_network"><code>.network</code></a></td>
-<td align="left">Always</td>
-<td align="left">Access to in-memory version of the physical network infrastructure</td>
-</tr>
-<tr>
-<td><a href="planit_output"><code>.output</code></a></td>
-<td align="left">Post calling <a href="planit_set+">.set(+)</a></td>
-<td align="left">Access to configuration for native output format (activated by default)</td>
-</tr>
-<tr>
-<td><a href="planit_zoning"><code>.zoning</code></a></td>
-<td align="left">Always</td>
-<td align="left">Access to in-memory version of the zoning structure</td>
-</tr>
-</tbody>
-</table>
+<p>Assuming <code>instance = PLANit()</code> is available, you access the demands via <code>instance.demands</code>.</p>
+<h5 id="return-type">Return type</h5>
+<p>Instance of Class <code>DemandsWrapper</code> in <code>Wrappers.py</code></p>
+<h5 id="see-also">See also</h5>
+<p><a href="../../demands">Demands</a> describes the options available on the demands implementation</p>
 <h5 id="example-1">Example 1</h5>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-<span style="color:#8f5902;font-style:italic"># Create a PLANit instance using &#34;.&#34; as the location for the input files</span>
+<span style="color:#8f5902;font-style:italic"># Create instance and access in-memory demands instance</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
-
-</code></pre></div><h5 id="example-2">Example 2</h5>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-<span style="color:#8f5902;font-style:italic"># Create a PLANit instance using a custom location to search for input files instead</span>
-<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;c:/users/&lt;username&gt;/my_project&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
 
 </code></pre></div>
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-For comprehensive examples, please have a look at the PLANit-Python <a href="../../examples">Examples</a> section.
-</div>
-
-
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/">.activate(&#43;)</a>
-                    </h5>
-                    <p>PLANit method</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/">.deactivate(&#43;)</a>
-                    </h5>
-                    <p>PLANit method</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_run/">.run()</a>
-                    </h5>
-                    <p>PLANit method</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/">.set(&#43;)</a>
-                    </h5>
-                    <p>PLANit method</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/">.assignment</a>
-                    </h5>
-                    <p>PLANit property</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
-                    </h5>
-                    <p>PLANit property</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_memory/">.memory</a>
-                    </h5>
-                    <p>PLANit property</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_network/">.network</a>
-                    </h5>
-                    <p>PLANit property</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
-                    </h5>
-                    <p>PLANit property</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/">.zoning</a>
-                    </h5>
-                    <p>PLANit property</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
-
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/9d7e6b5d7c8ffaeb081b40491200a0c4829543f6">add content (9d7e6b5)</a>
 </div>
 </div>
+
 
           </main>
         </div>

@@ -29,7 +29,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
@@ -39,12 +39,12 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_run/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
@@ -54,7 +54,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
@@ -64,12 +64,42 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_memory/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_network/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/installation/</loc>
     <lastmod>2020-05-02T17:03:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
@@ -84,12 +114,12 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>
@@ -108,8 +138,13 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/</loc>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/</loc>
-    <lastmod>2020-05-04T11:52:28+10:00</lastmod>
+    <lastmod>2020-05-04T12:59:01+10:00</lastmod>
   </url>
   
   <url>

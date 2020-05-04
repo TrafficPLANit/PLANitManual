@@ -66,15 +66,15 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;td align=&#34;left&#34;&gt;Set the type of traffic assignment method to use&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.activate(+)&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_activate+&#34;&gt;.activate(+)&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Activate additional types of output that are to be generated&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.deactivate(+)&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_deactivate+&#34;&gt;.deactivate(+)&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Deactivate previously activated types of output&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.run()&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_run&#34;&gt;.run()&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Run simulation&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -96,7 +96,7 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;td align=&#34;left&#34;&gt;Access to assignment instance&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.demands&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_demands&#34;&gt;&lt;code&gt;.demands&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to in memory version of the demand inputs&lt;/td&gt;
 &lt;/tr&gt;
@@ -106,22 +106,22 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.memory&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_memory&#34;&gt;&lt;code&gt;.memory&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;planit_set+&#34;&gt;.set(+)&lt;/a&gt; and &lt;a href=&#34;planit_activate+&#34;&gt;&lt;code&gt;.activate(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to in-memory configuration of results &lt;/br&gt; including results themselves (Post calling &lt;a href=&#34;planit_run+&#34;&gt;.run(+)&lt;/a&gt;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.network&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_network&#34;&gt;&lt;code&gt;.network&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to in-memory version of the physical network infrastructure&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.output&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_output&#34;&gt;&lt;code&gt;.output&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;planit_set+&#34;&gt;.set(+)&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to configuration for native output format (activated by default)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;.zoning&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;planit_zoning&#34;&gt;&lt;code&gt;.zoning&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to in-memory version of the zoning structure&lt;/td&gt;
 &lt;/tr&gt;
@@ -159,8 +159,9 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
         
         &lt;p&gt;Reference documentation for all traffic assignment implementations available.&lt;/p&gt;
 &lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for related assignment type enums&lt;br&gt;
-&lt;a href=&#34;../planit+/planit_assignment&#34;&gt;planit(+).assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for related assignment type enums
+&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt; on how to set an assignment on PLANit&lt;br&gt;
+&lt;a href=&#34;../planit+/planit_assignment&#34;&gt;planit(+).assignment&lt;/a&gt; on how to access a set traffic assignment instance&lt;/p&gt;
 &lt;p&gt;Currently the following assignment implementations are supported:&lt;/p&gt;
 
       </description>
@@ -176,6 +177,26 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
         
         
         &lt;p&gt;Reference documentation of classes exposing enums for configuration purposes. These classes exist to allow you to quickly - and with representative names - (de-)activate and/or configure traffic assignment components in PLANit&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Output Formatters</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all output formatter implementations available.&lt;/p&gt;
+&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/outputformattertype&#34;&gt;Outputformatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for related output formatter type enums&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate output formatters
+&lt;a href=&#34;../planit+/planit_output&#34;&gt;planit(+).output&lt;/a&gt; on how to access the default output formatter instance (if active)&lt;br&gt;
+&lt;a href=&#34;../planit+/planit_memory&#34;&gt;planit(+).memory&lt;/a&gt; on how to access the memory output formatter instance (if active)&lt;/p&gt;
+&lt;p&gt;Currently the following implementations are supported:&lt;/p&gt;
 
       </description>
     </item>

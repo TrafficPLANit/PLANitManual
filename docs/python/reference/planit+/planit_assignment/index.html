@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/" />
-<meta property="article:modified_time" content="2020-05-04T11:52:28+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-04T12:59:01+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content=".assignment">
 <meta itemprop="description" content="PLANit property
 ">
-<meta itemprop="dateModified" content="2020-05-04T11:52:28&#43;10:00" />
-<meta itemprop="wordCount" content="151">
+<meta itemprop="dateModified" content="2020-05-04T12:59:01&#43;10:00" />
+<meta itemprop="wordCount" content="152">
 
 
 
@@ -381,6 +381,36 @@
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceplanitplanit_assignment" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/">.assignment</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_demands" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_memory" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_memory/">.memory</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_network" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_network/">.network</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_output" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_zoning" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/">.zoning</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -460,6 +490,52 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumstrafficassignmenttype" href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Formatters</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformatters">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Memory</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemory">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
     </li>
@@ -617,7 +693,7 @@
     <div class="lead">PLANit property</div>
 	       
 	<h5 id="description">Description</h5>
-<p>The assignment property allows access to the assignment instance for configuration purposes. Depending on the chosen assignment different methods and properties will be exposed. Only a single assignment is available for each planit instance.</p>
+<p>The .assignment property allows access to the assignment instance for configuration purposes. Depending on the chosen assignment different methods and properties will be exposed. Only a single assignment is available for each planit instance.</p>
 <h5 id="use">Use</h5>
 <p>Assuming <code>instance = PLANit()</code> is available, you instantiate the assignment via <code>instance.set(TrafficAssignment.&lt;enum&gt;)</code>. After this, the assignment instance can be accessed via this property, e.g., <code>instance.assignment</code></p>
 <h5 id="return-type">Return type</h5>
@@ -627,7 +703,7 @@
 <a href="../planit_set+">.set(+)</a> on how to instantiate this property</p>
 <p>To find out more about the options available on any of the assignment implementations, please refer to the
 <a href="../../assignment">assignment section</a> of this manual</p>
-<h5 id="example1">Example1</h5>
+<h5 id="example-1">Example 1</h5>
 <p>Create a traditional static traffic assignment. The <code>planit_instance.assignment.&lt;call method&gt;</code> must call a method available on
 the traditional static assignment class, since this is the instance it returns</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
@@ -639,7 +715,7 @@ the traditional static assignment class, since this is the instance it returns</
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/21d2613de4ebd956c5d19620b8a851fc42dd989e">- improved structure of python manual documents - added content for python manual (21d2613)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/9d7e6b5d7c8ffaeb081b40491200a0c4829543f6">add content (9d7e6b5)</a>
 </div>
 </div>
 

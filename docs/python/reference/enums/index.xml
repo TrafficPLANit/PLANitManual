@@ -27,7 +27,8 @@
 &lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you activate an output formatter via &lt;code&gt;instance.activate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the chosen formatter can be accessed as outlined in the &lt;strong&gt;Access instance via&lt;/strong&gt; column in &lt;a href=&#34;#fields&#34;&gt;Fields&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt;
+&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id=&#34;type&#34;&gt;Type&lt;/h5&gt;
 &lt;p&gt;Class &lt;code&gt;OutputFormatter&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
 &lt;h5 id=&#34;fields&#34;&gt;Fields&lt;/h5&gt;
