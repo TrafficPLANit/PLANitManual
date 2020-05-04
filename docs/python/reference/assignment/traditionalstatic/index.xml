@@ -13,5 +13,221 @@
       
     
     
+    <item>
+      <title>Docs: .activate_output(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .activate_output allows you to activate various types of output to be generated as part of the assignment results. Do note that the more output is being activated, the more effort the simulation must make to gather this information causing various degrees of performance loss.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;The .activate_output method can then be applied via &lt;code&gt;instance.assignment.activate_output(OutputType.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../&#34;&gt;Traditional static traffic assignment&lt;/a&gt; for information on this method&amp;rsquo;s class instance&lt;/p&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt; OutputType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of output type to activate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate path outputs&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .set allows you to set the choice for components used in traditional static assigment such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to compute cost for the transport network (split in physical and virtual cost)&lt;/li&gt;
+&lt;li&gt;How to perform smoothing between iterations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Depending on the chosen option the assignment performs differently&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;The .set method can then be used via &lt;code&gt;instance.assignment.set(&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;)&lt;/code&gt;, where the choices for the various parameters are outlined in the &lt;a href=&#34;./#parameter&#34;&gt;parameter&lt;/a&gt; section&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../&#34;&gt;Traditional static traffic assignment&lt;/a&gt; for information on this method&amp;rsquo;s class instance&lt;/p&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;&lt;/em&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set choice for a component&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Each of the options for the &lt;em&gt;&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;&lt;/em&gt; parameter are listed below:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/physicalcosttype&#34;&gt;&lt;code&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of link performance function to apply as the physical cost, i.e., travel time&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/virtualcosttype&#34;&gt;&lt;code&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of cost to apply as the virtual cost, i.e., travel time from zone-to-physical-network&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/smoothingtype&#34;&gt;&lt;code&gt;Smoothing.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of smoothing to apply between iterations&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;physical-cost-support&#34;&gt;Physical Cost Support&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following PhysicalCost types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PhysicalCost.BPR&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;virtual-cost-support&#34;&gt;Virtual Cost Support&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following Virtual cost types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;VirtualCost.FIXED&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VirtualCost.SPEED&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;smoothing-support&#34;&gt;Smoothing Support&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following smoothing types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Smoothing.MSA&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set physical cost to BPR link performance function&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set virtual cost to a constant value for all connectors (zone-to-physical network connections)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;virtual_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-3&#34;&gt;Example 3&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set virtual cost to a constant value for all connectors (zone-to-physical network connections)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .physical_cost</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .physical_cost property allows access to the chosen physical cost assuming it has been set. It can be used for configuration specific to the chosen type.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, &lt;code&gt;instance.set(TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt; is invoked, and the physical cost has been set via &lt;code&gt;instance.assignment.set(PhysicalCost.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;instance.assignment.physical_cost&lt;/code&gt; method can then be used to retrieve the chosen physical cost instance&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;Instance of Class &lt;code&gt;PhysicalCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../&#34;&gt;Traditional static traffic assignment&lt;/a&gt; for information on this method&amp;rsquo;s class instance&lt;br&gt;
+&lt;a href=&#34;../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available physical cost options&lt;br&gt;
+&lt;a href=&#34;../../physicalcost&#34;&gt;PhysicalCost&lt;/a&gt; Describes the options available for all available physical cost implementations&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
   </channel>
 </rss>

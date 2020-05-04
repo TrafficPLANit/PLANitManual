@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/" />
-<meta property="article:modified_time" content="2020-05-04T11:52:28+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-04T18:42:13+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="TrafficAssignment.&lt;Enum&gt;">
 <meta itemprop="description" content="Traffic assignment types 
 ">
-<meta itemprop="dateModified" content="2020-05-04T11:52:28&#43;10:00" />
-<meta itemprop="wordCount" content="83">
+<meta itemprop="dateModified" content="2020-05-04T18:42:13&#43;10:00" />
+<meta itemprop="wordCount" content="84">
 
 
 
@@ -451,6 +451,24 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_activate_output" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/">.activate_output(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_set" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_physical_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/">.physical_cost</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -484,6 +502,30 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputformattertype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/">OutputFormatter</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsphysicalcosttype" href="/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsvirtualcosttype" href="/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/">VirtualCost</a>
       
       
       
@@ -692,33 +734,33 @@
 	<h1>TrafficAssignment.&lt;Enum&gt;</h1>
     <div class="lead">Traffic assignment types</div>
 	       
-	<h5 id="description">Description</h5>
+	<h4 id="description">Description</h4>
 <p>Class exposing supported traffic assignment methods as enums.</p>
-<h5 id="use">Use</h5>
+<h4 id="use">Use</h4>
 <p>Assuming <code>instance = PLANit()</code> is available, you activate an output formatter via <code>instance.activate(TrafficAssignment.&lt;enum&gt;)</code>. After this, the chosen assignment type can be accessed via <code>instance.assignment</code></p>
-<h5 id="see-also">See also</h5>
+<h4 id="see-also">See also</h4>
 <p><a href="../../planit+/planit_set+">PLANit.set(+)</a><br>
-<a href="../../planit+/assignment">PLANit.assignment</a></p>
-<h5 id="type">Type</h5>
+<a href="../../planit+/planit_assignment">PLANit.assignment</a></p>
+<h4 id="type">Type</h4>
 <p>Class <code>TrafficAssignment</code> in <code>Enums.py</code></p>
-<h5 id="fields">Fields</h5>
+<h4 id="fields">Fields</h4>
 <table>
 <thead>
 <tr>
 <th>&lt;enum&gt; Fields</th>
 <th align="left">Description</th>
-<th align="left"><code>instance.assignment</code> implementation</th>
+<th align="left">Creates instance of</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>TRADITIONAL_STATIC</td>
 <td align="left">Traditional static assignment implementation</td>
-<td align="left"><a href="../../planit+/assignment/traditionalstatic">Traditional static assignment</a></td>
+<td align="left"><a href="../../assignment/traditionalstatic">Traditional static assignment</a></td>
 </tr>
 </tbody>
 </table>
-<h5 id="example-1">Example 1</h5>
+<h4 id="example-1">Example 1</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># set traditional static assignment as the assignment type</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
@@ -729,7 +771,7 @@
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/21d2613de4ebd956c5d19620b8a851fc42dd989e">- improved structure of python manual documents - added content for python manual (21d2613)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/fdf36449f100f25cad16a4e33634cf50973e78e0">added content (fdf3644)</a>
 </div>
 </div>
 

@@ -66,7 +66,7 @@
         
         
         &lt;p&gt;Each PLANit-Python run starts with instantiating a PLANit object &lt;code&gt;instance = PLANit(+)&lt;/code&gt;. Whenever you see a &amp;lsquo;+&amp;rsquo; in brackets for an entry it indicates it accepts one or more parameters.&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;planit+&#34;&gt;&lt;code&gt;PLANit()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>

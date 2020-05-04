@@ -22,16 +22,16 @@
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .activate(+) method allows you to activate different types of output for your assignment given some output formatter enum that you provide&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, activate your (additional) outputs via &lt;code&gt;instance.activate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
 &lt;a href=&#34;../planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; for de-activating output formatters&lt;/p&gt;
-&lt;h5 id=&#34;parameters&#34;&gt;Parameters&lt;/h5&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -52,7 +52,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -63,7 +63,7 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# The output formatter is then accessible via the .output property&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;example-2&#34;&gt;Example 2&lt;/h5&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -79,6 +79,58 @@
     </item>
     
     <item>
+      <title>Docs: .activate_output(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .activate_output allows you to activate various types of output to be generated as part of the assignment results. Do note that the more output is being activated, the more effort the simulation must make to gather this information causing various degrees of performance loss.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;The .activate_output method can then be applied via &lt;code&gt;instance.assignment.activate_output(OutputType.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../&#34;&gt;Traditional static traffic assignment&lt;/a&gt; for information on this method&amp;rsquo;s class instance&lt;/p&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt; OutputType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of output type to activate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate path outputs&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: .deactivate(&#43;)</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,16 +139,16 @@
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .deactivate(+) method allows you to de-activate types of output for your assignment given some output formatter enum that you provide. Only when an output formatter is activated, de-activating it will result in a de-activation, otherwise the call is imsply ignored.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, de-activate an output formatter via &lt;code&gt;instance.deactivate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
 &lt;a href=&#34;../planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; for activating output formatters&lt;/p&gt;
-&lt;h5 id=&#34;parameters&#34;&gt;Parameters&lt;/h5&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -117,7 +169,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;examples&#34;&gt;Examples&lt;/h5&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -143,17 +195,17 @@
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .run() method conducts the actual traffic assignment run. Make sure all configuration has been applied before calling this method. Results are only available after invoking this method.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, conduct the run via &lt;code&gt;instance.run()&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
-&lt;h5 id=&#34;parameters&#34;&gt;Parameters&lt;/h5&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
 &lt;p&gt;None&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -176,6 +228,129 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .set allows you to set the choice for components used in traditional static assigment such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to compute cost for the transport network (split in physical and virtual cost)&lt;/li&gt;
+&lt;li&gt;How to perform smoothing between iterations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Depending on the chosen option the assignment performs differently&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;The .set method can then be used via &lt;code&gt;instance.assignment.set(&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;)&lt;/code&gt;, where the choices for the various parameters are outlined in the &lt;a href=&#34;./#parameter&#34;&gt;parameter&lt;/a&gt; section&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../&#34;&gt;Traditional static traffic assignment&lt;/a&gt; for information on this method&amp;rsquo;s class instance&lt;/p&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;&lt;/em&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set choice for a component&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Each of the options for the &lt;em&gt;&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;&lt;/em&gt; parameter are listed below:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;AssignmentType&amp;gt;.&amp;lt;enum&amp;gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/physicalcosttype&#34;&gt;&lt;code&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of link performance function to apply as the physical cost, i.e., travel time&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/virtualcosttype&#34;&gt;&lt;code&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of cost to apply as the virtual cost, i.e., travel time from zone-to-physical-network&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../../../enums/smoothingtype&#34;&gt;&lt;code&gt;Smoothing.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of smoothing to apply between iterations&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;physical-cost-support&#34;&gt;Physical Cost Support&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following PhysicalCost types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PhysicalCost.BPR&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;virtual-cost-support&#34;&gt;Virtual Cost Support&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following Virtual cost types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;VirtualCost.FIXED&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VirtualCost.SPEED&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;smoothing-support&#34;&gt;Smoothing Support&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following smoothing types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Smoothing.MSA&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set physical cost to BPR link performance function&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set virtual cost to a constant value for all connectors (zone-to-physical network connections)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;virtual_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-3&#34;&gt;Example 3&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set virtual cost to a constant value for all connectors (zone-to-physical network connections)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set(&#43;)</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -183,15 +358,15 @@
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
-&lt;p&gt;This set allows you to set the type of traffic assignment to use on your planit instance.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .set allows you to set the type of traffic assignment to use on your planit instance.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, set your choice of assignment via &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;/p&gt;
-&lt;h5 id=&#34;parameters&#34;&gt;Parameters&lt;/h5&gt;
+&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -212,7 +387,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -231,18 +406,18 @@
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .assignment property allows access to the assignment instance for configuration purposes. Depending on the chosen assignment different methods and properties will be exposed. Only a single assignment is available for each planit instance.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you instantiate the assignment via &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the assignment instance can be accessed via this property, e.g., &lt;code&gt;instance.assignment&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Instance of Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;br&gt;
 &lt;a href=&#34;../planit_set+&#34;&gt;.set(+)&lt;/a&gt; on how to instantiate this property&lt;/p&gt;
 &lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the
 &lt;a href=&#34;../../assignment&#34;&gt;assignment section&lt;/a&gt; of this manual&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on
 the traditional static assignment class, since this is the instance it returns&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
@@ -264,15 +439,15 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .demands property allows access to the in-memory version of the parsed input demands&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you access the demands via &lt;code&gt;instance.demands&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Instance of Class &lt;code&gt;DemandsWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;../../demands&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory demands instance&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -291,18 +466,18 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .memory property allows access to the results in-memory. Configuration specific to this output formatter is also accessible via this property&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and the memory output formatter has been activated via &lt;code&gt;instance.activate(OutputFormatter.MEMORY)&lt;/code&gt; ,you access the memory output formatter via &lt;code&gt;instance.memory&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Instance of Class &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter
 &lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory output formatter &lt;/a&gt; describes the options available on the memory output formatter implementation&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -328,15 +503,15 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .network property allows access to the in-memory version of the parsed input physical transport network&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you access the network via &lt;code&gt;instance.network&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Instance of Class &lt;code&gt;PhysicalNetworkWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;../../network&#34;&gt;Network&lt;/a&gt; describes the options available on the physical network implementation&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Network&lt;/a&gt; describes the options available on the physical network implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory network instance&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -355,18 +530,18 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .output property allows access to specific configuration options on the native PLANit output formatter. The native formatter persists results to disk using csv files with additional meta data provided in xml files.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, the (default) output formatter is accessible via &lt;code&gt;instance.output&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Instance of Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter &lt;br&gt;
 &lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default output formatter&lt;/a&gt; describes the options available on the default output formatter implementation&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -383,6 +558,47 @@ the traditional static assignment class, since this is the instance it returns&l
     </item>
     
     <item>
+      <title>Docs: .physical_cost</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .physical_cost property allows access to the chosen physical cost assuming it has been set. It can be used for configuration specific to the chosen type.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, &lt;code&gt;instance.set(TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt; is invoked, and the physical cost has been set via &lt;code&gt;instance.assignment.set(PhysicalCost.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;instance.assignment.physical_cost&lt;/code&gt; method can then be used to retrieve the chosen physical cost instance&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;Instance of Class &lt;code&gt;PhysicalCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../&#34;&gt;Traditional static traffic assignment&lt;/a&gt; for information on this method&amp;rsquo;s class instance&lt;br&gt;
+&lt;a href=&#34;../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available physical cost options&lt;br&gt;
+&lt;a href=&#34;../../physicalcost&#34;&gt;PhysicalCost&lt;/a&gt; Describes the options available for all available physical cost implementations&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: .zoning</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -391,15 +607,15 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .zoning property allows access to the in-memory version of the parsed input zoning structure&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you access the zoning via &lt;code&gt;instance.zoning&lt;/code&gt;.&lt;/p&gt;
-&lt;h5 id=&#34;return-type&#34;&gt;Return type&lt;/h5&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Instance of Class &lt;code&gt;ZoningWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;../../zoning&#34;&gt;Zoning&lt;/a&gt; describes the options available on the zoning structure implementation&lt;/p&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Zoning&lt;/a&gt; describes the options available on the zoning structure implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory zoning structure instance&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -418,16 +634,16 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing supported output formatters as enums.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you activate an output formatter via &lt;code&gt;instance.activate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the chosen formatter can be accessed as outlined in the &lt;strong&gt;Access instance via&lt;/strong&gt; column in &lt;a href=&#34;#fields&#34;&gt;Fields&lt;/a&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt;&lt;/p&gt;
-&lt;h5 id=&#34;type&#34;&gt;Type&lt;/h5&gt;
+&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;OutputFormatter&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;fields&#34;&gt;Fields&lt;/h5&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -449,7 +665,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;examples&#34;&gt;Examples&lt;/h5&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -460,7 +676,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# The output formatter is then accessible via the x.output property&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;example-2&#34;&gt;Example 2&lt;/h5&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -476,6 +692,248 @@ the traditional static assignment class, since this is the instance it returns&l
     </item>
     
     <item>
+      <title>Docs: OutputType.&lt;Enum&gt;</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputtype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available Output type types as enums. When used to activate an output type on a traffic assignment instance it will trigger output results of that type to be generated and further configuration options to be exposed via the relevant properties on the assignment instance.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;Then the output type types can be activated on the assignment using &lt;code&gt;instance.assignment.activate_output(OutputType.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can activate output types and how to retrieve the related output configuration instance for further configuration.&lt;/p&gt;
+&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OutputType&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Access instance via&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;LINK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents link outputs&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.link_configuration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OD&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents origin-destination outputs&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.od_configuration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PATH&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents path outputs&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.path_configuration&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate origin-destination outputs to be generated&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OD&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;od_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate path outputs to be generated&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-3&#34;&gt;Example 3&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# link outputs are activated by default&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;link_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PhysicalCost.&lt;Enum&gt;</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available Physical Cost types as enums.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;Then the physical cost type can be set on the assignment using &lt;code&gt;instance.assignment.set(PhysicalCost.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instantiated object is the accessible via  &lt;a href=&#34;todo&#34;&gt;&lt;code&gt;instance.assignment.physicalcost&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is possible that not every physical cost method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what physical cost methods are supported.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the physical cost on and how to retrieve the instantiated physical cost object.&lt;/p&gt;
+&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;PhysicalCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BPR&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Bureau of Public Roads&lt;sup&gt;1&lt;/sup&gt; link performance function&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; United States, Bureau of Public Roads, Traffic assignment manual. (1964). Washington.&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set physical cost to BPR link performance function&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Smoothing.&lt;Enum&gt;</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available smoothing types as enums.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;Then the smoothing type can be set on the assignment using &lt;code&gt;instance.assignment.set(Smoothing.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instantiated object is then accessible via  &lt;a href=&#34;todo&#34;&gt;&lt;code&gt;instance.assignment.smoothing&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is possible that not every smoothing method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what smoothing methods are supported.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the smoothing on and how to retrieve the instantiated smoothing object.&lt;/p&gt;
+&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;Smoothing&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;MSA&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Method of Successive Averages (MSA)&lt;sup&gt;1&lt;/sup&gt; where each iteration has equal impact on the final result (default setting)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;Ortuzar, J., &amp;amp; Willumsen, L. G. (2002). Modelling Transport. John Wiley &amp;amp; Sons Inc.&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set smoothing method to the Method of Succesive Averages&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: VirtualCost.&lt;Enum&gt;</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available Virtual Cost types as enums.&lt;/p&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
+&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
+&lt;p&gt;Then the physical cost type can be set on the assignment using &lt;code&gt;instance.assignment.set(VirtualCost.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instantiated object is the accessible via  &lt;a href=&#34;todo&#34;&gt;&lt;code&gt;instance.assignment.virtualcost&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is possible that not every virtual cost method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what virtual cost methods are supported.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the virtual cost on and how to retrieve the instantiated virtual cost object.&lt;/p&gt;
+&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;VirtualCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;FIXED&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Apply a fixed cost to access the physical road network from a zone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SPEED&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Apply a fixed speed to all traffic accessing the physical road network from a zone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set virtual cost to using a fixed value&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;virtual_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: TrafficAssignment.&lt;Enum&gt;</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -484,33 +942,33 @@ the traditional static assignment class, since this is the instance it returns&l
       <description>
         
         
-        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing supported traffic assignment methods as enums.&lt;/p&gt;
-&lt;h5 id=&#34;use&#34;&gt;Use&lt;/h5&gt;
+&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
 &lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you activate an output formatter via &lt;code&gt;instance.activate(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the chosen assignment type can be accessed via &lt;code&gt;instance.assignment&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;see-also&#34;&gt;See also&lt;/h5&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;../../planit+/assignment&#34;&gt;PLANit.assignment&lt;/a&gt;&lt;/p&gt;
-&lt;h5 id=&#34;type&#34;&gt;Type&lt;/h5&gt;
+&lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;TrafficAssignment&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;fields&#34;&gt;Fields&lt;/h5&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment&lt;/code&gt; implementation&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Creates instance of&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;TRADITIONAL_STATIC&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Traditional static assignment implementation&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../planit+/assignment/traditionalstatic&#34;&gt;Traditional static assignment&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../assignment/traditionalstatic&#34;&gt;Traditional static assignment&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;example-1&#34;&gt;Example 1&lt;/h5&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set traditional static assignment as the assignment type&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;

@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +20,23 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Enums | PLANit</title><meta property="og:title" content="Enums" />
-<meta property="og:description" content="Enum based configuration classes
+<title>OutputType.&lt;Enum&gt; | PLANit</title><meta property="og:title" content="OutputType.&lt;Enum&gt;" />
+<meta property="og:description" content="OutputType types 
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/" />
-<meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Enums">
-<meta itemprop="description" content="Enum based configuration classes
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Enums"/>
-<meta name="twitter:description" content="Enum based configuration classes
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputtype/" />
+<meta property="article:modified_time" content="2020-05-04T18:42:13+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="OutputType.&lt;Enum&gt;">
+<meta itemprop="description" content="OutputType types 
+">
+<meta itemprop="dateModified" content="2020-05-04T18:42:13&#43;10:00" />
+<meta itemprop="wordCount" content="232">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OutputType.&lt;Enum&gt;"/>
+<meta name="twitter:description" content="OutputType types 
 "/>
 
 
@@ -49,7 +54,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -502,7 +507,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceenumsoutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType</a>
       
       
       
@@ -686,6 +691,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -707,8 +715,15 @@
 
 
 
-<li class="breadcrumb-item active" aria-current="page">
+<li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/">Enums</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType</a>
 </li>
 
 	</ol>
@@ -716,140 +731,86 @@
 
             
 <div class="td-content">
-	<h1>Enums</h1>
-        <div class="lead">Enum based configuration classes</div>
-	
-	<p>Reference documentation of classes exposing enums for configuration purposes. These classes exist to allow you to quickly - and with representative names - (de-)activate and/or configure traffic assignment components in PLANit</p>
+	<h1>OutputType.&lt;Enum&gt;</h1>
+    <div class="lead">OutputType types</div>
+	       
+	<h4 id="description">Description</h4>
+<p>Class exposing the available Output type types as enums. When used to activate an output type on a traffic assignment instance it will trigger output results of that type to be generated and further configuration options to be exposed via the relevant properties on the assignment instance.</p>
+<h4 id="use">Use</h4>
+<p>Assuming <code>instance = PLANit()</code> is available, and <code>instance.set(TrafficAssignment.&lt;enum&gt;)</code> is invoked.</p>
+<p>Then the output type types can be activated on the assignment using <code>instance.assignment.activate_output(OutputType.&lt;enum&gt;)</code> utilising one of the <a href="#fields">Enum Fields</a>.</p>
+<h4 id="see-also">See also</h4>
+<p><a href="../../assignment">Assignment</a> for the various assignment methods where one can activate output types and how to retrieve the related output configuration instance for further configuration.</p>
+<h4 id="type">Type</h4>
+<p>Class <code>OutputType</code> in <code>Enums.py</code></p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th>&lt;enum&gt; Fields</th>
+<th align="left">Description</th>
+<th align="left">Access instance via</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LINK</td>
+<td align="left">Represents link outputs</td>
+<td align="left"><code>instance.assignment.link_configuration</code></td>
+</tr>
+<tr>
+<td>OD</td>
+<td align="left">Represents origin-destination outputs</td>
+<td align="left"><code>instance.assignment.od_configuration</code></td>
+</tr>
+<tr>
+<td>PATH</td>
+<td align="left">Represents path outputs</td>
+<td align="left"><code>instance.assignment.path_configuration</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-1">Example 1</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#8f5902;font-style:italic"># Choose to run PLANit with a traditional static traffic assignment method</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
 
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/">OutputFormatter.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>OutputFormatter types</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>OutputType types</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Physical Cost types</p>
-                </div>
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Smoothing types</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/">VirtualCost.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Virtual Cost types</p>
-                </div>
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Traffic assignment types</p>
-                </div>
-            
-        
-            
-        
-            
-        
-    
+<span style="color:#8f5902;font-style:italic"># activate origin-destination outputs to be generated</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate_output</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OD</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># configure the instantiated property</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">od_configuration</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+
+</code></pre></div><h4 id="example-2">Example 2</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#8f5902;font-style:italic"># Choose to run PLANit with a traditional static traffic assignment method</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># activate path outputs to be generated</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate_output</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PATH</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># configure the instantiated property</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+
+</code></pre></div><h4 id="example-3">Example 3</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#8f5902;font-style:italic"># Choose to run PLANit with a traditional static traffic assignment method</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># link outputs are activated by default</span>
+<span style="color:#8f5902;font-style:italic"># configure the instantiated property</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+
+</code></pre></div>
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/fdf36449f100f25cad16a4e33634cf50973e78e0">added content (fdf3644)</a>
+</div>
 </div>
 
-	
-	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/70fac99b3c5d15253b2b311a3ea38b44f131dc4e">streamlining structure and content of pages (70fac99)</a>
-</div>
-</div>
 
           </main>
         </div>

@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +20,23 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Enums | PLANit</title><meta property="og:title" content="Enums" />
-<meta property="og:description" content="Enum based configuration classes
+<title>Smoothing.&lt;Enum&gt; | PLANit</title><meta property="og:title" content="Smoothing.&lt;Enum&gt;" />
+<meta property="og:description" content="Smoothing types 
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/" />
-<meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Enums">
-<meta itemprop="description" content="Enum based configuration classes
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Enums"/>
-<meta name="twitter:description" content="Enum based configuration classes
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/" />
+<meta property="article:modified_time" content="2020-05-04T18:42:13+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="Smoothing.&lt;Enum&gt;">
+<meta itemprop="description" content="Smoothing types 
+">
+<meta itemprop="dateModified" content="2020-05-04T18:42:13&#43;10:00" />
+<meta itemprop="wordCount" content="177">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Smoothing.&lt;Enum&gt;"/>
+<meta name="twitter:description" content="Smoothing types 
 "/>
 
 
@@ -49,7 +54,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -514,7 +519,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
       
       
       
@@ -686,6 +691,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -707,8 +715,15 @@
 
 
 
-<li class="breadcrumb-item active" aria-current="page">
+<li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/">Enums</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
 </li>
 
 	</ol>
@@ -716,140 +731,55 @@
 
             
 <div class="td-content">
-	<h1>Enums</h1>
-        <div class="lead">Enum based configuration classes</div>
-	
-	<p>Reference documentation of classes exposing enums for configuration purposes. These classes exist to allow you to quickly - and with representative names - (de-)activate and/or configure traffic assignment components in PLANit</p>
+	<h1>Smoothing.&lt;Enum&gt;</h1>
+    <div class="lead">Smoothing types</div>
+	       
+	<h4 id="description">Description</h4>
+<p>Class exposing the available smoothing types as enums.</p>
+<h4 id="use">Use</h4>
+<p>Assuming <code>instance = PLANit()</code> is available, and <code>instance.set(TrafficAssignment.&lt;enum&gt;)</code> is invoked.</p>
+<p>Then the smoothing type can be set on the assignment using <code>instance.assignment.set(Smoothing.&lt;enum&gt;)</code> utilising one of the <a href="#fields">Enum Fields</a>.</p>
+<p>The instantiated object is then accessible via  <a href="todo"><code>instance.assignment.smoothing</code></a></p>
+<p>It is possible that not every smoothing method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what smoothing methods are supported.</p>
+<h4 id="see-also">See also</h4>
+<p><a href="../../assignment">Assignment</a> for the various assignment methods where one can set the smoothing on and how to retrieve the instantiated smoothing object.</p>
+<h4 id="type">Type</h4>
+<p>Class <code>Smoothing</code> in <code>Enums.py</code></p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th>&lt;enum&gt; Fields</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MSA</td>
+<td align="left">Method of Successive Averages (MSA)<sup>1</sup> where each iteration has equal impact on the final result (default setting)</td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup>Ortuzar, J., &amp; Willumsen, L. G. (2002). Modelling Transport. John Wiley &amp; Sons Inc.</p>
+<h4 id="example-1">Example 1</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#8f5902;font-style:italic"># Choose to run PLANit with a traditional static traffic assignment method</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
 
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/">OutputFormatter.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>OutputFormatter types</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>OutputType types</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Physical Cost types</p>
-                </div>
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Smoothing types</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/">VirtualCost.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Virtual Cost types</p>
-                </div>
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment.&lt;Enum&gt;</a>
-                    </h5>
-                    <p>Traffic assignment types</p>
-                </div>
-            
-        
-            
-        
-            
-        
-    
+<span style="color:#8f5902;font-style:italic"># set smoothing method to the Method of Succesive Averages</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MSA</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># configure the instantiated property</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">smoothing</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+
+</code></pre></div>
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/fdf36449f100f25cad16a4e33634cf50973e78e0">added content (fdf3644)</a>
+</div>
 </div>
 
-	
-	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/70fac99b3c5d15253b2b311a3ea38b44f131dc4e">streamlining structure and content of pages (70fac99)</a>
-</div>
-</div>
 
           </main>
         </div>
