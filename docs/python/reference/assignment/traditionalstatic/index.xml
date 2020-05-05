@@ -55,7 +55,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate path outputs&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -83,7 +83,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Depending on the chosen option the assignment performs differently&lt;/p&gt;
 &lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;.set(component_type_and_enum_choice)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.set(component_type_enum_choice)&lt;/code&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -97,7 +97,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;component_type_and_enum_choice&lt;/td&gt;
+&lt;td&gt;component_type_enum_choice&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/physicalcosttype&#34;&gt;&lt;code&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
@@ -142,7 +142,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set physical cost to BPR link performance function&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -175,7 +175,9 @@
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../physicalcost&#34;&gt;Physical Cost&lt;/a&gt; for physical cost implementations&lt;br&gt;
+&lt;a href=&#34;../../../smoothingcost&#34;&gt;Smoothing &lt;/a&gt; for smoothing implementations&lt;br&gt;
+&lt;a href=&#34;../../../virtualcost&#34;&gt;Virtual Cost&lt;/a&gt; for virtual cost implementations&lt;/p&gt;
 
       </description>
     </item>

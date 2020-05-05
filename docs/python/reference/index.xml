@@ -229,6 +229,28 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     </item>
     
     <item>
+      <title>Docs: Smoothing</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all Smoothing implementations available.&lt;/p&gt;
+&lt;p&gt;Smoothing refers to the method of weighing the impact of an iteration&amp;rsquo;s result on the final outcome of a traffic assignment equilibration process.&lt;/p&gt;
+&lt;p&gt;Typically, it utilises the &lt;em&gt;&lt;strong&gt;result up to the most recent iteration&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;the most recent iteration&amp;rsquo;s result&lt;/strong&gt;&lt;/em&gt; to construct a &lt;em&gt;&lt;strong&gt;new result&lt;/strong&gt;&lt;/em&gt; where one weighs the impact of both in a certain way. this new result is then used to continue the simulation for the next iteration.&lt;/p&gt;
+&lt;p&gt;For example, if no smoothing is applied, the most recent iteration results become the new result, whereas if smoothing is at maximum, none of the most recent iteration&amp;rsquo;s outcomes are adopted. Instead, the result up to but not including the most recent iteration become the new results, i.e., copying the previous outcome without change. In practice neither of these two is attractive and a middle ground has to be found. This is what the smoothing method does and many different methods exist to achieve this.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/smoothingtype&#34;&gt;Smoothing.&amp;lt;enum&amp;gt;&lt;/a&gt; for smoothing cost type enums&lt;br&gt;
+&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;SmoothingWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Virtual Cost</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

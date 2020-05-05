@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/" />
-<meta property="article:modified_time" content="2020-05-05T17:51:37+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-05T19:03:28+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content=".set_fixed_connectoid_cost(&#43;)">
 <meta itemprop="description" content="A Fixed virtual cost method
 ">
-<meta itemprop="dateModified" content="2020-05-05T17:51:37&#43;10:00" />
-<meta itemprop="wordCount" content="81">
+<meta itemprop="dateModified" content="2020-05-05T19:03:28&#43;10:00" />
+<meta itemprop="wordCount" content="102">
 
 
 
@@ -648,6 +648,52 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Smoothing</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothing">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/msa/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">MSA</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothingmsa">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Virtual Cost</a>
   </li>
   <ul>
@@ -676,6 +722,35 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Speed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostspeed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostspeedset_fixed_speed" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
       
       
     </li>
@@ -849,7 +924,7 @@
     <div class="lead">A Fixed virtual cost method</div>
 	       
 	<h5 id="description">Description</h5>
-<p>Override the default fixed cost on the <a href="../">fixed virtual cost</a> implementation.</p>
+<p>Override the default fixed cost on the <a href="../">fixed virtual cost</a> implementation. Note that the term connectoid in the method name refers to nodes that are regarded as elligble access/egress points to the zone.</p>
 <h4 id="signature">Signature</h4>
 <p><code>.set_fixed_connectoid_cost(fixed_cost_value)</code></p>
 <p>with</p>
@@ -871,7 +946,7 @@
 <td align="center">hour</td>
 <td align="center">yes</td>
 <td align="left">N/A</td>
-<td align="left">Type of output formatter to apply</td>
+<td align="left">new fixed cost value to use</td>
 </tr>
 </tbody>
 </table>
@@ -881,7 +956,7 @@
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># Choose to run PLANit with a traditional static traffic assignment method</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
 
 <span style="color:#8f5902;font-style:italic"># set virtual cost to FIXED</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">FIXED</span><span style="color:#000;font-weight:bold">)</span>
@@ -895,7 +970,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/79eadaba7798cd698bd89e45e5c6a1a00dbecbe6">- added fixed cost entry - refactored page structure for more user friendliness (79eadab)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/ecdb0b2b29e5de84a6c4c785580b082957148f5a">- made a start with smoothing - finalised virtual cost - removed some typos (ecdb0b2)</a>
 </div>
 </div>
 

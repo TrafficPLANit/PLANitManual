@@ -23,7 +23,7 @@
         
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
-&lt;p&gt;Override the default fixed cost on the &lt;a href=&#34;../&#34;&gt;fixed virtual cost&lt;/a&gt; implementation.&lt;/p&gt;
+&lt;p&gt;Override the default fixed cost on the &lt;a href=&#34;../&#34;&gt;fixed virtual cost&lt;/a&gt; implementation. Note that the term connectoid in the method name refers to nodes that are regarded as elligble access/egress points to the zone.&lt;/p&gt;
 &lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;.set_fixed_connectoid_cost(fixed_cost_value)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
@@ -45,7 +45,7 @@
 &lt;td align=&#34;center&#34;&gt;hour&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Type of output formatter to apply&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;new fixed cost value to use&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -55,7 +55,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# set virtual cost to FIXED&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
