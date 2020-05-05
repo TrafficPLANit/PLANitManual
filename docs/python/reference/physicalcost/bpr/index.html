@@ -650,6 +650,35 @@
       
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fixed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostfixed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -803,22 +832,48 @@
         <div class="lead">A BPR link performance function implementation</div>
 	
 	<h5 id="description">Description</h5>
-<p>Travel time on a link for a particular mode is computed using a specific link performance function that relates flow uniquely to a travel time utilising a strictly increasing monotonic function know as the BPR<sup>1</sup> function.</p>
-<p><span class="math inline">\(\Large \tau_a = \tau_a^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta})\)</span></p>
+<p>Travel time on a link segment for a particular mode is computed using a specific link performance function that relates flow uniquely to a travel time utilising a strictly increasing monotonic function know as the BPR<sup>1</sup> function. This function looks like the following</p>
+<p><span class="math inline">\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta})\)</span></p>
 <p>with</p>
-<p><span class="math inline">\(\tau= \textrm{travel time on link} a,\\ \tau^{ \textrm {freeflow}}= \textrm{free flow travel time},\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link } a,\\ C_a = \textrm {saturation flow on link } a,\)</span></p>
+<p><span class="math inline">\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \tau_{a,m}^{ \textrm {freeflow}}= \textrm{free flow travel time on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link segment} a,\\ C_a = \textrm {saturation flow on link segment} a,\)</span></p>
+<p>The <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> parameters can be configured hierarchically, where the most specific configuration takes precedence. The hierarchy is as follows:</p>
+<ul>
+<li>default <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span></li>
+<li>default <span class="math inline">\(\boldsymbol{\alpha_m}\)</span> and <span class="math inline">\(\boldsymbol{\beta_m}\)</span> by mode <span class="math inline">\(m\)</span></li>
+<li>default <span class="math inline">\(\boldsymbol{\alpha_{m,s}}\)</span> and <span class="math inline">\(\boldsymbol{\beta_{m,s}}\)</span> by mode <span class="math inline">\(m\)</span> and link segment type <span class="math inline">\(s\)</span></li>
+<li>default <span class="math inline">\(\boldsymbol{\alpha_{m,l}}\)</span> and <span class="math inline">\(\boldsymbol{\beta_{m,l}}\)</span> by mode <span class="math inline">\(m\)</span> and link segment <span class="math inline">\(l\)</span></li>
+</ul>
+<p>Whenever the more specific configuration is absentn the next most specific configuration is checked and applied, until we reach the simulation wide default which have been pre-set (or overridden by the user).</p>
 <p><sup>1</sup> United States, Bureau of Public Roads, Traffic assignment manual. (1964). Washington.</p>
-<h4 id="use">Use</h4>
-<p>Assuming <code>instance = PLANit()</code> is available, and <code>instance.set(TrafficAssignment.&lt;enum&gt;)</code> is invoked, and physical cost is set to BPR via <code>instance.assignment.set(PhysicalCost.BPR)</code>, then the BPR function can be configured via <code>instance.assignment.physical_cost</code></p>
-<h4 id="type">Type</h4>
-<p>Class <code>PhysicalCostWrapper</code> in <code>Wrappers.py</code></p>
-<h4 id="see-also">See also</h4>
-<p><a href="../../assignment">Traffic assignment</a> on assignments that support this physical cost implementation<br />
-<a href="../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for all available physical cost options<br />
-<a href="../">PhysicalCost</a> landing page for all available physical cost implementations</p>
+<h4 id="defaults">Defaults</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Default</th>
+<th style="text-align: center;">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\alpha\)</span></td>
+<td style="text-align: left;">0.5</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\beta\)</span></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
 <h4 id="methods">Methods</h4>
 <p>Memory output formatter exposes the following methods</p>
 <table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
@@ -826,25 +881,34 @@
 </tr>
 </thead>
 <tbody>
-</tbody>
-</table>
-<p>TODO</p>
-<h4 id="properties">Properties</h4>
-<p>Memory output formatter exposes the following properties</p>
-<table>
-<thead>
-<tr class="header">
-<th>Property</th>
-<th style="text-align: left;">Availability</th>
-<th style="text-align: left;">Description</th>
+<tr class="odd">
+<td><a href="set_default_parameters+"><code>.set_default_parameters(+)</code></a></td>
+<td style="text-align: left;">Override the default <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> across all links</td>
 </tr>
-</thead>
-<tbody>
 </tbody>
 </table>
-<p>TODO</p>
+<p>TODO missing functionality for other setters for parameters (not yet implemented)</p>
+<h4 id="properties">Properties</h4>
+<p>This class has no properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<p>TODO</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># Choose to run PLANit with a traditional static traffic assignment method</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>planit_instance <span class="op">=</span> PLANit()</span>
+<span id="cb1-4"><a href="#cb1-4"></a>planit_instance.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC )</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># set physical cost to BPR link performance function</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>planit_instance.assignment.<span class="bu">set</span>(PhysicalCost.BPR)</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># override the default alpha and beta</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>alpha <span class="op">=</span> <span class="fl">0.87</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>beta <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>planit_instance.assignment.physical_cost.set_default_parameter(alpha, beta)</span></code></pre></div>
+<h4 id="see-also">See also</h4>
+<p><a href="../../assignment">Traffic assignment</a> on assignments that support this physical cost implementation<br />
+<a href="../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for all available physical cost options<br />
+<a href="../">PhysicalCost</a> landing page for all available physical cost implementations</p>
+<h4 id="source-code">Source code</h4>
+<p>Class <code>PhysicalCostWrapper</code> in <code>Wrappers.py</code></p>
 
         <div class="section-index">
     
@@ -933,12 +997,16 @@
         
             
         
+            
+        
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/392d43d9d42e577416aee62b1eabcfc91ce72e11">- added support for mathjax (equations in markdown) by overriding theme&#39;s footer in project - assume pandoc installation available to support latex equations in markdown (pandoc is md converter alternative to default goldmark) - updated readme to reflect the additional effort during installation - added BPR function page to demonstrate use of equations (392d43d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/79eadaba7798cd698bd89e45e5c6a1a00dbecbe6">- added fixed cost entry - refactored page structure for more user friendliness (79eadab)</a>
 </div>
 </div>
 

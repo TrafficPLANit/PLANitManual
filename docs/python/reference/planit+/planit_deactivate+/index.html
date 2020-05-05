@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/" />
-<meta property="article:modified_time" content="2020-05-04T18:42:13+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-05T17:51:37+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content=".deactivate(&#43;)">
 <meta itemprop="description" content="PLANit method 
 ">
-<meta itemprop="dateModified" content="2020-05-04T18:42:13&#43;10:00" />
-<meta itemprop="wordCount" content="148">
+<meta itemprop="dateModified" content="2020-05-05T17:51:37&#43;10:00" />
+<meta itemprop="wordCount" content="139">
 
 
 
@@ -655,6 +655,35 @@
       
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fixed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostfixed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -811,34 +840,33 @@
 	       
 	<h4 id="description">Description</h4>
 <p>This .deactivate(+) method allows you to de-activate types of output for your assignment given some output formatter enum that you provide. Only when an output formatter is activated, de-activating it will result in a de-activation, otherwise the call is imsply ignored.</p>
-<h4 id="use">Use</h4>
-<p>Assuming <code>instance = PLANit()</code> is available, de-activate an output formatter via <code>instance.deactivate(OutputFormatter.&lt;enum&gt;)</code>.</p>
-<h4 id="return-type">Return type</h4>
-<p>N/A</p>
-<h4 id="see-also">See also</h4>
-<p><a href="../../enums/outputformattertype">OutputFormatter.&lt;enum&gt;</a> for supported output formatters<br>
-<a href="../planit_activate+">PLANit.activate(+)</a> for activating output formatters</p>
-<h4 id="parameters">Parameters</h4>
+<h4 id="signature">Signature</h4>
+<p><code>.deactivate(output_formatter_type)</code></p>
+<p>with</p>
 <table>
 <thead>
 <tr>
 <th>Parameter</th>
+<th align="left">Type</th>
+<th align="center">Unit</th>
 <th align="center">Compulsory</th>
 <th align="left">Default</th>
-<th align="left">Type</th>
 <th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../../enums/outputformattertype"><code>OutputFormatter.&lt;enum&gt;</code></a></td>
+<td>output_formatter_type</td>
+<td align="left"><a href="../../enums/outputformattertype"><code>OutputFormatter.&lt;enum&gt;</code></a></td>
+<td align="center">-</td>
 <td align="center">yes</td>
 <td align="left">N/A</td>
-<td align="left">Enum</td>
 <td align="left">Type of output formatter to de-activate</td>
 </tr>
 </tbody>
 </table>
+<h4 id="return-type">Return type</h4>
+<p>N/A</p>
 <h4 id="examples">Examples</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># prep</span>
@@ -852,10 +880,13 @@
 <span style="color:#8f5902;font-style:italic"># likely you want to activate another output type instead</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MEMORY</span><span style="color:#000;font-weight:bold">)</span>
 
-</code></pre></div>
+</code></pre></div><h4 id="see-also">See also</h4>
+<p><a href="../../enums/outputformattertype">OutputFormatter.&lt;enum&gt;</a> for supported output formatters<br>
+<a href="../planit_activate+">PLANit.activate(+)</a> for activating output formatters</p>
+
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/fdf36449f100f25cad16a4e33634cf50973e78e0">added content (fdf3644)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/79eadaba7798cd698bd89e45e5c6a1a00dbecbe6">- added fixed cost entry - refactored page structure for more user friendliness (79eadab)</a>
 </div>
 </div>
 

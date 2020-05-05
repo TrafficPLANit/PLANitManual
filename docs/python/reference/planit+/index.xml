@@ -24,34 +24,33 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .activate(+) method allows you to activate different types of output for your assignment given some output formatter enum that you provide&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, activate your (additional) outputs via &lt;code&gt;instance.activate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
-&lt;a href=&#34;../planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; for de-activating output formatters&lt;/p&gt;
-&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.activate(output_formatter_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;output_formatter_type&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of output formatter to apply&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -74,7 +73,10 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# access via .memory property to configure further&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
+&lt;a href=&#34;../planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; for de-activating output formatters&lt;/p&gt;
+
       </description>
     </item>
     
@@ -89,34 +91,33 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .deactivate(+) method allows you to de-activate types of output for your assignment given some output formatter enum that you provide. Only when an output formatter is activated, de-activating it will result in a de-activation, otherwise the call is imsply ignored.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, de-activate an output formatter via &lt;code&gt;instance.deactivate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
-&lt;a href=&#34;../planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; for activating output formatters&lt;/p&gt;
-&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.deactivate(output_formatter_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;output_formatter_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of output formatter to de-activate&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -130,7 +131,10 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# likely you want to activate another output type instead&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
+&lt;a href=&#34;../planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; for activating output formatters&lt;/p&gt;
+
       </description>
     </item>
     
@@ -145,14 +149,10 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .run() method conducts the actual traffic assignment run. Make sure all configuration has been applied before calling this method. Results are only available after invoking this method.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, conduct the run via &lt;code&gt;instance.run()&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.run()&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
-&lt;p&gt;None&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -170,7 +170,9 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;Do something with results&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+
       </description>
     </item>
     
@@ -185,40 +187,42 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This .set allows you to set the type of traffic assignment to use on your planit instance.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, set your choice of assignment via &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;/p&gt;
-&lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set(traffic_assignment_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;&lt;code&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;traffic_assignment_type&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;&lt;code&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Enum&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of traffic assignment to apply&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;/p&gt;
+
       </description>
     </item>
     
@@ -233,15 +237,8 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .assignment property allows access to the assignment instance for configuration purposes. Depending on the chosen assignment different methods and properties will be exposed. Only a single assignment is available for each planit instance.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you instantiate the assignment via &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the assignment instance can be accessed via this property, e.g., &lt;code&gt;instance.assignment&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;Instance of Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;br&gt;
-&lt;a href=&#34;../planit_set+&#34;&gt;.set(+)&lt;/a&gt; on how to instantiate this property&lt;/p&gt;
-&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the
-&lt;a href=&#34;../../assignment&#34;&gt;assignment section&lt;/a&gt; of this manual&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; implementation&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on
 the traditional static assignment class, since this is the instance it returns&lt;/p&gt;
@@ -251,7 +248,12 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;br&gt;
+&lt;a href=&#34;../planit_set+&#34;&gt;.set(+)&lt;/a&gt; on how to instantiate this property&lt;/p&gt;
+&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the
+&lt;a href=&#34;../../assignment&#34;&gt;assignment section&lt;/a&gt; of this manual&lt;/p&gt;
+
       </description>
     </item>
     
@@ -266,19 +268,18 @@ the traditional static assignment class, since this is the instance it returns&l
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .demands property allows access to the in-memory version of the parsed input demands&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you access the demands via &lt;code&gt;instance.demands&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;Instance of Class &lt;code&gt;DemandsWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
+&lt;p&gt;Demands implementation (TODO)&lt;/p&gt;
+&lt;p&gt;Source code:  &lt;code&gt;DemandsWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory demands instance&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;demands&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
+
       </description>
     </item>
     
@@ -293,15 +294,9 @@ the traditional static assignment class, since this is the instance it returns&l
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .memory property allows access to the results in-memory. Configuration specific to this output formatter is also accessible via this property&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and the memory output formatter has been activated via &lt;code&gt;instance.activate(OutputFormatter.MEMORY)&lt;/code&gt; ,you access the memory output formatter via &lt;code&gt;instance.memory&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;Instance of Class &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter
-&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory output formatter &lt;/a&gt; describes the options available on the memory output formatter implementation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory Output Formatter&lt;/a&gt; implementation&lt;/p&gt;
+&lt;p&gt;Source code: &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -315,7 +310,12 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter
+&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory output formatter &lt;/a&gt; describes the options available on the memory output formatter implementation&lt;/p&gt;
+
       </description>
     </item>
     
@@ -330,19 +330,18 @@ the traditional static assignment class, since this is the instance it returns&l
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .network property allows access to the in-memory version of the parsed input physical transport network&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you access the network via &lt;code&gt;instance.network&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;Instance of Class &lt;code&gt;PhysicalNetworkWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Network&lt;/a&gt; describes the options available on the physical network implementation&lt;/p&gt;
+&lt;p&gt;Network implementation (TODO)&lt;/p&gt;
+&lt;p&gt;Source code: &lt;code&gt;PhysicalNetworkWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory network instance&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;network&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;Network describes the options available on the physical network implementation (TODO)&lt;/p&gt;
+
       </description>
     </item>
     
@@ -357,15 +356,9 @@ the traditional static assignment class, since this is the instance it returns&l
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .output property allows access to specific configuration options on the native PLANit output formatter. The native formatter persists results to disk using csv files with additional meta data provided in xml files.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, the (default) output formatter is accessible via &lt;code&gt;instance.output&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;Instance of Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter &lt;br&gt;
-&lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default output formatter&lt;/a&gt; describes the options available on the default output formatter implementation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default Output Formatter&lt;/a&gt; implementation&lt;/p&gt;
+&lt;p&gt;Source code: &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -378,7 +371,12 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter &lt;br&gt;
+&lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default output formatter&lt;/a&gt; describes the options available on the default output formatter implementation&lt;/p&gt;
+
       </description>
     </item>
     
@@ -393,19 +391,18 @@ the traditional static assignment class, since this is the instance it returns&l
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .zoning property allows access to the in-memory version of the parsed input zoning structure&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you access the zoning via &lt;code&gt;instance.zoning&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;Instance of Class &lt;code&gt;ZoningWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Zoning&lt;/a&gt; describes the options available on the zoning structure implementation&lt;/p&gt;
+&lt;p&gt;Zoning implementation (TODO)&lt;/p&gt;
+&lt;p&gt;Source code: &lt;code&gt;ZoningWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory zoning structure instance&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;zoning&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;Zoning describes the options available on the zoning structure implementation (TODO)&lt;/p&gt;
+
       </description>
     </item>
     

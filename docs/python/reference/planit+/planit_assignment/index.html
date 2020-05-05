@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/" />
-<meta property="article:modified_time" content="2020-05-04T18:42:13+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-05T17:51:37+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content=".assignment">
 <meta itemprop="description" content="PLANit property
 ">
-<meta itemprop="dateModified" content="2020-05-04T18:42:13&#43;10:00" />
-<meta itemprop="wordCount" content="152">
+<meta itemprop="dateModified" content="2020-05-05T17:51:37&#43;10:00" />
+<meta itemprop="wordCount" content="123">
 
 
 
@@ -655,6 +655,35 @@
       
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fixed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostfixed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -811,15 +840,8 @@
 	       
 	<h4 id="description">Description</h4>
 <p>The .assignment property allows access to the assignment instance for configuration purposes. Depending on the chosen assignment different methods and properties will be exposed. Only a single assignment is available for each planit instance.</p>
-<h4 id="use">Use</h4>
-<p>Assuming <code>instance = PLANit()</code> is available, you instantiate the assignment via <code>instance.set(TrafficAssignment.&lt;enum&gt;)</code>. After this, the assignment instance can be accessed via this property, e.g., <code>instance.assignment</code></p>
 <h4 id="return-type">Return type</h4>
-<p>Instance of Class <code>AssignmentWrapper</code> in <code>Wrappers.py</code></p>
-<h4 id="see-also">See also</h4>
-<p><a href="../../enums/trafficassignmenttype">TrafficAssignment.&lt;enum&gt;</a> for supported assignment types<br>
-<a href="../planit_set+">.set(+)</a> on how to instantiate this property</p>
-<p>To find out more about the options available on any of the assignment implementations, please refer to the
-<a href="../../assignment">assignment section</a> of this manual</p>
+<p><a href="../../assignment">Traffic Assignment</a> implementation</p>
 <h4 id="example-1">Example 1</h4>
 <p>Create a traditional static traffic assignment. The <code>planit_instance.assignment.&lt;call method&gt;</code> must call a method available on
 the traditional static assignment class, since this is the instance it returns</p>
@@ -829,10 +851,15 @@ the traditional static assignment class, since this is the instance it returns</
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
 
-</code></pre></div>
+</code></pre></div><h4 id="see-also">See also</h4>
+<p><a href="../../enums/trafficassignmenttype">TrafficAssignment.&lt;enum&gt;</a> for supported assignment types<br>
+<a href="../planit_set+">.set(+)</a> on how to instantiate this property</p>
+<p>To find out more about the options available on any of the assignment implementations, please refer to the
+<a href="../../assignment">assignment section</a> of this manual</p>
+
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/fdf36449f100f25cad16a4e33634cf50973e78e0">added content (fdf3644)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/79eadaba7798cd698bd89e45e5c6a1a00dbecbe6">- added fixed cost entry - refactored page structure for more user friendliness (79eadab)</a>
 </div>
 </div>
 

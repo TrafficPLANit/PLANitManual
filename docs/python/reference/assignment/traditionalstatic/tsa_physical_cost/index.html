@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/" />
-<meta property="article:modified_time" content="2020-05-05T13:35:59+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-05T17:51:37+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content=".physical_cost">
 <meta itemprop="description" content="Traditional static traffic assignment property
 ">
-<meta itemprop="dateModified" content="2020-05-05T13:35:59&#43;10:00" />
-<meta itemprop="wordCount" content="136">
+<meta itemprop="dateModified" content="2020-05-05T17:51:37&#43;10:00" />
+<meta itemprop="wordCount" content="94">
 
 
 
@@ -655,6 +655,35 @@
       
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fixed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostfixed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -821,15 +850,9 @@
 	       
 	<h4 id="description">Description</h4>
 <p>The .physical_cost property allows access to the chosen physical cost assuming it has been set. It can be used for configuration specific to the chosen type.</p>
-<h4 id="use">Use</h4>
-<p>Assuming <code>instance = PLANit()</code> is available, <code>instance.set(TrafficAssignment.TRADITIONAL_STATIC)</code> is invoked, and the physical cost has been set via <code>instance.assignment.set(PhysicalCost.&lt;enum&gt;)</code>.</p>
-<p>The <code>instance.assignment.physical_cost</code> method can then be used to retrieve the chosen physical cost instance</p>
 <h4 id="return-type">Return type</h4>
-<p>Instance of Class <code>PhysicalCostWrapper</code> in <code>Wrappers.py</code></p>
-<h4 id="see-also">See also</h4>
-<p><a href="../">Traditional static traffic assignment</a> for information on this method&rsquo;s class instance<br>
-<a href="../../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for all available physical cost options<br>
-<a href="../../../physicalcost">PhysicalCost</a> Describes the options available for all available physical cost implementations</p>
+<p><a href="../../../physicalcost">Physical Cost</a> implementation</p>
+<p>Source code: <code>PhysicalCostWrapper</code> in <code>Wrappers.py</code></p>
 <h4 id="example-1">Example 1</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># prep</span>
@@ -848,10 +871,13 @@
 <span style="color:#8f5902;font-style:italic"># &lt;other configuration&gt;</span>
 <span style="color:#8f5902;font-style:italic">#</span>
 
-</code></pre></div>
+</code></pre></div><h4 id="see-also">See also</h4>
+<p><a href="../../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for all available physical cost options<br>
+<a href="../../../physicalcost">PhysicalCost</a> Describes the options available for all available physical cost implementations</p>
+
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/392d43d9d42e577416aee62b1eabcfc91ce72e11">- added support for mathjax (equations in markdown) by overriding theme&#39;s footer in project - assume pandoc installation available to support latex equations in markdown (pandoc is md converter alternative to default goldmark) - updated readme to reflect the additional effort during installation - added BPR function page to demonstrate use of equations (392d43d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/79eadaba7798cd698bd89e45e5c6a1a00dbecbe6">- added fixed cost entry - refactored page structure for more user friendliness (79eadab)</a>
 </div>
 </div>
 

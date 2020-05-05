@@ -27,13 +27,6 @@
 &lt;p&gt;&lt;em&gt;&lt;sup&gt;1&lt;/sup&gt; Beckmann, M., McGuire, C. B., &amp;amp; Winsten, B. W. (1956). Studies in the economics of transportation. New Haven CT, USA: Yale University Press.&lt;/em&gt;&lt;/p&gt;
 &lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
 &lt;p&gt;TODO&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, instantiate traditional static assignment via &lt;code&gt;instance.set( TrafficAssignment.TRADITIONAL_STATIC)&lt;/code&gt;. After this, the assignment instance can be accessed via &lt;code&gt;instance.assignment&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;TraditionalStaticAssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt; to see how to set the traffic assignment type&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
 &lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
 &lt;p&gt;Traditional static assignment exposes the following methods.&lt;/p&gt;
 &lt;table&gt;
@@ -114,7 +107,12 @@
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt; to see how to set the traffic assignment type&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;TAssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     

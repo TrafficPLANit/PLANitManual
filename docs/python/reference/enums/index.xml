@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: OutputFormatter.&lt;Enum&gt;</title>
+      <title>Docs: OutputFormatter.&lt;enum&gt;</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -23,21 +23,13 @@
         
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
-&lt;p&gt;Class exposing supported output formatters as enums.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you activate an output formatter via &lt;code&gt;instance.activate(OutputFormatter.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the chosen formatter can be accessed as outlined in the &lt;strong&gt;Access instance via&lt;/strong&gt; column in &lt;a href=&#34;#fields&#34;&gt;Fields&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt;
-&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;OutputFormatter&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class exposing supported output formatters as Enums.&lt;/p&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Access instance via&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Instance documentation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -45,29 +37,16 @@
 &lt;tr&gt;
 &lt;td&gt;PLANIT_IO&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;PLANit&amp;rsquo;s native output format&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../planit+/output&#34;&gt;&lt;code&gt;instance.output&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../outputformatters/default&#34;&gt;Default Output Formatter&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;MEMORY&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Stores results in memory&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../planit+/memory&#34;&gt;&lt;code&gt;instance.memory&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory Output Formatter&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Without any explicit activation of any output formatter, PLANit will automatically &lt;/span&gt;
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate PLAN_IO upon the creation of any traffic assignment type. No explicit action needed&lt;/span&gt;
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# The output formatter is then accessible via the x.output property&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -78,12 +57,28 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# access memory based output formatter instance to configure further&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Without any explicit activation of any output formatter, PLANit will automatically &lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate PLAN_IO upon the creation of any traffic assignment type. No explicit action needed&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# The output formatter is then accessible via the x.output property&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;OutputFormatter&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     
     <item>
-      <title>Docs: OutputType.&lt;Enum&gt;</title>
+      <title>Docs: OutputType.&lt;enum&gt;</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -93,20 +88,12 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing the available Output type types as enums. When used to activate an output type on a traffic assignment instance it will trigger output results of that type to be generated and further configuration options to be exposed via the relevant properties on the assignment instance.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
-&lt;p&gt;Then the output type types can be activated on the assignment using &lt;code&gt;instance.assignment.activate_output(OutputType.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can activate output types and how to retrieve the related output configuration instance for further configuration.&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;OutputType&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Access instance via&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Instance documentation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -114,19 +101,16 @@
 &lt;tr&gt;
 &lt;td&gt;LINK&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Represents link outputs&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.link_configuration&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;OD&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Represents origin-destination outputs&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.od_configuration&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;PATH&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Represents path outputs&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.path_configuration&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -165,7 +149,11 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;link_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can activate output types and how to retrieve the related output configuration instance for further configuration.&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OutputType&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     
@@ -180,21 +168,13 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing the available Physical Cost types as enums.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
-&lt;p&gt;Then the physical cost type can be set on the assignment using &lt;code&gt;instance.assignment.set(PhysicalCost.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is possible that not every physical cost method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what physical cost methods are supported.&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the physical cost on and how to retrieve the instantiated physical cost object.&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;PhysicalCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Access instance via&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Instance documentation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -202,8 +182,7 @@
 &lt;tr&gt;
 &lt;td&gt;BPR&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Bureau of Public Roads&lt;sup&gt;1&lt;/sup&gt; link performance function&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;instance.assignment.physical_cost&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../physicalcost/bpr&#34;&gt;BPRCost&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -220,12 +199,16 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the physical cost on and how to retrieve the instantiated physical cost object.&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;PhysicalCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     
     <item>
-      <title>Docs: Smoothing.&lt;Enum&gt;</title>
+      <title>Docs: Smoothing.&lt;enum&gt;</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -235,14 +218,7 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing the available smoothing types as enums.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
-&lt;p&gt;Then the smoothing type can be set on the assignment using &lt;code&gt;instance.assignment.set(Smoothing.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is possible that not every smoothing method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what smoothing methods are supported.&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the smoothing on and how to retrieve the instantiated smoothing object.&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;Smoothing&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -275,12 +251,16 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the smoothing on and how to retrieve the instantiated smoothing object.&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;Smoothing&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     
     <item>
-      <title>Docs: VirtualCost.&lt;Enum&gt;</title>
+      <title>Docs: VirtualCost.&lt;enum&gt;</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -290,14 +270,7 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing the available Virtual Cost types as enums.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, and &lt;code&gt;instance.set(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt; is invoked.&lt;/p&gt;
-&lt;p&gt;Then the physical cost type can be set on the assignment using &lt;code&gt;instance.assignment.set(VirtualCost.&amp;lt;enum&amp;gt;)&lt;/code&gt; utilising one of the &lt;a href=&#34;#fields&#34;&gt;Enum Fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is possible that not every virtual cost method is supported by every traffic assignment method. The documentation of the chosen traffic assignment method will indicate what virtual cost methods are supported.&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the virtual cost on and how to retrieve the instantiated virtual cost object.&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;VirtualCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -335,7 +308,11 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure the instantiated property&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;virtual_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the virtual cost on and how to retrieve the instantiated virtual cost object.&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;VirtualCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     
@@ -350,20 +327,12 @@
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Class exposing supported traffic assignment methods as enums.&lt;/p&gt;
-&lt;h4 id=&#34;use&#34;&gt;Use&lt;/h4&gt;
-&lt;p&gt;Assuming &lt;code&gt;instance = PLANit()&lt;/code&gt; is available, you activate an output formatter via &lt;code&gt;instance.activate(TrafficAssignment.&amp;lt;enum&amp;gt;)&lt;/code&gt;. After this, the chosen assignment type can be accessed via &lt;code&gt;instance.assignment&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;type&#34;&gt;Type&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;TrafficAssignment&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Access instance via&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Instance documentation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -371,7 +340,6 @@
 &lt;tr&gt;
 &lt;td&gt;TRADITIONAL_STATIC&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Traditional static assignment&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;&lt;code&gt;instance.assignment&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../assignment/traditionalstatic&#34;&gt;Traditional static assignment&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -384,7 +352,12 @@
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# access any method of the implementation via&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;TrafficAssignment&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+
       </description>
     </item>
     
