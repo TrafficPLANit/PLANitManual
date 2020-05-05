@@ -194,10 +194,54 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
         &lt;p&gt;Reference documentation for all output formatter implementations available.&lt;/p&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../enums/outputformattertype&#34;&gt;Outputformatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for related output formatter type enums&lt;br&gt;
-&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate output formatters
+&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate output formatters&lt;br&gt;
+&lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate output formatters&lt;br&gt;
 &lt;a href=&#34;../planit+/planit_output&#34;&gt;planit(+).output&lt;/a&gt; on how to access the default output formatter instance (if active)&lt;br&gt;
 &lt;a href=&#34;../planit+/planit_memory&#34;&gt;planit(+).memory&lt;/a&gt; on how to access the memory output formatter instance (if active)&lt;/p&gt;
-&lt;p&gt;Currently the following implementations are supported:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Physical Cost</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/physicalcost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/physicalcost/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all Physical Cost implementations available.&lt;/p&gt;
+&lt;p&gt;Physical Cost refers to cost incurred on the modelled physical transport network. This in contrast to &lt;a href=&#34;../virtualcost&#34;&gt;Virtual Cost&lt;/a&gt; which refers to cost incurred on the virtual transport network (portion of a trip between departing/arriving from/at a zone and the first modelled physical infrastructure entity (node/link).&lt;/p&gt;
+&lt;p&gt;The generalised cost for any path consist of the physical and virtual cost combined.&lt;/p&gt;
+&lt;p&gt;How physical cost is computed depends on the method. Methods are often dependent on the chosen &lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for physical cost type enums&lt;br&gt;
+&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available
+&lt;a href=&#34;../enums/virtualcosttype&#34;&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for virtual cost type enums&lt;br&gt;
+&lt;a href=&#34;../virtualcost&#34;&gt;Virtual Cost&lt;/a&gt; on options for the virtual cost implementations&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Virtual Cost</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all Virtual Cost implementations available.&lt;/p&gt;
+&lt;p&gt;Virtual Cost refers to cost incurred on the virtual transport network (portion of a trip between departing/arriving from/at a zone and the first modelled physical infrastructure entity (node/link). This in contrast to &lt;a href=&#34;../physicalcost&#34;&gt;Physical Cost&lt;/a&gt; which refers to cost incurred on the modelled physical transport network.&lt;/p&gt;
+&lt;p&gt;The generalised cost for any path consist of the physical and virtual cost combined.&lt;/p&gt;
+&lt;p&gt;How virtual cost is computed depends on the method. Methods are potentially dependent on the chosen &lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/virtualcosttype&#34;&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for virtual cost type enums
+&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available
+&lt;a href=&#34;../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for physical cost type enums&lt;br&gt;
+&lt;a href=&#34;../physicalcost&#34;&gt;Physical Cost&lt;/a&gt; on options for the physical cost implementations&lt;/p&gt;
 
       </description>
     </item>

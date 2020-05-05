@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +20,23 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Traditional static assignment | PLANit</title><meta property="og:title" content="Traditional static assignment" />
-<meta property="og:description" content="TrafficAssignment.TRADITIONAL_STATIC
+<title>.virtual_cost | PLANit</title><meta property="og:title" content=".virtual_cost" />
+<meta property="og:description" content="Traditional static traffic assignment property
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/" />
-<meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Traditional static assignment">
-<meta itemprop="description" content="TrafficAssignment.TRADITIONAL_STATIC
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Traditional static assignment"/>
-<meta name="twitter:description" content="TrafficAssignment.TRADITIONAL_STATIC
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/" />
+<meta property="article:modified_time" content="2020-05-05T13:35:59+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content=".virtual_cost">
+<meta itemprop="description" content="Traditional static traffic assignment property
+">
+<meta itemprop="dateModified" content="2020-05-05T13:35:59&#43;10:00" />
+<meta itemprop="wordCount" content="135">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=".virtual_cost"/>
+<meta name="twitter:description" content="Traditional static traffic assignment property
 "/>
 
 
@@ -49,7 +54,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -467,7 +472,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_virtual_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_virtual_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
       
       
     </li>
@@ -764,6 +769,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -792,8 +800,15 @@
 
 
 
-<li class="breadcrumb-item active" aria-current="page">
+<li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/">Traditional static</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
 </li>
 
 	</ol>
@@ -801,225 +816,45 @@
 
             
 <div class="td-content">
-	<h1>Traditional static assignment</h1>
-        <div class="lead">TrafficAssignment.TRADITIONAL_STATIC</div>
-	
+	<h1>.virtual_cost</h1>
+    <div class="lead">Traditional static traffic assignment property</div>
+	       
 	<h4 id="description">Description</h4>
-<p>The traditional static traffic assignment instance let&rsquo;s you configure the most well-known of all traffic assignment methods. Implementation is based on Beckmann (1956)<sup>1</sup> supporting multiple time periods and modes.</p>
-<p><em><sup>1</sup> Beckmann, M., McGuire, C. B., &amp; Winsten, B. W. (1956). Studies in the economics of transportation. New Haven CT, USA: Yale University Press.</em></p>
-<h4 id="defaults">Defaults</h4>
-<p>TODO</p>
+<p>The .virtual_cost property allows access to the chosen virtual cost assuming it has been set. It can be used for configuration specific to the chosen type.</p>
 <h4 id="use">Use</h4>
-<p>Assuming <code>instance = PLANit()</code> is available, instantiate traditional static assignment via <code>instance.set( TrafficAssignment.TRADITIONAL_STATIC)</code>. After this, the assignment instance can be accessed via <code>instance.assignment</code></p>
-<h4 id="type">Type</h4>
-<p>Class <code>TraditionalStaticAssignmentWrapper</code> in <code>Wrappers.py</code></p>
+<p>Assuming <code>instance = PLANit()</code> is available, <code>instance.set(TrafficAssignment.TRADITIONAL_STATIC)</code> is invoked, and the virtual cost has been set via <code>instance.assignment.set(VirtualCost.&lt;enum&gt;)</code>.</p>
+<p>The <code>instance.assignment.virtual_cost</code> method can then be used to retrieve the chosen virtual cost instance</p>
+<h4 id="return-type">Return type</h4>
+<p>Instance of Class <code>VirtualCostWrapper</code> in <code>Wrappers.py</code></p>
 <h4 id="see-also">See also</h4>
-<p><a href="../../planit+/planit_set+">PLANit.set(+)</a> to see how to set the traffic assignment type<br>
-<a href="../../planit+/planit_assignment">PLANit.assignment</a> on how to access the traffic assignment instance</p>
-<h4 id="methods">Methods</h4>
-<p>Traditional static assignment exposes the following methods.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="tsa_set+"><code>.set(+)</code></a></td>
-<td align="left">Choose various assignment components (e.g., physical cost, virtual cost, smoothing etc.)</td>
-</tr>
-<tr>
-<td><a href="tsa_activate_output+"><code>.activate_output(+)</code></a></td>
-<td align="left">Activate different types of output to be included in the results</td>
-</tr>
-</tbody>
-</table>
-<p>TODO</p>
-<h4 id="properties">Properties</h4>
-<p>Traditional static assignment exposes the following properties</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th align="left">Availability</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.gap_function</code></td>
-<td align="left">Always</td>
-<td align="left">Access to configuration of the gap function</td>
-</tr>
-<tr>
-<td><code>.output_configuration</code></td>
-<td align="left">Always</td>
-<td align="left">Access to general configuration options regarding outputs</td>
-</tr>
-<tr>
-<td><code>.path_configuration</code></td>
-<td align="left">Post calling <a href="tsa_activate_output+"><code>.activate_output(OutputType.PATH)</code></a></td>
-<td align="left">Access to configuration options regarding path output</td>
-</tr>
-<tr>
-<td><code>.link_configuration</code></td>
-<td align="left">Always unless deactivated</td>
-<td align="left">Access to configuration options regarding link outputs</td>
-</tr>
-<tr>
-<td><code>.od_configuration</code></td>
-<td align="left">Post calling <a href="tsa_activate_output+"><code>.activate_output(OutputType.OD)</code></a></td>
-<td align="left">Access to configuration options regarding origin-destination outputs</td>
-</tr>
-<tr>
-<td><a href="tsa_physical_cost"><code>.physical_cost</code></a></td>
-<td align="left">Post calling <a href="tsa_set+"><code>.set(PhysicalCost.&lt;Enum&gt;)</code></a></td>
-<td align="left">Access to chosen physical cost instance</td>
-</tr>
-<tr>
-<td><code>.smoothing</code></td>
-<td align="left">Post calling <a href="../../enums/smoothingtype"><code>.set(Smoothing.&lt;Enum&gt;)</code></a></td>
-<td align="left">Access to chosen smoothing method</td>
-</tr>
-<tr>
-<td><code>.virtual_cost</code></td>
-<td align="left">Post calling <a href="../../enums/virtualcosttype"><code>.set(VirtualCost.&lt;Enum&gt;)</code></a></td>
-<td align="left">Access to chosen virtual cost instance</td>
-</tr>
-</tbody>
-</table>
+<p><a href="../">Traditional static traffic assignment</a> for information on this method&rsquo;s class instance<br>
+<a href="../../../enums/virtualcosttype">VirtualCost.&lt;enum&gt;</a> for all available virtual cost options<br>
+<a href="../../../virtualcost">VirtualCost</a> Describes the options for all available virtual cost implementations</p>
 <h4 id="example-1">Example 1</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-<span style="color:#8f5902;font-style:italic"># Choose to run PLANit with a traditional static traffic assignment method</span>
+<span style="color:#8f5902;font-style:italic"># prep</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic">#</span>
+<span style="color:#8f5902;font-style:italic"># &lt;other configuration&gt;</span>
+<span style="color:#8f5902;font-style:italic">#</span>
+
+<span style="color:#8f5902;font-style:italic"># We choose SPEED as our virtual cost, set it, and access it for further configuration</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">SPEED</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">virtual_cost</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+
+<span style="color:#8f5902;font-style:italic">#</span>
+<span style="color:#8f5902;font-style:italic"># &lt;other configuration&gt;</span>
+<span style="color:#8f5902;font-style:italic">#</span>
 
 </code></pre></div>
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/">.activate_output(&#43;)</a>
-                    </h5>
-                    <p>Traditional static traffic assignment method</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
-                    </h5>
-                    <p>Traditional static traffic assignment method</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/">.physical_cost</a>
-                    </h5>
-                    <p>Traditional static traffic assignment property</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
-                    </h5>
-                    <p>Traditional static traffic assignment property</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/392d43d9d42e577416aee62b1eabcfc91ce72e11">- added support for mathjax (equations in markdown) by overriding theme&#39;s footer in project - assume pandoc installation available to support latex equations in markdown (pandoc is md converter alternative to default goldmark) - updated readme to reflect the additional effort during installation - added BPR function page to demonstrate use of equations (392d43d)</a>
+</div>
 </div>
 
-	
-	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020: <a  href="/commit/fdf36449f100f25cad16a4e33634cf50973e78e0">added content (fdf3644)</a>
-</div>
-</div>
 
           </main>
         </div>

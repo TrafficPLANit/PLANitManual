@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – Virtual Cost</title>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/</link>
+    <description>Recent content in Virtual Cost on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
