@@ -43,6 +43,10 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</loc>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_run/</loc>
     <lastmod>2020-05-05T19:03:28+10:00</lastmod>
   </url>
@@ -98,6 +102,10 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</loc>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</loc>
     <lastmod>2020-05-05T17:51:37+10:00</lastmod>
   </url>
@@ -110,6 +118,10 @@
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</loc>
     <lastmod>2020-05-05T19:03:28+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</loc>
   </url>
   
   <url>
@@ -185,6 +197,14 @@
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/</loc>
     <lastmod>2020-05-03T18:08:40+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/</loc>
   </url>
   
   <url>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -455,13 +455,31 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_deactivate_output" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/">.deactivate_output(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_set" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
       
       
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_output_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/">.output_configuration</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_physical_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/">.physical_cost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_smoothing" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/">.smoothing</a>
       
       
       
@@ -533,6 +551,35 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumstrafficassignmenttype" href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Configuration</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfiguration">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationoutputconfiguration" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/">General</a>
       
       
     </li>
@@ -931,6 +978,10 @@
 <td><a href="tsa_activate_output+"><code>.activate_output(+)</code></a></td>
 <td align="left">Activate different types of output to be included in the results</td>
 </tr>
+<tr>
+<td><a href="tsa_deactivate_output+"><code>.deactivate_output(+)</code></a></td>
+<td align="left">De-activate types of output to exclude them from the results</td>
+</tr>
 </tbody>
 </table>
 <p>TODO</p>
@@ -951,7 +1002,7 @@
 <td align="left">Access to configuration of the gap function</td>
 </tr>
 <tr>
-<td><code>.output_configuration</code></td>
+<td><a href="tsa_output_configuration"><code>.output_configuration</code></a></td>
 <td align="left">Always</td>
 <td align="left">Access to general configuration options regarding outputs</td>
 </tr>
@@ -976,12 +1027,12 @@
 <td align="left">Access to chosen physical cost instance</td>
 </tr>
 <tr>
-<td><code>.smoothing</code></td>
+<td><a href="tsa_smoothing"><code>.smoothing</code></a></td>
 <td align="left">Post calling <a href="../../enums/smoothingtype"><code>.set(Smoothing.&lt;Enum&gt;)</code></a></td>
 <td align="left">Access to chosen smoothing method</td>
 </tr>
 <tr>
-<td><code>.virtual_cost</code></td>
+<td><a href="tsa_virtual_cost"><code>.virtual_cost</code></a></td>
 <td align="left">Post calling <a href="../../enums/virtualcosttype"><code>.set(VirtualCost.&lt;Enum&gt;)</code></a></td>
 <td align="left">Access to chosen virtual cost instance</td>
 </tr>
@@ -997,7 +1048,7 @@
 <p><a href="../../planit+/planit_set+">PLANit.set(+)</a> to see how to set the traffic assignment type<br>
 <a href="../../planit+/planit_assignment">PLANit.assignment</a> on how to access the traffic assignment instance</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>TAssignmentWrapper</code> in <code>Wrappers.py</code></p>
+<p>Class <code>AssignmentWrapper</code> in <code>Wrappers.py</code></p>
 
         <div class="section-index">
     
@@ -1023,6 +1074,15 @@
                 </div>
             
         
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/">.deactivate_output(&#43;)</a>
+                    </h5>
+                    <p>Traditional static traffic assignment method</p>
+                </div>
             
         
             
@@ -1057,6 +1117,15 @@
             
                 <div class="entry">
                     <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/">.output_configuration</a>
+                    </h5>
+                    <p>Traditional static traffic assignment property</p>
+                </div>
+            
+        
+            
+                <div class="entry">
+                    <h5>
                         <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/">.physical_cost</a>
                     </h5>
                     <p>Traditional static traffic assignment property</p>
@@ -1070,10 +1139,23 @@
             
                 <div class="entry">
                     <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/">.smoothing</a>
+                    </h5>
+                    <p>Traditional static traffic assignment property</p>
+                </div>
+            
+        
+            
+                <div class="entry">
+                    <h5>
                         <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
                     </h5>
                     <p>Traditional static traffic assignment property</p>
                 </div>
+            
+        
+            
+        
             
         
             

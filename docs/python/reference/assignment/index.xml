@@ -45,6 +45,10 @@
 &lt;td&gt;&lt;a href=&#34;tsa_activate_output+&#34;&gt;&lt;code&gt;.activate_output(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Activate different types of output to be included in the results&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_deactivate_output+&#34;&gt;&lt;code&gt;.deactivate_output(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;De-activate types of output to exclude them from the results&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;TODO&lt;/p&gt;
@@ -65,7 +69,7 @@
 &lt;td align=&#34;left&#34;&gt;Access to configuration of the gap function&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.output_configuration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_output_configuration&#34;&gt;&lt;code&gt;.output_configuration&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to general configuration options regarding outputs&lt;/td&gt;
 &lt;/tr&gt;
@@ -90,12 +94,12 @@
 &lt;td align=&#34;left&#34;&gt;Access to chosen physical cost instance&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.smoothing&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_smoothing&#34;&gt;&lt;code&gt;.smoothing&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;../../enums/smoothingtype&#34;&gt;&lt;code&gt;.set(Smoothing.&amp;lt;Enum&amp;gt;)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to chosen smoothing method&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.virtual_cost&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_virtual_cost&#34;&gt;&lt;code&gt;.virtual_cost&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;../../enums/virtualcosttype&#34;&gt;&lt;code&gt;.set(VirtualCost.&amp;lt;Enum&amp;gt;)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to chosen virtual cost instance&lt;/td&gt;
 &lt;/tr&gt;
@@ -111,7 +115,7 @@
 &lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt; to see how to set the traffic assignment type&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt; on how to access the traffic assignment instance&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;TAssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

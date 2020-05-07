@@ -76,6 +76,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
 &lt;a href=&#34;../planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; for de-activating output formatters&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -118,6 +120,13 @@
 &lt;/table&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;supported-types&#34;&gt;Supported types&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following output types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OutputType.LINK&lt;/code&gt; for link segment outputs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputType.OD&lt;/code&gt; for origin-destination based outputs (skims)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputType.PATH&lt;/code&gt; for path specific outputs&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
@@ -129,6 +138,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/a&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -188,6 +199,70 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
 &lt;a href=&#34;../planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; for activating output formatters&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .deactivate_output(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .deactivate_output allows you to de-activate types of output that were previously activated (or activated by default).&lt;/p&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.deactivate_output(output_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;output_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt; OutputType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of output type to de-activate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;supported-types&#34;&gt;Supported types&lt;/h4&gt;
+&lt;p&gt;Traditional static assignment currently supports the following output types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OutputType.LINK&lt;/code&gt; for link segment outputs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputType.OD&lt;/code&gt; for origin-destination based outputs (skims)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputType.PATH&lt;/code&gt; for path specific outputs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# de-activate the default link outputs&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deactivate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -226,6 +301,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -342,6 +419,8 @@
 &lt;p&gt;&lt;a href=&#34;../../../physicalcost&#34;&gt;Physical Cost&lt;/a&gt; for physical cost implementations&lt;br&gt;
 &lt;a href=&#34;../../../smoothingcost&#34;&gt;Smoothing &lt;/a&gt; for smoothing implementations&lt;br&gt;
 &lt;a href=&#34;../../../virtualcost&#34;&gt;Virtual Cost&lt;/a&gt; for virtual cost implementations&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -392,6 +471,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -410,7 +491,7 @@
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; implementation&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
-&lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on
+&lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on 
 the traditional static assignment class, since this is the instance it returns&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance, set traffic assignment type, access the assignment instance&lt;/span&gt;
@@ -421,8 +502,10 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;br&gt;
 &lt;a href=&#34;../planit_set+&#34;&gt;.set(+)&lt;/a&gt; on how to instantiate this property&lt;/p&gt;
-&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the
+&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the 
 &lt;a href=&#34;../../assignment&#34;&gt;assignment section&lt;/a&gt; of this manual&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -440,7 +523,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .demands property allows access to the in-memory version of the parsed input demands&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Demands implementation (TODO)&lt;/p&gt;
-&lt;p&gt;Source code:  &lt;code&gt;DemandsWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory demands instance&lt;/span&gt;
@@ -449,6 +531,8 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -485,6 +569,8 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter
 &lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory output formatter &lt;/a&gt; describes the options available on the memory output formatter implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -502,7 +588,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .network property allows access to the in-memory version of the parsed input physical transport network&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Network implementation (TODO)&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;PhysicalNetworkWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory network instance&lt;/span&gt;
@@ -511,6 +596,8 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;Network describes the options available on the physical network implementation (TODO)&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -528,7 +615,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .output property allows access to specific configuration options on the native PLANit output formatter. The native formatter persists results to disk using csv files with additional meta data provided in xml files.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default Output Formatter&lt;/a&gt; implementation&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -546,6 +632,46 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter &lt;br&gt;
 &lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default output formatter&lt;/a&gt; describes the options available on the default output formatter implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .output_configuration</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .output_configuration property allows you to configure the general options regarding the traffic assignment outputs. This property is always available as long as the traffic assignment instance is available.&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;Output Configuration implementation TODO&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure something on the output configuration instance&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -563,7 +689,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .physical_cost property allows access to the chosen physical cost assuming it has been set. It can be used for configuration specific to the chosen type.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../../physicalcost&#34;&gt;Physical Cost&lt;/a&gt; implementation&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;PhysicalCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -585,6 +710,8 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available physical cost options&lt;br&gt;
 &lt;a href=&#34;../../../physicalcost&#34;&gt;PhysicalCost&lt;/a&gt; Describes the options available for all available physical cost implementations&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -642,6 +769,8 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;VirtualCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -698,6 +827,47 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;VirtualCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .smoothing</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .smoothing property allows access to the chosen smoothing method assuming it has been set. It can be used for configuration specific to the chosen type.&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../../smoothing&#34;&gt;Smoothing&lt;/a&gt; implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# We choose SPEED as our virtual cost, set it, and access it for further configuration&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../../enums/smoothingtype&#34;&gt;Smoothing.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available smoothing options&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -715,7 +885,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .virtual_cost property allows access to the chosen virtual cost assuming it has been set. It can be used for configuration specific to the chosen type.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../../virtualcost&#34;&gt;Virtual Cost&lt;/a&gt; implementation&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;VirtualCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -737,6 +906,8 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../../enums/virtualcosttype&#34;&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available virtual cost options&lt;br&gt;
 &lt;a href=&#34;../../../virtualcost&#34;&gt;VirtualCost&lt;/a&gt; Describes the options for all available virtual cost implementations&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;AssignmentWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -754,7 +925,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .zoning property allows access to the in-memory version of the parsed input zoning structure&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Zoning implementation (TODO)&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;ZoningWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory zoning structure instance&lt;/span&gt;
@@ -763,6 +933,64 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;Zoning describes the options available on the zoning structure implementation (TODO)&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: General</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This top-level output configuration allows you to configure general options regarding your traffic assignment run&lt;/p&gt;
+&lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;Output configuration exposes the following methods.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;.set_persist_only_final_iteration(+)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choose to only persist results for the final iteration yes or no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;.is_persist_only_final_iteration()&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Find out if only results for the final iteration are persisted yes or no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;Output configuration does not expose properties (yet)&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# choose to only persist the results of the last iteration&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_only_final_iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#3465a4&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# find out if we persist all iterations&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;all_persisted&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;is_persist_only_final_iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# do other stuff &lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OutputConfigurationWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

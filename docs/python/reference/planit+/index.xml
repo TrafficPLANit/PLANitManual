@@ -76,6 +76,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
 &lt;a href=&#34;../planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; for de-activating output formatters&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -135,6 +137,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
 &lt;a href=&#34;../planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; for activating output formatters&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -173,6 +177,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -223,6 +229,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -241,7 +249,7 @@
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; implementation&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
-&lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on
+&lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on 
 the traditional static assignment class, since this is the instance it returns&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance, set traffic assignment type, access the assignment instance&lt;/span&gt;
@@ -252,8 +260,10 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;br&gt;
 &lt;a href=&#34;../planit_set+&#34;&gt;.set(+)&lt;/a&gt; on how to instantiate this property&lt;/p&gt;
-&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the
+&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the 
 &lt;a href=&#34;../../assignment&#34;&gt;assignment section&lt;/a&gt; of this manual&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -271,7 +281,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .demands property allows access to the in-memory version of the parsed input demands&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Demands implementation (TODO)&lt;/p&gt;
-&lt;p&gt;Source code:  &lt;code&gt;DemandsWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory demands instance&lt;/span&gt;
@@ -280,6 +289,8 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;todo&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -316,6 +327,8 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter
 &lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory output formatter &lt;/a&gt; describes the options available on the memory output formatter implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -333,7 +346,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .network property allows access to the in-memory version of the parsed input physical transport network&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Network implementation (TODO)&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;PhysicalNetworkWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory network instance&lt;/span&gt;
@@ -342,6 +354,8 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;Network describes the options available on the physical network implementation (TODO)&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -359,7 +373,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .output property allows access to specific configuration options on the native PLANit output formatter. The native formatter persists results to disk using csv files with additional meta data provided in xml files.&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default Output Formatter&lt;/a&gt; implementation&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -377,6 +390,8 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter &lt;br&gt;
 &lt;a href=&#34;../../outputformatters/planitdefault&#34;&gt;Default output formatter&lt;/a&gt; describes the options available on the default output formatter implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -394,7 +409,6 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;The .zoning property allows access to the in-memory version of the parsed input zoning structure&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
 &lt;p&gt;Zoning implementation (TODO)&lt;/p&gt;
-&lt;p&gt;Source code: &lt;code&gt;ZoningWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory zoning structure instance&lt;/span&gt;
@@ -403,6 +417,8 @@ the traditional static assignment class, since this is the instance it returns&l
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;Zoning describes the options available on the zoning structure implementation (TODO)&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

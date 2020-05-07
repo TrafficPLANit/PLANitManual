@@ -20,23 +20,23 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>.output | PLANit</title><meta property="og:title" content=".output" />
-<meta property="og:description" content="PLANit property
+<title>General | PLANit</title><meta property="og:title" content="General" />
+<meta property="og:description" content="General Output Configuration implementation
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/" />
-<meta property="article:modified_time" content="2020-05-05T17:51:37+10:00" /><meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content=".output">
-<meta itemprop="description" content="PLANit property
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/" />
+<meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="General">
+<meta itemprop="description" content="General Output Configuration implementation
 ">
-<meta itemprop="dateModified" content="2020-05-05T17:51:37&#43;10:00" />
-<meta itemprop="wordCount" content="100">
+
+<meta itemprop="wordCount" content="109">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=".output"/>
-<meta name="twitter:description" content="PLANit property
+<meta name="twitter:title" content="General"/>
+<meta name="twitter:description" content="General Output Configuration implementation
 "/>
 
 
@@ -344,10 +344,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">PLANit(&#43;)</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit(&#43;)</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspythonreferenceplanit">
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceplanit">
       
       
       
@@ -402,7 +402,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceplanitplanit_output" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_output" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
       
       
       
@@ -574,17 +574,17 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Configuration</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Output Configuration</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfiguration">
+    <li class="collapse show" id="planitplanitmanualdocspythonreferenceoutputconfiguration">
       
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationoutputconfiguration" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/">General</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocspythonreferenceoutputconfigurationoutputconfiguration" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/">General</a>
       
       
     </li>
@@ -942,14 +942,14 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/">PLANit(&#43;)</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/">Output Configuration</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/">General</a>
 </li>
 
 	</ol>
@@ -957,36 +957,56 @@
 
             
 <div class="td-content">
-	<h1>.output</h1>
-    <div class="lead">PLANit property</div>
+	<h1>General</h1>
+    <div class="lead">General Output Configuration implementation</div>
 	       
 	<h4 id="description">Description</h4>
-<p>The .output property allows access to specific configuration options on the native PLANit output formatter. The native formatter persists results to disk using csv files with additional meta data provided in xml files.</p>
-<h4 id="return-type">Return type</h4>
-<p><a href="../../outputformatters/planitdefault">Default Output Formatter</a> implementation</p>
+<p>This top-level output configuration allows you to configure general options regarding your traffic assignment run</p>
+<h4 id="defaults">Defaults</h4>
+<p>TODO</p>
+<h4 id="methods">Methods</h4>
+<p>Output configuration exposes the following methods.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.set_persist_only_final_iteration(+)</code></td>
+<td align="left">Choose to only persist results for the final iteration yes or no</td>
+</tr>
+<tr>
+<td><code>.is_persist_only_final_iteration()</code></td>
+<td align="left">Find out if only results for the final iteration are persisted yes or no</td>
+</tr>
+</tbody>
+</table>
+<h4 id="properties">Properties</h4>
+<p>Output configuration does not expose properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># prep</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
 
-<span style="color:#8f5902;font-style:italic">#</span>
-<span style="color:#8f5902;font-style:italic"># &lt;other configuration&gt;</span>
-<span style="color:#8f5902;font-style:italic">#</span>
+<span style="color:#8f5902;font-style:italic"># choose to only persist the results of the last iteration</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_only_final_iteration</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3465a4">True</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic"># find out if we persist all iterations</span>
+<span style="color:#000">all_persisted</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">not</span> <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">is_persist_only_final_iteration</span><span style="color:#000;font-weight:bold">()</span>
 
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#ce5c00;font-weight:bold">.&lt;</span><span style="color:#000">call</span> <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+<span style="color:#8f5902;font-style:italic"># do other stuff </span>
 
 </code></pre></div><h4 id="see-also">See also</h4>
-<p><a href="../../enums/outputformattertype">OutputFormatter.&lt;enum&gt;</a> for all available output formatters<br>
-<a href="../../planit+/planit_activate+">PLANit.activate(+)</a> to see how to activate an output formatter<br>
-<a href="../../planit+/planit_deactivate+">PLANit.deactivate(+)</a> to see how to de-activate an output formatter <br>
-<a href="../../outputformatters/planitdefault">Default output formatter</a> describes the options available on the default output formatter implementation</p>
-<h5 id="source-code">Source code</h5>
-<p>Class <code>PLANit</code> in <code>PLANit.py</code></p>
+<p>N/A</p>
+<h4 id="source-code">Source code</h4>
+<p>Class <code>OutputConfigurationWrapper</code> in <code>Wrappers.py</code></p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/79eadaba7798cd698bd89e45e5c6a1a00dbecbe6">- added fixed cost entry - refactored page structure for more user friendliness (79eadab)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
 </div>
 </div>
 

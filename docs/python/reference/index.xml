@@ -183,6 +183,28 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     </item>
     
     <item>
+      <title>Docs: Output Configuration</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all output (type) configuration implementations available.&lt;/p&gt;
+&lt;p&gt;Output configurations allow you to configure the - to be generated - outputs.&lt;/p&gt;
+&lt;p&gt;At the top-level, general output configuration options are available through the OutputConfiguration implementation&lt;/p&gt;
+&lt;p&gt;More specific configurations have a dedicated type associated with it, e.g. link output type configuration is specific to the link output configuration. These more specific configurations are only available when that output type has been activated.&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../enums/outputtype&#34;&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/a&gt; for the available output type enums&lt;br&gt;
+&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; to see how to activate output types via the various assignment implementations&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Output Formatters</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

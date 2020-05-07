@@ -93,7 +93,7 @@
         
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
-&lt;p&gt;A speed based virtual cost is applied for making the trip from a zone to the first modelled node that has an equivalent in the real-world, i.e., a physical node. The same holds for a movement in the opposite direction, i.e., from an elligble physical node to a zone. This cost is regarded as virtual since it does not utilise any real-world infrastructure.&lt;/p&gt;
+&lt;p&gt;A speed based virtual cost is applied for making the trip from a zone to the first modelled node that has an equivalent in the real-world, i.e., a physical node. The same holds for a movement in the opposite direction, i.e., from an eligble physical node to a zone. This cost is regarded as virtual since it does not utilise any real-world infrastructure.&lt;/p&gt;
 &lt;p&gt;The user can configure the fixed speed that is applied to determine the cost to via this class. The actual cost is then computed based on the distance between the zone and the connectoid i.c.w. the chosen speed.&lt;/p&gt;
 &lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
 &lt;table&gt;
