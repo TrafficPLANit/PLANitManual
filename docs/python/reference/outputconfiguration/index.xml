@@ -15,17 +15,19 @@
     
     <item>
       <title>Docs: General</title>
-      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/</link>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/outputconfiguration/</guid>
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/</guid>
       <description>
         
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;This top-level output configuration allows you to configure general options regarding your traffic assignment run&lt;/p&gt;
 &lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only last iteration is persisted, consistent with  &lt;code&gt;.set_persist_only_final_iteration(True)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
 &lt;p&gt;Output configuration exposes the following methods.&lt;/p&gt;
 &lt;table&gt;
@@ -37,11 +39,11 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.set_persist_only_final_iteration(+)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;oc_set_only_final+&#34;&gt;&lt;code&gt;.set_persist_only_final_iteration(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choose to only persist results for the final iteration yes or no&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.is_persist_only_final_iteration()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;oc_is_only_final&#34;&gt;&lt;code&gt;.is_persist_only_final_iteration()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Find out if only results for the final iteration are persisted yes or no&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -64,7 +66,94 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;N/A&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;OutputConfigurationWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;OutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Path Output Configuration</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The path output configuration allows you to configure options regarding the path outputs of your traffic assignment run.&lt;/p&gt;
+&lt;p&gt;Path information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each path that the assignment decides to persist under these labels.&lt;/p&gt;
+&lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
+&lt;p&gt;Each path entry has the following &lt;a href=&#34;../../enums/outputpropertytype&#34;&gt;&lt;code&gt;OutputProperties.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; activated by default:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OutputProperty.RUN_ID&lt;/code&gt;, unique number of the traffic assignment run&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputProperty.TIME_PERIOD_EXTERNAL_ID&lt;/code&gt;, time period id as provided in the input&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputProperty.MODE_EXTERNAL_ID&lt;/code&gt;, time period id as provided in the input&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputProperty.ORIGIN_ZONE_EXTERNAL_ID&lt;/code&gt;, origin zone id as provided in the input&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputProperty.DESTINATION_ZONE_EXTERNAL_ID&lt;/code&gt;, origin zone id as provided in the input&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OutputProperty.PATH_STRING&lt;/code&gt;, path as comma separated string of &lt;code&gt;RouteIdType.&amp;lt;enum&amp;gt;&lt;/code&gt; based entries (default) with brackets, e.g. &amp;quot;[1,4,7,8,3]&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The id&amp;rsquo;s contained in the path string to identify the path can be changed. The default is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RouteIdType.LINK_SEGMENT_EXTERNAL_ID&lt;/code&gt; use link segment ids (as provided in input)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;Output configuration exposes the following methods.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;TODO [&lt;code&gt;.add(+)&lt;/code&gt;]&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Add an output property to the be included in each path&amp;rsquo;s output entry&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TODO [&lt;code&gt;.remove(+)&lt;/code&gt;]&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Exclude an output property from each path&amp;rsquo;s output entry&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;pc_remove_all&#34;&gt;&lt;code&gt;.remove_all_properties()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Exclude all output properties from each path&amp;rsquo;s output entry&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TODO [&lt;code&gt;.set_path_id_type(+)&lt;/code&gt;]&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choose what id&amp;rsquo;s to use in the path string&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;.get_path_id_type()&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Find out what id type is used for the paths (MISSING METHOD)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;Output configuration does not expose properties (yet)&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# add the internal ids for the OD used in PLANit to the path output, in additional to&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# the default external ids available from the input files.&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ORIGIN_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DESTINATION_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# switch the path identification from LINK_SEGMENT_EXTERNAL_ID (default) to NODE_EXTERNAL_ID &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RouteIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../general&#34;&gt;General Output Configuration&lt;/a&gt; for general output configuration options&lt;br&gt;
+TODO RouteIdType.&amp;lt;enum&amp;gt; to see the options on the various path string identification methods&lt;br&gt;
+&lt;a href=&#34;../../enums/outputpropertytype&#34;&gt;OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output properties across all output configurations in PLANit&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;PathOutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
