@@ -50,7 +50,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -119,7 +119,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -157,7 +157,7 @@
 &lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;.run()&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
@@ -220,7 +220,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
-&lt;p&gt;N/A&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
