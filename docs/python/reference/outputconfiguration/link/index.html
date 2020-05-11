@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +21,17 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Smoothing | PLANit</title><meta property="og:title" content="Smoothing" />
-<meta property="og:description" content="Smoothing implementations
+<title>Link Output Configuration | PLANit</title><meta property="og:title" content="Link Output Configuration" />
+<meta property="og:description" content="Link Output Configuration implementation
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" />
 <meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Smoothing">
-<meta itemprop="description" content="Smoothing implementations
+<meta itemprop="name" content="Link Output Configuration">
+<meta itemprop="description" content="Link Output Configuration implementation
 "><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Smoothing"/>
-<meta name="twitter:description" content="Smoothing implementations
+<meta name="twitter:title" content="Link Output Configuration"/>
+<meta name="twitter:description" content="Link Output Configuration implementation
 "/>
 
 
@@ -581,10 +581,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Configuration</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Output Configuration</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfiguration">
+    <li class="collapse show" id="planitplanitmanualdocspythonreferenceoutputconfiguration">
       
       
       
@@ -633,10 +633,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Link</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationlink">
+    <li class="collapse show" id="planitplanitmanualdocspythonreferenceoutputconfigurationlink">
       
       
       
@@ -842,10 +842,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Smoothing</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Smoothing</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspythonreferencesmoothing">
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothing">
       
       
       
@@ -1110,6 +1110,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -1131,8 +1134,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/">Output Configuration</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/">Smoothing</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/">Link</a>
 </li>
 
 	</ol>
@@ -1140,18 +1150,110 @@
 
             
 <div class="td-content">
-	<h1>Smoothing</h1>
-        <div class="lead">Smoothing implementations</div>
+	<h1>Link Output Configuration</h1>
+        <div class="lead">Link Output Configuration implementation</div>
 	
-	<p>Reference documentation for all Smoothing implementations available.</p>
-<p>Smoothing refers to the method of weighing the impact of an iteration&rsquo;s result on the final outcome of a traffic assignment equilibration process.</p>
-<p>Typically, it utilises the <em><strong>result up to the most recent iteration</strong></em> and <em><strong>the most recent iteration&rsquo;s result</strong></em> to construct a <em><strong>new result</strong></em> where one weighs the impact of both in a certain way. this new result is then used to continue the simulation for the next iteration.</p>
-<p>For example, if no smoothing is applied, the most recent iteration results become the new result, whereas if smoothing is at maximum, none of the most recent iteration&rsquo;s outcomes are adopted. Instead, the result up to but not including the most recent iteration become the new results, i.e., copying the previous outcome without change. In practice neither of these two is attractive and a middle ground has to be found. This is what the smoothing method does and many different methods exist to achieve this.</p>
+	<h4 id="description">Description</h4>
+<blockquote>
+<p>DISCLAIMER: The naming is inconsistent, a link reflects both directions, while a link segment is only one of the two possible directions of a link. Currently, we only report link segment results, hence this configuration should have been called Link segment output configuration.</p>
+</blockquote>
+<p>The link segment output configuration allows you to configure options regarding the link segment outputs of your traffic assignment run.</p>
+<p>Link segment information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each link segment under each available combination of these labels.</p>
+<blockquote>
+<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> remains in place. Currently, this requires either including the external ids of the up and downstream node, or the link segment&rsquo;s (external) id. If not, the assignment will fail.</p>
+</blockquote>
+<h4 id="defaults">Defaults</h4>
+<p>Each link segment entry has the following <a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a> activated by default:</p>
+<p><em>ID_PRIORITY fields</em></p>
+<ul>
+<li><code>OutputProperty.TIME_PERIOD_ID</code>, time period id as generated by PLANit</li>
+<li><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code>, time period id as provided in the input</li>
+<li><code>OutputProperty.MODE_ID</code>, mode id as provided as generated by PLANit</li>
+<li><code>OutputProperty.MODE_EXTERNAL_ID</code>, mode id as provided in the input</li>
+<li><code>OutputProperty.LINK_SEGMENT_ID</code>, link segment id as generated by PLANit</li>
+<li><code>OutputProperty.LINK_SEGMENT_EXTERNAL_ID</code>, link segment id as provided in the input</li>
+<li><code>OutputProperty.UPSTREAM_NODE_ID</code>, upstream node id as generated by PLANit</li>
+<li><code>OutputProperty.UPSTREAM_NODE_EXTERNAL_ID</code>, upstream node id as provided in the input</li>
+<li><code>OutputProperty.DOWNSTREAM_NODE_ID</code>, downstream node id as generated by PLANit</li>
+<li><code>OutputProperty.DOWNSTREAM_NODE_EXTERNAL_ID</code>, downstream node id as provided in the input</li>
+</ul>
+<p><em>INPUT_PRIORITY fields</em></p>
+<ul>
+<li><code>OutputProperty.UPSTREAM_NODE_LOCATION</code>, upstream node location</li>
+<li><code>OutputProperty.DOWNSTREAM_NODE_LOCATION</code>, downstream node location</li>
+<li><code>OutputProperty.NUMBER_OF_LANES</code>, number of lanes</li>
+<li><code>OutputProperty.LENGTH</code>, length</li>
+<li><code>OutputProperty.CAPACITY_PER_LANE</code>, the capacity per lane</li>
+<li><code>OutputProperty.MAXIMUM_SPEED</code>, the maximum allowed speed</li>
+</ul>
+<p><em>OUTPUT_PRIORITY fields</em></p>
+<ul>
+<li><code>OutputProperty.FLOW</code>, the flow rate</li>
+<li><code>OutputProperty.CALCULATED_SPEED</code>, the computed speed</li>
+<li><code>OutputProperty.LINK_COST</code>, the computed link segment cost</li>
+</ul>
+<h4 id="methods">Methods</h4>
+<p>Link output configuration exposes the following methods.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="lc_add+"><code>.add(+)</code></a></td>
+<td align="left">Add an output property to the be included in each link segment&rsquo;s output entry</td>
+</tr>
+<tr>
+<td><a href="lc_remove+"><code>.remove(+)</code></a></td>
+<td align="left">Exclude an output property from each link segment&rsquo;s output entry</td>
+</tr>
+<tr>
+<td><a href="lc_remove_all"><code>.remove_all_properties()</code></a></td>
+<td align="left">Exclude all output properties from each link segment&rsquo;s output entry</td>
+</tr>
+</tbody>
+</table>
+<h4 id="properties">Properties</h4>
+<p>Link output configuration does not expose properties (yet)</p>
+<h4 id="example-1">Example 1</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#8f5902;font-style:italic"># prep</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+
+
+<span style="color:#8f5902;font-style:italic"># add volume capacity ratio to output</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">VC_RATIO</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># remove all internal PLANit ids from the output</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MODE_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TIME_PERIOD_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK_SEGEMENT_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">UPSTREAM_NODE_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">link_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">DOWNSTREAM_NODE_ID</span><span style="color:#000;font-weight:bold">)</span>
+
+
+</code></pre></div><h4 id="identification">Identification</h4>
+<p>Each path is by default identified by</p>
+<ul>
+<li><code>OutputProperty.LINK_SEGEMENT_EXTERNAL_ID</code></li>
+</ul>
+<p>Equally acceptable identification methods - that the user can configure - are</p>
+<ul>
+<li><code>OutputProperty.LINK_SEGEMENT_ID</code>,</li>
+</ul>
+<p>or,</p>
+<ul>
+<li><code>OutputProperty.UPSTREAM_NODE_EXTERNAL_ID</code>, <code>OutputProperty.DOWNSTREAM_NODE_EXTERNAL_ID</code></li>
+</ul>
 <h4 id="see-also">See also</h4>
-<p><a href="../enums/smoothingtype">Smoothing.&lt;enum&gt;</a> for smoothing cost type enums<br>
-<a href="../assignment">Traffic Assignment</a> on what traffic assignment methods are available</p>
+<p><a href="../general">General Output Configuration</a> for general output configuration options<br>
+<a href="../../enums/outputpropertytype">OutputProperty.&lt;enum&gt;</a> for all available output properties across all output configurations in PLANit</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>SmoothingWrapper</code> in <code>Wrappers.py</code></p>
+<p>Class <code>LinkOutputTypeConfigurationWrapper</code> in <code>wrappers.py</code></p>
 
         <div class="section-index">
     
@@ -1171,59 +1273,12 @@
             
         
             
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/">.add(&#43;)</a>
+                    </h5>
+                    <p>Link output configuration method</p>
+                </div>
             
         
             
@@ -1237,10 +1292,71 @@
             
                 <div class="entry">
                     <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/smoothing/msa/">MSA</a>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/">.remove(&#43;)</a>
                     </h5>
-                    <p>The Method of Successive averages Smoothing implementation</p>
+                    <p>Link output configuration method</p>
                 </div>
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/">.remove_all_properties()</a>
+                    </h5>
+                    <p>Link output configuration method</p>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
             
         
             
@@ -1306,7 +1422,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/ecdb0b2b29e5de84a6c4c785580b082957148f5a">- made a start with smoothing - finalised virtual cost - removed some typos (ecdb0b2)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81ba135b7aa7a68592e347f1a07d160969fbd2d1">- added link output configuration - started with OD output configuration (81ba135)</a>
 </div>
 </div>
 

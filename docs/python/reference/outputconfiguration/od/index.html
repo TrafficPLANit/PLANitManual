@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +21,17 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Smoothing | PLANit</title><meta property="og:title" content="Smoothing" />
-<meta property="og:description" content="Smoothing implementations
+<title>OD Output Configuration | PLANit</title><meta property="og:title" content="OD Output Configuration" />
+<meta property="og:description" content="Origin-Destination (OD) Output Configuration implementation
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" />
 <meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Smoothing">
-<meta itemprop="description" content="Smoothing implementations
+<meta itemprop="name" content="OD Output Configuration">
+<meta itemprop="description" content="Origin-Destination (OD) Output Configuration implementation
 "><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Smoothing"/>
-<meta name="twitter:description" content="Smoothing implementations
+<meta name="twitter:title" content="OD Output Configuration"/>
+<meta name="twitter:description" content="Origin-Destination (OD) Output Configuration implementation
 "/>
 
 
@@ -581,10 +581,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Configuration</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Output Configuration</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfiguration">
+    <li class="collapse show" id="planitplanitmanualdocspythonreferenceoutputconfiguration">
       
       
       
@@ -674,10 +674,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">OD</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">OD</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationod">
+    <li class="collapse show" id="planitplanitmanualdocspythonreferenceoutputconfigurationod">
       
       
       
@@ -842,10 +842,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Smoothing</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Smoothing</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspythonreferencesmoothing">
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothing">
       
       
       
@@ -1110,6 +1110,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -1131,8 +1134,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/">Output Configuration</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/smoothing/">Smoothing</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/">OD</a>
 </li>
 
 	</ol>
@@ -1140,18 +1150,82 @@
 
             
 <div class="td-content">
-	<h1>Smoothing</h1>
-        <div class="lead">Smoothing implementations</div>
+	<h1>OD Output Configuration</h1>
+        <div class="lead">Origin-Destination (OD) Output Configuration implementation</div>
 	
-	<p>Reference documentation for all Smoothing implementations available.</p>
-<p>Smoothing refers to the method of weighing the impact of an iteration&rsquo;s result on the final outcome of a traffic assignment equilibration process.</p>
-<p>Typically, it utilises the <em><strong>result up to the most recent iteration</strong></em> and <em><strong>the most recent iteration&rsquo;s result</strong></em> to construct a <em><strong>new result</strong></em> where one weighs the impact of both in a certain way. this new result is then used to continue the simulation for the next iteration.</p>
-<p>For example, if no smoothing is applied, the most recent iteration results become the new result, whereas if smoothing is at maximum, none of the most recent iteration&rsquo;s outcomes are adopted. Instead, the result up to but not including the most recent iteration become the new results, i.e., copying the previous outcome without change. In practice neither of these two is attractive and a middle ground has to be found. This is what the smoothing method does and many different methods exist to achieve this.</p>
+	<h4 id="description">Description</h4>
+<p>The Origin-Destination (OD) output configuration allows you to configure options regarding the OD outputs of your traffic assignment run.</p>
+<p>OD information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each OD under each available combination of these labels.</p>
+<blockquote>
+<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> for the OD remains in place. Currently, this requires including (external) ids of the related origin-destination zone. If not, the assignment will fail.</p>
+</blockquote>
+<h4 id="defaults">Defaults</h4>
+<p>Each OD entry has the following <a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a> activated by default:</p>
+<ul>
+<li>
+<p><code>OutputProperty.RUN_ID</code>, unique number of the traffic assignment run</p>
+</li>
+<li>
+<p><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code>, time period id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.MODE_EXTERNAL_ID</code>, mode id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, origin zone id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code>, destination zone id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.OD_COST</code>, generalised cost for the OD</p>
+</li>
+</ul>
+<h4 id="methods">Methods</h4>
+<p>OD output configuration exposes the following methods.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.add(+)</code> TODO</td>
+<td align="left">Add an output property to the be included in each OD&rsquo;s output entry</td>
+</tr>
+<tr>
+<td><code>.remove(+)</code> TODO</td>
+<td align="left">Exclude an output property from each OD&rsquo;s output entry</td>
+</tr>
+<tr>
+<td><code>.remove_all_properties()</code> TODO</td>
+<td align="left">Exclude all output properties from each OD&rsquo;s output entry</td>
+</tr>
+</tbody>
+</table>
+<h4 id="properties">Properties</h4>
+<p>OD output configuration does not expose properties (yet)</p>
+<h4 id="example-1">Example 1</h4>
+<p>TODO</p>
+<h4 id="identification">Identification</h4>
+<p>Each OD is by default identified by</p>
+<ul>
+<li><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, and</li>
+<li><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code></li>
+</ul>
+<p>Alternatively, the user can reconfigure this to using <a href="pc_add+"><code>.add(+)</code></a> and <a href="pc_remove+"><code>.remove(+)</code></a> to</p>
+<ul>
+<li><code>OutputProperty.ORIGIN_ZONE_ID</code>, and</li>
+<li><code>OutputProperty.DESTINATION_ZONE_ID</code></li>
+</ul>
+<p>Currently, no other identification methods are supported. So, make sure the properties of one of the two approaches are included in your configuration</p>
 <h4 id="see-also">See also</h4>
-<p><a href="../enums/smoothingtype">Smoothing.&lt;enum&gt;</a> for smoothing cost type enums<br>
-<a href="../assignment">Traffic Assignment</a> on what traffic assignment methods are available</p>
+<p><a href="../general">General Output Configuration</a> for general output configuration options<br>
+<a href="../../enums/outputpropertytype">OutputProperty.&lt;enum&gt;</a> for all available output properties across all output configurations in PLANit</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>SmoothingWrapper</code> in <code>Wrappers.py</code></p>
+<p>Class <code>ODOutputTypeConfigurationWrapper</code> in <code>wrappers.py</code></p>
 
         <div class="section-index">
     
@@ -1235,13 +1309,6 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/smoothing/msa/">MSA</a>
-                    </h5>
-                    <p>The Method of Successive averages Smoothing implementation</p>
-                </div>
-            
         
             
         
@@ -1306,7 +1373,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 5, 2020: <a  href="/commit/ecdb0b2b29e5de84a6c4c785580b082957148f5a">- made a start with smoothing - finalised virtual cost - removed some typos (ecdb0b2)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81ba135b7aa7a68592e347f1a07d160969fbd2d1">- added link output configuration - started with OD output configuration (81ba135)</a>
 </div>
 </div>
 

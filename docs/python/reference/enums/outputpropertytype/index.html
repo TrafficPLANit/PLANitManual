@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputpropertytype/" />
-<meta property="article:modified_time" content="2020-05-11T15:21:32+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-11T17:47:49+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="OutputPropertyType.&lt;enum&gt;">
 <meta itemprop="description" content="OutputProperty types 
 ">
-<meta itemprop="dateModified" content="2020-05-11T15:21:32&#43;10:00" />
-<meta itemprop="wordCount" content="785">
+<meta itemprop="dateModified" content="2020-05-11T17:47:49&#43;10:00" />
+<meta itemprop="wordCount" content="716">
 
 
 
@@ -638,6 +638,70 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationlink">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/">.remove_all_properties()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">OD</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationod">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Path</a>
   </li>
   <ul>
@@ -1095,7 +1159,7 @@
     <div class="lead">OutputProperty types</div>
 	       
 	<h4 id="description">Description</h4>
-<p>Class exposing the available Output property types as enums. Output properties relate to outputs that can be marked for inclusion or exclusion in the results. When registered/added, this type of output will be made available (when compatible with the assignment and type of output at hand). Conversely, when unregistered/removed, it will be excluded. Hereby, giving maximum flexibility to the user in what outputs should and shouldn&rsquo;t be generated at a very fine level.</p>
+<p>Class exposing the available Output property types as enums. Output properties are used to mark particular inputs and/or results for inclusion or exclusion in the output. By identifying for each property separately if it is to be included or not, you have maximum flexibility over your generated results. To avoid unnecessary configuration, a reasonable set of default properties is activated on each of the different <a href="../outputtype">output types</a> whenever you choose to activate them.</p>
 <p>For each output property we keep information on on:</p>
 <ul>
 <li><em><strong>Name:</strong></em>  the name of the property</li>
@@ -1110,7 +1174,7 @@
 </li>
 </ul>
 <blockquote>
-<p>Output properties are not always available for all types of output, see the <a href="#compatibility">compatibility section</a> on information what output properties are supported when.</p>
+<p>Output properties are not always available for all types of output, see the <em>supported by OutputType.&lt;enum&gt;</em> column in the <a href="#fields">Fields</a> section. Further, it is possible some traffic assignment implementations do not support all link/path/od output properties either.</p>
 </blockquote>
 <h4 id="fields">Fields</h4>
 <p>Each field has a priority. Since, the priority reflects the location in a result entry - where a higher priority (id, input) ensures the property value is offered earlier than lower priority properties (output) - we provide the available properties categorised by their priority</p>
@@ -1120,140 +1184,123 @@
 <tr>
 <th align="left">&lt;enum&gt; Fields</th>
 <th align="left">Description</th>
-<th align="left">Name</th>
+<th align="left">Supported by <a href="../outputtype">OutputType.&lt;enum&gt;</a></th>
 <th align="left">Type</th>
 <th align="left"><a href="../../../units">Unit</a></th>
-<th align="left">Priority</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><code>DESTINATION_ZONE_ID</code></td>
 <td align="left">Destination zone id (internal)</td>
-<td align="left">Destination Zone Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>DESTINATION_ZONE_EXTERNAL_ID</code></td>
 <td align="left">Destination zone id (input)</td>
-<td align="left">Destination Zone External Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_ID</code></td>
 <td align="left">Link segment&rsquo;s downstream node id (internal)</td>
-<td align="left">Downstream Node Id</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_EXTERNAL_ID</code></td>
 <td align="left">Link segment&rsquo;s downstream node id (input)</td>
-<td align="left">Downstream Node External Id</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>ITERATION_INDEX</code></td>
 <td align="left">Iteration index of simulation</td>
-<td align="left">Iteration Index</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code>, <code>OutputType.LINK</code></td>
 <td align="left"><code>integer</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_SEGMENT_ID</code></td>
 <td align="left">Link segment id (internal)</td>
-<td align="left">Link Segment Id</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
 <td align="left">Link segment id (input)</td>
-<td align="left">Link Segment External Id</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>MODE_ID</code></td>
 <td align="left">Mode id (internal)</td>
-<td align="left">Mode Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code>, <code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>MODE_EXTERNAL_ID</code></td>
 <td align="left">Mode id (input)</td>
-<td align="left">Mode External Id</td>
-<td align="left"><code>long</code></td>
-<td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code>, <code>OutputType.LINK</code></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td align="left"><code>ORIGIN_ZONE_ID</code></td>
 <td align="left">Origin zone id (internal)</td>
-<td align="left">Origin Zone Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>ORIGIN_ZONE_EXTERNAL_ID</code></td>
 <td align="left">Origin zone id (input)</td>
-<td align="left">Origin Zone External Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>RUN_ID</code></td>
 <td align="left">simulation run id</td>
-<td align="left">Run Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code>, <code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>TIME_PERIOD_ID</code></td>
 <td align="left">time period id (internal)</td>
-<td align="left">Run Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code>, <code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>TIME_PERIOD_EXTERNAL_ID</code></td>
 <td align="left">time period id (input)</td>
-<td align="left">Time Period External Id</td>
+<td align="left"><code>OutputType.OD</code>, <code>OutputType.PATH</code>, <code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>UPSTREAM_NODE_ID</code></td>
 <td align="left">Link segment&rsquo;s upstream node id (internal)</td>
-<td align="left">Upstream Node Id</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>UPSTREAM_NODE_EXTERNAL_ID</code></td>
 <td align="left">Link segment&rsquo;s upstream node id (user)</td>
-<td align="left">Upstream Node External Id</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>long</code></td>
 <td align="left">None</td>
-<td align="left"><code>ID_PRIORITY</code></td>
 </tr>
 </tbody>
 </table>
@@ -1263,68 +1310,60 @@
 <tr>
 <th align="left">&lt;enum&gt; Fields</th>
 <th align="left">Description</th>
-<th align="left">Name</th>
+<th align="left">Supported by <a href="../outputtype">OutputType.&lt;enum&gt;</a></th>
 <th align="left">Type</th>
 <th align="left"><a href="../../../units">Unit</a></th>
-<th align="left">Priority</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><code>CAPACITY_PER_LANE</code></td>
 <td align="left">The capacity flow rate for a lane</td>
-<td align="left">Capacity per Lane</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">veh/h(/l)  <strong>TODO: should be in PCU</strong></td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_LOCATION</code></td>
 <td align="left">The geographic location of the downstream node (if present)</td>
-<td align="left">Downstream Node Location</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>string</code></td>
 <td align="left">SRS</td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>LENGTH</code></td>
 <td align="left">The length</td>
-<td align="left">Length</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">km</td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_TYPE</code></td>
-<td align="left">The link segment type&rsquo;s id (input)</td>
-<td align="left">Link Type</td>
+<td align="left">The link segment type&rsquo;s name (input)</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>string</code></td>
 <td align="left">None</td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>MAXIMUM_SPEED</code></td>
 <td align="left">The maximum allowed speed</td>
-<td align="left">Maximum Speed</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">km/h</td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>NUMBER_OF_LANES</code></td>
 <td align="left">The number of lanes</td>
-<td align="left">Number of Lanes</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>integer</code></td>
 <td align="left">None</td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>UPSTREAM_NODE_LOCATION</code></td>
 <td align="left">The geographic location of the upstream node (if present)</td>
-<td align="left">Upstream Node Location</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>string</code></td>
 <td align="left">SRS</td>
-<td align="left"><code>INPUT_PRIORITY</code></td>
 </tr>
 </tbody>
 </table>
@@ -1334,76 +1373,67 @@
 <tr>
 <th align="left">&lt;enum&gt; Fields</th>
 <th align="left">Description</th>
-<th align="left">Name</th>
+<th align="left">Supported by <a href="../outputtype">OutputType.&lt;enum&gt;</a></th>
 <th align="left">Type</th>
 <th align="left"><a href="../../../units">Unit</a></th>
-<th align="left">Priority</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><code>CALCULATED_SPEED</code></td>
 <td align="left">The calculate speed</td>
-<td align="left">Calculated Speed</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">km/h</td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>COST_TIMES_FLOW</code></td>
 <td align="left">The cost (per vehicle) multiplied with the volume (per hour) on the entity</td>
-<td align="left">X_Cost x Flow</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">h (i.e., (h/veh)*(veh/1)) <strong>TODO: should be in PCU</strong></td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>DENSITY</code></td>
 <td align="left">The density</td>
-<td align="left">Density</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">veh/km <strong>TODO: should be in PCU</strong></td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>FLOW</code></td>
 <td align="left">The flow rate</td>
-<td align="left">Flow</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">veh/h <strong>TODO: should be in PCU</strong></td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_COST</code></td>
 <td align="left">The link segment&rsquo;s generalised cost</td>
-<td align="left">Cost</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">h</td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>OD_COST</code></td>
 <td align="left">The origin-destination&rsquo;s generalised cost</td>
-<td align="left">Cost</td>
+<td align="left"><code>OutputType.OD</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">h</td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>PATH_STRING</code></td>
 <td align="left">The path represented in CSV format</td>
-<td align="left">Path</td>
+<td align="left"><code>OutputType.PATH</code></td>
 <td align="left"><code>string</code></td>
 <td align="left">None</td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 <tr>
 <td align="left"><code>VC_RATIO</code></td>
 <td align="left">The volume to capacity ratio</td>
-<td align="left">VC Ratio</td>
+<td align="left"><code>OutputType.LINK</code></td>
 <td align="left"><code>float</code></td>
 <td align="left">None ((veh/h)/(veh/h))</td>
-<td align="left"><code>OUTPUT_PRIORITY</code></td>
 </tr>
 </tbody>
 </table>
@@ -1420,10 +1450,6 @@
 <span style="color:#8f5902;font-style:italic"># the default external ids available from the input files.</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">ORIGIN_ZONE_ID</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">DESTINATION_ZONE_ID</span><span style="color:#000;font-weight:bold">)</span>
-
-<span style="color:#8f5902;font-style:italic"># switch the path identification from LINK_SEGMENT_EXTERNAL_ID (default) to NODE_EXTERNAL_ID </span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">RouteIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
-
 
 </code></pre></div><h4 id="example-2">Example 2</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
@@ -1442,17 +1468,16 @@
 
 
 </code></pre></div><h4 id="compatibility">Compatibility</h4>
-<p>TODO compatibility!!</p>
 <h4 id="see-also">See also</h4>
-<p><a href="../../outputconfiguration/path">Path Output configuration</a> for the path output configuration implementation utilising output properties<br>
-TODO [Link Output configuration] for the link output configuration implementation utilising output properties<br>
-TODO [OD Output configuration] for the origin-destination output configuration implementation utilising output properties</p>
+<p><a href="../../outputconfiguration/path">Path Output configuration</a> path output configuration implementation utilising output properties<br>
+<a href="../../outputconfiguration/link">Link Output configuration</a> link output configuration implementation utilising output properties<br>
+<a href="../../outputconfiguration/od">OD Output configuration</a> origin-destination output configuration implementation utilising output properties</p>
 <h4 id="source-code">Source code</h4>
 <p>Class <code>OutputProperty</code> in <code>enums.py</code></p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81f4b1f25ee019f364d9550fd374c0df8e587577">- finalised path output type configuration - added routeidtype enum - added outputpropertytype enum (not done) - added unit page - included reference to unit page on all relevant existing pages (81f4b1f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81ba135b7aa7a68592e347f1a07d160969fbd2d1">- added link output configuration - started with OD output configuration (81ba135)</a>
 </div>
 </div>
 

@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/</loc>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/</loc>
     <lastmod>2020-05-11T15:21:32+10:00</lastmod>
   </url>
@@ -58,13 +63,23 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</loc>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</loc>
-    <lastmod>2020-05-11T15:21:32+10:00</lastmod>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/</loc>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/</loc>
-    <lastmod>2020-05-11T15:21:32+10:00</lastmod>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
   </url>
   
   <url>
@@ -238,6 +253,16 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/</loc>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/</loc>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/</loc>
     <lastmod>2020-05-07T14:10:18+10:00</lastmod>
   </url>
@@ -254,7 +279,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/outputpropertytype/</loc>
-    <lastmod>2020-05-11T15:21:32+10:00</lastmod>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
   </url>
   
   <url>
@@ -264,7 +289,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/</loc>
-    <lastmod>2020-05-11T15:21:32+10:00</lastmod>
+    <lastmod>2020-05-11T17:47:49+10:00</lastmod>
   </url>
   
   <url>

@@ -22,16 +22,16 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
 <title>Path Output Configuration | PLANit</title><meta property="og:title" content="Path Output Configuration" />
-<meta property="og:description" content="General Output Configuration implementation
+<meta property="og:description" content="Path Output Configuration implementation
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Path Output Configuration">
-<meta itemprop="description" content="General Output Configuration implementation
+<meta itemprop="description" content="Path Output Configuration implementation
 "><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Path Output Configuration"/>
-<meta name="twitter:description" content="General Output Configuration implementation
+<meta name="twitter:description" content="Path Output Configuration implementation
 "/>
 
 
@@ -633,6 +633,70 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationlink">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/">.remove_all_properties()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">OD</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationod">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Path</a>
   </li>
   <ul>
@@ -1087,30 +1151,42 @@
             
 <div class="td-content">
 	<h1>Path Output Configuration</h1>
-        <div class="lead">General Output Configuration implementation</div>
+        <div class="lead">Path Output Configuration implementation</div>
 	
 	<h4 id="description">Description</h4>
 <p>The path output configuration allows you to configure options regarding the path outputs of your traffic assignment run.</p>
 <p>Path information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each path under each available combination of these labels.</p>
 <blockquote>
-<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> for the path remains in place. Currently, this requires including (external) ids of the related origin-destination zone. If not the assignment will fail.</p>
+<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> for the path remains in place. Currently, this requires including (external) ids of the related origin-destination zone. If not, the assignment will fail.</p>
 </blockquote>
 <h4 id="defaults">Defaults</h4>
 <p>Each path entry has the following <a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a> activated by default:</p>
 <ul>
-<li><code>OutputProperty.RUN_ID</code>, unique number of the traffic assignment run</li>
-<li><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code>, time period id as provided in the input</li>
-<li><code>OutputProperty.MODE_EXTERNAL_ID</code>, time period id as provided in the input</li>
-<li><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, origin zone id as provided in the input</li>
-<li><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code>, origin zone id as provided in the input</li>
-<li><code>OutputProperty.PATH_STRING</code>, path as comma separated string of <code>RouteIdType.&lt;enum&gt;</code> based entries (default) with brackets, e.g. &quot;[1,4,7,8,3]&quot;</li>
+<li>
+<p><code>OutputProperty.RUN_ID</code>, unique number of the traffic assignment run</p>
+</li>
+<li>
+<p><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code>, time period id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.MODE_EXTERNAL_ID</code>, mode id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, origin zone id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code>, destination zone id as provided in the input</p>
+</li>
+<li>
+<p><code>OutputProperty.PATH_STRING</code>, path as comma separated string of <code>RouteIdType.&lt;enum&gt;</code> based entries (default) with brackets, e.g. &quot;[1,4,7,8,3]&quot;</p>
+</li>
 </ul>
 <p>The id&rsquo;s contained in the path string to identify the path can be changed. The default is:</p>
 <ul>
 <li><code>RouteIdType.LINK_SEGMENT_EXTERNAL_ID</code> use link segment ids (as provided in input)</li>
 </ul>
 <h4 id="methods">Methods</h4>
-<p>Output configuration exposes the following methods.</p>
+<p>Path output configuration exposes the following methods.</p>
 <table>
 <thead>
 <tr>
@@ -1142,7 +1218,7 @@
 </tbody>
 </table>
 <h4 id="properties">Properties</h4>
-<p>Output configuration does not expose properties (yet)</p>
+<p>Path output configuration does not expose properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 <span style="color:#8f5902;font-style:italic"># prep</span>
@@ -1197,6 +1273,8 @@
             
         
             
+        
+            
                 <div class="entry">
                     <h5>
                         <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
@@ -1212,12 +1290,16 @@
             
         
             
+        
+            
                 <div class="entry">
                     <h5>
                         <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
                     </h5>
                     <p>Path output configuration method</p>
                 </div>
+            
+        
             
         
             
@@ -1338,12 +1420,16 @@
         
             
         
+            
+        
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81f4b1f25ee019f364d9550fd374c0df8e587577">- finalised path output type configuration - added routeidtype enum - added outputpropertytype enum (not done) - added unit page - included reference to unit page on all relevant existing pages (81f4b1f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81ba135b7aa7a68592e347f1a07d160969fbd2d1">- added link output configuration - started with OD output configuration (81ba135)</a>
 </div>
 </div>
 
