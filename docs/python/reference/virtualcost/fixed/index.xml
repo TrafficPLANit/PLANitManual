@@ -32,7 +32,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -42,7 +42,7 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;fixed_cost_value&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;float&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;hour&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;h&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;new fixed cost value to use&lt;/td&gt;

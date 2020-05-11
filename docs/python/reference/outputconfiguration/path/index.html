@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -544,6 +544,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsrouteidtype" href="/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
       
       
@@ -637,7 +643,25 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/">.remove_all_properties()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_set_path_id_type" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/">.set_path_id_type(&#43;)</a>
       
       
     </li>
@@ -871,6 +895,52 @@
 
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/testing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"></a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencetesting">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/units/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Units</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonunits">
+      
+      
+      
     </li>
   </ul>
 </ul>
@@ -1021,7 +1091,10 @@
 	
 	<h4 id="description">Description</h4>
 <p>The path output configuration allows you to configure options regarding the path outputs of your traffic assignment run.</p>
-<p>Path information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each path that the assignment decides to persist under these labels.</p>
+<p>Path information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each path under each available combination of these labels.</p>
+<blockquote>
+<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> for the path remains in place. Currently, this requires including (external) ids of the related origin-destination zone. If not the assignment will fail.</p>
+</blockquote>
 <h4 id="defaults">Defaults</h4>
 <p>Each path entry has the following <a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a> activated by default:</p>
 <ul>
@@ -1047,11 +1120,11 @@
 </thead>
 <tbody>
 <tr>
-<td>TODO [<code>.add(+)</code>]</td>
+<td><a href="pc_add+"><code>.add(+)</code></a></td>
 <td align="left">Add an output property to the be included in each path&rsquo;s output entry</td>
 </tr>
 <tr>
-<td>TODO [<code>.remove(+)</code>]</td>
+<td><a href="pc_remove+"><code>.remove(+)</code></a></td>
 <td align="left">Exclude an output property from each path&rsquo;s output entry</td>
 </tr>
 <tr>
@@ -1059,8 +1132,8 @@
 <td align="left">Exclude all output properties from each path&rsquo;s output entry</td>
 </tr>
 <tr>
-<td>TODO [<code>.set_path_id_type(+)</code>]</td>
-<td align="left">Choose what id&rsquo;s to use in the path string</td>
+<td><a href="pc_set_path_id_type+"><code>.set_path_id_type(+)</code></a></td>
+<td align="left">Choose what id&rsquo;s to use in the path (string) representation</td>
 </tr>
 <tr>
 <td><code>.get_path_id_type()</code></td>
@@ -1087,9 +1160,21 @@
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">RouteIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
 
 
-</code></pre></div><h4 id="see-also">See also</h4>
+</code></pre></div><h4 id="identification">Identification</h4>
+<p>Each path is by default identified by</p>
+<ul>
+<li><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, and</li>
+<li><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code></li>
+</ul>
+<p>Alternatively, the user can reconfigure this to using <a href="pc_add+"><code>.add(+)</code></a> and <a href="pc_remove+"><code>.remove(+)</code></a> to</p>
+<ul>
+<li><code>OutputProperty.ORIGIN_ZONE_ID</code>, and</li>
+<li><code>OutputProperty.DESTINATION_ZONE_ID</code></li>
+</ul>
+<p>Currently, no other identification methods are supported. So, make sure the properties of one of the two approaches are included in your configuration</p>
+<h4 id="see-also">See also</h4>
 <p><a href="../general">General Output Configuration</a> for general output configuration options<br>
-TODO RouteIdType.&lt;enum&gt; to see the options on the various path string identification methods<br>
+<a href="../../enums/routeidtype">RouteIdType.&lt;enum&gt;</a> to see the options on the various path (string) identification methods<br>
 <a href="../../enums/outputpropertytype">OutputProperty.&lt;enum&gt;</a> for all available output properties across all output configurations in PLANit</p>
 <h4 id="source-code">Source code</h4>
 <p>Class <code>PathOutputTypeConfigurationWrapper</code> in <code>wrappers.py</code></p>
@@ -1112,6 +1197,15 @@ TODO RouteIdType.&lt;enum&gt; to see the options on the various path string iden
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
+                    </h5>
+                    <p>Path output configuration method</p>
+                </div>
+            
+        
+            
         
             
         
@@ -1120,7 +1214,31 @@ TODO RouteIdType.&lt;enum&gt; to see the options on the various path string iden
             
                 <div class="entry">
                     <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
+                    </h5>
+                    <p>Path output configuration method</p>
+                </div>
+            
+        
+            
+                <div class="entry">
+                    <h5>
                         <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/">.remove_all_properties()</a>
+                    </h5>
+                    <p>Path output configuration method</p>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/">.set_path_id_type(&#43;)</a>
                     </h5>
                     <p>Path output configuration method</p>
                 </div>
@@ -1225,7 +1343,7 @@ TODO RouteIdType.&lt;enum&gt; to see the options on the various path string iden
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 8, 2020: <a  href="/commit/b368b80ea069c4649e98774f511598fb2c093fce">- started with outputproperties enum - added path_configuration - changed return types to none if not returning anything - fixed some typos and links (b368b80)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81f4b1f25ee019f364d9550fd374c0df8e587577">- finalised path output type configuration - added routeidtype enum - added outputpropertytype enum (not done) - added unit page - included reference to unit page on all relevant existing pages (81f4b1f)</a>
 </div>
 </div>
 

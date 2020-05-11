@@ -32,19 +32,21 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;project_path&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;String&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Location of directory to find input files&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -159,7 +161,7 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
         
         &lt;p&gt;Reference documentation for all traffic assignment implementations available.&lt;/p&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for related assignment type enums
+&lt;p&gt;&lt;a href=&#34;../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for related assignment type enums&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt; on how to set an assignment on PLANit&lt;br&gt;
 &lt;a href=&#34;../planit+/planit_assignment&#34;&gt;planit(+).assignment&lt;/a&gt; on how to access a set traffic assignment instance&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
@@ -241,7 +243,7 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
 &lt;p&gt;How physical cost is computed depends on the method. Methods are often dependent on the chosen &lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for physical cost type enums&lt;br&gt;
-&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available
+&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available&lt;br&gt;
 &lt;a href=&#34;../enums/virtualcosttype&#34;&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for virtual cost type enums&lt;br&gt;
 &lt;a href=&#34;../virtualcost&#34;&gt;Virtual Cost&lt;/a&gt; on options for the virtual cost implementations&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
@@ -286,13 +288,26 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
 &lt;p&gt;The generalised cost for any path consist of the physical and virtual cost combined.&lt;/p&gt;
 &lt;p&gt;How virtual cost is computed depends on the method. Methods are potentially dependent on the chosen &lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../enums/virtualcosttype&#34;&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for virtual cost type enums
-&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available
+&lt;p&gt;&lt;a href=&#34;../enums/virtualcosttype&#34;&gt;VirtualCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for virtual cost type enums&lt;br&gt;
+&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available&lt;br&gt;
 &lt;a href=&#34;../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for physical cost type enums&lt;br&gt;
 &lt;a href=&#34;../physicalcost&#34;&gt;Physical Cost&lt;/a&gt; on options for the physical cost implementations&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;VirtualCostWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/testing/</guid>
+      <description>
+        
+        
+        
       </description>
     </item>
     

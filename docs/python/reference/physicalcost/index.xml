@@ -24,9 +24,9 @@
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
 &lt;p&gt;Travel time on a link segment for a particular mode is computed using a specific link performance function that relates flow uniquely to a travel time utilising a strictly increasing monotonic function know as the BPR&lt;sup&gt;1&lt;/sup&gt; function. This function looks like the following&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta})\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta}) \qquad \textrm{where } \tau_{a,m}^{ \textrm {freeflow}}= {L_a \over \vartheta_{a,m}}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \tau_{a,m}^{ \textrm {freeflow}}= \textrm{free flow travel time on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link segment} a,\\ C_a = \textrm {saturation flow on link segment} a,\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow speed on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link segment} a,\\ L_a = \textrm {length of link segment} a,\\ C_a = \textrm {saturation flow on link segment} a,\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; parameters can be configured hierarchically, where the most specific configuration takes precedence. The hierarchy is as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/li&gt;
@@ -42,7 +42,7 @@
 &lt;tr class=&#34;header&#34;&gt;
 &lt;th style=&#34;text-align: left;&#34;&gt;Name&lt;/th&gt;
 &lt;th style=&#34;text-align: left;&#34;&gt;Default&lt;/th&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;Unit&lt;/th&gt;
+&lt;th style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;

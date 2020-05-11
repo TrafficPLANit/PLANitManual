@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -544,6 +544,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsrouteidtype" href="/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
       
       
@@ -637,7 +643,25 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/">.remove_all_properties()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_set_path_id_type" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/">.set_path_id_type(&#43;)</a>
       
       
     </li>
@@ -871,6 +895,52 @@
 
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/testing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"></a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencetesting">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/units/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Units</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonunits">
+      
+      
+      
     </li>
   </ul>
 </ul>
@@ -1019,7 +1089,7 @@
 	
 	<h5 id="description">Description</h5>
 <p>The Method of successive averages is a very basic, yet powerful smoothing method. In this method, every iteration is weighed equally in the final result which is achieved by applying the following function to the data that is being smoothed (can be flow, can be cost, can be something else, this depends on the assignment method that is adopted).</p>
-<p><span class="math inline">\(\Large x_{i+1}=s_i \cdot x_{i} + (1-s_i) \cdot y \qquad \text{where } {s_i= {1 \over i} \qquad \text{with } i=1,...,I. }\)</span></p>
+<p><span class="math inline">\(\Large x_{i+1}=(1-s_i) \cdot x_{i} + s_i \cdot y \qquad \text{where } {s_i= {1 \over i} \qquad \text{with } i=1,...,I. }\)</span></p>
 <p>Explanatino of variables:</p>
 <p><span class="math inline">\(i= \textrm{ iteration index given a total of } I \textrm{ iterations},\\ s_i= \textrm{ step size in iteration } i,\\ x_i= \textrm{ result of smoothed value in iteration } i,\\ y= \textrm{ new found value to update result},\\ \\\)</span></p>
 <p>As can be seen, the more iterations are conducted, the less the newly found value is incorporated in the result. Therefore, using MSA guarantees convergence of <span class="math inline">\(x\)</span> (although it does not guarantee convergemce of <span class="math inline">\(y\)</span>.</p>
@@ -1162,12 +1232,24 @@
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 7, 2020: <a  href="/commit/e7549f66c602cfb788d20fdc92faf860fa99f36c">- started with output configuration documentation - updated source code paragraph in documentation to reflect where fcode can be found - added deactivate_output_type to documentation (e7549f6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81f4b1f25ee019f364d9550fd374c0df8e587577">- finalised path output type configuration - added routeidtype enum - added outputpropertytype enum (not done) - added unit page - included reference to unit page on all relevant existing pages (81f4b1f)</a>
 </div>
 </div>
 

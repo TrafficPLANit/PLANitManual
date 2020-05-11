@@ -24,7 +24,7 @@
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
 &lt;p&gt;The Method of successive averages is a very basic, yet powerful smoothing method. In this method, every iteration is weighed equally in the final result which is achieved by applying the following function to the data that is being smoothed (can be flow, can be cost, can be something else, this depends on the assignment method that is adopted).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large x_{i+1}=s_i \cdot x_{i} + (1-s_i) \cdot y \qquad \text{where } {s_i= {1 \over i} \qquad \text{with } i=1,...,I. }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large x_{i+1}=(1-s_i) \cdot x_{i} + s_i \cdot y \qquad \text{where } {s_i= {1 \over i} \qquad \text{with } i=1,...,I. }\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Explanatino of variables:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(i= \textrm{ iteration index given a total of } I \textrm{ iterations},\\ s_i= \textrm{ step size in iteration } i,\\ x_i= \textrm{ result of smoothed value in iteration } i,\\ y= \textrm{ new found value to update result},\\ \\\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;As can be seen, the more iterations are conducted, the less the newly found value is incorporated in the result. Therefore, using MSA guarantees convergence of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; (although it does not guarantee convergemce of &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;.&lt;/p&gt;

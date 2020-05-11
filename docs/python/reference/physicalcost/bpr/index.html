@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -544,6 +544,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsrouteidtype" href="/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
       
       
@@ -637,7 +643,25 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/">.remove_all_properties()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_set_path_id_type" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/">.set_path_id_type(&#43;)</a>
       
       
     </li>
@@ -871,6 +895,52 @@
 
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/testing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"></a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencetesting">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/units/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Units</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonunits">
+      
+      
+      
     </li>
   </ul>
 </ul>
@@ -1019,9 +1089,9 @@
 	
 	<h5 id="description">Description</h5>
 <p>Travel time on a link segment for a particular mode is computed using a specific link performance function that relates flow uniquely to a travel time utilising a strictly increasing monotonic function know as the BPR<sup>1</sup> function. This function looks like the following</p>
-<p><span class="math inline">\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta})\)</span></p>
+<p><span class="math inline">\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta}) \qquad \textrm{where } \tau_{a,m}^{ \textrm {freeflow}}= {L_a \over \vartheta_{a,m}}\)</span></p>
 <p>with</p>
-<p><span class="math inline">\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \tau_{a,m}^{ \textrm {freeflow}}= \textrm{free flow travel time on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link segment} a,\\ C_a = \textrm {saturation flow on link segment} a,\)</span></p>
+<p><span class="math inline">\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow speed on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link segment} a,\\ L_a = \textrm {length of link segment} a,\\ C_a = \textrm {saturation flow on link segment} a,\)</span></p>
 <p>The <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> parameters can be configured hierarchically, where the most specific configuration takes precedence. The hierarchy is as follows:</p>
 <ul>
 <li>default <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span></li>
@@ -1037,7 +1107,7 @@
 <tr class="header">
 <th style="text-align: left;">Name</th>
 <th style="text-align: left;">Default</th>
-<th style="text-align: center;">Unit</th>
+<th style="text-align: center;"><a href="../../../units">Unit</a></th>
 </tr>
 </thead>
 <tbody>
@@ -1215,12 +1285,24 @@
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 7, 2020: <a  href="/commit/db62484576c82eb83b6bcb9ae7edc8e5690690a2">- started with output configuration documentation - updated source code paragraph in documentation to reflect where fcode can be found - added deactivate_output_type to documentation (db62484)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81f4b1f25ee019f364d9550fd374c0df8e587577">- finalised path output type configuration - added routeidtype enum - added outputpropertytype enum (not done) - added unit page - included reference to unit page on all relevant existing pages (81f4b1f)</a>
 </div>
 </div>
 

@@ -32,7 +32,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -101,7 +101,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -145,6 +145,66 @@
     </item>
     
     <item>
+      <title>Docs: .add(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .add(+) method, allows you to add output properties to the path results, i.e., adding a new column to each path result row with the indicated result type outlined by the output property.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not all output properties are available in combination with path results. For a list of compatible output properties see the &lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt;OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; documentation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.add(output_property)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;output_property&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of output property to add&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Complement the external ids (of the input) of zones with the internal ids in PLANit in the path results&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ORIGIN_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DESTINATION_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; for the available output property enums and their compatibility&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PathOutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: .deactivate(&#43;)</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -163,7 +223,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -224,7 +284,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -286,7 +346,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -327,6 +387,69 @@
     </item>
     
     <item>
+      <title>Docs: .remove(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .remove(+) method, allows you to remove output properties from the path results, i.e., removing an existing column from each path result row based on the provided output property.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you decide to add and remove output properties, ensure that at least one method of unique &lt;a href=&#34;../#identification&#34;&gt;identification&lt;/a&gt; for the path remains in place. If not the assignment will fail.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not all output properties are available in combination with path results. For a list of compatible output properties see the &lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt;OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; documentation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.add(output_property)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;output_property&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of output property to add&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Complement the external ids (of the input) of zones with the internal ids in PLANit in the path results&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ORIGIN_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DESTINATION_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; for the available output property enums and their compatibility&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PathOutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: .remove_all_properties()</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -338,7 +461,7 @@
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .remove_all_properties() method, will remove all currently registered output properties from the path configuration, including any properties that were initiated by default.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;For a successful run, each path needs to be uniquely identifiable. If no further properties are added after removing all of them, this is no longer possible and the simulation run will fail, indicating no valid properties are available to uniquely identify a path.&lt;/p&gt;
+&lt;p&gt;If you decide to remove output properties, ensure that at least one method of unique &lt;a href=&#34;../#identification&#34;&gt;identification&lt;/a&gt; for the path remains in place. If not the assignment will fail.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;.remove_all_properties()&lt;/code&gt;&lt;/p&gt;
@@ -429,7 +552,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -543,7 +666,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -577,6 +700,66 @@
     </item>
     
     <item>
+      <title>Docs: .set_path_id_type(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_path_id_type(+) method, allows you to choose the format of how the path is identified, i.e., what object ids are used to uniquely determine the path.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For this choice to have any effect, you must have activated the path to be part of the output in the first place, for example by activating the OtuputProperty.PATH_STRING on the path configuration (property activated by default, so unless it is deactivated, no further action is necessary)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_path_id_type(path_id_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;path_id_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/routeidtype&#34;&gt; RouteIdType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of path id type to use&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Use node external ids as the way to uniquely identify the path in the output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RouteIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../../enums/routeidproperty&#34;&gt;RouteIdProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; for the available path id property enums&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PathOutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: .set_persist_only_final_iteration(&#43;)</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -595,7 +778,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -893,7 +1076,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -903,7 +1086,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;fixed_cost_value&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;float&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;hour&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;h&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;new fixed cost value to use&lt;/td&gt;
@@ -952,7 +1135,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
@@ -962,7 +1145,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;fixed_speed_value&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;float&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;kilometer/hour&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;km/h&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;new fixed speed value to use&lt;/td&gt;
@@ -1119,12 +1302,12 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;PLANIT_IO&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PLANIT_IO&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;PLANit&amp;rsquo;s native output format&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../outputformatters/default&#34;&gt;Default Output Formatter&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;MEMORY&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;MEMORY&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Stores results in memory&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory Output Formatter&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1156,7 +1339,7 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;p&gt;&lt;a href=&#34;../../planit+/planit_activate+&#34;&gt;PLANit.activate(+)&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_deactivate+&#34;&gt;PLANit.deactivate(+)&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;OutputFormatter&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;OutputFormatter&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1177,40 +1360,354 @@ the traditional static assignment class, since this is the instance it returns&l
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Name:&lt;/strong&gt;&lt;/em&gt;  the name of the property&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Type:&lt;/strong&gt;&lt;/em&gt;  the data type used by result values of this output property&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Unit:&lt;/strong&gt;&lt;/em&gt;  the unit of the result values&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Priority:&lt;/strong&gt;&lt;/em&gt;  since results are mostly provided as a row in a matrix; the priority reflects the column priority (order) in this matrix&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are three priority levels:&lt;/p&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Priority:&lt;/strong&gt;&lt;/em&gt;  the priority reflects the column priority (order) as well as its source, 3 levels in descending order of importance exist:
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;ID_PRIORITY&lt;/strong&gt;&lt;/em&gt;, e.g. the output property can be used as an id to uniquely define the entity (highest)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;INPUT_PRIORITY&lt;/strong&gt;&lt;/em&gt;, e.g. the output property is an input, i.e., constant&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;OUTPUT_PRIORITY&lt;/strong&gt;&lt;/em&gt;, e.g., the output property is an output or result value (lowest)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;0: (ID_PRIORITY)&lt;/strong&gt;&lt;/em&gt;, e.g. the output property can be used as an id to uniquely define the entity&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;1: (INPUT_PRIORITY)&lt;/strong&gt;&lt;/em&gt;, e.g. the output property is an input, i.e., constant&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;2: (OUTPUT_PRIORITY)&lt;/strong&gt;&lt;/em&gt;, e.g., the output property is a result value&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Output properties are not always available for all types of output, see the &lt;a href=&#34;#compatibility&#34;&gt;compatibility section&lt;/a&gt; on information what output properties are supported when.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;Each field has a priority. Since, the priority reflects the location in a result entry - where a higher priority (id, input) ensures the property value is offered earlier than lower priority properties (output) - we provide the available properties categorised by their priority&lt;/p&gt;
+&lt;h5 id=&#34;id_priority-fields&#34;&gt;ID_PRIORITY Fields&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Name&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Priority&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;DESTINATION_ZONE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Destination zone id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Destination Zone Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;DESTINATION_ZONE_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Destination zone id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Destination Zone External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;DOWNSTREAM_NODE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment&amp;rsquo;s downstream node id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Downstream Node Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;DOWNSTREAM_NODE_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment&amp;rsquo;s downstream node id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Downstream Node External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ITERATION_INDEX&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Iteration index of simulation&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Iteration Index&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_SEGMENT_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link Segment Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_SEGMENT_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link Segment External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;MODE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mode id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mode Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;MODE_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mode id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mode External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ORIGIN_ZONE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Origin zone id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Origin Zone Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ORIGIN_ZONE_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Origin zone id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Origin Zone External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;RUN_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;simulation run id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Run Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TIME_PERIOD_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;time period id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Run Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TIME_PERIOD_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;time period id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Time Period External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;UPSTREAM_NODE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment&amp;rsquo;s upstream node id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Upstream Node Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;UPSTREAM_NODE_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment&amp;rsquo;s upstream node id (user)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Upstream Node External Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ID_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;TODO -&amp;gt; figure out if we give them separate md files, or only provide them here in this table&lt;/p&gt;
+&lt;h5 id=&#34;input_priority-fields&#34;&gt;INPUT_PRIORITY Fields&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Priority&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;CAPACITY_PER_LANE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The capacity flow rate for a lane&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Capacity per Lane&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;veh/h(/l)  &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;DOWNSTREAM_NODE_LOCATION&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The geographic location of the downstream node (if present)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Downstream Node Location&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;SRS&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LENGTH&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The length&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Length&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;km&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_TYPE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The link segment type&amp;rsquo;s id (input)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link Type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;MAXIMUM_SPEED&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The maximum allowed speed&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Maximum Speed&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;km/h&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;NUMBER_OF_LANES&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The number of lanes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of Lanes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;UPSTREAM_NODE_LOCATION&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The geographic location of the upstream node (if present)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Upstream Node Location&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;SRS&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;INPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;output_priority-fields&#34;&gt;OUTPUT_PRIORITY Fields&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Priority&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;CALCULATED_SPEED&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The calculate speed&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Calculated Speed&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;km/h&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;COST_TIMES_FLOW&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The cost (per vehicle) multiplied with the volume (per hour) on the entity&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;X_Cost x Flow&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;h (i.e., (h/veh)*(veh/1)) &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;DENSITY&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The density&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Density&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;veh/km &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;FLOW&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The flow rate&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Flow&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;veh/h &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_COST&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The link segment&amp;rsquo;s generalised cost&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cost&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;h&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OD_COST&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The origin-destination&amp;rsquo;s generalised cost&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cost&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;h&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;PATH_STRING&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The path represented in CSV format&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Path&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;VC_RATIO&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The volume to capacity ratio&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;VC Ratio&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;None ((veh/h)/(veh/h))&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;OUTPUT_PRIORITY&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;h4 id=&#34;example-3&#34;&gt;Example 3&lt;/h4&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# PATH&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# add the internal ids for the OD used in PLANit to the path output, in additional to&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# the default external ids available from the input files.&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ORIGIN_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DESTINATION_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# switch the path identification from LINK_SEGMENT_EXTERNAL_ID (default) to NODE_EXTERNAL_ID &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RouteIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# LINK (activated by default)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# remove geo location from output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;link_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;remove&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;UPSTREAM_NODE_LOCATION&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;link_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;remove&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DOWNSTREAM_NODE_LOCATION&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# add V/C ratio since this is a static assignment, so we do not need to compute it afterwards by hand &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;link_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VC_RATIO&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;compatibility&#34;&gt;Compatibility&lt;/h4&gt;
+&lt;p&gt;TODO compatibility!!&lt;/p&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../outputconfiguration/path&#34;&gt;Path Output configuration&lt;/a&gt; for the path output configuration implementation utilising output properties
-TODO [Link Output configuration] for the link output configuration implementation utilising output properties
+&lt;p&gt;&lt;a href=&#34;../../outputconfiguration/path&#34;&gt;Path Output configuration&lt;/a&gt; for the path output configuration implementation utilising output properties&lt;br&gt;
+TODO [Link Output configuration] for the link output configuration implementation utilising output properties&lt;br&gt;
 TODO [OD Output configuration] for the origin-destination output configuration implementation utilising output properties&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;OutputProperty&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;OutputProperty&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1237,17 +1734,17 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;LINK&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;LINK&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Represents link outputs&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;OD&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;OD&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Represents origin-destination outputs&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;PATH&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PATH&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Represents path outputs&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;TODO&lt;/td&gt;
 &lt;/tr&gt;
@@ -1290,7 +1787,7 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can activate output types and how to retrieve the related output configuration instance for further configuration.&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;OutputType&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;OutputType&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1318,7 +1815,7 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;BPR&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;BPR&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Bureau of Public Roads&lt;sup&gt;1&lt;/sup&gt; link performance function&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../physicalcost/bpr&#34;&gt;BPR Physical Cost&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1340,7 +1837,69 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the physical cost on and how to retrieve the instantiated physical cost object.&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;PhysicalCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;PhysicalCost&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: RouteIdType.&lt;enum&gt;</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available types as enums for the way we uniquely identify paths in our output. When we include the path results explicitly in our output and in those results include the paths themselves, the choice of this type becomes relevant.&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Instance documentation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;LINK_SEGMENT_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents the path as a consecutive list of link segment ids as provided in the input&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;LINK_SEGMENT_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents the path as a consecutive list of link segment ids based on the internal PLANit ids&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;NODE_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents the path as a consecutive list of node ids as provided in the input&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;NODE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Represents the path as a consecutive list of node ids based on the internal PLANit ids&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate_output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Use node external ids as the way to uniquely identify the path in the output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RouteIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../outputconfiguration/path&#34;&gt;Path Configuration&lt;/a&gt; for the path configuration implementation where this enum is used&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;RouteIdType&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1368,7 +1927,7 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;MSA&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;MSA&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Method of Successive Averages (MSA)&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../smoothing/msa&#34;&gt;MSA Smoothing&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1388,10 +1947,10 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the smoothing on and how to retrieve the instantiated smoothing object.
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods to set smoothing on &lt;br&gt;
 &lt;a href=&#34;../../smoothing&#34;&gt;Smoothing&lt;/a&gt; for the various smoothing method implementations&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;Smoothing&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;Smoothing&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1419,12 +1978,12 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;FIXED&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FIXED&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Apply fixed cost to access physical road network from zone&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../virtualcost/fixed&#34;&gt;Fixed Virtual Cost&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;SPEED&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SPEED&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Apply fixed speed to access physical road network from zone&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../virtualcost/speed&#34;&gt;Speed Virtual Cost&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1445,7 +2004,7 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the virtual cost on and how to retrieve the instantiated virtual cost object.&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;VirtualCost&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;VirtualCost&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1472,7 +2031,7 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;TRADITIONAL_STATIC&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;TRADITIONAL_STATIC&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Traditional static assignment&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../assignment/traditionalstatic&#34;&gt;Traditional static assignment&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1490,7 +2049,7 @@ TODO [OD Output configuration] for the origin-destination output configuration i
 &lt;p&gt;&lt;a href=&#34;../../planit+/planit_set+&#34;&gt;PLANit.set(+)&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;../../planit+/planit_assignment&#34;&gt;PLANit.assignment&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;TrafficAssignment&lt;/code&gt; in &lt;code&gt;Enums.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;TrafficAssignment&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
