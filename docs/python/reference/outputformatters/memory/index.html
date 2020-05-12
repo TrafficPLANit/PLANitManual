@@ -473,7 +473,25 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_link_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/">.link_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_od_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/">.od_configuration</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_output_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/">.output_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_path_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/">.path_configuration</a>
       
       
       
@@ -615,6 +633,12 @@
   <ul>
     <li class="collapse " id="planitplanitmanualdocspythonreferencegapfunctionlinkbasedrelative">
       
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencegapfunctionlinkbasedrelativelbrgf_stop_criterion" href="/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/lbrgf_stop_criterion/">.stop_criterion</a>
       
       
     </li>
@@ -862,6 +886,12 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1003,13 +1033,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_epsilon" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/">.get_epsilon(&#43;)</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_epsilon" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/">.get_epsilon()</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_set_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/">.get_max_iterations()</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/">.get_max_iterations()</a>
       
       
       
@@ -1021,7 +1051,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/">.set_max_iterations(&#43;)</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_set_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/">.set_max_iterations(&#43;)</a>
       
       
     </li>
@@ -1312,18 +1342,22 @@
         <div class="lead">An in-memory output formatter</div>
 	
 	<h5 id="description">Description</h5>
-<p>Results of the traffic assignment run are made available in-memory when this output formatter is activated. Various options on this formatter allow you to access the results by for example; mode, time period, iteration, etc.</p>
+<p>In-memory results of the PLANit run. All results are collected in a multi-dimensional matrix, where you can access data by providing information to pinpoint its location in the result. You must always provide the following meta-information before accessing any result data:</p>
+<ul>
+<li>Mode (external) id</li>
+<li>Time period (external) id</li>
+<li>Iteration index</li>
+</ul>
+<blockquote>
+<p>The mode and time period ids refer to the ids provided in the input files, rather then the auto-generated ids used by PLANit internally.</p>
+</blockquote>
+<h6 id="iterator">iterator</h6>
+<p>You can use an <em>iterator</em> to access the results for a given time, mode, and iteration. The iterator &ldquo;iterates&rdquo; over the results by providing you access to result entries one-by-one starting with the first and continuing until the last. Each result entry exposed by the iterator is a <em>raw array</em> where array entry reflects a single value for exactly one of the activated output properties.</p>
+<p>To know which array entry belongs to what output property, you must first collect the position, i.e., index, assigned to the output property, see <code>get_position_of_output_value_property(+)</code> and <code>get_position_of_output_key_property(+)</code> depending on whether or not the output property is regarded a key or a value in the result.</p>
+<p>Once you have established which property value is found at what array index, you use the <code>iterator(+)</code> method to construct the appropriate iterator and loop over the available result entries, each of which contain a single raw array - representing a result row - which can be decoded using the position information you collected earlier.</p>
+<p>While this may sound cumbersome, it is in fact an extremely flexible approach, that you will get used to very quickly. See the example section of this page for an illustrative example.</p>
 <h4 id="defaults">Defaults</h4>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Value</th>
-<th align="center">Type</th>
-<th align="center"><a href="../../../units">Unit</a></th>
-</tr>
-</thead>
-</table>
+<p>No defaults available (yet)</p>
 <h4 id="methods">Methods</h4>
 <p>Memory output formatter exposes the following methods</p>
 <table>
@@ -1333,25 +1367,59 @@
 <th align="left">Description</th>
 </tr>
 </thead>
-</table>
-<p>TODO</p>
-<h4 id="properties">Properties</h4>
-<p>Memory output formatter exposes the following properties</p>
-<table>
-<thead>
+<tbody>
 <tr>
-<th>Property</th>
-<th align="left">Availability</th>
-<th align="left">Description</th>
+<td><a href="mof_position_value_property+"><code>get_position_of_output_value_property(+)</code></a></td>
+<td align="left">Collect the index of an activated <a href="../../enums/outputpropertytype">output property</a> (e.g. flow) for an active <a href="../../enums/outputtype">output type</a> (e.g. link)</td>
 </tr>
-</thead>
+<tr>
+<td><code>get_position_of_output_key_property(+)</code> TODO</td>
+<td align="left">Collect the index of an activated <a href="../../enums/outputpropertytype">output property</a> (e.g. link segment id) representing a key for an active <a href="../../enums/outputtype">output type</a> (e.g. link)</td>
+</tr>
+<tr>
+<td><code>get_last_iteration()</code> TODO</td>
+<td align="left">Collect the index of the last iteration conducted by the PLANit run</td>
+</tr>
+<tr>
+<td><code>iterator(+)</code> TODO</td>
+<td align="left">Construct an [iterator] TODO to loop over the results for a given time period, mode, and iteration</td>
+</tr>
+</tbody>
 </table>
-<p>TODO</p>
+<h4 id="properties">Properties</h4>
+<p>No exposed properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<p>TODO</p>
-<h4 id="see-also">See also</h4>
-<p><a href="../../enums/outputformattertype">OutputFormatter.&lt;enum&gt;</a> for all available output formatters<br>
-<a href="../../planit+/planit_activate+">PLANit.activate(+)</a> to see how to activate an output formatter
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#8f5902;font-style:italic">#prep</span>
+<span style="color:#000">plan_it</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">BPR</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">FIXED</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MSA</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># remove default formatter - activate memory output</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">deactivate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PLANIT_IO</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MEMORY</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># run simulation</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">run</span><span style="color:#000;font-weight:bold">()</span>
+
+<span style="color:#8f5902;font-style:italic">#collect iteration index of last recorded iteration</span>
+<span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_last_iteration</span><span style="color:#000;font-weight:bold">()</span>
+
+<span style="color:#8f5902;font-style:italic"># find position of flow result for mode 1, time period 2, iteration i</span>
+<span style="color:#000">flow_pos</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_position_of_output_value_property</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">FLOW</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># find position of key; we use link segment (external) id	</span>
+<span style="color:#000">id_pos</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_position_of_output_key_property</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK_SEGMENT_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># collect iterator and print results by looping over entries</span>
+<span style="color:#000">link_iter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#204a87;font-weight:bold">while</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">has_next</span><span style="color:#000;font-weight:bold">():</span>
+	<span style="color:#204a87;font-weight:bold">print</span> <span style="color:#4e9a06">&#34;id: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_keys</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">id_pos</span><span style="color:#000;font-weight:bold">],</span> <span style="color:#4e9a06">&#34; flow: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_values</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">flow_pos</span><span style="color:#000;font-weight:bold">]</span> 
+	<span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">next</span><span style="color:#000;font-weight:bold">()</span>
+</code></pre></div><h4 id="see-also">See also</h4>
+<p><a href="../../planit+/planit_activate+">PLANit.activate(+)</a> to see how to activate an output formatter<br>
 <a href="../../planit+/planit_deactivate+">PLANit.deactivate(+)</a> to see how to de-activate an output formatter<br>
 <a href="../planit+/planit_memory">PLANit.memory</a> on how to access the memory output formatter</p>
 <h4 id="source-code">Source code</h4>
@@ -1378,6 +1446,23 @@
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+                    </h5>
+                    <p>Memory Output Formatter method</p>
+                </div>
             
         
             
@@ -1533,7 +1618,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="/commit/3d0917fdd7fe8f2c889409a0f6d619fe8a178b5e">- added OD output configuration - added gap function and link based relative gap function - added stop criterion and default stop criterion pages - changed format of defaults for classes and retrofitted for existing classes (all not done) (3d0917f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="/commit/6fcf722298c1e419fc4bda71df76c14b1fc3a182">- added to traditional static assignment - added to link based relative duality gap - started with memory output formatter (not done) - streamlined use of non-capitals in comments of python code examples (6fcf722)</a>
 </div>
 </div>
 

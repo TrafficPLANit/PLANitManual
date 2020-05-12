@@ -38,7 +38,7 @@
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;PERSIST_ONLY_FINAL_ITERATION&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;boolean&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;boolean&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

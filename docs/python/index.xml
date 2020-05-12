@@ -95,12 +95,12 @@
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Hour&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;em&gt;&lt;strong&gt;h&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;time measure&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Time measure&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Second&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;em&gt;&lt;strong&gt;s&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;time measure&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Time measure&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -141,7 +141,7 @@
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Lane&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;em&gt;&lt;strong&gt;l&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;single lane on a link segment&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Single lane on a link segment&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Passenger Car Unit&lt;/td&gt;
@@ -169,7 +169,7 @@
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;em&gt;&lt;strong&gt;-&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;no unit, i.e. unit-less&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;No unit, i.e. unit-less&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Spatial Reference System&lt;/td&gt;

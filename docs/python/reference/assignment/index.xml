@@ -44,7 +44,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;TODO&lt;/p&gt;
 &lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
 &lt;p&gt;Traditional static assignment exposes the following methods&lt;/p&gt;
 &lt;table&gt;
@@ -69,7 +68,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;TODO&lt;/p&gt;
 &lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
 &lt;p&gt;Traditional static assignment exposes the following properties&lt;/p&gt;
 &lt;table&gt;
@@ -92,17 +90,17 @@
 &lt;td align=&#34;left&#34;&gt;Access to general configuration options regarding outputs&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.path_configuration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_path_configuration&#34;&gt;&lt;code&gt;.path_configuration&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;tsa_activate_output+&#34;&gt;&lt;code&gt;.activate_output(OutputType.PATH)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to configuration options regarding path output&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.link_configuration&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Always unless deactivated&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_link_configuration&#34;&gt;&lt;code&gt;.link_configuration&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to configuration options regarding link outputs&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.od_configuration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_od_configuration&#34;&gt;&lt;code&gt;.od_configuration&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Post calling &lt;a href=&#34;tsa_activate_output+&#34;&gt;&lt;code&gt;.activate_output(OutputType.OD)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Access to configuration options regarding origin-destination outputs&lt;/td&gt;
 &lt;/tr&gt;
