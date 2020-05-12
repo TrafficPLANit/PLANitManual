@@ -34,7 +34,6 @@
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -42,9 +41,8 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;output_formatter_type&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of output formatter to apply&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -103,7 +101,6 @@
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -111,9 +108,8 @@
 &lt;tr&gt;
 &lt;td&gt;output_formatter_type&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of output formatter to de-activate&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -204,7 +200,6 @@
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -214,7 +209,6 @@
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;&lt;code&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of traffic assignment to apply&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

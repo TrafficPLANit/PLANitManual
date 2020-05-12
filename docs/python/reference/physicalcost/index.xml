@@ -42,6 +42,7 @@
 &lt;tr class=&#34;header&#34;&gt;
 &lt;th style=&#34;text-align: left;&#34;&gt;Name&lt;/th&gt;
 &lt;th style=&#34;text-align: left;&#34;&gt;Default&lt;/th&gt;
+&lt;th style=&#34;text-align: center;&#34;&gt;Type&lt;/th&gt;
 &lt;th style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -49,12 +50,14 @@
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td style=&#34;text-align: left;&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align: left;&#34;&gt;0.5&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td style=&#34;text-align: left;&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align: left;&#34;&gt;4&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

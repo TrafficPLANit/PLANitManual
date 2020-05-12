@@ -26,9 +26,33 @@
 &lt;p&gt;This class is the starting point for all PLANit traffic assignment runs. It either reads in inputs from a &lt;em&gt;&lt;strong&gt;specific location&lt;/strong&gt;&lt;/em&gt; or from
 the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; upon creation of the object. Further configuration for the run is left to the user.&lt;/p&gt;
 &lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Value&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;PROJECT_PATH&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;.&lt;/code&gt;, i.e., current working directory&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Output Formatter&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Object instance&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../outputformatters/default&#34;&gt;Default Output Formatter&lt;/a&gt; (&lt;code&gt;OutputFormatter.PLANit_IO&lt;/code&gt;)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h4 id=&#34;parameters&#34;&gt;Parameters&lt;/h4&gt;
-&lt;p&gt;Available parameters upon construction:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.PLANit(project_path)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -43,10 +67,10 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;project_path&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;String&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;No&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;PROJECT_PATH&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Location of directory to find input files&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -185,6 +209,30 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     </item>
     
     <item>
+      <title>Docs: Gap Function</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/gapfunction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/gapfunction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all Gap function implementations available.&lt;/p&gt;
+&lt;p&gt;A gap function allows you to determine the difference between your current traffic assignment results in a particular iteration and the adopted equilibrium criterion. This difference is referred to as the &lt;em&gt;gap&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In this context, each gap function has a stop criterion associated with it, that in turn can be configured to determine the conditions under which you accept the results to be &lt;em&gt;close enough&lt;/em&gt; to equilibrium, i.e., the &lt;em&gt;gap&lt;/em&gt; being sufficiently small, for the simulation to terminate.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There exist many gap functions and stop criteria and not all traffic assignment methods and equilibrium conditions are compatible with all gap functions and/or stop criteria implementations. Make sure that the chosen gap function is supported by your traffic assignment method.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available
+&lt;a href=&#34;../stopcriterion&#34;&gt;Stop Criterion&lt;/a&gt; on stop criterion implementations&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;GapFunctionWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Output Configuration</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -275,6 +323,28 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     </item>
     
     <item>
+      <title>Docs: Stop Criterion</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/stopcriterion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/stopcriterion/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all Stop Criterion implementations available.&lt;/p&gt;
+&lt;p&gt;A stop criterion can be used to configure when an algorithm terminates. In our context, the algorithm is a traffic assignment run searching for equilibrium and the stop criterion is compared against a measured gap (constructed using a &lt;a href=&#34;../gapfunction&#34;&gt;gap function&lt;/a&gt;) for the current iteration.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Currently, a single &lt;a href=&#34;https://pages.github.sydney.edu.au/PLANit/PLANitManual/default&#34;&gt;default implementation&lt;/a&gt; is available, used by all gap functions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../gapfunction&#34;&gt;Gap Function&lt;/a&gt; on gap function implementations&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;StopCriterionWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Virtual Cost</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -307,7 +377,107 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
       <description>
         
         
-        
+        &lt;h1 id=&#34;planitio-unit-tests-and-integration-tests&#34;&gt;PLANitIO Unit Tests and Integration Tests&lt;/h1&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&#34;1--unit-tests-and-integration-tests&#34;&gt;1.  Unit Tests and Integration Tests&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Unit tests&lt;/em&gt; confirm that individual methods generate the correct result from a known set of input values. They are used to confirm that methods or classes are working correctly, rather than the whole application. If code changes cause a unit test to fail, the developer can immediately review the changes to see what caused the failure.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Integration tests&lt;/em&gt; test the whole application. They run the whole application using standard input files and confirm that the contents of the output files generated by the program match the expected results.&lt;/p&gt;
+&lt;p&gt;Unit testing is particularly useful when a team of several developers is working on the same piece of software. In that case each developer must write tests for his own code before integrating it into the larger codebase of the whole project.&lt;/p&gt;
+&lt;p&gt;We have not written unit tests at the method or class level for the PlanIt application. In the case of PLANit, the development team was small (2 people) and it was sufficient to use integration tests to find issues. Test failures could still be traced back to bugs which caused them.&lt;/p&gt;
+&lt;p&gt;All tests described in the rest of this document are integration tests.&lt;/p&gt;
+&lt;h2 id=&#34;2----integration-tests&#34;&gt;2    Integration Tests&lt;/h2&gt;
+&lt;h3 id=&#34;21overview&#34;&gt;2.1	Overview&lt;/h3&gt;
+&lt;p&gt;This section begins with a general description of how the integration tests work, which is applicable to all test cases. It then goes into more detail about the contents of the input and output files which are used in the tests.&lt;/p&gt;
+&lt;h3 id=&#34;22general-structure-of-integration-tests&#34;&gt;2.2	General Structure of Integration Tests&lt;/h3&gt;
+&lt;p&gt;Integration tests must use standard input files which define the network, demands and zoning for the test case. In the case of PLANitIO all of these are defined in one XML input file (usually named macroscopicinput.xml).&lt;/p&gt;
+&lt;p&gt;The expected results should have been generated by another method. These can include:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hand calculation (if the test case is simple);&lt;/li&gt;
+&lt;li&gt;running the same test case in another application. All the tests in the “Route Choice” section were run on OmniTRANS, whose outputs were recorded for comparison;&lt;/li&gt;
+&lt;li&gt;expected error messages, where a test has deliberately invalid inputs in order to test PLANit’s input validation methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The expected results generated from these alternative calculation methods are stored in two ways:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CSV and XML output files;&lt;/li&gt;
+&lt;li&gt;Java data storage objects, usually Java Maps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PLANitIO stores results from its runs using objects called &lt;em&gt;output formatters&lt;/em&gt;. It uses two output formatters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PLANitOutputFormatter, which writes results to CSV and XML files;&lt;/li&gt;
+&lt;li&gt;MemoryOutputFormatter, which stores results in Java memory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The contents of the CSV results files generated by PLANitOutputFormatter can be compared to the standard results CSV files, and the values stored in Java memory objects are compared to those stored in MemoryOutputFormatter.&lt;/p&gt;
+&lt;p&gt;The XML results files generated by PLANitIO contain details of the output configuration used in the test, the output CSV files storing the results and the columns included in the output files. But they also contain a timestamp which gives the date and time of the PLANitIO run. This timestamp should never be the same for any two different runs. The tests must check that all the contents of the created XML file &lt;em&gt;except the timestamp&lt;/em&gt; are the same as those in the standard results file, but the value of the timestamp in the generated file must always differ from that in the standard results file.&lt;/p&gt;
+&lt;p&gt;Each integration test must include:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an XML input file to define the inputs for the test case;&lt;/li&gt;
+&lt;li&gt;Java code to run PLANit to read the input file, run the traffic assignment and save the results;&lt;/li&gt;
+&lt;li&gt;CSV files to store the expected results (except for tests with invalid inputs to test PLANit’s input validation);&lt;/li&gt;
+&lt;li&gt;XML output files;&lt;/li&gt;
+&lt;li&gt;Java code to store the expected results in Java;&lt;/li&gt;
+&lt;li&gt;Java code to compare the results from the test run with the expected results.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Java contains its own libraries which can read CSV files (Apache Commons CSV) and check that results from a test run match the expected values (JUnit).&lt;/p&gt;
+&lt;p&gt;The class &lt;code&gt;PlanItIOTestHelper.java&lt;/code&gt; contains common code which is used to set up and run PLANit for these tests. This class defines:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;default configuration methods which are used in many of the tests but not all of them;&lt;/li&gt;
+&lt;li&gt;utility methods which are used for common file actions (e.g. comparing the contents of one file with another, deleting CSV results files after the test has finished with them).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The class PlanItIOIntegrationTest contains the individual test cases described in Section 3.&lt;/p&gt;
+&lt;h3 id=&#34;23input-file-formats&#34;&gt;2.3	Input File Formats&lt;/h3&gt;
+&lt;p&gt;Each test case has an XML input file called macroscopicinput.xml which contains its input data in the standard XML format (using the &lt;macroscopicdemand&gt;, &lt;macroscopicnetwork&gt; and &lt;macroscopiczoning&gt; elements.&lt;/p&gt;
+&lt;h3 id=&#34;24standard-results-files--naming-convention&#34;&gt;2.4	Standard Results Files – Naming Convention&lt;/h3&gt;
+&lt;p&gt;CSV standard results files use the naming convention:&lt;/p&gt;
+&lt;p&gt;&lt;OutputType&gt;_Time Period &lt;Time period number&gt;_&lt;Number of Iterations&gt;.csv&lt;/p&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;p&gt;&lt;OutputType&gt; is one of “Link”, “Path” or “Origin-Destination”&lt;/p&gt;
+&lt;p&gt;&lt;Time period number&gt; is the appropriate time period number for the assignment execution&lt;/p&gt;
+&lt;p&gt;&lt;Number of iterations&gt; is whatever was defined as the maximum number of iterations in the test (for most tests this is either 1 or 500).&lt;/p&gt;
+&lt;p&gt;Note that Origin-Destination results files use an iteration number one below those for links and paths.  This is because link costs are recalculated at the start of each iteration, using flows from the previous iteration.&lt;/p&gt;
+&lt;p&gt;So typical CSV output file names include &lt;code&gt;Link_Time Period 1_500.csv&lt;/code&gt;,&lt;code&gt;Origin-Destination_Time Period 2_1.csv&lt;/code&gt; etc.&lt;/p&gt;
+&lt;p&gt;XML output files follow a similar naming convention but do not include the number of iterations in their title (number of iterations is included in their content anyway). So the equivalent names to the above examples would be &lt;code&gt;Link_Time Period 1.xml&lt;/code&gt; and &lt;code&gt;Origin-Destination_Time Period 2.xml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If a test case has more than one time period it will produce more than one set of output files. Several tests have three time periods; for these tests the generated results for all time periods are checked.&lt;/p&gt;
+&lt;h3 id=&#34;25storing-expected-results-in-memory--link-output&#34;&gt;2.5	Storing Expected Results in Memory – Link Output&lt;/h3&gt;
+&lt;p&gt;Tests of the contents of the MemoryOutputFormatter use data transfer objects (DTOs). These objects are populated with expected result values in the Java code, and then stored in Java Maps. After the traffic assignment run has finished, the values stored in the MemoryOutputFormatter can be compared to these standard results in the code.&lt;/p&gt;
+&lt;p&gt;Expected results for link output are stored in ResultDto objects. A ResultDto object is populated by its constructor call, which has the following arguments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;startNodeId&lt;/em&gt;		   external id of start node (used to define the link segment);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;endNodeId&lt;/em&gt;			external id of end node (used to define the link segment);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;linkFlow&lt;/em&gt;				 flow through link (output);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;linkCost&lt;/em&gt;				 cost (travel time) of link (output);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;capacity&lt;/em&gt;				 capacity of the link (input);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;length&lt;/em&gt;					 length of the link (input);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;speed&lt;/em&gt;					 travel speed of the link (input).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ResultDto objects are stored in a Java Map whose keys are run id, time period and mode. Test cases may have more than one run, time period or mode so this allows all the results to be stored for each.&lt;/p&gt;
+&lt;p&gt;The fifth argument in the ResultDto constructor, total cost to end node, is not currently used. This was originally included to provide a sort order for the ResultDto objects in the Map which stores them. This is quite helpful for human inspection of CSV output files but is not required for computerized testing.&lt;/p&gt;
+&lt;h3 id=&#34;26storing-expected-results-in-memory--path-output&#34;&gt;2.6	Storing Expected Results in Memory – Path Output&lt;/h3&gt;
+&lt;h3 id=&#34;27storing-expected-results-in-memory--origin-destination-output&#34;&gt;2.7	Storing Expected Results in Memory – Origin-Destination Output&lt;/h3&gt;
+&lt;h2 id=&#34;3--test-cases&#34;&gt;3  Test Cases&lt;/h2&gt;
+&lt;h3 id=&#34;31explanatory-test&#34;&gt;3.1	Explanatory Test&lt;/h3&gt;
+&lt;h4 id=&#34;311--test_explanatory&#34;&gt;3.1.1  test_explanatory&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Purpose:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This test corresponds to the basic example included in the ReadMe.Md file for the PLANitIO project. This illustrates the input and output files for the simplest possible network, one link with a demand of one unit across it. This allows modellers to relate the introductory example in the documentation to a real test case.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;file:///C:/Users/gman6028/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png&#34; alt=&#34;A close up of a logo  Description automatically generated&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The link has a demand of 10 units from Node 1 to Node 2. The road is single-lane, one-way from Node 1 to Node 2. The capacity of the link is 2000.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Location:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;src\test\resources\testcases\explanatory\xml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;All input and output files are in this directory.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Notes:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This test has turned out to be very useful &lt;em&gt;because&lt;/em&gt; it is so trivial. If you make a code change which causes this test to fail, you know you have made a mistake or mistype in your code changes to cause the failure. And it is usually easy to trace back to the coding error which causes a wrong result in this case.&lt;/p&gt;
+&lt;h4 id=&#34;312--test_explanatory_attempt_to_change_locked_formatter&#34;&gt;3.1.2  test_explanatory_attempt_to_change_locked_formatter&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Purpose:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This test validates that PLANit’s formatter locking validation is working.&lt;/p&gt;
+&lt;p&gt;When PLANit runs a traffic assignment execution, it locks the setup of all its output type configurations. Any attempt to add properties to or remove properties from an output type configuration after this should throw an exception. This test includes code to add properties to the link output type configuration after the traffic assignment has been run, which should generate an exception.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As “test_explanatory” above&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Location:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;src\test\resources\testcases\explanatory\xml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;All input and output files are in this directory.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Notes:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If this test works correctly, it should run the traffic assignment once and then throw an exception. This first run will generate output files which should match “test_explanatory” above, but it should throw the exception without writing any results to the MemoryOutputFormatter.&lt;/p&gt;
+
       </description>
     </item>
     

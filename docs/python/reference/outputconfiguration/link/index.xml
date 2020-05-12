@@ -37,7 +37,6 @@
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -47,7 +46,6 @@
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choice of output property to add&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -89,7 +87,7 @@
 &lt;p&gt;Not all output properties are available in combination with link segment results. For a list of compatible output properties see the &lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt;OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; documentation&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;.add(output_property)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.remove(output_property)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -98,7 +96,6 @@
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -108,8 +105,7 @@
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Choice of output property to add&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choice of output property to remove&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

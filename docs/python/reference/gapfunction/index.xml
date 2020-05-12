@@ -1,0 +1,82 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – Gap Function</title>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/gapfunction/</link>
+    <description>Recent content in Gap Function on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/gapfunction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Link Based Relative Gap Function</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Reference documentation for the link based relative gap function.&lt;/p&gt;
+&lt;p&gt;This gap function utilises the link costs across the network to establish a network wide gap. Its computation is based on the function mentioned in Bovy and Jansen (1983)&lt;sup&gt;1&lt;/sup&gt;. In this approach, you simply construct a lower bound - each iteration - that consists of all current shortest paths for all Origin-Destination (OD) pairs multiplied with the OD demand and take the difference with actual system travel time. The latter is a simple multiplication of the link flows with the link costs - in the current iteration. One then divides this absolute gap by the total system travel time to obtain the relative gap. Hence its name, link based relative gap. Mathematically, it can be defined as follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \delta^{\textrm relative} = { (\sum_{a}^{A} c_a \cdot f_a) \cdot (\sum_{w}^{W} c_w^* \cdot d_w) \over (\sum_{a}^{A} c_a \cdot f_a)}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\delta^{\textrm relative}= \textrm{relative duality gap},\\ c_a= \textrm{cost (h) on link segment } a,\\ c_w^*= \textrm{ path minimum cost (h) connecting OD pair} w,\\ d_w= \textrm{ total demand (veh/h) for OD pair} w,\\ A= \textrm{ total number of links},\\ W= \textrm{ total number of OD pairs}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Bovy, P., &amp;amp; Jansen, G. (1983). Network aggregation effects upon equilibrium assignment outcomes: An empirical investigation. Transportation Science, 17(3), 240-261.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All link based gap functions are only suitable for traffic assignment methods that have link additive path costs, i.e., when we can add the link costs to construct the path cost, we can also use the link costs to determine the gap.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;Name&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;Value&lt;/th&gt;
+&lt;th style=&#34;text-align: center;&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;../../stopcriterion&#34;&gt;Stop criterion&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Object instance&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../stopcriterion/default&#34;&gt;Default Stop Criterion&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;Memory output formatter exposes the following methods&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class has no properties (yet)&lt;/p&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; on what traffic assignment methods are available&lt;br /&gt;
+&lt;a href=&#34;../../stopcriterion/default&#34;&gt;StopCriterion&lt;/a&gt; default implementation&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;GapFunctionWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
