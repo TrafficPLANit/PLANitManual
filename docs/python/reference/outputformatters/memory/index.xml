@@ -14,7 +14,55 @@
     
     
     <item>
-      <title>Docs: .get_position_of_output_value_property(&#43;)</title>
+      <title>Docs: .get_last_iteration()</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .get_last_iteration() method provides you with the last iteration index of the PLANit run. Useful when retrieving data for that particular iteration via the &lt;a href=&#34;../iterator&#34;&gt;iterator&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Only call this method after the simulation run.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.get_last_iteration()&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# remove default formatter - activate memory output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deactivate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT_IO&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# run simulation&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#collect iteration index of last recorded iteration&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_last_iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# find position of flow result for mode 1, time period 2, iteration i&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_value_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FLOW&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../iterator&#34;&gt;Memory Formatter Iterator&lt;/a&gt; iterator for the memory output formatter&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .get_position_of_output_key_property(&#43;)</title>
       <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -23,9 +71,110 @@
         
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
-&lt;p&gt;The .get_position_of_output_value_property(+) method allows you to collect the index of output properties in any result entry array. this index can be used to collect the actual value, once you have access to a particular result entry via, for example, the &lt;a href=&#34;TODO&#34;&gt;iterator&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The .get_position_of_output_key_property(+) method allows you to collect the index of output properties in any result entry array. This index can be used to collect the actual value, once you have access to a particular result entry via, for example, the &lt;a href=&#34;../iterator&#34;&gt;iterator&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This method only retrieves output activated properties that &lt;em&gt;must be&lt;/em&gt; part of the unique identifiers - keys - for the result row entry. For example. When the result rows have two columns, where one is identified by &lt;code&gt;OutputProperty.LINK_EXTERNAL_ID&lt;/code&gt;, and the other by &lt;code&gt;OutputProperty.FLOW&lt;/code&gt;. Then the former can be be collected via this method, i.e., it reflects the unique identifier for the row. The latter&amp;rsquo;s property position can be collected as a &lt;a href=&#34;mof_position_value_property+&#34;&gt;value position&lt;/a&gt; since it reflects a value rather than a unique identifier.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Make sure that the properties you request the position for have been activated on the output type you provide. If not, then &lt;code&gt;None&lt;/code&gt; is returned&lt;/p&gt;
+&lt;p&gt;Make sure that the properties you request a position for have been activated. If not, then &lt;code&gt;None&lt;/code&gt; is returned&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.get_position_of_output_key_property(mode_ext_id, time_period_ext_id, iteration, output_type, output_property)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;mode_ext_id&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid mode id related to the input, i.e., external id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;time_period_ext_id&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid time period id related to the input, i.e., external id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;iteration&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid iteration index&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;output_type&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt;&lt;code&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Output type you want to access this value property on&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;output_property&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt;&lt;code&gt;OutputPropertyType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The output property you want the position information for&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;integer&lt;/code&gt;  when successful, &lt;code&gt;None&lt;/code&gt; otherwise&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#remove default formatter - activate memory output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deactivate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT_IO&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#run simulation&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#collect iteration index of last recorded iteration&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_last_iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#find position of flow result for mode 1, time period 2, iteration i&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_key_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../iterator&#34;&gt;Memory Formatter Iterator&lt;/a&gt; iterator for the memory output formatter
+&lt;a href=&#34;../../../enums/outputtype&#34;&gt;&lt;code&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; for available output types&lt;br&gt;
+&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt;&lt;code&gt;OutputPropertyType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; for available output properties&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .get_position_of_output_value_property(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .get_position_of_output_value_property(+) method allows you to collect the index of output properties in any result entry array. This index can be used to collect the actual value, once you have access to a particular result entry via, for example, the &lt;a href=&#34;../iterator&#34;&gt;iterator&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This method only retrieves output activated properties that are &lt;em&gt;not&lt;/em&gt; part of the unique identifiers - keys - for the result row entry. For example. When the result rows have two columns, where one is identified by &lt;code&gt;OutputProperty.LINK_EXTERNAL_ID&lt;/code&gt;, and the other by &lt;code&gt;OutputProperty.FLOW&lt;/code&gt;. Then the former must be collected as a &lt;a href=&#34;mof_position_key_property+&#34;&gt;key&lt;/a&gt;, i.e., it reflects the unique identifier for the row. The latter&amp;rsquo;s property position can be collected via this method since it relates to an actual output value.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure that the properties you request a position for have been activated. If not, then &lt;code&gt;None&lt;/code&gt; is returned&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;.get_position_of_output_value_property(mode_ext_id, time_period_ext_id, iteration, output_type, output_property)&lt;/code&gt;&lt;/p&gt;
@@ -103,10 +252,204 @@
 &lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_value_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FLOW&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt;&lt;code&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; for available output types&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;../iterator&#34;&gt;Memory Formatter Iterator&lt;/a&gt; iterator for the memory output formatter
+&lt;a href=&#34;../../../enums/outputtype&#34;&gt;&lt;code&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; for available output types&lt;br&gt;
 &lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt;&lt;code&gt;OutputPropertyType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; for available output properties&lt;/p&gt;
 &lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
-&lt;p&gt;Class &lt;code&gt;PLANit&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .iterator(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .iterator(+) method provides you with an iterator instance allowing you to loop through and collect the results of a PLANit run.&lt;/p&gt;
+&lt;p&gt;When collecting the iterator, you must always provide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mode (external) id&lt;/li&gt;
+&lt;li&gt;Time period (external) id&lt;/li&gt;
+&lt;li&gt;Iteration index&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt;OutputType.&lt;enum&gt;&lt;/a&gt; type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By providing these inputs, the memory outformatter can identify the result matrix on which the iterator operates.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure that the mode, time period, iteration and output type exist and/or are activated in the results, otherwise the iterator cannot be instantiated.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.iterator(mode_ext_id, time_period_ext_id, iteration, output_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;mode_ext_id&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid mode id related to the input, i.e., external id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;time_period_ext_id&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid time period id related to the input, i.e., external id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;iteration&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid iteration index&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;output_type&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt;&lt;code&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Output type you want to construct the iterator for&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;Class &lt;a href=&#34;../iterator&#34;&gt;&lt;code&gt;Memory OutputFormatter Iterator&lt;/code&gt;&lt;/a&gt;  instance&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#remove default formatter - activate memory output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deactivate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT_IO&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#run simulation&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#collect iteration index of last recorded iteration&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_last_iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#find position of flow result for mode 1, time period 2, iteration i&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_value_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FLOW&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#find position of key; we use link segment (external) id	&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;id_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_key_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK_SEGMENT_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#collect iterator and print results by looping over entries&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;has_next&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;():&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;id: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_keys&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id_pos&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; flow: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_values&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; 
+	&lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;next&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;TODO&#34;&gt;&lt;code&gt;Memory OutputFormatter Iterator&lt;/code&gt;&lt;/a&gt; for the iterator implementation
+&lt;a href=&#34;../../../enums/outputtype&#34;&gt;&lt;code&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt; for available output types&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Memory Output Formatter Iterator</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/</guid>
+      <description>
+        
+        
+        &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
+&lt;p&gt;You can use an &lt;em&gt;iterator&lt;/em&gt; to access the results for a given mode, time, iteration, and &lt;a href=&#34;../../../enums/outputtype&#34;&gt;output type&lt;/a&gt; on the &lt;a href=&#34;../&#34;&gt;memory output formatter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The iterator &amp;ldquo;iterates&amp;rdquo; over the results by providing you access to result entries one-by-one starting with the first and continuing until the last. Each result entry exposed by the iterator is a &lt;em&gt;raw array&lt;/em&gt; where array entry reflects a single value for exactly one of the activated output properties.&lt;/p&gt;
+&lt;p&gt;To know which array entry belongs to what output property, you must first collect its position, i.e., index, assigned to the output property, see &lt;a href=&#34;../mof_position_value_property+&#34;&gt;&lt;code&gt;.get_position_of_output_value_property(+)&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;../mof_position_key_property+&#34;&gt;&lt;code&gt;.get_position_of_output_key_property(+)&lt;/code&gt;&lt;/a&gt; on the &lt;a href=&#34;../&#34;&gt;memory output formatter&lt;/a&gt;. Which of the two methods to use depends on whether or not the output property is regarded a key or a value.&lt;/p&gt;
+&lt;p&gt;Once you have established which property value is found at what array index,  and you constructed an instance of this class via the &lt;a href=&#34;../mof_iterator+&#34;&gt;&lt;code&gt;.iterator(+)&lt;/code&gt;&lt;/a&gt; on the &lt;a href=&#34;../&#34;&gt;memory output formatter&lt;/a&gt;, you are ready to loop over the results.&lt;/p&gt;
+&lt;p&gt;Remember each entry contain a single raw array - representing a result row - which can now be decoded using the position information you collected earlier.&lt;/p&gt;
+&lt;p&gt;While this may sound cumbersome, it is in fact an extremely flexible approach, that you will get used to very quickly. See the example section of this page for an illustrative example.&lt;/p&gt;
+&lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
+&lt;p&gt;No defaults (yet)&lt;/p&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;Memory output formatter iterator exposes the following methods&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;mofi_has_next&#34;&gt;&lt;code&gt;has_next()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Verify if there is another row of results&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;mof_next&#34;&gt;&lt;code&gt;next()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Move iterator to the next row of results&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;mof_keys&#34;&gt;&lt;code&gt;get_keys()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Collect the current result row&amp;rsquo;s keys as a raw data array&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;mof_values&#34;&gt;&lt;code&gt;get_values&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Collect the current result row&amp;rsquo;s values as a raw data array&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;No exposed properties (yet)&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PhysicalCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BPR&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VirtualCost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FIXED&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Smoothing&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MSA&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# remove default formatter - activate memory output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deactivate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT_IO&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# run simulation&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#collect iteration index of last recorded iteration&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_last_iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# find position of flow result for mode 1, time period 2, iteration i&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_value_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;FLOW&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# find position of key; we use link segment (external) id	&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;id_pos&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_position_of_output_key_property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK_SEGMENT_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# collect iterator and print results by looping over entries&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OutputType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LINK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;has_next&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;():&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;id: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_keys&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id_pos&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; flow: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;get_values&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;flow_pos&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; 
+	&lt;span style=&#34;color:#000&#34;&gt;link_iter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;next&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;MemoryOutputIteratorWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

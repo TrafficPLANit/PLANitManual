@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -889,7 +889,72 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_last_iteration" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/">.get_last_iteration()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_key_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_key_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_iterator" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/">.iterator(&#43;)</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Iterator</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemoryiterator">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_keys" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/">.get_keys()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_values" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/">.get_values()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_has_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/">.has_next()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/">.next()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
     </li>
@@ -1347,17 +1412,15 @@
 <li>Mode (external) id</li>
 <li>Time period (external) id</li>
 <li>Iteration index</li>
+<li><a href="../../../enums/outputtype">OutputType.<enum></a> type</li>
 </ul>
 <blockquote>
 <p>The mode and time period ids refer to the ids provided in the input files, rather then the auto-generated ids used by PLANit internally.</p>
 </blockquote>
-<h6 id="iterator">iterator</h6>
-<p>You can use an <em>iterator</em> to access the results for a given time, mode, and iteration. The iterator &ldquo;iterates&rdquo; over the results by providing you access to result entries one-by-one starting with the first and continuing until the last. Each result entry exposed by the iterator is a <em>raw array</em> where array entry reflects a single value for exactly one of the activated output properties.</p>
-<p>To know which array entry belongs to what output property, you must first collect the position, i.e., index, assigned to the output property, see <code>get_position_of_output_value_property(+)</code> and <code>get_position_of_output_key_property(+)</code> depending on whether or not the output property is regarded a key or a value in the result.</p>
-<p>Once you have established which property value is found at what array index, you use the <code>iterator(+)</code> method to construct the appropriate iterator and loop over the available result entries, each of which contain a single raw array - representing a result row - which can be decoded using the position information you collected earlier.</p>
-<p>While this may sound cumbersome, it is in fact an extremely flexible approach, that you will get used to very quickly. See the example section of this page for an illustrative example.</p>
+<p>Further, you must be able to pinpoint the location of the output properties, e.g. flow, cost, in the result array that are exposed via an <a href="iterator">iterator</a>. So, you first collect the position of each output property, then construct the appropriate iterator. Once this is done, you can loop over each result row and collect the relevant data.</p>
+<p>This class exposes the necessary methods to both identify the position of output properties, and also allows you to construct the appropriate <a href="iterator">iterator</a>.</p>
 <h4 id="defaults">Defaults</h4>
-<p>No defaults available (yet)</p>
+<p>No defaults (yet)</p>
 <h4 id="methods">Methods</h4>
 <p>Memory output formatter exposes the following methods</p>
 <table>
@@ -1370,19 +1433,19 @@
 <tbody>
 <tr>
 <td><a href="mof_position_value_property+"><code>get_position_of_output_value_property(+)</code></a></td>
-<td align="left">Collect the index of an activated <a href="../../enums/outputpropertytype">output property</a> (e.g. flow) for an active <a href="../../enums/outputtype">output type</a> (e.g. link)</td>
+<td align="left">Collect the index of an activated <a href="../../enums/outputpropertytype">output property</a> (e.g. flow) for an active <a href="../../enums/outputtype">output type</a> (e.g. link). <em>Property is not a(n) (partial) id for the row</em></td>
 </tr>
 <tr>
-<td><code>get_position_of_output_key_property(+)</code> TODO</td>
-<td align="left">Collect the index of an activated <a href="../../enums/outputpropertytype">output property</a> (e.g. link segment id) representing a key for an active <a href="../../enums/outputtype">output type</a> (e.g. link)</td>
+<td><a href="mof_position_key_property+"><code>get_position_of_output_key_property(+)</code></a></td>
+<td align="left">Collect the index of an activated <a href="../../enums/outputpropertytype">output property</a> (e.g. link segment id) representing a key for an active <a href="../../enums/outputtype">output type</a> (e.g. link). <em>Property is a(n) (partial) id for the row</em></td>
 </tr>
 <tr>
-<td><code>get_last_iteration()</code> TODO</td>
+<td><a href="mof_last_iteration"><code>get_last_iteration()</code></a></td>
 <td align="left">Collect the index of the last iteration conducted by the PLANit run</td>
 </tr>
 <tr>
-<td><code>iterator(+)</code> TODO</td>
-<td align="left">Construct an [iterator] TODO to loop over the results for a given time period, mode, and iteration</td>
+<td><a href="mof_iterator+"><code>iterator(+)</code></a></td>
+<td align="left">Construct an <a href="iterator">iterator</a> to loop over the results for a given time period, mode, and iteration</td>
 </tr>
 </tbody>
 </table>
@@ -1419,9 +1482,10 @@
 	<span style="color:#204a87;font-weight:bold">print</span> <span style="color:#4e9a06">&#34;id: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_keys</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">id_pos</span><span style="color:#000;font-weight:bold">],</span> <span style="color:#4e9a06">&#34; flow: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_values</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">flow_pos</span><span style="color:#000;font-weight:bold">]</span> 
 	<span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">next</span><span style="color:#000;font-weight:bold">()</span>
 </code></pre></div><h4 id="see-also">See also</h4>
-<p><a href="../../planit+/planit_activate+">PLANit.activate(+)</a> to see how to activate an output formatter<br>
+<p><a href="iterator">iterator</a> for the implementation of the memory output formatter iterator
+<a href="../../planit+/planit_activate+">PLANit.activate(+)</a> to see how to activate an output formatter<br>
 <a href="../../planit+/planit_deactivate+">PLANit.deactivate(+)</a> to see how to de-activate an output formatter<br>
-<a href="../planit+/planit_memory">PLANit.memory</a> on how to access the memory output formatter</p>
+<a href="../../planit+/planit_memory">PLANit.memory</a> on how to access the memory output formatter</p>
 <h4 id="source-code">Source code</h4>
 <p>Class <code>MemoryOutputFormatterWrapper</code> in <code>Wrappers.py</code></p>
 
@@ -1459,7 +1523,36 @@
             
                 <div class="entry">
                     <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/">.get_last_iteration()</a>
+                    </h5>
+                    <p>Memory Output Formatter method</p>
+                </div>
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_key_property(&#43;)</a>
+                    </h5>
+                    <p>Memory Output Formatter method</p>
+                </div>
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+                    </h5>
+                    <p>Memory Output Formatter method</p>
+                </div>
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/">.iterator(&#43;)</a>
                     </h5>
                     <p>Memory Output Formatter method</p>
                 </div>
@@ -1548,6 +1641,21 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/">Memory Output Formatter Iterator</a>
+                    </h5>
+                    <p>An iterator for in-memory output formatter results</p>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1618,7 +1726,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="/commit/6fcf722298c1e419fc4bda71df76c14b1fc3a182">- added to traditional static assignment - added to link based relative duality gap - started with memory output formatter (not done) - streamlined use of non-capitals in comments of python code examples (6fcf722)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 15, 2020: <a  href="/commit/eeb78e200d22347dd1d04dc91762f839eb01ad33">- finalised memory output formatter methods - added memory output formatter iterator and its methods (eeb78e2)</a>
 </div>
 </div>
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -889,7 +889,72 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_last_iteration" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/">.get_last_iteration()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_key_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_key_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_iterator" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/">.iterator(&#43;)</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Iterator</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemoryiterator">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_keys" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/">.get_keys()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_values" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/">.get_values()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_has_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/">.has_next()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/">.next()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
     </li>
@@ -1344,7 +1409,7 @@
 <p>This gap function utilises the link costs across the network to establish a network wide gap. Its computation is based on the function mentioned in Bovy and Jansen (1983)<sup>1</sup>. In this approach, you simply construct a lower bound - each iteration - that consists of all current shortest paths for all Origin-Destination (OD) pairs multiplied with the OD demand and take the difference with actual system travel time. The latter is a simple multiplication of the link flows with the link costs - in the current iteration. One then divides this absolute gap by the total system travel time to obtain the relative gap. Hence its name, link based relative gap. Mathematically, it can be defined as follows:</p>
 <p><span class="math inline">\(\Large \delta^{\textrm relative} = { (\sum_{a}^{A} c_a \cdot f_a) \cdot (\sum_{w}^{W} c_w^* \cdot d_w) \over (\sum_{a}^{A} c_a \cdot f_a)}\)</span></p>
 <p>with</p>
-<p><span class="math inline">\(\delta^{\textrm relative}= \textrm{relative duality gap},\\ c_a= \textrm{cost (h) on link segment } a,\\ c_w^*= \textrm{ path minimum cost (h) connecting OD pair } w,\\ d_w= \textrm{ total demand (veh/h) for OD pair } w,\\ A= \textrm{ total number of links},\\ W= \textrm{ total number of OD pairs}\)</span></p>
+<p><span class="math inline">\(\delta^{\textrm relative}= \textrm{relative duality gap},\\ c_a= \textrm{cost (h) on link segment } a,\\ c_w^*= \textrm{ path minimum cost (h) connecting OD pair } w,\\ d_w= \textrm{ total demand (veh/h) for OD pair } w,\\ f_a= \textrm{flow (veh/h) on link segment } a,\\ A= \textrm{ total number of links},\\ W= \textrm{ total number of OD pairs}\)</span></p>
 <blockquote>
 <p>All link based gap functions are only suitable for traffic assignment methods that have link additive path costs, i.e., when we can add the link costs to construct the path cost, we can also use the link costs to determine the gap.</p>
 </blockquote>
@@ -1408,6 +1473,20 @@
     
     
     <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1590,12 +1669,14 @@
         
             
         
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="/commit/6fcf722298c1e419fc4bda71df76c14b1fc3a182">- added to traditional static assignment - added to link based relative duality gap - started with memory output formatter (not done) - streamlined use of non-capitals in comments of python code examples (6fcf722)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="/commit/f495531ad7fe56e7b6ec4a06735e4a42782ba260">missed flow notation explanation in link relative gap function (f495531)</a>
 </div>
 </div>
 
