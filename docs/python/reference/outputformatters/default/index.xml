@@ -1,0 +1,447 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – Default Output Formatter</title>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/</link>
+    <description>Recent content in Default Output Formatter on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: .set_csv_directory(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_csv_directory(+) method provides you with the option to overwrite the default output directory set by the PLANit output formatter for the CSV (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_CSV_OUTPUT_DIRECTORY&lt;/code&gt;&lt;/a&gt;) output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure that the provided output directory is a path where you have write access.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_csv_directory(path_to_dir)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;path_to_dir&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid path with write access for user&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure to persist output in same directory&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_csv_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\users\public\planit\csv&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set_csv_name_extension(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_csv_name_extension(+) method allows you to overwrite the default extension (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_CSV_NAME_EXTENSION&lt;/code&gt;&lt;/a&gt;) used by the PLANit output formatter for the CSV output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The extension includes the &amp;lsquo;.&amp;rsquo; of &amp;lsquo;.csv&amp;rsquo;,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_csv_name_extension(csv_extension)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;csv_extension&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Alternative extension for &lt;code&gt;.csv&lt;/code&gt; files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure to rename csv extension to MS Excel&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_csv_name_extension&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;.xls&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set_csv_name_root(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_csv_name_root(+) method provides you with the option to overwrite the default description, a.k.a. prefix, a.k.a. name root, part (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_CSV_NAME_PREFIX&lt;/code&gt;&lt;/a&gt;) for the CSV output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is recommended to not include spaces in this description for readability reasons and to keep it as short as possible&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_csv_name_root(run_description)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;run_description&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Short description of run&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure to persist output in same directory&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_csv_name_root&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set_output_directory(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_output_directory(+) method provides you with an the option to overwrite the default output directory set by the PLANit output formatter for both the CSV (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_CSV_OUTPUT_DIRECTORY&lt;/code&gt;&lt;/a&gt;) and XML (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_XML_OUTPUT_DIRECTORY&lt;/code&gt;&lt;/a&gt;)) output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure that the provided output directory is a path where you have write access.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_output_directory(path_to_dir)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;path_to_dir&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid path with write access for user&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#all input and output available in public user directory (windows)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;io_dir&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\users\public\planit&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#collect input&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;io_dir&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure to persist output in same directory&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;io_dir&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#run simulation&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set_xml_directory(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_xml_directory(+) method provides you with the option to overwrite the default output directory set by the PLANit output formatter for the XML (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_XML_OUTPUT_DIRECTORY&lt;/code&gt;&lt;/a&gt;) output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure that the provided output directory is a path where you have write access.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_xml_directory(path_to_dir)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;path_to_dir&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Valid path with write access for user&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure to persist output in same directory&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_xml_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\users\public\planit\xml&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set_xml_name_extension(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_xml_name_extension(+) method allows you to overwrite the default extension (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_XML_NAME_EXTENSION&lt;/code&gt;&lt;/a&gt;) used by the PLANit output formatter for the XML output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The extension includes the &amp;lsquo;.&amp;rsquo; of &amp;lsquo;.xml&amp;rsquo;,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_xml_name_extension(xml_extension)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;xml_extension&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Alternative extension for &lt;code&gt;.xml&lt;/code&gt; files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#clarify this is planit xml output with custom extension&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_xml_name_extension&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;xplanit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set_xml_name_root(&#43;)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .set_xml_name_root(+) method provides you with the option to overwrite the default description, a.k.a. prefix, a.k.a. name root, part (&lt;a href=&#34;../#defaults&#34;&gt;&lt;code&gt;DEFAULT_XML_NAME_PREFIX&lt;/code&gt;&lt;/a&gt;) for the XML output files of a PLANit traffic assignment run.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is recommended to not include spaces in this description for readability reasons and to keep it as short as possible&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set_xml_name_root(run_description)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;run_description&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Short description of run&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PLANit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# configure to persist output in same directory&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_xml_name_root&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;test1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;more configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanItOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;PLANit.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

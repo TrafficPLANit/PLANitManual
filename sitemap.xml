@@ -74,17 +74,17 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -94,7 +94,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -143,6 +143,26 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
   </url>
@@ -150,6 +170,21 @@
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -189,7 +224,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -199,12 +234,12 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -224,7 +259,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -298,6 +333,11 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
   </url>
@@ -309,12 +349,12 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/</loc>
-    <lastmod>2020-05-15T11:37:59+10:00</lastmod>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
@@ -348,8 +388,8 @@
   </url>
   
   <url>
-    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/input-output/</loc>
-    <lastmod>2020-05-03T17:02:35+10:00</lastmod>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/</loc>
+    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
   </url>
   
   <url>
