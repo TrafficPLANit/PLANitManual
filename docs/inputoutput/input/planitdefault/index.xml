@@ -1,0 +1,308 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – PLANit Default Input Data format (XML)</title>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/</link>
+    <description>Recent content in PLANit Default Input Data format (XML) on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Physical Network Input Data format (XML)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the Physical Network infrastructure&amp;rsquo;s XML input format used by PLANit.&lt;/p&gt;
+&lt;h2 id=&#34;root-element&#34;&gt;Root element&lt;/h2&gt;
+&lt;p&gt;The Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the following XML root element:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;  ...  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;
+		...
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+	...
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a standalone file, it should look something like&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicnetworkinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+...	
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This root element can contain only two sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#linkconfiguration&#34;&gt;&lt;code&gt;&amp;lt;linkconfiguration&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Configuration of network (modes, link segment types etc.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#infrastructure&#34;&gt;&lt;code&gt;&amp;lt;infrastructure&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Network content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In the remainder of this page, we discuss each of the eligible XML elements in order of expected appearance, its attributes and sub-elements. XML code snippets are used to provide local examples, while at the bottom of the page a single expanded example is provided highlighting all the available options explicitly.&lt;/p&gt;
+&lt;p&gt;Lastly, we provide the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these &lt;a href=&#34;./#network-defaults&#34;&gt;defaults&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;network-defaults&#34;&gt;Network defaults&lt;/h2&gt;
+&lt;p&gt;Each network entity/element&amp;rsquo;s defaults are listed below.&lt;/p&gt;
+&lt;h3 id=&#34;default-mode&#34;&gt;Default Mode&lt;/h3&gt;
+&lt;p&gt;When no modes are specified under the &lt;code&gt;&amp;lt;linkconfiguration&amp;gt;&lt;/code&gt; a single default mode is created to represent all modes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No explicit references to modes are to be made in other XML elements with optional mode attributes because there is no mode to explicitly refer to.&lt;/li&gt;
+&lt;li&gt;It is assumed that all link segments are accessible to the default mode and that all demand utilises this default mode of travel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;strong&gt;Default Mode&lt;/strong&gt; has the following characteristics:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Characteristic&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Value&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Name of the mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Pcu&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;float&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;pcu&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Passenger Car Unit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;(External) Id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;integer&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;External id to reference the mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;default-link-segment-type&#34;&gt;Default Link Segment Type&lt;/h3&gt;
+&lt;p&gt;When no link segment types are specified under the &lt;code&gt;&amp;lt;linkconfiguration&amp;gt;&lt;/code&gt; a single default link segment type is created that is applied to all link segments. In that case, the default link segment type accepts all available modes.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Default Link Segment Type&lt;/strong&gt; has the following characteristics:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Characteristic&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Value&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Name of the link segment type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Maxdensitylane&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;180&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;pcu/l&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Maximum density per lane in pcu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Capacitylane&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;1800&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;pcu/l/h&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;maximum flow per lane in pcu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Mode specific properties&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#link-segment-type-mode-properties&#34;&gt;Default Mode properties&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The default mode specific properties for a link segment type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;default-link-segment-type-mode-properties&#34;&gt;Default Link Segment Type Mode Properties&lt;/h3&gt;
+&lt;p&gt;When one or more mode specific properties are not specified for a mode when configuring the &lt;code&gt;&amp;lt;linksegmenttype&amp;gt;&lt;/code&gt; element under &lt;code&gt;&amp;lt;linkconfiguration&amp;gt;&lt;/code&gt; default values will be applied&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Default Link Segment Type Mode Properties&lt;/strong&gt; has the following characteristics:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Characteristic&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Value&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;maxspeed&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;80&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;km/h&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Maximum speed for the mode on the link segment type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;critspeed&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;60&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;km/h&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Speed for the mode under capacity flow conditions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;xml-elements&#34;&gt;XML Elements&lt;/h2&gt;
+&lt;p&gt;This section discusses the XML elements under the &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt; root element in expected order of appearance.&lt;/p&gt;
+&lt;h3 id=&#34;linkconfiguration&#34;&gt;&amp;lt;linkconfiguration&amp;gt;&lt;/h3&gt;
+&lt;p&gt;Optional configuration of the physical road network. When not specified, the &lt;a href=&#34;./#default-mode&#34;&gt;default mode&lt;/a&gt; and &lt;a href=&#34;./#default-link-segment-type&#34;&gt;default link segment type&lt;/a&gt; will be activated. This element has the following sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#modes&#34;&gt;&lt;code&gt;&amp;lt;modes&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Modes available in this network&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#linksegmenttypes&#34;&gt;&lt;code&gt;&amp;lt;linksegmenttypes&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Link segment type available in this network&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;modes&#34;&gt;&amp;lt;modes&amp;gt;&lt;/h4&gt;
+&lt;p&gt;Modes available in this project. When absent a &lt;a href=&#34;./#default-mode&#34;&gt;default mode&lt;/a&gt; is created. This element has the following sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#mode&#34;&gt;&lt;code&gt;&amp;lt;mode&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;unbounded&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mode information&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;mode&#34;&gt;&amp;lt;mode&amp;gt;&lt;/h4&gt;
+&lt;p&gt;Each mode can have a description(name) and pcu value. These are configured via its sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default available&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; TODO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Description of the mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;pcu&amp;gt;&lt;/code&gt;	  TODO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#default-mode&#34;&gt;YES&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;pcu value&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Its (external) identifier is configured as an attribute&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML attribute Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Unit&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;id&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;positive integer&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;User identifier for the mode, i.e., its external id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;NOT HAPPY WITH HOW THE DEFAULT IS REFERENCED + PCU AND NAME SHOULD HAVE A DIFFERENT TABLE FORMAT + THEY HAVE VALUES SO END ELEMENT + INCLOUDE TYPE AND UNIT FOR THAT LIKE ATTRIBUTE + EXAMPLE HERE&lt;/p&gt;
+&lt;h4 id=&#34;linksegmenttypes&#34;&gt;&amp;lt;linksegmenttypes&amp;gt;&lt;/h4&gt;
+&lt;p&gt;Link segment types define the different types of link segment properties that can be attributed to links, including mode specific attributes. When absent a &lt;a href=&#34;./#default-link-segment-type&#34;&gt;default link segments type&lt;/a&gt; is created, that is applied to all link segments in the network. This element has the following sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h3 id=&#34;infrastructure&#34;&gt;&amp;lt;infrastructure&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;expanded-example&#34;&gt;Expanded Example&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -391,7 +391,7 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/</loc>
-    <lastmod>2020-05-15T16:27:24+10:00</lastmod>
+    <lastmod>2020-05-18T15:10:55+10:00</lastmod>
   </url>
   
   <url>
@@ -430,6 +430,11 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/</loc>
+    <lastmod>2020-05-18T15:10:55+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/</loc>
     <lastmod>2020-05-18T10:41:35+10:00</lastmod>
   </url>
@@ -452,6 +457,11 @@
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/</loc>
+    <lastmod>2020-05-18T15:10:55+10:00</lastmod>
   </url>
   
   <url>
@@ -485,6 +495,11 @@
   </url>
   
   <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/</loc>
+    <lastmod>2020-05-18T18:19:18+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/network/</loc>
     <lastmod>2020-05-18T10:41:35+10:00</lastmod>
   </url>
@@ -492,6 +507,11 @@
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/</loc>
+    <lastmod>2020-05-18T18:19:18+10:00</lastmod>
   </url>
   
   <url>

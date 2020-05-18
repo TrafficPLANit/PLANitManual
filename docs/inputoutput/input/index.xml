@@ -1,0 +1,197 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – Input Data formats</title>
+    <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/</link>
+    <description>Recent content in Input Data formats on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: PLANit Default Input Data format (XML)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the Default XML input format used by PLANit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This rest of this section of the manual is split in separate pages, each detailing the specifics of one of the major inputs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt; XML Input format&lt;/li&gt;
+&lt;li&gt;Zoning Structure XML Input format&lt;/li&gt;
+&lt;li&gt;Demands XML Input format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before diving into these sections however, it is advisable to quickly get acqainted with some basic concepts regarding XML in case you are unfamiliar with its concepts and features. For an introduction into the &lt;a href=&#34;./#basics&#34;&gt;basics&lt;/a&gt; explaining the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;, see the sections below. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+&lt;h3 id=&#34;planit-project-one-file-or-multiple-input-files&#34;&gt;PLANit project, one file or multiple input files?&lt;/h3&gt;
+&lt;p&gt;The user can construct each major input (network, demands, zoning) separately in its own XML file, e.g.,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;my_network.xml&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_zoning.xml&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_demands.xml&lt;/code&gt;,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;or decide to store all inputs in the same file, e.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;my_planit_input.xml&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The former is useful if you have a large project, where you - for example - have multiple zoning systems that you want to apply to the same network, or you have multiple networks that you want to test with the same demands. If however, you just want to run a single traffic assignment run with one network, one set of demands, and one zoning structure, it is probably easiest to just construct your inputs in a single file.&lt;/p&gt;
+&lt;p&gt;In practice, there is no difference in how the inputs are constructed. Each major input is identified with a particular XML element signature by PLANit. As long as there is an XML file - with any name - in the directory that contains the required XML element signature, PLANit will attempt to parse it accordingly.&lt;/p&gt;
+&lt;h3 id=&#34;xml-and-xsd-what-now&#34;&gt;XML and XSD, what now?&lt;/h3&gt;
+&lt;p&gt;XML files can contain any kind of markup elements. Therefore, you need a mechanism for a parser to find out what elements are valid and which ones are not. To do so, XML Schemas&amp;rsquo; exist. An &lt;a href=&#34;https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405&#34;&gt;XML schema definition&lt;/a&gt; prescribes what a valid XML document looks like for some application. You then include a reference to your schema in the header of the XML file to let any parsers and/or human readers of the file know that the XML is expected to conform to this schema.&lt;/p&gt;
+&lt;p&gt;For example, when constructing the inputs in a single XML file, you should ideally reference the &lt;code&gt;macroscopicinput.xsd&lt;/code&gt; for this reason.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By default PLANit will NOT verify the inputs actively and instead just parse the contents to maximise performance. Leaving out the schema reference will therefore not result in issues as long as your input is valid PLANit XML conforming to the XSD.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to&amp;gt;/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	
+	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Do things conform XSD Schema macroscopicinput.xsd --&amp;gt;&lt;/span&gt;
+	
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Below you will find which schema definition goes with what input file configuration.&lt;/p&gt;
+&lt;p&gt;Single XML input file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;macroscopicinput.xsd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Separate XML input files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;macroscopicdemandinput.xsd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;macroscopicnetworkinput.xsd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;macroscopiczoninginput.xsd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can download the XSD files from the repository and store them locally. In the future we intend to provide them online so you can simply refer to them by providing the url.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Schema definitions are also defined in XML, but are stored in files with the &lt;code&gt;.xsd&lt;/code&gt; extension. PLANit has XSD files for each of the major input components as well as the output meta-data XML.&lt;/p&gt;
+&lt;p&gt;In this manual we provide you with a user friendly description of the specification laid-out in the PLANit XSD files as well a references to the files themselves for the more technically inclined readers.&lt;/p&gt;
+&lt;h3 id=&#34;geo-spatial-xml--gml&#34;&gt;Geo-spatial XML = GML&lt;/h3&gt;
+&lt;p&gt;Geospatial information is becoming more and more common in transport models. In the default XML input format for PLANit, this feature is supported by incorporating elements of the Geography Markup Language (&lt;a href=&#34;http://www.ogc.org/standards/gml&#34;&gt;GML&lt;/a&gt;). GML is a standard to represent all kinds of geo spatial data in XML. In PLANit, many elements of the network and zoning have a spatial aspect to them. for those components we allow optional GML elements to be specified to embed geospatial information in your models.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Embedding GML in PLANit is entirely optional. It is equally possible to provide for example lengths for links and leave out geo spatial information on nodes, and zones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Like the PLANit schemas, GML has its own XML schemas to ensure GML elements are used properly. In PLANit, we prefix all GML elements with the &amp;ldquo;namespace&amp;rdquo; &lt;code&gt;gml&lt;/code&gt;. In the example above this can be seen when including the schema definition for GML&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whenever you encounter an element in the PLANit input XML files that is prefixed with &lt;code&gt;gml&lt;/code&gt; it pertains to a GML element. For example a node can have a geo location identified by a &lt;code&gt;gml:point&lt;/code&gt; like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructure&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;srsname=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;EPSG:4326&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;												
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; 																
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;George Street roundabout&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt; 							
+                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt; 														
+                    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;150.512796 -34.900145&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;														
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/node&amp;gt;&lt;/span&gt;
+		...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;srsname&lt;/code&gt; attribute identifies what Coordinate Reference System is used. This signals how the software should interpret the coordinates provided. As you can see, the GML elements are prefixed with &lt;code&gt;gml&lt;/code&gt; to distinguish them from the regular PLANit elements.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;p&gt;The PLANit native input format has the following key features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full XSD schema support, i.e., validity of input file can always be verified during parsing, or before parsing&lt;/li&gt;
+&lt;li&gt;Flexible input file arrangement, i.e., all components can be in one file, or separate files per component can be offered&lt;/li&gt;
+&lt;li&gt;Extensive use of default arguments (optional elements) to minimise user configuration&lt;/li&gt;
+&lt;li&gt;Flexible GIS support for optional location information via &lt;a href=&#34;http://www.ogc.org/standards/gml&#34;&gt;GML&lt;/a&gt; embedding and SRS support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In its simplest form, the user provides a single xml file containing all mandatory components; network, demand, and zoning. See &lt;a href=&#34;./#minimum_example&#34;&gt;Minimum Example&lt;/a&gt;. Alternatively, these three main components can be provided separately.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;Below you will find an example of a single XML file describing a simple - yet complete - set of inputs. The network contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One link having two directions, so&lt;/li&gt;
+&lt;li&gt;Two link segments, and&lt;/li&gt;
+&lt;li&gt;Two nodes (on either end of the link)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Basic zoning structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Two zones, each with one centroid, so&lt;/li&gt;
+&lt;li&gt;Two centroids,&lt;/li&gt;
+&lt;li&gt;Two connectoids, i.e., references to nodes that allow access/egress to/from a zone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Basic demands:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 time period with a duration of 1 hour (3600s)&lt;/li&gt;
+&lt;li&gt;1 trip between zone 1 and zone 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to&amp;gt;/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	
+	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Demand component --&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;demandconfiguration&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timeperiods&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timeperiod&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;duration&amp;gt;&lt;/span&gt;3600&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/duration&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timeperiod&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timeperiods&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/demandconfiguration&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;oddemands&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;odcellbycellmatrix&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;timeperiodref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;o&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;d&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/d&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/o&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/odcellbycellmatrix&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/oddemands&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;
+	
+	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Physical network component --&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructure&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/nodes&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;links&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodearef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodebref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;a_b&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;b_a&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;length&amp;gt;&lt;/span&gt;10&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/length&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/links&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/infrastructure&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+	
+	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- zoning structure component --&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zones&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;									
+						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;2&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;
+						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zones&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -240,6 +240,81 @@
       
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Input Data formats</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputinput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit Default XML</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputinputplanitdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_physical_network" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/">Physical Network</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/output/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Data formats</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputoutput">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -1506,6 +1581,24 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#input-data-formats">Input Data Formats</a>
+      <ul>
+        <li><a href="#planit-default-input-format">PLANit default input format</a></li>
+        <li><a href="#minimum-example">Minimum example</a></li>
+      </ul>
+    </li>
+    <li><a href="#output-data-formats">Output Data Formats</a>
+      <ul>
+        <li><a href="#planit-default-output-format">PLANit default output format</a></li>
+        <li><a href="#minimum-example-link-segment">Minimum example (link segment)</a></li>
+      </ul>
+    </li>
+    <li><a href="#see-also">See Also</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -1542,13 +1635,251 @@
 	<h1>Data formats</h1>
         
 	
+	<p>In this section of the manual we discuss the data formats supported by PLANitm i.e., input/output file formats and structure.</p>
+<blockquote>
+<p>Here we <strong>only</strong> focus on the <strong>structure of the data formats</strong> . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the <a href="../java">Java</a> and <a href="../python/reference/outputformatters">Python</a> API for more detailed information.</p>
+</blockquote>
+<p>We make a clear distinction between <em>input</em> and <em>output</em> data formats. Inputs comprise the network, demands, and zoning structure, while outputs are differentiated by output type (link, path, etc.). Since PLANit is modular and extendible, you can write your own components for parsing inputs and persisting outputs. However, in most cases, you can simply use the default input and output components provided by PLANit, referred to as the &ldquo;default format&rdquo;.</p>
+<h2 id="input-data-formats">Input Data Formats</h2>
+<p>The following input data formats are available:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data Format</th>
+<th align="left">File type</th>
+<th align="left">Status</th>
+<th align="left">Documentation</th>
+<th align="left">Python support</th>
+<th align="left">Java support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="input/planitdefault">PLANit default input format</a></td>
+<td align="left">XML</td>
+<td align="left">supported</td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+</tr>
+<tr>
+<td align="left">TNTP open format</td>
+<td align="left">ASCII</td>
+<td align="left">prototype</td>
+<td align="left">NO</td>
+<td align="left">NO</td>
+<td align="left"><strong>YES</strong></td>
+</tr>
+<tr>
+<td align="left">BasicCSV</td>
+<td align="left">CSV</td>
+<td align="left">prototype</td>
+<td align="left">NO</td>
+<td align="left">NO</td>
+<td align="left"><strong>YES</strong></td>
+</tr>
+</tbody>
+</table>
+<p>It is strongly recommended to only use the officially supported native xml format at this stage, as the TNTP and BasicCSV input formats do not support the full feature set of PLANit, are not available in Python, nor are they tested fully. Also, the TNTP format is ambiguous in its specification and often example networks provided in this format  do not strictly follow the format either.</p>
+<h3 id="planit-default-input-format">PLANit default input format</h3>
+<p>For detailed information on the PLANit default input format we refer the reader to the dedicated section on the <a href="input/planitdefault">PLANit default Input Data Format</a>. For a taste of what this format looks like, we provide a small example below to give a first impression.</p>
+<h3 id="minimum-example">Minimum example</h3>
+<p>Below you will find an example of a very simple - yet complete - input file for PLANit, with a simple network containing:</p>
+<ul>
+<li>One link having two directions, so</li>
+<li>Two link segments, and</li>
+<li>Two nodes (on either end of the link)</li>
+</ul>
+<p>Basic zoning structure:</p>
+<ul>
+<li>Two zones, each with one centroid, so</li>
+<li>Two centroids,</li>
+<li>Two connectoids, i.e., references to nodes that allow access/egress to/from a zone</li>
+</ul>
+<p>Basic demands:</p>
+<ul>
+<li>1 time period with a duration of 1 hour (3600s)</li>
+<li>1 trip between zone 1 and zone 2</li>
+</ul>
+<p>Resulting in the following single XML input file:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span> <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
+	<span style="color:#c4a000">xmlns:xml=</span><span style="color:#4e9a06">&#34;http://www.w3.org/XML/1998/namespace&#34;</span>
+	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 	
+	<span style="color:#8f5902;font-style:italic">&lt;!-- Demand component --&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;demandconfiguration&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;timeperiods&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;timeperiod</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;duration&gt;</span>3600<span style="color:#204a87;font-weight:bold">&lt;/duration&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/timeperiods&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/demandconfiguration&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;oddemands&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;odcellbycellmatrix</span> <span style="color:#c4a000">timeperiodref=</span><span style="color:#4e9a06">&#34;0&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;o</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;d</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/d&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/o&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/odcellbycellmatrix&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/oddemands&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>
+	
+	<span style="color:#8f5902;font-style:italic">&lt;!-- Physical network component --&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;infrastructure&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;nodes&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/nodes&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;links&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;link</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;length&gt;</span>10<span style="color:#204a87;font-weight:bold">&lt;/length&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/link&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/links&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/infrastructure&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
+	
+	<span style="color:#8f5902;font-style:italic">&lt;!-- zoning structure component --&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;zones&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;centroid&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>									
+						<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>45.256 -110.45<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;centroid&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>2<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>
+						<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>45.256 -110.45<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/zones&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
+<span style="color:#204a87;font-weight:bold">&lt;/PLANit&gt;</span>
+</code></pre></div><h2 id="output-data-formats">Output Data Formats</h2>
+<p>The following output data formats are available:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data Format</th>
+<th align="left">File type</th>
+<th align="left">Status</th>
+<th align="left">Documentation</th>
+<th align="left">Python support</th>
+<th align="left">Java support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="output/planitdefault">PLANit default output format</a></td>
+<td align="left">XML</td>
+<td align="left">supported</td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+</tr>
+<tr>
+<td align="left">Memory output format</td>
+<td align="left">None</td>
+<td align="left">supported</td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The memory output format does not result in any files on disk as it keeps all the results in memory.</p>
+</blockquote>
+<h3 id="planit-default-output-format">PLANit default output format</h3>
+<p>For detailed information on the PLANit default output format we refer the reader to the dedicated section on the <a href="output/planitdefault">PLANit Default Output Data Format</a>. For a taste of what this format looks like, we provide a small example below to give a first impression.</p>
+<h3 id="minimum-example-link-segment">Minimum example (link segment)</h3>
+<p>Below you will find an example of link output for a PLANit run. Meta-data is provided in a separate XML file, while the raw results are provided in a CSV file with heading row.</p>
+<p>XML meta-data includes:</p>
+<ul>
+<li>Time stamp of when the data is created</li>
+<li>PLANit version used</li>
+<li>Scenario description</li>
+<li>Traffic assignment component configuration information</li>
+<li>Location of CSV result file</li>
+<li>CSV column meta-data (name, units, type)</li>
+</ul>
+<p>CSV raw data includes:</p>
+<ul>
+<li>Column headings to relate column to meta-data in XML</li>
+<li>Row for each link (segment) result</li>
+<li>Value in each column of each row to store result value</li>
+</ul>
+<p>In the example below, you will find the XML meta-data file for basic link results, where we only activated link segment costs (although many other columns can be activated in your own simulation. The link segment (external) id and the mode (external) id uniquely identify each result row.</p>
+<p>The CSV file contains the results for this example, where we only have a single row with non-zero results.</p>
+<blockquote>
+<p>In general, the CSV file is generally much much larger than the xml meta-data file.</p>
+</blockquote>
+<blockquote>
+<p>Identical approach is used for other output types (paths, origing-destinations, etc.), only the meta-data and supported properties differ</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">
+<span style="color:#204a87;font-weight:bold">&lt;metadata</span> <span style="color:#c4a000">xmlns:xml=</span><span style="color:#4e9a06">&#34;http://www.w3.org/XML/1998/namespace&#34;</span>
+	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/linkmetadata.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;timestamp&gt;</span>2020-01-24T12:07:00.302+11:00<span style="color:#204a87;font-weight:bold">&lt;/timestamp&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;version&gt;</span>0.1<span style="color:#204a87;font-weight:bold">&lt;/version&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;description&gt;</span>PlanIt example<span style="color:#204a87;font-weight:bold">&lt;/description&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;outputconfiguration&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;assignment&gt;</span>TraditionalStaticAssignment<span style="color:#204a87;font-weight:bold">&lt;/assignment&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;physicalcost&gt;</span>BPRLinkTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/physicalcost&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;virtualcost&gt;</span>FixedConnectoidTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/virtualcost&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;timeperiod&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>0<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period 1<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/outputconfiguration&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;simulation&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;iteration&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;nr&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/nr&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;&lt;path_to_result&gt;</span>\Link_RunId 0_TEST_Time Period 1_1.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/iteration&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Cost<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>h<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/columns&gt;</span>
+<span style="color:#204a87;font-weight:bold">&lt;/metadata&gt;</span>
 
-<div class="pageinfo pageinfo-primary">
-<p>Information on the native and other data formats is to be provided here (Work In Progress)</p>
-
-</div>
-
+</code></pre></div><p>CSV example, with a cost of 6 minutes (0.1 h) for link segment 1, and mode 1</p>
+<pre><code class="language-CSV" data-lang="CSV">Link Segment External Id,Mode External Id,Cost
+1,1,0.1
+</code></pre><h2 id="see-also">See Also</h2>
+<p><a href="output">PLANit Output Data Formats</a> for information on all available output formats<br>
+<a href="output/planitdefault">PLANit Default Output Data Format</a> for the Default PLANit output format<br>
+<a href="input">PLANit Input Data Formats</a> for information on all available input formats<br>
+<a href="input/planitdefault">PLANit Default Input Data Format</a> for the Default PLANit input format</p>
 
         <div class="section-index">
     
@@ -1722,9 +2053,31 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/inputoutput/input/">Input Data formats</a>
+                    </h5>
+                    <p></p>
+                </div>
+            
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/inputoutput/output/">Output Data formats</a>
+                    </h5>
+                    <p></p>
+                </div>
             
         
             
@@ -1780,7 +2133,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 15, 2020: <a  href="/commit/d6e9ab1dda6bf1c03a4a3f58b513deb0b0c228e5">- added default output formatter - added all methods in default output formatter - fixed use of next() in examples of memory output formatter iterator (d6e9ab1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 18, 2020: <a  href="/commit/048d93a420ef073326b8bac7cdab19ab4cba51c9">- added landing pages for output formats - made a start with native XML input format (048d93a)</a>
 </div>
 </div>
 
