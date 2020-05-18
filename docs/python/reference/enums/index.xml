@@ -297,7 +297,7 @@
 &lt;td align=&#34;left&#34;&gt;The capacity flow rate for a lane&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;OutputType.LINK&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;veh/h(/l)  &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;veh/h(/l)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;DOWNSTREAM_NODE_LOCATION&lt;/code&gt;&lt;/td&gt;
@@ -374,14 +374,14 @@
 &lt;td align=&#34;left&#34;&gt;The density&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;OutputType.LINK&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;veh/km &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;veh/km&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;FLOW&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;The flow rate&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;OutputType.LINK&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;veh/h &lt;strong&gt;TODO: should be in PCU&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;veh/h&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_COST&lt;/code&gt;&lt;/td&gt;
