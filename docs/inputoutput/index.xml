@@ -40,7 +40,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;input/planitdefault&#34;&gt;PLANit default input format&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;planitdefault&#34;&gt;PLANit default input format&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;supported&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;

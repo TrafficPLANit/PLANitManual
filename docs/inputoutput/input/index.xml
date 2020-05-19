@@ -28,7 +28,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;This rest of this section of the manual is split in separate pages, each detailing the specifics of one of the major inputs:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt; XML Input format&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;li&gt;Zoning Structure XML Input format&lt;/li&gt;
 &lt;li&gt;Demands XML Input format&lt;/li&gt;
 &lt;/ul&gt;
