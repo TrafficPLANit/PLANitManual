@@ -26,13 +26,14 @@
 &lt;blockquote&gt;
 &lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;This rest of this section of the manual is split in separate pages, each detailing the specifics of one of the major inputs:&lt;/p&gt;
+&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;Each major input has a dedicated section that details its structure and use:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt; element&lt;/li&gt;
-&lt;li&gt;Zoning Structure XML Input format&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_zoning_structure&#34;&gt;Zoning Structure&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;li&gt;Demands XML Input format&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Before diving into these sections however, it is advisable to quickly get acqainted with some basic concepts regarding XML in case you are unfamiliar with its concepts and features. For an introduction into the &lt;a href=&#34;./#basics&#34;&gt;basics&lt;/a&gt; explaining the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;, see the sections below. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
+&lt;p&gt;Before diving into these sections however, it is advisable to quickly get acqainted with some basic concepts regarding XML and how PLANit, utilises this data format. At least have a quick look at the &lt;a href=&#34;./#basics&#34;&gt;Basics&lt;/a&gt; section detailing overall structure in a PLANit context and discussing the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
 &lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
 &lt;h3 id=&#34;planit-project-one-file-or-multiple-input-files&#34;&gt;PLANit project, one file or multiple input files?&lt;/h3&gt;
 &lt;p&gt;The user can construct each major input (network, demands, zoning) separately in its own XML file, e.g.,&lt;/p&gt;
@@ -47,6 +48,26 @@
 &lt;/ul&gt;
 &lt;p&gt;The former is useful if you have a large project, where you - for example - have multiple zoning systems that you want to apply to the same network, or you have multiple networks that you want to test with the same demands. If however, you just want to run a single traffic assignment run with one network, one set of demands, and one zoning structure, it is probably easiest to just construct your inputs in a single file.&lt;/p&gt;
 &lt;p&gt;In practice, there is no difference in how the inputs are constructed. Each major input is identified with a particular XML element signature by PLANit. As long as there is an XML file - with any name - in the directory that contains the required XML element signature, PLANit will attempt to parse it accordingly.&lt;/p&gt;
+&lt;h3 id=&#34;planit&#34;&gt;&amp;lt;PLANit&amp;gt;&lt;/h3&gt;
+&lt;p&gt;For a single input file, the root element is &lt;code&gt;&amp;lt;PLANit&amp;gt;&lt;/code&gt; and each of the three major input components (&lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/code&gt;) are its sub-elements, resulting in a file that looks something like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_schema&amp;gt;/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;						
+		...
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
+		...
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;	
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;					
+		...
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;	
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;If multiple files exist in the same directory, with the same root element, PLANit, will simply parse the first one it encounters.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We refer the reader to the dedicated documentation pages for each of the major input components as provided in the &lt;a href=&#34;./#outline&#34;&gt;Outline&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;xml-and-xsd-what-now&#34;&gt;XML and XSD, what now?&lt;/h3&gt;
 &lt;p&gt;XML files can contain any kind of markup elements. Therefore, you need a mechanism for a parser to find out what elements are valid and which ones are not. To do so, XML Schemas&amp;rsquo; exist. An &lt;a href=&#34;https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405&#34;&gt;XML schema definition&lt;/a&gt; prescribes what a valid XML document looks like for some application. You then include a reference to your schema in the header of the XML file to let any parsers and/or human readers of the file know that the XML is expected to conform to this schema.&lt;/p&gt;
 &lt;p&gt;For example, when constructing the inputs in a single XML file, you should ideally reference the &lt;code&gt;macroscopicinput.xsd&lt;/code&gt; for this reason.&lt;/p&gt;
