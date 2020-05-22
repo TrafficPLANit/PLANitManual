@@ -25,9 +25,7 @@
         &lt;p&gt;In this section of the manual we discuss the Physical Network infrastructure&amp;rsquo;s XML input format used by PLANit.&lt;/p&gt;
 &lt;p&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;macroscopicnetwork&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/h2&gt;
-&lt;p&gt;Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;  ...  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
+&lt;p&gt;Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt;. When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
 		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
 		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -36,7 +34,7 @@
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
 	...
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a standalone file, it should look something like&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a stand-alone file, it should look something like&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&lt;/span&gt;
 	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
 	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
@@ -898,6 +896,176 @@ It also must have a unique identifier (external id) available as an attribute:&l
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/links&amp;gt;&lt;/span&gt;
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/infrastructure&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Zoning Structure Input Data format (XML)</title>
+      <link>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the Zoning structure&amp;rsquo;s XML input format used by PLANit.&lt;/p&gt;
+&lt;p&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points.&lt;/p&gt;
+&lt;p&gt;The zoning structure in this input file describes the zones, centroids, and connectoids for a PLANit project.&lt;/p&gt;
+&lt;h2 id=&#34;macroscopiczoning&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/h2&gt;
+&lt;p&gt;The zoning structure can be described in a stand alone XML file - only providing the zoning structure - or it can be provided as part of a PLANit XML file describing all input components. Either way, all the zoning structure specific information is enclosed within the XML root element &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt;. When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	...
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
+		...
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
+	...
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a stand-alone file, it should look something like&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicnetworkinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+...	
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This root element can contain only a single sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#zones&#34;&gt;&lt;code&gt;&amp;lt;zones&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Container elements for all zones&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In the remainder of this page, we discuss each of the eligible XML elements in order of expected appearance, its attributes and sub-elements or simple elements (elements without sub-elements). At the bottom of the page an &lt;a href=&#34;./#expanded-example&#34;&gt;expanded example&lt;/a&gt; is provided highlighting all the available options explicitly.&lt;/p&gt;
+&lt;p&gt;Lastly, we provide the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these &lt;a href=&#34;./#network-defaults&#34;&gt;defaults&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;zoning-defaults&#34;&gt;Zoning defaults&lt;/h2&gt;
+&lt;p&gt;No defaults are used in the context of zoning (yet).&lt;/p&gt;
+&lt;h2 id=&#34;xml-elements&#34;&gt;XML Elements&lt;/h2&gt;
+&lt;p&gt;This section discusses the XML elements under the &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt; root element in expected order of appearance.&lt;/p&gt;
+&lt;h2 id=&#34;zones&#34;&gt;&lt;strong&gt;&amp;lt;zones&amp;gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Zones is the umbrella under which we define all available zones. This element has the following sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;./#-zone&#34;&gt;&lt;code&gt;&amp;lt;zone&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Unbounded&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Individual zone configurations available&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;-zone&#34;&gt;&amp;lt;&amp;gt; &lt;strong&gt;&amp;lt;zone&amp;gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;A zone is a single geographic area that is usually constructed because it is deemed to represent a desirable level of travel demand homogeneity. Alternatively, it can be based on historic, political, or other criteria based boundaries. It is expected to be contiguous with respect to other zones, should not overlap, should not be bordering on only a single other zone (donut approach).&lt;/p&gt;
+&lt;p&gt;Each zone has exactly one centroid from which travel can commence/cease. The physical road network is accessible via eligible nodes, termed connectoids. Also, each zone must have a unique (external) identifier that is made available via an attribute&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML attribute Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;id&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;positive integer&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;User identifier for the zone, i.e., its external id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;srsname&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;SRS&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Spatial Reference System SRID used for all zones. When absent, it is assumed the same SRS as for the physical network is utilised (if any).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This element has the following simple-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Simple Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default value&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;This element has the following sub-elements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;XML Element Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Maximum occurrences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h2 id=&#34;expanded-example&#34;&gt;Expanded Example&lt;/h2&gt;
+&lt;p&gt;Below you will find an expanded example where all elements and attributes are eplxicitly set, to give you an idea of the overall structure of the macroscopic network XML. This example does not make sense as an actual input file, it is purely meant to show off all aspects of the file, rather than be used as a practically feasible input file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_Schema&amp;gt;/macroscopiczoninginput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zones&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;srsname=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;EPSG:4326&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;								
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;										
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Glebe&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;								
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;										
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Postal office reference point&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;									
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;11&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;									
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Polygon&amp;gt;&lt;/span&gt;									
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:exterior&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:LinearRing&amp;gt;&lt;/span&gt;
+						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:coordinates&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;decimal=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;.&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;cs=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ts=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;119.593002319336,-31.6695003509522 119.595306396484,
+		         			31.6650276184082 119.600944519043,-31.6658897399902 119.603385925293,-31.669527053833 
+		         			119.60050201416,-31.6739158630371 119.595664978027,-31.6728610992432 119.593002319336,
+		         			31.6695003509522
+		         			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:coordinates&amp;gt;&lt;/span&gt;
+	         			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:LinearRing&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:exterior&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Polygon&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zones&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       </description>
     </item>

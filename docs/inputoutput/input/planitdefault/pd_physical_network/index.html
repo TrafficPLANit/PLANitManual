@@ -23,16 +23,16 @@
 <title>Physical Network Input Data format (XML) | PLANit</title><meta property="og:title" content="Physical Network Input Data format (XML)" />
 <meta property="og:description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
 If you are only interested to see an example file, jump to the Expanded Example.
-&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;:" />
+&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/" />
-<meta property="article:modified_time" content="2020-05-21T15:20:56+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-22T17:49:13+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Physical Network Input Data format (XML)">
 <meta itemprop="description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
 If you are only interested to see an example file, jump to the Expanded Example.
-&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;:">
-<meta itemprop="dateModified" content="2020-05-21T15:20:56&#43;10:00" />
-<meta itemprop="wordCount" content="2590">
+&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;.">
+<meta itemprop="dateModified" content="2020-05-22T17:49:13&#43;10:00" />
+<meta itemprop="wordCount" content="2587">
 
 
 
@@ -40,7 +40,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <meta name="twitter:title" content="Physical Network Input Data format (XML)"/>
 <meta name="twitter:description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
 If you are only interested to see an example file, jump to the Expanded Example.
-&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;:"/>
+&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;."/>
 
 
 
@@ -289,6 +289,12 @@ If you are only interested to see an example file, jump to the Expanded Example.
       
       
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_physical_network" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/">&lt;macroscopicnetwork&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_zoning_structure" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/">&lt;macroscopiczoning&gt;</a>
       
       
     </li>
@@ -1698,9 +1704,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 	<p>In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.</p>
 <p>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</p>
 <h2 id="macroscopicnetwork">&lt;macroscopicnetwork&gt;</h2>
-<p>Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element <code>&lt;macroscopicnetwork&gt;</code>:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>  ...  <span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
-</code></pre></div><p>When part of a larger (single) PLANit input file, the structure should resemble something like the following:</p>
+<p>Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element <code>&lt;macroscopicnetwork&gt;</code>. When part of a larger (single) PLANit input file, the structure should resemble something like the following:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
 		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
@@ -1709,7 +1713,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
 	...
 <span style="color:#204a87;font-weight:bold">&lt;/PLANit&gt;</span>
-</code></pre></div><p>Whereas if, it is a standalone file, it should look something like</p>
+</code></pre></div><p>Whereas if, it is a stand-alone file, it should look something like</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork</span>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
@@ -2574,7 +2578,7 @@ It also must have a unique identifier (external id) available as an attribute:</
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 21, 2020: <a  href="/commit/de61ad63471730a536074c6610039924e76e816e">- finalised physical network XML documentation - updated index of xml format (de61ad6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 22, 2020: <a  href="/commit/6f152009ab86264a5382f6eb1a678d8268fe6b58">- made a start with zoning XML structure (6f15200)</a>
 </div>
 </div>
 
