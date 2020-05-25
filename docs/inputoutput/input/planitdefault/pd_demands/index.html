@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,18 +20,30 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Assignment | PLANit</title><meta property="og:title" content="Assignment" />
-<meta property="og:description" content="Assignment implementations
-" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/" />
-<meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Assignment">
-<meta itemprop="description" content="Assignment implementations
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Assignment"/>
-<meta name="twitter:description" content="Assignment implementations
-"/>
+<title>Demands Input Data format (XML) | PLANit</title><meta property="og:title" content="Demands Input Data format (XML)" />
+<meta property="og:description" content="In this section of the manual we discuss the Demands&rsquo; XML input format used by PLANit.
+If you are only interested to see an example file, jump to the Expanded Example.
+Demands are specified in trips between zones for a given modality (mode) and for a given duration (time period).
+ Units: trips are always in pcu/h, regardless of the duration specified. So, if you would specify &lsquo;100&rsquo; pcu/h between two points, while the duration of the time is 10 hours." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/" />
+<meta property="article:modified_time" content="2020-05-25T18:19:13+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="Demands Input Data format (XML)">
+<meta itemprop="description" content="In this section of the manual we discuss the Demands&rsquo; XML input format used by PLANit.
+If you are only interested to see an example file, jump to the Expanded Example.
+Demands are specified in trips between zones for a given modality (mode) and for a given duration (time period).
+ Units: trips are always in pcu/h, regardless of the duration specified. So, if you would specify &lsquo;100&rsquo; pcu/h between two points, while the duration of the time is 10 hours.">
+<meta itemprop="dateModified" content="2020-05-25T18:19:13&#43;10:00" />
+<meta itemprop="wordCount" content="1816">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Demands Input Data format (XML)"/>
+<meta name="twitter:description" content="In this section of the manual we discuss the Demands&rsquo; XML input format used by PLANit.
+If you are only interested to see an example file, jump to the Expanded Example.
+Demands are specified in trips between zones for a given modality (mode) and for a given duration (time period).
+ Units: trips are always in pcu/h, regardless of the duration specified. So, if you would specify &lsquo;100&rsquo; pcu/h between two points, while the duration of the time is 10 hours."/>
 
 
 
@@ -49,7 +60,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -236,10 +247,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/inputoutput/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Data formats</a>
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Data formats</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocsinputoutput">
+    <li class="collapse show" id="planitplanitmanualdocsinputoutput">
       
       
       
@@ -253,10 +264,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Input Data formats</a>
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Input Data formats</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocsinputoutputinput">
+    <li class="collapse show" id="planitplanitmanualdocsinputoutputinput">
       
       
       
@@ -270,10 +281,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit Default XML</a>
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">PLANit Default XML</a>
   </li>
   <ul>
-    <li class="collapse " id="planitplanitmanualdocsinputoutputinputplanitdefault">
+    <li class="collapse show" id="planitplanitmanualdocsinputoutputinputplanitdefault">
       
       
       
@@ -292,7 +303,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_demands" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_demands" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
       
       
     </li>
@@ -346,10 +357,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">PLANit-Python manual</a>
+    <a  href="/PLANit/PLANitManual/docs/python/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit-Python manual</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspython">
+    <li class="collapse " id="planitplanitmanualdocspython">
       
       
       
@@ -409,10 +420,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Reference</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspythonreference">
+    <li class="collapse " id="planitplanitmanualdocspythonreference">
       
       
       
@@ -515,10 +526,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Assignment</a>
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Assignment</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitplanitmanualdocspythonreferenceassignment">
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignment">
       
       
       
@@ -1596,6 +1607,36 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#macroscopicdemand">&lt;macroscopicdemand&gt;</a></li>
+    <li><a href="#demands-defaults">Demands defaults</a>
+      <ul>
+        <li><a href="#default-traveller-type">Default Traveller type</a></li>
+        <li><a href="#default-user-class">Default User class</a></li>
+      </ul>
+    </li>
+    <li><a href="#xml-elements">XML Elements</a></li>
+    <li><a href="#demandconfiguration"><strong>&lt;demandconfiguration&gt;</strong></a>
+      <ul>
+        <li><a href="#-travellertypes">&lt;&gt; <strong>&lt;travellertypes&gt;</strong></a></li>
+        <li><a href="#-travellertype">&lt;&gt;&lt;&gt; <strong>&lt;travellertype&gt;</strong></a></li>
+        <li><a href="#-userclasses">&lt;&gt; <strong>&lt;userclasses&gt;</strong></a></li>
+        <li><a href="#-userclass">&lt;&gt;&lt;&gt; <strong>&lt;userclass&gt;</strong></a></li>
+        <li><a href="#-timeperiods">&lt;&gt; <strong>&lt;timeperiods&gt;</strong></a></li>
+        <li><a href="#-timeperiod">&lt;&gt;&lt;&gt; <strong>&lt;timeperiod&gt;</strong></a></li>
+        <li><a href="#-duration">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;duration&gt;</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#-oddemands">&lt;&gt; <strong>&lt;oddemands&gt;</strong></a>
+      <ul>
+        <li><a href="#-oddemand">&lt;&gt;&lt;&gt; <strong>&lt;oddemand&gt;</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#expanded-example">Expanded Example</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -1619,6 +1660,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
 </li>
@@ -1627,21 +1671,28 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/">PLANit-Python manual</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/">Data formats</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item" >
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/">Reference</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/">Input Data formats</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/">PLANit Default XML</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/assignment/">Assignment</a>
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
 </li>
 
 	</ol>
@@ -1649,269 +1700,554 @@
 
             
 <div class="td-content">
-	<h1>Assignment</h1>
-        <div class="lead">Assignment implementations</div>
-	
-	<p>Reference documentation for all traffic assignment implementations available.</p>
-<h4 id="see-also">See also</h4>
-<p><a href="../enums/trafficassignmenttype">TrafficAssignment.&lt;enum&gt;</a> for related assignment type enums<br>
-<a href="../../planit+/planit_set+">PLANit.set(+)</a> on how to set an assignment on PLANit<br>
-<a href="../planit+/planit_assignment">planit(+).assignment</a> on how to access a set traffic assignment instance</p>
-<h4 id="source-code">Source code</h4>
-<p><code>AssignmentWrapper</code> in <code>Wrappers.py</code></p>
+	<h1>Demands Input Data format (XML)</h1>
+    
+	       
+	<p>In this section of the manual we discuss the Demands&rsquo; XML input format used by PLANit.</p>
+<p>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</p>
+<p>Demands are specified in trips between zones for a given modality (mode) and for a given duration (time period).</p>
+<blockquote>
+<p>Units: trips are always in pcu/h, regardless of the duration specified. So, if you would specify &lsquo;100&rsquo; pcu/h between two points, while the duration of the time is 10 hours. Then, the total number of trips equates to 10*100=1000.</p>
+</blockquote>
+<p>You can provide trips in different ways, to maximise flexibility and potentially minimise overhead in the XML:</p>
+<ul>
+<li>cell-by-cell matrix, ideal for very sparse matrices</li>
+<li>row based matrix, ideal for matrices where many zones do not produce any trips, each row is in CSV format</li>
+<li>raw matrix, ideal for large matrices with few zero entries, i.e., matrix in CSV format within a single XML element</li>
+</ul>
+<blockquote>
+<p>PLANit will assume that the referenced zones are compatible with the <a href="../pd_zoning_structure">zoning structure</a> that is adopted in the simulation</p>
+</blockquote>
+<h2 id="macroscopicdemand">&lt;macroscopicdemand&gt;</h2>
+<p>The demands structure can be described in a stand alone XML file - only providing the demands structure - or it can be provided as part of a PLANit XML file describing all input components. Either way, all the demands structure specific information is enclosed within the XML root element <code>&lt;macroscopicdemand&gt;</code>. When part of a larger (single) PLANit input file, the structure should resemble something like the following:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
+		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	...
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand&gt;</span>
+		...
+	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>
+	...
+<span style="color:#204a87;font-weight:bold">&lt;/PLANit&gt;</span>
+</code></pre></div><p>Whereas if, it is a stand-alone file, it should look something like</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand</span>
+	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>									
+	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopicdemandinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+...	
+<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>
+</code></pre></div><p>This root element can contain two sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#demandconfiguration"><code>&lt;demandconfiguration&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Configuration of demands, e.g., modes and user classes</td>
+</tr>
+<tr>
+<td align="left"><a href="./#oddemands"><code>&lt;oddemands&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">container of the Origin-Destination (OD) travel demands</td>
+</tr>
+</tbody>
+</table>
+<p>In the remainder of this page, we discuss each of the eligible XML elements in order of expected appearance, its attributes and sub-elements or simple elements (elements without sub-elements). At the bottom of the page an <a href="./#expanded-example">expanded example</a> is provided highlighting all the available options explicitly.</p>
+<p>Lastly, we provide the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these <a href="./#demands-defaults">defaults</a>.</p>
+<h2 id="demands-defaults">Demands defaults</h2>
+<p>Each demands entity/element&rsquo;s defaults are listed below.</p>
+<h3 id="default-traveller-type">Default Traveller type</h3>
+<p>When no <code>&lt;travellertypes&gt;</code> are defined, a single default traveller type is created and assumed to be applied to all user classes (implicitly). No explicit references to traveller types are to be made in other XML elements with optional traveller type attributes.</p>
+<p>The <strong>Default Traveller Type</strong> has the following characteristics:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Characteristic</th>
+<th align="left">Value</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Name</td>
+<td align="left"><code>&quot;Default&quot;</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">Name of the default traveller type</td>
+</tr>
+<tr>
+<td align="left">(External) Id</td>
+<td align="left">1</td>
+<td align="left">integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">External id of the default traveller type</td>
+</tr>
+</tbody>
+</table>
+<h3 id="default-user-class">Default User class</h3>
+<p>When no <code>&lt;userclasses&gt;</code> are defined, a single default user class is created. No explicit references to user classes are to be made in other XML elements with optional user class attributes.</p>
+<p>With respect to the mode the default user class adopts:</p>
+<ul>
+<li>When no modes are defined: Adopt the <a href="../pd_physical_network/#default-mode">Default Mode</a>,</li>
+<li>When a single mode is defined: Adopt the single defined mode,</li>
+<li>When multiple modes are defined: Not allowed</li>
+</ul>
+<p>With respect to the traveller type the default user class adopts:</p>
+<ul>
+<li>When no traveller types are defined: Adopt the <a href="./#default-traveller-type">Default Traveller Type</a>,</li>
+<li>When a single traveller type is defined: adopt the single defined traveller type,</li>
+<li>When multiple travller types are defined: Not allowed</li>
+</ul>
+<p>The **Default User Class ** has the following characteristics:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Characteristic</th>
+<th align="left">Value</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Name</td>
+<td align="left"><code>&quot;Default&quot;</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">Name of the default user class</td>
+</tr>
+<tr>
+<td align="left">(External) Id</td>
+<td align="left">1</td>
+<td align="left">integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">External id of the default user class</td>
+</tr>
+<tr>
+<td align="left">Mode (external) id reference</td>
+<td align="left">See explanation above</td>
+<td align="left">integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">Adopts mode depending on context</td>
+</tr>
+<tr>
+<td align="left">Traveller type (external) id reference</td>
+<td align="left">See explanation above</td>
+<td align="left">integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">Adopts traveller type depending on context</td>
+</tr>
+</tbody>
+</table>
+<h2 id="xml-elements">XML Elements</h2>
+<p>This section discusses the XML elements under the <code>&lt;macroscopicdemand&gt;</code> root element in expected order of appearance.</p>
+<h2 id="demandconfiguration"><strong>&lt;demandconfiguration&gt;</strong></h2>
+<p>The demand configuration allows you to define the time periods, traveller types, and user classes. A user class is a combination of a traveller type and mode, e.g., if you want to differentiate between commuters and leisure drivers, you would have two traveller types, but both could be driving a car, so they can have the same mode. In that case, there would be two user classes.</p>
+<p>You can omit the user classes and traveller types in which case PLANit will inject a default entry for both, see <a href="./#demands-defaults">Demands defaults</a>. However, you must at least specify a single time period.</p>
 
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/">Traditional static assignment</a>
-                    </h5>
-                    <p>TrafficAssignment.TRADITIONAL_STATIC</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+Currently, both user classes and traveller types are limited to only a single entry. Effectively, this release does not yet support multiple user-classes and traveller types, but the infrastructure and definitions are already available in the XML input definitions.
 </div>
 
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-travellertypes"><code>&lt;travellertypes&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">Traveller types container element</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-userclasses"><code>&lt;userclasses&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">User classes container element</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-timerperiods"><code>&lt;timeperiods&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Time periods container element</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-travellertypes">&lt;&gt; <strong>&lt;travellertypes&gt;</strong></h3>
+<p>Traveller types represent different types of travellers that for the sake of modelling are grouped together based on some common characteristics. When this element is absent, a single <a href="./#default-traveller-type">default traveller type</a> will be generated by PLANit.</p>
+<p>If the default traveller type approach is adopted, no references to traveller types are to be made in any forthcoming elements as there is nothing to refer to explicitly, i.e., no (external) ids of traveller types are present so they cannot be referenced.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-travellertype"><code>&lt;travellertype&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">unbounded</td>
+<td align="left">A traveller type configuration entry</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-travellertype">&lt;&gt;&lt;&gt; <strong>&lt;travellertype&gt;</strong></h3>
+<p>A Traveller type represents travellers that for the sake of modelling are grouped together based on some common characteristics. When not a single entry of this element is present, a <a href="./#default-traveller-type">default traveller type</a> will be generated by PLANit.</p>
+<p>If the default traveller type approach is adopted, no references to traveller types are to be made in any forthcoming elements as there is nothing to refer to explicitly, i.e., no (external) ids of traveller types are present so they cannot be referenced.</p>
+<p>Each traveller type has a unique (external) id that is provided as an attribute.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">positive integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">User identifier for the traveller type, i.e., its external id</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following simple-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left"><code>&quot;&quot;</code></td>
+<td align="left">Description for the traveller type</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-userclasses">&lt;&gt; <strong>&lt;userclasses&gt;</strong></h3>
+<p>User classes represent different combinations of traveller types and modalities (modes). When this element is absent, a single <a href="./#default-user-class">default user class</a> will be generated by PLANit.</p>
+<p>If the default user class approach is adopted, no references to user classes are to be made in any forthcoming elements as there is nothing to refer to explicitly, i.e., no (external) ids of user classes are present so they cannot be referenced.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-userclass"><code>&lt;userclass&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">unbounded</td>
+<td align="left">A user class configuration entry</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-userclass">&lt;&gt;&lt;&gt; <strong>&lt;userclass&gt;</strong></h3>
+<p>A user class represents a combination of a traveller type and modality (mode). When not a single user class element is present, the <a href="./#default-user-class">default user class</a> will be generated by PLANit.</p>
+<blockquote>
+<p>When <code>&lt;moderef&gt;</code> is absent, the default mode or the single defined mode is assumed to be used. In this case the user must not have specified more than one mode in the network.</p>
+</blockquote>
+<blockquote>
+<p>When <code>&lt;travellertyperef&gt;</code> is absent, the default traveller type or the single defined traveller type is assumed to be used. In this case the user must not have specified more than one traveller type in the network.</p>
+</blockquote>
+<p>Each user class has a unique (external) id that is provided as an attribute.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">positive integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">User identifier for the user class, i.e., its external id</td>
+</tr>
+<tr>
+<td align="left"><code>moderef</code></td>
+<td align="left">positive integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">Mode adopted by this user class.</td>
+</tr>
+<tr>
+<td align="left"><code>travellertyperef</code></td>
+<td align="left">positive integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">Traveller type adopted by this user class.</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following simple-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left"><code>&quot;&quot;</code></td>
+<td align="left">Description for the user class</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-timeperiods">&lt;&gt; <strong>&lt;timeperiods&gt;</strong></h3>
+<p>Time periods are used to define the duration and description of this duration for travel demand. At least a single time period must be explicitly defined.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-timeperiod"><code>&lt;timeperiod&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">unbounded</td>
+<td align="left">A time period configuration entry</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-timeperiod">&lt;&gt;&lt;&gt; <strong>&lt;timeperiod&gt;</strong></h3>
+<p>A time period is used to define the duration and description of some travel demand. At least a single time period must be explicitly defined. You can define the start time which should follow the XSD schema format of <code>xs:time</code> which is simply a combination of numbers and colons following the predefined format of <code>hh:mm:ss</code>.</p>
+<p>Each user class has a unique (external) id that is provided as an attribute.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">positive integer</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">User identifier for the time period, i.e., its external id</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following simple-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left"><code>&quot;&quot;</code></td>
+<td align="left">Description for the time period</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;starttime&gt;</code></td>
+<td align="left">xs:time</td>
+<td align="left">&ldquo;hh:mm:ss&rdquo;</td>
+<td align="left">NO</td>
+<td align="left"><code>00:00:00</code></td>
+<td align="left">Start time of the time period</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;duration&gt;</code></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Duration of the time period</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-duration">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;duration&gt;</strong></h3>
+<p>The duration of a time period in the unit of preference (hour, minute, or second). When absent, seconds (s) are assumed. A duration cannot exceed a day, i.e., 86400 seconds, or 24 hours.</p>
+<p>Each duration can specify its unit as an attribute.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>unit</code></td>
+<td align="left">string</td>
+<td align="left">Hour <code>h</code>, minute <code>m</code>, or second <code>s</code></td>
+<td align="left">NO</td>
+<td align="left">Unit for the duration value, default is <code>s</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">XML value type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">positive integer</td>
+<td align="left">see <code>unit</code> attribute</td>
+<td align="left">The duration value in the specified unit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-oddemands">&lt;&gt; <strong>&lt;oddemands&gt;</strong></h2>
+<p>TODO</p>
+<h3 id="-oddemand">&lt;&gt;&lt;&gt; <strong>&lt;oddemand&gt;</strong></h3>
+<p>TODO</p>
+<h2 id="expanded-example">Expanded Example</h2>
+<p>Below you will find an expanded example where all elements and attributes are explicitly set, to give you an idea of the overall structure of the macroscopic demand XML. This example does not make sense as an actual input file, it is purely meant to show off all aspects of the file, rather than be used as a practically feasible input file.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; encoding=&#34;ISO-8859-1&#34;?&gt;</span>
+<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand</span>
+	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>								
+	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/macroscopicdemandinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>			
+	<span style="color:#204a87;font-weight:bold">&lt;demandconfiguration&gt;</span>																	
+		<span style="color:#204a87;font-weight:bold">&lt;travellertypes&gt;</span>															
+			<span style="color:#204a87;font-weight:bold">&lt;travellertype</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>default<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/travellertype&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/travellertypes&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;userclasses&gt;</span>																
+			<span style="color:#204a87;font-weight:bold">&lt;userclass</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">moderef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">travellertyperef=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>regular car user<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/userclass&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/userclasses&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;timeperiods&gt;</span>																
+			<span style="color:#204a87;font-weight:bold">&lt;timeperiod</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Afternoon 2PM-4PM<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;starttime&gt;</span>14:00:00<span style="color:#204a87;font-weight:bold">&lt;/starttime&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;duration</span> <span style="color:#c4a000">unit=</span><span style="color:#4e9a06">&#34;s&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>7200<span style="color:#204a87;font-weight:bold">&lt;/duration&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;timeperiod</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Afternoon 4PM-5PM<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;starttime&gt;</span>16:00:00<span style="color:#204a87;font-weight:bold">&lt;/starttime&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;duration</span> <span style="color:#c4a000">unit=</span><span style="color:#4e9a06">&#34;h&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/duration&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;timeperiod</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;3&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Afternoon 5PM-6PM<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;starttime&gt;</span>17:00:00<span style="color:#204a87;font-weight:bold">&lt;/starttime&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;duration</span> <span style="color:#c4a000">unit=</span><span style="color:#4e9a06">&#34;h&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/duration&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>						
+		<span style="color:#204a87;font-weight:bold">&lt;/timeperiods&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/demandconfiguration&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;oddemands&gt;</span>																		
+		<span style="color:#204a87;font-weight:bold">&lt;odcellbycellmatrix</span> <span style="color:#c4a000">timeperiodref=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">userclassref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;o</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>																
+				<span style="color:#204a87;font-weight:bold">&lt;d</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>0.0<span style="color:#204a87;font-weight:bold">&lt;/d&gt;</span>													
+				<span style="color:#204a87;font-weight:bold">&lt;d</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>150.0<span style="color:#204a87;font-weight:bold">&lt;/d&gt;</span> 
+			<span style="color:#204a87;font-weight:bold">&lt;/o&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;o</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;d</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>300<span style="color:#204a87;font-weight:bold">&lt;/d&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/o&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/odcellbycellmatrix&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;odrowmatrix</span> <span style="color:#c4a000">timeperiodref=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">userclassref=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">ds=</span><span style="color:#4e9a06">&#34;,&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;odrow</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>0.0,150.0<span style="color:#204a87;font-weight:bold">&lt;/odrow&gt;</span>																														
+			<span style="color:#204a87;font-weight:bold">&lt;odrow</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>300.0,0.0<span style="color:#204a87;font-weight:bold">&lt;/odrow&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/odrowmatrix&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;odrawmatrix</span> <span style="color:#c4a000">timeperiodref=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">userclassref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;values</span> <span style="color:#c4a000">os=</span><span style="color:#4e9a06">&#34; &#34;</span> <span style="color:#c4a000">ds=</span><span style="color:#4e9a06">&#34;,&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>0.0,150.0 300.0,0.0<span style="color:#204a87;font-weight:bold">&lt;/values&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/odrawmatrix&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/oddemands&gt;</span>
+<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>
+</code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 11, 2020: <a  href="/commit/81f4b1f25ee019f364d9550fd374c0df8e587577">- finalised path output type configuration - added routeidtype enum - added outputpropertytype enum (not done) - added unit page - included reference to unit page on all relevant existing pages (81f4b1f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 25, 2020: <a  href="/commit/ce06efb892998e5cfc6399e92a6ad997c913d011">Made a start with the demands XML format documentation (NOT DONE) (ce06efb)</a>
 </div>
 </div>
+
 
           </main>
         </div>

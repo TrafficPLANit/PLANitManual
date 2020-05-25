@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -26,12 +26,12 @@ If you are only interested to see an example file, jump to the Expanded Example.
 &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/" />
-<meta property="article:modified_time" content="2020-05-22T17:49:13+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-05-25T18:19:13+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Physical Network Input Data format (XML)">
 <meta itemprop="description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
 If you are only interested to see an example file, jump to the Expanded Example.
 &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;.">
-<meta itemprop="dateModified" content="2020-05-22T17:49:13&#43;10:00" />
+<meta itemprop="dateModified" content="2020-05-25T18:19:13&#43;10:00" />
 <meta itemprop="wordCount" content="2587">
 
 
@@ -295,6 +295,12 @@ If you are only interested to see an example file, jump to the Expanded Example.
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_zoning_structure" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/">&lt;macroscopiczoning&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_demands" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
       
       
     </li>
@@ -2514,7 +2520,7 @@ It also must have a unique identifier (external id) available as an attribute:</
 <p>If the maximum speed limit is larger than the respective maximum speed for a mode on the referenced link segment type, the most restrictive speed is used as the maximum speed for the link segment for that mode, i.e., in this case the link segment type&rsquo;s speed limit. This to prevent inconsistencies during the model run.</p>
 </blockquote>
 <h2 id="expanded-example">Expanded Example</h2>
-<p>Below you will find an expanded example where all elements and attributes are eplxicitly set, to give you an idea of the overall structure of the macroscopic network XML. This example does not make sense as an actual input file, it is purely meant to show off all aspects of the file, rather than be used as a practically feasible input file.</p>
+<p>Below you will find an expanded example where all elements and attributes are explicitly set, to give you an idea of the overall structure of the macroscopic network XML. This example does not make sense as an actual input file, it is purely meant to show off all aspects of the file, rather than be used as a practically feasible input file.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; encoding=&#34;ISO-8859-1&#34;?&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork</span>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
@@ -2578,7 +2584,7 @@ It also must have a unique identifier (external id) available as an attribute:</
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 22, 2020: <a  href="/commit/6f152009ab86264a5382f6eb1a678d8268fe6b58">- made a start with zoning XML structure (6f15200)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 25, 2020: <a  href="/commit/ce06efb892998e5cfc6399e92a6ad997c913d011">Made a start with the demands XML format documentation (NOT DONE) (ce06efb)</a>
 </div>
 </div>
 
