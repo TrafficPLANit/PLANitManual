@@ -33,7 +33,7 @@
 &lt;li&gt;&lt;a href=&#34;pd_zoning_structure&#34;&gt;Zoning Structure&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;pd_demands&#34;&gt;Demands&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Before diving into these sections however, it is advisable to quickly get acqainted with some basic concepts regarding XML and how PLANit, utilises this data format. At least have a quick look at the &lt;a href=&#34;./#basics&#34;&gt;Basics&lt;/a&gt; section detailing overall structure in a PLANit context and discussing the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
+&lt;p&gt;Before diving into these sections however, it is advisable to quickly get acquainted with some basic concepts regarding XML and how PLANit, utilises this data format. At least have a quick look at the &lt;a href=&#34;./#basics&#34;&gt;Basics&lt;/a&gt; section detailing overall structure in a PLANit context and discussing the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
 &lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
 &lt;h3 id=&#34;planit-project-one-file-or-multiple-input-files&#34;&gt;PLANit project, one file or multiple input files?&lt;/h3&gt;
 &lt;p&gt;The user can construct each major input (network, demands, zoning) separately in its own XML file, e.g.,&lt;/p&gt;
