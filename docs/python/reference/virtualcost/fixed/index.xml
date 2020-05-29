@@ -42,7 +42,7 @@
 &lt;td&gt;&lt;code&gt;fixed_cost_value&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;Hour (h)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;New fixed cost value to use&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

@@ -108,7 +108,7 @@
 &lt;td&gt;&lt;code&gt;epsilon&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;New upper bound epsilon&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -162,7 +162,7 @@
 &lt;td&gt;&lt;code&gt;max_iterations&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;New maximum number of iterations&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

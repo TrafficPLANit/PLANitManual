@@ -41,14 +41,14 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;initial_cost_file_location&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;File location of initial cost file&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;time_period_external_id&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;integer&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;integer&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;time period (external) id to link initial costs to&lt;/td&gt;

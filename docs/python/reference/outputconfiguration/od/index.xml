@@ -45,7 +45,7 @@
 &lt;td&gt;sub_output_type&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/odkimsuboutputtype&#34;&gt; ODSkimSubOutputType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choice of sub-output type, i.e., skim&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -103,7 +103,7 @@
 &lt;td&gt;output_property&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choice of output property to add&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -161,7 +161,7 @@
 &lt;td&gt;sub_output_type&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/odskimsuboutputtype&#34;&gt; ODSkimSubOutputType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choice of sub-output type, i.e., skim&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -222,7 +222,7 @@
 &lt;td&gt;output_property&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/outputpropertytype&#34;&gt; OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choice of output property to remove&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

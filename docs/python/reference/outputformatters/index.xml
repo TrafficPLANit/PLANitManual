@@ -144,6 +144,10 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;dof_set_description+&#34;&gt;&lt;code&gt;set_description(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Overwrite the default description that is being included in XML meta-data files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;dof_set_output_directory+&#34;&gt;&lt;code&gt;set_output_directory(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Overwrite the default output directory for both CSV and XML files&lt;/td&gt;
 &lt;/tr&gt;

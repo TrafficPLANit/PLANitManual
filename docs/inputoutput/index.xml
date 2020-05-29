@@ -41,7 +41,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;planitdefault&#34;&gt;PLANit default input format&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;XML&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;supported&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
@@ -49,7 +49,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;TNTP open format&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ASCII&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ASCII&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;prototype&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
@@ -57,7 +57,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;BasicCSV&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;CSV&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;CSV&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;prototype&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
@@ -79,10 +79,8 @@
       <description>
         
         
-        &lt;p&gt;In this section of the manual we discuss the output data formats supported by PLANit&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
-&lt;/blockquote&gt;
+        &lt;p&gt;In this section of the manual we discuss the &lt;a href=&#34;./#output-formats-in-planit&#34;&gt;output data formats&lt;/a&gt; supported by PLANit as well as what specific &lt;a href=&#34;./#output-properties-in-planit&#34;&gt;output properties are supported by each output type&lt;/a&gt; in PLANit.&lt;/p&gt;
+&lt;h2 id=&#34;output-formats-in-planit&#34;&gt;Output formats in PLANit&lt;/h2&gt;
 &lt;p&gt;The following output data formats are available:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -98,7 +96,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;planitdefault&#34;&gt;PLANit default output format&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;XML&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;supported&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
@@ -106,7 +104,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Memory output format&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;None&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;supported&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
@@ -115,6 +113,43 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Because the memory output format does not result in any files on disk as it keeps all the results in memory, we refer the reader to the relevant API documentation on how to utilise the memory output format (for Java, for &lt;a href=&#34;../../python/reference/outputformatters/memory&#34;&gt;Python&lt;/a&gt;). The internal structure of this implementation is not exposed to the user and is therefore not documented in this manual.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;output-properties-in-planit&#34;&gt;Output properties in PLANit&lt;/h2&gt;
+&lt;p&gt;Almost all aspects of the output in PLANit are user configurable. This configuration is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Independent of the chosen &lt;em&gt;output formatter&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;dependent on the &lt;em&gt;output type&lt;/em&gt; (link, path, od, etc.)&lt;/li&gt;
+&lt;li&gt;dependent on the chosen &lt;em&gt;assignment&lt;/em&gt; (traditional static, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For each of our main output types (link, path, od, etc.) a section is dedicated to detailing information on what output properties are supported:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Output Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;link_support&#34;&gt;Link (segment)&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;path_support&#34;&gt;Path&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;od_support&#34;&gt;OD &lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
       </description>
     </item>

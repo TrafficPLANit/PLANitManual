@@ -1,0 +1,1980 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.69.2" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/PLANit/PLANitManual/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
+
+<title>Link (segment) Output Property Support | PLANit</title><meta property="og:title" content="Link (segment) Output Property Support" />
+<meta property="og:description" content="Output properties that can be activated for the output type: Link (segment).
+Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
+We list the supported output properties for link (segment) ordered by their priority (id, input, output)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/link_support/" />
+<meta property="article:modified_time" content="2020-05-29T12:48:31+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="Link (segment) Output Property Support">
+<meta itemprop="description" content="Output properties that can be activated for the output type: Link (segment).
+Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
+We list the supported output properties for link (segment) ordered by their priority (id, input, output).">
+<meta itemprop="dateModified" content="2020-05-29T12:48:31&#43;10:00" />
+<meta itemprop="wordCount" content="332">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Link (segment) Output Property Support"/>
+<meta name="twitter:description" content="Output properties that can be activated for the output type: Link (segment).
+Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
+We list the supported output properties for link (segment) ordered by their priority (id, input, output)."/>
+
+
+
+
+
+<link rel="preload" href="/PLANit/PLANitManual/scss/main.min.ed72feae6d32e569f1587720443e041227f108a182c6c5a7bb3d5fcc4bf4b318.css" as="style">
+<link href="/PLANit/PLANitManual/scss/main.min.ed72feae6d32e569f1587720443e041227f108a182c6c5a7bb3d5fcc4bf4b318.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/PLANit/PLANitManual/">
+		<span class="navbar-logo"><img src="/PLANit/PLANitManual/img/PLANit_icon.png"></span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/PLANit/PLANitManual/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/PLANit/PLANitManual/installation/" ><span>Installation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/PLANit/PLANitManual/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/PLANit/PLANitManual/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/Releases/0_0_4">v0.0.4</a>
+	
+</div>
+
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsoverview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsgetting-started">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/concepts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Concepts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsconcepts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Data formats</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocsinputoutput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Input</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputinput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit Default XML</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputinputplanitdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_physical_network" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/">&lt;macroscopicnetwork&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_zoning_structure" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/">&lt;macroscopiczoning&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_demands" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/output/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Output</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocsinputoutputoutput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Default</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputoutputplanitdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputoutputplanitdefaultpd_meta_data" href="/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/pd_meta_data/">XML meta-data</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocsinputoutputoutputlink_support" href="/PLANit/PLANitManual/docs/inputoutput/output/link_support/">Link</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputoutputod_support" href="/PLANit/PLANitManual/docs/inputoutput/output/od_support/">OD</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputoutputpath_support" href="/PLANit/PLANitManual/docs/inputoutput/output/path_support/">Path</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit-Python</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspython">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythongetting-started">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/examples/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Examples</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonexamples">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreference">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit(&#43;)</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceplanit">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_activate" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/">.activate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_deactivate" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/">.deactivate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_run" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_run/">.run()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_set" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_assignment" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/">.assignment</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_demands" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_initial_costs" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/">.initial_costs</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_memory" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_memory/">.memory</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_network" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_network/">.network</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_output" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_zoning" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/">.zoning</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Assignment</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignment">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Traditional static</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignmenttraditionalstatic">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_activate_output" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/">.activate_output(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_deactivate_output" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/">.deactivate_output(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_set" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_gap_function" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/">.gap_function</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_link_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/">.link_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_od_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/">.od_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_output_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/">.output_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_path_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/">.path_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_physical_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/">.physical_cost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_smoothing" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/">.smoothing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_virtual_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/demands/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Demands</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencedemands">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/enums/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Enums</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceenums">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsodskimsuboutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/odskimsuboutputtype/">ODSkimSubOutputType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputformattertype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/">OutputFormatter</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputpropertytype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputpropertytype/">OutputProperty</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsphysicalcosttype" href="/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsrouteidtype" href="/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsvirtualcosttype" href="/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/">VirtualCost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumstrafficassignmenttype" href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/gapfunction/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Gap Function</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencegapfunction">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link Based Relative</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencegapfunctionlinkbasedrelative">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencegapfunctionlinkbasedrelativelbrgf_stop_criterion" href="/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/lbrgf_stop_criterion/">.stop_criterion</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/initialcost/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Initial Cost</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceinitialcost">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceinitialcostic_set" href="/PLANit/PLANitManual/docs/python/reference/initialcost/ic_set&#43;/">.set(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Configuration</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfiguration">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">General</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationgeneral">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_is_only_final" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_only_final/">.is_persist_only_final_iteration()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_set_only_final" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/">.set_persist_only_final_iteration(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationlink">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/">.remove_all_properties()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">OD</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationod">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_activate" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_activate&#43;/">.activate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_deactivate" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/">.deactivate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove_all/">.remove_all_properties()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Path</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationpath">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/">.remove_all_properties()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_set_path_id_type" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/">.set_path_id_type(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Formatters</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformatters">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Default</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_csv_directory" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/">.set_csv_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_csv_extension" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/">.set_csv_name_extension(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_csv_prefix" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/">.set_csv_name_root(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_description" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_description&#43;/">.set_description(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_output_directory" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/">.set_output_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_xml_directory" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/">.set_xml_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_xml_extension" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/">.set_xml_name_extension(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_xml_prefix" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/">.set_xml_name_root(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Memory</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemory">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_last_iteration" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/">.get_last_iteration()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_key_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_key_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_iterator" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/">.iterator(&#43;)</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Iterator</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemoryiterator">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_keys" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/">.get_keys()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_values" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/">.get_values()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_has_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/">.has_next()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/">.next()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/physicalcost/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Physical Cost</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencephysicalcost">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">BPR</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencephysicalcostbpr">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/network/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Physical Network</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencenetwork">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Smoothing</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothing">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/msa/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">MSA</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothingmsa">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Stop Criterion</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencestopcriterion">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Default</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencestopcriteriondefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_epsilon" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/">.get_epsilon()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/">.get_max_iterations()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_set_epsilon" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_epsilon&#43;/">.set_epsilon(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_set_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/">.set_max_iterations(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Virtual Cost</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcost">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fixed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostfixed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Speed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostspeed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostspeedset_fixed_speed" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/zoning/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Zoning</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencezoning">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/testing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"></a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencetesting">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/java/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit-Java</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsjava">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/units/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Units</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsunits">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/contribution-guidelines/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocscontribution-guidelines">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/">Data formats</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/">Output</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/link_support/">Link</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Link (segment) Output Property Support</h1>
+    
+	       
+	<p>Output properties that can be activated for the output type: Link (segment).</p>
+<p>Some output properties are not only contingent on the <em>output type</em> but on the combination of <em>output type and PLANit traffic assignment component</em>, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.</p>
+<p>We list the supported output properties for link (segment) ordered by their priority (id, input, output).</p>
+<blockquote>
+<p>The Output property column lists the enum that is used to uniquely identify the property, whether it be in Java or Python.</p>
+</blockquote>
+<h2 id="id_priority">ID_PRIORITY</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Output Property</th>
+<th align="left">Description</th>
+<th align="left">Type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>DOWNSTREAM_NODE_ID</code></td>
+<td align="left">Link segment&rsquo;s downstream node id (internal)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>DOWNSTREAM_NODE_EXTERNAL_ID</code></td>
+<td align="left">Link segment&rsquo;s downstream node id (input)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>ITERATION_INDEX</code></td>
+<td align="left">Iteration index of simulation</td>
+<td align="left"><code>integer</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>LINK_SEGMENT_ID</code></td>
+<td align="left">Link segment id (internal)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left">Link segment id (input)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODE_ID</code></td>
+<td align="left">Mode id (internal)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODE_EXTERNAL_ID</code></td>
+<td align="left">Mode id (input)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>RUN_ID</code></td>
+<td align="left">simulation run id</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>TIME_PERIOD_ID</code></td>
+<td align="left">time period id (internal)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>TIME_PERIOD_EXTERNAL_ID</code></td>
+<td align="left">time period id (input)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>UPSTREAM_NODE_ID</code></td>
+<td align="left">Link segment&rsquo;s upstream node id (internal)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>UPSTREAM_NODE_EXTERNAL_ID</code></td>
+<td align="left">Link segment&rsquo;s upstream node id (user)</td>
+<td align="left"><code>long</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="input_priority-fields">INPUT_PRIORITY Fields</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Output Property</th>
+<th align="left">Description</th>
+<th align="left">Type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>CAPACITY_PER_LANE</code></td>
+<td align="left">The capacity flow rate for a lane</td>
+<td align="left"><code>float</code></td>
+<td align="left">veh/h(/l)</td>
+</tr>
+<tr>
+<td align="left"><code>DOWNSTREAM_NODE_LOCATION</code></td>
+<td align="left">The geographic location of the downstream node (if present)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>SRS</code></td>
+</tr>
+<tr>
+<td align="left"><code>LENGTH</code></td>
+<td align="left">The length</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>km</code></td>
+</tr>
+<tr>
+<td align="left"><code>LINK_TYPE</code></td>
+<td align="left">The link segment type&rsquo;s name (input)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>MAXIMUM_SPEED</code></td>
+<td align="left">The maximum allowed speed</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>km/h</code></td>
+</tr>
+<tr>
+<td align="left"><code>NUMBER_OF_LANES</code></td>
+<td align="left">The number of lanes</td>
+<td align="left"><code>integer</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>UPSTREAM_NODE_LOCATION</code></td>
+<td align="left">The geographic location of the upstream node (if present)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>SRS</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="output_priority-fields">OUTPUT_PRIORITY Fields</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Output Property</th>
+<th align="left">Description</th>
+<th align="left">Type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>CALCULATED_SPEED</code></td>
+<td align="left">The calculate speed</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>km/h</code></td>
+</tr>
+<tr>
+<td align="left"><code>COST_TIMES_FLOW</code></td>
+<td align="left">The cost (per vehicle) multiplied with the volume (per hour) on the entity</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>h</code> (i.e., (h/veh)*(veh/1)) <strong>TODO: should be in PCU</strong></td>
+</tr>
+<tr>
+<td align="left"><code>DENSITY</code></td>
+<td align="left">The density</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>veh/km</code></td>
+</tr>
+<tr>
+<td align="left"><code>FLOW</code></td>
+<td align="left">The flow rate</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>veh/h</code></td>
+</tr>
+<tr>
+<td align="left"><code>LINK_COST</code></td>
+<td align="left">The link segment&rsquo;s generalised cost</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>h</code></td>
+</tr>
+<tr>
+<td align="left"><code>VC_RATIO</code></td>
+<td align="left">The volume to capacity ratio</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>None</code> ((veh/h)/(veh/h))</td>
+</tr>
+</tbody>
+</table>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="/commit/c239a27c6d05e610e2f565f3187938466759afa7">- added link,od,path supported output properties to output data format - finalised default output format - refactoring (c239a27)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.sydney.edu.au/PLANit">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+	
+		<p class="mt-2"><a href="/PLANit/PLANitManual/about/">About PLANit</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/PLANit/PLANitManual/js/main.min.4d5304e94433d4e4399fc88f9d022534732a3098dc13ca6ba5ed1a337b4cea00.js" integrity="sha256-TVME6UQz1OQ5n8iPnQIlNHMqMJjcE8prpe0aM3tM6gA=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

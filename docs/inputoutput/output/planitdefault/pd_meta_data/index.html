@@ -1,0 +1,2382 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.69.2" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/PLANit/PLANitManual/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
+
+<title>XML meta-data | PLANit</title><meta property="og:title" content="XML meta-data" />
+<meta property="og:description" content="In this section of the manual we discuss the meta-data component of the PLANit default output. The meta-data structure is the same for the available output types, but the contents can differ.
+There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).
+The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/pd_meta_data/" />
+<meta property="article:modified_time" content="2020-05-29T12:48:31+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta itemprop="name" content="XML meta-data">
+<meta itemprop="description" content="In this section of the manual we discuss the meta-data component of the PLANit default output. The meta-data structure is the same for the available output types, but the contents can differ.
+There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).
+The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references.">
+<meta itemprop="dateModified" content="2020-05-29T12:48:31&#43;10:00" />
+<meta itemprop="wordCount" content="1445">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="XML meta-data"/>
+<meta name="twitter:description" content="In this section of the manual we discuss the meta-data component of the PLANit default output. The meta-data structure is the same for the available output types, but the contents can differ.
+There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).
+The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references."/>
+
+
+
+
+
+<link rel="preload" href="/PLANit/PLANitManual/scss/main.min.ed72feae6d32e569f1587720443e041227f108a182c6c5a7bb3d5fcc4bf4b318.css" as="style">
+<link href="/PLANit/PLANitManual/scss/main.min.ed72feae6d32e569f1587720443e041227f108a182c6c5a7bb3d5fcc4bf4b318.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/PLANit/PLANitManual/">
+		<span class="navbar-logo"><img src="/PLANit/PLANitManual/img/PLANit_icon.png"></span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/PLANit/PLANitManual/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/PLANit/PLANitManual/installation/" ><span>Installation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/PLANit/PLANitManual/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/PLANit/PLANitManual/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/Releases/0_0_4">v0.0.4</a>
+	
+</div>
+
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsoverview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsgetting-started">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/concepts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Concepts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsconcepts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Data formats</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocsinputoutput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Input</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputinput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit Default XML</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsinputoutputinputplanitdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_physical_network" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/">&lt;macroscopicnetwork&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_zoning_structure" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/">&lt;macroscopiczoning&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputinputplanitdefaultpd_demands" href="/PLANit/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/output/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Output</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocsinputoutputoutput">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Default</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="planitplanitmanualdocsinputoutputoutputplanitdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitplanitmanualdocsinputoutputoutputplanitdefaultpd_meta_data" href="/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/pd_meta_data/">XML meta-data</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputoutputlink_support" href="/PLANit/PLANitManual/docs/inputoutput/output/link_support/">Link</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputoutputod_support" href="/PLANit/PLANitManual/docs/inputoutput/output/od_support/">OD</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocsinputoutputoutputpath_support" href="/PLANit/PLANitManual/docs/inputoutput/output/path_support/">Path</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit-Python</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspython">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythongetting-started">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/examples/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Examples</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonexamples">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreference">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit(&#43;)</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceplanit">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_activate" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/">.activate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_deactivate" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/">.deactivate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_run" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_run/">.run()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_set" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_assignment" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/">.assignment</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_demands" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_demands/">.demands</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_initial_costs" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/">.initial_costs</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_memory" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_memory/">.memory</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_network" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_network/">.network</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_output" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_output/">.output</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceplanitplanit_zoning" href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/">.zoning</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Assignment</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignment">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Traditional static</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceassignmenttraditionalstatic">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_activate_output" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/">.activate_output(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_deactivate_output" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/">.deactivate_output(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_set" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_gap_function" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/">.gap_function</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_link_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/">.link_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_od_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/">.od_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_output_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/">.output_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_path_configuration" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/">.path_configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_physical_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/">.physical_cost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_smoothing" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/">.smoothing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceassignmenttraditionalstatictsa_virtual_cost" href="/PLANit/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/">.virtual_cost</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/demands/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Demands</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencedemands">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/enums/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Enums</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceenums">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsodskimsuboutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/odskimsuboutputtype/">ODSkimSubOutputType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputformattertype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputformattertype/">OutputFormatter</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputpropertytype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputpropertytype/">OutputProperty</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsoutputtype" href="/PLANit/PLANitManual/docs/python/reference/enums/outputtype/">OutputType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsphysicalcosttype" href="/PLANit/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsrouteidtype" href="/PLANit/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumssmoothingtype" href="/PLANit/PLANitManual/docs/python/reference/enums/smoothingtype/">Smoothing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumsvirtualcosttype" href="/PLANit/PLANitManual/docs/python/reference/enums/virtualcosttype/">VirtualCost</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceenumstrafficassignmenttype" href="/PLANit/PLANitManual/docs/python/reference/enums/trafficassignmenttype/">TrafficAssignment</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/gapfunction/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Gap Function</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencegapfunction">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link Based Relative</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencegapfunctionlinkbasedrelative">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencegapfunctionlinkbasedrelativelbrgf_stop_criterion" href="/PLANit/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/lbrgf_stop_criterion/">.stop_criterion</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/initialcost/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Initial Cost</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceinitialcost">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceinitialcostic_set" href="/PLANit/PLANitManual/docs/python/reference/initialcost/ic_set&#43;/">.set(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Configuration</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfiguration">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">General</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationgeneral">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_is_only_final" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_only_final/">.is_persist_only_final_iteration()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_set_only_final" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/">.set_persist_only_final_iteration(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Link</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationlink">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationlinklc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/">.remove_all_properties()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">OD</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationod">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_activate" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_activate&#43;/">.activate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_deactivate" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/">.deactivate(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationododc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove_all/">.remove_all_properties()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Path</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputconfigurationpath">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_add" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/">.add(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/">.remove(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_remove_all" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/">.remove_all_properties()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationpathpc_set_path_id_type" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/">.set_path_id_type(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Output Formatters</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformatters">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Default</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersdefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_csv_directory" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/">.set_csv_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_csv_extension" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/">.set_csv_name_extension(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_csv_prefix" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/">.set_csv_name_root(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_description" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_description&#43;/">.set_description(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_output_directory" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/">.set_output_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_xml_directory" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/">.set_xml_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_xml_extension" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/">.set_xml_name_extension(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersdefaultdof_set_xml_prefix" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/">.set_xml_name_root(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Memory</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemory">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_last_iteration" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/">.get_last_iteration()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_value_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/">.get_position_of_output_key_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_position_key_property" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/">.get_position_of_output_value_property(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemorymof_iterator" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/">.iterator(&#43;)</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Iterator</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferenceoutputformattersmemoryiterator">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_keys" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/">.get_keys()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_get_values" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/">.get_values()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_has_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/">.has_next()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputformattersmemoryiteratormofi_next" href="/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/">.next()</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/physicalcost/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Physical Cost</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencephysicalcost">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">BPR</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencephysicalcostbpr">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/network/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Physical Network</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencenetwork">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Smoothing</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothing">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/smoothing/msa/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">MSA</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencesmoothingmsa">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Stop Criterion</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencestopcriterion">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Default</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencestopcriteriondefault">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_epsilon" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/">.get_epsilon()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_get_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/">.get_max_iterations()</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_set_epsilon" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_epsilon&#43;/">.set_epsilon(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencestopcriteriondefaultdsc_set_max_iterations" href="/PLANit/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/">.set_max_iterations(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Virtual Cost</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcost">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fixed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostfixed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostfixedset_fixed_cost" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Speed</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencevirtualcostspeed">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencevirtualcostspeedset_fixed_speed" href="/PLANit/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/">.set_fixed_connectoid_cost(&#43;)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/zoning/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Zoning</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencezoning">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/python/reference/testing/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"></a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocspythonreferencetesting">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/java/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">PLANit-Java</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsjava">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/units/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Units</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocsunits">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANit/PLANitManual/docs/contribution-guidelines/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitplanitmanualdocscontribution-guidelines">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#file-name-convention">File name convention</a></li>
+    <li><a href="#metadata">&lt;metadata&gt;</a>
+      <ul>
+        <li><a href="#-timestamp">&lt;&gt; <strong>&lt;timestamp&gt;</strong></a></li>
+        <li><a href="#-version">&lt;&gt; <strong>&lt;version&gt;</strong></a></li>
+        <li><a href="#-description">&lt;&gt; <strong>&lt;description&gt;</strong></a></li>
+        <li><a href="#-outputconfiguration">&lt;&gt; <strong>&lt;outputconfiguration&gt;</strong></a></li>
+        <li><a href="#-timeperiod">&lt;&gt;&lt;&gt; <strong>&lt;timeperiod&gt;</strong></a></li>
+        <li><a href="#-simulation">&lt;&gt; <strong>&lt;simulation&gt;</strong></a></li>
+        <li><a href="#-iteration">&lt;&gt;&lt;&gt; <strong>&lt;iteration&gt;</strong></a></li>
+        <li><a href="#-csvdata">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;csvdata&gt;</strong></a></li>
+        <li><a href="#-columns">&lt;&gt; <strong>&lt;columns&gt;</strong></a></li>
+        <li><a href="#-column">&lt;&gt;&lt;&gt; <strong>&lt;column&gt;</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#csv-results">CSV Results</a></li>
+    <li><a href="#expanded-example">Expanded Example</a></li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/">Data formats</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/">Output</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/">Default</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/pd_meta_data/">XML meta-data</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>XML meta-data</h1>
+    
+	       
+	<p>In this section of the manual we discuss the meta-data component of the PLANit default output. The meta-data structure is the same for the available output types, but the contents can differ.</p>
+<p>There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).</p>
+<p>The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references.</p>
+<h2 id="file-name-convention">File name convention</h2>
+<p>Each XML meta-data file, is auto-generated. It adopts the following naming convention for its file name by default:</p>
+<p><code>Link_RunId &lt;#runId&gt;_&lt;name&gt;_Time Period &lt;#timePeriod&gt;.xml</code></p>
+<p>with</p>
+<ul>
+<li><code>&lt;#runId&gt;</code>, the unique number of the simulation run conducted since creating a PLANit project, typically 0,</li>
+<li><code>&lt;name&gt;</code>, name of the scenario being executed,</li>
+<li><code>&lt;#timePeriod&gt;</code>, the time period reference number (external id) of the simulation run.</li>
+</ul>
+<p>An example of a potential meta-data link (segment) result file might be: <code>Link_RunId 0_test_scenario_Time Period 1.xml</code>, where the description is &ldquo;test_scenario&rdquo;, and we are looking at the results for time period 1, for run 0, regarding Link outputs.</p>
+<p>Let us now discuss the contents and structure of the meta-data XML file</p>
+<blockquote>
+<p>The <code>&lt;name&gt;</code> is taken from the XMLNameRoot set by the user (or the default when not set), via the PLANit Default Output Formatter.</p>
+</blockquote>
+<h2 id="metadata">&lt;metadata&gt;</h2>
+<p>The root element of the meta-data XML file is always <code>&lt;metadata&gt;</code>.</p>
+<p>This root element can contain the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-timestamp"><code>timestamp&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Time stamp of when the file was generated</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-version"><code>version&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">PLANit version used</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-description"><code>description&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Description of the PLANit run</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-outputconfiguration"><code>outputconfiguration&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Configuration information regarding PLANit run</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-simulation"><code>simulation&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Information regarding related CSV output files</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-columns"><code>columns&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Configuration information regarding CSV columns</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The description can currently be set via the output formatter, in future versions this will be moved elsewhere.</p>
+</blockquote>
+<h3 id="-timestamp">&lt;&gt; <strong>&lt;timestamp&gt;</strong></h3>
+<p>Simple element that contains the time stamp of when the file was generated.</p>
+<table>
+<thead>
+<tr>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>string</code></td>
+<td align="left"><code>xs:datetime</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Time stamp</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-version">&lt;&gt; <strong>&lt;version&gt;</strong></h3>
+<p>Simple element that contains the PLANit version used to generate the results</p>
+<table>
+<thead>
+<tr>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">PLANit version</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-description">&lt;&gt; <strong>&lt;description&gt;</strong></h3>
+<p>Simple element that contains the description of the conducted PLANit run</p>
+<table>
+<thead>
+<tr>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">PLANit run description</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-outputconfiguration">&lt;&gt; <strong>&lt;outputconfiguration&gt;</strong></h3>
+<p>General information on the simulation run and the components that it used. With respect to the components, the values that are provided for each of the simple elements correspond to the (short) name of their implementation. In addition, each meta-data XML file can correspond to many CSV output files, when there exist multiple time periods that were run under the same configuration. These are listed under the time periods element.</p>
+<p>This element has the following simple elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;assignment&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Assignment type used</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;physicalcost&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Physical cost type used</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;virtualcost&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Virtual cost type used</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-timeperiod"><code>&lt;timeperiod&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">unbounded</td>
+<td align="left">A time period for which results are made available</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-timeperiod">&lt;&gt;&lt;&gt; <strong>&lt;timeperiod&gt;</strong></h3>
+<p>A time period for which results are available.</p>
+<p>This element has the following simple elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;id&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">(External) Id of the time period</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Description of the time period</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-simulation">&lt;&gt; <strong>&lt;simulation&gt;</strong></h3>
+<p>The simulation element provides the direct relation between an (iteration) result and its CSV file where the result values can be found.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-iteration"><code>&lt;iteration&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">unbounded</td>
+<td align="left">Iteration for which a CSV result file is available</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-iteration">&lt;&gt;&lt;&gt; <strong>&lt;iteration&gt;</strong></h3>
+<p>The iteration element provides the location of the CSV file that holds the results of this particular iteration.</p>
+<p>This element has the following simple elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;nr&gt;</code></td>
+<td align="left"><code>non-negative integer</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">index of the iteration</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-csvdata"><code>&lt;csvdata&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Where to find the CSV data for this iteration</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-csvdata">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;csvdata&gt;</strong></h3>
+<p>Provides the link to the CSV file for its parent iteration.</p>
+<blockquote>
+<p>The &ldquo;type&rdquo; attribute always states &ldquo;Link&rdquo;, as the only supported type.</p>
+</blockquote>
+<p>This element has the following attributes:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">Type of reference provided. Currently, always set to <code>&quot;Link&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p>The value of a &ldquo;Link&rdquo; based csvdata element is configured as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML value type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">Relative path to CSV data, with compulsory extension of <code>.csv</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>This path is relative to the working directory of the application rather than the XML. This will be addressed in future versions</p>
+</blockquote>
+<h3 id="-columns">&lt;&gt; <strong>&lt;columns&gt;</strong></h3>
+<p>The columns element contains all the column specifications that are included in the CSV result file(s), providing meta-data information that cannot be included in the CSV itself.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-column"><code>&lt;column&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">unbounded</td>
+<td align="left">Column meta-data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-column">&lt;&gt;&lt;&gt; <strong>&lt;column&gt;</strong></h3>
+<p>the column element contains the meta-data for a single column that is included in the CSV result file(s). This is information that cannot be included in the CSV itself. A column&rsquo;s meta-data always relates to an (activated) output property in PLANit.</p>
+<p>This element has the following simple elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Name of the output property represented by this column</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;type&gt;</code></td>
+<td align="left">a type</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Type of the values in this column, based on its output property type</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;unit&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">a <a href="../../../../units">unit</a></td>
+<td align="left">YES</td>
+<td align="left">N/A</td>
+<td align="left">Unit of the values in this column, based on its output property unit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="csv-results">CSV Results</h2>
+<p>The CSV results are provided in the most common format for comma separate files (by default), where each value is separated by a comma, i.e., <code>','</code>, as is each row. The user can override the separator characters in the output formatter configuration if desired.</p>
+<p>In addition, each CSV file commences with a headings row, where the names in the heading correspond to the names in the XML meta-data <a href="./#-column"><code>&lt;column&gt;</code></a> elements. Information regarding; name, type, and units can be found in the XML, whereas the values are available in this CSV.</p>
+<p>See <a href="./#expanded-example">Expanded Example</a> section.</p>
+<h2 id="expanded-example">Expanded Example</h2>
+<p>Below you will find an expanded example where many of the available output properties are activated, in this case for link based results. OD and path meta-data XML files look similar, although the activated columns will differ. This exmaple is meant to demonstrate all aspects of the file structure,  rather than representing a viable output result.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; ?&gt;</span>
+<span style="color:#204a87;font-weight:bold">&lt;metadata</span> <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../../../../../../main/resources/xsd/metadata.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;timestamp&gt;</span>2020-01-24T12:11:51.870+11:00<span style="color:#204a87;font-weight:bold">&lt;/timestamp&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;version&gt;</span>0.0.3-beta<span style="color:#204a87;font-weight:bold">&lt;/version&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;description&gt;</span>PlanIt common code for traffic assignment<span style="color:#204a87;font-weight:bold">&lt;/description&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;outputconfiguration&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;assignment&gt;</span>TraditionalStaticAssignment<span style="color:#204a87;font-weight:bold">&lt;/assignment&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;physicalcost&gt;</span>BPRLinkTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/physicalcost&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;virtualcost&gt;</span>FixedConnectoidTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/virtualcost&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;timeperiod&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>0<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period 1<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/outputconfiguration&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;simulation&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;iteration&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;nr&gt;</span>500<span style="color:#204a87;font-weight:bold">&lt;/nr&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>src\test\resources\testcases\route_choice\xml\biDirectionalLinksRouteChoiceSingleModeWithTwoTimePeriods\Link_RunId 0_testRouteChoice42_Time Period 1_500.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/iteration&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Capacity per Lane<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>veh/h<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node Location<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>srs<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>srsname<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Length<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>km<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Number of Lanes<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node Location<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>srs<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>srsname<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Calculated Speed<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>km/h<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Cost<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>h<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Density<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>veh/km<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Flow<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>veh/h<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/columns&gt;</span>
+<span style="color:#204a87;font-weight:bold">&lt;/metadata&gt;</span>
+</code></pre></div><p>And an example of the CSV that might go with it</p>
+<pre><code class="language-CSV" data-lang="CSV">Downstream Node External Id,Downstream Node Id,Link Segment External Id,Link Segment Id,Mode External Id,Mode Id,Upstream Node External Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Density,Flow
+9,8,1,0,1,0,12,11,1500.0000000,Not Specified,2.9000001,1,Not Specified,100.0000000,0.0290000,180.0000000,0.6000000
+12,11,2,1,1,0,9,8,1500.0000000,Not Specified,2.9000001,1,Not Specified,100.0000000,0.0290000,180.0000000,0.6000000
+11,10,3,2,1,0,12,11,1500.0000000,Not Specified,3.0000000,1,Not Specified,99.4679928,0.0301605,180.0000000,482.4000000
+12,11,4,3,1,0,11,10,1500.0000000,Not Specified,3.0000000,1,Not Specified,99.4679928,0.0301605,180.0000000,482.4000000
+16,15,5,4,1,0,12,11,1500.0000000,Not Specified,1.0000000,1,Not Specified,99.4653552,0.0100538,180.0000000,483.0000000
+12,11,6,5,1,0,16,15,1500.0000000,Not Specified,1.0000000,1,Not Specified,99.4653552,0.0100538,180.0000000,483.0000000
+13,12,9,8,1,0,9,8,1500.0000000,Not Specified,1.0000000,1,Not Specified,100.0000000,0.0100000,180.0000000,0.6000000
+9,8,10,9,1,0,13,12,1500.0000000,Not Specified,1.0000000,1,Not Specified,100.0000000,0.0100000,180.0000000,0.6000000
+11,10,11,10,1,0,10,9,1500.0000000,Not Specified,3.0000000,1,Not Specified,99.9999991,0.0300000,180.0000000,17.6000000
+10,9,12,11,1,0,11,10,1500.0000000,Not Specified,3.0000000,1,Not Specified,99.9999991,0.0300000,180.0000000,17.6000000
+14,13,13,12,1,0,10,9,1500.0000000,Not Specified,1.0000000,1,Not Specified,99.9999991,0.0100000,180.0000000,17.6000000
+10,9,14,13,1,0,14,13,1500.0000000,Not Specified,1.0000000,1,Not Specified,99.9999991,0.0100000,180.0000000,17.6000000
+15,14,15,14,1,0,11,10,1500.0000000,Not Specified,1.0000000,1,Not Specified,99.3865031,0.0100617,180.0000000,500.0000000
+11,10,16,15,1,0,15,14,1500.0000000,Not Specified,1.0000000,1,Not Specified,99.3865031,0.0100617,180.0000000,500.0000000
+5,4,17,16,1,0,1,0,1500.0000000,Not Specified,1.0000000,1,Not Specified,93.9295781,0.0106463,180.0000000,899.4000000
+1,0,18,17,1,0,5,4,1500.0000000,Not Specified,1.0000000,1,Not Specified,93.9295781,0.0106463,180.0000000,899.4000000
+4,3,19,18,1,0,1,0,1500.0000000,Not Specified,0.9000000,1,Not Specified,87.8665119,0.0102428,180.0000000,1087.4000000
+1,0,20,19,1,0,4,3,1500.0000000,Not Specified,0.9000000,1,Not Specified,87.8665119,0.0102428,180.0000000,1087.4000000
+2,1,21,20,1,0,1,0,1500.0000000,Not Specified,0.9000000,1,Not Specified,90.6131820,0.0099323,180.0000000,1012.0000000
+1,0,22,21,1,0,2,1,1500.0000000,Not Specified,0.9000000,1,Not Specified,90.6131820,0.0099323,180.0000000,1012.0000000
+6,5,23,22,1,0,2,1,1500.0000000,Not Specified,1.0000000,1,Not Specified,61.7567660,0.0161926,180.0000000,1582.4000000
+2,1,24,23,1,0,6,5,1500.0000000,Not Specified,1.0000000,1,Not Specified,61.7567660,0.0161926,180.0000000,1582.4000000
+3,2,25,24,1,0,2,1,1500.0000000,Not Specified,1.0000000,1,Not Specified,91.1933155,0.0109657,180.0000000,994.4000000
+2,1,26,25,1,0,3,2,1500.0000000,Not Specified,1.0000000,1,Not Specified,91.1933155,0.0109657,180.0000000,994.4000000
+7,6,27,26,1,0,3,2,1500.0000000,Not Specified,1.0000000,1,Not Specified,43.7230914,0.0228712,180.0000000,1900.0000000
+3,2,28,27,1,0,7,6,1500.0000000,Not Specified,1.0000000,1,Not Specified,43.7230914,0.0228712,180.0000000,1900.0000000
+4,3,29,28,1,0,3,2,1500.0000000,Not Specified,1.0000000,1,Not Specified,93.7709887,0.0106643,180.0000000,905.6000000
+3,2,30,29,1,0,4,3,1500.0000000,Not Specified,1.0000000,1,Not Specified,93.7709887,0.0106643,180.0000000,905.6000000
+8,7,31,30,1,0,4,3,1500.0000000,Not Specified,1.0000000,1,Not Specified,59.6936660,0.0167522,180.0000000,1617.0000000
+4,3,32,31,1,0,8,7,1500.0000000,Not Specified,1.0000000,1,Not Specified,59.6936660,0.0167522,180.0000000,1617.0000000
+23,18,33,32,1,0,16,15,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9998639,0.0200001,180.0000000,483.0000000
+16,15,34,33,1,0,23,18,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9998639,0.0200001,180.0000000,483.0000000
+8,7,35,34,1,0,23,18,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9829143,0.0200068,180.0000000,1617.0000000
+23,18,36,35,1,0,8,7,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9829143,0.0200068,180.0000000,1617.0000000
+21,16,37,36,1,0,13,12,1000.0000000,Not Specified,1.0000000,10,Not Specified,50.0000000,0.0200000,180.0000000,0.6000000
+13,12,38,37,1,0,21,16,1000.0000000,Not Specified,1.0000000,10,Not Specified,50.0000000,0.0200000,180.0000000,0.6000000
+5,4,39,38,1,0,21,16,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9983642,0.0200007,180.0000000,899.4000000
+21,16,40,39,1,0,5,4,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9983642,0.0200007,180.0000000,899.4000000
+22,17,41,40,1,0,14,13,1000.0000000,Not Specified,1.0000000,10,Not Specified,50.0000000,0.0200000,180.0000000,17.6000000
+14,13,42,41,1,0,22,17,1000.0000000,Not Specified,1.0000000,10,Not Specified,50.0000000,0.0200000,180.0000000,17.6000000
+6,5,43,42,1,0,22,17,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9843300,0.0200063,180.0000000,1582.4000000
+22,17,44,43,1,0,6,5,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9843300,0.0200063,180.0000000,1582.4000000
+24,19,45,44,1,0,15,14,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9998438,0.0200001,180.0000000,500.0000000
+15,14,46,45,1,0,24,19,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9998438,0.0200001,180.0000000,500.0000000
+7,6,47,46,1,0,24,19,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9674410,0.0200130,180.0000000,1900.0000000
+24,19,48,47,1,0,7,6,1000.0000000,Not Specified,1.0000000,10,Not Specified,49.9674410,0.0200130,180.0000000,1900.0000000
+</code></pre>
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="/commit/c239a27c6d05e610e2f565f3187938466759afa7">- added link,od,path supported output properties to output data format - finalised default output format - refactoring (c239a27)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.sydney.edu.au/PLANit">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+	
+		<p class="mt-2"><a href="/PLANit/PLANitManual/about/">About PLANit</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/PLANit/PLANitManual/js/main.min.4d5304e94433d4e4399fc88f9d022534732a3098dc13ca6ba5ed1a337b4cea00.js" integrity="sha256-TVME6UQz1OQ5n8iPnQIlNHMqMJjcE8prpe0aM3tM6gA=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
