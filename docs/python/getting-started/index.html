@@ -22,16 +22,16 @@
 <link rel="icon" type="image/png" href="/PLANit/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
 <title>Getting Started | PLANit</title><meta property="og:title" content="Getting Started" />
-<meta property="og:description" content="What does your user need to know to try your project?
+<meta property="og:description" content="Getting started with PLANit-Python
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/getting-started/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Getting Started">
-<meta itemprop="description" content="What does your user need to know to try your project?
+<meta itemprop="description" content="Getting started with PLANit-Python
 "><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting Started"/>
-<meta name="twitter:description" content="What does your user need to know to try your project?
+<meta name="twitter:description" content="Getting started with PLANit-Python
 "/>
 
 
@@ -1652,8 +1652,7 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#setup">Setup</a></li>
+    <li><a href="#installing-planit-python">Installing PLANit-Python</a></li>
     <li><a href="#try-it-out">Try it out!</a></li>
   </ul>
 </nav>
@@ -1702,14 +1701,37 @@
             
 <div class="td-content">
 	<h1>Getting Started</h1>
-        <div class="lead">What does your user need to know to try your project?</div>
+        <div class="lead">Getting started with PLANit-Python</div>
 	
-	<p>TODO</p>
+	<p>The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly configurable.
+In this getting started we will take you through the process of setting up the environment and constructing out first PLANit assignment run.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>TODO</p>
-<h2 id="installation">Installation</h2>
-<p>TODO</p>
-<h2 id="setup">Setup</h2>
+<ul>
+<li>
+<p>Python must be installed, see <a href="https://www.python.org/downloads/">Python website</a> and install it before continuing</p>
+</li>
+<li>
+<p>Python must be on your path</p>
+</li>
+</ul>
+<p>When you type in <code>python --version</code> in your console it should output the currently installed version. If it is not, you get a message like the following: <code>'python' is not recognized as an internal or external command, operable program or batch file.</code>. This means,
+the <code>python.exe</code> file is not yet part of your path. To include it on your path do the following:</p>
+<p><strong>Windows:</strong></p>
+<ol>
+<li>Locate the installation directory of Python</li>
+<li>Find and open the &lsquo;environment variables&rsquo; window, for example via the control panel</li>
+<li>Under the system variables, find the &lsquo;path&rsquo; entry. Open it, and add a new line with the installation directory of Python</li>
+<li>Apply the changes, close your concole window</li>
+<li>Open a new console window, and try <code>python --version</code> again, it should now show the version</li>
+</ol>
+<p><strong>Mac:</strong></p>
+<ol>
+<li>Locate the installation directory of Python</li>
+<li>Open a terminal and enter : sudo nano /etc/paths. Enter your password when prompted. (nano is a text editor to edit the path in)</li>
+<li>The directories currently part of your PATH appear, now add the path of the Python install directory at the end.</li>
+<li>Press control + X to quit and Y to save changes</li>
+</ol>
+<h2 id="installing-planit-python">Installing PLANit-Python</h2>
 <p>TODO</p>
 <h2 id="try-it-out">Try it out!</h2>
 <p>TODO</p>
@@ -1968,7 +1990,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 3, 2020: <a  href="/commit/70fac99b3c5d15253b2b311a3ea38b44f131dc4e">streamlining structure and content of pages (70fac99)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 30, 2020: <a  href="/commit/7fa69705cc3be0b97ae8ec10c9f18cc6b282fc58">- made a start with the getting started for python - added 5 examples in exmaples section of python - fixed a number of links in older sections - added links to newly added pages in older sections (7fa6970)</a>
 </div>
 </div>
 

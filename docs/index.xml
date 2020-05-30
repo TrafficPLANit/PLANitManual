@@ -870,7 +870,7 @@
 &lt;li&gt;Mode (external) id&lt;/li&gt;
 &lt;li&gt;Time period (external) id&lt;/li&gt;
 &lt;li&gt;Iteration index&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt;OutputType.&lt;enum&gt;&lt;/a&gt; type&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../enums/outputtype&#34;&gt;OutputType.&amp;lt;enum&amp;gt;&lt;/a&gt; type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;By providing these inputs, the memory outformatter can identify the result matrix on which the iterator operates.&lt;/p&gt;
 &lt;blockquote&gt;

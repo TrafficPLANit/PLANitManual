@@ -23,13 +23,13 @@
         
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
-&lt;p&gt;The Default output formatter ( &lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.PLANIT_IO&lt;/a&gt; ) is activated by default on any PLANit run (hence the name). It persists the results to disk by using a combination of Extendible Markup Language &lt;a href=&#34;https://www.w3.org/XML/&#34;&gt;(XML)&lt;/a&gt; and Comma Separated Value (CSV) formats:&lt;/p&gt;
+&lt;p&gt;The Default output formatter is activated by default (&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.PLANIT_IO&lt;/a&gt;) on any PLANit run (hence the name). It persists the results to disk by using a combination of Extendible Markup Language &lt;a href=&#34;https://www.w3.org/XML/&#34;&gt;(XML)&lt;/a&gt; and Comma Separated Value (CSV) formats:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;XML: used to store meta-information on the CSV results&lt;/li&gt;
 &lt;li&gt;CSV: contains the actual results, with a header to identify XML meta-information&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h6 id=&#34;xml-meta-information&#34;&gt;XML Meta information&lt;/h6&gt;
-&lt;p&gt;The XML files provides the user with meta-information on the assignment run. this includes column meta-data, assignment meta-data, and csv result locations related to this meta-data. For detailed information on this output format please refer to the &lt;a href=&#34;../../../../inputoutput&#34;&gt;data-format&lt;/a&gt; section in this manual.&lt;/p&gt;
+&lt;p&gt;The XML files provides the user with meta-information on the assignment run. this includes column meta-data, assignment meta-data, and csv result locations related to this meta-data. For detailed information on this output format please refer to the &lt;a href=&#34;../../../../inputoutput/output/planitdefault&#34;&gt;data-format&lt;/a&gt; section in this manual.&lt;/p&gt;
 &lt;p&gt;The column meta-data provided information regarding:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: corresponds to the name in CVS header&lt;/li&gt;
