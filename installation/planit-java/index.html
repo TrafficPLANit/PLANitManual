@@ -224,6 +224,18 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#installing-java">Installing Java</a></li>
+        <li><a href="#installing-eclipse">Installing Eclipse</a></li>
+        <li><a href="#installing-planit-java">Installing PLANit-Java</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -260,13 +272,61 @@
 	<h1>Installing PLANit-Java</h1>
         
 	
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This page explains how to install PLANit for a Java application</p>
-
-</div>
-
+	<p>In this section we detail how to install PLANit-Java.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>Java 11</strong> or higher
+<ul>
+<li>It likely also works with Java 8 or higher, but this is not tested</li>
+</ul>
+</li>
+<li>A Java compatible IDE such as <strong>Eclipse</strong>
+<ul>
+<li>Other IDEs are equally suitable, but we assume Eclipse is used</li>
+</ul>
+</li>
+</ul>
+<h3 id="installing-java">Installing Java</h3>
+<p>For <em><strong>personal use and academics</strong></em> it is easiest to stick to the Oracle implementation since these are up to data and free of charge for non-commercial use. Java 11 can be downloaded from:</p>
+<ul>
+<li><a href="http://jdk.java.net/java-se-ri/11">Oracle open JDK</a></li>
+</ul>
+<p><em><strong>Commercial use</strong></em> if you want to use PLANit-Python, extend it, and embed it in a commercial product, you best avoid using the Oracle Java implementation unless you are willing to pay a subscription fee or get into trouble later down the road because of proprietary components even in their openJDK implementation. No worries though, there are other capable open-source openJDK implementations. Some links below:</p>
+<ul>
+<li><a href="https://openjdk.java.net/">Unix/Linux based openjdk distributions</a></li>
+<li><a href="https://adoptopenjdk.net">adoptopenJDK</a> for Windows and Mac</li>
+</ul>
+<p>After the download, install Java and add it to your path. In case you did not include it in the path during installation; here are the steps to do so manually:</p>
+<p><strong>Windows:</strong></p>
+<ol>
+<li>Locate the installation directory of Java</li>
+<li>Find and open the &lsquo;environment variables&rsquo; window, for example via the control panel</li>
+<li>Under the system variables, find the &lsquo;path&rsquo; entry. Open it, and add a new line with the installation directory of Java supplemented with <code>/bin</code> since the executables we want on the path are in the <code>/bin</code> directory</li>
+<li>Apply the changes, close your console window</li>
+</ol>
+<p><strong>Mac:</strong></p>
+<ol>
+<li>Locate the installation directory of Java</li>
+<li>Open a terminal and enter : sudo nano /etc/paths. Enter your password when prompted. (nano is a text editor to edit the path in)</li>
+<li>The directories currently part of your PATH appear, now add a new line with the installation directory of Java supplemented with <code>/bin</code> since the executables we want on the path are in the <code>/bin</code> directory.</li>
+<li>Press control + X to quit and Y to save changes</li>
+</ol>
+<p>Open a new console window, and try <code>java -showversion</code>, it should now show the version and some additional options</p>
+<h3 id="installing-eclipse">Installing Eclipse</h3>
+<p>Eclipse is a versatile Integrated Development Environment (IDE) with very good Java support. You can download it here ( you likely want to go for the Eclipse IDE for Java Developers):</p>
+<ul>
+<li><a href="https://www.eclipse.org/downloads/packages/">Eclipse Java IDE</a></li>
+</ul>
+<h3 id="installing-planit-java">Installing PLANit-Java</h3>
+<p>with Java and Eclipse installed, you have two options:</p>
+<ol>
+<li>Use PLANit-Java as a library, using its features in your own project</li>
+<li>Include, modify, compile the source code directly, so you can change it as you like</li>
+</ol>
+<h4 id="getting-started-planit-java-as-a-library">Getting Started: PLANit-Java as a library</h4>
+<p>Now that you have installed all the necessary components. Have a look at the <a href="../../docs/java/getting-started">Getting Started</a>, to create your first PLANit-Java application.</p>
+<h4 id="working-on-planit-java-source-code">Working on PLANit-Java source code</h4>
+<p>COMING SOON</p>
 
         <div class="section-index">
     

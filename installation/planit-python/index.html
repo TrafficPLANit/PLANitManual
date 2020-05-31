@@ -224,6 +224,19 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#installing-python">Installing python</a></li>
+        <li><a href="#installing-java">Installing Java</a></li>
+      </ul>
+    </li>
+    <li><a href="#installing-planit-python">Installing PLANit-Python</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -260,13 +273,64 @@
 	<h1>Installing PLANit-Python</h1>
         
 	
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This page explains how to install PLANit for a Python application</p>
-
-</div>
-
+	<p>In this section we dtail how to install PLANit-Python. A compatible installation of both Python and Java is required for PLANit_Python to work.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>Python 3.8</strong> or higher
+<ul>
+<li>It is likely it also works with older versions, but this is not tested</li>
+</ul>
+</li>
+<li><strong>Java 11</strong> or higher
+<ul>
+<li>It likely also works with Java 8 or higher, but this is not tested</li>
+</ul>
+</li>
+</ul>
+<h3 id="installing-python">Installing python</h3>
+<ul>
+<li>Install Python, see <a href="https://www.python.org/downloads/">Python website</a></li>
+<li>Python is recommended to be on your path, so you can invoke it from anywhere on the cole</li>
+</ul>
+<blockquote>
+<p>When you type in <code>python --version</code> in your console it should output the currently installed version. If it is not, you get a message like the following: <code>'python' is not recognized as an internal or external command, operable program or batch file.</code>. This means,
+the <code>python.exe</code> file is not yet part of your path.</p>
+</blockquote>
+<p>To include Python on your path do the following:</p>
+<p><strong>Windows:</strong></p>
+<ol>
+<li>Locate the installation directory of Python</li>
+<li>Find and open the &lsquo;environment variables&rsquo; window, for example via the control panel</li>
+<li>Under the system variables, find the &lsquo;path&rsquo; entry. Open it, and add a new line with the installation directory of Python</li>
+<li>Apply the changes, close your console window</li>
+<li>Open a new console window, and try <code>python --version</code> again, it should now show the version</li>
+</ol>
+<p><strong>Mac:</strong></p>
+<ol>
+<li>Locate the installation directory of Python</li>
+<li>Open a terminal and enter : sudo nano /etc/paths. Enter your password when prompted. (nano is a text editor to edit the path in)</li>
+<li>The directories currently part of your PATH appear, now add the path of the Python install directory at the end.</li>
+<li>Press control + X to quit and Y to save changes</li>
+<li>Open a new console window, and try <code>python --version</code> again, it should now show the version</li>
+</ol>
+<h3 id="installing-java">Installing Java</h3>
+<p>For <em><strong>personal use and academics</strong></em> it is easiest to stick to the Oracle implementation since these are up to data and free of charge for non-commercial use. Java 11 can be downloaded from:</p>
+<ul>
+<li><a href="http://jdk.java.net/java-se-ri/11">Oracle open JDK</a></li>
+</ul>
+<p><em><strong>Commercial use</strong></em> if you want to use PLANit-Python, extend it, and embed it in a commercial product, you best avoid using the Oracle Java implementation unless you are willing to pay a subscription fee or get into trouble later down the road because of proprietary components even in their openJDK implementation. No worries though, there are other capable open-source openJDK implementations. Some links below:</p>
+<ul>
+<li><a href="https://openjdk.java.net/">Unix/Linux based openjdk distributions</a></li>
+<li><a href="https://adoptopenjdk.net">adoptopenJDK</a> for Windows and Mac</li>
+</ul>
+<p>After the download, install Java and add it to your path.</p>
+<blockquote>
+<p>See <a href="./#installing-python">installing Python</a>, for instruction on how to add a directory to your path. In case of Java, you will want to add the <code>&lt;path_to_java_dir&gt;/bin</code> directory to the path.</p>
+</blockquote>
+<h2 id="installing-planit-python">Installing PLANit-Python</h2>
+<p>TODO</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Now that you have installed all the necessary components. Have a look at the <a href="../../docs/python/getting-started">Getting Started</a>, to create your first PLANit-Python application</p>
 
         <div class="section-index">
     
