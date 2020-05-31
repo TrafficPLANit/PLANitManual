@@ -1266,6 +1266,12 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_default_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/">.set_default_parameters&#43;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1655,8 +1661,11 @@
     <li><a href="#my-first-application">My first Application!</a>
       <ul>
         <li><a href="#creating-inputs">Creating inputs</a></li>
+        <li><a href="#demands">Demands</a></li>
+        <li><a href="#network-and-zoning-structure">Network and zoning structure</a></li>
       </ul>
     </li>
+    <li><a href="#planit-model-configuration">PLANit model configuration</a></li>
   </ul>
 </nav>
 
@@ -1773,7 +1782,32 @@ In this getting started we will take you through the process of setting up the e
 		<span style="color:#204a87;font-weight:bold">&lt;/zones&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;/PLANit&gt;</span>
-</code></pre></div><p>As you can see, the demands, zoning, and network all have their own section in the XML. Here, the network comprises:</p>
+</code></pre></div><h3 id="demands">Demands</h3>
+<p>The travel demand is provided in matrix format in veh/h. In this case for the default mode (we did not specify a mode explicitly) and set to a value of 1:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Origin/Destination</th>
+<th align="center">1</th>
+<th align="center">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<p>Also note that the inputs define a single time period that has a duration of exactly 1 hour, i.e., 3600 seconds.</p>
+<h3 id="network-and-zoning-structure">Network and zoning structure</h3>
+<p>As you can see, the demands, zoning, and network all have their own section in the XML. Here, the network comprises:</p>
 <ul>
 <li>1 link (segment)</li>
 <li>2 nodes (at upstream and downstream of link),</li>
@@ -1785,7 +1819,102 @@ In this getting started we will take you through the process of setting up the e
 </li>
 </ul>
 <p>Each zone represents a geographical area. It has a centroid from which travel demand can depart/arrive. To access the physical road network, each zone has one or more connectoids, i.e., nodes marked as eligible points for ingress/egress. PLANit will construct virtual links, connecting each connectoid node to the centroid. In this case, both nodes are marked as connectoids for one of the two zones.</p>
-<p><img src="img/simplenetwork.png" alt="Example image"></p>
+<p><img src="img/simplenetwork.png" alt="Simple network"></p>
+<h2 id="planit-model-configuration">PLANit model configuration</h2>
+<p>Let us now configure our traffic assignment run using the above inputs.</p>
+<ol>
+<li>Open a text editor to create our Python script.</li>
+</ol>
+<blockquote>
+<p>It is advised to use an editor that supports syntax highlighting for Python. Possibly even an IDE so you can debug your code, e.g. Eclipse with PyDev for example.</p>
+</blockquote>
+<ol start="2">
+<li>create a new Python script - for example -  <code>my_first_planit.py</code></li>
+<li>save it in the same directory as where you created the XML input file</li>
+</ol>
+<p>The <code>*.py</code> extension signals that this is a python script that can be interpreted and run by Python.</p>
+<ol start="3">
+<li>Copy the below script into the file and save it. We&rsquo;ll go through the script line by line to explain what is going on</li>
+</ol>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">PLANit</span>
+
+<span style="color:#000">plan_it</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+
+<span style="color:#8f5902;font-style:italic"># COMPONENTS</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>         
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">BPR</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">FIXED</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MSA</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># CONFIGURE COST COMPONENT</span>
+<span style="color:#8f5902;font-style:italic"># 	BPR Travel time function</span>
+<span style="color:#000">alpha</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">4.5</span>
+<span style="color:#000">beta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0.9</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">physical_cost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_default_parameters</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">alpha</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">beta</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># CONFIGURE OUTPUT</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_only_final_Iteration</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3465a4">True</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># Execute assignment</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">run</span><span style="color:#000;font-weight:bold">()</span>
+</code></pre></div><p>First, an instance of a PLANit project is created, named <code>plan_it</code>, via</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">PLANit</span>
+
+<span style="color:#000">plan_it</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+</code></pre></div><p>The <code>PLANit()</code> implementation is available as part of the planit module, hence we must import it first via <code>from planit import PLANit</code> before we can instantiate it.</p>
+<blockquote>
+<p>You can give the instance any name you want, it is not tied to plan_it, it could also be <code>i_love_assignment</code>, or <code>p</code>, or <code>what_now</code>. Do note that a descriptive name is usually the best choice.</p>
+</blockquote>
+<p>This instance allows you to configure the assignment. To do so, you must first decide on what traffic assignment components you want to use. The most important and first component that must be chosen is the type of traffic assignment. Here, we adopt the <a href="../reference/assignment/traditionalstatic">traditional static traffic assignment</a> model. It is configured by setting it on the planit instance, via its <a href="../reference/planit+/planit_set+">set method</a>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><p>Like all components that the user can choose, you provide its enum identifier to PLANit to let PLANit initialise the underlying object(s). For traffic assignment options, this is the <a href="../reference/enums/trafficassignmenttype">TrafficAssignment.&lt;enum&gt;</a>.</p>
+<p>Each traffic assignment comes with a number of default components that will be activated automatically. For the sake of this example, we explicitly activate the defaults (BPR, FIXED, MSA) in the script via:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">BPR</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">FIXED</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MSA</span><span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><blockquote>
+<p>Once you have completed this example, you can try running it again, but now with the above three lines removed. You will see they yield the same result, i.e., these components are activated by default.</p>
+</blockquote>
+<p>As you can see, each line calls the <a href="../reference/assignment/traditionalstatic/tsa_set+"><code>.set()</code></a> method on <code>plan_it.assignment</code>. Because we chose our assignment to be the traditional static assignment, plan_it exposes the configuration for this assignment via its <code>.assignment</code> property.</p>
+<p><strong>Physical cost</strong><br>
+Here, we choose to set the physical cost, which represents the cost structure imposed on the physical road network, to <a href="../reference/physicalcost/bpr">BPR</a>. This is the most common travel time function used for this type of assignment method.</p>
+<p><strong>Virtual cost</strong>
+In PLANit, you can configure the costs for the virtual part of the network that connects the travel demand from the zones to the physical network (via virtual links between connectoids and centroids) separately. Here, we choose that cost to be <a href="../reference/virtualcost/fixed">FIXED</a>, using its default value.</p>
+<p><strong>Smoothing</strong>
+Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal route having the smallest cost given the choices of all other travellers (who do the same). This requires an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, <a href="../reference/smoothing/msa">MSA smoothing</a> is used because of its simplicity and computational attractiveness.</p>
+<blockquote>
+<p>Different assignment types have different components for cost, smoothing, etc. that they support. Make sure that the choice for each component is compatible with your assignment method.</p>
+</blockquote>
+<p>Let us now look at how to configure options on one of our components; the BPR cost function:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">alpha</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">4.5</span>
+<span style="color:#000">beta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0.9</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">physical_cost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_default_parameters</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">alpha</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">beta</span><span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><p>Because we chose BPR, the BPR configuration is made availabe via <code>plan_it.assignment.physical_cost</code>.</p>
+<blockquote>
+<p>The same holds for the other components, each one is available via a property on <a href="../reference/assignment/traditionalstatic"><code>plan_it.assignment</code></a>.</p>
+</blockquote>
+<p>The BPR function has two parameters (alpha and beta) that you can configure in various ways, see <a href="../reference/physicalcost/bpr">BPR documentation</a>. Here, we will just change the defaults for all link segments, modes, and link segment types simultaneously. We do so via <a href="../reference/physicalcost/bpr/bpr_set_default_parameters+"><code>.set_default_parameters()</code></a>.</p>
+<p>Before we start the simulation run, we also explicitly make sure that we only store results of the final iteration. Why? Well, because a simulation might need hundreds of iterations to solve. Then, you&rsquo;re likely are only interested in the final result and do not want PLANit to waste precious time and space on generating outputs for intermediate iterations.</p>
+<blockquote>
+<p>In this example, this is not the case, but for demonstration purposes it is useful to demonstrate this useful feature.</p>
+</blockquote>
+<p>To make this happen we call</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_only_final_Iteration</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3465a4">True</span><span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><blockquote>
+<p>Everything related to general choices regarding outputs is configured via <a href="../reference/outputconfiguration"><code>.output_configuration</code></a>. Dedicated configuration for link, od, and path outputs also exist (when activated). they are accessible via <code>plan_it.assignment.link_configuration.&lt;call&gt;</code>, <code>plan_it.assignment.od_configuration.&lt;call&gt;</code>, and <code>plan_it.assignment.path_configuration.&lt;call&gt;</code></p>
+</blockquote>
+<p>Lastly, we start the simulation run via</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">run</span><span style="color:#000;font-weight:bold">()</span>
+</code></pre></div><p>Make sure all configuration is conducted before calling this method, because otherwise it has no impact on the simulation. We are now ready to try and run the script</p>
+<ol start="4">
+<li>Open a new console window</li>
+<li>Go to the directory where you saved the input and your python script</li>
+<li>execute the following command: <code>python my_first_planit.py</code></li>
+</ol>
+<p>TODO CONTINUE HERE (example in c:\test)</p>
+<blockquote>
+<p>Replace <code>my_first_planit.py</code> with your own script name if you chose a different name.</p>
+</blockquote>
 
         <div class="section-index">
     
@@ -2036,12 +2165,14 @@ In this getting started we will take you through the process of setting up the e
         
             
         
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 31, 2020: <a  href="/commit/3d304c66c21a0467d967c1b3e8e410ed07645290">- working on getting started example application for python (3d304c6)</a>
 </div>
 </div>
 
