@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -1249,6 +1249,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_default_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/">.set_default_parameters&#43;</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/">.set_parameters&#43;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1818,12 +1824,14 @@ the <em><strong>current working directory</strong></em> upon creation of the obj
 </tbody>
 </table>
 <h4 id="example-1">Example 1</h4>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
+
 <span style="color:#8f5902;font-style:italic"># create a PLANit instance using &#34;.&#34; as the location for the input files</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
 
 </code></pre></div><h4 id="example-2">Example 2</h4>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
+
 <span style="color:#8f5902;font-style:italic"># create a PLANit instance using a custom location to search for input files instead</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;c:/users/&lt;username&gt;/my_project&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
@@ -2045,6 +2053,8 @@ For comprehensive examples, please have a look at the PLANit-Python <a href="../
             
         
             
+        
+            
                 <div class="entry">
                     <h5>
                         <a href="/PLANit/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/">.zoning</a>
@@ -2168,7 +2178,7 @@ For comprehensive examples, please have a look at the PLANit-Python <a href="../
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="/commit/c239a27c6d05e610e2f565f3187938466759afa7">- added link,od,path supported output properties to output data format - finalised default output format - refactoring (c239a27)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 4, 2020: <a  href="/commit/8d342328ddf714fb2a23a057cb7cf5778c7f447c">- added methods for BPR function now available in python (setting of parameters) - updated all examples with the correct import statement (8d34232)</a>
 </div>
 </div>
 

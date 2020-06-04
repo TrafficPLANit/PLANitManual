@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -1249,6 +1249,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_default_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/">.set_default_parameters&#43;</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/">.set_parameters&#43;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1709,13 +1715,14 @@
 <h4 id="properties">Properties</h4>
 <p>This class has no properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># choose to run PLANit with a traditional static traffic assignment method</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>planit_instance <span class="op">=</span> PLANit()</span>
-<span id="cb1-4"><a href="#cb1-4"></a>planit_instance.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># set smoothing to MSA</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>planit_instance.assignment.<span class="bu">set</span>(Smoothing.MSA)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># choose to run PLANit with a traditional static traffic assignment method</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>planit_instance <span class="op">=</span> PLANit()</span>
+<span id="cb1-5"><a href="#cb1-5"></a>planit_instance.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># set smoothing to MSA</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>planit_instance.assignment.<span class="bu">set</span>(Smoothing.MSA)</span></code></pre></div>
 <h4 id="see-also">See also</h4>
 <p><a href="../../assignment">Traffic assignment</a> on assignments that support this virtual cost implementation<br />
 <a href="../../enums/smoothingtype">Smoothing.&lt;enum&gt;</a> for all available smoothing type options</p>
@@ -1971,12 +1978,14 @@
         
             
         
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="/commit/6fcf722298c1e419fc4bda71df76c14b1fc3a182">- added to traditional static assignment - added to link based relative duality gap - started with memory output formatter (not done) - streamlined use of non-capitals in comments of python code examples (6fcf722)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 4, 2020: <a  href="/commit/8d342328ddf714fb2a23a057cb7cf5778c7f447c">- added methods for BPR function now available in python (setting of parameters) - updated all examples with the correct import statement (8d34232)</a>
 </div>
 </div>
 
