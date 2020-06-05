@@ -44,7 +44,7 @@ In this getting started we will take you through the process of setting up the e
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;oddemands&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;odcellbycellmatrix&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;timeperiodref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;o&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;d&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/d&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;d&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;1000&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/d&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/o&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/odcellbycellmatrix&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/oddemands&amp;gt;&lt;/span&gt;
@@ -90,7 +90,7 @@ In this getting started we will take you through the process of setting up the e
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;demands&#34;&gt;Demands&lt;/h3&gt;
-&lt;p&gt;The travel demand is provided in matrix format in veh/h. In this case for the default mode (we did not specify a mode explicitly) and set to a value of 1:&lt;/p&gt;
+&lt;p&gt;The travel demand is provided in matrix format in veh/h. In this case for the default mode (we did not specify a mode explicitly) and set to a value of 1000:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -103,7 +103,7 @@ In this getting started we will take you through the process of setting up the e
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1000&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
@@ -155,8 +155,8 @@ In this getting started we will take you through the process of setting up the e
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# CONFIGURE COST COMPONENT&lt;/span&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# 	BPR Travel time function&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;alpha&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4.5&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;beta&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.9&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;alpha&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.9&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;beta&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4.5&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_default_parameters&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;alpha&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beta&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# CONFIGURE OUTPUT&lt;/span&gt;
@@ -193,8 +193,8 @@ Traditional static assignment is a so-called within-day equilibrium method based
 &lt;p&gt;Different assignment types have different components for cost, smoothing, etc. that they support. Make sure that the choice for each component is compatible with your assignment method.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Let us now look at how to configure options on one of our components; the BPR cost function:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;alpha&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4.5&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;beta&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.9&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;alpha&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.9&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;beta&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4.5&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;physical_cost&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_default_parameters&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;alpha&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beta&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Because we chose BPR, the BPR configuration is made availabe via &lt;code&gt;plan_it.assignment.physical_cost&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -364,8 +364,8 @@ Traditional static assignment is a so-called within-day equilibrium method based
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;csv-results&#34;&gt;CSV Results&lt;/h4&gt;
 &lt;p&gt;The CSV result file - with default settings - has a heading row with the column names (corresponding to the columns in the XML meta-data file). The other rows contain the result values, separated by a comma. In this very simple example we only have a single result row for the one link. The result should look something like the following:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-CSV&#34; data-lang=&#34;CSV&#34;&gt;Downstream Node External Id,Downstream Node Id,Link Segment External Id,Link Segment Id,Mode External Id,Mode Id,Time Period External Id,Time Period Id,Upstream Node External Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Maximum Speed,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Flow
-2,1,1,0,1,0,0,0,1,0,1800.0000000,Not Specified,10.0000000,80.0000000,1,Not Specified,79.5790158,0.1256613,1.0000000
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see, we find that the the flow is indeed 1 veh/h as stated in our input. The speed is almost free flow but not quite since any non-zero flow results in a slightly increased travel time (cost) and therefore a slightly reduced speed.&lt;/p&gt;
+2,1,1,0,1,0,0,0,1,0,1800.0000000,Not Specified,10.0000000,80.0000000,1,Not Specified,75.1948772,0.1329878,180.0000000,1000.0000000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see, we find that the the flow is indeed 1000 veh/h as stated in our input. The speed is somewhat reduced compared to free flow resulting in a slightly increased travel time (cost)&lt;/p&gt;
 &lt;p&gt;Many of the &amp;ldquo;id&amp;rdquo; columns you are likely not interested in for most applications. You can add and remove columns very easily. More information on this can be found under the &lt;a href=&#34;../reference/outputconfiguration/link&#34;&gt;Link Configuration&lt;/a&gt; section of the manual.&lt;/p&gt;
 &lt;h4 id=&#34;activating-more-output-types&#34;&gt;Activating more output types&lt;/h4&gt;
 &lt;p&gt;By default, only link results are generated. There are however other types of output that you can activate via the chosen traffic assignment instance, such as:&lt;/p&gt;

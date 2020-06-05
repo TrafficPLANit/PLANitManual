@@ -276,7 +276,7 @@
 	<p>In this section we dtail how to install PLANit-Python. A compatible installation of both Python and Java is required for PLANit_Python to work.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><strong>Python 3.8</strong> or higher
+<li><strong>Python 3.6</strong> or higher
 <ul>
 <li>It is likely it also works with older versions, but this is not tested</li>
 </ul>
@@ -288,10 +288,7 @@
 </li>
 </ul>
 <h3 id="installing-python">Installing python</h3>
-<ul>
-<li>Install Python, see <a href="https://www.python.org/downloads/">Python website</a></li>
-<li>Python is recommended to be on your path, so you can invoke it from anywhere on the cole</li>
-</ul>
+<p>To Install Python, see the <a href="https://www.python.org/downloads/">Python website</a>. Python is recommended to be on your path, so you can invoke it from anywhere on the console by just typing in <code>python</code>.</p>
 <blockquote>
 <p>When you type in <code>python --version</code> in your console it should output the currently installed version. If it is not, you get a message like the following: <code>'python' is not recognized as an internal or external command, operable program or batch file.</code>. This means, 
 the <code>python.exe</code> file is not yet part of your path.</p>
@@ -323,12 +320,28 @@ the <code>python.exe</code> file is not yet part of your path.</p>
 <li><a href="https://openjdk.java.net/">Unix/Linux based openjdk distributions</a></li>
 <li><a href="https://adoptopenjdk.net">adoptopenJDK</a> for Windows and Mac</li>
 </ul>
-<p>After the download, install Java and add it to your path.</p>
+<p>After the download, install Java and <strong>add it to your path</strong></p>
 <blockquote>
-<p>See <a href="./#installing-python">installing Python</a>, for instruction on how to add a directory to your path. In case of Java, you will want to add the <code>&lt;path_to_java_dir&gt;/bin</code> directory to the path.</p>
+<p>See <a href="./#installing-python">installing Python</a>, for instruction on how to add a directory to your path. In case of Java, you will want to add the <code>&lt;path_to_java_dir&gt;/bin</code> directory to the path. If you don&rsquo;t PLANit-Python will not work as it expects to be able to fire up a java process without being told where the Java installation resides.</p>
 </blockquote>
 <h2 id="installing-planit-python">Installing PLANit-Python</h2>
-<p>TODO</p>
+<blockquote>
+<p>We assume Python and Java are installed as described above, and are available on the path. If not, do so first.</p>
+</blockquote>
+<p>So, the last few steps:</p>
+<p>Make sure that pip is installed. You can check by just running the <code>pip</code> command in the console which should list options. If it can&rsquo;t find it, then it is not yet installed. However, it should be since it is included in Python version 3.4 or higher. (<a href="https://pip.pypa.io/en/stable/installing/">Installing pip</a>)</p>
+<p>Make sure pip is updated to the latest version via:</p>
+<p>Windows:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">python</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">m</span> <span style="color:#000">pip</span> <span style="color:#000">install</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">U</span> <span style="color:#000">pip</span>
+</code></pre></div><p>Linux/MacOs</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">pip</span> <span style="color:#000">install</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">U</span> <span style="color:#000">pip</span>
+</code></pre></div><p>Official releases of PLANit-python are available as is from PyPi which will be serviced by pip. If you want the latest official release simply run the following line from the console:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">pip</span> <span style="color:#000">install</span> <span style="color:#000">PLANit</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">Python</span>
+</code></pre></div><p>This should install the planit-python package as well as its dependencies into your python installation.</p>
+<p><strong>You have succesfully installed PLANit-Python</strong></p>
+<blockquote>
+<p>Non-official and test releases will occasionally be made available via Test.PyPi. If you want to install from this testing platform make sure you include the release version that you are after and add test.pypi as an extra url. This way pip will be able to find the location of the unofficial release, e.g., <code>pip install PLANit-Python==0.0.4a7 --extra-index-url https://test.pypi.org/simple/</code></p>
+</blockquote>
 <h2 id="getting-started">Getting Started</h2>
 <p>Now that you have installed all the necessary components. Have a look at the <a href="../../docs/python/getting-started">Getting Started</a>, to create your first PLANit-Python application</p>
 
@@ -350,7 +363,7 @@ the <code>python.exe</code> file is not yet part of your path.</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 31, 2020: <a  href="/commit/39cb304d182cc942b7d9ba049d552ff8e50dc632">- started with getting started for python - installation guide added for python and Java (39cb304)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 5, 2020: <a  href="/commit/2dc49fabc828bfd0fe2c3933ca5a7bdcc1f8b0c0">updated installation guide for planit. Now supporting the pip install explanation (actual release not yet available using pip, but this is how it will be made available) (2dc49fa)</a>
 </div>
 </div>
 
