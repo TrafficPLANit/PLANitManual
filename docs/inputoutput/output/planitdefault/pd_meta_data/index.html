@@ -26,13 +26,13 @@ There is ever only one meta-data file per PLANit run per time period, while ther
 The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/planitdefault/pd_meta_data/" />
-<meta property="article:modified_time" content="2020-05-29T12:48:31+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-06-08T10:24:51+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="XML meta-data">
 <meta itemprop="description" content="In this section of the manual we discuss the meta-data component of the PLANit default output. The meta-data structure is the same for the available output types, but the contents can differ.
 There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).
 The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references.">
-<meta itemprop="dateModified" content="2020-05-29T12:48:31&#43;10:00" />
-<meta itemprop="wordCount" content="1445">
+<meta itemprop="dateModified" content="2020-06-08T10:24:51&#43;10:00" />
+<meta itemprop="wordCount" content="1465">
 
 
 
@@ -1257,6 +1257,12 @@ The meta-data XML file contains general information on the PLANit run, supplemen
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_default_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/">.set_default_parameters&#43;</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/">.set_parameters&#43;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1732,15 +1738,18 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <p>There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).</p>
 <p>The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references.</p>
 <h2 id="file-name-convention">File name convention</h2>
-<p>Each XML meta-data file, is auto-generated. It adopts the following naming convention for its file name by default:</p>
-<p><code>Link_RunId &lt;#runId&gt;_&lt;name&gt;_Time Period &lt;#timePeriod&gt;.xml</code></p>
+<p>Each XML meta-data file, is auto-generated. All file names use underscores instead of spaces. It adopts the following naming convention for its file name by default:</p>
+<p><code>Link_RunId_&lt;#runId&gt;_&lt;name&gt;_Time_Period_&lt;#timePeriod&gt;.xml</code></p>
 <p>with</p>
 <ul>
 <li><code>&lt;#runId&gt;</code>, the unique number of the simulation run conducted since creating a PLANit project, typically 0,</li>
 <li><code>&lt;name&gt;</code>, name of the scenario being executed,</li>
 <li><code>&lt;#timePeriod&gt;</code>, the time period reference number (external id) of the simulation run.</li>
 </ul>
-<p>An example of a potential meta-data link (segment) result file might be: <code>Link_RunId 0_test_scenario_Time Period 1.xml</code>, where the description is &ldquo;test_scenario&rdquo;, and we are looking at the results for time period 1, for run 0, regarding Link outputs.</p>
+<blockquote>
+<p>In case the user provided a name of the scenario that contains spaces. PLANit will convert these spaces to underscores.</p>
+</blockquote>
+<p>An example of a potential meta-data link (segment) result file might be: <code>Link_RunId_0_test_scenario_Time_Period_1.xml</code>, where the description is &ldquo;test_scenario&rdquo;, and we are looking at the results for time period 1, for run 0, regarding Link outputs.</p>
 <p>Let us now discuss the contents and structure of the meta-data XML file</p>
 <blockquote>
 <p>The <code>&lt;name&gt;</code> is taken from the XMLNameRoot set by the user (or the default when not set), via the PLANit Default Output Formatter.</p>
@@ -2154,7 +2163,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 	<span style="color:#204a87;font-weight:bold">&lt;simulation&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;iteration&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;nr&gt;</span>500<span style="color:#204a87;font-weight:bold">&lt;/nr&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>src\test\resources\testcases\route_choice\xml\biDirectionalLinksRouteChoiceSingleModeWithTwoTimePeriods\Link_RunId 0_testRouteChoice42_Time Period 1_500.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>src\test\resources\testcases\route_choice\xml\biDirectionalLinksRouteChoiceSingleModeWithTwoTimePeriods\Link_RunId_0_testRouteChoice42_Time Period_1_500.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/iteration&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
@@ -2296,7 +2305,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 </code></pre>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="/commit/c239a27c6d05e610e2f565f3187938466759afa7">- added link,od,path supported output properties to output data format - finalised default output format - refactoring (c239a27)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 8, 2020: <a  href="/commit/4a5aae8be1db4354129244a1b661fb382a6859cb">updated naming convention (underscores) for result files in data formats and default output formatter documentation (4a5aae8)</a>
 </div>
 </div>
 

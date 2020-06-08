@@ -1249,6 +1249,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_default_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/">.set_default_parameters&#43;</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/">.set_parameters&#43;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1753,24 +1759,28 @@
 <td><a href="bpr_set_default_parameters+"><code>.set_default_parameters(+)</code></a></td>
 <td style="text-align: left;">Override the default <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> in various ways</td>
 </tr>
+<tr class="even">
+<td><a href="bpr_set_parameters+"><code>.set_parameters(+)</code></a></td>
+<td style="text-align: left;">Override the <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> for specific link segments</td>
+</tr>
 </tbody>
 </table>
-<p>TODO</p>
 <h4 id="properties">Properties</h4>
 <p>This class has no properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># choose to run PLANit with a traditional static traffic assignment method</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>planit_instance <span class="op">=</span> PLANit()</span>
-<span id="cb1-4"><a href="#cb1-4"></a>planit_instance.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># set physical cost to BPR link performance function</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>planit_instance.assignment.<span class="bu">set</span>(PhysicalCost.BPR)</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># override the default alpha and beta</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>alpha <span class="op">=</span> <span class="fl">0.87</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>beta <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>planit_instance.assignment.physical_cost.set_default_parameter(alpha, beta)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># choose to run PLANit with a traditional static traffic assignment method</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>planit_instance <span class="op">=</span> PLANit()</span>
+<span id="cb1-5"><a href="#cb1-5"></a>planit_instance.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># set physical cost to BPR link performance function</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>planit_instance.assignment.<span class="bu">set</span>(PhysicalCost.BPR)</span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co"># override the default alpha and beta</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>alpha <span class="op">=</span> <span class="fl">0.87</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>beta <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>planit_instance.assignment.physical_cost.set_default_parameter(alpha, beta)</span></code></pre></div>
 <h4 id="see-also">See also</h4>
 <p><a href="../../assignment">Traffic assignment</a> on assignments that support this physical cost implementation<br />
 <a href="../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for all available physical cost options<br />
@@ -1917,6 +1927,15 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/">.set_parameters&#43;</a>
+                    </h5>
+                    <p>BPR link performance function method</p>
+                </div>
+            
+        
+            
         
             
         
@@ -2039,7 +2058,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 31, 2020: <a  href="/commit/3d304c66c21a0467d967c1b3e8e410ed07645290">- working on getting started example application for python (3d304c6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 4, 2020: <a  href="/commit/8d342328ddf714fb2a23a057cb7cf5778c7f447c">- added methods for BPR function now available in python (setting of parameters) - updated all examples with the correct import statement (8d34232)</a>
 </div>
 </div>
 

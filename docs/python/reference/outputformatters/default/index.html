@@ -1249,6 +1249,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_default_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/">.set_default_parameters&#43;</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferencephysicalcostbprbpr_set_parameters" href="/PLANit/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/">.set_parameters&#43;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1730,7 +1736,7 @@
 <li>Extension to use for the XML and CSV files</li>
 </ul>
 <p>The naming structure of each CSV output file looks like the following (<strong>[]</strong> indicates a configurable constant, and <strong>&lt;&gt;</strong> indicates a non-configurable variable).</p>
-<p><code>&lt;outputtype name&gt;_RunId &lt;run_id&gt;_[root name]_Time Period &lt;time period&gt;_&lt;iteration index&gt;[csv_extension]</code></p>
+<p><code>&lt;outputtype name&gt;_RunId_&lt;run_id&gt;_[root name]_Time_Period_&lt;time period&gt;_&lt;iteration index&gt;[csv_extension]</code></p>
 <ul>
 <li><outputtype name> reflects the <a href="../../enums/outputtype">output type</a> this file provides results for, e.g. &ldquo;Link&rdquo;, &ldquo;Path&rdquo;, etc.</li>
 <li><run id> reflects the unique simulation run identifier within this PLANit instance, always 0 in PLANit Python</li>
@@ -1742,10 +1748,13 @@
 <li>[root name] prefix describing this run/application/scenario</li>
 <li>[csv_extension] the extension to use</li>
 </ul>
-<p>An concrete example of a result file name would be <code>Link_RunId 0_testBasic1_Time Period 1_2.csv</code>, here the root name is set to <code>testbasic1</code> and the default extension for csv is left untouched.</p>
+<blockquote>
+<p>Whenever the user includes spaces in any of the configurable aspects of the result files. PLANit will replaces those with underscores.</p>
+</blockquote>
+<p>An concrete example of a result file name would be <code>Link_RunId_0_test_basic_1_Time_Period 1_2.csv</code>, here the root name is set to <code>test basic 1</code> and the default extension for csv is left untouched.</p>
 <p>The naming structure of an XML file is identical, except that it does not contain iteration information since meta-data is invariant to iteration results. Also, the extension configuration is sepcific to xml;</p>
-<p><code>&lt;outputtype name&gt;_RunId &lt;run_id&gt;_[root name]_Time Period &lt;time period&gt;[xml_extension]</code>,</p>
-<p>with concrete example <code>Link_RunId 0_testBasic1_Time Period 1.xml</code>.</p>
+<p><code>&lt;outputtype name&gt;_RunId_&lt;run_id&gt;_[root name]_Time_Period_&lt;time period&gt;[xml_extension]</code>,</p>
+<p>with concrete example <code>Link_RunId 0_test_basic_1_Time_Period_1.xml</code>.</p>
 <h4 id="defaults">Defaults</h4>
 <p>The following defaults are provided for the extension and and root name, a.k.a. prefix, of this output formatter</p>
 <table>
@@ -1856,7 +1865,8 @@
 <h4 id="properties">Properties</h4>
 <p>No exposed properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
+
 <span style="color:#8f5902;font-style:italic">#all input and output available in public user directory (windows)</span>
 <span style="color:#000">io_dir</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;c:\users\public\planit</span><span style="color:#4e9a06">\&#34;</span>
 
@@ -2015,6 +2025,8 @@
                     </h5>
                     <p>Default PLANit Output Formatter method</p>
                 </div>
+            
+        
             
         
             
