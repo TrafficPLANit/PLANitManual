@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -26,13 +26,13 @@ Some output properties are not only contingent on the output type but on the com
 We list the supported output properties for link (segment) ordered by their priority (id, input, output)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/inputoutput/output/link_support/" />
-<meta property="article:modified_time" content="2020-05-29T12:48:31+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-06-10T11:10:26+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Link (segment) Output Property Support">
 <meta itemprop="description" content="Output properties that can be activated for the output type: Link (segment).
 Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
 We list the supported output properties for link (segment) ordered by their priority (id, input, output).">
-<meta itemprop="dateModified" content="2020-05-29T12:48:31&#43;10:00" />
-<meta itemprop="wordCount" content="332">
+<meta itemprop="dateModified" content="2020-06-10T11:10:26&#43;10:00" />
+<meta itemprop="wordCount" content="347">
 
 
 
@@ -1829,6 +1829,12 @@ We list the supported output properties for link (segment) ordered by their prio
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>MAXIMUM_DENSITY</code></td>
+<td align="left">The maximum density allowed on the link segment</td>
+<td align="left"><code>float</code></td>
+<td align="left"><code>veh/km</code></td>
+</tr>
+<tr>
 <td align="left"><code>MAXIMUM_SPEED</code></td>
 <td align="left">The maximum allowed speed</td>
 <td align="left"><code>float</code></td>
@@ -1873,7 +1879,7 @@ We list the supported output properties for link (segment) ordered by their prio
 </tr>
 <tr>
 <td align="left"><code>DENSITY</code></td>
-<td align="left">The density</td>
+<td align="left">The density on the link segment</td>
 <td align="left"><code>float</code></td>
 <td align="left"><code>veh/km</code></td>
 </tr>
@@ -1900,7 +1906,7 @@ We list the supported output properties for link (segment) ordered by their prio
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="/commit/c239a27c6d05e610e2f565f3187938466759afa7">- added link,od,path supported output properties to output data format - finalised default output format - refactoring (c239a27)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 10, 2020: <a  href="/commit/3e90f8ae3fff9311e4e39564008ab1cdd939f8d2">- updated documentation for newly added output properties: path_id, and maximum_density (3e90f8a)</a>
 </div>
 </div>
 

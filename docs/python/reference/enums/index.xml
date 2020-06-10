@@ -238,6 +238,12 @@
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;PATH_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Path id (internal)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;RUN_ID&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;simulation run id&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
@@ -305,6 +311,12 @@
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;MAXIMUM_DENSITY&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The maximum density allowed on the link segment&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;veh/km&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;MAXIMUM_SPEED&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;The maximum allowed speed&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
@@ -349,7 +361,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;DENSITY&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;The density&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The density on a link segment&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;veh/km&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
