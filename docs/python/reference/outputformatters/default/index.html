@@ -1736,7 +1736,7 @@
 <li>Extension to use for the XML and CSV files</li>
 </ul>
 <p>The naming structure of each CSV output file looks like the following (<strong>[]</strong> indicates a configurable constant, and <strong>&lt;&gt;</strong> indicates a non-configurable variable).</p>
-<p><code>&lt;outputtype name&gt;_RunId &lt;run_id&gt;_[root name]_Time Period &lt;time period&gt;_&lt;iteration index&gt;[csv_extension]</code></p>
+<p><code>&lt;outputtype name&gt;_RunId_&lt;run_id&gt;_[root name]_Time_Period_&lt;time period&gt;_&lt;iteration index&gt;[csv_extension]</code></p>
 <ul>
 <li><outputtype name> reflects the <a href="../../enums/outputtype">output type</a> this file provides results for, e.g. &ldquo;Link&rdquo;, &ldquo;Path&rdquo;, etc.</li>
 <li><run id> reflects the unique simulation run identifier within this PLANit instance, always 0 in PLANit Python</li>
@@ -1748,10 +1748,13 @@
 <li>[root name] prefix describing this run/application/scenario</li>
 <li>[csv_extension] the extension to use</li>
 </ul>
-<p>An concrete example of a result file name would be <code>Link_RunId 0_testBasic1_Time Period 1_2.csv</code>, here the root name is set to <code>testbasic1</code> and the default extension for csv is left untouched.</p>
+<blockquote>
+<p>Whenever the user includes spaces in any of the configurable aspects of the result files. PLANit will replaces those with underscores.</p>
+</blockquote>
+<p>An concrete example of a result file name would be <code>Link_RunId_0_test_basic_1_Time_Period 1_2.csv</code>, here the root name is set to <code>test basic 1</code> and the default extension for csv is left untouched.</p>
 <p>The naming structure of an XML file is identical, except that it does not contain iteration information since meta-data is invariant to iteration results. Also, the extension configuration is sepcific to xml;</p>
-<p><code>&lt;outputtype name&gt;_RunId &lt;run_id&gt;_[root name]_Time Period &lt;time period&gt;[xml_extension]</code>,</p>
-<p>with concrete example <code>Link_RunId 0_testBasic1_Time Period 1.xml</code>.</p>
+<p><code>&lt;outputtype name&gt;_RunId_&lt;run_id&gt;_[root name]_Time_Period_&lt;time period&gt;[xml_extension]</code>,</p>
+<p>with concrete example <code>Link_RunId 0_test_basic_1_Time_Period_1.xml</code>.</p>
 <h4 id="defaults">Defaults</h4>
 <p>The following defaults are provided for the extension and and root name, a.k.a. prefix, of this output formatter</p>
 <table>
@@ -2201,7 +2204,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 4, 2020: <a  href="/commit/8d342328ddf714fb2a23a057cb7cf5778c7f447c">- added methods for BPR function now available in python (setting of parameters) - updated all examples with the correct import statement (8d34232)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 8, 2020: <a  href="/commit/4a5aae8be1db4354129244a1b661fb382a6859cb">updated naming convention (underscores) for result files in data formats and default output formatter documentation (4a5aae8)</a>
 </div>
 </div>
 
