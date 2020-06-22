@@ -74,17 +74,21 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</loc>
-    <lastmod>2020-06-04T10:39:44+10:00</lastmod>
+    <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</loc>
-    <lastmod>2020-06-04T10:39:44+10:00</lastmod>
+    <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_only_final/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</loc>
   </url>
   
   <url>
@@ -170,6 +174,10 @@
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</loc>
   </url>
   
   <url>
@@ -351,7 +359,6 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/default/</loc>
-    <lastmod>2020-06-08T10:24:51+10:00</lastmod>
   </url>
   
   <url>
@@ -366,12 +373,12 @@
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/iterator/</loc>
-    <lastmod>2020-06-04T10:39:44+10:00</lastmod>
+    <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://pages.github.sydney.edu.au/PLANit/PLANitManual/docs/python/reference/outputformatters/memory/</loc>
-    <lastmod>2020-06-04T10:39:44+10:00</lastmod>
+    <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>

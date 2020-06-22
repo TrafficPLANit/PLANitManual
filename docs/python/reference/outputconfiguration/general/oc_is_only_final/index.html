@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Output configuration method 
 ">
 <meta itemprop="dateModified" content="2020-06-04T10:39:44&#43;10:00" />
-<meta itemprop="wordCount" content="105">
+<meta itemprop="wordCount" content="87">
 
 
 
@@ -870,7 +870,19 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_is_persist_zero_flow" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/">.is_persist_zero_flow()</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_set_only_final" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/">.set_persist_only_final_iteration(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitplanitmanualdocspythonreferenceoutputconfigurationgeneraloc_set_persist_zero_flow" href="/PLANit/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/">.set_persist_zero_flow(&#43;)</a>
       
       
     </li>
@@ -1723,29 +1735,6 @@
 <p>This .is_persist_only_final_iteration() method allows you to verify if we only persist the results of the final iteration while discarding all results of other iterations.</p>
 <h4 id="signature">Signature</h4>
 <p><code>.is_persist_only_final_iteration()</code></p>
-<p>with</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th align="left">Type</th>
-<th align="center"><a href="../../../../../units">Unit</a></th>
-<th align="center">Compulsory</th>
-<th align="left">Default</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>only_final_iteration</code></td>
-<td align="left"><code>bool</code></td>
-<td align="center">-</td>
-<td align="center">yes</td>
-<td align="left"><a href="../#defaults"><code>PERIST_ONLY_FINAL_ITERATION</code></a></td>
-<td align="left">choice whether or not to persist only final iteration</td>
-</tr>
-</tbody>
-</table>
 <h4 id="return-type">Return type</h4>
 <p>Class <code>bool</code></p>
 <h4 id="example-1">Example 1</h4>
@@ -1753,13 +1742,12 @@
 
 <span style="color:#8f5902;font-style:italic"># prep</span>
 <span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
 
 <span style="color:#8f5902;font-style:italic"># choose to persist all iterations</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_only_final_iteration</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3465a4">False</span><span style="color:#000;font-weight:bold">)</span>
-
-
-<span style="color:#8f5902;font-style:italic"># do other stuff </span>
+<span style="color:#000">persist_final</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">is_persist_only_final_iteration</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#204a87;font-weight:bold">if</span><span style="color:#000;font-weight:bold">(</span> <span style="color:#000">persist_final</span><span style="color:#000;font-weight:bold">)</span>
+  <span style="color:#8f5902;font-style:italic"># do other stuff </span>
 
 </code></pre></div><h4 id="see-also">See also</h4>
 <p><a href="../enums/outputtype">OutputType.&lt;enum&gt;</a> for the available output type enums<br>

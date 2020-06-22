@@ -41,6 +41,12 @@
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;bool&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;PERSIST_ZERO_FLOW&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;bool&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
@@ -60,6 +66,14 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;oc_is_only_final&#34;&gt;&lt;code&gt;.is_persist_only_final_iteration()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Find out if only results for the final iteration are persisted yes or no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;oc_set_persist_zero_flow+&#34;&gt;&lt;code&gt;.set_persist_zero_flow(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Choose to persist zero flow results yes or no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;oc_is_persist_zero_flow&#34;&gt;&lt;code&gt;.is_persist_zero_flow()&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Find out if zero flow results are persisted yes or no&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
