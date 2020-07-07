@@ -3,452 +3,452 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/overview/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Overview/</loc>
     <lastmod>2020-05-31T12:44:35+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/releases/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/Releases/</loc>
     <lastmod>2020-05-01T18:52:52+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/getting-started/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Getting-started/</loc>
     <lastmod>2020-06-01T16:40:01+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/releases/0_0_4/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/Releases/0_0_4/</loc>
     <lastmod>2020-05-01T18:52:52+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/OD/odc_activate&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_activate&#43;/</loc>
     <lastmod>2020-06-08T10:24:51+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_activate_output&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Link/lc_add&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_add&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/OD/odc_add&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Path/pc_add&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/OD/odc_deactivate&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_deactivate&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_deactivate_output&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/mof_last_iteration/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/mof_position_value_property&#43;/</loc>
     <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/mof_position_key_property&#43;/</loc>
     <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_only_final/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/General/oc_is_only_final/</loc>
     <lastmod>2020-06-23T09:42:17+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/General/oc_is_persist_zero_flow/</loc>
     <lastmod>2020-06-23T09:42:17+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/mof_iterator&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Link/lc_remove&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/OD/odc_remove&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Path/pc_remove&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Link/lc_remove_all/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove_all/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/OD/odc_remove_all/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Path/pc_remove_all/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_run/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_run/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_set&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/ic_set&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/InitialCost/ic_set&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_set&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_csv_directory&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_csv_extension&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_csv_prefix&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_description&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_description&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_output_directory&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Path/pc_set_path_id_type&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/General/oc_set_only_final&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/General/oc_set_persist_zero_flow&#43;/</loc>
     <lastmod>2020-06-23T09:42:17+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_xml_directory&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_xml_extension&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/dof_set_xml_prefix&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/getting-started/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/getting-started/</loc>
     <lastmod>2020-06-05T08:55:24+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/examples/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Examples/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_assignment/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_demands/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_demands/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_gap_function/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/StopCriterion/Default/dsc_get_epsilon/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/Iterator/mofi_get_keys/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/StopCriterion/Default/dsc_get_max_iterations/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/Iterator/mofi_get_values/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/Iterator/mofi_has_next/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_initial_costs/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_link_configuration/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_memory/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_memory/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_network/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_network/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/Iterator/mofi_next/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_od_configuration/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_output/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_output/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_output_configuration/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_path_configuration/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_physical_cost/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PhysicalCost/BPR/bpr_set_default_parameters&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_epsilon&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/StopCriterion/Default/dsc_set_epsilon&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/VirtualCost/Fixed/set_fixed_cost&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/VirtualCost/Speed/set_fixed_speed&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/StopCriterion/Default/dsc_set_max_iterations&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PhysicalCost/BPR/bpr_set_parameters&#43;/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_smoothing/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/lbrgf_stop_criterion/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/GapFunction/LinkBasedRelative/lbrgf_stop_criterion/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/tsa_virtual_cost/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PLANit&#43;/planit_zoning/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Input/PLANitDefault/pd_physical_network/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/bpr/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PhysicalCost/BPR/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Default/</loc>
     <lastmod>2020-06-08T10:24:51+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/fixed/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/VirtualCost/Fixed/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/installation/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/Installation/</loc>
     <lastmod>2020-05-31T12:44:35+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/Iterator/</loc>
     <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/Memory/</loc>
     <lastmod>2020-06-18T09:57:19+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/smoothing/msa/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Smoothing/MSA/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/installation/planit-java/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/Installation/PLANit-Java/</loc>
     <lastmod>2020-05-31T12:44:35+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/installation/planit-python/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/Installation/PLANit-Python/</loc>
     <lastmod>2020-06-05T14:39:58+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/speed/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/VirtualCost/Speed/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/traditionalstatic/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Input/PLANitDefault/pd_zoning_structure/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Assignment/</loc>
     <lastmod>2020-05-11T15:21:32+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Input/PLANitDefault/</loc>
     <lastmod>2020-05-30T13:37:06+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/output/planitdefault/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Output/PLANitDefault/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/StopCriterion/Default/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/demands/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Demands/</loc>
     <lastmod>2020-05-18T10:41:35+10:00</lastmod>
   </url>
   
@@ -458,192 +458,192 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/</loc>
     <lastmod>2020-05-03T18:08:40+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/GapFunction/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/General/</loc>
     <lastmod>2020-06-23T09:42:17+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/InitialCost/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Input/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/output/link_support/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Output/link_support/</loc>
     <lastmod>2020-06-10T11:10:26+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Link/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/linkbasedrelative/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/GapFunction/LinkBasedRelative/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/output/od_support/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Output/od_support/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/OD/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/odskimsuboutputtype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/OdSkimSubOutputType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/output/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Output/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputFormatters/</loc>
     <lastmod>2020-05-15T17:33:52+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputformattertype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/OutputFormatterType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputpropertytype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/OutputPropertyType/</loc>
     <lastmod>2020-06-10T11:10:26+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputtype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/OutputType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/output/path_support/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Output/path_support/</loc>
     <lastmod>2020-06-10T11:10:26+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/OutputConfiguration/Path/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/PhysicalCost/</loc>
     <lastmod>2020-05-11T15:21:32+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/network/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Network/</loc>
     <lastmod>2020-05-18T10:41:35+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/physicalcosttype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/PhysicalCostType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/</loc>
     <lastmod>2020-05-04T18:42:13+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routeidtype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/RouteIdType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/smoothingtype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/SmoothingType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/smoothing/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Smoothing/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/StopCriterion/</loc>
     <lastmod>2020-05-12T18:29:27+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/VirtualCost/</loc>
     <lastmod>2020-05-11T15:21:32+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/virtualcosttype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/VirtualCostType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/output/planitdefault/pd_meta_data/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Output/PLANitDefault/pd_meta_data/</loc>
     <lastmod>2020-06-17T16:12:08+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/zoning/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Zoning/</loc>
     <lastmod>2020-05-18T10:41:35+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_demands/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/InputOutput/Input/PLANitDefault/pd_demands/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/</loc>
     <lastmod>2020-05-30T13:30:09+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/trafficassignmenttype/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Enums/TrafficAssignmentType/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/java/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Java/</loc>
     <lastmod>2020-05-29T12:48:31+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/units/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Units/</loc>
     <lastmod>2020-05-25T18:19:13+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/contribution-guidelines/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Contribution-guidelines/</loc>
     <lastmod>2020-07-07T14:34:01+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/testing/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/Python/Reference/Testing/</loc>
     <lastmod>2020-05-12T14:52:50+10:00</lastmod>
   </url>
   
