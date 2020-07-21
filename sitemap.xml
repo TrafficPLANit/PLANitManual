@@ -203,11 +203,6 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/examples/</loc>
-    <lastmod>2020-06-04T10:39:44+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
@@ -363,6 +358,16 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</loc>
+    <lastmod>2020-07-10T16:16:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/examples/</loc>
+    <lastmod>2020-07-10T16:16:39+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/fixed/</loc>
     <lastmod>2020-06-04T10:39:44+10:00</lastmod>
   </url>
@@ -395,6 +400,15 @@
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/installation/planit-python/</loc>
     <lastmod>2020-07-10T13:17:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/initial_cost_examples/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/project_examples/</loc>
+    <lastmod>2020-07-10T16:16:39+10:00</lastmod>
   </url>
   
   <url>

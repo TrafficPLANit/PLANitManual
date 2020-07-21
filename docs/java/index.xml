@@ -13,5 +13,29 @@
       
     
     
+    <item>
+      <title>Docs: Examples</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here we provide you with a number of representative examples.&lt;/p&gt;
+&lt;p&gt;In the Java implementation of PLANit, we make a distinction between a project and an assignment run. To conduct an assignment it must be part of the project and source its inputs from the inputs registered on the project.&lt;/p&gt;
+&lt;p&gt;Because of this two-tiered approach, the examples section is split in multipl sections, each with a focus on a particular aspect of the PLANit run. Currently we have example sections for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;project_examples&#34;&gt;Setting up a project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;initial_cost_examples&#34;&gt;Providing initial costs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ta_examples&#34;&gt;Setting up traffic assignments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;output_examples&#34;&gt;Setting up outputs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;input_examples&#34;&gt;Setting up inputs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each section focuses on the options for its area of focus and relies on the defaults for the other components where possible.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
