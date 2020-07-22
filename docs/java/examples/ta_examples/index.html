@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_examples/" />
-<meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-07-21T17:27:49+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Traffic Assignment examples">
 <meta itemprop="description" content="Examples on how to configure a traffic assignment
 ">
-
-<meta itemprop="wordCount" content="975">
+<meta itemprop="dateModified" content="2020-07-21T17:27:49&#43;10:00" />
+<meta itemprop="wordCount" content="989">
 
 
 
@@ -1602,19 +1602,31 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinitial_cost_examples" href="/PLANitManual/docs/java/examples/initial_cost_examples/">Initial cost</a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesproject_examples" href="/PLANitManual/docs/java/examples/project_examples/">Project</a>
       
       
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinitial_cost_examples" href="/PLANitManual/docs/java/examples/initial_cost_examples/">Initial cost</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-planitmanualdocsjavaexamplesta_examples" href="/PLANitManual/docs/java/examples/ta_examples/">Traffic assignment</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinput_examples" href="/PLANitManual/docs/java/examples/input_examples/">Input</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesoutput_examples" href="/PLANitManual/docs/java/examples/output_examples/">Output</a>
       
       
     </li>
@@ -1772,6 +1784,10 @@
     <div class="lead">Examples on how to configure a traffic assignment</div>
 	       
 	<p>Here we provide you with a number of examples to set-up your PLANit traffic assignment instance.</p>
+<p>Prerequisites:</p>
+<ul>
+<li>It is assumed you know how to set up a PLANit project, otherwise see <a href="../project_examples">Setting up a project</a></li>
+</ul>
 <blockquote>
 <p>Note that the required Java <code>imports</code> are not listed in these examples as it is expected that the user
 has access to an IDE (like Eclipse), where this is added to the Java file automatically upon usage.</p>
@@ -1852,11 +1868,9 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <p>This example achieves the exact same thing as the previous example. Only now, the user must explicitly link the input components that are parsed on the project level (network, zoning, and demands) and register them with the assignment.</p>
 <p>If you only conduct a single assignment this has little benefit. However, if you run many assignments, with different networks for example, then this is much more flexible . Instead of parsing the same inputs over and over, you parse the inputs once on the project level and reuse them for different assignments.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-<span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">projectPath</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
-
 <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
   <span style="color:#8f5902;font-style:italic">// Create a custom PLANit project with all the default settings
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">projectPath</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// *NEW*
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">PhysicalNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
@@ -1991,7 +2005,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 21, 2020: <a  href="/commit/39f87e0964037e369bd28515b8af8d293066849a">- added traffic assignment configuration java examples to the manual (39f87e0)</a>
 </div>
 </div>
 
