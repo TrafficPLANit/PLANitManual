@@ -25,11 +25,11 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_examples/" />
-<meta property="article:modified_time" content="2020-07-21T17:27:49+10:00" /><meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-07-22T17:02:19+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Traffic Assignment examples">
 <meta itemprop="description" content="Examples on how to configure a traffic assignment
 ">
-<meta itemprop="dateModified" content="2020-07-21T17:27:49&#43;10:00" />
+<meta itemprop="dateModified" content="2020-07-22T17:02:19&#43;10:00" />
 <meta itemprop="wordCount" content="989">
 
 
@@ -1843,7 +1843,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 </table>
 <p>For all examples we adopt the following defaults, and/or settings regarding other components, unless indicated otherwise:</p>
 <ul>
-<li>project: PLANitProject</li>
+<li>project: <code>PlanItProject</code></li>
 <li>inputs: <a href="../../../inputoutput/input/planitdefault">default PLANit XML input format</a></li>
 <li>outputs: <a href="../../../inputoutput/output/planitdefault">default PLANit XML/CSV output format</a>, with only link outputs activated, stored in input directory</li>
 <li>assignment: traditional static assignment</li>
@@ -1926,8 +1926,8 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
   
   <span style="color:#8f5902;font-style:italic">// * NEW *
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#8f5902;font-style:italic">// set BPR link performance function as the type
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">BPRLinkTravelTimeFunction</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-    <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRLinkTravelTimeFunction</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">BPRLinkTravelTimeCost</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+    <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRLinkTravelTimeCost</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#8f5902;font-style:italic">// override default alpha and beta parameters
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">bprCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">setDefaultParameters</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">5</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">5</span><span style="color:#ce5c00;font-weight:bold">);</span> 
 
@@ -1961,8 +1961,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <blockquote>
 <p>Currently, there is only a single implementation of the gap function. It cannot be set by the user but is available by default.</p>
 </blockquote>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-<span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
 
   <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">();</span>
   
@@ -2005,7 +2004,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 </code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 21, 2020: <a  href="/commit/39f87e0964037e369bd28515b8af8d293066849a">- added traffic assignment configuration java examples to the manual (39f87e0)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 22, 2020: <a  href="/commit/ec4fab7ad449d503d11e917075627891df6a546a">- added input examples including TNTP example - added empty output examples (TODO) (ec4fab7)</a>
 </div>
 </div>
 

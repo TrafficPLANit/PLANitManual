@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/java/examples/output_examples/" />
-<meta property="og:site_name" content="PLANit" />
+<meta property="article:modified_time" content="2020-07-22T17:02:19+10:00" /><meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Output examples">
 <meta itemprop="description" content="Examples on how to configure PLANit project outputs
 ">
-
-<meta itemprop="wordCount" content="90">
+<meta itemprop="dateModified" content="2020-07-22T17:02:19&#43;10:00" />
+<meta itemprop="wordCount" content="1192">
 
 
 
@@ -1711,6 +1711,20 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#minimum-output-format">Minimum output format</a></li>
+        <li><a href="#multiple-output-formatters">Multiple output formatters</a></li>
+        <li><a href="#memory-output-formatter">Memory output formatter</a></li>
+        <li><a href="#general-output-configuration">General output configuration</a></li>
+        <li><a href="#output-type-configuration">Output type configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -1767,15 +1781,22 @@
 	<h1>Output examples</h1>
     <div class="lead">Examples on how to configure PLANit project outputs</div>
 	       
-	<p>Here we provide you with a number of examples to set-up your PLANit project outputs.</p>
+	<p>Here we provide you with a number of examples to set-up your PLANit project outputs. There are two different aspects to configuring your output:</p>
+<ul>
+<li>the output format</li>
+<li>The output configuration</li>
+</ul>
+<p>The output format determines how your results are persisted whereas the configuration drives what outputs are actually activated. In this section we provide examples for both</p>
 <p>Prerequisites:</p>
 <ul>
 <li>It is assumed you know how to set up a PLANit project, otherwise see <a href="../project_examples">Setting up a project</a></li>
+<li>It is assumed you know how to set up a traffic assignment, otherwise see <a href="../ta_examples">Setting up a traffic assignment</a></li>
 </ul>
 <blockquote>
 <p>Note that the required Java <code>imports</code> are not listed in these examples as it is expected that the user
 has access to an IDE (like Eclipse), where this is added to the Java file automatically upon usage.</p>
 </blockquote>
+<p>Below you will find examples regarding the output format</p>
 <table>
 <thead>
 <tr>
@@ -1784,12 +1805,225 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <th align="left">Description</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="./#minimum-output-format">Default output formatter</a></td>
+<td align="left">Simplest example of setting up your own output formatter</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a href="./#multiple-output-formatters">Multiple output formatters</a></td>
+<td align="left">Setting up multiple output formatters</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a href="./#memory-output-formatter">Memory output formatter</a></td>
+<td align="left">Setting up  and using a memory output formatter</td>
+</tr>
+</tbody>
+</table>
+<p>Below you will find examples regarding the output configuration (independent of what output format is configured)</p>
+<table>
+<thead>
+<tr>
+<th align="left">Example</th>
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">4</td>
+<td align="left"><a href="./#general-output-configuration">General output configuration</a></td>
+<td align="left">Example of changing some general configuration options regarding output persistence</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><a href="./#output-type-configuration">Output type configuration</a></td>
+<td align="left">Example of (de-)activating output types and configuring output properties on them</td>
+</tr>
+</tbody>
 </table>
 <p>For all examples we adopt the following defaults, and/or settings regarding other components, unless indicated otherwise:</p>
+<ul>
+<li>project: <code>CustomPlanItProject</code></li>
+<li>inputs: <a href="../../../inputoutput/input/planitdefault">default PLANit XML input format</a></li>
+<li>assignment: traditional static assignment</li>
+</ul>
+<h3 id="minimum-output-format">Minimum output format</h3>
+<p>Whenever you use a <code>PlanItSimpleProject</code> or a <code>PlanItProject</code>, the default PLANit output formatter is activated for you without any need for you to explicitly do so yourself.</p>
+<p>The output format requires an <code>OutputFormatter</code> to be registered on the assignment. Output formatters can be created on the project level and then passed on to the assignments that want to use them. It is even possible to register more than one output formatter on any traffic assignment. In that case multiple copies of the output are generated in the different formats. If none are activated, the assignment will run but will not generate any output. In this basic example, we create the PLANit default output formatter on the project and activate it on the assignment.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+ 
+  <span style="color:#000">PhysicalNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  
+  <span style="color:#8f5902;font-style:italic">// *NEW*
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">OutputFormatter</span> <span style="color:#000">outputFormatter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PLANIT_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">);</span>
 
+  <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span>
+      <span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">,</span>
+      <span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">,</span>
+      <span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span>
+      <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  
+  <span style="color:#8f5902;font-style:italic">// *NEW*
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">outputFormatter</span><span style="color:#ce5c00;font-weight:bold">);</span> 
+
+  <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+<span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+  <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h3 id="multiple-output-formatters">Multiple output formatters</h3>
+<p>In this example we demonstrate that you can register multiple (different) output formatters on the same assignment. In this case we register the default output formatter as well as the memory based output formatter. The latter collects all results in memory for the user to access directly within their application</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+     
+      <span style="color:#000">PhysicalNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// *NEW*
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">OutputFormatter</span> <span style="color:#000">defaultOutputFormatter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PLANIT_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">OutputFormatter</span> <span style="color:#000">memoryOutputFormatter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MEMORY_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+      <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span>
+          <span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// *NEW*
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">defaultOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">);</span> 
+
+      <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h3 id="memory-output-formatter">Memory output formatter</h3>
+<p>In this example we show how to use the memory output formatter. Results can be accessed after the assignment is complete and require the knowledge of the location of the various output properties that are assumed to be present (see output configuration examples on how to (de-)activate output properties). Since the output is highly configurable, collecting it requires a few additional steps to locate the correct entries:</p>
+<ul>
+<li>Construct an iterator that iterates over the results for a particular mode, time period, iteration, and output type (here link)</li>
+<li>Collect the position of the keys and values that you want to extract from the iterator position (here id (key), flow (value), and cost (value)</li>
+<li>Loop over the entries and extract and cast the keys and values in the locations based on the unit/type of the output properties</li>
+</ul>
+<blockquote>
+<p>Not we choose link as output type because it is activated by default. For other examples of other output types and their related output properties, please consult the examples reagrding the output configuration or the JavaDoc.</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+     
+      <span style="color:#000">PhysicalNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#000">MemoryOutputFormatter</span> <span style="color:#000">memoryOutputFormatter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MemoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MEMORY_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+      <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span>
+          <span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">);</span> 
+
+      <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">MemoryOutputIterator</span> <span style="color:#000">outputIterator</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getIterator</span><span style="color:#ce5c00;font-weight:bold">(</span>
+          <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">modes</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getFirs</span><span style="color:#ce5c00;font-weight:bold">(),</span> 
+          <span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">timePeriods</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getFirst</span><span style="color:#ce5c00;font-weight:bold">(),</span> 
+          <span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getLastIteration</span><span style="color:#ce5c00;font-weight:bold">(),</span> 
+          <span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">idPosition</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getPositionOfOutputKeyProperty</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK_SEGMENT_ID</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">flowPosition</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getPositionOfOutputValueProperty</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FLOW</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">linkSegmentCostPosition</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">memoryOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getPositionOfOutputValueProperty</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK_COST</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#204a87;font-weight:bold">while</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">outputIterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">hasNext</span><span style="color:#ce5c00;font-weight:bold">())</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#000">outputIterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">next</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        <span style="color:#204a87;font-weight:bold">long</span> <span style="color:#000">linkSegmentId</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">long</span><span style="color:#ce5c00;font-weight:bold">)</span><span style="color:#000">outputIterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getKeys</span><span style="color:#ce5c00;font-weight:bold">()[</span><span style="color:#000">idPosition</span><span style="color:#ce5c00;font-weight:bold">];</span>
+        <span style="color:#000">Object</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">values</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">outputIterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getValues</span><span style="color:#ce5c00;font-weight:bold">();</span>        
+        <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">linkSegmentFlow</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">double</span><span style="color:#ce5c00;font-weight:bold">)</span><span style="color:#000">values</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">flowPosition</span><span style="color:#ce5c00;font-weight:bold">];</span>
+        <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">linkSegmentCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">double</span><span style="color:#ce5c00;font-weight:bold">)</span><span style="color:#000">values</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">linkSegmentCostPosition</span><span style="color:#ce5c00;font-weight:bold">];</span>
+        <span style="color:#000">LOGGER</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">info</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">format</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;link: %d with flow: %f and cost: %f&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">linkSegmentId</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">linkSegmentFlow</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">linkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">));</span>
+      <span style="color:#ce5c00;font-weight:bold">}</span>
+      
+    <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h3 id="general-output-configuration">General output configuration</h3>
+<p>The output configuration allows you to configure what outputs are persisted independently of how they are persisted. We distinguish between general configuration options provided via <code>Outputconfiguration</code> and more specific output configuration options that are grouped by type, e.g., link, od, path, etc.</p>
+<p>In this example, we focus on the former, where change some basic configuration options across all outputs for a particular assignment</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+     
+      <span style="color:#000">PhysicalNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span>
+          <span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+                  
+      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PLANIT_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">));</span>
+           
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setPersistOnlyFinalIteration</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">false</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setPersistZeroFlow</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h3 id="output-type-configuration">Output type configuration</h3>
+<p>The output configuration allows you to configure WHAT outputs are persisted independently from HOW they are persisted. We distinguish between general configuration options provided via <code>Outputconfiguration</code> and more specific output configuration options that are grouped by type, e.g., link, od, path, etc.</p>
+<p>In this example, we explicitly de-activate the link outputs and then activate path outputs instead. We then add an output property to be included in the results for each path, namely its internal mode id. This means that in the resulting CSV an additional column is included showing for each path the related mode&rsquo;s internal id.</p>
+<p>You can freely add and remove output properties, i.e., output columns, this way. Have a look at the JavaDocs to see which output properties are added by default for each output type.</p>
+<blockquote>
+<p>Note: you can remove output columns, but it must remain possible to identify each result row uniquely. PLANit will verify this before running and if there is no option for a unique identification anymore an exception will be thrown</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+     
+      <span style="color:#000">PhysicalNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span>
+          <span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">demands</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span>
+          <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+                  
+      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PLANIT_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">));</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">deactivateOutput</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">LINK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">PathOutputTypeConfiguration</span> <span style="color:#000">pathOutputConfiguration</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PathOutputTypeConfiguration</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">activateOutput</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PATH</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">pathOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">removeProperty</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">RUN_ID</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">pathOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">addProperty</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MODE_ID</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+      <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 22, 2020: <a  href="/commit/ec4fab7ad449d503d11e917075627891df6a546a">- added input examples including TNTP example - added empty output examples (TODO) (ec4fab7)</a>
 </div>
 </div>
 
