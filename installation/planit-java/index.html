@@ -21,14 +21,14 @@
 <link rel="icon" type="image/png" href="/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Installing PLANit-Java | PLANit</title><meta property="og:title" content="Installing PLANit-Java" />
+<title>PLANit-Java | PLANit</title><meta property="og:title" content="PLANit-Java" />
 <meta property="og:description" content="Documentation and resources for the PLANit open-source project" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/installation/planit-java/" />
 <meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Installing PLANit-Java">
+<meta itemprop="name" content="PLANit-Java">
 <meta itemprop="description" content="Documentation and resources for the PLANit open-source project"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Installing PLANit-Java"/>
+<meta name="twitter:title" content="PLANit-Java"/>
 <meta name="twitter:description" content="Documentation and resources for the PLANit open-source project"/>
 
 
@@ -233,9 +233,10 @@
       <ul>
         <li><a href="#installing-java">Installing Java</a></li>
         <li><a href="#installing-eclipse">Installing Eclipse</a></li>
-        <li><a href="#installing-planit-java">Installing PLANit-Java</a></li>
+        <li><a href="#setting-up-planit-java">Setting up PLANit-Java</a></li>
       </ul>
     </li>
+    <li><a href="#getting-started">Getting Started</a></li>
   </ul>
 </nav>
 
@@ -272,7 +273,7 @@
 
             
 <div class="td-content">
-	<h1>Installing PLANit-Java</h1>
+	<h1>PLANit-Java</h1>
         
 	
 	<p>In this section we detail how to install PLANit-Java.</p>
@@ -320,16 +321,14 @@
 <ul>
 <li><a href="https://www.eclipse.org/downloads/packages/">Eclipse Java IDE</a></li>
 </ul>
-<h3 id="installing-planit-java">Installing PLANit-Java</h3>
-<p>with Java and Eclipse installed, you have two options:</p>
-<ol>
-<li>Use PLANit-Java as a library, using its features in your own project</li>
-<li>Include, modify, compile the source code directly, so you can change it as you like</li>
-</ol>
-<h4 id="getting-started-planit-java-as-a-library">Getting Started: PLANit-Java as a library</h4>
-<p>Now that you have installed all the necessary components. Have a look at the <a href="../../docs/java/getting-started">Getting Started</a>, to create your first PLANit-Java application.</p>
-<h4 id="working-on-planit-java-source-code">Working on PLANit-Java source code</h4>
-<p>COMING SOON</p>
+<h3 id="setting-up-planit-java">Setting up PLANit-Java</h3>
+<p>Currently, the PLANit-Java library is not yet available through a maven dependency. It is therefore easiest to obtain the jar by <a href="../planit-python">installing PLANit-Python</a> first.
+Then, the PLANitXXXX.jar can be copied from the share/planit directory that resides under the Python installation directory and added to your project dependencies in Eclipse.</p>
+<blockquote>
+<p>Alternatively, you can locally compile the various repositories needed to build the PLANitXXXX.jar. To do so, see the PLANitAll repository. This is however not recommended because it requires detailed knowledge of the project structure and/or a lot of experience with Java projects.</p>
+</blockquote>
+<h2 id="getting-started">Getting Started</h2>
+<p>Now that you have installed all the necessary components. Have a look at the <a href="../../docs/java/getting-started">Getting Started</a>, to create your first PLANit-Java application</p>
 
         <div class="section-index">
     
@@ -349,7 +348,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 8, 2020: <a  href="/commit/389c4362c9fd907168c71b12099ee3d75903531a">reinitated caps on toplevel dirs (389c436)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 23, 2020: <a  href="/commit/4bac814ccbf4dcd2a8c526eace2420037b8cd22c">made a start with the getting started for Java &#43; updated the installatino guid a little bit. NOT DONE (4bac814)</a>
 </div>
 </div>
 

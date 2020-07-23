@@ -649,7 +649,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 &lt;/table&gt;
 &lt;p&gt;For all examples we adopt the following defaults, and/or settings regarding other components, unless indicated otherwise:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;project: CustomPlanitProject&lt;/li&gt;
+&lt;li&gt;project: &lt;code&gt;CustomPlanItProject&lt;/code&gt;s&lt;/li&gt;
 &lt;li&gt;outputs: &lt;a href=&#34;../../../inputoutput/output/planitdefault&#34;&gt;default PLANit XML/CSV output format&lt;/a&gt;, with only link outputs activated, stored in input directory&lt;/li&gt;
 &lt;li&gt;assignment: traditional static assignment&lt;/li&gt;
 &lt;/ul&gt;

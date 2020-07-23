@@ -193,6 +193,11 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/java/getting-started/</loc>
+    <lastmod>2020-07-23T15:57:17+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/getting-started/</loc>
     <lastmod>2020-06-05T08:55:24+10:00</lastmod>
   </url>
@@ -359,7 +364,7 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</loc>
-    <lastmod>2020-07-21T15:41:45+10:00</lastmod>
+    <lastmod>2020-07-23T14:44:32+10:00</lastmod>
   </url>
   
   <url>
@@ -394,12 +399,12 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/installation/planit-java/</loc>
-    <lastmod>2020-07-08T13:23:50+10:00</lastmod>
+    <lastmod>2020-07-23T15:57:17+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/installation/planit-python/</loc>
-    <lastmod>2020-07-10T13:17:27+10:00</lastmod>
+    <lastmod>2020-07-23T15:57:17+10:00</lastmod>
   </url>
   
   <url>
@@ -479,7 +484,7 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/initial_cost_examples/</loc>
-    <lastmod>2020-07-22T17:02:19+10:00</lastmod>
+    <lastmod>2020-07-23T14:40:45+10:00</lastmod>
   </url>
   
   <url>
@@ -629,7 +634,7 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_examples/</loc>
-    <lastmod>2020-07-22T17:02:19+10:00</lastmod>
+    <lastmod>2020-07-23T14:40:45+10:00</lastmod>
   </url>
   
   <url>
@@ -649,12 +654,12 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/input_examples/</loc>
-    <lastmod>2020-07-22T17:02:19+10:00</lastmod>
+    <lastmod>2020-07-23T15:57:17+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/java/examples/output_examples/</loc>
-    <lastmod>2020-07-22T17:02:19+10:00</lastmod>
+    <lastmod>2020-07-23T14:40:45+10:00</lastmod>
   </url>
   
   <url>
