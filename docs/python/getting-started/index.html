@@ -1792,7 +1792,7 @@
         <div class="lead">Getting started with PLANit-Python</div>
 	
 	<p>The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly configurable. 
-In this getting started we will take you through the process of setting up the environment and constructing out first PLANit assignment run.</p>
+In this getting started we will take you through the process of setting up the environment and constructing your first PLANit assignment run.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Make sure you installed PLANit-Python, as per the <a href="../../../installation/planit-python">Installation guide</a></p>
 <h2 id="my-first-application">My first Application!</h2>
@@ -1931,7 +1931,7 @@ In this getting started we will take you through the process of setting up the e
 <span style="color:#8f5902;font-style:italic"># CONFIGURE OUTPUT</span>
 <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_only_final_Iteration</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3465a4">True</span><span style="color:#000;font-weight:bold">)</span>
 
-<span style="color:#8f5902;font-style:italic"># Execute assignment</span>
+<span style="color:#8f5902;font-style:italic"># RUN ASSIGNMENT</span>
 <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">run</span><span style="color:#000;font-weight:bold">()</span>
 </code></pre></div><p>First, an instance of a PLANit project is created, named <code>plan_it</code>, via</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
@@ -1954,9 +1954,9 @@ In this getting started we will take you through the process of setting up the e
 <p>As you can see, each line calls the <a href="../reference/assignment/traditionalstatic/tsa_set+"><code>.set()</code></a> method on <code>plan_it.assignment</code>. Because we chose our assignment to be the traditional static assignment, plan_it exposes the configuration for this assignment via its <code>.assignment</code> property.</p>
 <p><strong>Physical cost</strong><br>
 Here, we choose to set the physical cost, which represents the cost structure imposed on the physical road network, to <a href="../reference/physicalcost/bpr">BPR</a>. This is the most common travel time function used for this type of assignment method.</p>
-<p><strong>Virtual cost</strong>
+<p><strong>Virtual cost</strong><br>
 In PLANit, you can configure the costs for the virtual part of the network that connects the travel demand from the zones to the physical network (via virtual links between connectoids and centroids) separately. Here, we choose that cost to be <a href="../reference/virtualcost/fixed">FIXED</a>, using its default value.</p>
-<p><strong>Smoothing</strong>
+<p><strong>Smoothing</strong><br>
 Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal route having the smallest cost given the choices of all other travellers (who do the same). This requires an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, <a href="../reference/smoothing/msa">MSA smoothing</a> is used because of its simplicity and computational attractiveness.</p>
 <blockquote>
 <p>Different assignment types have different components for cost, smoothing, etc. that they support. Make sure that the choice for each component is compatible with your assignment method.</p>
@@ -1977,7 +1977,7 @@ Traditional static assignment is a so-called within-day equilibrium method based
 <p>To make this happen we call</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">output_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_only_final_Iteration</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3465a4">True</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><blockquote>
-<p>Everything related to general choices regarding outputs is configured via <a href="../reference/outputconfiguration"><code>.output_configuration</code></a>. Dedicated configuration for link, od, and path outputs also exist (when activated). they are accessible via <code>plan_it.assignment.link_configuration.&lt;call&gt;</code>, <code>plan_it.assignment.od_configuration.&lt;call&gt;</code>, and <code>plan_it.assignment.path_configuration.&lt;call&gt;</code></p>
+<p>Everything related to general choices regarding outputs is configured via <a href="../reference/outputconfiguration"><code>.output_configuration</code></a>. Dedicated configuration for link, od, and path outputs also exist (when activated). They are accessible via <code>plan_it.assignment.link_configuration.&lt;call&gt;</code>, <code>plan_it.assignment.od_configuration.&lt;call&gt;</code>, and <code>plan_it.assignment.path_configuration.&lt;call&gt;</code></p>
 </blockquote>
 <h3 id="running-the-script">Running the script</h3>
 <p>Before running the script make sure it ends with the line:</p>
@@ -2006,7 +2006,7 @@ Traditional static assignment is a so-called within-day equilibrium method based
 <li>type, type of the values, e.g., integer, string, double, etc.</li>
 <li>unit, unit of the values, e.g., km, h, m, veh/h, etc.</li>
 </ul>
-<p>Below you&rsquo;ll find the XML meta-data for this run (you should have somtheing very similar)</p>
+<p>Below you&rsquo;ll find the XML meta-data for this run (you should have something very similar)</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;yes&#34;?&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;metadata</span> <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_xsd&gt;/metadata.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
     <span style="color:#204a87;font-weight:bold">&lt;timestamp&gt;</span>2020-06-01T15:29:18.480+10:00<span style="color:#204a87;font-weight:bold">&lt;/timestamp&gt;</span>

@@ -23,7 +23,7 @@
         
         
         &lt;p&gt;The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly configurable. 
-In this getting started we will take you through the process of setting up the environment and constructing out first PLANit assignment run.&lt;/p&gt;
+In this getting started we will take you through the process of setting up the environment and constructing your first PLANit assignment run.&lt;/p&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 &lt;p&gt;Make sure you installed PLANit-Python, as per the &lt;a href=&#34;../../../installation/planit-python&#34;&gt;Installation guide&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;my-first-application&#34;&gt;My first Application!&lt;/h2&gt;
@@ -162,7 +162,7 @@ In this getting started we will take you through the process of setting up the e
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# CONFIGURE OUTPUT&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_only_final_Iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#3465a4&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Execute assignment&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# RUN ASSIGNMENT&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;First, an instance of a PLANit project is created, named &lt;code&gt;plan_it&lt;/code&gt;, via&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
@@ -185,9 +185,9 @@ In this getting started we will take you through the process of setting up the e
 &lt;p&gt;As you can see, each line calls the &lt;a href=&#34;../reference/assignment/traditionalstatic/tsa_set+&#34;&gt;&lt;code&gt;.set()&lt;/code&gt;&lt;/a&gt; method on &lt;code&gt;plan_it.assignment&lt;/code&gt;. Because we chose our assignment to be the traditional static assignment, plan_it exposes the configuration for this assignment via its &lt;code&gt;.assignment&lt;/code&gt; property.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Physical cost&lt;/strong&gt;&lt;br&gt;
 Here, we choose to set the physical cost, which represents the cost structure imposed on the physical road network, to &lt;a href=&#34;../reference/physicalcost/bpr&#34;&gt;BPR&lt;/a&gt;. This is the most common travel time function used for this type of assignment method.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Virtual cost&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;Virtual cost&lt;/strong&gt;&lt;br&gt;
 In PLANit, you can configure the costs for the virtual part of the network that connects the travel demand from the zones to the physical network (via virtual links between connectoids and centroids) separately. Here, we choose that cost to be &lt;a href=&#34;../reference/virtualcost/fixed&#34;&gt;FIXED&lt;/a&gt;, using its default value.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Smoothing&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;Smoothing&lt;/strong&gt;&lt;br&gt;
 Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&amp;rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal route having the smallest cost given the choices of all other travellers (who do the same). This requires an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, &lt;a href=&#34;../reference/smoothing/msa&#34;&gt;MSA smoothing&lt;/a&gt; is used because of its simplicity and computational attractiveness.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Different assignment types have different components for cost, smoothing, etc. that they support. Make sure that the choice for each component is compatible with your assignment method.&lt;/p&gt;
@@ -208,7 +208,7 @@ Traditional static assignment is a so-called within-day equilibrium method based
 &lt;p&gt;To make this happen we call&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;plan_it&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_only_final_Iteration&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#3465a4&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;Everything related to general choices regarding outputs is configured via &lt;a href=&#34;../reference/outputconfiguration&#34;&gt;&lt;code&gt;.output_configuration&lt;/code&gt;&lt;/a&gt;. Dedicated configuration for link, od, and path outputs also exist (when activated). they are accessible via &lt;code&gt;plan_it.assignment.link_configuration.&amp;lt;call&amp;gt;&lt;/code&gt;, &lt;code&gt;plan_it.assignment.od_configuration.&amp;lt;call&amp;gt;&lt;/code&gt;, and &lt;code&gt;plan_it.assignment.path_configuration.&amp;lt;call&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Everything related to general choices regarding outputs is configured via &lt;a href=&#34;../reference/outputconfiguration&#34;&gt;&lt;code&gt;.output_configuration&lt;/code&gt;&lt;/a&gt;. Dedicated configuration for link, od, and path outputs also exist (when activated). They are accessible via &lt;code&gt;plan_it.assignment.link_configuration.&amp;lt;call&amp;gt;&lt;/code&gt;, &lt;code&gt;plan_it.assignment.od_configuration.&amp;lt;call&amp;gt;&lt;/code&gt;, and &lt;code&gt;plan_it.assignment.path_configuration.&amp;lt;call&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;running-the-script&#34;&gt;Running the script&lt;/h3&gt;
 &lt;p&gt;Before running the script make sure it ends with the line:&lt;/p&gt;
@@ -237,7 +237,7 @@ Traditional static assignment is a so-called within-day equilibrium method based
 &lt;li&gt;type, type of the values, e.g., integer, string, double, etc.&lt;/li&gt;
 &lt;li&gt;unit, unit of the values, e.g., km, h, m, veh/h, etc.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Below you&amp;rsquo;ll find the XML meta-data for this run (you should have somtheing very similar)&lt;/p&gt;
+&lt;p&gt;Below you&amp;rsquo;ll find the XML meta-data for this run (you should have something very similar)&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; standalone=&amp;#34;yes&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;metadata&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_xsd&amp;gt;/metadata.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timestamp&amp;gt;&lt;/span&gt;2020-06-01T15:29:18.480+10:00&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timestamp&amp;gt;&lt;/span&gt;

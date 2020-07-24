@@ -1738,7 +1738,7 @@
         <li><a href="#demands">Demands</a></li>
         <li><a href="#network-and-zoning-structure">Network and zoning structure</a></li>
         <li><a href="#planit-model-configuration">PLANit model configuration</a></li>
-        <li><a href="#running-the-script">Running the script</a></li>
+        <li><a href="#running-the-application">Running the application</a></li>
         <li><a href="#result-files">Result files</a></li>
       </ul>
     </li>
@@ -1792,11 +1792,11 @@
         <div class="lead">Getting started with PLANit-Java</div>
 	
 	<p>The Java API of PLANit is very versatile and highly configurable. It allows you to setup a project which in turn can run one or more traffic assignments based on different networks, zonings, and demands. Each traffic assignment can be configured separately, including the outputs it should generate.</p>
-<p>In this getting started we will take you through the process of setting up the environment and constructing out first PLANit assignment run.</p>
+<p>In this getting started we will take you through the process of setting up an input file and constructing your first PLANit assignment run.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Make sure you have access to the PLANit-Java sources and/or compiled classes via the <code>PLANitXXXX.jar</code>, as per the <a href="../../../installation/planit-java">Installation guide</a></p>
 <h2 id="my-first-application">My first Application!</h2>
-<p>In this section we will be creating our very first PLANit-Java traffic assignment application.</p>
+<p>Let&rsquo;s create our very first PLANit-Java traffic assignment application.</p>
 <h3 id="creating-inputs">Creating inputs</h3>
 <p>PLANit requires a network, demands, and zoning structure as inputs to be able to construct a valid transport network. Let&rsquo;s provide all three in the same XML file. Our XML file is based on the <a href="../../inputoutput/input/planitdefault">Default PLANit Data Format</a>. Copy the contents of the XML snippet below and save them somewhere on disk, e.g. <code>&quot;c:\Users\Public\planit_test\&quot;</code>, as - for example - <code>&quot;planit_input.xml&quot;</code>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span> <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
@@ -1898,39 +1898,87 @@
 <p><img src="img/simplenetwork.png" alt="Simple network"></p>
 <h3 id="planit-model-configuration">PLANit model configuration</h3>
 <p>Let us now configure our traffic assignment run using the above inputs.</p>
-<ol>
-<li>
-<p>Create a new executable Java file in your favourite IDE, e.g. Eclipse, or something else.</p>
-</li>
-<li>
-<p>if you are unfamiliar with programming in Java, just copy the below snippet and name the file <code>PlanItMain.java</code>. It will create a class called <code>PLANitMain</code> and when you run it it will execute the <code>main(...)</code> method</p>
-</li>
-</ol>
+<p>Create a new executable Java file in your favourite IDE, e.g. Eclipse, or something else and name it <code>PLANitMain.java</code>. if you are unfamiliar with programming in Java, just copy the below snippet in this file. It will create a class called <code>PLANitMain</code> and when you run it it will execute the <code>main(...)</code> method</p>
 <pre><code>public class PlanItMain {
 
 	public static void main(final String[] args) {
 	}
-</code></pre><ol start="3">
-<li>Copy the below Java snippet into the <code>main</code> method and save. We&rsquo;ll go through the snippet line by line to explain what is going on</li>
-</ol>
+</code></pre><p>Now Copy the below Java snippet into the <code>main</code> method (in between the two accolades and save). We&rsquo;ll go through the snippet line by line to explain what is going on</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-    	<span style="color:#8f5902;font-style:italic">// create a simple PLANit project with a specific input directory
-</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;c:\Users\Public\planit_test\&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+      <span style="color:#8f5902;font-style:italic">// PROJECT INSTANCE
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;c:\\Users\\Public\\planit_test\\&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
            
-      <span style="color:#8f5902;font-style:italic">// create an assignment on this project using the inputs found in the project dir
-</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-      	<span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>                  
+      <span style="color:#8f5902;font-style:italic">// ASSIGNMENT INSTANCE
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">TraditionalStaticAssignmentBuilder</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+        <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentBuilder</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
       
-      <span style="color:#8f5902;font-style:italic">// perform output configuration
+      <span style="color:#8f5902;font-style:italic">// COMPONENTS
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">BPRLinkTravelTimeCost</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRLinkTravelTimeCost</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterVirtualCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FIXED</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterSmoothing</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MSA</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// CONFIGURE COST COMPONENT
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#8f5902;font-style:italic">// BPR 
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">alpha</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">9</span><span style="color:#ce5c00;font-weight:bold">;</span>
+      <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">beta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">4</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">5</span><span style="color:#ce5c00;font-weight:bold">;</span>
+      <span style="color:#000">bprCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">setDefaultParameters</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">alpha</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">beta</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// CONFIGURE OUTPUT
 </span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setPersistOnlyFinalIteration</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">false</span><span style="color:#ce5c00;font-weight:bold">);</span>
-      <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setPersistZeroFlow</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
       
-      <span style="color:#8f5902;font-style:italic">// run assignment
+      <span style="color:#8f5902;font-style:italic">// EXECUTE ASSIGNMENT
 </span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
     <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
       <span style="color:#8f5902;font-style:italic">// do something
 </span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
-</code></pre></div><h3 id="running-the-script">Running the script</h3>
+</code></pre></div><blockquote>
+<p>Make sure you imported all the suggested classes. If you are not using an IDE, you will have to look up the correct imports from the PLANitxxxx.jar or the JavaDoc.</p>
+</blockquote>
+<p>Ok, let&rsquo;s see what we just did. First, an instance of a <code>PLANitSimpleProject</code> is created, named <code>project</code>, via</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;c:\\Users\\Public\\planit_test\\&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</code></pre></div><blockquote>
+<p>There are more advanced project implementations available, e.g. <code>PlanItProject</code> or <code>CustomPlanItProject</code>, that allow you to change more things but come at the cost of a more complex configuration, see the <a href="../examples/project_examples">project example section</a> for more information.</p>
+</blockquote>
+<blockquote>
+<p>You can give the instance any name you want, it is not tied to <code>project</code>. It could also be <code>i_love_assignment</code>, or <code>p</code>, or <code>what_now</code>. Do note that a descriptive name is usually the best choice.</p>
+</blockquote>
+<p>The <code>project</code> instance takes one argument here, the project path. PLANit will attempt to parse all the inputs from this directory. So make sure that the XML file with the inputs is available in this directory. If you saved it somewhere else, change the path that you pass in to the project to this directory.</p>
+<p>The <code>project</code> instance allows you access to the parsed inputs. Further, it is used to create and register traffic assignments on it. So, a project can have a bunch of inputs and traffic assignments. The traffic assignment then uses these inputs to conduct its simulation run. In case of a <code>PlanItSimpleProject</code>, the project allows only a single assignment on the project and it automatically provides the inputs to this one assignment without the user having to explicitly do this. Neat!</p>
+<p>Let&rsquo;s move on to the next line. Here we decide what traffic assignment component we are using. Here, we opt for a traditional static traffic assignment model. It is activated by creating and registering it on the project via :</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">TraditionalStaticAssignmentBuilder</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+	<span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentBuilder</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</code></pre></div><p>Like all components that the user can choose, you either provide the full Java class name or - if it is an implementation known to PLANit - a shorthand reference as is used here via <code>TrafficAssignment.TRADITIONAL_STATIC_ASSIGNMENT</code>. The return type is an implementation of a <code>TrafficAssignmentBuilder</code> for the assignment at hand, in this case a <code>TraditionalStaticAssignmentBuilder</code>. It allows you to configure the underlying components relevant to the chosen assignment.</p>
+<p>Each traffic assignment comes with a number of default components that will be activated automatically. For the sake of this example, we explicitly activate the defaults (BPR, FIXED, MSA) to show you how you do this manually via:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">BPRLinkTravelTimeCost</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRLinkTravelTimeCost</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterVirtualCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FIXED</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterSmoothing</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MSA</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</code></pre></div><blockquote>
+<p>Once you have completed this example, you can try running it again, but now with the above three lines removed. You will see they yield the same result, i.e., these components are activated by default.</p>
+</blockquote>
+<p>As you can see, each line calls a <code>.createAndRegisterXXX()</code> method on the <code>assignment</code> instance. As a result these choices are attached to this particular assignment only.</p>
+<p><strong>Physical cost</strong><br>
+Here, we choose to set the physical cost, which represents the cost structure imposed on the physical road network. It is set to <code>PhysicalCost.BPR</code> resulting in the activation of a <code>BPRLinkTravelTimeCost</code> implementation. Each of these methods returns the created instance so you can configure the component directly. alternatively you can collect it afterwards via a getter, e.g. <code>assignment.getXXXX()</code>.</p>
+<p><strong>Virtual cost</strong><br>
+In PLANit, you separately configure the costs for the virtual part of the network that connects the travel demand from the zones to the physical network (via virtual links between connectoids and centroids). Here, we choose that cost to be fixed via <code>VirtualCost.FIXED</code>. Since we do not change its configuration, it adopts the default fixed cost value. We refer the reader to the JavaDoc for specifics on the defaults for each of the components.</p>
+<p><strong>Smoothing</strong><br>
+Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal route having the smallest cost given the choices of all other travellers (who do the same). This is achieved by adopting an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, simple MSA smoothing is used because of its simplicity and computational attractiveness. It is activated via <code>Smoothing.MSA</code>.</p>
+<p><strong>Configuration of components</strong></p>
+<p>Let us now look at how to configure options on one of our components; the BPR cost function:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">alpha</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">9</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">beta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">4</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">5</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#000">bprCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">setDefaultParameters</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">alpha</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">beta</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</code></pre></div><p>We can configure the BPR specific options by utilising the <code>BPRLinkTravelTimeCost bprCost</code> returned by the assignment when we registered it.</p>
+<p>The BPR function has two parameters (alpha and beta) that you can configure in various ways. Here, we will just change the defaults for all link segments, modes, and link segment types simultaneously. We do so <code>.setDefaultParameters(alpha,beta)</code>.</p>
+<p>Before we start the simulation run, we also explicitly make sure that we store results of all iterations, instead of only the final iteration (which is the default). 
+To make this happen we call</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getOutputConfiguration</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setPersistOnlyFinalIteration</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">false</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</code></pre></div><p>Everything related to general choices regarding outputs is configured via the <code>OutputConfiguration</code> instance obtained via <code>assignment.getOutputConfiguration()</code>. Dedicated configuration for link, od, and path outputs also exist (when activated). Examples can be found under <a href="../examples/output_examples">Output Examples</a>.</p>
+<h3 id="running-the-application">Running the application</h3>
+<p>Before running the application make sure it ends with the line:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</code></pre></div><p>This will trigger the simulation to start. Make sure all configuration is conducted before calling this method, because otherwise it has no impact on the simulation. Note that in project types other than <code>PlanItSimpleProject</code> multiple assignments can be configured to be run sequentially. This is why the method is named <code>executeAllTrafficAssignments</code> even though in this basic example we only configured a single assignment.</p>
+<p>Now run the main method from you IDE, or otherwise compile and run it from the command line (we assume you know how to do this, otherwise, Google is your friend!).</p>
+<p>If all went well the application should run and all outputs are persisted in the same directory as where you placed your inputs. Go to the directory where your inputs are located. You should see that PLANit generated two files, an XML file, and a CSV file. The former contains meta-data about the latter. The CSV file contains the actual link based results of your run.</p>
 <h3 id="result-files">Result files</h3>
 <p>The <a href="../../inputoutput/output/planitdefault">Default Output Formatter</a> generates meta-data for each run as well as CSV files that contain the actual data. Let&rsquo;s take a quick look.</p>
 <h4 id="xml-meta-data">XML meta-data</h4>
@@ -1941,7 +1989,7 @@
 <li>type, type of the values, e.g., integer, string, double, etc.</li>
 <li>unit, unit of the values, e.g., km, h, m, veh/h, etc.</li>
 </ul>
-<p>Below you&rsquo;ll find the XML meta-data for this run (you should have somtheing very similar)</p>
+<p>Below you&rsquo;ll find the XML meta-data for this run (you should have something very similar)</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;yes&#34;?&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;metadata</span> <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_xsd&gt;/metadata.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
     <span style="color:#204a87;font-weight:bold">&lt;timestamp&gt;</span>2020-06-01T15:29:18.480+10:00<span style="color:#204a87;font-weight:bold">&lt;/timestamp&gt;</span>
