@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Memory Output Formatter Iterator</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/</link>
+    <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/</link>
     <description>Recent content in Memory Output Formatter Iterator on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .get_keys()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</link>
+      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</guid>
+      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</guid>
       <description>
         
         
@@ -70,10 +70,10 @@
     
     <item>
       <title>Docs: .get_values()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</link>
+      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</guid>
+      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</guid>
       <description>
         
         
@@ -125,10 +125,10 @@
     
     <item>
       <title>Docs: .has_next()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</link>
+      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</guid>
+      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</guid>
       <description>
         
         
@@ -180,10 +180,10 @@
     
     <item>
       <title>Docs: .next()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/</link>
+      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_next/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/</guid>
+      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/memory/iterator/mofi_next/</guid>
       <description>
         
         

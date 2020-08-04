@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – </title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/testing/</link>
+    <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/testing/</link>
     <description>Recent content on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/testing/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/python/reference/testing/index.xml" rel="self" type="application/rss+xml" />
     
     
       

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Speed</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/speed/</link>
+    <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/virtualcost/speed/</link>
     <description>Recent content in Speed on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/speed/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/python/reference/virtualcost/speed/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .set_fixed_speed(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</guid>
       <description>
         
         
