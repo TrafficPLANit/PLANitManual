@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – PLANit-Python Reference</title>
-    <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/</link>
+    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/</link>
     <description>Recent content in PLANit-Python Reference on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/python/reference/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: PLANit(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/planit&#43;/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/planit&#43;/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/</guid>
       <description>
         
         
@@ -178,10 +178,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Assignment</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/assignment/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/assignment/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/</guid>
       <description>
         
         
@@ -198,10 +198,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Demands</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/demands/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/demands/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/demands/</guid>
       <description>
         
         
@@ -219,10 +219,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Enums</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/enums/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/enums/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/</guid>
       <description>
         
         
@@ -233,10 +233,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Gap Function</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/gapfunction/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/gapfunction/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/</guid>
       <description>
         
         
@@ -257,10 +257,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Initial Cost</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/initialcost/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/initialcost/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/</guid>
       <description>
         
         
@@ -331,10 +331,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Output Configuration</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</guid>
       <description>
         
         
@@ -351,10 +351,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Output Formatters</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputformatters/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/</guid>
       <description>
         
         
@@ -373,10 +373,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Physical Cost</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/physicalcost/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/physicalcost/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/</guid>
       <description>
         
         
@@ -397,10 +397,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Physical Network</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/network/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/network/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/network/</guid>
       <description>
         
         
@@ -418,10 +418,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Smoothing</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/smoothing/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/smoothing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/smoothing/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/smoothing/</guid>
       <description>
         
         
@@ -440,10 +440,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Stop Criterion</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/stopcriterion/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/stopcriterion/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/</guid>
       <description>
         
         
@@ -462,10 +462,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Virtual Cost</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/virtualcost/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/virtualcost/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/</guid>
       <description>
         
         
@@ -486,10 +486,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Zoning</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/zoning/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/zoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/zoning/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/zoning/</guid>
       <description>
         
         
@@ -507,10 +507,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: </title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/testing/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/testing/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/testing/</guid>
       <description>
         
         

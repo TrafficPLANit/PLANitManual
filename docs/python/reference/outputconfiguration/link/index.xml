@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Link Output Configuration</title>
-    <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/</link>
+    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/</link>
     <description>Recent content in Link Output Configuration on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/lc_add&#43;/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/lc_add&#43;/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/</guid>
       <description>
         
         
@@ -72,10 +72,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</guid>
       <description>
         
         
@@ -132,10 +132,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/lc_remove_all/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/lc_remove_all/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/</guid>
       <description>
         
         

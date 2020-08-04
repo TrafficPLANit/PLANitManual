@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – PLANit-Java manual</title>
-    <link>https://planitmanual.github.io/version/0_1_0/docs/java/</link>
+    <link>https://trafficplanit.github.io/PLANitManual/docs/java/</link>
     <description>Recent content in PLANit-Java manual on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/java/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/java/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Getting Started</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/java/getting-started/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/java/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/java/getting-started/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/getting-started/</guid>
       <description>
         
         
@@ -357,10 +357,10 @@ To make this happen we call&lt;/p&gt;
     
     <item>
       <title>Docs: Examples</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/java/examples/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/java/examples/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</guid>
       <description>
         
         

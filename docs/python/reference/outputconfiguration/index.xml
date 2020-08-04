@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Output Configuration</title>
-    <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/</link>
+    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</link>
     <description>Recent content in Output Configuration on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: General</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/general/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/general/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/</guid>
       <description>
         
         
@@ -103,10 +103,10 @@
     
     <item>
       <title>Docs: Link Output Configuration</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/link/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/</guid>
       <description>
         
         
@@ -342,10 +342,10 @@
     
     <item>
       <title>Docs: OD Output Configuration</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/od/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/od/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/</guid>
       <description>
         
         
@@ -500,10 +500,10 @@ and it is activated by default when OD outputs are active.&lt;/p&gt;
     
     <item>
       <title>Docs: Path Output Configuration</title>
-      <link>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/path/</link>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_1_0/docs/python/reference/outputconfiguration/path/</guid>
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/</guid>
       <description>
         
         
