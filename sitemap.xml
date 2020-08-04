@@ -644,12 +644,17 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/java/</loc>
-    <lastmod>2020-07-21T15:41:45+10:00</lastmod>
+    <lastmod>2020-08-04T17:33:10+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/units/</loc>
     <lastmod>2020-05-25T18:19:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/java/download/</loc>
+    <lastmod>2020-08-04T17:16:58+10:00</lastmod>
   </url>
   
   <url>
@@ -669,7 +674,12 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/licenses/</loc>
-    <lastmod>2020-07-30T13:18:37+10:00</lastmod>
+    <lastmod>2020-08-02T12:59:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/release-log/</loc>
+    <lastmod>2020-08-04T18:54:43+10:00</lastmod>
   </url>
   
   <url>
@@ -689,7 +699,7 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/</loc>
-    <lastmod>2020-07-08T13:23:50+10:00</lastmod>
+    <lastmod>2020-08-04T12:27:33+10:00</lastmod>
   </url>
   
   <url>
