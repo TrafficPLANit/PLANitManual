@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://trafficplanit.github.io/PLANitManual/docs/release-log/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,14 +21,14 @@
 <link rel="icon" type="image/png" href="/PLANitManual/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
-<title>Data formats | PLANit</title><meta property="og:title" content="Data formats" />
+<title>Release log | PLANit</title><meta property="og:title" content="Release log" />
 <meta property="og:description" content="Documentation and resources for the PLANit open-source project" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/" />
+<meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/release-log/" />
 <meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="Data formats">
+<meta itemprop="name" content="Release log">
 <meta itemprop="description" content="Documentation and resources for the PLANit open-source project"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Data formats"/>
+<meta name="twitter:title" content="Release log"/>
 <meta name="twitter:description" content="Documentation and resources for the PLANit open-source project"/>
 
 
@@ -213,10 +213,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANitManual/docs/inputoutput/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Data formats</a>
+    <a  href="/PLANitManual/docs/inputoutput/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Data formats</a>
   </li>
   <ul>
-    <li class="collapse show" id="planitmanualdocsinputoutput">
+    <li class="collapse " id="planitmanualdocsinputoutput">
       
       
       
@@ -1758,10 +1758,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/PLANitManual/docs/release-log/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Release log</a>
+    <a  href="/PLANitManual/docs/release-log/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Release log</a>
   </li>
   <ul>
-    <li class="collapse " id="planitmanualdocsrelease-log">
+    <li class="collapse show" id="planitmanualdocsrelease-log">
       
       
       
@@ -1797,19 +1797,44 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#input-data-formats">Input Data Formats</a>
+    <li>
       <ul>
-        <li><a href="#planit-default-input-format">PLANit default input format</a></li>
-        <li><a href="#minimum-example">Minimum example</a></li>
+        <li><a href="#planitall">PLANitAll</a></li>
+        <li><a href="#planit">PLANit</a></li>
+        <li><a href="#planitio">PLANitIO</a></li>
+        <li><a href="#planitj2py">PLANitJ2Py</a></li>
+        <li><a href="#planitltm">PLANitLTM</a></li>
+        <li><a href="#planitpy2j">PLANitPy2J</a></li>
+        <li><a href="#planittntp">PLANitTNTP</a></li>
+        <li><a href="#planitutils">PLANitUtils</a></li>
+        <li><a href="#planitxmlgenerator">PLANitXMLGenerator</a></li>
       </ul>
     </li>
-    <li><a href="#output-data-formats">Output Data Formats</a>
+    <li><a href="#004">0.0.4</a>
       <ul>
-        <li><a href="#planit-default-output-format">PLANit default output format</a></li>
-        <li><a href="#minimum-example-link-segment">Minimum example (link segment)</a></li>
+        <li><a href="#planit-1">PLANit</a></li>
+        <li><a href="#metroscan">MetroScan</a></li>
+        <li><a href="#planitio-1">PLANitIO</a></li>
+        <li><a href="#planittntp-1">PLANitTNTP</a></li>
+        <li><a href="#planitpy2j-1">PLANitPy2J</a></li>
       </ul>
     </li>
-    <li><a href="#see-also">See Also</a></li>
+    <li><a href="#003">0.0.3</a>
+      <ul>
+        <li><a href="#planit-2">PLANit</a></li>
+        <li><a href="#metroscan-1">MetroScan</a></li>
+        <li><a href="#planitio-2">PLANitIO</a></li>
+      </ul>
+    </li>
+    <li><a href="#002">0.0.2</a>
+      <ul>
+        <li><a href="#planit-3">PLANit</a></li>
+        <li><a href="#metroscan-2">MetroScan</a></li>
+        <li><a href="#planitio-3">PLANitIO</a></li>
+        <li><a href="#basiccsv">BasicCsv</a></li>
+      </ul>
+    </li>
+    <li><a href="#001">0.0.1</a></li>
   </ul>
 </nav>
 
@@ -1838,7 +1863,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/">Data formats</a>
+	<a href="https://trafficplanit.github.io/PLANitManual/docs/release-log/">Release log</a>
 </li>
 
 	</ol>
@@ -1846,254 +1871,183 @@
 
             
 <div class="td-content">
-	<h1>Data formats</h1>
+	<h1>Release log</h1>
         
 	
-	<p>In this section of the manual we discuss the data formats supported by PLANitm i.e., input/output file formats and structure.</p>
-<blockquote>
-<p>Here we <strong>only</strong> focus on the <strong>structure of the data formats</strong> . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the <a href="../java">Java</a> and <a href="../python/reference/outputformatters">Python</a> API for more detailed information.</p>
-</blockquote>
-<p>We make a clear distinction between <em>input</em> and <em>output</em> data formats. Inputs comprise the network, demands, and zoning structure, while outputs are differentiated by output type (link, path, etc.). Since PLANit is modular and extendible, you can write your own components for parsing inputs and persisting outputs. However, in most cases, you can simply use the default input and output components provided by PLANit, referred to as the &ldquo;default format&rdquo;.</p>
-<h2 id="input-data-formats">Input Data Formats</h2>
-<p>The following input data formats are available:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data Format</th>
-<th align="left">File type</th>
-<th align="left">Status</th>
-<th align="left">Documentation</th>
-<th align="left">Python support</th>
-<th align="left">Java support</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><a href="input/planitdefault">PLANit default input format</a></td>
-<td align="left"><code>XML</code></td>
-<td align="left">supported</td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-<tr>
-<td align="left">TNTP open format</td>
-<td align="left"><code>ASCII</code></td>
-<td align="left">prototype</td>
-<td align="left">NO</td>
-<td align="left">NO</td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-<tr>
-<td align="left">BasicCSV</td>
-<td align="left"><code>CSV</code></td>
-<td align="left">prototype</td>
-<td align="left">NO</td>
-<td align="left">NO</td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-</tbody>
-</table>
-<p>It is strongly recommended to only use the officially supported native xml format at this stage, as the TNTP and BasicCSV input formats do not support the full feature set of PLANit, are not available in Python, nor are they tested fully. Also, the TNTP format is ambiguous in its specification and often example networks provided in this format  do not strictly follow the format either.</p>
-<h3 id="planit-default-input-format">PLANit default input format</h3>
-<p>For detailed information on the PLANit default input format we refer the reader to the dedicated section on the <a href="input/planitdefault">PLANit default Input Data Format</a>. For a taste of what this format looks like, we provide a small example below to give a first impression.</p>
-<h3 id="minimum-example">Minimum example</h3>
-<p>Below you will find an example of a very simple - yet complete - input file for PLANit, with a simple network containing:</p>
+	<h1 id="010">0.1.0</h1>
+<h3 id="planitall">PLANitAll</h3>
 <ul>
-<li>One link having two directions, so</li>
-<li>Two link segments, and</li>
-<li>Two nodes (on either end of the link)</li>
+<li>created build scripts</li>
 </ul>
-<p>Basic zoning structure:</p>
+<h3 id="planit">PLANit</h3>
 <ul>
-<li>Two zones, each with one centroid, so</li>
-<li>Two centroids,</li>
-<li>Two connectoids, i.e., references to nodes that allow access/egress to/from a zone</li>
+<li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANit">www.github.com/trafficplanit/PLANit</a></li>
+<li>Create website (#21) - <a href="https://trafficplanit.github.io/PLANitManual">https://trafficplanit.github.io/PLANitManual</a></li>
+<li>Add third party licenses to setup process and releases, as well as website (#25)</li>
+<li>Ids generated for PLANit objects can now be grouped in a generic way by using IdTokens (#24)</li>
+<li>Tampere node model available as stand-alone functionality (#1)</li>
 </ul>
-<p>Basic demands:</p>
+<h3 id="planitio">PLANitIO</h3>
 <ul>
-<li>1 time period with a duration of 1 hour (3600s)</li>
-<li>1 trip between zone 1 and zone 2</li>
+<li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANitIO">www.github.com/trafficplanit/PLANitIO</a></li>
+<li>Split JAXB code generation off in its own repository (#7) - new repository is PLANitXMLGenerator</li>
+<li>separated out integration tests in separate files</li>
 </ul>
-<p>Resulting in the following single XML input file:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span> <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
-	<span style="color:#c4a000">xmlns:xml=</span><span style="color:#4e9a06">&#34;http://www.w3.org/XML/1998/namespace&#34;</span>
-	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-	
-	<span style="color:#8f5902;font-style:italic">&lt;!-- Demand component --&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;demandconfiguration&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;timeperiods&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;timeperiod</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;duration&gt;</span>3600<span style="color:#204a87;font-weight:bold">&lt;/duration&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/timeperiods&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/demandconfiguration&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;oddemands&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;odcellbycellmatrix</span> <span style="color:#c4a000">timeperiodref=</span><span style="color:#4e9a06">&#34;0&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;o</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;d</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/d&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/o&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/odcellbycellmatrix&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/oddemands&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>
-	
-	<span style="color:#8f5902;font-style:italic">&lt;!-- Physical network component --&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;infrastructure&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;nodes&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/nodes&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;links&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;link</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;length&gt;</span>10<span style="color:#204a87;font-weight:bold">&lt;/length&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/link&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/links&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/infrastructure&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
-	
-	<span style="color:#8f5902;font-style:italic">&lt;!-- zoning structure component --&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;zones&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;centroid&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>									
-						<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>45.256 -110.45<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;centroid&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>2<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>
-						<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>45.256 -110.45<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/zones&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
-<span style="color:#204a87;font-weight:bold">&lt;/PLANit&gt;</span>
-</code></pre></div><h2 id="output-data-formats">Output Data Formats</h2>
-<p>The following output data formats are available:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data Format</th>
-<th align="left">File type</th>
-<th align="left">Status</th>
-<th align="left">Documentation</th>
-<th align="left">Python support</th>
-<th align="left">Java support</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><a href="output/planitdefault">PLANit default output format</a></td>
-<td align="left"><code>XML</code></td>
-<td align="left">supported</td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-<tr>
-<td align="left">Memory output format</td>
-<td align="left"><code>None</code></td>
-<td align="left">supported</td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>The memory output format does not result in any files on disk as it keeps all the results in memory.</p>
-</blockquote>
-<h3 id="planit-default-output-format">PLANit default output format</h3>
-<p>For detailed information on the PLANit default output format we refer the reader to the dedicated section on the <a href="output/planitdefault">PLANit Default Output Data Format</a>. For a taste of what this format looks like, we provide a small example below to give a first impression.</p>
-<h3 id="minimum-example-link-segment">Minimum example (link segment)</h3>
-<p>Below you will find an example of link output for a PLANit run. Meta-data is provided in a separate XML file, while the raw results are provided in a CSV file with heading row.</p>
-<p>XML meta-data includes:</p>
+<h3 id="planitj2py">PLANitJ2Py</h3>
 <ul>
-<li>Time stamp of when the data is created</li>
-<li>PLANit version used</li>
-<li>Scenario description</li>
-<li>Traffic assignment component configuration information</li>
-<li>Location of CSV result file</li>
-<li>CSV column meta-data (name, units, type)</li>
+<li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANitJ2Py">www.github.com/trafficplanit/PLANitJ2Py</a></li>
 </ul>
-<p>CSV raw data includes:</p>
+<h3 id="planitltm">PLANitLTM</h3>
 <ul>
-<li>Column headings to relate column to meta-data in XML</li>
-<li>Row for each link (segment) result</li>
-<li>Value in each column of each row to store result value</li>
+<li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANitLTM">www.github.com/trafficplanit/PLANitLTM</a></li>
 </ul>
-<p>In the example below, you will find the XML meta-data file for basic link results, where we only activated link segment costs (although many other columns can be activated in your own simulation. The link segment (external) id and the mode (external) id uniquely identify each result row.</p>
-<p>The CSV file contains the results for this example, where we only have a single row with non-zero results.</p>
-<blockquote>
-<p>In general, the CSV file is generally much much larger than the xml meta-data file.</p>
-</blockquote>
-<blockquote>
-<p>Identical approach is used for other output types (paths, origing-destinations, etc.), only the meta-data and supported properties differ</p>
-</blockquote>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">
-<span style="color:#204a87;font-weight:bold">&lt;metadata</span> <span style="color:#c4a000">xmlns:xml=</span><span style="color:#4e9a06">&#34;http://www.w3.org/XML/1998/namespace&#34;</span>
-	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/linkmetadata.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;timestamp&gt;</span>2020-01-24T12:07:00.302+11:00<span style="color:#204a87;font-weight:bold">&lt;/timestamp&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;version&gt;</span>0.1<span style="color:#204a87;font-weight:bold">&lt;/version&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;description&gt;</span>PlanIt example<span style="color:#204a87;font-weight:bold">&lt;/description&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;outputconfiguration&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;assignment&gt;</span>TraditionalStaticAssignment<span style="color:#204a87;font-weight:bold">&lt;/assignment&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;physicalcost&gt;</span>BPRLinkTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/physicalcost&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;virtualcost&gt;</span>FixedConnectoidTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/virtualcost&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;timeperiod&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>0<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period 1<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/timeperiod&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/outputconfiguration&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;simulation&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;iteration&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;nr&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/nr&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;&lt;path_to_result&gt;</span>\Link_RunId 0_TEST_Time Period 1_1.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/iteration&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Cost<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>h<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>double<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/columns&gt;</span>
-<span style="color:#204a87;font-weight:bold">&lt;/metadata&gt;</span>
-
-</code></pre></div><p>CSV example, with a cost of 6 minutes (0.1 h) for link segment 1, and mode 1</p>
-<pre><code class="language-CSV" data-lang="CSV">Link Segment External Id,Mode External Id,Cost
-1,1,0.1
-</code></pre><h2 id="see-also">See Also</h2>
-<p><a href="output">PLANit Output Data Formats</a> for information on all available output formats<br>
-<a href="output/planitdefault">PLANit Default Output Data Format</a> for the Default PLANit output format<br>
-<a href="input">PLANit Input Data Formats</a> for information on all available input formats<br>
-<a href="input/planitdefault">PLANit Default Input Data Format</a> for the Default PLANit input format</p>
+<h3 id="planitpy2j">PLANitPy2J</h3>
+<ul>
+<li>Move repository to new location (<a href="http://www.github.com/trafficplanit/PLANitPy2J">www.github.com/trafficplanit/PLANitPy2J</a>)</li>
+<li>Create Python library installer (#3)</li>
+</ul>
+<h3 id="planittntp">PLANitTNTP</h3>
+<ul>
+<li>Move repository to new location (<a href="http://www.github.com/trafficplanit/PLANitTNTP">www.github.com/trafficplanit/PLANitTNTP</a>)</li>
+</ul>
+<h3 id="planitutils">PLANitUtils</h3>
+<ul>
+<li>Move repository to new location (<a href="http://www.github.com/trafficplanit/PLANitUtils">www.github.com/trafficplanit/PLANitUtils</a>)</li>
+<li>Added functionality for group and token based id generation (#24)</li>
+<li>Added functionality for stack walking</li>
+<li>Added functionality for logging prefixes for various PLANit components</li>
+</ul>
+<h3 id="planitxmlgenerator">PLANitXMLGenerator</h3>
+<ul>
+<li>Created repository by splitting it off from PLANitIO (<a href="http://www.github.com/trafficplanit/PLANitXMLGenerator">www.github.com/trafficplanit/PLANitXMLGenerator</a>)</li>
+</ul>
+<h2 id="004">0.0.4</h2>
+<h3 id="planit-1">PLANit</h3>
+<ul>
+<li>Logger created for each class as private static member (#63)</li>
+<li>Logger configuration revised (#59)</li>
+<li>External Ids refactored and treated differently when parsing (#54)</li>
+<li>Time periods and user classes now registered on a traffic assignment component (#61)</li>
+<li>Iterator implementation on memory outputformatter refactored (#8)</li>
+<li>Added output property PathId which should be added by default (#66)</li>
+<li>Simplified collection of the position of output key and value properties on memoryoutputformatter (#77)</li>
+<li>Check if needed and if so update all project readme.MDs based on new features available (#47)</li>
+<li>Removed toList() methodson inner classes of main inputs. Made them iterable instead (#83)</li>
+<li>Created Maximum Density input property and Density output property (#80)</li>
+<li>Created documentation for integration tests (#69)</li>
+<li>Python can call time period, mode and link segment type by external Id (#81)</li>
+<li>Added defaults for traditional static assignment components upon creation of the assignment (#79)</li>
+</ul>
+<h3 id="metroscan">MetroScan</h3>
+<ul>
+<li>Fixed  Logging (#10)</li>
+</ul>
+<h3 id="planitio-1">PLANitIO</h3>
+<ul>
+<li>PLANitIO now reads the value of <maxspeed> from <linksegment> and <linksegmenttype> and uses the smaller if they are both present and different (#12)</li>
+<li>Creation of bulky JAR file now done in PLANitALL project (#25)</li>
+<li>Refactor org.planit.planitio to org.planit.io (#4)</li>
+<li>Fixed bugs in Logging (#5)</li>
+<li>Generated JAR file contains all dependencies in full including PLANit and PLANitUtils (#6)</li>
+<li>PLANitIO now reads <maxspeed> from <linksegment> element (#12)</li>
+<li>When link segment has no link segment type specified, added a check if this is allowed (#14)</li>
+<li>Fixed inconsistency in auto-generated file names for csv and xml (use of underscores and spaces) (#19)</li>
+<li>Changed content of <csvdata> path in xml meta-data output to relative path to XML (#22)</li>
+<li>Demand configuration defaults are now verified and  populated correctly (#16)</li>
+<li>XSD reference added for OD and path output types  (#18)</li>
+<li>Added a description property to the outputconfiguration in Java and recorded in the metadata XML output file (#20)</li>
+<li>Location information on centroid no longer mandatory, default behaviour implemented (#17)</li>
+<li>Default link segment type now created (#11)</li>
+<li>Default mode now created (#10)</li>
+<li>Check that both link segments in a single link are in opposite directions (#13)</li>
+</ul>
+<h3 id="planittntp-1">PLANitTNTP</h3>
+<p>Fixed Logging (PLANitTNTP JIRA Task #1)</p>
+<h3 id="planitpy2j-1">PLANitPy2J</h3>
+<ul>
+<li>Create tests that set/get every configurable option of every component on Python side (#1)</li>
+<li>Renamed project to PLANitJ2Py and rename PLANitPythonRunner to PLANitPy2J (#2)</li>
+<li>Support all user configurable java options in Python interface (#3)</li>
+<li>Technical documentation PLANitPy2J/PLANitJ2Py (#4)</li>
+<li>Python library installer added (#5)</li>
+<li>Output formatter can be activated before assignment is set (#6)</li>
+<li>Accessing any output type configuration activates the corresponding output type if it is not already active (#7)</li>
+<li>Deactivate output types added (#8)</li>
+<li>Initial costs no longer require assignment to be set (#12)</li>
+</ul>
+<h2 id="003">0.0.3</h2>
+<h3 id="planit-2">PLANit</h3>
+<ul>
+<li>Refactor setting of OutputKeys and OutputProperties in BaseOutputFormatter (#29)</li>
+<li>Activate ODSkimOutputTypes before saving OD skim data (#34)</li>
+<li>Refactor OutputAdapter and OutputTypeConfiguration (#35)</li>
+<li>Create OD Path output type adapter and output type configuration (#37)</li>
+<li>Link costs were an iteration behind the flow values (#38)</li>
+<li>Computation of costs is inefficient -&gt; store costs used in iteration i as costs of i-1 (#40)</li>
+<li>Create Path object to store OD path of LinkSegment objects (#41)</li>
+<li>Allow options for Path outputs (#42)</li>
+<li>Create ODPathMatrix object (#43)</li>
+<li>TraditionalStaticAssignmentPathOutputTypeAdapter: Construction of Strings from paths in the wrong place (#45)</li>
+<li>Common functionality in collecting outputPropertyValues from outputtypeadapters should be common (#46)</li>
+<li>Maximum speed on LinkSegment should be stored by Mode object (#48)</li>
+<li>When activating an outputtype it should return the created outputtypeconfiguration (#49)</li>
+<li>When creating a new traffic assignment, we should only gain access to the builder and not the assignment object itself (#50)</li>
+<li>Opening and closing of outputformatters is a general task and not one for TraditionalStaticAssignment (#51)</li>
+<li>SpeedConnectoidTravelTimeCost default should not be infinite speed (#52) (now use FixedConnectoidTravelTimeCost instead)</li>
+<li>Iterator functionality required for MemoryOutputFormatter ( #55)</li>
+<li>BPR parameters parsed in TNTP should not be stored on network in core (#62)</li>
+</ul>
+<h3 id="metroscan-1">MetroScan</h3>
+<ul>
+<li>Bug Fix: Demands JSON file now correctly read in by MetroScan (#7)</li>
+<li>Bug Fix in reading UserClass in MetroScan (#8)</li>
+<li>Update parser based on new format provided by MetroScanTeam (#9)</li>
+</ul>
+<h3 id="planitio-2">PLANitIO</h3>
+<ul>
+<li>Restructure resources directory to create easier to understand hierarchy (#1)</li>
+</ul>
+<h2 id="002">0.0.2</h2>
+<h3 id="planit-3">PLANit</h3>
+<ul>
+<li>Added OD OutputType to capture and record Skim matrices</li>
+<li>Added writing of Skim matrices to output formatters</li>
+<li>Common approach to adding and removing output properties from output formatters</li>
+<li>Some code refactored, particularly in BaseOutputFormatter and FileOutputFormatter to reuse common code for managing output between different output formatters</li>
+<li>Added new OutputProperty values in enum to use external Ids</li>
+<li>Moved setting of OutputKeys to loop through into OutputTypeConfiguration</li>
+<li>Moved common logic for writing output into BaseOutputFormatter</li>
+</ul>
+<h3 id="metroscan-2">MetroScan</h3>
+<ul>
+<li>Bug Fix: There was an error in the setting of link speed and capacity properties.  Only one LinkSegmentType object was being defined, and assigned to all links.  Now each LinkSegment is given its own LinkSegmentType, which takes values from the network input JSON file.</li>
+<li>Bug Fix: The default values for alpha and beta in the BPR function were wrong.  These have now been set to the correct values (alpha=0.87, beta=4.0).</li>
+<li>Added OUTPUTTIMEUNIT to argument list to allow user to specify whether output link costs should be presented in hours, minutes or seconds.</li>
+<li>Created demandOneMode.json input file, which only uses Mode 1.  This generates the output file results.csv, which is also included as an example output.</li>
+<li>Added OD OutputType to capture and record Skim matrices</li>
+<li>Added writing of Skim matrices to output formatters</li>
+<li>Common approach to adding and removing output properties from output formatters</li>
+<li>Some code refactored, particularly in BaseOutputFormatter and FileOutputFormatter to reuse common code for managing output between different output formatters</li>
+</ul>
+<h3 id="planitio-3">PLANitIO</h3>
+<ul>
+<li>Renamed PLANitXML to PLANitIO</li>
+<li>Refactored package names</li>
+<li>Added OD OutputType to capture and record Skim matrices</li>
+<li>Added writing of Skim matrices to output formatters</li>
+<li>Common approach to adding and removing output properties from output formatters</li>
+<li>Some code refactored, particularly in BaseOutputFormatter and FileOutputFormatter to reuse common code for managing output between different output formatters</li>
+<li>Updated standard results files in unit tests to match updated output property names</li>
+</ul>
+<h3 id="basiccsv">BasicCsv</h3>
+<ul>
+<li>Added OD OutputType to capture and record Skim matrices</li>
+<li>Added writing of Skim matrices to output formatters</li>
+<li>Common approach to adding and removing output properties from output formatters</li>
+<li>Some code refactored, particularly in BaseOutputFormatter and FileOutputFormatter to reuse common code for managing output between different output formatters</li>
+</ul>
+<h2 id="001">0.0.1</h2>
+<p>First Release for all projects</p>
 
         <div class="section-index">
     
@@ -2291,13 +2245,6 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANitManual/docs/inputoutput/input/">Input Data formats</a>
-                    </h5>
-                    <p></p>
-                </div>
-            
         
             
         
@@ -2311,13 +2258,6 @@
         
             
         
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/PLANitManual/docs/inputoutput/output/">Output Data formats</a>
-                    </h5>
-                    <p></p>
-                </div>
             
         
             
@@ -2389,7 +2329,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="/commit/c239a27c6d05e610e2f565f3187938466759afa7">- added link,od,path supported output properties to output data format - finalised default output format - refactoring (c239a27)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
 </div>
 </div>
 
