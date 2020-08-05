@@ -297,7 +297,7 @@
 <p>When you type in <code>python --version</code> in your console it should output the currently installed version. If it is not, you get a message like the following: <code>'python' is not recognized as an internal or external command, operable program or batch file.</code>. This means, 
 the <code>python.exe</code> file is not yet part of your path.</p>
 </blockquote>
-<p>To include Python on your path do the following:</p>
+<p>Normally, you can tick a box in the installer to include Python in your path. When presented with this option always tick it. In the rare case you forgot or are unable to do so while installing; take the following steps to manually include Python in your path (otherwise ignore this part):</p>
 <p><strong>Windows:</strong></p>
 <ol>
 <li>Locate the installation directory of Python</li>
@@ -332,6 +332,7 @@ If you want to use PLANit-Python, extend it, and embed it in a commercial produc
 </ul>
 <p><strong>Add Java to your path</strong>: 
 After the download, install Java and add it to your path. this allows you to run the <code>java</code> command directly from the command line. This is expected by the PLANit-Python installation, so make sure this is done, if not already.</p>
+<p>You can test if Java is available on your path by opening a new console window, and try <code>java --version</code>. It should now show the version of Java that is installed.</p>
 <blockquote>
 <p>See <a href="./#installing-python">installing Python</a>, for instruction on how to add a directory to your path. In case of Java, you will want to add the <code>&lt;path_to_java_dir&gt;/bin</code> directory to the path. If you don&rsquo;t PLANit-Python will not work as it expects to be able to fire up a java process without being told where the Java installation resides.</p>
 </blockquote>
@@ -374,7 +375,7 @@ To get the latest official release of PLANit-Python, run the following line from
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 23, 2020: <a  href="/commit/4bac814ccbf4dcd2a8c526eace2420037b8cd22c">made a start with the getting started for Java &#43; updated the installatino guid a little bit. NOT DONE (4bac814)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
 </div>
 </div>
 
