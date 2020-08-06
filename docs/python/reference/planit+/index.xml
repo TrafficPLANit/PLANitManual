@@ -307,7 +307,7 @@ the traditional static assignment class, since this is the instance it returns&l
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .initial_costs property allows you access to the initial costs configuration instance.&lt;/p&gt;
-&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s route choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
+&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s path choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
 &lt;p&gt;This more representative cost ideally results in quicker convergence and/or more realistic results in earlier iterations than otherwise would be the case.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Initial costs can be provided for a specific time period, or for all time periods at once, depending on the user&amp;rsquo;s available data resources or preferences.&lt;/p&gt;

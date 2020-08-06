@@ -711,13 +711,13 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumspathidtype" href="/PLANitManual/docs/python/reference/enums/pathidtype/">PathIdType</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumsphysicalcosttype" href="/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumsrouteidtype" href="/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
       
       
       
@@ -2030,7 +2030,7 @@ Here, we choose to set the physical cost, which represents the cost structure im
 <p><strong>Virtual cost</strong><br>
 In PLANit, you separately configure the costs for the virtual part of the network that connects the travel demand from the zones to the physical network (via virtual links between connectoids and centroids). Here, we choose that cost to be fixed via <code>VirtualCost.FIXED</code>. Since we do not change its configuration, it adopts the default fixed cost value. We refer the reader to the JavaDoc for specifics on the defaults for each of the components.</p>
 <p><strong>Smoothing</strong><br>
-Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal route having the smallest cost given the choices of all other travellers (who do the same). This is achieved by adopting an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, simple MSA smoothing is used because of its simplicity and computational attractiveness. It is activated via <code>Smoothing.MSA</code>.</p>
+Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal path having the smallest cost given the choices of all other travellers (who do the same). This is achieved by adopting an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, simple MSA smoothing is used because of its simplicity and computational attractiveness. It is activated via <code>Smoothing.MSA</code>.</p>
 <p><strong>Configuration of components</strong></p>
 <p>Let us now look at how to configure options on one of our components; the BPR cost function:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">alpha</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">9</span><span style="color:#ce5c00;font-weight:bold">;</span>

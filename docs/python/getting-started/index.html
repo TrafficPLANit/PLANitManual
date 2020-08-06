@@ -711,13 +711,13 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumspathidtype" href="/PLANitManual/docs/python/reference/enums/pathidtype/">PathIdType</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumsphysicalcosttype" href="/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumsrouteidtype" href="/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
       
       
       
@@ -2026,7 +2026,7 @@ Here, we choose to set the physical cost, which represents the cost structure im
 <p><strong>Virtual cost</strong><br>
 In PLANit, you can configure the costs for the virtual part of the network that connects the travel demand from the zones to the physical network (via virtual links between connectoids and centroids) separately. Here, we choose that cost to be <a href="../reference/virtualcost/fixed">FIXED</a>, using its default value.</p>
 <p><strong>Smoothing</strong><br>
-Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal route having the smallest cost given the choices of all other travellers (who do the same). This requires an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, <a href="../reference/smoothing/msa">MSA smoothing</a> is used because of its simplicity and computational attractiveness.</p>
+Traditional static assignment is a so-called within-day equilibrium method based on Wardrop&rsquo;s first principle, meaning that it seeks to finds a solution where all travellers find their optimal path having the smallest cost given the choices of all other travellers (who do the same). This requires an iterative procedure. During this iteration process, so called smoothing is applied. This ensures that changes between iterations result in a smooth transition towards the equilibrium solution. there exist many ways to apply smoothing. Here, <a href="../reference/smoothing/msa">MSA smoothing</a> is used because of its simplicity and computational attractiveness.</p>
 <blockquote>
 <p>Different assignment types have different components for cost, smoothing, etc. that they support. Make sure that the choice for each component is compatible with your assignment method.</p>
 </blockquote>

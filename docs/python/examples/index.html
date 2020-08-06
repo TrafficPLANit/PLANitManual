@@ -711,13 +711,13 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumspathidtype" href="/PLANitManual/docs/python/reference/enums/pathidtype/">PathIdType</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumsphysicalcosttype" href="/PLANitManual/docs/python/reference/enums/physicalcosttype/">PhysicalCost</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceenumsrouteidtype" href="/PLANitManual/docs/python/reference/enums/routeidtype/">RouteIdType</a>
       
       
       
@@ -1984,7 +1984,7 @@
 <span style="color:#8f5902;font-style:italic"># activate and configure PATH outputs</span>
 <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate_output</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PATH</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#8f5902;font-style:italic">#	use node external ids as the way to uniquely identify the path in the output, e.g. &#34;[1,5,7,2,3]&#34;</span>
-<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">RouteIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PathIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
 
 <span style="color:#8f5902;font-style:italic"># activate and configure OD outputs</span>
 <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate_output</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OD</span><span style="color:#000;font-weight:bold">)</span>         

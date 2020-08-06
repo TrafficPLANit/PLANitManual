@@ -451,6 +451,10 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/pathidtype/</loc>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/</loc>
   </url>
   
@@ -464,10 +468,6 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/</loc>
-  </url>
-  
-  <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routeidtype/</loc>
   </url>
   
   <url>
