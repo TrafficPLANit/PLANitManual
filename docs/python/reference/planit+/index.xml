@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – PLANit(&#43;)</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/</link>
+    <link>/docs/python/reference/planit&#43;/</link>
     <description>Recent content in PLANit(&#43;) on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit+/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/python/reference/planit+/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .activate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/</link>
+      <link>/docs/python/reference/planit&#43;/planit_activate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_activate&#43;/</guid>
       <description>
         
         
@@ -84,10 +84,10 @@
     
     <item>
       <title>Docs: .deactivate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</link>
+      <link>/docs/python/reference/planit&#43;/planit_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_deactivate&#43;/</guid>
       <description>
         
         
@@ -144,10 +144,10 @@
     
     <item>
       <title>Docs: .run()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_run/</link>
+      <link>/docs/python/reference/planit&#43;/planit_run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_run/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_run/</guid>
       <description>
         
         
@@ -185,10 +185,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</link>
+      <link>/docs/python/reference/planit&#43;/planit_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_set&#43;/</guid>
       <description>
         
         
@@ -236,10 +236,10 @@
     
     <item>
       <title>Docs: .assignment</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</link>
+      <link>/docs/python/reference/planit&#43;/planit_assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_assignment/</guid>
       <description>
         
         
@@ -270,10 +270,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .demands</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_demands/</link>
+      <link>/docs/python/reference/planit&#43;/planit_demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_demands/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_demands/</guid>
       <description>
         
         
@@ -298,16 +298,16 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .initial_costs</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/</link>
+      <link>/docs/python/reference/planit&#43;/planit_initial_costs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_initial_costs/</guid>
       <description>
         
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .initial_costs property allows you access to the initial costs configuration instance.&lt;/p&gt;
-&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s route choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
+&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s path choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
 &lt;p&gt;This more representative cost ideally results in quicker convergence and/or more realistic results in earlier iterations than otherwise would be the case.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Initial costs can be provided for a specific time period, or for all time periods at once, depending on the user&amp;rsquo;s available data resources or preferences.&lt;/p&gt;
@@ -331,10 +331,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .memory</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_memory/</link>
+      <link>/docs/python/reference/planit&#43;/planit_memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_memory/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_memory/</guid>
       <description>
         
         
@@ -370,10 +370,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .network</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_network/</link>
+      <link>/docs/python/reference/planit&#43;/planit_network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_network/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_network/</guid>
       <description>
         
         
@@ -398,10 +398,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .output</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_output/</link>
+      <link>/docs/python/reference/planit&#43;/planit_output/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_output/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_output/</guid>
       <description>
         
         
@@ -435,10 +435,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .zoning</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/</link>
+      <link>/docs/python/reference/planit&#43;/planit_zoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_zoning/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_zoning/</guid>
       <description>
         
         

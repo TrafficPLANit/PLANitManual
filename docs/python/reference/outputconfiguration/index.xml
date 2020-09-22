@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Output Configuration</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</link>
+    <link>/docs/python/reference/outputconfiguration/</link>
     <description>Recent content in Output Configuration on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/python/reference/outputconfiguration/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: General</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/</link>
+      <link>/docs/python/reference/outputconfiguration/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/</guid>
+      <guid>/docs/python/reference/outputconfiguration/general/</guid>
       <description>
         
         
@@ -103,10 +103,10 @@
     
     <item>
       <title>Docs: Link Output Configuration</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/</link>
+      <link>/docs/python/reference/outputconfiguration/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/</guid>
+      <guid>/docs/python/reference/outputconfiguration/link/</guid>
       <description>
         
         
@@ -342,10 +342,10 @@
     
     <item>
       <title>Docs: OD Output Configuration</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/</link>
+      <link>/docs/python/reference/outputconfiguration/od/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/</guid>
+      <guid>/docs/python/reference/outputconfiguration/od/</guid>
       <description>
         
         
@@ -500,10 +500,10 @@ and it is activated by default when OD outputs are active.&lt;/p&gt;
     
     <item>
       <title>Docs: Path Output Configuration</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/</link>
+      <link>/docs/python/reference/outputconfiguration/path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/</guid>
+      <guid>/docs/python/reference/outputconfiguration/path/</guid>
       <description>
         
         
@@ -594,9 +594,9 @@ and it is activated by default when OD outputs are active.&lt;/p&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;RouteIdType.LINK_SEGMENT_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;PathIdType.LINK_SEGMENT_EXTERNAL_ID&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;em&gt;activated&lt;/em&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;../../enums/routeidtype&#34;&gt;&lt;code&gt;RouteIdType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;../../enums/pathidtype&#34;&gt;&lt;code&gt;PathIdType.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -650,7 +650,7 @@ and it is activated by default when OD outputs are active.&lt;/p&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputProperty&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DESTINATION_ZONE_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# switch the path identification from LINK_SEGMENT_EXTERNAL_ID (default) to NODE_EXTERNAL_ID &lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RouteIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PathIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;identification&#34;&gt;Identification&lt;/h4&gt;
@@ -667,7 +667,7 @@ and it is activated by default when OD outputs are active.&lt;/p&gt;
 &lt;p&gt;Currently, no other identification methods are supported. So, make sure the properties of one of the two approaches are included in your configuration&lt;/p&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../general&#34;&gt;General Output Configuration&lt;/a&gt; for general output configuration options&lt;br&gt;
-&lt;a href=&#34;../../enums/routeidtype&#34;&gt;RouteIdType.&amp;lt;enum&amp;gt;&lt;/a&gt; to see the options on the various path (string) identification methods&lt;br&gt;
+&lt;a href=&#34;../../enums/pathidtype&#34;&gt;PathIdType.&amp;lt;enum&amp;gt;&lt;/a&gt; to see the options on the various path (string) identification methods&lt;br&gt;
 &lt;a href=&#34;../../enums/outputpropertytype&#34;&gt;OutputProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output properties across all output configurations in PLANit&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;PathOutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;

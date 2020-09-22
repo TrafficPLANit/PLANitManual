@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="/docs/python/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,15 +20,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>PLANit-Python manual | PLANit</title><meta property="og:title" content="PLANit-Python manual" />
-<meta property="og:description" content="Documentation and resources for the PLANit open-source project" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/python/" />
+<title>PathIdType.&lt;enum&gt; | PLANit</title><meta property="og:title" content="PathIdType.&lt;enum&gt;" />
+<meta property="og:description" content="PathIdType types 
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/python/reference/enums/pathidtype/" />
 <meta property="og:site_name" content="PLANit" />
-<meta itemprop="name" content="PLANit-Python manual">
-<meta itemprop="description" content="Documentation and resources for the PLANit open-source project"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PLANit-Python manual"/>
-<meta name="twitter:description" content="Documentation and resources for the PLANit open-source project"/>
+<meta itemprop="name" content="PathIdType.&lt;enum&gt;">
+<meta itemprop="description" content="PathIdType types 
+">
+
+<meta itemprop="wordCount" content="166">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PathIdType.&lt;enum&gt;"/>
+<meta name="twitter:description" content="PathIdType types 
+"/>
 
 
 
@@ -47,7 +55,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -370,7 +378,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/python/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">PLANit-Python</a>
+    <a  href="/docs/python/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">PLANit-Python</a>
   </li>
   <ul>
     <li class="collapse show" id="docspython">
@@ -433,10 +441,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/python/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
+    <a  href="/docs/python/reference/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Reference</a>
   </li>
   <ul>
-    <li class="collapse " id="docspythonreference">
+    <li class="collapse show" id="docspythonreference">
       
       
       
@@ -674,10 +682,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/python/reference/enums/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Enums</a>
+    <a  href="/docs/python/reference/enums/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Enums</a>
   </li>
   <ul>
-    <li class="collapse " id="docspythonreferenceenums">
+    <li class="collapse show" id="docspythonreferenceenums">
       
       
       
@@ -708,7 +716,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceenumspathidtype" href="/docs/python/reference/enums/pathidtype/">PathIdType</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docspythonreferenceenumspathidtype" href="/docs/python/reference/enums/pathidtype/">PathIdType</a>
       
       
       
@@ -1812,6 +1820,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -1819,8 +1836,29 @@
 
 
 
-<li class="breadcrumb-item active" aria-current="page">
+<li class="breadcrumb-item" >
 	<a href="/docs/python/">PLANit-Python</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/python/reference/">Reference</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/python/reference/enums/">Enums</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/python/reference/enums/pathidtype/">PathIdType</a>
 </li>
 
 	</ol>
@@ -1828,320 +1866,66 @@
 
             
 <div class="td-content">
-	<h1>PLANit-Python manual</h1>
-        
-	
-	<p>The PLANit-Python manual provides detailed documentation on every user configurable aspect of the PLANit-Python API. As the name suggests, it only discusses the Python API.</p>
-<p>If you want to have a quick look at how to get going; have a look at the <a href="getting-started">Getting Started</a>.</p>
-<p>If you just want to see some examples on how you can set up PLANit-Python traffic assignment runs; go to the <a href="examples">Examples</a> section.</p>
-<p>For in-depth description of every single method, class, and option in PLANit-Python, please consult the <a href="reference">Reference Documentation</a>.</p>
-<h4 id="see-also">See also</h4>
-<p><a href="../Java">Java manual</a> for Java specific documentation of PLANit API</p>
+	<h1>PathIdType.&lt;enum&gt;</h1>
+    <div class="lead">PathIdType types</div>
+	       
+	<h4 id="description">Description</h4>
+<p>Class exposing the available types as enums for the way we uniquely identify paths in our output. When we include the path results explicitly in our output and in those results include the paths themselves, the choice of this type becomes relevant.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th>&lt;enum&gt; Fields</th>
+<th align="left">Description</th>
+<th align="left">Instance documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left">Path as a consecutive list of link segment ids as provided in the input</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td><code>LINK_SEGMENT_ID</code></td>
+<td align="left">Path as a consecutive list of link segment ids based on the internal PLANit ids</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td><code>NODE_EXTERNAL_ID</code></td>
+<td align="left">Path as a consecutive list of node ids as provided in the input</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td><code>NODE_ID</code></td>
+<td align="left">Path as a consecutive list of node ids based on the internal PLANit ids</td>
+<td align="left">N/A</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-1">Example 1</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
 
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/python/getting-started/">Getting Started</a>
-                    </h5>
-                    <p>Getting started with PLANit-Python</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/python/examples/">Examples</a>
-                    </h5>
-                    <p>See your project in action!</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/python/reference/">PLANit-Python Reference</a>
-                    </h5>
-                    <p>Reference manual</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
+<span style="color:#8f5902;font-style:italic"># prep</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PLANit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span> <span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate_output</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PATH</span><span style="color:#000;font-weight:bold">)</span>
+
+
+<span style="color:#8f5902;font-style:italic"># use node external ids as the way to uniquely identify the path in the output, e.g. &#34;[1,5,4,7,9,etc.]&#34;</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PathIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
+
+</code></pre></div><h4 id="see-also">See also</h4>
+<p><a href="../../outputconfiguration/path">Path Configuration</a> for the path configuration implementation where this enum is used</p>
+<h4 id="source-code">Source code</h4>
+<p>Class <code>PathIdType</code> in <code>enums.py</code></p>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
 </div>
 </div>
+
 
           </main>
         </div>

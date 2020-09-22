@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Documentation</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/</link>
+    <link>/docs/</link>
     <description>Recent content in Documentation on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .activate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</guid>
       <description>
         
         
@@ -74,10 +74,10 @@
     
     <item>
       <title>Docs: .activate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/</link>
+      <link>/docs/python/reference/planit&#43;/planit_activate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_activate&#43;/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_activate&#43;/</guid>
       <description>
         
         
@@ -143,10 +143,10 @@
     
     <item>
       <title>Docs: .activate_output(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
+      <link>/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
+      <guid>/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
       <description>
         
         
@@ -204,10 +204,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/link/lc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_add&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/link/lc_add&#43;/</guid>
       <description>
         
         
@@ -261,10 +261,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_add&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/od/odc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_add&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/od/odc_add&#43;/</guid>
       <description>
         
         
@@ -320,10 +320,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/path/pc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_add&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/path/pc_add&#43;/</guid>
       <description>
         
         
@@ -379,10 +379,10 @@
     
     <item>
       <title>Docs: .deactivate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</guid>
       <description>
         
         
@@ -438,10 +438,10 @@
     
     <item>
       <title>Docs: .deactivate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</link>
+      <link>/docs/python/reference/planit&#43;/planit_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_deactivate&#43;/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_deactivate&#43;/</guid>
       <description>
         
         
@@ -498,10 +498,10 @@
     
     <item>
       <title>Docs: .deactivate_output(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
+      <link>/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
+      <guid>/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
       <description>
         
         
@@ -559,10 +559,10 @@
     
     <item>
       <title>Docs: .get_last_iteration()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/</link>
+      <link>/docs/python/reference/outputformatters/memory/mof_last_iteration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_last_iteration/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/mof_last_iteration/</guid>
       <description>
         
         
@@ -608,10 +608,10 @@
     
     <item>
       <title>Docs: .get_position_of_output_key_property(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</link>
+      <link>/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</guid>
       <description>
         
         
@@ -691,10 +691,10 @@
     
     <item>
       <title>Docs: .get_position_of_output_value_property(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</link>
+      <link>/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</guid>
       <description>
         
         
@@ -774,10 +774,10 @@
     
     <item>
       <title>Docs: .is_persist_only_final_iteration()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_only_final/</link>
+      <link>/docs/python/reference/outputconfiguration/general/oc_is_only_final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_only_final/</guid>
+      <guid>/docs/python/reference/outputconfiguration/general/oc_is_only_final/</guid>
       <description>
         
         
@@ -810,10 +810,10 @@
     
     <item>
       <title>Docs: .is_persist_zero_flow()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</link>
+      <link>/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</guid>
+      <guid>/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</guid>
       <description>
         
         
@@ -845,10 +845,10 @@
     
     <item>
       <title>Docs: .iterator(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</link>
+      <link>/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</guid>
       <description>
         
         
@@ -953,10 +953,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</guid>
       <description>
         
         
@@ -1013,10 +1013,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</guid>
       <description>
         
         
@@ -1074,10 +1074,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</guid>
       <description>
         
         
@@ -1136,10 +1136,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/</link>
+      <link>/docs/python/reference/outputconfiguration/link/lc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove_all/</guid>
+      <guid>/docs/python/reference/outputconfiguration/link/lc_remove_all/</guid>
       <description>
         
         
@@ -1175,10 +1175,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove_all/</link>
+      <link>/docs/python/reference/outputconfiguration/od/odc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_remove_all/</guid>
+      <guid>/docs/python/reference/outputconfiguration/od/odc_remove_all/</guid>
       <description>
         
         
@@ -1216,10 +1216,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/</link>
+      <link>/docs/python/reference/outputconfiguration/path/pc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_remove_all/</guid>
+      <guid>/docs/python/reference/outputconfiguration/path/pc_remove_all/</guid>
       <description>
         
         
@@ -1257,10 +1257,10 @@
     
     <item>
       <title>Docs: .run()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_run/</link>
+      <link>/docs/python/reference/planit&#43;/planit_run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_run/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_run/</guid>
       <description>
         
         
@@ -1298,10 +1298,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
+      <link>/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
+      <guid>/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
       <description>
         
         
@@ -1415,10 +1415,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/ic_set&#43;/</link>
+      <link>/docs/python/reference/initialcost/ic_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/ic_set&#43;/</guid>
+      <guid>/docs/python/reference/initialcost/ic_set&#43;/</guid>
       <description>
         
         
@@ -1480,10 +1480,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</link>
+      <link>/docs/python/reference/planit&#43;/planit_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_set&#43;/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_set&#43;/</guid>
       <description>
         
         
@@ -1531,10 +1531,10 @@
     
     <item>
       <title>Docs: .set_csv_directory(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</guid>
       <description>
         
         
@@ -1593,10 +1593,10 @@
     
     <item>
       <title>Docs: .set_csv_name_extension(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</guid>
       <description>
         
         
@@ -1655,10 +1655,10 @@
     
     <item>
       <title>Docs: .set_csv_name_root(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</guid>
       <description>
         
         
@@ -1717,10 +1717,10 @@
     
     <item>
       <title>Docs: .set_description(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_description&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_description&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_description&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_description&#43;/</guid>
       <description>
         
         
@@ -1779,10 +1779,10 @@
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</guid>
       <description>
         
         
@@ -1844,10 +1844,10 @@
     
     <item>
       <title>Docs: .set_path_id_type(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</guid>
       <description>
         
         
@@ -1872,7 +1872,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;path_id_type&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/routeidtype&#34;&gt; RouteIdType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../../enums/pathidtype&#34;&gt; PathIdType.&amp;lt;enum&amp;gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Choice of path id type to use&lt;/td&gt;
@@ -1891,10 +1891,10 @@
 
 
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# use node external ids as the way to uniquely identify the path in the output, e.g. &amp;#34;[1,5,7,2,3]&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RouteIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;path_configuration&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_path_id_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PathIdType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NODE_EXTERNAL_ID&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../../enums/routeidproperty&#34;&gt;RouteIdProperty.&amp;lt;enum&amp;gt;&lt;/a&gt; for the available path id property enums&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../../enums/pathidtype&#34;&gt;PathIdType.&amp;lt;enum&amp;gt;&lt;/a&gt; for the available path id property enums&lt;/p&gt;
 &lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
 &lt;p&gt;Class &lt;code&gt;PathOutputTypeConfigurationWrapper&lt;/code&gt; in &lt;code&gt;wrappers.py&lt;/code&gt;&lt;/p&gt;
 
@@ -1903,10 +1903,10 @@
     
     <item>
       <title>Docs: .set_persist_only_final_iteration(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</guid>
       <description>
         
         
@@ -1963,10 +1963,10 @@
     
     <item>
       <title>Docs: .set_persist_zero_flow(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</link>
+      <link>/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</guid>
+      <guid>/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</guid>
       <description>
         
         
@@ -2023,10 +2023,10 @@
     
     <item>
       <title>Docs: .set_xml_directory(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</guid>
       <description>
         
         
@@ -2085,10 +2085,10 @@
     
     <item>
       <title>Docs: .set_xml_name_extension(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</guid>
       <description>
         
         
@@ -2147,10 +2147,10 @@
     
     <item>
       <title>Docs: .set_xml_name_root(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</link>
+      <link>/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</guid>
+      <guid>/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</guid>
       <description>
         
         
@@ -2209,10 +2209,10 @@
     
     <item>
       <title>Docs: .assignment</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</link>
+      <link>/docs/python/reference/planit&#43;/planit_assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_assignment/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_assignment/</guid>
       <description>
         
         
@@ -2243,10 +2243,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .demands</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_demands/</link>
+      <link>/docs/python/reference/planit&#43;/planit_demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_demands/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_demands/</guid>
       <description>
         
         
@@ -2271,10 +2271,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .gap_function</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</link>
+      <link>/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</guid>
+      <guid>/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</guid>
       <description>
         
         
@@ -2314,10 +2314,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .get_epsilon()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</link>
+      <link>/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</guid>
+      <guid>/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</guid>
       <description>
         
         
@@ -2348,10 +2348,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .get_keys()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</link>
+      <link>/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</guid>
       <description>
         
         
@@ -2403,10 +2403,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .get_max_iterations()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</link>
+      <link>/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</guid>
+      <guid>/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</guid>
       <description>
         
         
@@ -2437,10 +2437,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .get_values()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</link>
+      <link>/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</guid>
       <description>
         
         
@@ -2492,10 +2492,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .has_next()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</link>
+      <link>/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</guid>
       <description>
         
         
@@ -2547,16 +2547,16 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .initial_costs</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/</link>
+      <link>/docs/python/reference/planit&#43;/planit_initial_costs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_initial_costs/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_initial_costs/</guid>
       <description>
         
         
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;The .initial_costs property allows you access to the initial costs configuration instance.&lt;/p&gt;
-&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s route choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
+&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s path choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
 &lt;p&gt;This more representative cost ideally results in quicker convergence and/or more realistic results in earlier iterations than otherwise would be the case.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Initial costs can be provided for a specific time period, or for all time periods at once, depending on the user&amp;rsquo;s available data resources or preferences.&lt;/p&gt;
@@ -2580,10 +2580,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .link_configuration</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</link>
+      <link>/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</guid>
+      <guid>/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</guid>
       <description>
         
         
@@ -2622,10 +2622,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .memory</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_memory/</link>
+      <link>/docs/python/reference/planit&#43;/planit_memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_memory/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_memory/</guid>
       <description>
         
         
@@ -2661,10 +2661,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .network</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_network/</link>
+      <link>/docs/python/reference/planit&#43;/planit_network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit&#43;/planit_network/</guid>
+      <guid>/docs/python/reference/planit&#43;/planit_network/</guid>
       <description>
         
         
@@ -2689,10 +2689,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .next()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/</link>
+      <link>/docs/python/reference/outputformatters/memory/iterator/mofi_next/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/memory/iterator/mofi_next/</guid>
+      <guid>/docs/python/reference/outputformatters/memory/iterator/mofi_next/</guid>
       <description>
         
         
@@ -2744,10 +2744,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .od_configuration</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</link>
+      <link>/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</guid>
+      <guid>/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</guid>
       <description>
         
         
