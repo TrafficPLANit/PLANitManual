@@ -32,7 +32,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 If you are only interested to see an example file, jump to the Expanded Example.
 &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;.">
 
-<meta itemprop="wordCount" content="3842">
+<meta itemprop="wordCount" content="3991">
 
 
 
@@ -1960,7 +1960,10 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <p>We also discuss the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these <a href="./#network-defaults">defaults</a>.</p>
 <p>Lastly, PLANit comes with a number of predefined modes. When these modes are activated in the network file, the user only needs to specify their name, the properties, e.g., pcu value, features, will be populated based on the mode&rsquo;s defaults.</p>
 <h2 id="available-predefined-modes">Available predefined modes</h2>
-<p>PLANit provides the following predefined modes &ldquo;out of the box&rdquo;.</p>
+<p>A predefined mode can be activated by creating a new mode under the <a href="./#-modes">modes element</a> and set its name to the name outlined for the predefined mode. PLANit provides the following predefined modes &ldquo;out of the box&rdquo;.</p>
+<blockquote>
+<p>Predefined mode names are protected, meaning that if you attempt to define your own mode with its own attributes but use a predefined mode&rsquo;s name. PLANit will overwrite your settings with the defaults.</p>
+</blockquote>
 <p><strong>Bicycle:</strong></p>
 <table>
 <thead>
@@ -1986,6 +1989,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>15</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2051,6 +2061,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>100</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>2</code></td>
 <td align="left">float</td>
@@ -2112,6 +2129,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>130</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2177,6 +2201,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>130</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>1</code></td>
 <td align="left">float</td>
@@ -2238,6 +2269,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>130</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2303,6 +2341,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>100</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>1.8</code></td>
 <td align="left">float</td>
@@ -2364,6 +2409,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>90</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2429,6 +2481,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>90</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>3</code></td>
 <td align="left">float</td>
@@ -2490,6 +2549,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>70</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2555,6 +2621,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>130</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>0.5</code></td>
 <td align="left">float</td>
@@ -2616,6 +2689,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>5</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2681,6 +2761,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>60</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>6</code></td>
 <td align="left">float</td>
@@ -2742,6 +2829,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">External id to reference the mode</td>
+</tr>
+<tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>140</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left">Pcu</td>
@@ -2807,6 +2901,13 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">External id to reference the mode</td>
 </tr>
 <tr>
+<td align="left">maxspeed</td>
+<td align="left"><code>40</code></td>
+<td align="left">float</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">maximum speed of the mode</td>
+</tr>
+<tr>
 <td align="left">Pcu</td>
 <td align="left"><code>3</code></td>
 <td align="left">float</td>
@@ -2846,7 +2947,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <h2 id="network-defaults">Network defaults</h2>
 <p>Each network entity/element&rsquo;s defaults are listed below.</p>
 <h3 id="default-mode">Default Mode</h3>
-<p>When no modes are specified under the <code>&lt;linkconfiguration&gt;</code> the single predefined mode of type <code>CAR</code> is created to represent all modes, see <a href="./#available-predefined-modes">predefined modes</a>.</p>
+<p>When no modes are specified under the <code>&lt;linkconfiguration&gt;</code> the single predefined mode of type <code>car</code> is created to represent all modes, see <a href="./#available-predefined-modes">predefined modes</a>.</p>
 <ul>
 <li>No explicit references to modes are to be made in other XML elements with optional mode attributes because there is no mode to explicitly refer to.</li>
 <li>It is assumed that all link segments are accessible to the default mode and that all demand utilises this default mode of travel.</li>
@@ -2954,7 +3055,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 </tbody>
 </table>
 <h3 id="-modes">&lt;&gt; <strong>&lt;modes&gt;</strong></h3>
-<p>Modes available in this project. When absent a <a href="./#default-mode">default mode</a> is created. This element has the following sub-elements:</p>
+<p>Modes available in this project. When absent the <a href="./#default-mode">default mode</a> is created. This element has the following sub-elements:</p>
 <table>
 <thead>
 <tr>
@@ -2974,8 +3075,8 @@ If you are only interested to see an example file, jump to the Expanded Example.
 </tbody>
 </table>
 <h3 id="-mode">&lt;&gt;&lt;&gt; <strong>&lt;mode&gt;</strong></h3>
-<p>A user can specify a mode either by referring to an existing <a href="./#available-predefined-modes">predefined PLANit mode</a> by simply referencing it&rsquo;s name and leave out all other attributes because these will be auto-populated. Alternatively, you can create your own custom mode, in which case you should <strong>not</strong> use one of the predefined mode&rsquo;s protected names. If you do, the other attributes that you specify will be ignored and the predefined mode&rsquo;s defaults will be applied instead.</p>
-<p>When you create a custom mode, simply choose an appropriate name and provide all attributes so that PLANit knows how to populate the mode&rsquo;s fields.</p>
+<p>A user can specify a mode either by referring to an existing <a href="./#available-predefined-modes">predefined PLANit mode</a> by simply referencing it&rsquo;s name and leave out all other attributes because these will be auto-populated.</p>
+<p>Alternatively, you can create your own custom mode, in which case you should <strong>not</strong> use one of the predefined mode&rsquo;s protected names. If you do, the other attributes that you specify will be ignored and the predefined mode&rsquo;s defaults will be applied instead. When you create a custom mode, simply choose an appropriate name and provide all attributes so that PLANit knows how to populate the mode&rsquo;s fields.</p>
 <p>The mode&rsquo;s (external) identifier is set through an attribute</p>
 <table>
 <thead>
@@ -3017,6 +3118,14 @@ If you are only interested to see an example file, jump to the Expanded Example.
 <td align="left">NO</td>
 <td align="left"><code>&quot;&quot;</code></td>
 <td align="left">Description of the mode</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;maxspeed&gt;</code></td>
+<td align="left">double</td>
+<td align="left"><code>km/h</code></td>
+<td align="left">NO</td>
+<td align="left">80.0</td>
+<td align="left">maximum speed of the mode</td>
 </tr>
 <tr>
 <td align="left"><code>&lt;pcu&gt;</code></td>
@@ -3228,9 +3337,8 @@ If you are only interested to see an example file, jump to the Expanded Example.
 </tbody>
 </table>
 <h3 id="-modes-1">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;modes&gt;</strong></h3>
-<p>Modes allowed for the link segment type. For each specified mode, dedicated properties for this link segment type can be specified.
-When absent, all available modes are assumed to be allowed based on their properties, (possibly dynamically constrained by the physical link properties).<br>
-when present, at least a single mode sub-element must be present.</p>
+<p>Modes allowed for the link segment type. For each specified mode, dedicated properties for this link segment type can be specified.</p>
+<p>When absent, all available modes are assumed to be allowed based on their properties, (possibly dynamically constrained by the physical link properties). when present, at least a single mode sub-element must be present.</p>
 <p>This element has the following sub-elements:</p>
 <table>
 <thead>
@@ -3252,8 +3360,9 @@ when present, at least a single mode sub-element must be present.</p>
 </table>
 <h3 id="-mode-1">&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;mode&gt;</strong></h3>
 <p>Mode allowed for the link segment type. Dedicated properties for this link segment type are specified here.</p>
-<p>If you want to assign the same properties to all available modes, use the &ldquo;0&rdquo; reference to indicate this applies to all modes. In that case only a single mode
-element is allowed because it prescribes the properties for all modes.</p>
+<blockquote>
+<p>The maximum speed that is eventually applied to a mode on a link segment is the minimum of the three available maximum speeds: (i) the physical speed limit on the link segment, (ii) the mode&rsquo;s maximum speed identified on the global definition for the mode, (iii) the maximum speed imposed via these mode properties specific to the link segment type applied to the link segment.</p>
+</blockquote>
 <p>The Link segment type&rsquo;s mode reference (external) identifier is set through an attribute:</p>
 <table>
 <thead>
@@ -3293,7 +3402,7 @@ element is allowed because it prescribes the properties for all modes.</p>
 <td align="left"><code>double</code></td>
 <td align="left"><code>km/h</code></td>
 <td align="left">NO</td>
-<td align="left">180</td>
+<td align="left">mode&rsquo;s maximum speed</td>
 <td align="left">maximum speed of this mode on links of this link segment type</td>
 </tr>
 <tr>
@@ -3301,15 +3410,12 @@ element is allowed because it prescribes the properties for all modes.</p>
 <td align="left"><code>double</code></td>
 <td align="left"><code>km/h/</code></td>
 <td align="left">NO</td>
-<td align="left">1800</td>
+<td align="left">60</td>
 <td align="left">critical speed (at capacity) of this mode on links of this segment type</td>
 </tr>
 </tbody>
 </table>
-<p>When any of the simple-elemants are absent, they take on the minimum of the default value and the mode&rsquo;s maximum speed defined under <code>&lt;linkconfiguration&gt;&lt;modes&gt;&lt;mode&gt;</code>.</p>
-<blockquote>
-<p>When the link segment is assigned a link segment type it can (but shouldn&rsquo;t) happen that the link (segment&rsquo;s) physical maximum speed is smaller than the link segment&rsquo;s type maximum and/or critical speed. In that special case, the mode&rsquo;s speed is restricted to the link (segment&rsquo;s) physical maximum speed. In other words, PLANit, will always adopt the most restrictive speed that is defined.</p>
-</blockquote>
+<p>When the max speed is absent it takes on the mode&rsquo;s maximum speed limit.</p>
 <h2 id="infrastructure">&lt;infrastructure&gt;</h2>
 <p>The infrastructure element contains all the physical network infrastructure available. It consists of nodes, links, and an optional Spatial Reference System (SRS) SRID string for the case where the nodes have geo-spatial location information embedded in them via GML.</p>
 <p>The SRS identifier is set through an attribute. When absent Cartesian system is assumed with 0,0 to be the top left</p>
