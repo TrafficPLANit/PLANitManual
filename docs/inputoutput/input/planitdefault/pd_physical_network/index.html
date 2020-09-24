@@ -32,7 +32,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 If you are only interested to see an example file, jump to the Expanded Example.
 &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;.">
 
-<meta itemprop="wordCount" content="3991">
+<meta itemprop="wordCount" content="4079">
 
 
 
@@ -3338,7 +3338,14 @@ If you are only interested to see an example file, jump to the Expanded Example.
 </table>
 <h3 id="-modes-1">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;modes&gt;</strong></h3>
 <p>Modes allowed for the link segment type. For each specified mode, dedicated properties for this link segment type can be specified.</p>
-<p>When absent, all available modes are assumed to be allowed based on their properties, (possibly dynamically constrained by the physical link properties). when present, at least a single mode sub-element must be present.</p>
+<p>When absent, all available <strong>road based</strong> modes are assumed to be allowed based on their properties, (possibly dynamically constrained by the physical link properties). when present, at least a single mode sub-element must be present.</p>
+<blockquote>
+<p>link segment types that represent rail, typically only allow a single rail based mode and typically do not allow road based modes. Therefore, we expect the user to explicitly include rail based modes at all times. When
+no modes are defined, <strong>rail based</strong> modes are <strong>not</strong> allowed, in contrast to road based modes.</p>
+</blockquote>
+<blockquote>
+<p>In the special case a link segment allows both rail and road based modes, e.g., trams and cars, then, all modes that are allowed must be specified, not only the rail based modes.</p>
+</blockquote>
 <p>This element has the following sub-elements:</p>
 <table>
 <thead>
