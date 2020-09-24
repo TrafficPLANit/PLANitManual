@@ -130,7 +130,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;single&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -200,7 +200,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -270,7 +270,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -340,7 +340,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -410,7 +410,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -480,7 +480,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -550,7 +550,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -620,7 +620,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -690,7 +690,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;rail&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -760,7 +760,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;single&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -830,7 +830,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;single&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -900,7 +900,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;rail&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -970,7 +970,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;rail&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -1040,7 +1040,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;PhysicalFeatures.tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;rail&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;track type of the mode&lt;/td&gt;
@@ -1276,7 +1276,7 @@
 &lt;ul&gt;
 &lt;li&gt;Vehicular type: is the mode represented by a vehicle or not&lt;/li&gt;
 &lt;li&gt;Motorisation type: does the mode have a motor or not&lt;/li&gt;
-&lt;li&gt;track type: does the mode create double or single tracks (width indicator)&lt;/li&gt;
+&lt;li&gt;track type: does the mode use the road or rail to propagate&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1308,11 +1308,11 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;tracktype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;,&lt;code&gt;&amp;quot;single&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;,&lt;code&gt;&amp;quot;rail&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;double&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;road&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
