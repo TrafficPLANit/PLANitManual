@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how to configure initial costs
 ">
 
-<meta itemprop="wordCount" content="1169">
+<meta itemprop="wordCount" content="1173">
 
 
 
@@ -1939,11 +1939,11 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
     <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span> <span style="color:#000">initialCostCSVPath</span><span style="color:#ce5c00;font-weight:bold">);</span>	
 
-  <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span>
     <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
 	
   <span style="color:#8f5902;font-style:italic">// * NEW *
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
   	
@@ -1973,11 +1973,11 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
     <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span>
       <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>  
 
-  <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
     <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// * NEW *
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
     
@@ -2006,12 +2006,12 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
     <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span>
       <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getDemands</span><span style="color:#ce5c00;font-weight:bold">());</span>  
 
-  <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
     <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// * NEW * register for all available time periods
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">for</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">InitialLinkSegmentCostPeriod</span> <span style="color:#000">initialCost</span> <span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">initialLinkSegmentCosts</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-    <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriod</span><span style="color:#ce5c00;font-weight:bold">(),</span> <span style="color:#000">initialCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
+    <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriod</span><span style="color:#ce5c00;font-weight:bold">(),</span> <span style="color:#000">initialCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#ce5c00;font-weight:bold">}</span>
   
   <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
@@ -2048,12 +2048,12 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
   <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
     <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#000">initialCostCSVPath2</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>      
 
-  <span style="color:#000">TrafficAssignmentBuilder</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
     <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// * NEW * register with and without time period
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialLinkSegmentCostNoTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialLinkSegmentCostNoTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
     
@@ -2103,7 +2103,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	

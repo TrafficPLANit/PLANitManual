@@ -1978,11 +1978,11 @@
 </span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;c:\\Users\\Public\\planit_test\\&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
            
       <span style="color:#8f5902;font-style:italic">// ASSIGNMENT INSTANCE
-</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">TraditionalStaticAssignmentBuilder</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-        <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentBuilder</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+        <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
       
       <span style="color:#8f5902;font-style:italic">// COMPONENTS
-</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">BPRLinkTravelTimeCost</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRLinkTravelTimeCost</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">BPRConfigurator</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
       <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterVirtualCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FIXED</span><span style="color:#ce5c00;font-weight:bold">);</span>
       <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterSmoothing</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MSA</span><span style="color:#ce5c00;font-weight:bold">);</span>
       
@@ -2014,11 +2014,11 @@
 <p>The <code>project</code> instance takes one argument here, the project path. PLANit will attempt to parse all the inputs from this directory. So make sure that the XML file with the inputs is available in this directory. If you saved it somewhere else, change the path that you pass in to the project to this directory.</p>
 <p>The <code>project</code> instance allows you access to the parsed inputs. Further, it is used to create and register traffic assignments on it. So, a project can have a bunch of inputs and traffic assignments. The traffic assignment then uses these inputs to conduct its simulation run. In case of a <code>PlanItSimpleProject</code>, the project allows only a single assignment on the project and it automatically provides the inputs to this one assignment without the user having to explicitly do this. Neat!</p>
 <p>Let&rsquo;s move on to the next line. Here we decide what traffic assignment component we are using. Here, we opt for a traditional static traffic assignment model. It is activated by creating and registering it on the project via :</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">TraditionalStaticAssignmentBuilder</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-	<span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentBuilder</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
-</code></pre></div><p>Like all components that the user can choose, you either provide the full Java class name or - if it is an implementation known to PLANit - a shorthand reference as is used here via <code>TrafficAssignment.TRADITIONAL_STATIC_ASSIGNMENT</code>. The return type is an implementation of a <code>TrafficAssignmentBuilder</code> for the assignment at hand, in this case a <code>TraditionalStaticAssignmentBuilder</code>. It allows you to configure the underlying components relevant to the chosen assignment.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">assignment</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+	<span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</code></pre></div><p>Like all components that the user can choose, you either provide the full Java class name or - if it is an implementation known to PLANit - a shorthand reference as is used here via <code>TrafficAssignment.TRADITIONAL_STATIC_ASSIGNMENT</code>. The return type is an implementation of a <code>TrafficAssignmentConfigurator</code> for the assignment at hand, in this case a <code>TraditionalStaticAssignmentConfigurator</code>. It allows you to configure the underlying components relevant to the chosen assignment.</p>
 <p>Each traffic assignment comes with a number of default components that will be activated automatically. For the sake of this example, we explicitly activate the defaults (BPR, FIXED, MSA) to show you how you do this manually via:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">BPRLinkTravelTimeCost</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRLinkTravelTimeCost</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000">BPRConfigurator</span> <span style="color:#000">bprCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">BPRConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">BPR</span><span style="color:#ce5c00;font-weight:bold">);</span>
 <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterVirtualCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">VirtualCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FIXED</span><span style="color:#ce5c00;font-weight:bold">);</span>
 <span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterSmoothing</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Smoothing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MSA</span><span style="color:#ce5c00;font-weight:bold">);</span>
 </code></pre></div><blockquote>
@@ -2081,9 +2081,9 @@ To make this happen we call</p>
     <span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
     <span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2091,9 +2091,9 @@ To make this happen we call</p>
             <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2101,9 +2101,9 @@ To make this happen we call</p>
             <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2111,9 +2111,9 @@ To make this happen we call</p>
             <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2121,9 +2121,9 @@ To make this happen we call</p>
             <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+            <span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
         <span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
             <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2184,7 +2184,7 @@ To make this happen we call</p>
 <span style="color:#204a87;font-weight:bold">&lt;/metadata&gt;</span>
 </code></pre></div><h4 id="csv-results">CSV Results</h4>
 <p>The CSV result file - with default settings - has a heading row with the column names (corresponding to the columns in the XML meta-data file). The other rows contain the result values, separated by a comma. In this very simple example we only have a single result row for the one link. The result should look something like the following:</p>
-<pre><code class="language-CSV" data-lang="CSV">Downstream Node External Id,Downstream Node Id,Link Segment External Id,Link Segment Id,Mode External Id,Mode Id,Time Period External Id,Time Period Id,Upstream Node External Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Maximum Speed,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Flow
+<pre><code class="language-CSV" data-lang="CSV">Downstream Node XML Id,Downstream Node Id,Link Segment XML Id,Link Segment Id,Mode XML Id,Mode Id,Time Period XML Id,Time Period Id,Upstream Node XML Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Maximum Speed,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Flow
 2,1,1,0,1,0,0,0,1,0,1800.0000000,Not Specified,10.0000000,80.0000000,1,Not Specified,75.1948772,0.1329878,180.0000000,1000.0000000
 </code></pre><p>As you can see, we find that the the flow is indeed 1000 veh/h as stated in our input. The speed is somewhat reduced compared to free flow resulting in a slightly increased travel time (cost)</p>
 <p>Many of the &ldquo;id&rdquo; columns you are likely not interested in for most applications. You can add and remove columns very easily. More information on this can be found under the <a href="../reference/outputconfiguration/link">Link Configuration</a> section of the manual.</p>
@@ -2509,7 +2509,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	

@@ -32,7 +32,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;#runId&amp;gt;&lt;/code&gt;, the unique number of the simulation run conducted since creating a PLANit project, typically 0,&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;, name of the scenario being executed,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;#timePeriod&amp;gt;&lt;/code&gt;, the time period reference number (external id) of the simulation run.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;#timePeriod&amp;gt;&lt;/code&gt;, the time period reference number (XML id) of the simulation run.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In case the user provided a name of the scenario that contains spaces. PLANit will convert these spaces to underscores.&lt;/p&gt;
@@ -179,7 +179,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;assignment&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -187,7 +187,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;physicalcost&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -195,7 +195,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;virtualcost&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -239,15 +239,15 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;id&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;(External) Id of the time period&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;(XML) Id of the time period&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -293,7 +293,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;nr&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;non-negative integer&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;non-negative integer&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -339,7 +339,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Type of reference provided. Currently, always set to &lt;code&gt;&amp;quot;Link&amp;quot;&lt;/code&gt;&lt;/td&gt;
@@ -401,7 +401,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -417,7 +417,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;lt;unit&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;a &lt;a href=&#34;../../../../units&#34;&gt;unit&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
@@ -453,7 +453,7 @@
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/simulation&amp;gt;&lt;/span&gt;
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;columns&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;column&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Downstream Node External Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Downstream Node Xml Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;units&amp;gt;&lt;/span&gt;none&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/units&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
@@ -463,7 +463,7 @@
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;column&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Link Segment External Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Link Segment Xml Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;units&amp;gt;&lt;/span&gt;none&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/units&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
@@ -473,7 +473,7 @@
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;column&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Mode External Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Mode Xml Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;units&amp;gt;&lt;/span&gt;none&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/units&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
@@ -483,7 +483,7 @@
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;column&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Upstream Node External Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Upstream Node Xml Id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;units&amp;gt;&lt;/span&gt;none&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/units&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
@@ -540,7 +540,7 @@
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/columns&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/metadata&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And an example of the CSV that might go with it&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-CSV&#34; data-lang=&#34;CSV&#34;&gt;Downstream Node External Id,Downstream Node Id,Link Segment External Id,Link Segment Id,Mode External Id,Mode Id,Upstream Node External Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Density,Flow
+&lt;pre&gt;&lt;code class=&#34;language-CSV&#34; data-lang=&#34;CSV&#34;&gt;Downstream Node Xml Id,Downstream Node Id,Link Segment Xml Id,Link Segment Id,Mode Xml Id,Mode Id,Upstream Node Xml Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Density,Flow
 9,8,1,0,1,0,12,11,1500.0000000,Not Specified,2.9000001,1,Not Specified,100.0000000,0.0290000,180.0000000,0.6000000
 12,11,2,1,1,0,9,8,1500.0000000,Not Specified,2.9000001,1,Not Specified,100.0000000,0.0290000,180.0000000,0.6000000
 11,10,3,2,1,0,12,11,1500.0000000,Not Specified,3.0000000,1,Not Specified,99.4679928,0.0301605,180.0000000,482.4000000

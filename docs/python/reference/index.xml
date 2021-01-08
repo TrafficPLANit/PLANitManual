@@ -317,8 +317,8 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#set initial costs for all periods&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;initial_costs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_initial_costs_csv&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#override initial costs for time period 1 with more specific costs&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;initial_costs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_initial_costs_period_1_csv&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#override initial costs for time period with XML id &amp;#34;1&amp;#34; with more specific costs&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;initial_costs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_initial_costs_period_1_csv&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../outputformatters/default&#34;&gt;Default Output Formatter&lt;/a&gt; implementation&lt;br&gt;
@@ -578,13 +578,13 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
 &lt;p&gt;Tests of the contents of the MemoryOutputFormatter use data transfer objects (DTOs). These objects are populated with expected result values in the Java code, and then stored in Java Maps. After the traffic assignment run has finished, the values stored in the MemoryOutputFormatter can be compared to these standard results in the code.&lt;/p&gt;
 &lt;p&gt;Expected results for link output are stored in ResultDto objects. A ResultDto object is populated by its constructor call, which has the following arguments:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;startNodeId&lt;/em&gt;		   external id of start node (used to define the link segment);&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;endNodeId&lt;/em&gt;			external id of end node (used to define the link segment);&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;linkFlow&lt;/em&gt;				 flow through link (output);&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;linkCost&lt;/em&gt;				 cost (travel time) of link (output);&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;capacity&lt;/em&gt;				 capacity of the link (input);&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;length&lt;/em&gt;					 length of the link (input);&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;speed&lt;/em&gt;					 travel speed of the link (input).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;startNodeId&lt;/em&gt;		   		XML id of start node (used to define the link segment);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;endNodeId&lt;/em&gt;				XML id of end node (used to define the link segment);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;linkFlow&lt;/em&gt;				flow through link (output);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;linkCost&lt;/em&gt;				cost (travel time) of link (output);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;capacity&lt;/em&gt;				capacity of the link (input);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;length&lt;/em&gt;					length of the link (input);&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;speed&lt;/em&gt;					travel speed of the link (input).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;ResultDto objects are stored in a Java Map whose keys are run id, time period and mode. Test cases may have more than one run, time period or mode so this allows all the results to be stored for each.&lt;/p&gt;
 &lt;p&gt;The fifth argument in the ResultDto constructor, total cost to end node, is not currently used. This was originally included to provide a sort order for the ResultDto objects in the Map which stores them. This is quite helpful for human inspection of CSV output files but is not required for computerized testing.&lt;/p&gt;

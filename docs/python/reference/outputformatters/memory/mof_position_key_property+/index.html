@@ -1881,7 +1881,7 @@
 	       
 	<h4 id="description">Description</h4>
 <p>The .get_position_of_output_value_property(+) method allows you to collect the index of output properties in any result entry array. This index can be used to collect the actual value, once you have access to a particular result entry via, for example, the <a href="../iterator">iterator</a>.</p>
-<p>This method only retrieves output activated properties that are <em>not</em> part of the unique identifiers - keys - for the result row entry. For example. When the result rows have two columns, where one is identified by <code>OutputProperty.LINK_EXTERNAL_ID</code>, and the other by <code>OutputProperty.FLOW</code>. Then the former must be collected as a <a href="mof_position_key_property+">key</a>, i.e., it reflects the unique identifier for the row. The latter&rsquo;s property position can be collected via this method since it relates to an actual output value.</p>
+<p>This method only retrieves output activated properties that are <em>not</em> part of the unique identifiers - keys - for the result row entry. For example. When the result rows have two columns, where one is identified by <code>OutputProperty.LINK_XML_ID</code>, and the other by <code>OutputProperty.FLOW</code>. Then the former must be collected as a <a href="mof_position_key_property+">key</a>, i.e., it reflects the unique identifier for the row. The latter&rsquo;s property position can be collected via this method since it relates to an actual output value.</p>
 <blockquote>
 <p>Make sure that the properties you request a position for have been activated. If not, then <code>None</code> is returned</p>
 </blockquote>
@@ -1992,7 +1992,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	

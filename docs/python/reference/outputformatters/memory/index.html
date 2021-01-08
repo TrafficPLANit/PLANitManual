@@ -1867,8 +1867,8 @@
 	<h5 id="description">Description</h5>
 <p>In-memory results of the PLANit run. All results are collected in a multi-dimensional matrix, where you can access data by providing information to pinpoint its location in the result. You must always provide the following meta-information before accessing any result data:</p>
 <ul>
-<li>Mode (external) id</li>
-<li>Time period (external) id</li>
+<li>Mode (XML) id</li>
+<li>Time period (XML) id</li>
 <li>Iteration index</li>
 <li><a href="../../../enums/outputtype">OutputType.<enum></a> type</li>
 </ul>
@@ -1932,14 +1932,16 @@
 <span style="color:#8f5902;font-style:italic"># find position of flow result</span>
 <span style="color:#000">flow_pos</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_position_of_output_value_property</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">FLOW</span><span style="color:#000;font-weight:bold">)</span>
 
-<span style="color:#8f5902;font-style:italic"># find position of key; we use link segment (external) id	</span>
-<span style="color:#000">id_pos</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_position_of_output_key_property</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK_SEGMENT_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic"># find position of key; we use link segment (XML) id	</span>
+<span style="color:#000">id_pos</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_position_of_output_key_property</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK_SEGMENT_XML_ID</span><span style="color:#000;font-weight:bold">)</span>
 
-<span style="color:#8f5902;font-style:italic"># collect iterator for mode 1, time period 2, iteration i, and print results by looping over entries</span>
-<span style="color:#000">link_iter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">)</span>
-<span style="color:#204a87;font-weight:bold">while</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">has_next</span><span style="color:#000;font-weight:bold">():</span>
-	<span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">next</span><span style="color:#000;font-weight:bold">()</span>
-	<span style="color:#204a87;font-weight:bold">print</span> <span style="color:#4e9a06">&#34;id: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_keys</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">id_pos</span><span style="color:#000;font-weight:bold">],</span> <span style="color:#4e9a06">&#34; flow: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">link_iter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_values</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">flow_pos</span><span style="color:#000;font-weight:bold">]</span> 
+<span style="color:#8f5902;font-style:italic"># collect iterator for mode &#34;1&#34;, time period &#34;2&#34;, iteration i, and print results by looping over entries</span>
+<span style="color:#000">modeXmlId</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;1&#34;</span>
+<span style="color:#000">timePeriodXmlId</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;2&#34;</span>
+<span style="color:#000">the_iterator</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">memory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">modeXmlId</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">timePeriodXmlId</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">LINK</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#204a87;font-weight:bold">while</span> <span style="color:#000">the_iterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">has_next</span><span style="color:#000;font-weight:bold">():</span>
+	<span style="color:#000">the_iterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">next</span><span style="color:#000;font-weight:bold">()</span>
+	<span style="color:#204a87;font-weight:bold">print</span> <span style="color:#4e9a06">&#34;id: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">the_iterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_keys</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">id_pos</span><span style="color:#000;font-weight:bold">],</span> <span style="color:#4e9a06">&#34; flow: &#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">the_iterator</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get_values</span><span style="color:#000;font-weight:bold">()[</span><span style="color:#000">flow_pos</span><span style="color:#000;font-weight:bold">]</span> 
 </code></pre></div><h4 id="see-also">See also</h4>
 <p><a href="iterator">iterator</a> for the implementation of the memory output formatter iterator
 <a href="../../planit+/planit_activate+">PLANit.activate(+)</a> to see how to activate an output formatter<br>
@@ -2302,7 +2304,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	
