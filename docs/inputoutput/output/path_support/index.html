@@ -32,7 +32,7 @@ We list the supported output properties for Path ordered by their priority (id, 
 Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
 We list the supported output properties for Path ordered by their priority (id, input, output).">
 
-<meta itemprop="wordCount" content="208">
+<meta itemprop="wordCount" content="234">
 
 
 
@@ -1882,67 +1882,85 @@ We list the supported output properties for Path ordered by their priority (id, 
 <tr>
 <td align="left"><code>DESTINATION_ZONE_ID</code></td>
 <td align="left">Destination zone id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>DESTINATION_ZONE_XML_ID</code></td>
+<td align="left">Destination zone XML id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>DESTINATION_ZONE_EXTERNAL_ID</code></td>
-<td align="left">Destination zone id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Destination zone external id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>ITERATION_INDEX</code></td>
 <td align="left">Iteration index of simulation</td>
-<td align="left"><code>integer</code></td>
+<td align="left">integer</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>ORIGIN_ZONE_ID</code></td>
 <td align="left">Origin zone id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>ORIGIN_ZONE_XML_ID</code></td>
+<td align="left">Origin zone XML id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>ORIGIN_ZONE_EXTERNAL_ID</code></td>
-<td align="left">Origin zone id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Origin zone external id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>MODE_ID</code></td>
 <td align="left">Mode id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODE_XML_ID</code></td>
+<td align="left">Mode XML id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>MODE_EXTERNAL_ID</code></td>
-<td align="left">Mode id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Mode external id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>PATH_ID</code></td>
 <td align="left">Path id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>RUN_ID</code></td>
 <td align="left">simulation run id</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>TIME_PERIOD_ID</code></td>
 <td align="left">time period id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>TIME_PERIOD_EXTERNAL_ID</code></td>
-<td align="left">time period id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">time period id (user)</td>
+<td align="left">long</td>
 <td align="left"><code>None</code></td>
 </tr>
 </tbody>
@@ -1964,7 +1982,7 @@ We list the supported output properties for Path ordered by their priority (id, 
 <td align="left"><code>PATH_STRING</code></td>
 <td align="left">The path represented in CSV format</td>
 <td align="left"><code>OutputType.PATH</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 </tr>
 </tbody>
 </table>

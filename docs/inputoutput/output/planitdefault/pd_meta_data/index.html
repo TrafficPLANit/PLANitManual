@@ -1904,7 +1904,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <ul>
 <li><code>&lt;#runId&gt;</code>, the unique number of the simulation run conducted since creating a PLANit project, typically 0,</li>
 <li><code>&lt;name&gt;</code>, name of the scenario being executed,</li>
-<li><code>&lt;#timePeriod&gt;</code>, the time period reference number (external id) of the simulation run.</li>
+<li><code>&lt;#timePeriod&gt;</code>, the time period reference number (XML id) of the simulation run.</li>
 </ul>
 <blockquote>
 <p>In case the user provided a name of the scenario that contains spaces. PLANit will convert these spaces to underscores.</p>
@@ -2051,7 +2051,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <tbody>
 <tr>
 <td align="left"><code>&lt;assignment&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2059,7 +2059,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 </tr>
 <tr>
 <td align="left"><code>&lt;physicalcost&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2067,7 +2067,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 </tr>
 <tr>
 <td align="left"><code>&lt;virtualcost&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2111,15 +2111,15 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <tbody>
 <tr>
 <td align="left"><code>&lt;id&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
-<td align="left">(External) Id of the time period</td>
+<td align="left">(XML) Id of the time period</td>
 </tr>
 <tr>
 <td align="left"><code>&lt;name&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2165,7 +2165,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <tbody>
 <tr>
 <td align="left"><code>&lt;nr&gt;</code></td>
-<td align="left"><code>non-negative integer</code></td>
+<td align="left">non-negative integer</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2211,7 +2211,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <tbody>
 <tr>
 <td align="left"><code>type</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">Type of reference provided. Currently, always set to <code>&quot;Link&quot;</code></td>
@@ -2273,7 +2273,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 <tbody>
 <tr>
 <td align="left"><code>&lt;name&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2289,7 +2289,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 </tr>
 <tr>
 <td align="left"><code>&lt;unit&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left">a <a href="../../../../units">unit</a></td>
 <td align="left">YES</td>
 <td align="left">N/A</td>
@@ -2325,7 +2325,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node Xml Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
@@ -2335,7 +2335,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment Xml Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
@@ -2345,7 +2345,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode Xml Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
@@ -2355,7 +2355,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node Xml Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
@@ -2412,7 +2412,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 	<span style="color:#204a87;font-weight:bold">&lt;/columns&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;/metadata&gt;</span>
 </code></pre></div><p>And an example of the CSV that might go with it</p>
-<pre><code class="language-CSV" data-lang="CSV">Downstream Node External Id,Downstream Node Id,Link Segment External Id,Link Segment Id,Mode External Id,Mode Id,Upstream Node External Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Density,Flow
+<pre><code class="language-CSV" data-lang="CSV">Downstream Node Xml Id,Downstream Node Id,Link Segment Xml Id,Link Segment Id,Mode Xml Id,Mode Id,Upstream Node Xml Id,Upstream Node Id,Capacity per Lane,Downstream Node Location,Length,Number of Lanes,Upstream Node Location,Calculated Speed,Cost,Density,Flow
 9,8,1,0,1,0,12,11,1500.0000000,Not Specified,2.9000001,1,Not Specified,100.0000000,0.0290000,180.0000000,0.6000000
 12,11,2,1,1,0,9,8,1500.0000000,Not Specified,2.9000001,1,Not Specified,100.0000000,0.0290000,180.0000000,0.6000000
 11,10,3,2,1,0,12,11,1500.0000000,Not Specified,3.0000000,1,Not Specified,99.4679928,0.0301605,180.0000000,482.4000000

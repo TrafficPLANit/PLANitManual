@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Initial Cost method 
 ">
 
-<meta itemprop="wordCount" content="137">
+<meta itemprop="wordCount" content="140">
 
 
 
@@ -1872,7 +1872,7 @@
 	<h4 id="description">Description</h4>
 <p>This .set allows you to set the initial costs to be used in the PLANit traffic assignment&rsquo;s initial iteration. you can either set these costs for a specific time period, or provide initial costs for all time periods at once (that do not have specific initial costs set for their time period).</p>
 <h4 id="signature">Signature</h4>
-<p><code>.set(initial_cost_file_location, time_period_external_id)</code> or</p>
+<p><code>.set(initial_cost_file_location, time_period_xml_id)</code> or</p>
 <p><code>.set(initial_cost_file_location)</code></p>
 <p>with</p>
 <table>
@@ -1888,17 +1888,17 @@
 <tbody>
 <tr>
 <td><code>initial_cost_file_location</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="center"><code>None</code></td>
 <td align="center">yes</td>
 <td align="left">File location of initial cost file</td>
 </tr>
 <tr>
-<td><code>time_period_external_id</code></td>
-<td align="left"><code>integer</code></td>
+<td><code>time_period_xml_id</code></td>
+<td align="left">string</td>
 <td align="center"><code>None</code></td>
 <td align="center">no</td>
-<td align="left">time period (external) id to link initial costs to</td>
+<td align="left">time period (XML) id to link initial costs to</td>
 </tr>
 </tbody>
 </table>
@@ -1913,8 +1913,8 @@
 <span style="color:#8f5902;font-style:italic">#set initial costs for all periods</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">initial_costs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_initial_costs_csv&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
-<span style="color:#8f5902;font-style:italic">#override initial costs for time period 1 with more specific costs</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">initial_costs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_initial_costs_period_1_csv&gt;&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic">#override initial costs for time period with XML id &#34;1&#34; with more specific costs</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">initial_costs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_initial_costs_period_1_csv&gt;&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
 </code></pre></div><h4 id="see-also">See also</h4>
 <p><a href="../../outputformatters/default">Default Output Formatter</a> implementation<br>

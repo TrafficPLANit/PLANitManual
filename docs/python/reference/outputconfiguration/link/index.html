@@ -1871,7 +1871,7 @@
 <p>The link segment output configuration allows you to configure options regarding the link segment outputs of your traffic assignment run.</p>
 <p>Link segment information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each link segment under each available combination of these labels.</p>
 <blockquote>
-<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> remains in place. Currently, this requires either including the external ids of the up and downstream node, or the link segment&rsquo;s (external) id. If not, the assignment will fail.</p>
+<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> remains in place. Currently, this requires either including the internal/XML/external ids of the up and downstream node, or the link segment&rsquo;s internal/XML/external ids. If not, the assignment will fail.</p>
 </blockquote>
 <h4 id="defaults">Defaults</h4>
 <p><em>ID_PRIORITY fields</em></p>
@@ -1892,8 +1892,14 @@
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
-<td align="left"><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code></td>
+<td align="left"><code>OutputProperty.TIME_PERIOD_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -1904,8 +1910,14 @@
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
-<td align="left"><code>OutputProperty.MODE_EXTERNAL_ID</code></td>
+<td align="left"><code>OutputProperty.MODE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.MODE_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -1916,8 +1928,14 @@
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
-<td align="left"><code>OutputProperty.LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left"><code>OutputProperty.LINK_SEGMENT_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -1928,8 +1946,14 @@
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
-<td align="left"><code>OutputProperty.UPSTREAM_NODE_EXTERNAL_ID</code></td>
+<td align="left"><code>OutputProperty.UPSTREAM_NODE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.UPSTREAM_NODE_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -1940,8 +1964,14 @@
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
-<td align="left"><code>OutputProperty.DOWNSTREAM_NODE_EXTERNAL_ID</code></td>
+<td align="left"><code>OutputProperty.DOWNSTREAM_NODE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.DOWNSTREAM_NODE_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -2075,14 +2105,16 @@
 </code></pre></div><h4 id="identification">Identification</h4>
 <p>Each link is by default identified by</p>
 <ul>
-<li><code>OutputProperty.LINK_SEGEMENT_EXTERNAL_ID</code></li>
+<li><code>OutputProperty.LINK_SEGEMENT_XML_ID</code></li>
 </ul>
 <p>Equally acceptable identification methods - that the user can configure - are</p>
 <ul>
 <li><code>OutputProperty.LINK_SEGEMENT_ID</code>,</li>
+<li><code>OutputProperty.LINK_SEGEMENT_EXTERNAL_ID</code>,</li>
 </ul>
 <p>or,</p>
 <ul>
+<li><code>OutputProperty.UPSTREAM_NODE_ID</code>, <code>OutputProperty.DOWNSTREAM_NODE_ID</code></li>
 <li><code>OutputProperty.UPSTREAM_NODE_EXTERNAL_ID</code>, <code>OutputProperty.DOWNSTREAM_NODE_EXTERNAL_ID</code></li>
 </ul>
 <h4 id="see-also">See also</h4>

@@ -1868,7 +1868,7 @@
 <p>The path output configuration allows you to configure options regarding the path outputs of your traffic assignment run.</p>
 <p>Path information is stored by Mode, Time Period, and Iteration, where the user can configure what information is persisted for each path under each available combination of these labels.</p>
 <blockquote>
-<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> for the path remains in place. Currently, this requires including (external) ids of the related origin-destination zone. If not, the assignment will fail.</p>
+<p>If you decide to add and remove output properties, ensure that at least one method of unique <a href="#identification">identification</a> for the path remains in place. Currently, this requires including internal/XML/external ids of the related origin-destination zone. If not, the assignment will fail.</p>
 </blockquote>
 <h4 id="defaults">Defaults</h4>
 <p><em>ID_PRIORITY fields</em></p>
@@ -1889,32 +1889,62 @@
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>OutputProperty.TIME_PERIOD_XML_ID</code></td>
+<td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>OutputProperty.TIME_PERIOD_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.MODE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>OutputProperty.MODE_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.ORIGIN_ZONE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.DESTINATION_ZONE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
+<td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>OutputProperty.DESTINATION_ZONE_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code></td>
-<td align="left"><em>activated</em></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/outputpropertytype"><code>OutputProperties.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -1951,8 +1981,20 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>PathIdType.LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left"><code>PathIdType.LINK_SEGMENT_ID</code></td>
+<td align="left"><em>deactivated</em></td>
+<td align="center"><a href="../../enums/pathidtype"><code>PathIdType.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>PathIdType.LINK_SEGMENT_XML_ID</code></td>
 <td align="left"><em>activated</em></td>
+<td align="center"><a href="../../enums/pathidtype"><code>PathIdType.&lt;enum&gt;</code></a></td>
+<td align="center"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>PathIdType.LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left"><em>deactivated</em></td>
 <td align="center"><a href="../../enums/pathidtype"><code>PathIdType.&lt;enum&gt;</code></a></td>
 <td align="center"><code>None</code></td>
 </tr>
@@ -2006,20 +2048,20 @@
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">ORIGIN_ZONE_ID</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">DESTINATION_ZONE_ID</span><span style="color:#000;font-weight:bold">)</span>
 
-<span style="color:#8f5902;font-style:italic"># switch the path identification from LINK_SEGMENT_EXTERNAL_ID (default) to NODE_EXTERNAL_ID </span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PathIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic"># switch the path identification from LINK_SEGMENT_XML_ID (default) to NODE_XML_ID </span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PathIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_XML_ID</span><span style="color:#000;font-weight:bold">)</span>
 
 
 </code></pre></div><h4 id="identification">Identification</h4>
-<p>Each path is by default identified by</p>
+<p>Each path (in addition to its path identifier) is by default identified by</p>
 <ul>
-<li><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, and</li>
-<li><code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code></li>
+<li><code>OutputProperty.ORIGIN_ZONE_XML_ID</code>, and</li>
+<li><code>OutputProperty.DESTINATION_ZONE_XML_ID</code></li>
 </ul>
 <p>Alternatively, the user can reconfigure this to using <a href="pc_add+"><code>.add(+)</code></a> and <a href="pc_remove+"><code>.remove(+)</code></a> to</p>
 <ul>
-<li><code>OutputProperty.ORIGIN_ZONE_ID</code>, and</li>
-<li><code>OutputProperty.DESTINATION_ZONE_ID</code></li>
+<li><code>OutputProperty.ORIGIN_ZONE_ID</code>, <code>OutputProperty.DESTINATION_ZONE_ID</code></li>
+<li><code>OutputProperty.ORIGIN_ZONE_EXTERNAL_ID</code>, <code>OutputProperty.DESTINATION_ZONE_EXTERNAL_ID</code></li>
 </ul>
 <p>Currently, no other identification methods are supported. So, make sure the properties of one of the two approaches are included in your configuration</p>
 <h4 id="see-also">See also</h4>

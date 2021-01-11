@@ -2037,7 +2037,7 @@
 <li>Row for each link (segment) result</li>
 <li>Value in each column of each row to store result value</li>
 </ul>
-<p>In the example below, you will find the XML meta-data file for basic link results, where we only activated link segment costs (although many other columns can be activated in your own simulation. The link segment (external) id and the mode (external) id uniquely identify each result row.</p>
+<p>In the example below, you will find the XML meta-data file for basic link results, where we only activated link segment costs (although many other columns can be activated in your own simulation. The link segment (XML) id and the mode (XML) id uniquely identify each result row.</p>
 <p>The CSV file contains the results for this example, where we only have a single row with non-zero results.</p>
 <blockquote>
 <p>In general, the CSV file is generally much much larger than the xml meta-data file.</p>
@@ -2069,14 +2069,14 @@
 	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode External Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode XML Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>string<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Cost<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2087,7 +2087,7 @@
 <span style="color:#204a87;font-weight:bold">&lt;/metadata&gt;</span>
 
 </code></pre></div><p>CSV example, with a cost of 6 minutes (0.1 h) for link segment 1, and mode 1</p>
-<pre><code class="language-CSV" data-lang="CSV">Link Segment External Id,Mode External Id,Cost
+<pre><code class="language-CSV" data-lang="CSV">Link Segment XML Id,Mode XML Id,Cost
 1,1,0.1
 </code></pre><h2 id="see-also">See Also</h2>
 <p><a href="output">PLANit Output Data Formats</a> for information on all available output formats<br>

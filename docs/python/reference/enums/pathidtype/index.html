@@ -30,7 +30,7 @@
 <meta itemprop="description" content="PathIdType types 
 ">
 
-<meta itemprop="wordCount" content="166">
+<meta itemprop="wordCount" content="201">
 
 
 
@@ -1882,23 +1882,33 @@
 </thead>
 <tbody>
 <tr>
-<td><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
-<td align="left">Path as a consecutive list of link segment ids as provided in the input</td>
-<td align="left">N/A</td>
-</tr>
-<tr>
 <td><code>LINK_SEGMENT_ID</code></td>
 <td align="left">Path as a consecutive list of link segment ids based on the internal PLANit ids</td>
 <td align="left">N/A</td>
 </tr>
 <tr>
-<td><code>NODE_EXTERNAL_ID</code></td>
-<td align="left">Path as a consecutive list of node ids as provided in the input</td>
+<td><code>LINK_SEGMENT_XML_ID</code></td>
+<td align="left">Path as a consecutive list of link segment XML ids as provided in the input</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
+<td align="left">Path as a consecutive list of link segment external ids as provided in the input</td>
 <td align="left">N/A</td>
 </tr>
 <tr>
 <td><code>NODE_ID</code></td>
 <td align="left">Path as a consecutive list of node ids based on the internal PLANit ids</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td><code>NODE_XML_ID</code></td>
+<td align="left">Path as a consecutive list of node XML ids as provided in the input</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td><code>NODE_EXTERNAL_ID</code></td>
+<td align="left">Path as a consecutive list of node external ids as provided in the input</td>
 <td align="left">N/A</td>
 </tr>
 </tbody>
@@ -1912,8 +1922,8 @@
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">activate_output</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PATH</span><span style="color:#000;font-weight:bold">)</span>
 
 
-<span style="color:#8f5902;font-style:italic"># use node external ids as the way to uniquely identify the path in the output, e.g. &#34;[1,5,4,7,9,etc.]&#34;</span>
-<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PathIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_EXTERNAL_ID</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic"># use node XML ids as the way to uniquely identify the path in the output, e.g. &#34;[1,5,4,7,9,etc.]&#34;</span>
+<span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_path_id_type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PathIdType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE_XML_ID</span><span style="color:#000;font-weight:bold">)</span>
 
 </code></pre></div><h4 id="see-also">See also</h4>
 <p><a href="../../outputconfiguration/path">Path Configuration</a> for the path configuration implementation where this enum is used</p>

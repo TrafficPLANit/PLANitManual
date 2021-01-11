@@ -30,7 +30,7 @@
 <meta itemprop="description" content="OutputProperty types 
 ">
 
-<meta itemprop="wordCount" content="758">
+<meta itemprop="wordCount" content="823">
 
 
 
@@ -1910,9 +1910,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>DESTINATION_ZONE_XML_ID</code></td>
+<td align="left">Destination zone XML id (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>DESTINATION_ZONE_EXTERNAL_ID</code></td>
-<td align="left">Destination zone id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Destination zone external id (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
@@ -1922,9 +1928,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>DOWNSTREAM_NODE_XML_ID</code></td>
+<td align="left">Link segment&rsquo;s downstream node XML id (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>DOWNSTREAM_NODE_EXTERNAL_ID</code></td>
-<td align="left">Link segment&rsquo;s downstream node id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Link segment&rsquo;s downstream node external id (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
@@ -1940,9 +1952,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>LINK_SEGMENT_XML_ID</code></td>
+<td align="left">Link segment XML id (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
-<td align="left">Link segment id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Link segment external id (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
@@ -1952,9 +1970,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>MODE_XML_ID</code></td>
+<td align="left">Mode id XML (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>MODE_EXTERNAL_ID</code></td>
-<td align="left">Mode id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Mode id external (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
@@ -1964,9 +1988,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>ORIGIN_ZONE_XML_ID</code></td>
+<td align="left">Origin zone XML id (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>ORIGIN_ZONE_EXTERNAL_ID</code></td>
-<td align="left">Origin zone id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Origin zone external id (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
@@ -1988,9 +2018,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>TIME_PERIOD_XML_ID</code></td>
+<td align="left">time period XML id (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>TIME_PERIOD_EXTERNAL_ID</code></td>
-<td align="left">time period id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">time period external id (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
@@ -2000,9 +2036,15 @@
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
+<td align="left"><code>UPSTREAM_NODE_XML_ID</code></td>
+<td align="left">Link segment&rsquo;s upstream node XML id (user)</td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
 <td align="left"><code>UPSTREAM_NODE_EXTERNAL_ID</code></td>
-<td align="left">Link segment&rsquo;s upstream node id (user)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Link segment&rsquo;s upstream node external id (user)</td>
+<td align="left"><code>string</code></td>
 <td align="left"><code>None</code></td>
 </tr>
 </tbody>
@@ -2125,7 +2167,7 @@
 <td align="left"><code>VC_RATIO</code></td>
 <td align="left">The volume to capacity ratio</td>
 <td align="left"><code>float</code></td>
-<td align="left"><code>None</code> ((veh/h)/(veh/h))</td>
+<td align="left"><code>None</code> (<code>(veh/h)/(veh/h)</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -2139,8 +2181,8 @@
 
 
 <span style="color:#8f5902;font-style:italic"># PATH</span>
-<span style="color:#8f5902;font-style:italic"># add the internal ids for the OD used in PLANit to the path output, in additional to</span>
-<span style="color:#8f5902;font-style:italic"># the default external ids available from the input files.</span>
+<span style="color:#8f5902;font-style:italic"># add the internal ids for the OD used in PLANit to the path output, in addition to</span>
+<span style="color:#8f5902;font-style:italic"># the default XML ids from the input files.</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">ORIGIN_ZONE_ID</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">assignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">path_configuration</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">add</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">OutputProperty</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">DESTINATION_ZONE_ID</span><span style="color:#000;font-weight:bold">)</span>
 

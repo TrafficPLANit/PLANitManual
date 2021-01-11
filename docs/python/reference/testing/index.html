@@ -1937,13 +1937,13 @@
 <p>Tests of the contents of the MemoryOutputFormatter use data transfer objects (DTOs). These objects are populated with expected result values in the Java code, and then stored in Java Maps. After the traffic assignment run has finished, the values stored in the MemoryOutputFormatter can be compared to these standard results in the code.</p>
 <p>Expected results for link output are stored in ResultDto objects. A ResultDto object is populated by its constructor call, which has the following arguments:</p>
 <ul>
-<li><em>startNodeId</em>		   external id of start node (used to define the link segment);</li>
-<li><em>endNodeId</em>			external id of end node (used to define the link segment);</li>
-<li><em>linkFlow</em>				 flow through link (output);</li>
-<li><em>linkCost</em>				 cost (travel time) of link (output);</li>
-<li><em>capacity</em>				 capacity of the link (input);</li>
-<li><em>length</em>					 length of the link (input);</li>
-<li><em>speed</em>					 travel speed of the link (input).</li>
+<li><em>startNodeId</em>		   		XML id of start node (used to define the link segment);</li>
+<li><em>endNodeId</em>				XML id of end node (used to define the link segment);</li>
+<li><em>linkFlow</em>				flow through link (output);</li>
+<li><em>linkCost</em>				cost (travel time) of link (output);</li>
+<li><em>capacity</em>				capacity of the link (input);</li>
+<li><em>length</em>					length of the link (input);</li>
+<li><em>speed</em>					travel speed of the link (input).</li>
 </ul>
 <p>ResultDto objects are stored in a Java Map whose keys are run id, time period and mode. Test cases may have more than one run, time period or mode so this allows all the results to be stored for each.</p>
 <p>The fifth argument in the ResultDto constructor, total cost to end node, is not currently used. This was originally included to provide a sort order for the ResultDto objects in the Map which stores them. This is quite helpful for human inspection of CSV output files but is not required for computerized testing.</p>

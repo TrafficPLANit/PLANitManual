@@ -32,7 +32,7 @@ We list the supported output properties for link (segment) ordered by their prio
 Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
 We list the supported output properties for link (segment) ordered by their priority (id, input, output).">
 
-<meta itemprop="wordCount" content="347">
+<meta itemprop="wordCount" content="395">
 
 
 
@@ -1882,73 +1882,103 @@ We list the supported output properties for link (segment) ordered by their prio
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_ID</code></td>
 <td align="left">Link segment&rsquo;s downstream node id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>DOWNSTREAM_NODE_XML_ID</code></td>
+<td align="left">Link segment&rsquo;s downstream node XML id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_EXTERNAL_ID</code></td>
-<td align="left">Link segment&rsquo;s downstream node id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Link segment&rsquo;s downstream node external id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>ITERATION_INDEX</code></td>
 <td align="left">Iteration index of simulation</td>
-<td align="left"><code>integer</code></td>
+<td align="left">integer</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_SEGMENT_ID</code></td>
 <td align="left">Link segment id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>LINK_SEGMENT_XML_ID</code></td>
+<td align="left">Link segment XML id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_SEGMENT_EXTERNAL_ID</code></td>
-<td align="left">Link segment id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Link segment external id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>MODE_ID</code></td>
 <td align="left">Mode id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODE_XML_ID</code></td>
+<td align="left">Mode XML id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>MODE_EXTERNAL_ID</code></td>
-<td align="left">Mode id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Mode external id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>RUN_ID</code></td>
 <td align="left">simulation run id</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>TIME_PERIOD_ID</code></td>
 <td align="left">time period id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>TIME_PERIOD_XML_ID</code></td>
+<td align="left">time period XML id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>TIME_PERIOD_EXTERNAL_ID</code></td>
-<td align="left">time period id (input)</td>
-<td align="left"><code>long</code></td>
+<td align="left">time period external id (input)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>UPSTREAM_NODE_ID</code></td>
 <td align="left">Link segment&rsquo;s upstream node id (internal)</td>
-<td align="left"><code>long</code></td>
+<td align="left">long</td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr>
+<td align="left"><code>UPSTREAM_NODE_XML_ID</code></td>
+<td align="left">Link segment&rsquo;s upstream XML node id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>UPSTREAM_NODE_EXTERNAL_ID</code></td>
-<td align="left">Link segment&rsquo;s upstream node id (user)</td>
-<td align="left"><code>long</code></td>
+<td align="left">Link segment&rsquo;s upstream external node id (user)</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 </tbody>
@@ -1967,49 +1997,49 @@ We list the supported output properties for link (segment) ordered by their prio
 <tr>
 <td align="left"><code>CAPACITY_PER_LANE</code></td>
 <td align="left">The capacity flow rate for a lane</td>
-<td align="left"><code>float</code></td>
-<td align="left">veh/h(/l)</td>
+<td align="left">float</td>
+<td align="left"><code>veh/h(/l)</code></td>
 </tr>
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_LOCATION</code></td>
 <td align="left">The geographic location of the downstream node (if present)</td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>SRS</code></td>
 </tr>
 <tr>
 <td align="left"><code>LENGTH</code></td>
 <td align="left">The length</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>km</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_TYPE</code></td>
 <td align="left">The link segment type&rsquo;s name (input)</td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>MAXIMUM_DENSITY</code></td>
 <td align="left">The maximum density allowed on the link segment</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>veh/km</code></td>
 </tr>
 <tr>
 <td align="left"><code>MAXIMUM_SPEED</code></td>
 <td align="left">The maximum allowed speed</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>km/h</code></td>
 </tr>
 <tr>
 <td align="left"><code>NUMBER_OF_LANES</code></td>
 <td align="left">The number of lanes</td>
-<td align="left"><code>integer</code></td>
+<td align="left">integer</td>
 <td align="left"><code>None</code></td>
 </tr>
 <tr>
 <td align="left"><code>UPSTREAM_NODE_LOCATION</code></td>
 <td align="left">The geographic location of the upstream node (if present)</td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>SRS</code></td>
 </tr>
 </tbody>
@@ -2028,38 +2058,38 @@ We list the supported output properties for link (segment) ordered by their prio
 <tr>
 <td align="left"><code>CALCULATED_SPEED</code></td>
 <td align="left">The calculate speed</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>km/h</code></td>
 </tr>
 <tr>
 <td align="left"><code>COST_TIMES_FLOW</code></td>
 <td align="left">The cost (per vehicle) multiplied with the volume (per hour) on the entity</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>h</code> (i.e., (h/veh)*(veh/1)) <strong>TODO: should be in PCU</strong></td>
 </tr>
 <tr>
 <td align="left"><code>DENSITY</code></td>
 <td align="left">The density on the link segment</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>veh/km</code></td>
 </tr>
 <tr>
 <td align="left"><code>FLOW</code></td>
 <td align="left">The flow rate</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>veh/h</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_COST</code></td>
 <td align="left">The link segment&rsquo;s generalised cost</td>
-<td align="left"><code>float</code></td>
+<td align="left">float</td>
 <td align="left"><code>h</code></td>
 </tr>
 <tr>
 <td align="left"><code>VC_RATIO</code></td>
 <td align="left">The volume to capacity ratio</td>
-<td align="left"><code>float</code></td>
-<td align="left"><code>None</code> ((veh/h)/(veh/h))</td>
+<td align="left">float</td>
+<td align="left"><code>None</code> (<code>(veh/h)/(veh/h)</code>)</td>
 </tr>
 </tbody>
 </table>
