@@ -44,7 +44,7 @@
 &lt;/ul&gt;
 &lt;p&gt;or decide to store all inputs in the same file, e.g.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;my_planit_input.xml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_planit_input.xml&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The former is useful if you have a large project, where you - for example - have multiple zoning systems that you want to apply to the same network, or you have multiple networks that you want to test with the same demands. If however, you just want to run a single traffic assignment run with one network, one set of demands, and one zoning structure, it is probably easiest to just construct your inputs in a single file.&lt;/p&gt;
 &lt;p&gt;In practice, there is no difference in how the inputs are constructed. Each major input is identified with a particular XML element signature by PLANit. As long as there is an XML file - with any name - in the directory that contains the required XML element signature, PLANit will attempt to parse it accordingly.&lt;/p&gt;
@@ -53,7 +53,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
 		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_schema&amp;gt;/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;						
 		...
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
@@ -77,7 +77,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
 	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
 	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to&amp;gt;/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 	
 	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Do things conform XSD Schema macroscopicinput.xsd --&amp;gt;&lt;/span&gt;
 	
@@ -85,17 +85,14 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Below you will find which schema definition goes with what input file configuration.&lt;/p&gt;
 &lt;p&gt;Single XML input file:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;macroscopicinput.xsd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicinput.xsd&#34;&gt;&lt;code&gt;macroscopicinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Separate XML input files:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;macroscopicdemandinput.xsd&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;macroscopicnetworkinput.xsd&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;macroscopiczoninginput.xsd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicdemandinput.xsd&#34;&gt;&lt;code&gt;macroscopicdemandinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicnetworkinput.xsd&#34;&gt;&lt;code&gt;macroscopicnetworkinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopiczoninginput.xsd&#34;&gt;&lt;code&gt;macroscopiczoninginput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can download the XSD files from the repository and store them locally. In the future we intend to provide them online so you can simply refer to them by providing the url.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;Schema definitions are also defined in XML, but are stored in files with the &lt;code&gt;.xsd&lt;/code&gt; extension. PLANit has XSD files for each of the major input components as well as the output meta-data XML.&lt;/p&gt;
 &lt;p&gt;In this manual we provide you with a user friendly description of the specification laid-out in the PLANit XSD files as well a references to the files themselves for the more technically inclined readers.&lt;/p&gt;
 &lt;h3 id=&#34;geo-spatial-xml--gml&#34;&gt;Geo-spatial XML = GML&lt;/h3&gt;

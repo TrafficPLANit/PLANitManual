@@ -1889,7 +1889,7 @@
 </ul>
 <p>or decide to store all inputs in the same file, e.g.</p>
 <ul>
-<li><code>my_planit_input.xml</code>.</li>
+<li><code>my_planit_input.xml</code></li>
 </ul>
 <p>The former is useful if you have a large project, where you - for example - have multiple zoning systems that you want to apply to the same network, or you have multiple networks that you want to test with the same demands. If however, you just want to run a single traffic assignment run with one network, one set of demands, and one zoning structure, it is probably easiest to just construct your inputs in a single file.</p>
 <p>In practice, there is no difference in how the inputs are constructed. Each major input is identified with a particular XML element signature by PLANit. As long as there is an XML file - with any name - in the directory that contains the required XML element signature, PLANit will attempt to parse it accordingly.</p>
@@ -1898,7 +1898,7 @@
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; encoding=&#34;ISO-8859-1&#34;?&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;PLANit</span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
-		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_schema&gt;/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>						
 		...
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
@@ -1922,7 +1922,7 @@
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span> <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
 	<span style="color:#c4a000">xmlns:xml=</span><span style="color:#4e9a06">&#34;http://www.w3.org/XML/1998/namespace&#34;</span>
 	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 	
 	<span style="color:#8f5902;font-style:italic">&lt;!-- Do things conform XSD Schema macroscopicinput.xsd --&gt;</span>
 	
@@ -1930,17 +1930,14 @@
 </code></pre></div><p>Below you will find which schema definition goes with what input file configuration.</p>
 <p>Single XML input file:</p>
 <ul>
-<li><code>macroscopicinput.xsd</code></li>
+<li><a href="../../../../xsd/macroscopicinput.xsd"><code>macroscopicinput.xsd</code></a></li>
 </ul>
 <p>Separate XML input files:</p>
 <ul>
-<li><code>macroscopicdemandinput.xsd</code></li>
-<li><code>macroscopicnetworkinput.xsd</code></li>
-<li><code>macroscopiczoninginput.xsd</code></li>
+<li><a href="../../../../xsd/macroscopicdemandinput.xsd"><code>macroscopicdemandinput.xsd</code></a></li>
+<li><a href="../../../../xsd/macroscopicnetworkinput.xsd"><code>macroscopicnetworkinput.xsd</code></a></li>
+<li><a href="../../../../xsd/macroscopiczoninginput.xsd"><code>macroscopiczoninginput.xsd</code></a></li>
 </ul>
-<blockquote>
-<p>You can download the XSD files from the repository and store them locally. In the future we intend to provide them online so you can simply refer to them by providing the url.</p>
-</blockquote>
 <p>Schema definitions are also defined in XML, but are stored in files with the <code>.xsd</code> extension. PLANit has XSD files for each of the major input components as well as the output meta-data XML.</p>
 <p>In this manual we provide you with a user friendly description of the specification laid-out in the PLANit XSD files as well a references to the files themselves for the more technically inclined readers.</p>
 <h3 id="geo-spatial-xml--gml">Geo-spatial XML = GML</h3>
@@ -2396,7 +2393,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	

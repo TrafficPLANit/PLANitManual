@@ -22,25 +22,22 @@
 
 <title>Physical Network Input Data format (XML) | PLANit</title><meta property="og:title" content="Physical Network Input Data format (XML)" />
 <meta property="og:description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
-If you are only interested to see an example file, jump to the Expanded Example.
-&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;." />
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Physical Network Input Data format (XML)">
 <meta itemprop="description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
-If you are only interested to see an example file, jump to the Expanded Example.
-&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;.">
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="4079">
+<meta itemprop="wordCount" content="4085">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Physical Network Input Data format (XML)"/>
 <meta name="twitter:description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
-If you are only interested to see an example file, jump to the Expanded Example.
-&lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;macroscopicnetwork&gt;."/>
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components."/>
 
 
 
@@ -1913,12 +1910,15 @@ If you are only interested to see an example file, jump to the Expanded Example.
     
 	       
 	<p>In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.</p>
-<p>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</p>
+<ul>
+<li>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</li>
+<li>XML Schema of macroscopic network <a href="../../../../../xsd/macroscopicnetworkinput.xsd">https://planitmanual.github.io/version/<version>/xsd/macroscopicnetworkinput.xsd</a></li>
+</ul>
 <h2 id="macroscopicnetwork">&lt;macroscopicnetwork&gt;</h2>
 <p>Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element <code>&lt;macroscopicnetwork&gt;</code>. When part of a larger (single) PLANit input file, the structure should resemble something like the following:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
-		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>
 		...
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
@@ -1927,8 +1927,7 @@ If you are only interested to see an example file, jump to the Expanded Example.
 </code></pre></div><p>Whereas if, it is a stand-alone file, it should look something like</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork</span>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
-	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopicnetworkinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span> 	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicnetworkinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 ...	
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
 </code></pre></div><p>This root element can contain only two sub-elements:</p>
@@ -3890,7 +3889,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	

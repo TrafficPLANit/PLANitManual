@@ -23,12 +23,15 @@
         
         
         &lt;p&gt;In this section of the manual we discuss the Physical Network infrastructure&amp;rsquo;s XML input format used by PLANit.&lt;/p&gt;
-&lt;p&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;XML Schema of macroscopic network &lt;a href=&#34;../../../../../xsd/macroscopicnetworkinput.xsd&#34;&gt;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicnetworkinput.xsd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;macroscopicnetwork&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/h2&gt;
 &lt;p&gt;Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components. Either way, all physical transport network infrastructure is enclosed within the XML root element &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt;. When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
 		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;
 		...
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
@@ -37,8 +40,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a stand-alone file, it should look something like&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&lt;/span&gt;
 	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicnetworkinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt; 	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicnetworkinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 ...	
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This root element can contain only two sub-elements:&lt;/p&gt;
@@ -1971,14 +1973,16 @@ It also must have a unique identifier (external id) available as an attribute:&l
         
         
         &lt;p&gt;In this section of the manual we discuss the Zoning structure&amp;rsquo;s XML input format used by PLANit.&lt;/p&gt;
-&lt;p&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;XML Schema of macroscopic zoning &lt;a href=&#34;../../../../../xsd/macroscopiczoninginput.xsd&#34;&gt;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopiczoninginput.xsd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points.&lt;/p&gt;
 &lt;p&gt;The zoning structure in this input file describes the zones, centroids, and connectoids for a PLANit project.&lt;/p&gt;
 &lt;h2 id=&#34;macroscopiczoning&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/h2&gt;
 &lt;p&gt;The zoning structure can be described in a stand alone XML file - only providing the zoning structure - or it can be provided as part of a PLANit XML file describing all input components. Either way, all the zoning structure specific information is enclosed within the XML root element &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt;. When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;											
 	...
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
 		...
@@ -1988,8 +1992,7 @@ It also must have a unique identifier (external id) available as an attribute:&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a stand-alone file, it should look something like&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&lt;/span&gt;
 	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopiczoninginput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopiczoninginput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 ...	
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This root element can contain only a single sub-elements:&lt;/p&gt;
@@ -2370,7 +2373,10 @@ It also must have a unique identifier (external id) available as an attribute:&l
         
         
         &lt;p&gt;In this section of the manual we discuss the Demands&amp;rsquo; XML input format used by PLANit.&lt;/p&gt;
-&lt;p&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are only interested to see an example file, jump to the &lt;a href=&#34;./#expanded-example&#34;&gt;Expanded Example&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;XML Schema of macroscopic demands &lt;a href=&#34;../../../../../xsd/macroscopicdemandinput.xsd&#34;&gt;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicdemandinput.xsd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Demands are specified in trips between zones for a given modality (mode) and for a given duration (time period).&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Units: trips are always in veh/h, regardless of the duration specified. So, if you would specify &amp;lsquo;100&amp;rsquo; veh/h between two points, while the duration of the time is 10 hours. Then, the total number of trips equates to 10*100=1000.&lt;/p&gt;
@@ -2391,7 +2397,7 @@ It also must have a unique identifier (external id) available as an attribute:&l
 &lt;p&gt;The demands structure can be described in a stand alone XML file - only providing the demands structure - or it can be provided as part of a PLANit XML file describing all input components. Either way, all the demands structure specific information is enclosed within the XML root element &lt;code&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/code&gt;. When part of a larger (single) PLANit input file, the structure should resemble something like the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
 		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 	...
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;
 		...
@@ -2401,7 +2407,7 @@ It also must have a unique identifier (external id) available as an attribute:&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whereas if, it is a stand-alone file, it should look something like&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&lt;/span&gt;
 	 &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;									
-	 &lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;../schema/macroscopicdemandinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicdemandinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 ...	
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This root element can contain two sub-elements:&lt;/p&gt;

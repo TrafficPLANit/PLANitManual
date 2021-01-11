@@ -22,25 +22,22 @@
 
 <title>Zoning Structure Input Data format (XML) | PLANit</title><meta property="og:title" content="Zoning Structure Input Data format (XML)" />
 <meta property="og:description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
-If you are only interested to see an example file, jump to the Expanded Example.
-Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points." />
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Zoning Structure Input Data format (XML)">
 <meta itemprop="description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
-If you are only interested to see an example file, jump to the Expanded Example.
-Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points.">
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.">
 
-<meta itemprop="wordCount" content="1416">
+<meta itemprop="wordCount" content="1422">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Zoning Structure Input Data format (XML)"/>
 <meta name="twitter:description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
-If you are only interested to see an example file, jump to the Expanded Example.
-Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points."/>
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i."/>
 
 
 
@@ -1890,14 +1887,16 @@ Zones are the geographical areas for which we construct travel demand which are 
     
 	       
 	<p>In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.</p>
-<p>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</p>
+<ul>
+<li>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</li>
+<li>XML Schema of macroscopic zoning <a href="../../../../../xsd/macroscopiczoninginput.xsd">https://planitmanual.github.io/version/<version>/xsd/macroscopiczoninginput.xsd</a></li>
+</ul>
 <p>Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points.</p>
 <p>The zoning structure in this input file describes the zones, centroids, and connectoids for a PLANit project.</p>
 <h2 id="macroscopiczoning">&lt;macroscopiczoning&gt;</h2>
 <p>The zoning structure can be described in a stand alone XML file - only providing the zoning structure - or it can be provided as part of a PLANit XML file describing all input components. Either way, all the zoning structure specific information is enclosed within the XML root element <code>&lt;macroscopiczoning&gt;</code>. When part of a larger (single) PLANit input file, the structure should resemble something like the following:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;PLANit</span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
-		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>											
 	...
 	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning&gt;</span>
 		...
@@ -1907,8 +1906,7 @@ Zones are the geographical areas for which we construct travel demand which are 
 </code></pre></div><p>Whereas if, it is a stand-alone file, it should look something like</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning</span>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
-	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;../schema/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 ...	
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
 </code></pre></div><p>This root element can contain only a single sub-elements:</p>
@@ -2318,7 +2316,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2020 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/PLANitManual/about/">About PLANit</a></p>
 	
