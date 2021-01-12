@@ -30,7 +30,7 @@
 <meta itemprop="description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.">
 
-<meta itemprop="wordCount" content="1422">
+<meta itemprop="wordCount" content="1418">
 
 
 
@@ -1977,7 +1977,7 @@
 </table>
 <h2 id="-zone">&lt;&gt; <strong>&lt;zone&gt;</strong></h2>
 <p>A zone is a single geographic area that is usually constructed because it is deemed to represent a desirable level of travel demand homogeneity. Alternatively, it can be based on historic, political, or other criteria based, boundaries. It is expected to be contiguous with respect to other zones, should not overlap, and should not be bordering on only a single other zone (donut approach).</p>
-<p>Each zone has exactly one centroid from which travel can commence/cease. The physical road network is accessible via eligible nodes, termed connectoids. Each zone must have a unique (external) identifier that is made available via an attribute.</p>
+<p>Each zone has exactly one centroid from which travel can commence/cease. The physical road network is accessible via eligible nodes, termed connectoids. Each zone must have a unique (XML) identifier that is made available via an attribute.</p>
 <table>
 <thead>
 <tr>
@@ -1991,10 +1991,10 @@
 <tbody>
 <tr>
 <td align="left"><code>id</code></td>
-<td align="left"><code>positive integer</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">User identifier for the zone, i.e., its external id</td>
+<td align="left">User identifier for the zone, i.e., its XML id</td>
 </tr>
 </tbody>
 </table>
@@ -2013,7 +2013,7 @@
 <tbody>
 <tr>
 <td align="left"><code>&lt;name&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">NO</td>
 <td align="left"><code>&quot;&quot;</code></td>
@@ -2072,7 +2072,7 @@
 <span style="color:#204a87;font-weight:bold">&lt;/gml:Polygon&gt;</span>
 </code></pre></div><h3 id="-centroid">&lt;&gt;&lt;&gt; <strong>&lt;centroid&gt;</strong></h3>
 <p>Point of ingress/egress for all travel demand in the zone. A centroid has an optional geographic location. This location is used to determine the length of the virtual link connecting the centroid to each of its connectoids. When absent, either the connectoids specify a fixed length, or the default length is applied.</p>
-<p>Each centroid has a unique (external) id that is provided as an attribute.</p>
+<p>Each centroid has a unique (XML) id that is provided as an attribute.</p>
 <table>
 <thead>
 <tr>
@@ -2086,10 +2086,10 @@
 <tbody>
 <tr>
 <td align="left"><code>id</code></td>
-<td align="left"><code>positive integer	</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">User identifier for the centroid, i.e., its external id</td>
+<td align="left">User identifier for the centroid, i.e., its XML id</td>
 </tr>
 </tbody>
 </table>
@@ -2108,7 +2108,7 @@
 <tbody>
 <tr>
 <td align="left"><code>&lt;name&gt;</code></td>
-<td align="left"><code>string</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">NO</td>
 <td align="left"><code>&quot;&quot;</code></td>
@@ -2177,7 +2177,7 @@
 <li>If no length is provided, as-the-crow-flies distance between the centroid&rsquo;s and node&rsquo;s geographic locations is used,</li>
 <li>if geo-spatial information is absent and no length is specified, the default length is used</li>
 </ul>
-<p>Each connectoid must have a unique (external) identifier that is made available via an attribute.</p>
+<p>Each connectoid must have a unique (XML) identifier that is made available via an attribute.</p>
 <table>
 <thead>
 <tr>
@@ -2191,17 +2191,17 @@
 <tbody>
 <tr>
 <td align="left"><code>id</code></td>
-<td align="left"><code>positive integer</code></td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">User identifier for the connectoid, i.e., its external id</td>
+<td align="left">User identifier for the connectoid, i.e., its XML id</td>
 </tr>
 <tr>
 <td align="left"><code>noderef</code></td>
-<td align="left">positive integer</td>
+<td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">Reference to the node&rsquo;s (external) id this connectoid marks as an eligible point of ingress/egress for its zone</td>
+<td align="left">Reference to the node&rsquo;s (XML) id this connectoid marks as an eligible point of ingress/egress for its zone</td>
 </tr>
 </tbody>
 </table>

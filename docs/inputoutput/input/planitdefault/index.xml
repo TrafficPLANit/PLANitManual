@@ -74,7 +74,7 @@
 &lt;h2 id=&#34;available-predefined-modes&#34;&gt;Available predefined modes&lt;/h2&gt;
 &lt;p&gt;A predefined mode can be activated by creating a new mode under the &lt;a href=&#34;./#-modes&#34;&gt;modes element&lt;/a&gt; and set its name to the name outlined for the predefined mode. PLANit provides the following predefined modes &amp;ldquo;out of the box&amp;rdquo;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Predefined mode names are protected, meaning that if you attempt to define your own mode with its own attributes but use a predefined mode&amp;rsquo;s name. PLANit will overwrite your settings with the defaults.&lt;/p&gt;
+&lt;p&gt;Predefined mode names are protected, meaning that if you attempt to define your own mode with its own attributes but use a predefined mode&amp;rsquo;s name (id). PLANit will overwrite your settings with the defaults.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Bicycle:&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -97,7 +97,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;bicycle&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -167,7 +167,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;bus&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -237,7 +237,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;car&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -307,7 +307,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;car_hov&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -377,7 +377,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;car_share&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -447,7 +447,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;gv&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -517,7 +517,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;hgv&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -587,7 +587,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;lhgv&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -657,7 +657,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;light_rail&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -727,7 +727,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;motor_bike&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -797,7 +797,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;pedestrian&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -867,7 +867,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;subway&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -937,7 +937,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;train&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
@@ -1007,7 +1007,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;(XML) Id&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;&amp;quot;tram&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;XML id to reference the mode&lt;/td&gt;
