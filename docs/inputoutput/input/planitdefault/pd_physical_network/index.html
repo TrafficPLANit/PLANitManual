@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -21,22 +21,22 @@
 <link rel="icon" type="image/png" href="/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
 <title>Physical Network Input Data format (XML) | PLANit</title><meta property="og:title" content="Physical Network Input Data format (XML)" />
-<meta property="og:description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
+<meta property="og:description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_physical_network/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Physical Network Input Data format (XML)">
-<meta itemprop="description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
+<meta itemprop="description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="4079">
+<meta itemprop="wordCount" content="4417">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Physical Network Input Data format (XML)"/>
-<meta name="twitter:description" content="In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.
+<meta name="twitter:description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components."/>
 
 
@@ -1815,7 +1815,7 @@
       </ul>
     </li>
     <li><a href="#xml-elements">XML Elements</a></li>
-    <li><a href="#linkconfiguration"><strong>&lt;linkconfiguration&gt;</strong></a>
+    <li><a href="#configuration"><strong>&lt;configuration&gt;</strong></a>
       <ul>
         <li><a href="#-modes">&lt;&gt; <strong>&lt;modes&gt;</strong></a></li>
         <li><a href="#-mode">&lt;&gt;&lt;&gt; <strong>&lt;mode&gt;</strong></a></li>
@@ -1823,15 +1823,14 @@
         <li><a href="#-usabilityfeatures">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;usabilityfeatures&gt;</strong></a></li>
       </ul>
     </li>
-    <li><a href="#-linksegmenttypes">&lt;&gt; <strong>&lt;linksegmenttypes&gt;</strong></a>
+    <li><a href="#infrastructurelayers">&lt;infrastructurelayers&gt;</a>
       <ul>
+        <li><a href="#layer">&lt;layer&gt;</a></li>
+        <li><a href="#-layerconfiguration">&lt;&gt; <strong>&lt;layerconfiguration&gt;</strong></a></li>
+        <li><a href="#-linksegmenttypes">&lt;&gt; <strong>&lt;linksegmenttypes&gt;</strong></a></li>
         <li><a href="#-linksegmenttype">&lt;&gt;&lt;&gt; <strong>&lt;linksegmenttype&gt;</strong></a></li>
         <li><a href="#-access">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;access&gt;</strong></a></li>
         <li><a href="#-mode-1">&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;mode&gt;</strong></a></li>
-      </ul>
-    </li>
-    <li><a href="#infrastructure">&lt;infrastructure&gt;</a>
-      <ul>
         <li><a href="#-nodes">&lt;&gt; <strong>&lt;nodes&gt;</strong></a></li>
         <li><a href="#-node">&lt;&gt;&lt;&gt; <strong>&lt;node&gt;</strong></a></li>
         <li><a href="#-links">&lt;&gt; <strong>&lt;links&gt;</strong></a></li>
@@ -1909,7 +1908,7 @@
 	<h1>Physical Network Input Data format (XML)</h1>
     
 	       
-	<p>In this section of the manual we discuss the Physical Network infrastructure&rsquo;s XML input format used by PLANit.</p>
+	<p>In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.</p>
 <ul>
 <li>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</li>
 <li>XML Schema of macroscopic network <a href="../../../../../xsd/macroscopicnetworkinput.xsd">https://planitmanual.github.io/version/<version>/xsd/macroscopicnetworkinput.xsd</a></li>
@@ -1942,21 +1941,22 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="./#linkconfiguration"><code>&lt;linkconfiguration&gt;</code></a></td>
+<td align="left"><a href="./#configuration"><code>&lt;configuration&gt;</code></a></td>
 <td align="left">NO</td>
 <td align="left">1</td>
-<td align="left">Configuration of network (modes, link segment types etc.)</td>
+<td align="left">General configuration of network as a whole (modes, etc.)</td>
 </tr>
 <tr>
-<td align="left"><a href="./#infrastructure"><code>&lt;infrastructure&gt;</code></a></td>
+<td align="left"><a href="./#infrastructurelayers"><code>&lt;infrastructurelayers&gt;</code></a></td>
 <td align="left">YES</td>
 <td align="left">1</td>
 <td align="left">Network content</td>
 </tr>
 </tbody>
 </table>
-<p>In the remainder of this page, we discuss each of the eligible XML elements in order of expected appearance, its attributes and sub-elements or simple elements (elements without sub-elements). At the bottom of the page an <a href="./#expanded-example">expanded example</a> is provided highlighting all the available options explicitly.</p>
-<p>We also discuss the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these <a href="./#network-defaults">defaults</a>.</p>
+<p>the configuraton deals with overall configuration options across all infrastructure layers. Each infrastructure layer within the infrastructure layers element defines physical infrastructure for one or more of network modes.</p>
+<p>In the remainder of this page, we discuss each of the eligible XML elements in order of expected appearance in detail. We explore their attributes, sub-elements, or simple elements (elements without sub-elements). At the bottom of the page an <a href="./#expanded-example">expanded example</a> is provided highlighting all the available options explicitly.</p>
+<p>Before we do so, we discuss the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these <a href="./#network-defaults">defaults</a>.</p>
 <p>Lastly, PLANit comes with a number of predefined modes. When these modes are activated in the network file, the user only needs to specify their name, the properties, e.g., pcu value, features, will be populated based on the mode&rsquo;s defaults.</p>
 <h2 id="available-predefined-modes">Available predefined modes</h2>
 <p>A predefined mode can be activated by creating a new mode under the <a href="./#-modes">modes element</a> and set its name to the name outlined for the predefined mode. PLANit provides the following predefined modes &ldquo;out of the box&rdquo;.</p>
@@ -2946,13 +2946,13 @@
 <h2 id="network-defaults">Network defaults</h2>
 <p>Each network entity/element&rsquo;s defaults are listed below.</p>
 <h3 id="default-mode">Default Mode</h3>
-<p>When no modes are specified under the <code>&lt;linkconfiguration&gt;</code> the single predefined mode of type <code>car</code> is created to represent all modes, see <a href="./#available-predefined-modes">predefined modes</a>.</p>
+<p>When no modes are specified under the <a href="./#configuration"><code>&lt;configuration&gt;</code></a> the single predefined mode of type <code>car</code> is created to represent all modes, see <a href="./#available-predefined-modes">predefined modes</a>.</p>
 <ul>
 <li>No explicit references to modes are to be made in other XML elements with optional mode attributes because there is no mode to explicitly refer to.</li>
 <li>It is assumed that all link segments are accessible to the default mode and that all demand utilises this default mode of travel.</li>
 </ul>
 <h3 id="default-link-segment-type">Default Link Segment Type</h3>
-<p>When no link segment types are specified under the <code>&lt;linkconfiguration&gt;</code> a single default link segment type is created that is applied to all link segments. In that case, the default link segment type accepts all available modes.</p>
+<p>When no link segment types are specified under any <a href="./#-layerconfiguration"><code>&lt;layerconfiguration&gt;</code></a> a single default link segment type is created that is applied to all link segments. In that case, the default link segment type accepts all available modes.</p>
 <p>The <strong>Default Link Segment Type</strong> has the following characteristics:</p>
 <table>
 <thead>
@@ -2996,7 +2996,7 @@
 </tbody>
 </table>
 <h3 id="default-link-segment-type-mode-properties">Default Link Segment Type Mode Properties</h3>
-<p>When one or more mode specific properties are not specified for a mode when configuring the <code>&lt;linksegmenttype&gt;</code> element under <code>&lt;linkconfiguration&gt;</code> default values will be applied. It is not advisable to leave this out for anything else but testing purposes, since it is unlikely that the defaults accurately reflect the true conditions.</p>
+<p>When one or more mode specific properties are not specified for a mode when configuring the <code>&lt;linksegmenttype&gt;</code> element under <a href="./#layer-configuration"><code>&lt;layerconfiguration&gt;</code></a> default values will be applied. It is not advisable to leave this out for anything else but testing purposes, since it is unlikely that the defaults accurately reflect the true conditions.</p>
 <p>The <strong>Default Link Segment Type Mode Properties</strong> has the following characteristics:</p>
 <table>
 <thead>
@@ -3027,8 +3027,8 @@
 </table>
 <h2 id="xml-elements">XML Elements</h2>
 <p>This section discusses the XML elements under the <code>&lt;macroscopicnetwork&gt;</code> root element in expected order of appearance.</p>
-<h2 id="linkconfiguration"><strong>&lt;linkconfiguration&gt;</strong></h2>
-<p>Optional configuration of the physical road network. When not specified, the <a href="./#default-mode">default mode</a> and <a href="./#default-link-segment-type">default link segment type</a> will be activated. This element has the following sub-elements:</p>
+<h2 id="configuration"><strong>&lt;configuration&gt;</strong></h2>
+<p>Optional configuration of the physical road network. When not specified, the <a href="./#default-mode">default mode</a> will be activated. This element has the following sub-elements:</p>
 <table>
 <thead>
 <tr>
@@ -3044,12 +3044,6 @@
 <td align="left">NO</td>
 <td align="left">1</td>
 <td align="left">Modes available in this network</td>
-</tr>
-<tr>
-<td align="left"><a href="./#-linksegmenttypes"><code>&lt;linksegmenttypes&gt;</code></a></td>
-<td align="left">NO</td>
-<td align="left">1</td>
-<td align="left">Link segment type available in this network</td>
 </tr>
 </tbody>
 </table>
@@ -3094,6 +3088,13 @@
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">User identifier for the mode, i.e., its XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">optional third party identifier</td>
 </tr>
 </tbody>
 </table>
@@ -3232,9 +3233,141 @@
 </tr>
 </tbody>
 </table>
-<h2 id="-linksegmenttypes">&lt;&gt; <strong>&lt;linksegmenttypes&gt;</strong></h2>
-<p>Link segment types define the different types of link segment properties that can be attributed to links, including mode specific attributes.This is useful to attach a set of common properties to multiple links by referring to the same link segment type.</p>
-<p>When absent a <a href="./#default-link-segment-type">default link segments type</a> is created and applied to all link segments in the network.</p>
+<h2 id="infrastructurelayers">&lt;infrastructurelayers&gt;</h2>
+<p>The infrastructure layers element contains all the physical network infrastructure (layers) available. It consists of one or more layers, each containing for example nodes, links, and link segments. An optional Spatial Reference System (SRS) SRID string can be provided across all layers here to identify how to interpret the geo-spatial location information embedded in the elements via GML.</p>
+<p>The SRS identifier is set through an attribute. When absent WGS84 is assumed for geo-information</p>
+<blockquote>
+<p>Geo-location information can be left out, but in that case, it is expected the user explicitly sets the lengths on all link (segments) since they cannot be computed based on the SRS.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>srsname</code></td>
+<td align="left">string</td>
+<td align="left"><code>SRS</code></td>
+<td align="left">NO</td>
+<td align="left">Spatial Reference System SRID</td>
+</tr>
+</tbody>
+</table>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-layer"><code>&lt;layer&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">unbounded</td>
+<td align="left">infrastructure layer, representation of network for one or more modes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="layer">&lt;layer&gt;</h3>
+<p>Each infrastructure layer uniquely defines the physical environment supporting one or more modes. Each layer has its own configuration regarding for example the link segment types it supports.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">Unique identifier for the layer, i.e., XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">third party identifier for the layer</td>
+</tr>
+<tr>
+<td align="left"><code>modes</code></td>
+<td align="left">string (comma separated)</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">comma separated string of mode (XML) ids</td>
+</tr>
+</tbody>
+</table>
+<p>The modes attributes should reference one or more of the modes defined under <code>&lt;configuration&gt;</code> in a comma separated fashion, e.g., <code>modes=&quot;car,bus&quot;</code>. A mode supported can only be supported by one layer and one layer only. In case the <code>modes</code> attribute is absent, it is assumed only a single layer is present an all modes are supported by this layer by default.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-layerconfiguration"><code>&lt;layerconfiguration&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">layer specific configuration, e.g., link segment types</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-nodes"><code>&lt;nodes&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Nodes container element, for all physical network nodes</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-links"><code>&lt;links&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Nodes container element, for all physical network nodes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-layerconfiguration">&lt;&gt; <strong>&lt;layerconfiguration&gt;</strong></h3>
+<p>The optional layer configuration allows one to define the link segment types available to this layer, where a link segment type outlines how the various mode behave on a link segment that utilises it. The types defined under this configuration can only reference modes supported by the layer at hand. When not specified, the <a href="./#default-link-segment-type">default link segment type</a> will be activated. This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-linksegmenttypes"><code>&lt;linksegmenttypes&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">Link segment type available in this network</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-linksegmenttypes">&lt;&gt; <strong>&lt;linksegmenttypes&gt;</strong></h3>
+<p>Link segment types define the different types of link segment properties that can be attributed to links on the layer, including mode specific attributes.This is useful to attach a set of common properties to multiple links by referring to the same link segment type.</p>
+<p>When absent a <a href="./#default-link-segment-type">default link segments type</a> is created and applied to all link segments in the network (layer).</p>
 <p>This element has the following sub-elements:</p>
 <table>
 <thead>
@@ -3255,7 +3388,7 @@
 </tbody>
 </table>
 <h3 id="-linksegmenttype">&lt;&gt;&lt;&gt; <strong>&lt;linksegmenttype&gt;</strong></h3>
-<p>Link segment type defines a set of properties that can be attached to one or more link segments.</p>
+<p>Link segment type defines a set of properties that can be attached to one or more link segments on the layer.</p>
 <p>The Link segment type&rsquo;s (XML) identifier is set through an attribute</p>
 <table>
 <thead>
@@ -3274,6 +3407,13 @@
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">User identifier for the link segment type, i.e., its XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">optional third party identifier</td>
 </tr>
 </tbody>
 </table>
@@ -3422,57 +3562,6 @@ no modes are defined, <strong>rail based</strong> modes are <strong>not</strong>
 </tbody>
 </table>
 <p>When the max speed is absent it takes on the mode&rsquo;s maximum speed limit.</p>
-<h2 id="infrastructure">&lt;infrastructure&gt;</h2>
-<p>The infrastructure element contains all the physical network infrastructure available. It consists of nodes, links, and an optional Spatial Reference System (SRS) SRID string for the case where the nodes have geo-spatial location information embedded in them via GML.</p>
-<p>The SRS identifier is set through an attribute. When absent Cartesian system is assumed with 0,0 to be the top left</p>
-<blockquote>
-<p>Currently, if a Cartesian system is used, it is expected the user explicitly sets the lengths on all link (segments) since they cannot be computed based on the SRS.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">XML attribute Name</th>
-<th align="left">type</th>
-<th align="left"><a href="../../../../units">Unit</a></th>
-<th align="left">Compulsory</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>srsname</code></td>
-<td align="left">string</td>
-<td align="left"><code>SRS</code></td>
-<td align="left">NO</td>
-<td align="left">Spatial Reference System SRID</td>
-</tr>
-</tbody>
-</table>
-<p>This element has the following sub-elements:</p>
-<table>
-<thead>
-<tr>
-<th align="left">XML Element Name</th>
-<th align="left">Compulsory</th>
-<th align="left">Maximum occurrences</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><a href="./#-nodes"><code>&lt;nodes&gt;</code></a></td>
-<td align="left">YES</td>
-<td align="left">1</td>
-<td align="left">Nodes container element, for all physical network nodes</td>
-</tr>
-<tr>
-<td align="left"><a href="./#-links"><code>&lt;links&gt;</code></a></td>
-<td align="left">YES</td>
-<td align="left">1</td>
-<td align="left">Nodes container element, for all physical network nodes</td>
-</tr>
-</tbody>
-</table>
 <h3 id="-nodes">&lt;&gt; <strong>&lt;nodes&gt;</strong></h3>
 <p>Nodes represent the locations where links (roads) intersect and traffic interacts with each other. This container holds all the node specifications for the network</p>
 <p>This element has the following sub-elements:</p>
@@ -3513,7 +3602,14 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 <td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">Unique user identifier for the node, i.e., external id</td>
+<td align="left">Unique user identifier for the node, i.e., xml id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">optional third party identifier</td>
 </tr>
 </tbody>
 </table>
@@ -3617,6 +3713,13 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
 <td align="left">Unique user identifier for the link, i.e., XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">optional third party identifier</td>
 </tr>
 <tr>
 <td align="left"><code>nodearef</code></td>
@@ -3734,6 +3837,13 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 <td align="left">Unique user identifier for the link segment, i.e., XML id</td>
 </tr>
 <tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">optional third party identifier</td>
+</tr>
+<tr>
 <td align="left"><code>dir</code></td>
 <td align="left"><code>&quot;a_b&quot;</code> or <code>&quot;b_a&quot;</code></td>
 <td align="left"><code>None</code></td>
@@ -3793,58 +3903,62 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_schema&gt;/macroscopicnetworkinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;configuration&gt;</span>																		
 		<span style="color:#204a87;font-weight:bold">&lt;modes&gt;</span>																			
-			<span style="color:#204a87;font-weight:bold">&lt;mode</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>																
-				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>car<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>														
+			<span style="color:#204a87;font-weight:bold">&lt;mode</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;car&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>																
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>car mode<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>														
 				<span style="color:#204a87;font-weight:bold">&lt;pcu&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/pcu&gt;</span>																				
 			<span style="color:#204a87;font-weight:bold">&lt;/mode&gt;</span>										
-		<span style="color:#204a87;font-weight:bold">&lt;/modes&gt;</span>		
-		<span style="color:#204a87;font-weight:bold">&lt;linksegmenttypes&gt;</span>																
-			<span style="color:#204a87;font-weight:bold">&lt;linksegmenttype</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>													
-				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>local road<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>													
-				<span style="color:#204a87;font-weight:bold">&lt;maxdensitylane&gt;</span>180<span style="color:#204a87;font-weight:bold">&lt;/maxdensitylane&gt;</span>									
-				<span style="color:#204a87;font-weight:bold">&lt;capacitylane&gt;</span>2000<span style="color:#204a87;font-weight:bold">&lt;/capacitylane&gt;</span>										
-				<span style="color:#204a87;font-weight:bold">&lt;access&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;mode</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>															
-						<span style="color:#204a87;font-weight:bold">&lt;maxspeed&gt;</span>40<span style="color:#204a87;font-weight:bold">&lt;/maxspeed&gt;</span>											
-						<span style="color:#204a87;font-weight:bold">&lt;critspeed&gt;</span>35<span style="color:#204a87;font-weight:bold">&lt;/critspeed&gt;</span>										
-					<span style="color:#204a87;font-weight:bold">&lt;/mode&gt;</span>				
-				<span style="color:#204a87;font-weight:bold">&lt;/access&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;/linksegmenttype&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/linksegmenttypes&gt;</span>			
+		<span style="color:#204a87;font-weight:bold">&lt;/modes&gt;</span>					
 	<span style="color:#204a87;font-weight:bold">&lt;/configuration&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;infrastructure</span> <span style="color:#c4a000">srsname=</span><span style="color:#4e9a06">&#34;EPSG:4326&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>												
-		<span style="color:#204a87;font-weight:bold">&lt;nodes&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span> 																
-				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>George Street roundabout<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>150.512796 -34.900145<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>														
-			<span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span> 
-				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Broadway intersection<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>150.512527 -34.900319<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span> 					
-			<span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>				
-		<span style="color:#204a87;font-weight:bold">&lt;/nodes&gt;</span>		
-		<span style="color:#204a87;font-weight:bold">&lt;links&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;link</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>							
-				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Broadway<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>												
-				<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#c4a000">typeref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>	
-					<span style="color:#204a87;font-weight:bold">&lt;numberoflanes&gt;</span>2<span style="color:#204a87;font-weight:bold">&lt;/numberoflanes&gt;</span>			
-					<span style="color:#204a87;font-weight:bold">&lt;maxspeed&gt;</span>50<span style="color:#204a87;font-weight:bold">&lt;/maxspeed&gt;</span>												
-				<span style="color:#204a87;font-weight:bold">&lt;/linksegment&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#c4a000">typeref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;numberoflanes&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/numberoflanes&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;maxspeed&gt;</span>50<span style="color:#204a87;font-weight:bold">&lt;/maxspeed&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/linksegment&gt;</span>					
-				<span style="color:#204a87;font-weight:bold">&lt;gml:LineString&gt;</span>									
-					<span style="color:#204a87;font-weight:bold">&lt;gml:coordinates</span> <span style="color:#c4a000">cs=</span><span style="color:#4e9a06">&#34; &#34;</span> <span style="color:#c4a000">ts=</span><span style="color:#4e9a06">&#34;,&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>100,200 150,300<span style="color:#204a87;font-weight:bold">&lt;/gml:coordinates&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;/gml:LineString&gt;</span>	
-				<span style="color:#204a87;font-weight:bold">&lt;length</span> <span style="color:#c4a000">unit=</span><span style="color:#4e9a06">&#34;km&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>1.33<span style="color:#204a87;font-weight:bold">&lt;/length&gt;</span>									
-			<span style="color:#204a87;font-weight:bold">&lt;/link&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/links&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;/infrastructure&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;infrastructurelayers</span> <span style="color:#c4a000">srsname=</span><span style="color:#4e9a06">&#34;EPSG:4326&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;layer</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;road&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;car&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;layerconfiguration&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;linksegmenttypes&gt;</span>																
+					<span style="color:#204a87;font-weight:bold">&lt;linksegmenttype</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>													
+						<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>local road<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>													
+						<span style="color:#204a87;font-weight:bold">&lt;maxdensitylane&gt;</span>180<span style="color:#204a87;font-weight:bold">&lt;/maxdensitylane&gt;</span>									
+						<span style="color:#204a87;font-weight:bold">&lt;capacitylane&gt;</span>2000<span style="color:#204a87;font-weight:bold">&lt;/capacitylane&gt;</span>										
+						<span style="color:#204a87;font-weight:bold">&lt;access&gt;</span>
+							<span style="color:#204a87;font-weight:bold">&lt;mode</span> <span style="color:#c4a000">ref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>															
+								<span style="color:#204a87;font-weight:bold">&lt;maxspeed&gt;</span>40<span style="color:#204a87;font-weight:bold">&lt;/maxspeed&gt;</span>											
+								<span style="color:#204a87;font-weight:bold">&lt;critspeed&gt;</span>35<span style="color:#204a87;font-weight:bold">&lt;/critspeed&gt;</span>										
+							<span style="color:#204a87;font-weight:bold">&lt;/mode&gt;</span>				
+						<span style="color:#204a87;font-weight:bold">&lt;/access&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/linksegmenttype&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;/linksegmenttypes&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/layerconfiguration&gt;</span>												
+			<span style="color:#204a87;font-weight:bold">&lt;nodes&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span> 																
+					<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>George Street roundabout<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>
+						<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>150.512796 -34.900145<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>														
+				<span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span> 
+					<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Broadway intersection<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;gml:Point&gt;</span>
+						<span style="color:#204a87;font-weight:bold">&lt;gml:pos&gt;</span>150.512527 -34.900319<span style="color:#204a87;font-weight:bold">&lt;/gml:pos&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span> 					
+				<span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>				
+			<span style="color:#204a87;font-weight:bold">&lt;/nodes&gt;</span>		
+			<span style="color:#204a87;font-weight:bold">&lt;links&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;link</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>							
+					<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Broadway<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>												
+					<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#c4a000">typeref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>	
+						<span style="color:#204a87;font-weight:bold">&lt;numberoflanes&gt;</span>2<span style="color:#204a87;font-weight:bold">&lt;/numberoflanes&gt;</span>			
+						<span style="color:#204a87;font-weight:bold">&lt;maxspeed&gt;</span>50<span style="color:#204a87;font-weight:bold">&lt;/maxspeed&gt;</span>												
+					<span style="color:#204a87;font-weight:bold">&lt;/linksegment&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#c4a000">typeref=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+						<span style="color:#204a87;font-weight:bold">&lt;numberoflanes&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/numberoflanes&gt;</span>
+						<span style="color:#204a87;font-weight:bold">&lt;maxspeed&gt;</span>50<span style="color:#204a87;font-weight:bold">&lt;/maxspeed&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/linksegment&gt;</span>					
+					<span style="color:#204a87;font-weight:bold">&lt;gml:LineString&gt;</span>									
+						<span style="color:#204a87;font-weight:bold">&lt;gml:coordinates</span> <span style="color:#c4a000">cs=</span><span style="color:#4e9a06">&#34; &#34;</span> <span style="color:#c4a000">ts=</span><span style="color:#4e9a06">&#34;,&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>100,200 150,300<span style="color:#204a87;font-weight:bold">&lt;/gml:coordinates&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;/gml:LineString&gt;</span>	
+					<span style="color:#204a87;font-weight:bold">&lt;length</span> <span style="color:#c4a000">unit=</span><span style="color:#4e9a06">&#34;km&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>1.33<span style="color:#204a87;font-weight:bold">&lt;/length&gt;</span>									
+				<span style="color:#204a87;font-weight:bold">&lt;/link&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/links&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;/layer&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/infrastructurelayers&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
 </code></pre></div>
 	

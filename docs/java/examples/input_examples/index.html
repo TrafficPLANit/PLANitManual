@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how to configure PLANit project inputs
 ">
 
-<meta itemprop="wordCount" content="764">
+<meta itemprop="wordCount" content="762">
 
 
 
@@ -1929,8 +1929,8 @@ Also, because we have access to the builder we can configure it or use some of i
   <span style="color:#8f5902;font-style:italic">// *NEW*
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">inputFormat</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
-  <span style="color:#000">MacroscopicNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MacroscopicNetwork</span><span style="color:#ce5c00;font-weight:bold">)</span>
-    <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  <span style="color:#000">InfrastructureNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+    <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#000">OutputFormatter</span> <span style="color:#000">outputFormatter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PLANIT_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">);</span>
@@ -1986,8 +1986,8 @@ Also, because we have access to the builder we can configure it or use some of i
    <span style="color:#8f5902;font-style:italic">// *NEW*
 </span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">tntp</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
-   <span style="color:#000">MacroscopicNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MacroscopicNetwork</span><span style="color:#ce5c00;font-weight:bold">)</span>
-    <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterPhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">PhysicalNetwork</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPICNETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+   <span style="color:#000">InfrastructureNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+    <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
    <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
    <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
    <span style="color:#000">OutputFormatter</span> <span style="color:#000">outputFormatter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterOutputFormatter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OutputFormatter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">PLANIT_OUTPUT_FORMATTER</span><span style="color:#ce5c00;font-weight:bold">);</span>

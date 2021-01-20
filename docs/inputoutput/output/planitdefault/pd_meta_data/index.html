@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -32,7 +32,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 There is ever only one meta-data file per PLANit run per time period, while there can be multiple CSV output files per run per time period (for example one per iteration).
 The meta-data XML file contains general information on the PLANit run, supplemented with column meta-data relating to the CSV result files it references.">
 
-<meta itemprop="wordCount" content="1443">
+<meta itemprop="wordCount" content="1419">
 
 
 
@@ -2309,9 +2309,12 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 	<span style="color:#204a87;font-weight:bold">&lt;version&gt;</span>0.0.3-beta<span style="color:#204a87;font-weight:bold">&lt;/version&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;description&gt;</span>PlanIt common code for traffic assignment<span style="color:#204a87;font-weight:bold">&lt;/description&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;outputconfiguration&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;assignment&gt;</span>TraditionalStaticAssignment<span style="color:#204a87;font-weight:bold">&lt;/assignment&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;physicalcost&gt;</span>BPRLinkTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/physicalcost&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;virtualcost&gt;</span>FixedConnectoidTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/virtualcost&gt;</span>
+        <span style="color:#204a87;font-weight:bold">&lt;assignment&gt;</span>TraditionalStaticAssignment<span style="color:#204a87;font-weight:bold">&lt;/assignment&gt;</span>
+        <span style="color:#204a87;font-weight:bold">&lt;physicalcost&gt;</span>BPRLinkTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/physicalcost&gt;</span>
+        <span style="color:#204a87;font-weight:bold">&lt;virtualcost&gt;</span>FixedConnectoidTravelTimeCost<span style="color:#204a87;font-weight:bold">&lt;/virtualcost&gt;</span>
+        <span style="color:#204a87;font-weight:bold">&lt;smoothing&gt;</span>MSASmoothing<span style="color:#204a87;font-weight:bold">&lt;/smoothing&gt;</span>
+        <span style="color:#204a87;font-weight:bold">&lt;gapfunction&gt;</span>LinkBasedRelativeDualityGapFunction<span style="color:#204a87;font-weight:bold">&lt;/gapfunction&gt;</span>
+        <span style="color:#204a87;font-weight:bold">&lt;stopcriterion&gt;</span>StopCriterion<span style="color:#204a87;font-weight:bold">&lt;/stopcriterion&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;timeperiod&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>0<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Time Period 1<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
@@ -2320,7 +2323,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 	<span style="color:#204a87;font-weight:bold">&lt;simulation&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;iteration&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;nr&gt;</span>500<span style="color:#204a87;font-weight:bold">&lt;/nr&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>src\test\resources\testcases\route_choice\xml\biDirectionalLinksRouteChoiceSingleModeWithTwoTimePeriods\Link_RunId_0_testRouteChoice42_Time Period_1_500.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;csvdata</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;Link&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>some_path\Link_RunId_0_testName_Time Period_1_500.csv<span style="color:#204a87;font-weight:bold">&lt;/csvdata&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/iteration&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;/simulation&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;columns&gt;</span>
@@ -2330,17 +2333,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Downstream Node Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment Xml Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Link Segment Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
@@ -2350,17 +2343,7 @@ The meta-data XML file contains general information on the PLANit run, supplemen
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Mode Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node Xml Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;column&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Upstream Node Id<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;units&gt;</span>none<span style="color:#204a87;font-weight:bold">&lt;/units&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;type&gt;</span>integer<span style="color:#204a87;font-weight:bold">&lt;/type&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/column&gt;</span>

@@ -85,9 +85,9 @@
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;				
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;column&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;mode id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;mode Xml id&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;unit&amp;gt;&lt;/span&gt;none&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/unit&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;integer&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;				
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;string&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;				
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;column&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;flow&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
@@ -97,16 +97,16 @@
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/columns&amp;gt;&lt;/span&gt;	
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/metadata&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Below an example of what the related CSV file might look like given this meta-data configuration:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-CSV&#34; data-lang=&#34;CSV&#34;&gt;Link Segment Id, Mode Id, Flow
-4,0,1800.0000000
-6,0,900.0000000
-8,0,900.0000000
-13,0,1800.0000000
-16,0,1800.0000000
-20,0,1800.0000000
-26,0.1800.0000000
-29,0.1200.0000000
-36,0,600.0000000
+&lt;pre&gt;&lt;code class=&#34;language-CSV&#34; data-lang=&#34;CSV&#34;&gt;Link Segment Id, Mode Xml Id, Flow
+4,car,1800.0000000
+6,car,900.0000000
+8,car,900.0000000
+13,car,1800.0000000
+16,car,1800.0000000
+20,car,1800.0000000
+26,car,1800.0000000
+29,car,1200.0000000
+36,car,600.0000000
 &lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>

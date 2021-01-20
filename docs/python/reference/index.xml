@@ -404,7 +404,7 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
       <description>
         
         
-        &lt;p&gt;Physical Network implementation, is the in-memory equivalent of the parsed physical (transport) network. In future version of PLANit we intend to make the contents of this class available to the user.&lt;/p&gt;
+        &lt;p&gt;Network implementation, is the in-memory equivalent of the parsed physical (transport) network. In future version of PLANit we intend to make the contents of this class available to the user.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Currently, no methods and/or properties are officially exposed/supported for this class.&lt;/p&gt;
 &lt;/blockquote&gt;

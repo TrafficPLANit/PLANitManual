@@ -181,7 +181,7 @@
 	</xs:element>
 
 	<!-- Complex elements -->
-	<xs:element name="linkconfiguration">
+	<xs:element name="configuration">
 		<xs:annotation>
 			<xs:documentation>
 				Configuration, i.e., meta data of the network
@@ -194,53 +194,105 @@
 					<xs:annotation>
 						<xs:documentation>
 							Modes available in this project. Note that when
-							this element is absent a single 'virtual' mode is created to
+							this element is absent a single default mode is created to
 							represent all modes. If this is the case, no references to modes are to be
 							made in any forthcoming elements as there is nothing to refer
-							to,
-							i.e., no ids of modes are present so they cannot be referred.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:element>
-				<xs:element ref="linksegmenttypes" minOccurs="0">
-					<xs:annotation>
-						<xs:documentation>
-							Link segment types define the different types of
-							link segment properties that can be attributed to links. Note
-							that it is allowed not to define this element. In that case all
-							link(segments) are assumed to be of the same default
-							link segment
-							type.
+							to, i.e., no ids of modes are present so they cannot be referred.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-
-	<xs:element name="infrastructure">
-		<xs:annotation>
-			<xs:documentation>
-				The physical infrastructure consists of nodes and
-				links
-			</xs:documentation>
-		</xs:annotation>
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="nodes" />
-				<xs:element ref="links" />
-			</xs:sequence>
-			<xs:attribute ref="srsname" use="optional">
-				<xs:annotation>
-					<xs:documentation>
-						Spatial reference system chosen for
-						infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
-					</xs:documentation>
-				</xs:annotation>
-			</xs:attribute>
-		</xs:complexType>
-	</xs:element>
-		
+	
+  <xs:element name="layerconfiguration">
+    <xs:annotation>
+      <xs:documentation>
+        Configuration, i.e., meta data of a network layer
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="linksegmenttypes" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              Link segment types define the different types of
+              link segment properties that can be attributed to links. Note
+              that it is allowed not to define this element. In that case all
+              link(segments) are assumed to be of the same default
+              link segment type.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>	
+	
+  <xs:element name="layer">
+    <xs:annotation>
+      <xs:documentation>
+        The physical infrastructure consists of nodes and
+        links
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="layerconfiguration" />
+        <xs:element ref="nodes" />
+        <xs:element ref="links" />
+      </xs:sequence>
+     <xs:attribute name="id" type="xs:string" use="required"/>
+     <xs:attribute name="externalid" type="xs:string" use="optional"/>          
+      <xs:attribute ref="srsname" use="optional">
+        <xs:annotation>
+          <xs:documentation>
+            Spatial reference system chosen for
+            infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="modes" type="xs:string" use="optional">
+        <xs:annotation>
+            <xs:documentation>
+              comma separated list of the modes supported by this layer. 
+              In case the attribute is absent, it is assumed the layer
+              is the only layer available and supports all the modes defined on the network.
+              TODO: create a type that is able to verify if the string is a comma seaprated list
+            </xs:documentation>
+          </xs:annotation>
+      </xs:attribute>         
+    </xs:complexType>
+  </xs:element>	
+	
+  <xs:element name="infrastructurelayers">
+    <xs:annotation>
+      <xs:documentation>
+        The physical infrastructure consists of nodes and
+        links
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+	      <xs:element ref="layer" minOccurs="1" maxOccurs="unbounded">
+	        <xs:annotation>
+	          <xs:documentation>
+	            each network consists of at least one infrastructure layer containing network elements
+	            such as nodes, links, etc.
+	          </xs:documentation>
+	        </xs:annotation>
+	      </xs:element>
+	    </xs:sequence>
+      <xs:attribute ref="srsname" use="optional">
+        <xs:annotation>
+          <xs:documentation>
+            Spatial reference system chosen for
+            infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>	
+	
   <xs:element name="linksegmenttype">
    <xs:annotation>
      <xs:documentation>
@@ -308,7 +360,7 @@
 				<xs:element ref="maxspeed" minOccurs="0" maxOccurs="1" />
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required" />
-      <xs:attribute name="externalid" type="xs:string" use="optional"/>			
+      		<xs:attribute name="externalid" type="xs:string" use="optional"/>			
 			<xs:attribute name="dir" type="direction" use="required" />
 			<xs:attribute name="typeref" type="xs:string" use="optional">
 				<xs:annotation>
@@ -409,28 +461,28 @@
     </xs:annotation>  
     <xs:complexType>
       <xs:sequence>
-          <xs:element name="vehicletype" type="vehicularType" default="vehicle">
-				    <xs:annotation>
-				      <xs:documentation>
-				        vehicular type of the mode
-				      </xs:documentation>
-				    </xs:annotation>
-				  </xs:element>
-          <xs:element name="motorisationtype" type="motorisationType" default="motorised">
-            <xs:annotation>
-              <xs:documentation>
-                motorisation type of the mode
-              </xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="tracktype" type="trackType" default="double">
-            <xs:annotation>
-              <xs:documentation>
-                track type of the mode
-              </xs:documentation>
-            </xs:annotation>
-          </xs:element>  
-        </xs:sequence>               				  
+         <xs:element name="vehicletype" type="vehicularType" default="vehicle">
+			    <xs:annotation>
+			      <xs:documentation>
+			        vehicular type of the mode
+			      </xs:documentation>
+			    </xs:annotation>
+			  </xs:element>
+         <xs:element name="motorisationtype" type="motorisationType" default="motorised">
+           <xs:annotation>
+             <xs:documentation>
+               motorisation type of the mode
+             </xs:documentation>
+           </xs:annotation>
+         </xs:element>
+         <xs:element name="tracktype" type="trackType" default="double">
+           <xs:annotation>
+             <xs:documentation>
+               track type of the mode
+             </xs:documentation>
+           </xs:annotation>
+         </xs:element>  
+       </xs:sequence>               				  
     </xs:complexType>
   </xs:element>
   
@@ -463,16 +515,15 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="linkconfiguration" minOccurs="0">
+				<xs:element ref="configuration" minOccurs="0">
 					<xs:annotation>
 						<xs:documentation>
 							When configuration is absent we assume a single
-							link segment type for the entire simulation and a simple
-							Cartesian coordinate system with top-left (0,0)
+							mode for the entire simulation
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element ref="infrastructure" />
+				<xs:element ref="infrastructurelayers" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
