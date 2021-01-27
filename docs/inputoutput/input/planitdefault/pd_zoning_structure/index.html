@@ -22,22 +22,25 @@
 
 <title>Zoning Structure Input Data format (XML) | PLANit</title><meta property="og:title" content="Zoning Structure Input Data format (XML)" />
 <meta property="og:description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
- If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i." />
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd XML Schema of intermodal extension https://planitmanual.github.io/version//xsd/macroscopicintermodalinput.xsd  We distinguish between two types of zones in PLANit:
+ Origin-Destination zones Transfer zones  Origin-Destination Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/planitdefault/pd_zoning_structure/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Zoning Structure Input Data format (XML)">
 <meta itemprop="description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
- If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.">
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd XML Schema of intermodal extension https://planitmanual.github.io/version//xsd/macroscopicintermodalinput.xsd  We distinguish between two types of zones in PLANit:
+ Origin-Destination zones Transfer zones  Origin-Destination Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids.">
 
-<meta itemprop="wordCount" content="1418">
+<meta itemprop="wordCount" content="2870">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Zoning Structure Input Data format (XML)"/>
 <meta name="twitter:description" content="In this section of the manual we discuss the Zoning structure&rsquo;s XML input format used by PLANit.
- If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd  Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i."/>
+ If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning https://planitmanual.github.io/version//xsd/macroscopiczoninginput.xsd XML Schema of intermodal extension https://planitmanual.github.io/version//xsd/macroscopicintermodalinput.xsd  We distinguish between two types of zones in PLANit:
+ Origin-Destination zones Transfer zones  Origin-Destination Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids."/>
 
 
 
@@ -1816,6 +1819,18 @@
         <li><a href="#-connectoid">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;connectoid&gt;</strong></a></li>
       </ul>
     </li>
+    <li><a href="#intermodal"><strong>&lt;intermodal&gt;</strong></a></li>
+    <li><a href="#-transferzones">&lt;&gt; <strong>&lt;transferzones&gt;</strong></a>
+      <ul>
+        <li><a href="#-zone-1">&lt;&gt;&lt;&gt; <strong>&lt;zone&gt;</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#-transferzoneaccess">&lt;&gt; <strong>&lt;transferzoneaccess&gt;</strong></a>
+      <ul>
+        <li><a href="#-connectoid-1">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;connectoid&gt;</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#-transferzonegroups">&lt;&gt; <strong>&lt;transferzonegroups&gt;</strong></a></li>
     <li><a href="#expanded-example">Expanded Example</a></li>
   </ul>
 </nav>
@@ -1890,8 +1905,15 @@
 <ul>
 <li>If you are only interested to see an example file, jump to the <a href="./#expanded-example">Expanded Example</a>.</li>
 <li>XML Schema of macroscopic zoning <a href="../../../../../xsd/macroscopiczoninginput.xsd">https://planitmanual.github.io/version/<version>/xsd/macroscopiczoninginput.xsd</a></li>
+<li>XML Schema of intermodal extension <a href="../../../../../xsd/macroscopiczoninginput.xsd">https://planitmanual.github.io/version/<version>/xsd/macroscopicintermodalinput.xsd</a></li>
 </ul>
-<p>Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points.</p>
+<p>We distinguish between two types of zones in PLANit:</p>
+<ul>
+<li>Origin-Destination zones</li>
+<li>Transfer zones</li>
+</ul>
+<p>Origin-Destination Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids. Centroids are connected to the physical road network via connectoids, i.e., the nodes in the physical network that are marked as eligible ingress/egress points.</p>
+<p>Transfer zones on the other hand allow for intermodal trips, where one can transfer between different modes at a transfer zone, or alternatively, access the same mode but transfer to a different routed service (e.g., from one bus line to another). A transfer zone, like a regular zone has a centroid and one or more connectoids. Access to the transfer zone via its connectoids can be restricted to particular modes (for each connectoid), where a connectoid can represent for example the location where a public transport vehicle stops, or an entrance to a train station for pedestrians.</p>
 <p>The zoning structure in this input file describes the zones, centroids, and connectoids for a PLANit project.</p>
 <h2 id="macroscopiczoning">&lt;macroscopiczoning&gt;</h2>
 <p>The zoning structure can be described in a stand alone XML file - only providing the zoning structure - or it can be provided as part of a PLANit XML file describing all input components. Either way, all the zoning structure specific information is enclosed within the XML root element <code>&lt;macroscopiczoning&gt;</code>. When part of a larger (single) PLANit input file, the structure should resemble something like the following:</p>
@@ -1909,7 +1931,8 @@
 	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 ...	
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
-</code></pre></div><p>This root element can contain only a single sub-elements:</p>
+</code></pre></div><p>This root element contains the (OD) zones and optionally an intermodal extension element that accounts for the transfer zones
+and related content:</p>
 <table>
 <thead>
 <tr>
@@ -1924,7 +1947,13 @@
 <td align="left"><a href="./#zones"><code>&lt;zones&gt;</code></a></td>
 <td align="left">YES</td>
 <td align="left">1</td>
-<td align="left">Container elements for all zones</td>
+<td align="left">Container elements for all (OD) zones</td>
+</tr>
+<tr>
+<td align="left"><a href="./#intermodal"><code>&lt;intermodal&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">Container elements for all transfer zones, e.g., stops and transfers</td>
 </tr>
 </tbody>
 </table>
@@ -1935,7 +1964,7 @@
 <h2 id="xml-elements">XML Elements</h2>
 <p>This section discusses the XML elements under the <code>&lt;macroscopiczoning&gt;</code> root element in expected order of appearance.</p>
 <h2 id="zones"><strong>&lt;zones&gt;</strong></h2>
-<p>Zones is the container element for all available zones. IT can have its own spatial reference system, independent of the network if one wishes. However, in most cases you would leave out this attribute to adopts the SRS of the network instead (default behaviour).</p>
+<p>Zones is the container element for all available zones. It can have its own spatial reference system, independent of the network if one wishes. However, in most cases you would leave out this attribute to adopts the SRS of the network instead (default behaviour).</p>
 <table>
 <thead>
 <tr>
@@ -1977,7 +2006,7 @@
 </table>
 <h2 id="-zone">&lt;&gt; <strong>&lt;zone&gt;</strong></h2>
 <p>A zone is a single geographic area that is usually constructed because it is deemed to represent a desirable level of travel demand homogeneity. Alternatively, it can be based on historic, political, or other criteria based, boundaries. It is expected to be contiguous with respect to other zones, should not overlap, and should not be bordering on only a single other zone (donut approach).</p>
-<p>Each zone has exactly one centroid from which travel can commence/cease. The physical road network is accessible via eligible nodes, termed connectoids. Each zone must have a unique (XML) identifier that is made available via an attribute.</p>
+<p>A zone element may specify an explicit centroid (location) from which travel can commence/cease. If a centroid is not defined a default centroid (without location) is created. The physical road network is accessible via eligible nodes, termed connectoids. Each zone must have a unique (XML) identifier that is made available via an attribute.</p>
 <table>
 <thead>
 <tr>
@@ -1994,7 +2023,14 @@
 <td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">User identifier for the zone, i.e., its XML id</td>
+<td align="left">Unique identifier for the zone, i.e., its XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">third party identifier for the zone</td>
 </tr>
 </tbody>
 </table>
@@ -2034,9 +2070,9 @@
 <tbody>
 <tr>
 <td align="left"><a href="./#-centroid"><code>&lt;centroid&gt;</code></a></td>
-<td align="left">YES</td>
+<td align="left">NO</td>
 <td align="left">1</td>
-<td align="left">Single point representation of the zone, used to interface with the physical transport network</td>
+<td align="left">Centroid location of the zone</td>
 </tr>
 <tr>
 <td align="left"><a href="./#-connectoids"><code>&lt;connectoids&gt;</code></a></td>
@@ -2149,7 +2185,7 @@
 	<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>														
 <span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
 </code></pre></div><h3 id="-connectoids">&lt;&gt;&lt;&gt; <strong>&lt;connectoids&gt;</strong></h3>
-<p>Connectoids must refer to nodes present in the physical network. By referencing them here, these nodes are marked as eligible points of entry/exit for travel demand from its parent zone (via its centroid). As a result, PLANit will create a virtual connectoid between centroid and connectoid to allow the travel demand to enter/exit. This element is the container element for such connectoid elements.</p>
+<p>Connectoids define how zones and physical network entities interact. A connectoid for an OD zone must refer to a node present in the physical network. By referencing them here, these nodes are marked as eligible points of entry/exit for travel demand from its parent zone (via its centroid). This element is the container element for such connectoid elements.</p>
 <p>This element has the following sub-elements:</p>
 <table>
 <thead>
@@ -2170,12 +2206,12 @@
 </tbody>
 </table>
 <h3 id="-connectoid">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;connectoid&gt;</strong></h3>
-<p>A connectoid must refer to a node present in the physical network. This node is marked as an eligible point of entry/exit for travel demand from its parent zone (via the centroid). PLANit will create a virtual connection between centroid and connectoid to allow the travel demand to enter/exit.</p>
-<p>The cost associated with the travel for each centroid-connectoid combination is based on the VirtualCost configuration in the assignment. Typically, it will require a length for this connection to determine its cost, e.g., travel time. This length is computed via:</p>
+<p>A (OD) connectoid must refer to a node present in the physical network. This node is marked as an eligible point of entry/exit for travel demand from its parent zone (via the centroid).</p>
+<p>The cost associated with the travel for each zone/connectoid combination is based on the VirtualCost configuration in the assignment. It can for example require a length for this connection to determine its cost, e.g., travel time. This length is determined via:</p>
 <ul>
-<li>The connectoid&rsquo;s length element value,</li>
-<li>If no length is provided, as-the-crow-flies distance between the centroid&rsquo;s and node&rsquo;s geographic locations is used,</li>
-<li>if geo-spatial information is absent and no length is specified, the default length is used</li>
+<li>The connectoid&rsquo;s length element value (if set),</li>
+<li>otherwise, as-the-crow-flies distance between the centroid&rsquo;s and node&rsquo;s geographic locations is used (if available),</li>
+<li>otherwise, the default length is used</li>
 </ul>
 <p>Each connectoid must have a unique (XML) identifier that is made available via an attribute.</p>
 <table>
@@ -2194,7 +2230,14 @@
 <td align="left">string</td>
 <td align="left"><code>None</code></td>
 <td align="left">YES</td>
-<td align="left">User identifier for the connectoid, i.e., its XML id</td>
+<td align="left">unique user identifier, i.e., its XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">third party identifier</td>
 </tr>
 <tr>
 <td align="left"><code>noderef</code></td>
@@ -2203,8 +2246,16 @@
 <td align="left">YES</td>
 <td align="left">Reference to the node&rsquo;s (XML) id this connectoid marks as an eligible point of ingress/egress for its zone</td>
 </tr>
+<tr>
+<td align="left"><code>modes</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">comma separated list of mode (XML) ids allowed access</td>
+</tr>
 </tbody>
 </table>
+<p>The modes attribute can look like the following: <code>modes=&quot;car&quot;,&quot;bus&quot;</code> allowing only car and bus modes access. When the modes attribute is not defined it is assumed <strong>all</strong> modes are allowed access.</p>
 <p>This element has the following simple-elements:</p>
 <table>
 <thead>
@@ -2232,10 +2283,319 @@
 <td align="left"><code>km</code></td>
 <td align="left">NO</td>
 <td align="left"><code>0</code></td>
-<td align="left">Length of virtual connection between centroid and this connectoid</td>
+<td align="left">Length of  connection between zone and this connectoid</td>
 </tr>
 </tbody>
 </table>
+<h2 id="intermodal"><strong>&lt;intermodal&gt;</strong></h2>
+<p>A network with one or more layers and multiple modes can choose to support intermodal travel. Public transport trips are an example of intermodal travel, where one can for example:</p>
+<ul>
+<li>Have a trip using two different bus routes, transferring somewhere half-way at a stop (transfer zone)</li>
+<li>Model train/bus/walk trips, transferring at various points, possibly walking between different stops</li>
+</ul>
+<p>We choose not to tailor the format towards public transport because our structure can also be used to model for example:</p>
+<ul>
+<li>goods transport, where goods travel from warehouse to warehouse to customers</li>
+<li>bike-share, ride-share services</li>
+<li>etc&hellip;</li>
+</ul>
+<p>As a result we have a generic intermodal format where transfers occur at transfer zones that have connectoids allowing access to the transfer zone for one or more modes. modes can enter via one mode and the underlying model can transfer them to another mode, these transfers are only possible at transfer zones, allowing us to model, aggregate, manage different infrastructure layers differently depending on what suits the supported modes best.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-transferzones"><code>&lt;transferzones&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Container elements for all transfer zones</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-transferzoneaccess"><code>&lt;transferzoneaccess&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">Container elements for all transfer zone access points, e.g., connectoids</td>
+</tr>
+<tr>
+<td align="left"><a href="./#-transferzonegroups"><code>&lt;transferzonegroups&gt;</code></a></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">Container element for all groups of transfer zones, e.g. stations with multiple platforms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-transferzones">&lt;&gt; <strong>&lt;transferzones&gt;</strong></h2>
+<p>Container for all transfer zones defined in the network.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-zone-1"><code>&lt;zone&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">Unbounded</td>
+<td align="left">Individual transfer zone configuration</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-zone-1">&lt;&gt;&lt;&gt; <strong>&lt;zone&gt;</strong></h3>
+<p>A transfer zone is a single geographic area (or point location) that represents an opportunity for modes to transfer between routed services of the same mode (bus line to bus line, train to train, truck to truck, etc.) or alternatively a transfer from one mode to another (bus to train, walk to tram, good to ship, etc.). The intermodal aspect is convered by a transfer zones connectoids where each
+connectoid-zone combination can have allowable modes and one might enter via one mode (from one network layer) and exits via another mode (from another network layer). The actual transfer itself is part of the underlying model and is not of concern to the transfer zone separating the model from the network/zoning specification.</p>
+<p>A transfer zone element may specify an explicit centroid (location). If a centroid is not defined a default centroid (without location) is created. The connections to the network are dealt with via the <code>transferzoneaccess</code> element as each connectoid can provide access to multiple transferzones (and can therefore not be uniquely identified from within a transfer zone).</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">Unique identifier for the zone, i.e., its XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">Third party identifier for the zone</td>
+</tr>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">Type of the transfer zone</td>
+</tr>
+</tbody>
+</table>
+<p>the <code>type</code> of the transfer zone can be used to make it clear what the purpose of the transfer zone is. Currently the following options are supported:</p>
+<ul>
+<li><code>&quot;platform&quot;</code></li>
+<li><code>&quot;stop_pole&quot;</code></li>
+<li><code>&quot;unknown&quot;</code> (<strong>default if not specified</strong>)</li>
+</ul>
+<p>The (transfer) zone element has the following simple-elements as children:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left"><code>&quot;&quot;</code></td>
+<td align="left">Description for the zone</td>
+</tr>
+</tbody>
+</table>
+<p>as well as the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;centroid&gt;</code></td>
+<td align="left">NO</td>
+<td align="left">1</td>
+<td align="left">Centroid location of the transfer zone</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;gml:Polygon&gt;</code></td>
+<td align="left">No</td>
+<td align="left">1</td>
+<td align="left">Polygon in GML format to represent the surface area covered by this zone</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The polygon element is defined the same way as for a regular <a href="./#-zone">(OD) zone element</a></p>
+</blockquote>
+<blockquote>
+<p>The centroid element is defined the same way as for a regular <a href="./#-centroid">(OD) centroid element</a></p>
+</blockquote>
+<h2 id="-transferzoneaccess">&lt;&gt; <strong>&lt;transferzoneaccess&gt;</strong></h2>
+<p>Container for access locations (conectoids) for the <a href="./#-transferzones">transfer zones</a>.</p>
+<p>This element has the following sub-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Element Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Maximum occurrences</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="./#-connectoid-1"><code>&lt;connectoid&gt;</code></a></td>
+<td align="left">YES</td>
+<td align="left">Unbounded</td>
+<td align="left">Individual transfer zone access points, i.e., connectoids</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-connectoid-1">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;connectoid&gt;</strong></h3>
+<p>A (transfer zone) connectoid, unlike an <a href="./#-connectoid">OD connectoid</a>, refers to a link segment present in the physical network to create a point of interaction between its access zone and physical network (layer). This means that a transfer zone connectoid provides directed access. This allows us to explicitly (dis)allow access for directions along a link, e.g., public transport stops on one side of the road.</p>
+<p>Apart from this distinction a transfer connectoid largely follows the convention of a regular OD connectoid, only for transfer connectoids, it is more common to explicitly defined mode access and possible access to multiple transfer zones (platforms).</p>
+<blockquote>
+<p>Since a transfer connectoid can potentially connect to multiple transfer zones, setting the length property causes the length to be applied to each transfer zone accessible by this connectoid.</p>
+</blockquote>
+<blockquote>
+<p>The cost associated with the travel for each zone/connectoid combination is the same as for OD connectoids.</p>
+</blockquote>
+<p>Each connectoid must have a unique (XML) identifier that is made available via an attribute.</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML attribute Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">unique user identifier, i.e., its XML id</td>
+</tr>
+<tr>
+<td align="left"><code>externalid</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">third party identifier</td>
+</tr>
+<tr>
+<td align="left"><code>modes</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">comma separated list of accessible modes by (XML) id</td>
+</tr>
+<tr>
+<td align="left"><code>lsref</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">Reference to the link segment this connectoid marks as an eligible point of ingress/egress for its zone</td>
+</tr>
+<tr>
+<td align="left"><code>tzrefs</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">comma separated list of accessible transfer zones by (XML) id</td>
+</tr>
+<tr>
+<td align="left"><code>loc</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">node location relative to link segment to be used, defaults to downstream</td>
+</tr>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left">additional information on the type of the connectoid</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The modes attribute works the same as for the <a href="./#-connectoid">OD connectoid</a></p>
+</blockquote>
+<p>The link segment reference <code>lsref</code> by default will utilise the combination (link segment,downstream node). However, in some special cases this specification is too limited (for example beginning of a public transport line at a node with no incoming links). Therefore one can utilise the location (<code>loc</code>) attribute to indicate the upstream node should be used (link segment, upstream node).</p>
+<p>The location <code>loc</code> attribute would normally be left out as its default is set to <code>downstream</code>, it can be explicitly overwritten to <code>upstream</code>. It supports the following two values only:</p>
+<ul>
+<li><code>upstream</code> use the upstream node as the access point i.c.w. the link segment as restriction</li>
+<li><code>downstream</code> use the downstream node as the access point i.c.w. the link segment as restriction (<strong>default</strong>)</li>
+</ul>
+<p>The <code>tzrefs</code> should refer to the accessible transfer zones, e.g. <code>tzrefs=&quot;1&quot;</code> or in case of multiple <code>tzrefs=&quot;1,4,8,2&quot;</code></p>
+<p>Lastly, one can provide additional information on what type of connectoid this is, for example to indicate that it represents a location
+where vehicles stop, or a location where people enter a waiting area to (dis)embark vehicles. currently, the following types are supported:</p>
+<ul>
+<li><code>pt_veh_stop</code> indicating a location where public transport vehicles stop</li>
+<li><code>traveller_access</code> referring to access/egress points for active modes looking to for exmaple (dis)embark a vehicular mode</li>
+<li><code>unknown</code> when unspecified (<strong>default</strong>)</li>
+</ul>
+<p>This element has the following simple-elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">XML Simple Element Name</th>
+<th align="left">type</th>
+<th align="left"><a href="../../../../units">Unit</a></th>
+<th align="left">Compulsory</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;name&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left"><code>&quot;&quot;</code></td>
+<td align="left">Description for the connectoid</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;length&gt;</code></td>
+<td align="left"><code>double</code></td>
+<td align="left"><code>km</code></td>
+<td align="left">NO</td>
+<td align="left"><code>0</code></td>
+<td align="left">Length of  connection between <strong>all referenced zones</strong> and this connectoid</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-transferzonegroups">&lt;&gt; <strong>&lt;transferzonegroups&gt;</strong></h2>
+<p>Container for groupings of transferzones. While the schema has been defined, currently the parser does not yet support this feature</p>
+<blockquote>
+<p>TO BE IMPLEMENTED</p>
+</blockquote>
 <h2 id="expanded-example">Expanded Example</h2>
 <p>Below you will find an expanded example where all elements and attributes are explicitly set, to give you an idea of the overall structure of the macroscopic zoning XML. This example does not make sense as an actual input file, it is purely meant to show off all aspects of the file, rather than be used as a practically feasible input file.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#8f5902;font-style:italic">&lt;?xml version=&#34;1.0&#34; encoding=&#34;ISO-8859-1&#34;?&gt;</span>
@@ -2243,7 +2603,7 @@
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
 	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_Schema&gt;/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;zones</span> <span style="color:#c4a000">srsname=</span><span style="color:#4e9a06">&#34;EPSG:4326&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>								
+	<span style="color:#204a87;font-weight:bold">&lt;zones&gt;</span>								
 		<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>										
 			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Glebe<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>								
 			<span style="color:#204a87;font-weight:bold">&lt;centroid&gt;</span>										
@@ -2271,7 +2631,32 @@
 				<span style="color:#204a87;font-weight:bold">&lt;/gml:exterior&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;/gml:Polygon&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>CBD<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>				
+		<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;/zones&gt;</span>
+	<span style="color:#8f5902;font-style:italic">&lt;!-- optional extension for intermal networks --&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;intermodal&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;transferzones&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;platform&#34;</span> <span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>platform 1<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>						    	
+			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;4&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;stop_pole&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;5&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;stop_pole&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>						    		
+		<span style="color:#204a87;font-weight:bold">&lt;/transferzones&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;transferzoneaccess&gt;</span>
+			<span style="color:#8f5902;font-style:italic">&lt;!-- access to road network for transfer zone 3 --&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;4&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bus&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;pt_veh_stop&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#8f5902;font-style:italic">&lt;!-- access to active network for transfer zone 3 --&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;8&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bicycle, walk&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;traveller_access&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#8f5902;font-style:italic">&lt;!-- example of transfer between different bus routes using two different poles, but same
+</span><span style="color:#8f5902;font-style:italic">			stop location for buses --&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;4,5&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;9&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bus&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;pt_veh_stop&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>		
+		<span style="color:#204a87;font-weight:bold">&lt;/transferzoneaccess&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;/intermodal&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
 </code></pre></div>
 	

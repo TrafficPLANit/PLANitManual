@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-                    xmlns:gml="http://www.opengis.net/gml">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml">
 <xs:include schemaLocation="planitlibrary.xsd" />
+<xs:include schemaLocation="macroscopicintermodalinput.xsd" />
 <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
-	
-	<xs:element name="centroid">
-		<xs:annotation>
-			<xs:documentation>
-				Centroid is a point of departure and/or arrival of travellers from/to a zone. 
-			</xs:documentation>
-		</xs:annotation>	
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="name" type="xs:string" minOccurs="0" />
-				<xs:element ref="gml:Point" minOccurs="0" maxOccurs="1">
-					<xs:annotation>
-						<xs:documentation>
-							Each centroids geo spatial location determines its location (point of departure/arrival). It should fall within the zones
-							geo spatial area (if defined). 
-						</xs:documentation>
-					</xs:annotation>				
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>	
-	
+		
 	<xs:element name="connectoids">
 		<xs:annotation>
 			<xs:documentation>
@@ -43,24 +22,22 @@
 	<xs:element name="connectoid">
 		<xs:annotation>
 			<xs:documentation>
-				Each connectoid represents a potential point of exit/entry from/to the physical network coming from the zone/centroid. There
-				must be at minimum one connectoid to be able to leave/enter the zone. 
+				Each "regular" connectoid represents a potential point of exit/entry from/to the physical network coming from the zone/centroid. There
+				must be at minimum one connectoid to be able to leave/enter the zone. Each regular connectoid attaches by means of a node XML id reference 
 			</xs:documentation>
 		</xs:annotation>				
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="name"  type="xs:string" minOccurs="0" maxOccurs="1"/>
-				<xs:element name="length" type="xs:float" minOccurs="0" maxOccurs="1"/>
-			</xs:sequence>
-			<xs:attribute name="noderef" type="xs:string" use="required">
-				<xs:annotation>
-					<xs:documentation>
-						Reference to the node that also acts as a connectoid for the zone.
-					</xs:documentation>
-				</xs:annotation>			
-			</xs:attribute>
-			<xs:attribute name="id" type="xs:string" use="required"/>
-			<xs:attribute name="externalid" type="xs:string" use="optional"/>					
+		<xs:complexType name = "odconnectoid">
+			<xs:complexContent>
+				<xs:extension base="connectoidtype">
+					<xs:attribute name="noderef" type="xs:string" use="required">
+						<xs:annotation>
+							<xs:documentation>
+								Reference to the node that also acts as a connectoid for the zone.
+							</xs:documentation>
+						</xs:annotation>			
+					</xs:attribute>				
+				</xs:extension>
+			</xs:complexContent>				
 		</xs:complexType>				
 	</xs:element>
 
@@ -69,6 +46,14 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="zones"/>
+				<xs:element name="intermodal" type="intermodaltype" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							Optional includion of intermodal transfer zones that allow for partial routes transfering at transfer zones (not starting/ending). Since the concept
+							of transfer zones is a generalisation of regular "OD" zones, it is only logical to include the defintion within the overarching zoning description
+						</xs:documentation>
+					</xs:annotation>				
+				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -85,7 +70,7 @@
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1"/>
-							<xs:element ref="centroid">
+							<xs:element ref="centroid" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
 									<xs:documentation>
 										Each travel zone has at most a single centroid from which all travellers depart/arrive. 

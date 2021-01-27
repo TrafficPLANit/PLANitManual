@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- This XSD contains common definitions which are used by all the other XSD files -->
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml">
+
+	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
 	
-	<!-- simple PLANit attributes -->
+	<!-- COMPLEX TYPES -->
+	<xs:complexType name="connectoidtype">
+		<xs:sequence>
+			<xs:element name="name"  type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="length" type="xs:float" minOccurs="0" maxOccurs="1">
+			  <xs:annotation>
+          <xs:documentation>
+            Length can be used to override geometric length computed for connectoid based on zone and physical network (layer) connection. 
+            When multiple zones are accessible be careful using this property since it will set the same length for all accessible zones.
+          </xs:documentation>
+        </xs:annotation>        
+      </xs:element>
+		</xs:sequence>		
+		<xs:attribute name="id" type="xs:string" use="required"/>
+		<xs:attribute name="externalid" type="xs:string" use="optional"/>
+		<xs:attribute name="modes" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					Modes that are allowed to use this access point should be provided as a comma separated list of mode XML ids. When absent it is
+					assumed all possible modes are allowed
+				</xs:documentation>
+			</xs:annotation>								
+		</xs:attribute>								
+    <xs:attribute name="type" type="connectoidtypetype" use="optional" default="none">
+      <xs:annotation>
+        <xs:documentation>
+          Use type to provide additional information on how to interpret this connectoid (no functional use at this point)
+        </xs:documentation>
+      </xs:annotation>        
+    </xs:attribute>   		
+	</xs:complexType>
+	
+	<!-- SIMPLE TYPES -->
+	
+	<xs:simpleType name="connectoidtypetype">
+    <xs:annotation>
+      <xs:documentation>
+        types of connectoid types
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+    <xs:enumeration value="none" />
+      <xs:enumeration value="pt_veh_stop" />
+      <xs:enumeration value="traveller_access" />
+      <xs:enumeration value="unknown" />
+    </xs:restriction>
+  </xs:simpleType>  
+	
+	<xs:simpleType name="lengthUnit">
+		<xs:annotation>
+			<xs:documentation>
+				Choice between km (kilometres), m (metres)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="km" />
+			<xs:enumeration value="m" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="timeUnit">
+		<xs:annotation>
+			<xs:documentation>
+				Choice between h (hours), min (minutes), s (seconds)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="h" />
+			<xs:enumeration value="min" />
+			<xs:enumeration value="s" />
+		</xs:restriction>
+	</xs:simpleType>		
+	
+	<xs:simpleType name="srsname">	
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>		
+	
+	<!-- SIMPLE ATTRIBUTES-->
 	<xs:attribute name="srsname" type="srsname" default="EPSG:4326">
 		<xs:annotation>
 			<xs:documentation>
@@ -11,18 +91,6 @@
 			</xs:documentation>
 		</xs:annotation>
 	</xs:attribute>	
-
-	<!-- Simple types -->
-	<xs:simpleType name="srsname">
-		<xs:annotation>
-			<xs:documentation>
-				Choice between h (hours), m (minutes), s (seconds)
-			</xs:documentation>
-		</xs:annotation>	
-		<xs:restriction base="xs:string">
-		</xs:restriction>
-	</xs:simpleType>	
-
 	
 	<xs:attribute name="ds" type="xs:string" default=",">
 		<xs:annotation>
@@ -39,5 +107,29 @@
 			</xs:documentation>
 		</xs:annotation> 		      					
 	</xs:attribute>	
+	
+	
+	<!-- ELEMENTS -->
+	
+	<xs:element name="centroid">
+		<xs:annotation>
+			<xs:documentation>
+				Centroid is a point of departure and/or arrival of travellers from/to a zone. 
+			</xs:documentation>
+		</xs:annotation>	
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" minOccurs="0" />
+				<xs:element ref="gml:Point" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							Each centroids geo spatial location determines its location (point of departure/arrival). It should fall within the zones
+							geo spatial area (if defined). 
+						</xs:documentation>
+					</xs:annotation>				
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>		
 	
 </xs:schema>

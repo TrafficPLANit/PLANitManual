@@ -9,8 +9,7 @@
 	<xs:complexType name="linkLengthType">
 		<xs:simpleContent>
 			<xs:extension base="xs:double">
-				<xs:attribute name="unit" type="lengthUnit"
-					default="km" use="optional">
+				<xs:attribute name="unit" type="lengthUnit" default="km" use="optional">
 					<xs:annotation>
 						<xs:documentation>
 							Default length unit is assumed to be kilometres
@@ -21,34 +20,32 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	
-  <xs:complexType name="accessmode">
-    <xs:annotation>
-     <xs:documentation>
-       Mode specific attributes associated with
-       the link segment type are the maximum and critical speed.
-       If a mode is not defined on the link segment type it is
-       assumed the mode is not allowed on the link segment.
-     </xs:documentation>
-   </xs:annotation>
-    <xs:sequence>
-      <xs:element ref="maxspeed" minOccurs="0"
-        maxOccurs="1" />
-      <xs:element ref="critspeed" minOccurs="0"
-        maxOccurs="1" />
-    </xs:sequence>
-    <xs:attribute name="ref" type="xs:string">
-      <xs:annotation>
-        <xs:documentation>
-          Refers to the unique identifier for the
-          mode this information relates to. If '0' is used
-          all
-          non-defined modes on the link segment type will take on
-          the values provided for this 'all modes' entry.
-        </xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>	
+
+	<xs:complexType name="accessmode">
+		<xs:annotation>
+			<xs:documentation>
+				Mode specific attributes associated with
+				the link segment type are the maximum and critical speed.
+				If a mode is not defined on the link segment type it is
+				assumed the mode is not allowed on the link segment.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="maxspeed" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="critspeed" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+		<xs:attribute name="ref" type="xs:string">
+			<xs:annotation>
+				<xs:documentation>
+					Refers to the unique identifier for the
+					mode this information relates to. If '0' is used
+					all
+					non-defined modes on the link segment type will take on
+					the values provided for this 'all modes' entry.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
 
 	<!-- Simple types -->
 	<xs:simpleType name="direction">
@@ -63,75 +60,65 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="lengthUnit">
+	<xs:simpleType name="vehicularType">
 		<xs:annotation>
 			<xs:documentation>
-				Choice between km (kilometres), m (metres)
+				Choice between vehicle and no_vehicle
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="km" />
-			<xs:enumeration value="m" />
+			<xs:enumeration value="vehicle" />
+			<xs:enumeration value="no_vehicle" />
 		</xs:restriction>
 	</xs:simpleType>
-	
-  <xs:simpleType name="vehicularType">
-    <xs:annotation>
-      <xs:documentation>
-        Choice between vehicle and no_vehicle
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="vehicle" />
-      <xs:enumeration value="no_vehicle" />
-    </xs:restriction>
-  </xs:simpleType>	
-  
-  <xs:simpleType name="motorisationType">
-    <xs:annotation>
-      <xs:documentation>
-        Choice between motorised and non_motorised
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="motorised" />
-      <xs:enumeration value="non_motorised" />
-    </xs:restriction>
-  </xs:simpleType>  
-  
-  <xs:simpleType name="trackType">
-    <xs:annotation>
-      <xs:documentation>
-        Choice between road and rail, e.g. does it refer to a mode that uses rail or road
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="road" />
-      <xs:enumeration value="rail" />
-    </xs:restriction>
-  </xs:simpleType> 
-  
-  <xs:simpleType name="usedToType">
-    <xs:annotation>
-      <xs:documentation>
-        Choice between private, public, ride_share, and high_occupancy
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="private" />
-      <xs:enumeration value="public" />
-      <xs:enumeration value="ride_share" />
-      <xs:enumeration value="high_occupancy" />
-      <xs:enumeration value="goods" />
-    </xs:restriction>
-  </xs:simpleType>   
+
+	<xs:simpleType name="motorisationType">
+		<xs:annotation>
+			<xs:documentation>
+				Choice between motorised and non_motorised
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="motorised" />
+			<xs:enumeration value="non_motorised" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="trackType">
+		<xs:annotation>
+			<xs:documentation>
+				Choice between road and rail, e.g. does it refer to a mode that uses rail
+				or road
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="road" />
+			<xs:enumeration value="rail" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="usedToType">
+		<xs:annotation>
+			<xs:documentation>
+				Choice between private, public, ride_share, and high_occupancy
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="private" />
+			<xs:enumeration value="public" />
+			<xs:enumeration value="ride_share" />
+			<xs:enumeration value="high_occupancy" />
+			<xs:enumeration value="goods" />
+		</xs:restriction>
+	</xs:simpleType>
 
 	<!-- simple elements -->
 	<xs:element name="maxdensitylane" type="xs:double"
 		default="180.0">
 		<xs:annotation>
 			<xs:documentation>
-				Maximum density of a lane in veh/km/lane, default set to 180
+				Maximum density of a lane in veh/km/lane, default
+				set to 180
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -195,148 +182,160 @@
 						<xs:documentation>
 							Modes available in this project. Note that when
 							this element is absent a single default mode is created to
-							represent all modes. If this is the case, no references to modes are to be
-							made in any forthcoming elements as there is nothing to refer
-							to, i.e., no ids of modes are present so they cannot be referred.
+							represent all modes. If this is the case, no references to modes
+							are to be
+							made in any forthcoming elements as there is nothing to
+							refer
+							to, i.e., no ids of modes are present so they cannot be
+							referred.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	
-  <xs:element name="layerconfiguration">
-    <xs:annotation>
-      <xs:documentation>
-        Configuration, i.e., meta data of a network layer
-      </xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="linksegmenttypes" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>
-              Link segment types define the different types of
-              link segment properties that can be attributed to links. Note
-              that it is allowed not to define this element. In that case all
-              link(segments) are assumed to be of the same default
-              link segment type.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>	
-	
-  <xs:element name="layer">
-    <xs:annotation>
-      <xs:documentation>
-        The physical infrastructure consists of nodes and
-        links
-      </xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="layerconfiguration" />
-        <xs:element ref="nodes" />
-        <xs:element ref="links" />
-      </xs:sequence>
-     <xs:attribute name="id" type="xs:string" use="required"/>
-     <xs:attribute name="externalid" type="xs:string" use="optional"/>          
-      <xs:attribute ref="srsname" use="optional">
-        <xs:annotation>
-          <xs:documentation>
-            Spatial reference system chosen for
-            infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
-          </xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="modes" type="xs:string" use="optional">
-        <xs:annotation>
-            <xs:documentation>
-              comma separated list of the modes supported by this layer. 
-              In case the attribute is absent, it is assumed the layer
-              is the only layer available and supports all the modes defined on the network.
-              TODO: create a type that is able to verify if the string is a comma seaprated list
-            </xs:documentation>
-          </xs:annotation>
-      </xs:attribute>         
-    </xs:complexType>
-  </xs:element>	
-	
-  <xs:element name="infrastructurelayers">
-    <xs:annotation>
-      <xs:documentation>
-        The physical infrastructure consists of nodes and
-        links
-      </xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-      <xs:sequence>
-	      <xs:element ref="layer" minOccurs="1" maxOccurs="unbounded">
-	        <xs:annotation>
-	          <xs:documentation>
-	            each network consists of at least one infrastructure layer containing network elements
-	            such as nodes, links, etc.
-	          </xs:documentation>
-	        </xs:annotation>
-	      </xs:element>
-	    </xs:sequence>
-      <xs:attribute ref="srsname" use="optional">
-        <xs:annotation>
-          <xs:documentation>
-            Spatial reference system chosen for
-            infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
-          </xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
-    </xs:complexType>
-  </xs:element>	
-	
-  <xs:element name="linksegmenttype">
-   <xs:annotation>
-     <xs:documentation>
-       a single link segment type with macroscopic model mode specific properties
-     </xs:documentation>
-   </xs:annotation>
-   <xs:complexType>
-     <xs:sequence>
-       <xs:element name="name" type="xs:string" default="" />
-       <xs:element ref="maxdensitylane" minOccurs="0">
-         <xs:annotation>
-           <xs:documentation>
-             When not present, the default maximum density per lane will be
-             applied
-           </xs:documentation>
-         </xs:annotation>
-       </xs:element>
-       <xs:element ref="capacitylane" minOccurs="0">
-         <xs:annotation>
-           <xs:documentation>
-             When not present, the default capacity per
-             lane will be applied
-           </xs:documentation>
-         </xs:annotation>
-       </xs:element>
-       <xs:element name="access" minOccurs="0">
-         <xs:annotation>
-           <xs:documentation>
-             When not present, all modes are assumed to be
-             allowed based on their default properties
-             (possibly dynamically capped by the physical link properties)
-           </xs:documentation>
-         </xs:annotation>
-         <xs:complexType>
-           <xs:sequence>
-             <xs:element name="mode" type="accessmode" minOccurs="0" maxOccurs="unbounded"/>             
-           </xs:sequence>
-         </xs:complexType>
-       </xs:element>
-     </xs:sequence>
-     <xs:attribute name="id" type="xs:string" use="required"/>
-     <xs:attribute name="externalid" type="xs:string" use="optional"/>    
-   </xs:complexType>
-  </xs:element>	
+
+	<xs:element name="layerconfiguration">
+		<xs:annotation>
+			<xs:documentation>
+				Configuration, i.e., meta data of a network layer
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="linksegmenttypes" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							Link segment types define the different types of
+							link segment properties that can be attributed to links. Note
+							that it is allowed not to define this element. In that case all
+							link(segments) are assumed to be of the same default
+							link segment type.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="layer">
+		<xs:annotation>
+			<xs:documentation>
+				The physical infrastructure consists of nodes and
+				links
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="layerconfiguration" />
+				<xs:element ref="nodes" />
+				<xs:element ref="links" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string"
+				use="optional" />
+			<xs:attribute ref="srsname" use="optional">
+				<xs:annotation>
+					<xs:documentation>
+						Spatial reference system chosen for
+						infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="modes" type="xs:string"
+				use="optional">
+				<xs:annotation>
+					<xs:documentation>
+						comma separated list of the modes supported by this layer.
+						In case the attribute is absent, it is assumed the layer
+						is the only layer available and supports all the modes defined on
+						the network.
+						TODO: create a type that is able to verify if the string is a comma
+						seaprated list
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="infrastructurelayers">
+		<xs:annotation>
+			<xs:documentation>
+				The physical infrastructure consists of nodes and
+				links
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="layer" minOccurs="1"
+					maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>
+							each network consists of at least one infrastructure layer containing
+							network elements
+							such as nodes, links, etc.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute ref="srsname" use="optional">
+				<xs:annotation>
+					<xs:documentation>
+						Spatial reference system chosen for
+						infrastructure, if absent WGS84, i.e., epsg:4326, is assumed
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="linksegmenttype">
+		<xs:annotation>
+			<xs:documentation>
+				a single link segment type with macroscopic model mode specific
+				properties
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" default="" />
+				<xs:element ref="maxdensitylane" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							When not present, the default maximum density per lane will be
+							applied
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="capacitylane" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							When not present, the default capacity per
+							lane will be applied
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="access" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							When not present, all modes are assumed to be
+							allowed based on their default properties
+							(possibly dynamically capped by the physical link properties)
+						</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mode" type="accessmode"
+								minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string"
+				use="optional" />
+		</xs:complexType>
+	</xs:element>
 
 	<xs:element name="linksegmenttypes">
 		<xs:annotation>
@@ -348,21 +347,24 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-			 <xs:element ref="linksegmenttype" maxOccurs="unbounded" />
+				<xs:element ref="linksegmenttype" maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	
+
 	<xs:element name="linksegment">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="numberoflanes" minOccurs="0" 	maxOccurs="1" />
+				<xs:element ref="numberoflanes" minOccurs="0"
+					maxOccurs="1" />
 				<xs:element ref="maxspeed" minOccurs="0" maxOccurs="1" />
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required" />
-      		<xs:attribute name="externalid" type="xs:string" use="optional"/>			
+			<xs:attribute name="externalid" type="xs:string"
+				use="optional" />
 			<xs:attribute name="dir" type="direction" use="required" />
-			<xs:attribute name="typeref" type="xs:string" use="optional">
+			<xs:attribute name="typeref" type="xs:string"
+				use="optional">
 				<xs:annotation>
 					<xs:documentation>
 						Refers to the unique identifier (id) associated
@@ -370,7 +372,8 @@
 						Note that while
 						typeref is optional, this is only allowed when no link segment
 						types have been defined
-						and we can assume it safe to revert to the single default link
+						and we can assume it safe to revert to the
+						single default link
 						segment type that has been created internally.
 					</xs:documentation>
 				</xs:annotation>
@@ -396,7 +399,8 @@
 					</xs:annotation>
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="name" type="xs:string" default="" minOccurs="0" />
+							<xs:element name="name" type="xs:string" default=""
+								minOccurs="0" />
 							<xs:element ref="gml:LineString" minOccurs="0"
 								maxOccurs="1">
 								<xs:annotation>
@@ -406,7 +410,7 @@
 										either duplicate the node points or not here
 									</xs:documentation>
 								</xs:annotation>
-							</xs:element>								
+							</xs:element>
 							<!-- a link segment has a direction, at most two directions exist 
 								per link -->
 							<xs:element ref="linksegment" minOccurs="1"
@@ -429,9 +433,12 @@
 								</xs:annotation>
 							</xs:element>
 						</xs:sequence>
-						<xs:attribute name="id" type="xs:string" use="required" />
-						<xs:attribute name="externalid" type="xs:string" use="optional"/>
-						<xs:attribute name="nodearef" type="xs:string" use="required">
+						<xs:attribute name="id" type="xs:string"
+							use="required" />
+						<xs:attribute name="externalid" type="xs:string"
+							use="optional" />
+						<xs:attribute name="nodearef" type="xs:string"
+							use="required">
 							<xs:annotation>
 								<xs:documentation>
 									Refers to the unique node identifier (id)
@@ -439,91 +446,73 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:attribute>
-						<xs:attribute name="nodebref" type="xs:string" use="required">
+						<xs:attribute name="nodebref" type="xs:string"
+							use="required">
 							<xs:annotation>
 								<xs:documentation>
 									Refers to the unique node identifier
 									associated with node 'b' of this link segment
 								</xs:documentation>
 							</xs:annotation>
-						</xs:attribute>					
+						</xs:attribute>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	
-  <xs:element name="physicalfeatures">
-    <xs:annotation>
-      <xs:documentation>
-        Physical features of a mode.        
-      </xs:documentation>
-    </xs:annotation>  
-    <xs:complexType>
-      <xs:sequence>
-         <xs:element name="vehicletype" type="vehicularType" default="vehicle">
-			    <xs:annotation>
-			      <xs:documentation>
-			        vehicular type of the mode
-			      </xs:documentation>
-			    </xs:annotation>
-			  </xs:element>
-         <xs:element name="motorisationtype" type="motorisationType" default="motorised">
-           <xs:annotation>
-             <xs:documentation>
-               motorisation type of the mode
-             </xs:documentation>
-           </xs:annotation>
-         </xs:element>
-         <xs:element name="tracktype" type="trackType" default="double">
-           <xs:annotation>
-             <xs:documentation>
-               track type of the mode
-             </xs:documentation>
-           </xs:annotation>
-         </xs:element>  
-       </xs:sequence>               				  
-    </xs:complexType>
-  </xs:element>
-  
-  <xs:element name="usabilityfeatures">
-    <xs:annotation>
-      <xs:documentation>
-        Usability features of a mode.        
-      </xs:documentation>
-    </xs:annotation>    
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="usedtotype" type="usedToType" default="private">
-          <xs:annotation>
-            <xs:documentation>
-               how this mode is used
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-       </xs:sequence>
-     </xs:complexType>
-  </xs:element>  
 
-	<!-- Root element -->
-	<xs:element name="macroscopicnetwork">
+	<xs:element name="physicalfeatures">
 		<xs:annotation>
 			<xs:documentation>
-				Root element of the macroscopic network
-				infrastructure. Defines the physical road network and its properties
+				Physical features of a mode.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="configuration" minOccurs="0">
+				<xs:element name="vehicletype" type="vehicularType"
+					default="vehicle">
 					<xs:annotation>
 						<xs:documentation>
-							When configuration is absent we assume a single
-							mode for the entire simulation
+							vehicular type of the mode
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element ref="infrastructurelayers" />
+				<xs:element name="motorisationtype"
+					type="motorisationType" default="motorised">
+					<xs:annotation>
+						<xs:documentation>
+							motorisation type of the mode
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="tracktype" type="trackType"
+					default="double">
+					<xs:annotation>
+						<xs:documentation>
+							track type of the mode
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="usabilityfeatures">
+		<xs:annotation>
+			<xs:documentation>
+				Usability features of a mode.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="usedtotype" type="usedToType"
+					default="private">
+					<xs:annotation>
+						<xs:documentation>
+							how this mode is used
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -542,26 +531,40 @@
 							<xs:documentation>
 								Each mode can have a description(name) and pcu
 								value besides their unique identifier (id).
-								When no name is given, the description is absent. When no pcu value
-								is defined the default is adopted. When a predefined PLANit mode is used
-								this is indicated with attribute predefined. For predefined modes all features
-								are defined by defaults and therefore sub-elements need not be specified, if they are
-								they are ignored. When the predefines attribute is missing, it is inferred from the name. Note however
-								that if you use a custom mode with a predefined name, PLANit will then populate the mode with the predefined
+								When no name is
+								given, the description is absent. When no pcu value
+								is defined
+								the default is adopted. When a predefined PLANit mode is used
+								this is indicated with attribute predefined. For predefined
+								modes all features
+								are defined by defaults and therefore
+								sub-elements need not be specified, if they are
+								they are ignored.
+								When the predefines attribute is missing, it is inferred from
+								the name. Note however
+								that if you use a custom mode with a
+								predefined name, PLANit will then populate the mode with the
+								predefined
 								defaults instead of the specified ones.
 							</xs:documentation>
 						</xs:annotation>
 						<xs:sequence>
-							<xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1" />
+							<xs:element name="name" type="xs:string" minOccurs="0"
+								maxOccurs="1" />
 							<!-- max speed in km/h -->
-							<xs:element ref="maxspeed" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="maxspeed" minOccurs="0" maxOccurs="1" />
 							<xs:element ref="pcu" minOccurs="0" />
-							<xs:element ref="physicalfeatures" minOccurs="0" maxOccurs="1"/>
-							<xs:element ref="usabilityfeatures" minOccurs="0" maxOccurs="1" />
+							<xs:element ref="physicalfeatures" minOccurs="0"
+								maxOccurs="1" />
+							<xs:element ref="usabilityfeatures" minOccurs="0"
+								maxOccurs="1" />
 						</xs:sequence>
-						<xs:attribute name="id" type="xs:string" use="required" />
-						<xs:attribute name="externalid" type="xs:string" use="optional"/>
-						<xs:attribute name="predefined" type="xs:boolean" use="optional" default="false" />
+						<xs:attribute name="id" type="xs:string"
+							use="required" />
+						<xs:attribute name="externalid" type="xs:string"
+							use="optional" />
+						<xs:attribute name="predefined" type="xs:boolean"
+							use="optional" default="false" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
@@ -592,11 +595,37 @@
 								</xs:annotation>
 							</xs:element>
 						</xs:sequence>
-						<xs:attribute name="id" type="xs:string" use="required"/>
-						<xs:attribute name="externalid" type="xs:string" use="optional"/>
+						<xs:attribute name="id" type="xs:string"
+							use="required" />
+						<xs:attribute name="externalid" type="xs:string"
+							use="optional" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
+	<!-- Root element -->
+	<xs:element name="macroscopicnetwork">
+		<xs:annotation>
+			<xs:documentation>
+				Root element of the macroscopic network
+				infrastructure. Defines the physical road network and its properties
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="configuration" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							When configuration is absent we assume a single
+							mode for the entire simulation
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="infrastructurelayers" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
 </xs:schema>

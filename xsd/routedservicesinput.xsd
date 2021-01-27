@@ -1,0 +1,339 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:gml="http://www.opengis.net/gml">
+	<xs:include schemaLocation="planitlibrary.xsd" />
+	<xs:import namespace="http://www.opengis.net/gml"
+		schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+		
+	<!-- Complex types -->
+	<xs:element name="legdefinition">
+		<xs:annotation>
+			<xs:documentation>
+				A leg definition represents a (partial) route for a service in between two locations of interest, e.g., public transport stops 
+				for example
+			</xs:documentation>
+		</xs:annotation>	
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string" use="optional"/>
+			<xs:attribute name="from" type="xs:string" use="optional">
+				<xs:annotation>
+					<xs:documentation>
+						Optional `from` connectoid Xml id, this can either be an origin/destination/transfer zone connectoid
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="to" type="xs:string" use="optional">
+				<xs:annotation>
+					<xs:documentation>
+						Optional `to` connectoid Xml id, this can either be an origin/destination/transfer zone connectoid
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>					
+			<xs:attribute name="lsrefs" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>
+						Link segment references should be provided as an ordered comma separated list of XML ids, reflecting the legs infrastructure elements used
+					</xs:documentation>
+				</xs:annotation>							
+			</xs:attribute>		
+			<xs:attribute name="modes" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>
+						Mode references should be provided as a comma separated list of XML ids, reflecting the modes that can use this leg
+					</xs:documentation>
+				</xs:annotation>							
+			</xs:attribute>
+			<xs:attribute name="type" type="legtype" use="optional"/>			
+		</xs:complexType>
+	</xs:element>	
+		
+	<xs:element name="scheduledefinition">
+		<xs:annotation>
+			<xs:documentation>
+				Contains the schedule for a routed service variant
+			</xs:documentation>
+		</xs:annotation>			
+		<xs:complexType>		
+			<xs:sequence>
+				<xs:element ref="departures" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							Contains all absolute departure times for this schedule
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="reltimings" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							Contains all leg travel times which combined with the absolute departure times can be used
+							to construct the (idealised) travel time of the service variant 
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Simple types -->
+	<xs:simpleType name="legtype">
+		<xs:annotation>
+			<xs:documentation>
+				options for leg types
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="pt" />
+			<xs:enumeration value="freight" />
+		</xs:restriction>
+	</xs:simpleType>	
+	
+	<!-- Simple elements -->
+	
+	<!-- Complex elements -->
+	
+	<xs:element name="legs">
+		<xs:annotation>
+			<xs:documentation>
+				contains the legs for all routed service. Legs may overlap.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="leg" ref="legdefinition" minOccurs="1" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>
+							A leg indicates a (partial) route for a service in between two locations of interest, e.g., public transport stops 
+							for example
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+		
+	<xs:element name="services">
+		<xs:annotation>
+			<xs:documentation>
+				all routed services for a particular mode
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="service" minOccurs="1" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>
+							A single service for a particular mode. A service can have mltiple variants, i.e., slightly different routes, within its service
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string" use="optional"/>
+			<xs:attribute name="moderef" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>
+						All services listed under this element are pertaining to the referenced mode only
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>			
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="service">
+		<xs:annotation>
+			<xs:documentation>
+				Definition for a single routed service
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="servicenr" type="xs:string" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							the nr of this service (can include characters, e.g. M5, 370X, etc.)
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							the name of the service as it is presented in reality, e.g. Glebe Point Road Service
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="circular" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
+					<xs:annotation>
+						<xs:documentation>
+							Indicates if the service is circular or not
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>	
+				<xs:element ref="variants" minOccurs="1" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>
+							Lists the service variants in existence for this service
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>											
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string" use="optional"/>			
+		</xs:complexType>
+	</xs:element>	
+	
+	<xs:element name="variants">
+		<xs:annotation>
+			<xs:documentation>
+				Contains all unique service variants for its parent service. Outlining their route and schedule/frequency pattern
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="variant" minOccurs="1" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>
+							An instance of a routed service variant
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+	<xs:element name="variant">
+		<xs:annotation>
+			<xs:documentation>
+				Instance of a routed service defining the route, schedule/frequency and other related attributes
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="schedule" ref="scheduledefinition" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							A scheduled variant
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="frequency" type="xs:string" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>
+							A frequency based variant
+						</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>					
+						<xs:attribute name="unit" type="timeUnit" use="optional" default="h" />
+					</xs:complexType>
+				</xs:element>				
+			</xs:choice>
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string" use="optional"/>
+			<xs:attribute name="legrefs" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>
+						Ordered leg reference XML ids that make up the route of this variant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>								
+		</xs:complexType>
+	</xs:element>	
+		
+	<xs:element name="departures">
+		<xs:annotation>
+			<xs:documentation>
+				Contains the schedule for a routed service variant
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="departure" type="xs:string" minOccurs="1" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="time" type="xs:time" minOccurs="1" maxOccurs="1" >
+								<xs:annotation>
+									<xs:documentation>
+										The absolute within day departure time in hh::mm:ss format
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>			
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" use="required" />
+						<xs:attribute name="externalid" type="xs:string" use="optional"/>						
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+	<xs:element name="reltimings">
+		<xs:annotation>
+			<xs:documentation>
+				Contains the schedule for a routed service variant
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="defaultstartoffset" type="xs:time" minOccurs="0" maxOccurs="1" default="00:00:00">
+					<xs:annotation>
+						<xs:documentation>
+							Offset (hh::mm:ss format) for each leg so that it automatically creates a waiting time obviating the need to define a start time
+							explicitly for each leg
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="leg" minOccurs="0" maxOccurs="unbounded" >
+					<xs:annotation>
+						<xs:documentation>
+							Reference to a leg including the timings relative to the departure times
+						</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="start" type="xs:time" minOccurs="0" maxOccurs="1" />
+							<xs:element name="end" type="xs:time" minOccurs="1" maxOccurs="1" />
+						</xs:sequence>
+						<xs:attribute name="ref" type="xs:string" use="required" >
+							<xs:annotation>
+								<xs:documentation>
+									Reference to a leg via its XML id
+								</xs:documentation>
+							</xs:annotation>						
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>			
+		
+	<!-- Root element -->
+	<xs:element name="routedservices">
+	<xs:annotation>
+		<xs:documentation>
+			Root element of routed services, these can be for either microscopic or macroscopic networks. A routed service
+			has a predefined route that is being executed by a mode at specific time instances (or frequencies).
+		</xs:documentation>
+	</xs:annotation>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="legs" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						Legs are used to unique define one or more infrastructure elements that are traversed by a routed service
+						without stopping. The routed service is expected to make a stop at the end of each leg to - for example - allow
+						for transfers by people or goods being carried by the routed service.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="services" minOccurs="1" maxOccurs="unbounded" >
+				<xs:annotation>
+					<xs:documentation>
+						The services where each service has a schedule of frequency, is linked to a mode and follows a route as per
+						a combination of legs. Each instance of services can define for one mode each.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>									
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+	
+</xs:schema>
