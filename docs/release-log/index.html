@@ -109,6 +109,8 @@
 	
 	<a class="dropdown-item" href="https://planitmanual.github.io/version/0_1_0">v0.1.0</a>
 	
+	<a class="dropdown-item" href="https://planitmanual.github.io/version/0_2_0">v0.2.0</a>
+	
 </div>
 
 			</li>
@@ -1797,40 +1799,56 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#010">0.1.0</a>
+    <li><a href="#020">0.2.0</a>
       <ul>
         <li><a href="#planitall">PLANitAll</a></li>
         <li><a href="#planit">PLANit</a></li>
+        <li><a href="#planitintegrationtest">PLANitIntegrationTest</a></li>
         <li><a href="#planitio">PLANitIO</a></li>
         <li><a href="#planitj2py">PLANitJ2Py</a></li>
-        <li><a href="#planitltm">PLANitLTM</a></li>
+        <li><a href="#planitmatsim">PLANitMATSIM</a></li>
+        <li><a href="#planitosm">PLANitOSM</a></li>
+        <li><a href="#planitparentpom">PLANitParentPom</a></li>
         <li><a href="#planitpy2j">PLANitPy2J</a></li>
         <li><a href="#planittntp">PLANitTNTP</a></li>
         <li><a href="#planitutils">PLANitUtils</a></li>
         <li><a href="#planitxmlgenerator">PLANitXMLGenerator</a></li>
       </ul>
     </li>
+    <li><a href="#010">0.1.0</a>
+      <ul>
+        <li><a href="#planitall-1">PLANitAll</a></li>
+        <li><a href="#planit-1">PLANit</a></li>
+        <li><a href="#planitio-1">PLANitIO</a></li>
+        <li><a href="#planitj2py-1">PLANitJ2Py</a></li>
+        <li><a href="#planitltm">PLANitLTM</a></li>
+        <li><a href="#planitpy2j-1">PLANitPy2J</a></li>
+        <li><a href="#planittntp-1">PLANitTNTP</a></li>
+        <li><a href="#planitutils-1">PLANitUtils</a></li>
+        <li><a href="#planitxmlgenerator-1">PLANitXMLGenerator</a></li>
+      </ul>
+    </li>
     <li><a href="#004">0.0.4</a>
       <ul>
-        <li><a href="#planit-1">PLANit</a></li>
+        <li><a href="#planit-2">PLANit</a></li>
         <li><a href="#metroscan">MetroScan</a></li>
-        <li><a href="#planitio-1">PLANitIO</a></li>
-        <li><a href="#planittntp-1">PLANitTNTP</a></li>
-        <li><a href="#planitpy2j-1">PLANitPy2J</a></li>
+        <li><a href="#planitio-2">PLANitIO</a></li>
+        <li><a href="#planittntp-2">PLANitTNTP</a></li>
+        <li><a href="#planitpy2j-2">PLANitPy2J</a></li>
       </ul>
     </li>
     <li><a href="#003">0.0.3</a>
       <ul>
-        <li><a href="#planit-2">PLANit</a></li>
+        <li><a href="#planit-3">PLANit</a></li>
         <li><a href="#metroscan-1">MetroScan</a></li>
-        <li><a href="#planitio-2">PLANitIO</a></li>
+        <li><a href="#planitio-3">PLANitIO</a></li>
       </ul>
     </li>
     <li><a href="#002">0.0.2</a>
       <ul>
-        <li><a href="#planit-3">PLANit</a></li>
+        <li><a href="#planit-4">PLANit</a></li>
         <li><a href="#metroscan-2">MetroScan</a></li>
-        <li><a href="#planitio-3">PLANitIO</a></li>
+        <li><a href="#planitio-4">PLANitIO</a></li>
         <li><a href="#basiccsv">BasicCsv</a></li>
       </ul>
     </li>
@@ -1874,12 +1892,129 @@
 	<h1>Release log</h1>
         
 	
-	<h2 id="010">0.1.0</h2>
+	<h2 id="020">0.2.0</h2>
 <h3 id="planitall">PLANitAll</h3>
+<ul>
+<li>moved parent pom to PLANitParentPom</li>
+</ul>
+<h3 id="planit">PLANit</h3>
+<p><strong>enhancements</strong></p>
+<ul>
+<li>rename everything related to routes to path in the memory model for consistency reasons (planit/#29)</li>
+<li>rename RotueIdType to PathIdType (planitpy2j/#1)</li>
+<li>results of shortest path calculations now provided in separate class ShortestPathResults (planit/#30)</li>
+<li>A* shortest path algorithm implementation now available (planit/#27)</li>
+<li>support for a overarching Graph interface/implementation as a basic building block for networks (planit/#31)</li>
+<li>move eLTM code from separate repository to core as it is an assignment method we want to provide out-of-the-box (planit/#32)</li>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>edge segments,edges, and vertices of the physical network should be connected while creating them (not when creating the final transport network) (planit/#35)</li>
+<li>flows per mode map and modeData in traditionalstatictrafficassignment seem to overlap. Refactored (planit/#15)</li>
+<li>refactored the configuration of all traffic assignment components using configurators (planit/#4), only network, demands, and zoning are treated differently still. This avoids user access to internals of algorithm classes.</li>
+<li>traffic assignment builder delays building the traffic assignment until build is triggered (planit/#17)</li>
+<li>costs using interactor no longer use convoluted event mechanism, this is simplified (planit/#36)</li>
+<li>Add support for predefined modes and physical and usability features (planitxmlgenerator #2)</li>
+<li>Refactor outputmanager and outputconfiguration especially on setting it up, this was not done correctly (planit/#12)</li>
+<li>add generic support for parsing/persisting networks and using PLANit as a converter between formats (planit/#37)</li>
+<li>add maximum speed to mode so we have an upperbound regardless of any link(segment(types)) (planit/#39)</li>
+<li>create a number of predefined default modes + add basic features to these modes (planit/#38)</li>
+<li>add support for creation and transformation of coordinate reference systems on networks and its geometry (planit/#41)</li>
+<li>move geometry from link to edge to be consistent with vertex and make it available at a lower level (planitutils/#2)</li>
+<li>internal id is long, xml id is string, and external id is also string now, with their own base implementation class (planitxmlgenerator/#6)</li>
+<li>change default properties of output configuration to use XML_ID rather than EXTERNAL_ID (planit/#42)</li>
+<li>support intermodal trips by creating an additional layer for networks where we allow for separate infrastructure networks and interactions between these networks (planit/#43)</li>
+<li>add support for custom PLANit modes in network (planit/#1)</li>
+</ul>
+<p><strong>bug fixes</strong></p>
+<ul>
+<li>max speed (without mode) on link segment was never placed in memory model, this is fixed (planit/#34)</li>
+</ul>
+<h3 id="planitintegrationtest">PLANitIntegrationTest</h3>
+<ul>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>add tests for OSM2planit and OSM2Matsim network conversions</li>
+</ul>
+<h3 id="planitio">PLANitIO</h3>
+<ul>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>add support for parsing/persisting predefined modes</li>
+<li>add support for parsing default allowed link segment type modes based on their track type (road/rail) (planitio/#9)</li>
+<li>separated reading of network from inputbuilder into networkreader class such that we can separately parse networks consistent with the converter classes (planitio/#10)</li>
+<li>allow an option to include XML validation in the Java if the user wishes (planitio/#4)</li>
+<li>allow External Ids (and xml ids) to be of String type (planitio/#1)</li>
+<li>centroid element must become optional, since it is not strictly needed (planitio/#2)</li>
+<li>support multi-layer networks in parser</li>
+</ul>
+<h3 id="planitj2py">PLANitJ2Py</h3>
+<ul>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>changes to be compatible, i.e., compilable, with PLANit changes for version 0.2.0</li>
+</ul>
+<h3 id="planitmatsim">PLANitMATSIM</h3>
+<ul>
+<li>first implementation of matsim network writer based on planit network memory model (single network layer support only)</li>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>verify if external id&rsquo;s are unique when used as id mapper when writing networks (planitmatsim/#2)</li>
+</ul>
+<h3 id="planitosm">PLANitOSM</h3>
+<ul>
+<li>first implementation to parse OSM network from xml/pbf files (no public transport routes/services/stops)</li>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>be able to process access restrictions and additional mode specific tags on ways that highlight mode access (planitosm/#6)</li>
+</ul>
+<h3 id="planitparentpom">PLANitParentPom</h3>
+<ul>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>Extract parent pom from PLANitAll and move it to its own repository (planitall/#3)</li>
+</ul>
+<h3 id="planitpy2j">PLANitPy2J</h3>
+<ul>
+<li>rename RouteIdType to PathIdType (PlanitPy2J/#1)</li>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>changes to be compatible, i.e., compilable, with PLANit changes for version 0.2.0</li>
+</ul>
+<h3 id="planittntp">PLANitTNTP</h3>
+<p><strong>enhancements</strong></p>
+<ul>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>changes to be compatible, i.e., compilable, with PLANit changes for version 0.2.0</li>
+</ul>
+<p>** bug fixes**</p>
+<ul>
+<li>jam density on link segment not properly set (max speed is used), this is fixed (PlanitTNTP/#1)</li>
+</ul>
+<h3 id="planitutils">PLANitUtils</h3>
+<ul>
+<li>rename everything related to routes to path in the memory model for consistency reasons (PlanitUtils/#1)</li>
+<li>support for a over arching Graph interface/implementation as a basic building block for networks (Planit/#31)</li>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>add support for predefined modes and physical and usability features (planitxmlgenerator/#2)</li>
+<li>add maximum speed to mode so we have an upperbound regardless of any link(segment(types)) (planit/#39)</li>
+<li>move geometry from link to edge to be consistent with vertex and make it available at a lower level (planitutils/#2)</li>
+<li>internal id is long, xml id is string, and external id is also string now, with their own base implementation class (planitxmlgenerator/#6)</li>
+</ul>
+<h3 id="planitxmlgenerator">PLANitXMLGenerator</h3>
+<p>** enhancements**</p>
+<ul>
+<li>add LICENSE.TXT to each repository so it is clearly licensed (planit/#33)</li>
+<li>move geometry from link segment to link (planitxmlgenerator/#1)</li>
+<li>Add support for predefined modes and physical and usability features to be persisted in the xml/xsd/xjb (planitxmlgenerator #2)</li>
+<li>update default mode to car + update xsd so this can be persisted as well (planitxmlgenerator/#8)</li>
+<li>add externalid element of type string as optional to all elements with an id (planitxxmlgenerator/#4)</li>
+<li>make all xsd schemas to be publiclly available (planitxmlgenerator/#1)</li>
+<li>id element must be string rather than number so that in the memory model we can add xmlId (planitxmlgenerator/#6)</li>
+<li>centroid element must become optional, since it is not strictly needed (planitio/#2)</li>
+<li>Document the currently implemented intermodal extension to the Zoning XML/XSD (planitxmlgenerator/#7)</li>
+</ul>
+<p>** bugs**</p>
+<ul>
+<li>change all link segment properties to double as memory model only utilises doubles (planitxmlgenerator/#3)</li>
+</ul>
+<h2 id="010">0.1.0</h2>
+<h3 id="planitall-1">PLANitAll</h3>
 <ul>
 <li>created build scripts</li>
 </ul>
-<h3 id="planit">PLANit</h3>
+<h3 id="planit-1">PLANit</h3>
 <ul>
 <li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANit">www.github.com/trafficplanit/PLANit</a></li>
 <li>Create website (#21) - <a href="https://trafficplanit.github.io/PLANitManual">https://trafficplanit.github.io/PLANitManual</a></li>
@@ -1887,13 +2022,13 @@
 <li>Ids generated for PLANit objects can now be grouped in a generic way by using IdTokens (#24)</li>
 <li>Tampere node model available as stand-alone functionality (#1)</li>
 </ul>
-<h3 id="planitio">PLANitIO</h3>
+<h3 id="planitio-1">PLANitIO</h3>
 <ul>
 <li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANitIO">www.github.com/trafficplanit/PLANitIO</a></li>
 <li>Split JAXB code generation off in its own repository (#7) - new repository is PLANitXMLGenerator</li>
 <li>separated out integration tests in separate files</li>
 </ul>
-<h3 id="planitj2py">PLANitJ2Py</h3>
+<h3 id="planitj2py-1">PLANitJ2Py</h3>
 <ul>
 <li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANitJ2Py">www.github.com/trafficplanit/PLANitJ2Py</a></li>
 </ul>
@@ -1901,28 +2036,28 @@
 <ul>
 <li>Moved to new repository (<a href="http://www.github.com/trafficplanit/PLANitLTM">www.github.com/trafficplanit/PLANitLTM</a></li>
 </ul>
-<h3 id="planitpy2j">PLANitPy2J</h3>
+<h3 id="planitpy2j-1">PLANitPy2J</h3>
 <ul>
 <li>Move repository to new location (<a href="http://www.github.com/trafficplanit/PLANitPy2J">www.github.com/trafficplanit/PLANitPy2J</a>)</li>
 <li>Create Python library installer (#3)</li>
 </ul>
-<h3 id="planittntp">PLANitTNTP</h3>
+<h3 id="planittntp-1">PLANitTNTP</h3>
 <ul>
 <li>Move repository to new location (<a href="http://www.github.com/trafficplanit/PLANitTNTP">www.github.com/trafficplanit/PLANitTNTP</a>)</li>
 </ul>
-<h3 id="planitutils">PLANitUtils</h3>
+<h3 id="planitutils-1">PLANitUtils</h3>
 <ul>
 <li>Move repository to new location (<a href="http://www.github.com/trafficplanit/PLANitUtils">www.github.com/trafficplanit/PLANitUtils</a>)</li>
 <li>Added functionality for group and token based id generation (#24)</li>
 <li>Added functionality for stack walking</li>
 <li>Added functionality for logging prefixes for various PLANit components</li>
 </ul>
-<h3 id="planitxmlgenerator">PLANitXMLGenerator</h3>
+<h3 id="planitxmlgenerator-1">PLANitXMLGenerator</h3>
 <ul>
 <li>Created repository by splitting it off from PLANitIO (<a href="http://www.github.com/trafficplanit/PLANitXMLGenerator">www.github.com/trafficplanit/PLANitXMLGenerator</a>)</li>
 </ul>
 <h2 id="004">0.0.4</h2>
-<h3 id="planit-1">PLANit</h3>
+<h3 id="planit-2">PLANit</h3>
 <ul>
 <li>Logger created for each class as private static member (#63)</li>
 <li>Logger configuration revised (#59)</li>
@@ -1942,7 +2077,7 @@
 <ul>
 <li>Fixed  Logging (#10)</li>
 </ul>
-<h3 id="planitio-1">PLANitIO</h3>
+<h3 id="planitio-2">PLANitIO</h3>
 <ul>
 <li>PLANitIO now reads the value of <maxspeed> from <linksegment> and <linksegmenttype> and uses the smaller if they are both present and different (#12)</li>
 <li>Creation of bulky JAR file now done in PLANitALL project (#25)</li>
@@ -1961,9 +2096,9 @@
 <li>Default mode now created (#10)</li>
 <li>Check that both link segments in a single link are in opposite directions (#13)</li>
 </ul>
-<h3 id="planittntp-1">PLANitTNTP</h3>
+<h3 id="planittntp-2">PLANitTNTP</h3>
 <p>Fixed Logging (PLANitTNTP JIRA Task #1)</p>
-<h3 id="planitpy2j-1">PLANitPy2J</h3>
+<h3 id="planitpy2j-2">PLANitPy2J</h3>
 <ul>
 <li>Create tests that set/get every configurable option of every component on Python side (#1)</li>
 <li>Renamed project to PLANitJ2Py and rename PLANitPythonRunner to PLANitPy2J (#2)</li>
@@ -1976,7 +2111,7 @@
 <li>Initial costs no longer require assignment to be set (#12)</li>
 </ul>
 <h2 id="003">0.0.3</h2>
-<h3 id="planit-2">PLANit</h3>
+<h3 id="planit-3">PLANit</h3>
 <ul>
 <li>Refactor setting of OutputKeys and OutputProperties in BaseOutputFormatter (#29)</li>
 <li>Activate ODSkimOutputTypes before saving OD skim data (#34)</li>
@@ -2003,12 +2138,12 @@
 <li>Bug Fix in reading UserClass in MetroScan (#8)</li>
 <li>Update parser based on new format provided by MetroScanTeam (#9)</li>
 </ul>
-<h3 id="planitio-2">PLANitIO</h3>
+<h3 id="planitio-3">PLANitIO</h3>
 <ul>
 <li>Restructure resources directory to create easier to understand hierarchy (#1)</li>
 </ul>
 <h2 id="002">0.0.2</h2>
-<h3 id="planit-3">PLANit</h3>
+<h3 id="planit-4">PLANit</h3>
 <ul>
 <li>Added OD OutputType to capture and record Skim matrices</li>
 <li>Added writing of Skim matrices to output formatters</li>
@@ -2029,7 +2164,7 @@
 <li>Common approach to adding and removing output properties from output formatters</li>
 <li>Some code refactored, particularly in BaseOutputFormatter and FileOutputFormatter to reuse common code for managing output between different output formatters</li>
 </ul>
-<h3 id="planitio-3">PLANitIO</h3>
+<h3 id="planitio-4">PLANitIO</h3>
 <ul>
 <li>Renamed PLANitXML to PLANitIO</li>
 <li>Refactored package names</li>
