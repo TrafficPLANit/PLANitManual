@@ -53,9 +53,9 @@ In this getting started we will take you through the process of setting up the e
 	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Physical network component --&amp;gt;&lt;/span&gt;
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructurelayers&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;road&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;				&amp;lt;nodes&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;					&amp;lt;node id=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;road&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/nodes&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;links&amp;gt;&lt;/span&gt;
