@@ -2580,6 +2580,7 @@ connectoid-zone combination can have allowable modes and one might enter via one
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;quot;platform&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;quot;stop_pole&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;small_station&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;quot;unknown&amp;quot;&lt;/code&gt; (&lt;strong&gt;default if not specified&lt;/strong&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The (transfer) zone element has the following simple-elements as children:&lt;/p&gt;

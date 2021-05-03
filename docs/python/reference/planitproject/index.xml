@@ -1,0 +1,465 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – PlanitProject</title>
+    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/</link>
+    <description>Recent content in PlanitProject on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: .activate(&#43;)</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_activate&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_activate&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .activate(+) method allows you to activate different types of output for your assignment given some output formatter enum that you provide&lt;/p&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.activate(output_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;output_formatter_type&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of output formatter to apply&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# without any explicit activation of any output formatter, PLANit will automatically &lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate PLANIT_IO upon the creation of any traffic assignment type. No explicit action needed&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# the output formatter is then accessible via the .output property so you can configure the generated output&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;example-2&#34;&gt;Example 2&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Activate memory based output formatting on top of the default persistence&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# access via .memory property to configure further&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
+&lt;a href=&#34;../project_deactivate+&#34;&gt;.deactivate(+)&lt;/a&gt; for de-activating output formatters&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .deactivate(&#43;)</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_deactivate&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_deactivate&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .deactivate(+) method allows you to de-activate types of output for your assignment given some output formatter enum that you provide. Only when an output formatter is activated, de-activating it will result in a de-activation, otherwise the call is imsply ignored.&lt;/p&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.deactivate(output_formatter_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;output_formatter_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;&lt;code&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of output formatter to de-activate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# without any explicit activation of any output formatter, PLANit will automatically &lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate PLANIT_IO upon the creation of any traffic assignment type. No explicit action needed&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# so, you can deactivate it as follows, resulting in no output for your run&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deactivate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT_IO&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# likely you want to activate another output type instead&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported output formatters&lt;br&gt;
+&lt;a href=&#34;../project_activate+&#34;&gt;.activate(+)&lt;/a&gt; for activating output formatters&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .run()</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_run/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .run() method conducts the actual traffic assignment run. Make sure all configuration has been applied before calling this method. Results are only available after invoking this method.&lt;/p&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.run()&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;perform further configuration here&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# conduct the simulation&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;do something with results&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .set(&#43;)</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_set&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_set&#43;/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;This .set allows you to set the type of traffic assignment to use on your planit instance.&lt;/p&gt;
+&lt;h4 id=&#34;signature&#34;&gt;Signature&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.set(traffic_assignment_type)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;traffic_assignment_type&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;&lt;code&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of traffic assignment to apply&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# choose to run PLANit with a traditional static traffic assignment method&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .assignment</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_assignment/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .assignment property allows access to the assignment instance for configuration purposes. Depending on the chosen assignment different methods and properties will be exposed. Only a single assignment is available for each planit project instance.&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic Assignment&lt;/a&gt; implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;p&gt;Create a traditional static traffic assignment. The &lt;code&gt;planit_instance.assignment.&amp;lt;call method&amp;gt;&lt;/code&gt; must call a method available on 
+the traditional static assignment class, since this is the instance it returns&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create instance, set traffic assignment type, access the assignment instance&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;assignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/trafficassignmenttype&#34;&gt;TrafficAssignment.&amp;lt;enum&amp;gt;&lt;/a&gt; for supported assignment types&lt;br&gt;
+&lt;a href=&#34;../project_set+&#34;&gt;.set(+)&lt;/a&gt; on how to instantiate this property&lt;/p&gt;
+&lt;p&gt;To find out more about the options available on any of the assignment implementations, please refer to the 
+&lt;a href=&#34;../../assignment&#34;&gt;assignment section&lt;/a&gt; of this manual&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .demands</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_demands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_demands/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .demands property allows access to the in-memory version of the parsed input demands&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../demands&#34;&gt;Demands&lt;/a&gt; implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory demands instance&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;demands&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../demands&#34;&gt;Demands&lt;/a&gt; describes the options available on the demands implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .initial_costs</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_initial_costs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_initial_costs/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .initial_costs property allows you access to the initial costs configuration instance.&lt;/p&gt;
+&lt;p&gt;The benefit of using initial costs is to provide (link segment) generalised costs to be used for the traffic assignment&amp;rsquo;s first iteration&amp;rsquo;s path choice or shortest path calculation. By doing so you no longer have to revert to - for example - free flow travel times which are generally considered inaccurate in all but the most simplistic applications. Instead, a more representative cost is adopted, obtained from any data source (earlier simulation run, real-world data sources, etc.).&lt;/p&gt;
+&lt;p&gt;This more representative cost ideally results in quicker convergence and/or more realistic results in earlier iterations than otherwise would be the case.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Initial costs can be provided for a specific time period, or for all time periods at once, depending on the user&amp;rsquo;s available data resources or preferences.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;Class &lt;a href=&#34;../../initialcost&#34;&gt;&lt;code&gt;InitialCost&lt;/code&gt;&lt;/a&gt; instance&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory network instance&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;initial_costs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_initial_costs&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../initialcost&#34;&gt;&lt;code&gt;InitialCost&lt;/code&gt;&lt;/a&gt; implementation of the initial cost class&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .memory</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_memory/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .memory property allows access to the results in-memory. Configuration specific to this output formatter is also accessible via this property&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory Output Formatter&lt;/a&gt; implementation&lt;/p&gt;
+&lt;p&gt;Source code: &lt;code&gt;MemoryOutputFormatterWrapper&lt;/code&gt; in &lt;code&gt;Wrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OutputFormatter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MEMORY&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
+&lt;a href=&#34;project_activate+&#34;&gt;.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
+&lt;a href=&#34;project_deactivate+&#34;&gt;.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter
+&lt;a href=&#34;../../outputformatters/memory&#34;&gt;Memory output formatter &lt;/a&gt; describes the options available on the memory output formatter implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .network</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_network/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .network property allows access to the in-memory version of the parsed network&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../network&#34;&gt;Network&lt;/a&gt; instance&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create instance and access in-memory network instance&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;network&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../network&#34;&gt;Network&lt;/a&gt; describes the options available on the network implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .output</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_output/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_output/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .output property allows access to specific configuration options on the native PLANit output formatter. The native formatter persists results to disk using csv files with additional meta data provided in xml files.&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../outputformatters/default&#34;&gt;Default Output Formatter&lt;/a&gt; implementation&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# prep&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TrafficAssignment&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;TRADITIONAL_STATIC&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;other configuration&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../enums/outputformattertype&#34;&gt;OutputFormatter.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available output formatters&lt;br&gt;
+&lt;a href=&#34;project_activate+&#34;&gt;.activate(+)&lt;/a&gt; to see how to activate an output formatter&lt;br&gt;
+&lt;a href=&#34;project_deactivate+&#34;&gt;.deactivate(+)&lt;/a&gt; to see how to de-activate an output formatter &lt;br&gt;
+&lt;a href=&#34;../../outputformatters/default&#34;&gt;Default output formatter&lt;/a&gt; describes the options available on the default output formatter implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: .zoning</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_zoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_zoning/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;The .zoning property allows access to the in-memory version of the parsed input zoning structure&lt;/p&gt;
+&lt;h4 id=&#34;return-type&#34;&gt;Return type&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../zoning&#34;&gt;Zoning&lt;/a&gt; instance&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create instance and access in-memory zoning structure instance&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;zoning&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../zoning&#34;&gt;Zoning&lt;/a&gt; describes the options available on the zoning structure implementation&lt;/p&gt;
+&lt;h5 id=&#34;source-code&#34;&gt;Source code&lt;/h5&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitProject&lt;/code&gt; in &lt;code&gt;project.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
