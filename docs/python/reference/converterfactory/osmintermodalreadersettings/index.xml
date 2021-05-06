@@ -38,7 +38,7 @@
 &lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;network_settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;some_method&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../osmnetworkreadersettings&#34;&gt;OsmNetworkReaderSettings&lt;/a&gt; for the network sepcific settings available&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../osmnetworkreadersettings&#34;&gt;OsmNetworkReaderSettings&lt;/a&gt; for the network specific settings available&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;ReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
 
@@ -104,7 +104,7 @@
 &lt;tr&gt;
 &lt;th&gt;Parameter&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;a href=&#34;../../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Default&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
@@ -181,21 +181,6 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;osmimrpts_set_stop_waiting_area_search_radius+&#34;&gt;&lt;code&gt;.set_stop_to_waiting_area_search_radius_meters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;25 (m)&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Set the search radius to search for OSM stop positions around an OSM waiting area if no explicit mapping is available&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;osmimrpts_set_station_waiting_area_search_radius+&#34;&gt;&lt;code&gt;.set_station_to_waiting_area_search_radius_meters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;35 (m)&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Set the search radius to search for OSM waiting areas (platforms) around an OSM station if it is not part of an OSM stop area&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;osmimrpts_set_station_parallel_tracks_search_radius+&#34;&gt;&lt;code&gt;.set_station_to_parallel_tracks_search_radius_meters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;35 (m)&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Set the search radius to search for parallel rail tracks around a stand-alone OSM station, i.e., without any nearby platforms nor part of stop area&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;osmimrpts_exclude_osm_nodes+&#34;&gt;&lt;code&gt;.exclude_osm_nodes_by_id(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Exclude OSM nodes by their OSM id, so they are not parsed anymore (as public transport infrastructure), e.g. bus stop poles, stand alone stations, etc.&lt;/td&gt;
@@ -216,14 +201,29 @@
 &lt;td align=&#34;left&#34;&gt;Explicitly map a OSM waiting area to find or create a stop location on the nominated OSM way. Useful in case of tagging errors&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrpts_remove_dangling_zone_groups+&#34;&gt;&lt;code&gt;.set_remove_dangling_transfer_zone_groups(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;True&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Indicate if dangling zone groups, i.e., transfer zone groups without transfer zones are to be removed after the reader has completed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;osmimrpts_remove_dangling_zones+&#34;&gt;&lt;code&gt;.set_remove_dangling_zones(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;True&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Indicate if dangling zones, i.e., created transfer zones without connectoids are to be removed after the reader has completed&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;osmimrpts_remove_dangling_zone_groups+&#34;&gt;&lt;code&gt;.set_remove_dangling_transfer_zone_groups(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;True&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Indicate if dangling zone groups, i.e., transfer zone groups without transfer zones are to be removed after the reader has completed&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrpts_set_station_waiting_area_search_radius+&#34;&gt;&lt;code&gt;.set_station_to_waiting_area_search_radius_meters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;35 (m)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the search radius to search for OSM waiting areas (platforms) around an OSM station if it is not part of an OSM stop area&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrpts_set_stop_waiting_area_search_radius+&#34;&gt;&lt;code&gt;.set_stop_to_waiting_area_search_radius_meters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;25 (m)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the search radius to search for OSM stop positions around an OSM waiting area if no explicit mapping is available&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrpts_set_station_parallel_tracks_search_radius+&#34;&gt;&lt;code&gt;.set_station_to_parallel_tracks_search_radius_meters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;35 (m)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the search radius to search for parallel rail tracks around a stand-alone OSM station, i.e., without any nearby platforms nor part of stop area&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -253,7 +253,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;../&#34;&gt;IntermodalReaderSettings&lt;/a&gt; parent settings class&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;ReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;OsmPublicTransportSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
