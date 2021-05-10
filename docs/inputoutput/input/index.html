@@ -280,6 +280,52 @@
 
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANitManual/docs/inputoutput/input/matsim/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">MATSim</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitmanualdocsinputoutputinputmatsim">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANitManual/docs/inputoutput/input/osm/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Open Street Map</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitmanualdocsinputoutputinputosm">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -3023,50 +3069,13 @@
 	<h1>Input Data formats</h1>
         
 	
-	<p>In this section of the manual we discuss the input data formats supported by PLANit</p>
-<blockquote>
-<p>Here we <strong>only</strong> focus on the <strong>structure of the data formats</strong> . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the <a href="../../java">Java</a> and <a href="../../python/reference/outputformatters">Python</a> API for more detailed information.</p>
-</blockquote>
-<p>The following input data formats are available:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data Format</th>
-<th align="left">File type</th>
-<th align="left">Status</th>
-<th align="left">Documentation</th>
-<th align="left">Python support</th>
-<th align="left">Java support</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><a href="planitdefault">PLANit default input format</a></td>
-<td align="left"><code>XML</code></td>
-<td align="left">supported</td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-<tr>
-<td align="left">TNTP open format</td>
-<td align="left"><code>ASCII</code></td>
-<td align="left">prototype</td>
-<td align="left">NO</td>
-<td align="left">NO</td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-<tr>
-<td align="left">BasicCSV</td>
-<td align="left"><code>CSV</code></td>
-<td align="left">prototype</td>
-<td align="left">NO</td>
-<td align="left">NO</td>
-<td align="left"><strong>YES</strong></td>
-</tr>
-</tbody>
-</table>
-<p>It is strongly recommended to only use the officially supported native xml format at this stage, as the TNTP and BasicCSV input formats do not support the full feature set of PLANit, are not available in Python, nor are they tested fully. Also, the TNTP format is ambiguous in its specification and often example networks provided in this format  do not strictly follow the format either.</p>
+	<p>In this section of the manual we discuss the supported input data formats supported by PLANit, via either a converter based reader and/or writer, or directly via a PLANit project instance.</p>
+<p>Each of the various sub-sections focuses on one particular data format.</p>
+<ul>
+<li><a href="planitdefault">PLANit native XML format</a></li>
+<li><a href="osm">Open Street Map (XML/PBF) format</a></li>
+<li><a href="matsim">MATSim XML format</a></li>
+</ul>
 
         <div class="section-index">
     
@@ -3471,6 +3480,17 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANitManual/docs/inputoutput/input/matsim/">MATSim Data format (XML)</a>
+                    </h5>
+                    <p></p>
+                </div>
+            
+        
+            
+        
+            
         
             
         
@@ -3478,6 +3498,13 @@
         
             
         
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANitManual/docs/inputoutput/input/osm/">Open Street Map Data format (XML/PBF)</a>
+                    </h5>
+                    <p></p>
+                </div>
             
         
             

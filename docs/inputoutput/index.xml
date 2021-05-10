@@ -22,50 +22,13 @@
       <description>
         
         
-        &lt;p&gt;In this section of the manual we discuss the input data formats supported by PLANit&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The following input data formats are available:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Documentation&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;planitdefault&#34;&gt;PLANit default input format&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;supported&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;TNTP open format&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ASCII&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;prototype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;BasicCSV&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;CSV&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;prototype&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;It is strongly recommended to only use the officially supported native xml format at this stage, as the TNTP and BasicCSV input formats do not support the full feature set of PLANit, are not available in Python, nor are they tested fully. Also, the TNTP format is ambiguous in its specification and often example networks provided in this format  do not strictly follow the format either.&lt;/p&gt;
+        &lt;p&gt;In this section of the manual we discuss the supported input data formats supported by PLANit, via either a converter based reader and/or writer, or directly via a PLANit project instance.&lt;/p&gt;
+&lt;p&gt;Each of the various sub-sections focuses on one particular data format.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;planitdefault&#34;&gt;PLANit native XML format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;osm&#34;&gt;Open Street Map (XML/PBF) format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;matsim&#34;&gt;MATSim XML format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>

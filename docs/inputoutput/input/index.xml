@@ -23,6 +23,32 @@
         
         
         &lt;p&gt;In this section of the manual we discuss the Default XML input format used by PLANit.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Network&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Demands&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;input/default&#34;&gt;PLANit default input format&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -173,7 +199,7 @@
 					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/nodes&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;links&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodearef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodebref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodearef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodebref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;a_b&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;b_a&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;length&amp;gt;&lt;/span&gt;10&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/length&amp;gt;&lt;/span&gt;
@@ -193,7 +219,7 @@
 					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -204,13 +230,254 @@
 					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
 				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
 			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
 		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zones&amp;gt;&lt;/span&gt;
 	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: MATSim Data format (XML)</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/matsim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/matsim/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the MATSim XML network and public transport format. The MATSim writer requires a PLANit network/zoning memory model as input to be able to persist in MATSim XML format.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Network&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Demands&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;input/matsim&#34;&gt;MATSim&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;The MATsim network output is based on  &lt;a href=&#34;http://www.matsim.org/files/dtd/network_v2.dtd&#34;&gt;http://www.matsim.org/files/dtd/network_v2.dtd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The MATsim (partially supported) public transport output is based on &lt;a href=&#34;http://www.matsim.org/files/dtd/transitSchedule_v2.dtd&#34;&gt;http://www.matsim.org/files/dtd/transitSchedule_v2.dtd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More information on MATSim can be found on their website: &lt;a href=&#34;http://www.matsim.org&#34;&gt;www.matsim.org&lt;/a&gt;. MATSim has no official user manual, but a good starting point is a book that has bundled a number of (white) papers on this open-source agent based platform, see &lt;a href=&#34;https://www.matsim.org/docs/userguide/&#34;&gt;https://www.matsim.org/docs/userguide/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;matsim-and-planit&#34;&gt;MATSim and PLANit&lt;/h2&gt;
+&lt;p&gt;Any PLANit network/zoning memory model can be converted into a MATSim network/transit (schedule) using the available writers (network/intermodal).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While MATSim supports complete transit schedules (frequency, schedule, pt vehicle fleet), PLANit does not (yet). Therefore only partof the transit schedule can be populated when persisting a PLANit network/zoning as a MATSim (intermodal) network.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Examples on how to perform a network conversion from PLANit or another input format to MATSim are provided in the respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#matsim-basics&#34;&gt;MATSim basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#matsim-basics&#34;&gt;MATSim improved geometry generation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;matsim-basics&#34;&gt;MATSim Basics&lt;/h2&gt;
+&lt;p&gt;MATSim is a Java based open-source traffic simulator that uses agents for its vehicles. It is multi-modal and has various extensions that can be added to the core functionality. Its data format for its network and public transport schedule is straightforward and somewhat simplified compared to PLANit&amp;rsquo;s features, making it possible to convert any PLANit network to a MATsim network without loss of information (on the MATsim side).&lt;/p&gt;
+&lt;h2 id=&#34;matsim-improved-geometry-generation&#34;&gt;MATSim Improved Geometry generation&lt;/h2&gt;
+&lt;p&gt;MATSim links only carry two geo locations - for both extreme nodes - but it lacks any shaping internally. In larger networks and for longer links visualisation of MATSim networks is therefore somewhat confusing and chaotic because the shape of the road is largely lost. To overcome this problem the &lt;a href=&#34;https://simunto.com/via/&#34;&gt;VIA visualiser&lt;/a&gt; (that supports MATSim) has defined an additional data format that provides the internal geometry of all MATsim links. This format can be found here:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.simunto.com/via/layers/network.html&#34;&gt;https://docs.simunto.com/via/layers/network.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The MATSim writer has a feature to support the persistence of such detailed geometry alongside the MATSim network. this makes visualising networks (in VIA) much nicer. It is recommended to switch this on via the settings when relevant.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Open Street Map Data format (XML/PBF)</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/osm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/osm/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the Open street Map (OSM) XML and PBF format. The OSM parser requires a local file (XML or PBF) as input. Use for example &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Osmosis&#34;&gt;Osmosis&lt;/a&gt; to extract such a file from the cloud based on a predetermined bounding box.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Network&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Demands&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;input/osm&#34;&gt;Open Street Map &lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;/&lt;code&gt;PBF&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;osm-and-planit&#34;&gt;OSM and PLANit&lt;/h2&gt;
+&lt;p&gt;Any OSM XML or PBF file can be converted into a PLANit memory model using the available readers. The resulting PLANit memory model can then be used to conduct an assignment (Java) or persist into another data format, e.g., PLANit XML, MATSim, etc. (Java, Python).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Examples on how to perform a network conversion from OSM to other data formats (PLANit, MATSim, etc.) are provided in the respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;OSM has a detailed description of its XML and PBF formats available on their own Wiki:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/OSM_XML&#34;&gt;OSM XML file format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/PBF_Format&#34;&gt;OSM PBF file format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We refer the interested reader to the above links for an in-depth discussion on the data formats themselves. With respect to PLANit, this page details what our OSM reader does and does not support with respect to the entities that reside in each OSM file in the outline below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-basics&#34;&gt;OSM basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-road-network-support&#34;&gt;OSM road network support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-road-network-support&#34;&gt;OSM rail network support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[OSM public transport support]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-mode-support&#34;&gt;OSM mode support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bounding-box-edges&#34;&gt;Bounding box edges&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#logging-support&#34;&gt;Logging support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;osm-basics&#34;&gt;OSM Basics&lt;/h2&gt;
+&lt;p&gt;OSM has only three types of entities that cover all its categories ranging from buildings, to trees, to seas, to roads:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-nodes&#34;&gt;Nodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-ways&#34;&gt;Ways&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-relations&#34;&gt;Relations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;osm-nodes&#34;&gt;OSM Nodes&lt;/h3&gt;
+&lt;p&gt;These are point locations with additional tags that identify what this point represents. For example, this can be a tree, but also an intersection, it can be a landmark, or a train station.&lt;/p&gt;
+&lt;h3 id=&#34;osm-ways&#34;&gt;OSM Ways&lt;/h3&gt;
+&lt;p&gt;These are either lines (open) or polygons (closed) with additional tags that identify what this way represents. For example, this can be a road, but also a building, it can be a train platform, but also a border.&lt;/p&gt;
+&lt;h3 id=&#34;osm-relations&#34;&gt;OSM Relations&lt;/h3&gt;
+&lt;p&gt;These are groups of OSM entities, where each member can either be an OSM node, OSM way, or OSM relation. For example, this can be a station with multiple platforms, or a group of buildings that belong together etc.&lt;/p&gt;
+&lt;h2 id=&#34;osm-road-network-support&#34;&gt;OSM Road Network Support&lt;/h2&gt;
+&lt;p&gt;In OSM the road network is represented by nodes and ways, where each way is tagged with &lt;code&gt;highway=&amp;lt;type&amp;gt;&lt;/code&gt;. A way consists of two or more nodes. These nodes can represent the shape of the internal road, or intersections.&lt;/p&gt;
+&lt;p&gt;PLANit supports all meaningful highway types and allows the user to configure which types to parse and which types to ignore. This way you can decide to parse a bicycle network, pedestrian network, bus, or main arterial private car network, or a combination of the former.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you activate &lt;code&gt;highway=footway&lt;/code&gt; but have the &lt;code&gt;pedestrian&lt;/code&gt; mode deactivated, footways will still not appear in the final result (unless default that we do not parse highway types without activated modes is overwritten). So, make sure that for your desired result the combination of activated modes, and way types makes sense.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;More information on the &lt;code&gt;highway=&lt;/code&gt; tag can be found under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:highway&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;topological-vs-non-topological&#34;&gt;Topological vs Non-topological&lt;/h3&gt;
+&lt;p&gt;OSM networks are not topological in the sense that OSM ways may intersect but at the point of intersection they either have no node, or they do have a node but the same OSM way continues beyond the intersection point. PLANit requires topological networks where each discontinuity in the road infrastructure leads to a node (intersection) and a new road (link) starts beyond the discontinuity.&lt;/p&gt;
+&lt;p&gt;Therefore, The OSM parser will automatically split all identified locations where OSM ways intersect in separate links. Each link will get its own unique PLANit id, however it will retain the OSM way id as its external id, so it can be identified after the fact if needed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If two OSM ways intersect but do not share a node it is assumed they are non-level crossings and PLANit will not split the links (tunnels, bridges etc.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The PLANit parser is quite sophisticated in that it can handle complex OSM way intersects, even to the point that it correctly disentangles self-intersection OSM ways. This sometimes occurs, especially for footways it is quite common.&lt;/p&gt;
+&lt;h2 id=&#34;osm-rail-network-support&#34;&gt;OSM Rail Network Support&lt;/h2&gt;
+&lt;p&gt;In OSM the rail network is represented by nodes and ways, just as roads, where each way is tagged with &lt;code&gt;railway=&amp;lt;type&amp;gt;&lt;/code&gt;. A way consists of two or more nodes. These nodes can represent the shape of the internal railway, or intersections/switches.&lt;/p&gt;
+&lt;p&gt;PLANit supports all meaningful railway types and allows the user to configure which types to parse and which types to ignore. This way you can decide to parse a tram network, lightrail network, rail, or even miniature railways, or a combination of the former.&lt;/p&gt;
+&lt;p&gt;Similar to road networks, the parser will split an OSM railway whenever it intersects with another OSM way, see &lt;a href=&#34;#topological-vs-non-topological&#34;&gt;topological vs non-topological&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More information on the &lt;code&gt;railway=&lt;/code&gt; tag can be found under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:railway&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:railway&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;osm-public-transport-support&#34;&gt;OSM Public transport support&lt;/h2&gt;
+&lt;p&gt;The OSM parser currently supports parsing of &lt;strong&gt;public transport infrastructure&lt;/strong&gt;, but &lt;strong&gt;not (yet) public transport services and/or lines&lt;/strong&gt;. This means that stations, platforms, bus stops, stop locations, and stop areas are all parseable, but no information on the lines utilising this infrastructure or their schedules/frequencies is available.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Support for lines/services might be added in future versions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In OSM there exist various iterations of tagging schemes to identify public transport (pt) infrastructure. There are two dominant schemes, both of which are supported by this parser, see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Public_transport&#34;&gt;https://wiki.openstreetmap.org/wiki/Public_transport&lt;/a&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Public transport scheme v1 (Ptv1), a.k.a. original public transport schema&lt;/li&gt;
+&lt;li&gt;Public transport scheme v2 (Ptv2), a.k.a. new public transport schema&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ptv2 is backwards compatible with Ptv1. The OSM parser attempts to parse pt infrastructure as Ptv2 if possible (since it is more comprehensive and less ambiguous), but if insufficient tagging is available, it falls back onto Ptv1 parsing. alternatively, if incomplete Ptv2 features are identified, but additional Ptv1 tags are available to provide context, the parser will attempt to complete the parsing action using both sources of information.&lt;/p&gt;
+&lt;p&gt;The main difference between Ptv1 and Ptv2 is that Ptv1 largely identifies pt by value tags for existing keys, e.g. &lt;code&gt;highway=bus_stop&lt;/code&gt;, or &lt;code&gt;railway=station&lt;/code&gt;, whereas Ptv2 has its own dedicated key &lt;code&gt;public_transport=&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;transfer-zones-and-connectoids&#34;&gt;Transfer Zones And Connectoids&lt;/h3&gt;
+&lt;p&gt;The OSM parser supports all common OSM public transport infrastructure entities such as platforms, platform_edges, bus_stops, and stations, that directly relate to the transfer from one mode to another. To enable this functionality the user must use an &lt;code&gt;INTERMODAL&lt;/code&gt; reader (representing the ability to transfer between modes within a trip), rather than the simpler &lt;code&gt;NETWORK&lt;/code&gt; reader. All parsed pt infrastructure is converted into transfer zones (geographic locations where intermodal transfers occur, e.g., platforms, stop poles) and connectoids (the location where a mode from a physical network can access the transfer zone, e.g., vehicle stop locations).&lt;/p&gt;
+&lt;p&gt;Public Transport infrastructure such as bus_stops, platforms, stations, generally reside next to the network and not on the network. While there are exceptions and frequent tagging errors (that the parser supports/identifies), the connectoid to the road network is typically achieved via the nearest node, or via explicit references between a road network node (stop_location) and the waiting area (platform, pole etc.). The OSM parser utilises the explicit references where present, adopts the nearest node strategy otherwise, or alternatively let&amp;rsquo;s the user override the mapping between waiting area and stop_location manually if desired.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OSM &lt;code&gt;stop_location&lt;/code&gt; To PLANit &lt;code&gt;LinkSegment&lt;/code&gt;&lt;/strong&gt;
+A relation between a waiting area and stop_location in PLANit is registered on the connectoid. Each connectoid (stop_location) can have access to one or more transfer zones (waiting areas), and for each relation it has a dedicated list of modes that it allows for this transfer, all of which is parsed or derived from the available OSM tagging. The more detailed the tagging the more precise this information is. Finally, each connectoid is related to the physical network by referring to a particular link segment in PLANit, based on the OSM way the stop_location resides on. However, since a stop_location in OSM is a node, and a link segment in PLANit is not, the parser infers which link segment upstream to the (stop_location) node is the most likely choice. If something unusual is found, it will be logged for the user to make the right decision via the configuration.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is recommended to carefully check the logs for warnings and other information to determine if manual override action is required. Especially in public transport tagging many user errors exist due to the complexity of the tagging scheme. It is therefore likely that some action is required on the user&amp;rsquo;s part to achieve the desired result.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;OSM &lt;code&gt;station&lt;/code&gt; to PLANit&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OSM nodes tagged with &lt;code&gt;railway=station&lt;/code&gt; are complex to parse because they can represent:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Just the name of a station, where the station is defined in Ptv2 format separately in the &lt;em&gt;same&lt;/em&gt; stop_area&lt;/li&gt;
+&lt;li&gt;Just the name of a station, where the station is defined in Ptv2 format separately in a &lt;em&gt;nearby&lt;/em&gt; stop_area&lt;/li&gt;
+&lt;li&gt;A stand alone train station, where the actual platforms are not available yet, due to lack of detail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the first case, the OSM parser will simply identify the station name and apply it to all entities in the stop_area if they do not have a name yet, and do nothing else. In the second case, the OSM parser will search for nearby platforms/stop_areas it likely needs to match the station to. If it finds one, it reverts to the action of bullet one, if it does not, it assumes the action for bullet three. In the last case, we assume there is a station but no detail on where platforms are. Therefore, the OSM parser will look for nearby train tracks of supported rail modes. If it finds any it will attempt to create (virtual) platforms on the nearest node (within threshold) if that seems feasible. At most it creates two platforms this way on nearby parallel train lines. If it cannot find any, it will log a warning to the user that the station could not be parsed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OSM Bus_stop location (on wrong side of the road)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Non rail based modes are assumed to have access to passengers only on one side of the vehicle (doors). This means that in left-hand drive countries all such stops, like bus_stop, should be located on the left-hand side of the road, whereas on right-hand drive countries they should reside on the right-hand side. The OSM parser verifies for each bus_stop if this is the case. This is a common tagging error source and The OSM parser will generate warning when a bus_stop is found that is located on the alleged wrong side of the road. To address any such tagging errors, explore the location of the stop in OSM and then overwrite the mapping explicitly if the stop should be kept (sometimes it is an invalid stop, sometimes due to the location it is mapped to the wrong waiting area, e.g., waiting area in other direction).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Carefully check all warnings related to this issue to avoid having mappings between the wrong stop_location and waiting area. there is little the parser can do about this, because often these are tagging errors in OSM.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;parsing-osm-stop_areas&#34;&gt;Parsing OSM Stop_areas&lt;/h3&gt;
+&lt;p&gt;The OSM parser also supports stop_area relations. A stop_area relation groups a number of public transport entities that logically belong together, e.g. train station platforms and their bus_stops. In PLANit a stop_area is converted into a PLANit transfer zone group. All the OSM waiting areas are converted into transfer zones, and registered on the group.&lt;/p&gt;
+&lt;h3 id=&#34;parsing-osm-stations&#34;&gt;Parsing OSM Stations&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The parser does not (yet) support&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Subway_entrances to stations, i.e., only the station and vehicle stop_locations are parsed&lt;/li&gt;
+&lt;li&gt;Pedestrian access to stations, platforms etc. e.g., only interaction between motorised modes is supported via stop_locations&lt;/li&gt;
+&lt;li&gt;parsing of public transport services and/or lines&lt;/li&gt;
+&lt;li&gt;Groups of stop_areas, these are simply ignored&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;osm-mode-support&#34;&gt;OSM Mode Support&lt;/h2&gt;
+&lt;p&gt;OSM supports a number of de facto standard modes as listed under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:access&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:access&lt;/a&gt;. these modes are mapped to their respective PLANit counterparts. Currently PLANit supports all - arguably meaningful - modes listed (complete list in JavaDoc). By default a number of OSM modes is acivated and a number is deactivated. The user can overwrite these defaults to their liking, to, for example, only consider pedestrians, or bicycles, or cars, or a combination of the former.&lt;/p&gt;
+&lt;h3 id=&#34;link-access-restrictions&#34;&gt;Link Access Restrictions&lt;/h3&gt;
+&lt;p&gt;Each OSM way has defaults regarding what modes it supports, these defaults differ per country as per &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access_restrictions&#34;&gt;https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access_restrictions&lt;/a&gt;. PLANit supports these country specific defaults. It provides out-of-the-box versions for a number of countries and a global default, all of which can be altered by the user if desired.&lt;/p&gt;
+&lt;p&gt;On top of the defaults each OSM way might have additional tags to indicate further restrictions specific to that way. PLANit supports a number of these additional tags and parses them accordingly. For each unique combination of mode access restrictions a PLANit (link segment) type is created in memory. Currently PLANit supports the following access restriction schemes either fully or partially:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mode direct, e.g. &lt;code&gt;bicycle=yes bus=yes&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Oneway restrictions &lt;code&gt;oneway=yes bus=yes&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Busway scheme basic (a.k.a. oneway special cases), e.g.,  &lt;code&gt;oneway=yes busway=opposite_lane&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Busway scheme location, e.g.,  &lt;code&gt;busway:left=lane&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Cycleway scheme e.g.,  &lt;code&gt;oneway=yes cycleway:left=lane&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Lanes:mode scheme (a.k.a. Lane count information), e.g. &lt;code&gt;lanes:psv:forward=2, lanes:psv=4&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Mode:lanes scheme (a.k.a. Access information per lane), e.g. &lt;code&gt;psv:lanes:forward=2, psv:lanes=4&lt;/code&gt; etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While the &amp;ldquo;mode:Lanes&amp;rdquo; scheme potentially provides per lane information on access for a mode, PLANit currently only identifies if any lane is accessible to the mode (implicitly assumed if this tag is available for the mode) and if so, the mode is allowed on the road. The same holds for the &amp;ldquo;Lanes: mode&amp;rdquo; scheme, since this tag is only available when at least one lane is available to that mode, hence, the mode can access that road. For the one way restrictions and bus way scheme the parse does interpret the values as they provide additional information on mode access, either in what direction or for other modes than the key describe.&lt;/p&gt;
+&lt;p&gt;See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:access&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:access&lt;/a&gt; (routing-restrictions section)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Bus_lanes&#34;&gt;https://wiki.openstreetmap.org/wiki/Bus_lanes&lt;/a&gt; (example on busway scheme, lanes:mode scheme and mode:lanes scheme)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;PLANit does not yet support&lt;/strong&gt;: Temporal/conditional mode access restrictions, see &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Conditional_restrictions&#34;&gt;https://wiki.openstreetmap.org/wiki/Conditional_restrictions&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;bounding-box-edges&#34;&gt;Bounding Box Edges&lt;/h2&gt;
+&lt;p&gt;The OSM parser will attempt to parse as much from the OSM infrastructrue as possible. However around the bounding box edges of the input file, it is likely that roads/tracks/platforms/stations are incomplete due to partly falling outside of the bounding box. If so, the parser will attempt to salve the OSM entity and provide feedback on whether this was successful or not.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We recommend checking the logs to determine if the result is satisfactory or not and if needed exclude the compromised entity from parsing if so required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;logging-support&#34;&gt;Logging support&lt;/h2&gt;
+&lt;p&gt;the OSM parser will log information, warnings, and other useful information during parsing. For the OSM reader this logging is particularly extensive to inform the user of any issues. It is very likely that due to tagging mistakes some of the OSM features could not be parsed as expected.&lt;/p&gt;
+&lt;p&gt;The OSM parser has a number of salvage algorithms built-in to attempt to address the most common tagging errors, especially with respect to public transport. For each of the issues found PLANit will inform the user if the OSM entity has been:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discarded, e.g., &lt;code&gt;warning DISCARD: &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Savaged, e.g., &lt;code&gt;info SALVAGED: &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Possible bug in the parser or unexpected behaviour e.g., &lt;code&gt;severe &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A &lt;code&gt;DISCARD&lt;/code&gt; message indicates the parser was unable to convert the OSM entity into a valid PLANit entity even though it was expected to. A &lt;code&gt;SALVAGED&lt;/code&gt; message indicates the OSM entity could not be converted the way it was expected to, but the parser was able to derive a likely solution based on context. In both cases it is recommended to verify the result by checking the OSM entities referred to in the &lt;code&gt;DISCARD&lt;/code&gt; and &lt;code&gt;SALVAGED&lt;/code&gt; messages.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can quickly have a look at an OSM way in OSM via &lt;a href=&#34;https://www.openstreetmap.org/way/485842787&#34;&gt;https://www.openstreetmap.org/way/485842787&lt;/a&gt; (using some way id)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can quickly have a look at an OSM way in OSM via &lt;a href=&#34;https://www.openstreetmap.org/node/5397680278&#34;&gt;https://www.openstreetmap.org/node/5397680278&lt;/a&gt; (using some node id)&lt;/p&gt;
+&lt;/blockquote&gt;
+
       </description>
     </item>
     

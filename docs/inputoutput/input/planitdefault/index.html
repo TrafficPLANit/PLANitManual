@@ -280,6 +280,52 @@
 
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANitManual/docs/inputoutput/input/matsim/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">MATSim</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitmanualdocsinputoutputinputmatsim">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PLANitManual/docs/inputoutput/input/osm/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Open Street Map</a>
+  </li>
+  <ul>
+    <li class="collapse " id="planitmanualdocsinputoutputinputosm">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -3050,6 +3096,32 @@
         
 	
 	<p>In this section of the manual we discuss the Default XML input format used by PLANit.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data Format</th>
+<th align="left">File type</th>
+<th align="left">Status</th>
+<th align="left">Network</th>
+<th align="left">Zoning</th>
+<th align="left">Demands</th>
+<th align="left">Python support</th>
+<th align="left">Java support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="input/default">PLANit default input format</a></td>
+<td align="left"><code>XML</code></td>
+<td align="left">Supported</td>
+<td align="left"><strong>Read/Write</strong></td>
+<td align="left"><strong>Read/Write</strong></td>
+<td align="left"><strong>Read</strong></td>
+<td align="left"><strong>YES</strong></td>
+<td align="left"><strong>YES</strong></td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p>Here we <strong>only</strong> focus on the <strong>structure of the data formats</strong> . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the <a href="../../../java">Java</a> and <a href="../../../python/reference/outputformatters">Python</a> API for more detailed information.</p>
 </blockquote>
@@ -3200,7 +3272,7 @@
 					<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;/nodes&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;links&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;link</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;link</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 						<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
 						<span style="color:#204a87;font-weight:bold">&lt;linksegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
 						<span style="color:#204a87;font-weight:bold">&lt;length&gt;</span>10<span style="color:#204a87;font-weight:bold">&lt;/length&gt;</span>
@@ -3220,7 +3292,7 @@
 					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
@@ -3231,7 +3303,7 @@
 					<span style="color:#204a87;font-weight:bold">&lt;/gml:Point&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;/centroid&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;connectoids&gt;</span>
-					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+					<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;/connectoids&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/zones&gt;</span>
@@ -3605,6 +3677,10 @@
                     </h5>
                     <p></p>
                 </div>
+            
+        
+            
+        
             
         
             

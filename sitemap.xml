@@ -791,6 +791,10 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/matsim/</loc>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/networkreadertype/</loc>
   </url>
   
@@ -808,6 +812,10 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/odskimsuboutputtype/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/osm/</loc>
   </url>
   
   <url>
