@@ -22,16 +22,16 @@
 <link rel="icon" type="image/png" href="/PLANitManual/favicons/android-192x192.png" sizes="192x192">
 
 <title>Examples | PLANit</title><meta property="og:title" content="Examples" />
-<meta property="og:description" content="See your project in action!
+<meta property="og:description" content="Java based PLANit examples
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://trafficplanit.github.io/PLANitManual/docs/java/examples/" />
 <meta property="og:site_name" content="PLANit" />
 <meta itemprop="name" content="Examples">
-<meta itemprop="description" content="See your project in action!
+<meta itemprop="description" content="Java based PLANit examples
 "><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Examples"/>
-<meta name="twitter:description" content="See your project in action!
+<meta name="twitter:description" content="Java based PLANit examples
 "/>
 
 
@@ -2854,6 +2854,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinput_builder_examples" href="/PLANitManual/docs/java/examples/input_builder_examples/">Input Builder</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinitial_cost_examples" href="/PLANitManual/docs/java/examples/initial_cost_examples/">Initial cost</a>
       
       
@@ -2866,13 +2872,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinput_examples" href="/PLANitManual/docs/java/examples/input_examples/">Input</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesta_output_examples" href="/PLANitManual/docs/java/examples/ta_output_examples/">Traffic Assignment Output</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesoutput_examples" href="/PLANitManual/docs/java/examples/output_examples/">Output</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesintermodal_converter_examples" href="/PLANitManual/docs/java/examples/intermodal_converter_examples/">Converter - Intermodal</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesnetwork_converter_examples" href="/PLANitManual/docs/java/examples/network_converter_examples/">Converter - Network</a>
       
       
     </li>
@@ -3070,19 +3082,27 @@
             
 <div class="td-content">
 	<h1>Examples</h1>
-        <div class="lead">See your project in action!</div>
+        <div class="lead">Java based PLANit examples</div>
 	
-	<p>Here we provide you with a number of representative examples.</p>
-<p>In the Java implementation of PLANit, we make a distinction between projects and assignments. A project can hold a number of inputs and assignments. An assignment utilises a subset of the inputs available on the project.</p>
-<p>The examples are split in multiple sections, each with a focus on a particular aspect of the PLANit run:</p>
+	<p>In the Java implementation of PLANit, we make a distinction between <strong>(network) converters</strong>, <strong>projects</strong>, and <strong>traffic assignments</strong>.</p>
+<p><em>Converters</em> are used to convert data formats from one type to another, for example a network converter converts a network from input format A to output format B. Converters are stand alone functionality that can be used separate from projects and traffic assignment. Often it is used to prepare inputs in the native PLANit format for an assignment later on.</p>
+<p><em>Projects</em> can hold a number of inputs (networks, zonings, demands) and assignments.</p>
+<p><em>Assignments</em> utilise a subset of the inputs available on the project it resides on (one network, one zoning, one demand), and performs a traffic assignment simulation for one or more time periods and/or modes.</p>
+<p>The examples are split in multiple sections, each with a focus on a particular aspect of PLANit:</p>
+<p><strong>Project and Traffic Assignment examples:</strong></p>
+<p>Each section focuses on the options for its feature set and relies on the defaults for the other components where possible.</p>
 <ul>
 <li><a href="project_examples">Setting up a project</a></li>
 <li><a href="initial_cost_examples">Providing initial costs</a></li>
 <li><a href="ta_examples">Setting up traffic assignments</a></li>
-<li><a href="output_examples">Setting up outputs</a></li>
-<li><a href="input_examples">Setting up inputs</a></li>
+<li><a href="ta_output_examples">Setting up traffic assignment outputs</a></li>
+<li><a href="input__builder_examples">Setting up a custom input builder</a></li>
 </ul>
-<p>Each section focuses on the options for its area of focus and relies on the defaults for the other components where possible.</p>
+<p><strong>Data format conversion examples:</strong></p>
+<ul>
+<li><a href="network_converter_examples">Network conversion</a></li>
+<li><a href="intermodal_converter_examples">Intermodal (network) conversion</a></li>
+</ul>
 
         <div class="section-index">
     
@@ -3176,9 +3196,12 @@
             
         
             
-        
-            
-        
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANitManual/docs/java/examples/project_examples/">Project examples</a>
+                    </h5>
+                    <p>Examples on how to configure a PLANit project</p>
+                </div>
             
         
             
@@ -3424,10 +3447,16 @@
             
                 <div class="entry">
                     <h5>
-                        <a href="/PLANitManual/docs/java/examples/project_examples/">Project examples</a>
+                        <a href="/PLANitManual/docs/java/examples/input_builder_examples/">Input Builder examples</a>
                     </h5>
-                    <p>Examples on how to configure a PLANit project</p>
+                    <p>Examples on how to configure PLANit project inputs</p>
                 </div>
+            
+        
+            
+        
+            
+        
             
         
             
@@ -3617,24 +3646,33 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANitManual/docs/java/examples/ta_output_examples/">Traffic Assignment Output examples</a>
+                    </h5>
+                    <p>Examples on how to configure PLANit project outputs</p>
+                </div>
+            
+        
+            
         
             
         
             
                 <div class="entry">
                     <h5>
-                        <a href="/PLANitManual/docs/java/examples/input_examples/">Input examples</a>
+                        <a href="/PLANitManual/docs/java/examples/intermodal_converter_examples/">Intermodal Converter examples</a>
                     </h5>
-                    <p>Examples on how to configure PLANit project inputs</p>
+                    <p>Examples on how PLANit intermodal converter reader/writer implementations</p>
                 </div>
             
         
             
                 <div class="entry">
                     <h5>
-                        <a href="/PLANitManual/docs/java/examples/output_examples/">Output examples</a>
+                        <a href="/PLANitManual/docs/java/examples/network_converter_examples/">Converter Network examples</a>
                     </h5>
-                    <p>Examples on how to configure PLANit project outputs</p>
+                    <p>Examples on how PLANit network converter reader/writer implementations</p>
                 </div>
             
         

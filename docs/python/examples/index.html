@@ -2854,6 +2854,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinput_builder_examples" href="/PLANitManual/docs/java/examples/input_builder_examples/">Input Builder</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinitial_cost_examples" href="/PLANitManual/docs/java/examples/initial_cost_examples/">Initial cost</a>
       
       
@@ -2866,13 +2872,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesinput_examples" href="/PLANitManual/docs/java/examples/input_examples/">Input</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesta_output_examples" href="/PLANitManual/docs/java/examples/ta_output_examples/">Traffic Assignment Output</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesoutput_examples" href="/PLANitManual/docs/java/examples/output_examples/">Output</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesintermodal_converter_examples" href="/PLANitManual/docs/java/examples/intermodal_converter_examples/">Converter - Intermodal</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocsjavaexamplesnetwork_converter_examples" href="/PLANitManual/docs/java/examples/network_converter_examples/">Converter - Network</a>
       
       
     </li>
@@ -3420,16 +3432,16 @@
 <span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Australia&#34;</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_input_file&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
+<span style="color:#8f5902;font-style:italic"># overwrite mode access for roads that are tagged as private but have a bus line and stop on them</span>
+<span style="color:#8f5902;font-style:italic"># so they are in fact not private, overwrite this tagging error by allowing certain modes</span>
+<span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">network_settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">overwrite_mode_access_by_osm_way_id</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">19704989</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;bus&#34;</span><span style="color:#000;font-weight:bold">])</span>
+
 <span style="color:#8f5902;font-style:italic"># exclude some (pt) OSM nodes from parsing due to issues in tagging</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">pt_settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">exclude_osm_nodes_by_id</span><span style="color:#000;font-weight:bold">([</span><span style="color:#0000cf;font-weight:bold">2266764332</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2751390421</span><span style="color:#000;font-weight:bold">])</span>
 
 <span style="color:#8f5902;font-style:italic"># exclude some (pt) OSM ways from parsing because they are under construction or they</span>
 <span style="color:#8f5902;font-style:italic"># represent platforms of a miniature railway that we are not interested in</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">pt_settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">exclude_osm_ways_by_id</span><span style="color:#000;font-weight:bold">([</span><span style="color:#0000cf;font-weight:bold">485842787</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">715380193</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">48992993</span><span style="color:#000;font-weight:bold">])</span>
-
-<span style="color:#8f5902;font-style:italic"># overwrite mode access for roads that are tagged as private but have a bus line and stop on them</span>
-<span style="color:#8f5902;font-style:italic"># so they are in fact not private, overwrite this tagging error by allowing certain modes</span>
-<span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">pt_settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">overwrite_mode_access_by_osm_way_id</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">19704989</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;bus&#34;</span><span style="color:#000;font-weight:bold">])</span>
 
 <span style="color:#8f5902;font-style:italic"># tagging error on stop location&#39;s waiting area, overwrite manually</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">pt_settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">overwrite_stop_location_waiting_area</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">6072041693</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">OsmEntityType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NODE</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">571731242</span><span style="color:#000;font-weight:bold">)</span>
@@ -3478,6 +3490,10 @@
     
     
     <hr class="panel-line">
+        
+            
+        
+            
         
             
         

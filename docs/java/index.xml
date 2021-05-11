@@ -349,17 +349,25 @@ To make this happen we call&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;Here we provide you with a number of representative examples.&lt;/p&gt;
-&lt;p&gt;In the Java implementation of PLANit, we make a distinction between projects and assignments. A project can hold a number of inputs and assignments. An assignment utilises a subset of the inputs available on the project.&lt;/p&gt;
-&lt;p&gt;The examples are split in multiple sections, each with a focus on a particular aspect of the PLANit run:&lt;/p&gt;
+        &lt;p&gt;In the Java implementation of PLANit, we make a distinction between &lt;strong&gt;(network) converters&lt;/strong&gt;, &lt;strong&gt;projects&lt;/strong&gt;, and &lt;strong&gt;traffic assignments&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Converters&lt;/em&gt; are used to convert data formats from one type to another, for example a network converter converts a network from input format A to output format B. Converters are stand alone functionality that can be used separate from projects and traffic assignment. Often it is used to prepare inputs in the native PLANit format for an assignment later on.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Projects&lt;/em&gt; can hold a number of inputs (networks, zonings, demands) and assignments.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Assignments&lt;/em&gt; utilise a subset of the inputs available on the project it resides on (one network, one zoning, one demand), and performs a traffic assignment simulation for one or more time periods and/or modes.&lt;/p&gt;
+&lt;p&gt;The examples are split in multiple sections, each with a focus on a particular aspect of PLANit:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project and Traffic Assignment examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Each section focuses on the options for its feature set and relies on the defaults for the other components where possible.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;project_examples&#34;&gt;Setting up a project&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;initial_cost_examples&#34;&gt;Providing initial costs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ta_examples&#34;&gt;Setting up traffic assignments&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;output_examples&#34;&gt;Setting up outputs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;input_examples&#34;&gt;Setting up inputs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ta_output_examples&#34;&gt;Setting up traffic assignment outputs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;input__builder_examples&#34;&gt;Setting up a custom input builder&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Each section focuses on the options for its area of focus and relies on the defaults for the other components where possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data format conversion examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;network_converter_examples&#34;&gt;Network conversion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;intermodal_converter_examples&#34;&gt;Intermodal (network) conversion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
