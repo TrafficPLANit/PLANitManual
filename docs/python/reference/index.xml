@@ -414,7 +414,7 @@ each reader/writer page in this manual details these settings to avoid any confu
 &lt;h5 id=&#34;link-segment-initial-costs&#34;&gt;Link Segment initial costs&lt;/h5&gt;
 &lt;p&gt;PLANit-Python accepts earlier persisted link segment results as initial cost inputs. The only requirements are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../enums/outputpropertytype&#34;&gt;&lt;code&gt;OutputProperty.LINK_COST&lt;/code&gt;&lt;/a&gt; must have been activated, i.e., the cost column is present in the results&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../enums/outputpropertytype&#34;&gt;&lt;code&gt;OutputProperty.LINK_SEGMENT_COST&lt;/code&gt;&lt;/a&gt; must have been activated, i.e., the cost column is present in the results&lt;/li&gt;
 &lt;li&gt;Valid &lt;a href=&#34;../outputconfiguration/link#identification&#34;&gt;link segment identification method&lt;/a&gt;, i.e., each result row must be uniquely identifiable as a link segment&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;supported-data-formats&#34;&gt;Supported Data formats&lt;/h5&gt;

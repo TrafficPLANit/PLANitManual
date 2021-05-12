@@ -598,6 +598,18 @@
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_SEGMENT_TYPE_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The link segment type&amp;rsquo;s internal id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_SEGMENT_TYPE_XML_ID&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The link segment type&amp;rsquo;s XML id&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;MODE_ID&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Mode id (internal)&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;long&lt;/code&gt;&lt;/td&gt;
@@ -713,7 +725,7 @@
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;km&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_TYPE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_SEGMENT_TYPE_NAME&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;The link segment type&amp;rsquo;s name (input)&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
