@@ -780,7 +780,7 @@
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;veh/h&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_COST&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;LINK_SEGMENT_COST&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;The link segment&amp;rsquo;s generalised cost&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;h&lt;/code&gt;&lt;/td&gt;
