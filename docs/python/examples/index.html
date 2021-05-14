@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -1080,6 +1080,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/">.set_bounding_box(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
       
       
@@ -1269,6 +1275,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/">.set_bounding_box(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_discard_dangling_networks_above" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/">.set_discard_dangling_networks_above(&#43;)</a>
       
       
@@ -1282,6 +1294,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_keep_ways_outside_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/">.set_keep_osm_ways_outside_bounding_box(&#43;)</a>
       
       
       
@@ -3054,7 +3072,7 @@
         <li><a href="#osm-to-planit-network-conversion">OSM to PLANit network conversion</a></li>
         <li><a href="#osm-to-matsim-network-conversion">OSM to Matsim network conversion</a></li>
         <li><a href="#osm-to-planit-intermodal-conversion">OSM to PLANit intermodal conversion</a></li>
-        <li><a href="#osm-to-matsim-intermodal-conversion">OSM to Matsim intermodal conversion</a></li>
+        <li><a href="#osm-to-matsim-intermodal-conversion">OSM to MATSim intermodal conversion</a></li>
         <li><a href="#planit-to-matsim-intermodal-conversion">PLANit to Matsim intermodal conversion</a></li>
       </ul>
     </li>
@@ -3377,6 +3395,10 @@
 <span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Australia&#34;</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_input_file&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
+<span style="color:#8f5902;font-style:italic"># Reduce bounding box and mark some OSM ways that are partially in/out the bounding box to be kept in their entirety</span>
+<span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_bounding_box</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">144.948083</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">144.975849</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">37.823582</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">37.808292</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_keep_osm_ways_outside_bounding_box</span><span style="color:#000;font-weight:bold">([</span><span style="color:#0000cf;font-weight:bold">28919629</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">45526180</span><span style="color:#000;font-weight:bold">])</span>
+
 <span style="color:#8f5902;font-style:italic"># only parse car network</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">highway_settings</span><span style="color:#000;font-weight:bold">()</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">deactivate_all_road_modes_except</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;motorcar&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
@@ -3417,7 +3439,7 @@
 
 <span style="color:#8f5902;font-style:italic"># perform conversion</span>
 <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">convert</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">osm_reader</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">planit_writer</span><span style="color:#000;font-weight:bold">)</span>
-</code></pre></div><h3 id="osm-to-matsim-intermodal-conversion">OSM to Matsim intermodal conversion</h3>
+</code></pre></div><h3 id="osm-to-matsim-intermodal-conversion">OSM to MATSim intermodal conversion</h3>
 <p>In this example we not only parse the physical road network but also the public transport infrastructrue (no services) from the OSM input, hence it being an intermodal conversion. The result is persisted in the Matsim format by using the <code>MatsimIntermodalWriter</code>.</p>
 <p>We also show some of the configuration options specific to the intermodal OSM parser that allow the user to fine tune the way OSM entities are parsed (or not).</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
@@ -3490,6 +3512,12 @@
     
     
     <hr class="panel-line">
+        
+            
+        
+            
+        
+            
         
             
         

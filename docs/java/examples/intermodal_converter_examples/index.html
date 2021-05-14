@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how PLANit intermodal converter reader/writer implementations
 ">
 
-<meta itemprop="wordCount" content="1933">
+<meta itemprop="wordCount" content="1952">
 
 
 
@@ -1085,6 +1085,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/">.set_bounding_box(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
       
       
@@ -1274,6 +1280,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/">.set_bounding_box(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_discard_dangling_networks_above" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/">.set_discard_dangling_networks_above(&#43;)</a>
       
       
@@ -1287,6 +1299,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_keep_ways_outside_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/">.set_keep_osm_ways_outside_bounding_box(&#43;)</a>
       
       
       
@@ -3303,6 +3321,9 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
       
 <span style="color:#8f5902;font-style:italic">/* reader */</span>
 <span style="color:#000">PlanitOsmIntermodalReader</span> <span style="color:#000">osmReader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PlanitOsmIntermodalReaderFactory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">create</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">inputFilePath</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">countryName</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">/* Only parse a subset of the OSM file by setting a smaller bounding box (or polygon)*/</span>
+<span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setBoundingBox</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">144</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">948083</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">144</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">975849</span><span style="color:#ce5c00;font-weight:bold">,-</span><span style="color:#000">37</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">823582</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">37</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">808292</span><span style="color:#ce5c00;font-weight:bold">);</span>
 
 <span style="color:#8f5902;font-style:italic">/* for OSM ways that do not allow bus access absed on tagging, 
 </span><span style="color:#8f5902;font-style:italic"> * even thought they have bus stops: Overwrite the OSM way mode access */</span>

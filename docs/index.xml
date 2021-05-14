@@ -2554,7 +2554,7 @@ The inputs for the assignment (network, zoning, demands) are all automatically s
 &lt;p&gt;&lt;a href=&#34;../osmnrs_activate_railway_parser+&#34;&gt;&lt;code&gt;.activate_railway_parser(+)&lt;/code&gt;&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;../osmhighwaysettings&#34;&gt;&lt;code&gt;.highway_settings&lt;/code&gt;&lt;/a&gt; for the settings related to OSM highways&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;ReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;OsmNetworkReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2736,7 +2736,7 @@ The inputs for the assignment (network, zoning, demands) are all automatically s
 &lt;p&gt;&lt;a href=&#34;../osmnrs_activate_railway_parser+&#34;&gt;.&lt;code&gt;activate_railway_parser(+)&lt;/code&gt;&lt;/a&gt; 
 &lt;a href=&#34;../osmrailwaysettings&#34;&gt;&lt;code&gt;.railway_settings&lt;/code&gt;&lt;/a&gt; for the settings related to OSM railways&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;ReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;OsmNetworkReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

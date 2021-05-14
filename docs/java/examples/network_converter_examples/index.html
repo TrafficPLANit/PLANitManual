@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how PLANit network converter reader/writer implementations
 ">
 
-<meta itemprop="wordCount" content="1501">
+<meta itemprop="wordCount" content="1536">
 
 
 
@@ -1085,6 +1085,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/">.set_bounding_box(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
       
       
@@ -1274,6 +1280,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/">.set_bounding_box(&#43;)</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_discard_dangling_networks_above" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/">.set_discard_dangling_networks_above(&#43;)</a>
       
       
@@ -1287,6 +1299,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_keep_ways_outside_bounding_box" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/">.set_keep_osm_ways_outside_bounding_box(&#43;)</a>
       
       
       
@@ -3294,7 +3312,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <p>At this stage only reader implementations are available for OSM, a writer is unlikely to be added in future versions.</p>
 </blockquote>
 <h2 id="open-street-map-reader-rail-example">Open Street Map reader rail example</h2>
-<p>See <a href="#open-street-map-reader-simple-example">OSM Simple Example</a> as a starting point. This example demonstrates how to extract a rail only network by disabling the highway parser, and enabling the railway parser.</p>
+<p>See <a href="#open-street-map-reader-simple-example">OSM Simple Example</a> as a starting point. This example demonstrates how to extract a rail only network by disabling the highway parser, and enabling the railway parser. We also limit the parsing to a smaller bounding box than present in the OSM file.</p>
 <blockquote>
 <p>Logging is extensive for this reader. This is because based on warnings/info messages generated, the user is expected to adjust the settings to manually configure/override tagging errors and/or issues the automated conversion/salvaging procedures in the parser flagged. It is therefore recommended to first conduct a trial run with default settings and then gradually update the configuration based on the feedback by the reader.</p>
 </blockquote>
@@ -3305,6 +3323,9 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
       
 <span style="color:#8f5902;font-style:italic">/* reader */</span>
 <span style="color:#000">PlanitOsmNetworkReader</span> <span style="color:#000">osmReader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PlanitOsmNetworkReaderFactory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">create</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">inputFilePath</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">countryName</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">/* Only parse a subset of the OSM file by setting a smaller bounding box (or polygon)*/</span>
+<span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setBoundingBox</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">144</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">948083</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">144</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">975849</span><span style="color:#ce5c00;font-weight:bold">,-</span><span style="color:#000">37</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">823582</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">37</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">808292</span><span style="color:#ce5c00;font-weight:bold">);</span>
 
 <span style="color:#8f5902;font-style:italic">/* activate parsing of track/rail based infrastructure */</span>
 <span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">activateRailwayParser</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
