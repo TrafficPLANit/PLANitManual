@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how PLANit network converter reader/writer implementations
 ">
 
-<meta itemprop="wordCount" content="1536">
+<meta itemprop="wordCount" content="1652">
 
 
 
@@ -3078,6 +3078,7 @@
     <li><a href="#open-street-map-reader-simple-example">Open Street Map reader simple example</a>
       <ul>
         <li><a href="#compulsory-settings-2">Compulsory settings</a></li>
+        <li><a href="#country-specific-defaults">Country specific defaults</a></li>
         <li><a href="#osm-simple-example">OSM simple example</a></li>
       </ul>
     </li>
@@ -3280,6 +3281,13 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <li>Country name, to discern what driving direction the roads have and what defaults to apply</li>
 </ul>
 <p>The country name determines the defaults used by the OSM reader, e.g., what driving direction roundabouts have, what default speed limits to apply to given OSM way types, etc. These defaults are detailed in the <a href="../../../inputoutput/input/osm">Data formats/Input/OSM</a> section. In case the country name is not provided, the Global defaults (right-hand driving) will be applied, but it is discouraged to use as it likely requires overriding the default speed limits for all used road types.</p>
+<h3 id="country-specific-defaults">Country specific defaults</h3>
+<p>As mentioned default settings that are adopted might depend on the chosen country and the user can provide custom settings for a country very easily. Currently, country specific settings exist for</p>
+<ul>
+<li>Speed limits defaults</li>
+<li>Mode access per OSM way type defaults</li>
+</ul>
+<p>PLANit will attempt to parse the country specific defaults from its resources. If a user specifies a country for which no dedicated resources exist, PLANit will revert to the global defaults. A user can also provide its own country specific resource, by simply placing a CSV file with the appropriate structure under the correct resource dir, where the file name reflects the ISO3166-2 name, e.g. AU for Australia. See also the JavaDoc.</p>
 <h3 id="osm-simple-example">OSM simple example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">inputFilePath</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;inputDirAndFile&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
 <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">outputDir</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;outputDir&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
