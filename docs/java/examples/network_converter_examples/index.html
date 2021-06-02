@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how PLANit network converter reader/writer implementations
 ">
 
-<meta itemprop="wordCount" content="1652">
+<meta itemprop="wordCount" content="1697">
 
 
 
@@ -1096,6 +1096,12 @@
       
       
       
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
+      
+      
+      
+      
 
 
 
@@ -1299,6 +1305,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
       
       
       
@@ -3079,7 +3091,8 @@
       <ul>
         <li><a href="#compulsory-settings-2">Compulsory settings</a></li>
         <li><a href="#country-specific-defaults">Country specific defaults</a></li>
-        <li><a href="#osm-simple-example">OSM simple example</a></li>
+        <li><a href="#osm-file-based-example">OSM File based example</a></li>
+        <li><a href="#osm-url-streaming-based-example">OSM URL Streaming based example</a></li>
       </ul>
     </li>
     <li><a href="#open-street-map-reader-rail-example">Open Street Map reader rail example</a>
@@ -3277,7 +3290,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <h3 id="compulsory-settings-2">Compulsory settings</h3>
 <p>The OSM reader has the following compulsory settings that must be configured, either by providing them to the factory method, or by configuring them after the instance is created:</p>
 <ul>
-<li>Input file path, containing directory and file name to extract network from</li>
+<li>Input file/source , containing directory and file name (file based) or URL (URL source based) to extract network from</li>
 <li>Country name, to discern what driving direction the roads have and what defaults to apply</li>
 </ul>
 <p>The country name determines the defaults used by the OSM reader, e.g., what driving direction roundabouts have, what default speed limits to apply to given OSM way types, etc. These defaults are detailed in the <a href="../../../inputoutput/input/osm">Data formats/Input/OSM</a> section. In case the country name is not provided, the Global defaults (right-hand driving) will be applied, but it is discouraged to use as it likely requires overriding the default speed limits for all used road types.</p>
@@ -3288,7 +3301,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <li>Mode access per OSM way type defaults</li>
 </ul>
 <p>PLANit will attempt to parse the country specific defaults from its resources. If a user specifies a country for which no dedicated resources exist, PLANit will revert to the global defaults. A user can also provide its own country specific resource, by simply placing a CSV file with the appropriate structure under the correct resource dir, where the file name reflects the ISO3166-2 name, e.g. AU for Australia. See also the JavaDoc.</p>
-<h3 id="osm-simple-example">OSM simple example</h3>
+<h3 id="osm-file-based-example">OSM File based example</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">inputFilePath</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;inputDirAndFile&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
 <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">outputDir</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;outputDir&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
 <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">countryName</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;countryName&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
@@ -3312,6 +3325,21 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
   <span style="color:#000">OsmHighwayTags</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">SECONDARY</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">OsmHighwayTags</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">SECONDARY_LINK</span><span style="color:#ce5c00;font-weight:bold">);</span> 
 
 <span style="color:#8f5902;font-style:italic">/* writer */</span>
+<span style="color:#000">PlanitNetworkWriter</span> <span style="color:#000">planitWriter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PlanitNetworkWriterFactory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">create</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">outputDir</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">/* convert */</span>
+<span style="color:#000">NetworkConverterFactory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">create</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">planitWriter</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">convert</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</code></pre></div><h3 id="osm-url-streaming-based-example">OSM URL Streaming based example</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">      
+<span style="color:#8f5902;font-style:italic">/* OSM reader based on URL */</span>
+<span style="color:#000">PlanitOsmNetworkReader</span> <span style="color:#000">osmReader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PlanitOsmNetworkReaderFactory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">create</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">exampleUrl</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">CountryNames</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">GERMANY</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setInputSource</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;https://api.openstreetmap.org/api/0.6/map?bbox=13.465661,52.504055,13.469817,52.506204&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+<span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">getHighwaySettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">deactivateAllOsmHighwayTypesExcept</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OsmHighwayTags</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FOOTWAY</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#000">osmReader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">getHighwaySettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">deactivateAllRoadModesExcept</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">OsmRoadModeTags</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">FOOT</span><span style="color:#ce5c00;font-weight:bold">);</span>
+                        
+<span style="color:#8f5902;font-style:italic">/* writer */</span>
+<span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">outputDir</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;outputDir&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
 <span style="color:#000">PlanitNetworkWriter</span> <span style="color:#000">planitWriter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">PlanitNetworkWriterFactory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">create</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">outputDir</span><span style="color:#ce5c00;font-weight:bold">);</span>
 
 <span style="color:#8f5902;font-style:italic">/* convert */</span>

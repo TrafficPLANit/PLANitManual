@@ -1091,6 +1091,12 @@
       
       
       
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
+      
+      
+      
+      
 
 
 
@@ -1294,6 +1300,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
       
       
       
@@ -3122,7 +3134,7 @@
 	<h1>OsmNetworkReader</h1>
         <div class="lead">OsmNetworkReader instance</div>
 	
-	<p>The <code>OsmNetworkReader</code> class instance can be created via the <a href="../networkconverter"><code>NetworkConverter</code></a>. It provides the functionality to parse an OSM network in the Planit format, and possible persist it in another format using a NetworkWriter. Once created the user can configure its settings.</p>
+	<p>The <code>OsmNetworkReader</code> class instance can be created via the <a href="../networkconverter"><code>NetworkConverter</code></a>. It provides the functionality to parse an OSM network in the PLANit format, and possible persist it in another format using a NetworkWriter. Once created the user can configure its settings.</p>
 <p>All configuration of this reader is performed via its <code>.settings</code> property, providing access to the <a href="../osmnetworkreadersettings"><code>OsmNetworkReaderSettings</code></a>.</p>
 <h4 id="defaults-in-osm-network-reader">Defaults in OSM Network Reader</h4>
 <p>The OSM reader relies on defaults whenever tagging information is absent, or assumed to revert to the implicit default as prescribed by OSM itself. Wherever possible this OSM reader aligns itself with the prescribed OSM defaults. In addition, the user can change these defaults if they deem this necessary. Detailed information on the adopted defaults can be found under; <a href="osm_network_reader_defaults">Defaults in the OSM Network Reader</a></p>
@@ -3132,7 +3144,8 @@
 <h4 id="minimum-configuration-requirements">Minimum configuration requirements</h4>
 <p>The user is required to explicitly configure at least the following settings on an OsmNetworkReader:</p>
 <ul>
-<li>set an InputFile via <code>.settings.set_input_file(+)</code></li>
+<li>Set an InputFile via <code>.settings.set_input_file(+)</code>, or alternatively,</li>
+<li>Stream XML directly from an URL via <code>.settings.set_input_source(+)</code></li>
 </ul>
 <h4 id="methods">Methods</h4>
 <p>N/A</p>
@@ -3164,6 +3177,7 @@
 <span style="color:#8f5902;font-style:italic"># Open Street Map (OSM) network reader        </span>
 <span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;&lt;country_name&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_input_file&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic">#or: osm_reader.settings.set_input_source(&#34;&lt;URL_to_input_source&gt;&#34;)</span>
 
 <span style="color:#8f5902;font-style:italic"># example Planit network writer</span>
 <span style="color:#000">planit_writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkWriterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PLANIT</span><span style="color:#000;font-weight:bold">)</span>
@@ -3187,6 +3201,10 @@
     
     
     <hr class="panel-line">
+        
+            
+        
+            
         
             
         

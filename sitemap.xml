@@ -511,6 +511,14 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</loc>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</loc>
   </url>
   

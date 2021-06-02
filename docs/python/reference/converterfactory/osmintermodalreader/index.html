@@ -1091,6 +1091,12 @@
       
       
       
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
+      
+      
+      
+      
 
 
 
@@ -1294,6 +1300,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
       
       
       
@@ -3122,7 +3134,7 @@
 	<h1>OsmIntermodalReader</h1>
         <div class="lead">OsmIntermodalReader instance</div>
 	
-	<p>The <code>OsmIntermodalReader</code> class instance can be created via the <a href="../intermodalconverter"><code>IntermodalConverter</code></a>. It provides the functionality to parse an OSM intermodal network in the Planit format, and possible persist it in another format using an IntermodalWriter.</p>
+	<p>The <code>OsmIntermodalReader</code> class instance can be created via the <a href="../intermodalconverter"><code>IntermodalConverter</code></a>. It provides the functionality to parse an OSM intermodal network in the PLANit format, and possible persist it in another format using an IntermodalWriter.</p>
 <p>All configuration of this reader is performed via its <code>.settings</code> property, providing access to the <a href="../osmintermodalreadersettings"><code>OsmIntermodalReaderSettings</code></a>.</p>
 <h4 id="defaults-in-osm-intermodal-reader">Defaults in OSM Intermodal Reader</h4>
 <p>The OSM intermodal reader relies on defaults whenever tagging information is absent, or assumed to revert to the implicit default as prescribed by OSM itself. Wherever possible this OSM reader aligns itself with the prescribed OSM defaults. In addition, the user can change these defaults if they deem this necessary. The defaults regarding the &ldquo;regular&rdquo; network infrastructure follow the <a href="../osmnetworkreader/osm_network_reader_defaults">OsmNetworkReader defaults</a>. The defaults specific to the intermodal aspects of this reader can be found under the defaults indicated for the various <a href="../osmintermodalreadersettings/osmptreadersettings">OsmPublicTransportSettings</a> methods.</p>
@@ -3132,7 +3144,8 @@
 <h4 id="minimum-configuration-requirements">Minimum configuration requirements</h4>
 <p>The user is required to explicitly configure at least the following settings on an <code>OsmIntermodalReader</code>:</p>
 <ul>
-<li>set an InputFile via <code>.settings.set_input_file(+)</code></li>
+<li>set an InputFile via <code>.settings.set_input_file(+)</code>, or alternatively,</li>
+<li>Stream XML directly from an URL via <code>.settings.set_input_source(+)</code></li>
 </ul>
 <h4 id="methods">Methods</h4>
 <p>N/A</p>
@@ -3164,6 +3177,7 @@
 <span style="color:#8f5902;font-style:italic"># Open Street Map (OSM) intermodal reader        </span>
 <span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;&lt;country_name&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_input_file&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic">#or: osm_reader.settings.set_input_source(&#34;&lt;URL_to_input_source&gt;&#34;)</span>
 
 <span style="color:#8f5902;font-style:italic"># Planit intermodal writer</span>
 <span style="color:#000">planit_writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PLANIT</span><span style="color:#000;font-weight:bold">)</span>
@@ -3188,6 +3202,10 @@
     
     
     <hr class="panel-line">
+        
+            
+        
+            
         
             
         

@@ -1091,6 +1091,12 @@
       
       
       
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmintermodalreadersettingsosmimrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
+      
+      
+      
+      
 
 
 
@@ -1294,6 +1300,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_file" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-planitmanualdocspythonreferenceconverterfactoryosmnetworkreadersettingsosmnrs_set_input_source" href="/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
       
       
       
@@ -3150,6 +3162,12 @@
 <td align="left">Set the input file to parse by the OSM intermodal reader</td>
 </tr>
 <tr>
+<td><a href="osmnrs_set_input_file+"><code>.set_input_source(+)</code></a></td>
+<td align="left"><strong>YES</strong></td>
+<td align="left">N/A</td>
+<td align="left">Set the input source (URL streaming) to parse by the OSM intermodal reader</td>
+</tr>
+<tr>
 <td><a href="osmimrs_set_bounding_box+"><code>.set_bounding_box(+)</code></a></td>
 <td align="left">NO</td>
 <td align="left"><code>TRUE</code></td>
@@ -3157,6 +3175,9 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Setting either the input file or input source suffices, both need not be set.</p>
+</blockquote>
 <h4 id="properties">Properties</h4>
 <p>This class exposes the following properties</p>
 <table>
@@ -3190,6 +3211,7 @@
 <span style="color:#8f5902;font-style:italic"># example Open Street Map (OSM) intermodal reader        </span>
 <span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;&lt;country_name&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_input_file&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic">#or: osm_reader.settings.set_input_source(&#34;&lt;URL_to_input_source&gt;&#34;)</span>
 
 <span style="color:#8f5902;font-style:italic"># example Planit intermodal writer</span>
 <span style="color:#000">planit_writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">PLANIT</span><span style="color:#000;font-weight:bold">)</span>
@@ -3485,6 +3507,17 @@
                 <div class="entry">
                     <h5>
                         <a href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_file&#43;/">.set_input_file(&#43;)</a>
+                    </h5>
+                    <p>OsmIntermodalReaderSettings method</p>
+                </div>
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/">.set_input_source(&#43;)</a>
                     </h5>
                     <p>OsmIntermodalReaderSettings method</p>
                 </div>
