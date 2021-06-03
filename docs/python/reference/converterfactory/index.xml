@@ -644,7 +644,7 @@ or&lt;br&gt;
 &lt;td align=&#34;left&#34;&gt;Set the input file to parse by the OSM intermodal reader&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;osmnrs_set_input_file+&#34;&gt;&lt;code&gt;.set_input_source(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrs_set_input_source+&#34;&gt;&lt;code&gt;.set_input_source(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Set the input source (URL streaming) to parse by the OSM intermodal reader&lt;/td&gt;
