@@ -38,7 +38,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;input/default&#34;&gt;PLANit default input format&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;PLANit default input format&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
@@ -265,7 +265,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;input/matsim&#34;&gt;MATSim&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;MATSim&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
