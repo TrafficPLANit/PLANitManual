@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -3195,13 +3195,13 @@
 <span style="color:#204a87;font-weight:bold">&lt;PLANit</span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 		<span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
 		<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>						
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;network1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>						
 		...
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;zoning1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 		...
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>	
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand&gt;</span>					
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;demands1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>					
 		...
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>	
 <span style="color:#204a87;font-weight:bold">&lt;/PLANit&gt;</span>
@@ -3288,8 +3288,7 @@
 	<span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to&gt;/macroscopicinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 	
 	<span style="color:#8f5902;font-style:italic">&lt;!-- Demand component --&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand&gt;</span>
-	  <span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>d1<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicdemand</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;d1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;demandconfiguration&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;timeperiods&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;timeperiod</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
@@ -3307,8 +3306,7 @@
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicdemand&gt;</span>
 	
 	<span style="color:#8f5902;font-style:italic">&lt;!-- Physical network component --&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork&gt;</span>
-	  <span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>n1<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;n1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;infrastructurelayers&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;layer</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;nodes&gt;</span>
@@ -3327,8 +3325,7 @@
 	<span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
 	
 	<span style="color:#8f5902;font-style:italic">&lt;!-- zoning structure component --&gt;</span>
-	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning&gt;</span>
-	  <span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>z1<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;z1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;zones&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 				<span style="color:#204a87;font-weight:bold">&lt;centroid&gt;</span>
