@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -30,7 +30,7 @@
 <meta itemprop="description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="4417">
+<meta itemprop="wordCount" content="4437">
 
 
 
@@ -3196,10 +3196,11 @@
 </code></pre></div><p>Whereas if, it is a stand-alone file, it should look something like</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopicnetwork</span>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span> 	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicnetworkinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
+	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopicnetworkinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 ...	
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopicnetwork&gt;</span>
-</code></pre></div><p>This root element can contain only two sub-elements:</p>
+</code></pre></div><p>This root element can contain only two sub-elements and an id element:</p>
 <table>
 <thead>
 <tr>
@@ -3210,6 +3211,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">User identifier for the network as a whole, i.e., its XML id</td>
+</tr>
 <tr>
 <td align="left"><a href="./#configuration"><code>&lt;configuration&gt;</code></a></td>
 <td align="left">NO</td>
@@ -3224,7 +3231,7 @@
 </tr>
 </tbody>
 </table>
-<p>the configuraton deals with overall configuration options across all infrastructure layers. Each infrastructure layer within the infrastructure layers element defines physical infrastructure for one or more of network modes.</p>
+<p>The configuration deals with overall configuration options across all infrastructure layers. Each infrastructure layer within the infrastructure layers element defines physical infrastructure for one or more of network modes.</p>
 <p>In the remainder of this page, we discuss each of the eligible XML elements in order of expected appearance in detail. We explore their attributes, sub-elements, or simple elements (elements without sub-elements). At the bottom of the page an <a href="./#expanded-example">expanded example</a> is provided highlighting all the available options explicitly.</p>
 <p>Before we do so, we discuss the default values for (optional) element(s). These defaults are only relevant when you do not explicitly configure the related elements explicitly in the XML input file. Only then, PLANit will revert to these <a href="./#network-defaults">defaults</a>.</p>
 <p>Lastly, PLANit comes with a number of predefined modes. When these modes are activated in the network file, the user only needs to specify their name, the properties, e.g., pcu value, features, will be populated based on the mode&rsquo;s defaults.</p>
@@ -5171,6 +5178,7 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
 	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_schema&gt;/macroscopicnetworkinput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>n1<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;configuration&gt;</span>																		
 		<span style="color:#204a87;font-weight:bold">&lt;modes&gt;</span>																			
 			<span style="color:#204a87;font-weight:bold">&lt;mode</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;car&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>																

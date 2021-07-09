@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -32,7 +32,7 @@
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning macroscopiczoninginput.xsd XML Schema of intermodal extension macroscopicintermodalinput.xsd  We distinguish between two types of zones in PLANit:
  Origin-Destination zones Transfer zones  Origin-Destination Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids.">
 
-<meta itemprop="wordCount" content="3018">
+<meta itemprop="wordCount" content="3035">
 
 
 
@@ -3202,7 +3202,8 @@
 </code></pre></div><p>Whereas if, it is a stand-alone file, it should look something like</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-XML" data-lang="XML"><span style="color:#204a87;font-weight:bold">&lt;macroscopiczoning</span>
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span> <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
+	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;https://planitmanual.github.io/version/&lt;version&gt;/xsd/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 ...	
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
 </code></pre></div><p>This root element contains the (OD) zones and optionally an intermodal extension element that accounts for the transfer zones
@@ -3217,6 +3218,12 @@ and related content:</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">YES</td>
+<td align="left">1</td>
+<td align="left">User identifier for the zoning as a whole, i.e., its XML id</td>
+</tr>
 <tr>
 <td align="left"><a href="./#zones"><code>&lt;zones&gt;</code></a></td>
 <td align="left">YES</td>
@@ -3601,7 +3608,7 @@ and related content:</p>
 <td align="left"><a href="./#-transferzonegroups"><code>&lt;transferzonegroups&gt;</code></a></td>
 <td align="left">NO</td>
 <td align="left">1</td>
-<td align="left">Container element for all groups of transfer zones, e.g. stations with multiple platforms</td>
+<td align="left">Container element for all groups of transfer zones, e.g., stations with multiple platforms</td>
 </tr>
 </tbody>
 </table>
@@ -3938,6 +3945,7 @@ where vehicles stop, or a location where people enter a waiting area to (dis)emb
 	 <span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
 	 <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>											
 	 <span style="color:#c4a000">xsi:noNamespaceSchemaLocation=</span><span style="color:#4e9a06">&#34;&lt;path_to_Schema&gt;/macroscopiczoninginput.xsd&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+	<span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>z1<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;zones&gt;</span>								
 		<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>										
 			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Glebe<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>								
@@ -3957,7 +3965,7 @@ where vehicles stop, or a location where people enter a waiting area to (dis)emb
 			<span style="color:#204a87;font-weight:bold">&lt;gml:Polygon&gt;</span>									
 				<span style="color:#204a87;font-weight:bold">&lt;gml:exterior&gt;</span>
 					<span style="color:#204a87;font-weight:bold">&lt;gml:LinearRing&gt;</span>
-						<span style="color:#204a87;font-weight:bold">&lt;gml:coordinates</span> <span style="color:#c4a000">decimal=</span><span style="color:#4e9a06">&#34;.&#34;</span> <span style="color:#c4a000">cs=</span><span style="color:#4e9a06">&#34;,&#34;</span> <span style="color:#c4a000">ts=</span><span style="color:#4e9a06">&#34;&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>119.593002319336,-31.6695003509522 119.595306396484,
+						<span style="color:#204a87;font-weight:bold">&lt;gml:coordinates</span> <span style="color:#c4a000">decimal=</span><span style="color:#4e9a06">&#34;.&#34;</span> <span style="color:#c4a000">cs=</span><span style="color:#4e9a06">&#34;,&#34;</span> <span style="color:#c4a000">ts=</span><span style="color:#4e9a06">&#34; &#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>119.593002319336,-31.6695003509522 119.595306396484,
 		         			31.6650276184082 119.600944519043,-31.6658897399902 119.603385925293,-31.669527053833 
 		         			119.60050201416,-31.6739158630371 119.595664978027,-31.6728610992432 119.593002319336,
 		         			31.6695003509522
