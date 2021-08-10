@@ -3,14 +3,19 @@
 	<xs:include schemaLocation="macroscopicdemandinput.xsd" />
 	<xs:include schemaLocation="macroscopicnetworkinput.xsd" />
 	<xs:include schemaLocation="macroscopiczoninginput.xsd" />
+	<xs:include schemaLocation="servicenetworkinput.xsd" />
+	<xs:include schemaLocation="routedservicesinput.xsd" />
 
 	<!-- root element -->
 	<xs:element name="PLANit">
 		<xs:complexType>
 			<xs:all>
-				<xs:element ref="macroscopicnetwork" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="macroscopicnetwork" minOccurs="1" maxOccurs="1" />				
 				<xs:element ref="macroscopicdemand" minOccurs="1" maxOccurs="1" />
 				<xs:element ref="macroscopiczoning" minOccurs="1" 	maxOccurs="1" />
+				<!-- optional -->
+        <xs:element ref="servicenetwork" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="routedservices" minOccurs="0" maxOccurs="1" />				
 			</xs:all>
 		</xs:complexType>
 	</xs:element>

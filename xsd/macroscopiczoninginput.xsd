@@ -45,6 +45,7 @@
 	<xs:element name="macroscopiczoning">
 		<xs:complexType>
 			<xs:sequence>
+			  <xs:element name="id" type="xs:string" use="required" />
 				<xs:element ref="zones"/>
 				<xs:element name="intermodal" type="intermodaltype" minOccurs="0" maxOccurs="1">
 					<xs:annotation>
@@ -55,6 +56,15 @@
 					</xs:annotation>				
 				</xs:element>
 			</xs:sequence>
+     		<xs:attribute ref="srsname" use="optional">
+	        <xs:annotation>
+	          <xs:documentation>
+	            Spatial reference system is optional, when absent it is assumed that the same srs is used as provided on the infrastrure element in the
+	            macroscopic supply input. If present it can be different but it is recommended to be the same. When different the gml elements in this xml
+	            are parsed according to the provided srs but will internally be converted into the "dominant" project srs which is the one provided on the infrastructure element
+	          </xs:documentation>
+	        </xs:annotation>      
+      </xs:attribute>			
 		</xs:complexType>
 	</xs:element>
 	
@@ -92,15 +102,6 @@
 					</xs:complexType>
 				</xs:element>				
 			</xs:sequence>			
-			<xs:attribute ref="srsname" use="optional">
-				<xs:annotation>
-					<xs:documentation>
-						Spatial reference system is optional, when absent it is assumed that the same srs is used as provided on the infrastrure element in the
-						macroscopic supply input. If present it can be different but it is recommended to be the same. When different the gml elements in this xml
-						are parsed according to the provided srs but will internally be converted into the "dominant" project srs which is the one provided on the infrastructure element
-					</xs:documentation>
-				</xs:annotation>			
-			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
 	

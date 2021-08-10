@@ -89,6 +89,7 @@
 				</xs:element>
 				<xs:element ref="oddemands" />
 			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />			
 		</xs:complexType>
 	</xs:element>
 

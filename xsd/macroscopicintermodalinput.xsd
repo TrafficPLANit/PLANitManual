@@ -16,9 +16,13 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="platform" />
 			<xs:enumeration value="stop_pole" />
+			<xs:enumeration value="small_station" />
+			<xs:enumeration value="station" />
+			<xs:enumeration value="unknown" />
+			<xs:enumeration value="none" />
 		</xs:restriction>
 	</xs:simpleType>
-	
+		
   <xs:simpleType name="connectoidnodelocationtype">
     <xs:annotation>
       <xs:documentation>
@@ -95,19 +99,21 @@
 			            </xs:documentation>
 			          </xs:annotation>
 			        </xs:element>
-			        <xs:element ref="gml:Polygon" minOccurs="0" maxOccurs="1">
+			        <xs:choice minOccurs="0" maxOccurs="1">
 			          <xs:annotation>
-			            <xs:documentation>
-			              Each transfer zone can additional define a geographical area that it represents (e.g., train platform), but
-			              this is entirely optional. Alternatively it can also represent simply a stop pole (which can be located via
-			              the centroid only) 
-			            </xs:documentation>
-			          </xs:annotation>              
-			        </xs:element>       
+				            <xs:documentation>
+				              Each transfer zone can additional define a geographical area that it represents (e.g., train platform), but
+				              this is entirely optional. Alternatively it can also represent simply a stop pole (which can be located via
+				              the centroid only). If it is a platform it can either be apolygon or a line(string), both of which are supported. 
+				            </xs:documentation>
+				          </xs:annotation> 			        
+			     		<xs:element ref="gml:LineString" />	            
+			     		<xs:element ref="gml:Polygon" />
+			        </xs:choice>  
 			      </xs:sequence>
 			      <xs:attribute name="id" type="xs:string" use="required" />
 			      <xs:attribute name="externalid" type="xs:string" use="optional"/>
-			      <xs:attribute name="type" type="transferzonetype" use="optional"/>  
+			      <xs:attribute name="type" type="transferzonetype" use="optional" default="none"/>  
 			    </xs:complexType>					
 				</xs:element>
 			</xs:sequence>
@@ -203,7 +209,7 @@
 						transfer zone references should be provided as a comma separated list of transfer zone XML ids, reflecting the zones grouped by this entity
 					</xs:documentation>
 				</xs:annotation>							
-			</xs:attribute>
+			</xs:attribute>		
 		</xs:complexType>
 	</xs:element>	
 	

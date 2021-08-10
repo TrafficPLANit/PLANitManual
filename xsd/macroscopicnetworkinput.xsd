@@ -48,17 +48,6 @@
 	</xs:complexType>
 
 	<!-- Simple types -->
-	<xs:simpleType name="direction">
-		<xs:annotation>
-			<xs:documentation>
-				Choice between direction from a->b, or b->a
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="a_b" />
-			<xs:enumeration value="b_a" />
-		</xs:restriction>
-	</xs:simpleType>
 
 	<xs:simpleType name="vehicularType">
 		<xs:annotation>
@@ -267,13 +256,11 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="layer" minOccurs="1"
-					maxOccurs="unbounded">
+				<xs:element ref="layer" minOccurs="1" maxOccurs="unbounded">
 					<xs:annotation>
 						<xs:documentation>
 							each network consists of at least one infrastructure layer containing
-							network elements
-							such as nodes, links, etc.
+							network elements such as nodes, links, etc.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
@@ -363,8 +350,7 @@
 			<xs:attribute name="externalid" type="xs:string"
 				use="optional" />
 			<xs:attribute name="dir" type="direction" use="required" />
-			<xs:attribute name="typeref" type="xs:string"
-				use="optional">
+			<xs:attribute name="typeref" type="xs:string" use="optional">
 				<xs:annotation>
 					<xs:documentation>
 						Refers to the unique identifier (id) associated
@@ -615,7 +601,8 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="configuration" minOccurs="0">
+        <xs:element name="id" type="xs:string" use="required" />			
+				<xs:element ref="configuration" minOccurs="0">				
 					<xs:annotation>
 						<xs:documentation>
 							When configuration is absent we assume a single

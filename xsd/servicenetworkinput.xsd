@@ -1,0 +1,118 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:gml="http://www.opengis.net/gml">
+	<xs:include schemaLocation="planitlibrary.xsd" />
+		
+	<!-- Complex types -->
+	<xs:element name="leg">
+		<xs:annotation>
+			<xs:documentation>
+				A leg definition represents a (partial) route for a service in between two locations of interest, e.g., public transport stops 
+				for example. The node references are to the service node ids in this same service network
+			</xs:documentation>
+		</xs:annotation>	
+		<xs:complexType>
+		  <xs:sequence>
+		    <xs:element name="legsegment" minOccurs="1" maxOccurs="2">
+			    <xs:complexType>
+			      <xs:sequence>
+			      </xs:sequence>
+			      <xs:attribute name="id" type="xs:string" use="required" />
+			      <xs:attribute name="externalid" type="xs:string" use="optional"/>
+			      <xs:attribute name="dir" type="direction" use="required" />
+			    </xs:complexType>
+		    </xs:element>
+		  </xs:sequence>		  
+			<xs:attribute name="id" type="xs:string" use="required" />
+			<xs:attribute name="externalid" type="xs:string" use="optional"/>
+			<xs:attribute name="nodearef" type="xs:string" use="optional" />
+      <xs:attribute name="nodebref" type="xs:string" use="optional" />
+      <xs:attribute name="lrefs" type="xs:string" use="optional" >			
+				<xs:annotation>
+					<xs:documentation>
+						Comma separated list of parent network layer link ids portraying the link in order from node a towards node b
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>							
+		</xs:complexType>
+	</xs:element>	
+			
+	<!-- Simple elements -->
+	
+	<!-- Complex elements -->
+	
+  <xs:element name="servicenodes">
+    <xs:annotation>
+      <xs:documentation>
+        Contains the nodes where at least a single routed service exists
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="servicenode" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>
+              A node with a direct reference to a parent layer node.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+			      <xs:attribute name="id" type="xs:string" use="required" />
+			      <xs:attribute name="externalid" type="xs:string" use="optional" />
+			      <xs:attribute name="noderef" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>	
+	
+	<xs:element name="servicelegs">
+		<xs:annotation>
+			<xs:documentation>
+				A leg represents a direct service between two service nodes. Multiple Legs may exist between the same service nodes as 
+				long as the underlying physical links	differ. Legs may also partially overlap in terms of the underlying links referenced.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="leg" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>			
+	
+  <xs:element name="servicenetworklayer">
+	  <xs:annotation>
+	    <xs:documentation>
+	       A service network layer defines services on top of a physical network layer, but is a network in itself albeit that nodes refer
+         to physical nodes and link(segment)s are represented as leg(segment)s which in turn represent one or more link(segments) in the underlying 
+         physical network
+	    </xs:documentation>
+	  </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>	  
+		    <xs:element ref="servicenodes" minoccurs="1" maxoccurs="unbounded" />
+        <xs:element ref="servicelegs" minoccurs="1" maxoccurs="unbounded" />          				             
+      </xs:sequence>
+	    <xs:attribute name="id" type="xs:string" use="required" />
+	    <xs:attribute name="externalid" type="xs:string" use="optional" />	    
+	    <xs:attribute name="parentlayerref" type="xs:string" use="required"/>
+    </xs:complexType> 
+  </xs:element>	
+		
+	<!-- Root element -->
+	<xs:element name="servicenetwork">
+		<xs:annotation>
+			<xs:documentation>
+				Root element of a service network. Each service network is built on top of a physical network, where each service network layer directly
+				corresponds to a physical network layer on top of which its services are placed.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+		  <xs:sequence>
+		    <xs:element name="id" type="xs:string" use="required" />
+		    <!-- reference to parent network id the service network is built upon-->
+		    <xs:element name="parentnetwork" type="xs:string" use="required" />
+		    <xs:element ref="servicenetworklayer" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>                  	        	      
+	
+</xs:schema>
