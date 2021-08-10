@@ -179,31 +179,31 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</loc>
   </url>
   
   <url>
@@ -231,43 +231,43 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</loc>
   </url>
   
   <url>
@@ -275,15 +275,15 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</loc>
   </url>
   
   <url>
@@ -311,7 +311,7 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_highway_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</loc>
   </url>
   
   <url>
@@ -331,19 +331,19 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwritersettings/mimws_network_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_network_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_network_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/pimrs_network_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/pimws_network_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</loc>
   </url>
   
   <url>
@@ -363,23 +363,23 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</loc>
   </url>
   
   <url>
@@ -395,59 +395,59 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_pt_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_railway_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_remove_mode_mapping&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_remove_mode_mapping&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwritersettings/mimws_set_country&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwritersettings/mnws_set_country&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/pimws_set_country&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkwritersettings/pnws_set_country&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_country&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_road_lanes&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_road_lanes&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_rail_lanes&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_rail_lanes&#43;/</loc>
   </url>
   
   <url>
@@ -455,15 +455,15 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</loc>
   </url>
   
   <url>
@@ -471,11 +471,11 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkwritersettings/pnws_set_file_name&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_file_name&#43;/</loc>
   </url>
   
   <url>
@@ -487,39 +487,39 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/pimrs_set_input_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_set_input_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/planitzoningreadersettings/pzrs_set_input_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/planitzoningreadersettings/pzrs_set_input_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkreadersettings/prs_set_input_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreadersettings/prs_set_input_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</loc>
   </url>
   
   <url>
@@ -527,27 +527,27 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/pimws_set_output_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkwritersettings/pnws_set_output_dir&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_output_dir&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwritersettings/mnws_set_output_file&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</loc>
   </url>
   
   <url>
@@ -555,71 +555,71 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/planitzoningreadersettings/pzrs_set_xml_extension&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/planitzoningreadersettings/pzrs_set_xml_extension&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkreadersettings/prs_set_xml_extension&#43;/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreadersettings/prs_set_xml_extension&#43;/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwriter/mimcw_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreader/osmimcr_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwriter/mncw_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreader/osmncr_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreader/osmimcr_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreader/pimcr_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreader/osmncr_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreader/pncr_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreader/pimcr_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwriter/mimcw_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwriter/pimcw_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwriter/mncw_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkreader/pncr_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwriter/pimcw_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkwriter/pncw_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwriter/pncw_settings/</loc>
   </url>
   
   <url>
@@ -639,15 +639,15 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwritersettings/mimws_zoning_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_zoning_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/pimrs_zoning_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/pimws_zoning_settings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</loc>
   </url>
   
   <url>
@@ -740,6 +740,14 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/</loc>
   </url>
   
   <url>
@@ -899,6 +907,14 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routedservicesreadertype/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/servicenetworkreadertype/</loc>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/smoothingtype/</loc>
   </url>
   
@@ -927,103 +943,103 @@
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwriter/matsim_network_writer_defaults/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreader/osm_network_reader_defaults/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreader/osm_network_reader_defaults/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwriter/matsim_network_writer_defaults/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwriter/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwriter/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwritersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwriter/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwriter/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimnetworkwritersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/matsimintermodalwritersettings/matsimzoningwritersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmhighwaysettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreader/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreader/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmlaneconfiguration/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreader/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreader/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmintermodalreadersettings/osmptreadersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/osmnetworkreadersettings/osmrailwaysettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreader/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreader/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwriter/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwriter/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkreader/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreader/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkreadersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreadersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkwriter/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwriter/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitnetworkwritersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwritersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalreadersettings/planitzoningreadersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/planitzoningreadersettings/</loc>
   </url>
   
   <url>
-    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/planitintermodalwritersettings/planitzoningwritersettings/</loc>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</loc>
   </url>
   
   <url>

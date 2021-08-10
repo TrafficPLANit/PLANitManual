@@ -266,13 +266,13 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
         
         
         &lt;p&gt;Reference documentation for the &lt;code&gt;ConverterFactory&lt;/code&gt; class instance that can be collected from the top-level &lt;code&gt;Planit()&lt;/code&gt; instance to create, i.e., manufacture, converters of a specific type. The most common use case for creating a converter would be to convert a network from one format into another, e.g., parse an OSM network and persist it as a PLANit network for example&lt;/p&gt;
-&lt;p&gt;Converters follow a specific format. they require:&lt;/p&gt;
+&lt;p&gt;Converters follow a specific format. they require a:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;reader&lt;/li&gt;
-&lt;li&gt;writer&lt;/li&gt;
-&lt;li&gt;converter&lt;/li&gt;
+&lt;li&gt;Reader&lt;/li&gt;
+&lt;li&gt;Writer&lt;/li&gt;
+&lt;li&gt;Converter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The reader extracts data from a certain input format and presents it to the converter internally as a PLANit memory model. The writer accepts a PLANit memory model and persists it in its output format. The converter takes both a reader and writer and performs the conversion via a dedicated procedure.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;reader&lt;/em&gt; extracts data from a certain input format and presents it to the converter internally as a PLANit memory model. The &lt;em&gt;writer&lt;/em&gt; accepts a PLANit memory model and persists it in its output format. The &lt;em&gt;converter&lt;/em&gt; takes both a reader and writer and performs the conversion via a dedicated procedure.&lt;/p&gt;
 &lt;p&gt;PLANit-Python currently supports two types of converters:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a &lt;a href=&#34;networkconverter&#34;&gt;NetworkConverter&lt;/a&gt; that supports the conversion of road and/or rail infrastructure&lt;/li&gt;
@@ -326,6 +326,60 @@ each reader/writer page in this manual details these settings to avoid any confu
 &lt;a href=&#34;intermodalconverter&#34;&gt;IntermodalConverter&lt;/a&gt; for more information on how to create and configure an intermodal converter&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;ConverterFactory&lt;/code&gt; in &lt;code&gt;converter.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Converter Reader</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all converter compatible input readers. Such readers can be instantiated via the &lt;a href=&#34;../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; class instance that can be collected from the top-level &lt;code&gt;Planit()&lt;/code&gt; instance to create, i.e., manufacture, converter readers of a specific type. Such readers can be used to parse a particular input data source and either manipulate it in memory or convert it into a different format through a compatible writer.&lt;/p&gt;
+&lt;p&gt;Currently, the following types of readers exist:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;network readers&lt;/li&gt;
+&lt;li&gt;zoning readers&lt;/li&gt;
+&lt;li&gt;demand readers&lt;/li&gt;
+&lt;li&gt;intermodal readers (combination of network and zoning reader)&lt;/li&gt;
+&lt;li&gt;service network readers (not yet supported)&lt;/li&gt;
+&lt;li&gt;routed services readers (not yet supported)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../converterfactory&#34;&gt;ConverterFactory&lt;/a&gt; for more information on how to use readers in combination with a converter&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Converter Writer</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reference documentation for all converter compatible input writers. Writers can be instantiated via the &lt;a href=&#34;../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; class instance that can be collected from the top-level &lt;code&gt;Planit()&lt;/code&gt; instance to create, i.e., manufacture, converter writers of a specific type. Such readers can be used to persist in a paraticular format given a compatible PLANit memory model instance.&lt;/p&gt;
+&lt;p&gt;Currently, the following types of writers exist:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Network writers&lt;/li&gt;
+&lt;li&gt;Zoning writers&lt;/li&gt;
+&lt;li&gt;Demand writers (not yet supported)&lt;/li&gt;
+&lt;li&gt;Intermodal writers (combination of network and zoning writer)&lt;/li&gt;
+&lt;li&gt;Service network writers (not yet supported)&lt;/li&gt;
+&lt;li&gt;Routed services writers (not yet supported)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../converterfactory&#34;&gt;ConverterFactory&lt;/a&gt; for more information on how to use writers in combination with a converter&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

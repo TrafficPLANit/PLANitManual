@@ -1,0 +1,730 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLANit – Converter Reader</title>
+    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/</link>
+    <description>Recent content in Converter Reader on PLANit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: OsmIntermodalReader</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreader/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;OsmIntermodalReader&lt;/code&gt; class instance can be created via the &lt;a href=&#34;../../converterfactory/intermodalconverter&#34;&gt;&lt;code&gt;IntermodalConverter&lt;/code&gt;&lt;/a&gt;. It provides the functionality to parse an OSM intermodal network in the PLANit format, and possible persist it in another format using an IntermodalWriter.&lt;/p&gt;
+&lt;p&gt;All configuration of this reader is performed via its &lt;code&gt;.settings&lt;/code&gt; property, providing access to the &lt;a href=&#34;../osmintermodalreadersettings&#34;&gt;&lt;code&gt;OsmIntermodalReaderSettings&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;defaults-in-osm-intermodal-reader&#34;&gt;Defaults in OSM Intermodal Reader&lt;/h4&gt;
+&lt;p&gt;The OSM intermodal reader relies on defaults whenever tagging information is absent, or assumed to revert to the implicit default as prescribed by OSM itself. Wherever possible this OSM reader aligns itself with the prescribed OSM defaults. In addition, the user can change these defaults if they deem this necessary. The defaults regarding the &amp;ldquo;regular&amp;rdquo; network infrastructure follow the &lt;a href=&#34;../osmnetworkreader/osm_network_reader_defaults&#34;&gt;OsmNetworkReader defaults&lt;/a&gt;. The defaults specific to the intermodal aspects of this reader can be found under the defaults indicated for the various &lt;a href=&#34;../osmintermodalreadersettings/osmptreadersettings&#34;&gt;OsmPublicTransportSettings&lt;/a&gt; methods.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If, after reading the documentation, you are still unsure what defaults are adopted, have a look at the generated logs when using the reader. Planit will log the majority of the adopted defaults in its output when performing the OSM intermodal network reading.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;The user is required to explicitly configure at least the following settings on an &lt;code&gt;OsmIntermodalReader&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;set an InputFile via &lt;code&gt;.settings.set_input_file(+)&lt;/code&gt;, or alternatively,&lt;/li&gt;
+&lt;li&gt;Stream XML directly from an URL via &lt;code&gt;.settings.set_input_source(+)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;osmimcr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Access to &lt;a href=&#34;../osmintermodalreadersettings&#34;&gt;&lt;code&gt;OsmIntermodalReaderSettings&lt;/code&gt;&lt;/a&gt; to configure the reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create an intermodal converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;INTERMODAL&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Open Street Map (OSM) intermodal reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OSM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_file&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_file&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#or: osm_reader.settings.set_input_source(&amp;#34;&amp;lt;URL_to_input_source&amp;gt;&amp;#34;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Planit intermodal writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_country&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../osmintermodalreadersettings&#34;&gt;&lt;code&gt;OsmIntermodalReaderSettings&lt;/code&gt;&lt;/a&gt;  for configuration of the OSM intermodal (network) reader&lt;br&gt;
+&lt;a href=&#34;../../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; for the converter factory to create other types of converters&lt;br&gt;
+&lt;a href=&#34;../../enums/intermodalreadertype&#34;&gt;&lt;code&gt;IntermodalReaderType&lt;/code&gt;&lt;/a&gt; for the supported intermodal reader types&lt;br&gt;
+&lt;a href=&#34;../../enums/intermodalwritertype&#34;&gt;&lt;code&gt;IntermodalWriterType&lt;/code&gt;&lt;/a&gt; for the supported intermodal writer types&lt;br&gt;
+&lt;a href=&#34;../osmnetworkreader/osm_network_reader_defaults&#34;&gt;OsmNetworkReader defaults&lt;/a&gt;   detailing network defaults&lt;br&gt;
+&lt;a href=&#34;osm_intermodal_reader_defaults&#34;&gt;OSM Intermodal Reader Defaults&lt;/a&gt; detailing defaults specific to intermodal reader&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OsmIntermodalReaderWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OsmIntermodalReaderSettings</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;OsmIntermodalReaderSettings&lt;/code&gt; instance is accessible via the &lt;a href=&#34;../osmintermodalreader&#34;&gt;&lt;code&gt;OsmIntermodalReader&lt;/code&gt;&lt;/a&gt; its &lt;a href=&#34;../osmintermodalreader/osmimcr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt; property. It allows the user to configure the OsmIntermodalReader. We differentiate between:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../osmnetworkreadersettings&#34;&gt;General network settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;osmptreadersettings&#34;&gt;Public transport Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;em&gt;general network settings&lt;/em&gt; are identical to the settings exposed by the &lt;a href=&#34;../osmnetworkreader&#34;&gt;OsmNetworkReader&lt;/a&gt; and are described in detail under &lt;a href=&#34;../osmnetworkreadersettings&#34;&gt;OsmNetworkReaderSettings&lt;/a&gt;. These settings configure everything related to the physical road and/or rail network.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;public transport settings&lt;/em&gt; are additional settings for the physical infrastructure directly related to the intermodal aspect of the reader, i.e., the parsing of bus stops, train stations, platforms, etc. When parsed this information is translated to PLANit transfer zones which in turn can be persisted using any supported &lt;a href=&#34;../../converterfactory/intermodalconverter&#34;&gt;IntermodalWriter&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;All methods marked as &lt;code&gt;Compulsory=YES&lt;/code&gt; in the &lt;a href=&#34;#methods&#34;&gt;Methods&lt;/a&gt; section are expected to be configured by the user explicitly.&lt;/p&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;A &lt;code&gt;OsmIntermodalReaderSettings&lt;/code&gt; instance exposes the following methods. The Compulsory column indicates it the user is expected to configure this setting explicitly or not.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrs_set_input_file+&#34;&gt;&lt;code&gt;.set_input_file(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the input file to parse by the OSM intermodal reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrs_set_input_source+&#34;&gt;&lt;code&gt;.set_input_source(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the input source (URL streaming) to parse by the OSM intermodal reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrs_set_bounding_box+&#34;&gt;&lt;code&gt;.set_bounding_box(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TRUE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mark a bounding box to which the reader is restricted within the OSM file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Setting either the input file or input source suffices, both need not be set.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrs_network_settings&#34;&gt;&lt;code&gt;.network_settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to physical road infrastructure&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmimrs_pt_settings&#34;&gt;&lt;code&gt;.pt_settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to Public transport transfer infrastructure&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create an intermodal converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example Open Street Map (OSM) intermodal reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OSM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_file&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_file&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#or: osm_reader.settings.set_input_source(&amp;#34;&amp;lt;URL_to_input_source&amp;gt;&amp;#34;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example Planit intermodal writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_country&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../osmintermodalreader&#34;&gt;&lt;code&gt;OsmIntermodalReader&lt;/code&gt;&lt;/a&gt; Osm intermodal reader class these settings reside on&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OsmIntermodalReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OsmNetworkReader</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreader/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;OsmNetworkReader&lt;/code&gt; class instance can be created via the &lt;a href=&#34;../../converterfactory/networkconverter&#34;&gt;&lt;code&gt;NetworkConverter&lt;/code&gt;&lt;/a&gt;. It provides the functionality to parse an OSM network in the PLANit format, and possible persist it in another format using a NetworkWriter. Once created the user can configure its settings.&lt;/p&gt;
+&lt;p&gt;All configuration of this reader is performed via its &lt;code&gt;.settings&lt;/code&gt; property, providing access to the &lt;a href=&#34;../osmnetworkreadersettings&#34;&gt;&lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;defaults-in-osm-network-reader&#34;&gt;Defaults in OSM Network Reader&lt;/h4&gt;
+&lt;p&gt;The OSM reader relies on defaults whenever tagging information is absent, or assumed to revert to the implicit default as prescribed by OSM itself. Wherever possible this OSM reader aligns itself with the prescribed OSM defaults. In addition, the user can change these defaults if they deem this necessary. Detailed information on the adopted defaults can be found under; &lt;a href=&#34;osm_network_reader_defaults&#34;&gt;Defaults in the OSM Network Reader&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If, after reading the documentation, you are still unsure what defaults Planit adopted, have a look at the generated logs. Planit will log the majority of the adopted defaults in its output when performing the OSM network reading.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;The user is required to explicitly configure at least the following settings on an OsmNetworkReader:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set an InputFile via &lt;code&gt;.settings.set_input_file(+)&lt;/code&gt;, or alternatively,&lt;/li&gt;
+&lt;li&gt;Stream XML directly from an URL via &lt;code&gt;.settings.set_input_source(+)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;osmncr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Access to &lt;a href=&#34;../osmnetworkreadersettings&#34;&gt;&lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt;&lt;/a&gt; to configure the reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create a network converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Open Street Map (OSM) network reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OSM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_file&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_file&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#or: osm_reader.settings.set_input_source(&amp;#34;&amp;lt;URL_to_input_source&amp;gt;&amp;#34;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example Planit network writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkWriterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_country&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../osmnetworkreadersettings&#34;&gt;&lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt;&lt;/a&gt;  for configuration of the OSM network reader&lt;br&gt;
+&lt;a href=&#34;../../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; for the converter factory to create other types of converters&lt;br&gt;
+&lt;a href=&#34;../../enums/networkreadertype&#34;&gt;&lt;code&gt;NetworkReaderType&lt;/code&gt;&lt;/a&gt; for the supported network reader types&lt;br&gt;
+&lt;a href=&#34;../../enums/networkwritertype&#34;&gt;&lt;code&gt;NetworkWriterType&lt;/code&gt;&lt;/a&gt; for the supported network writer types&lt;br&gt;
+&lt;a href=&#34;osm_network_reader_defaults&#34;&gt;OSM Network Reader Defaults&lt;/a&gt; detailing defaults&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OsmNetworkReaderWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OsmNetworkReaderSettings</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt; instance is accessible via the &lt;a href=&#34;../osmnetworkreader&#34;&gt;&lt;code&gt;OsmNetworkReader&lt;/code&gt;&lt;/a&gt; its &lt;a href=&#34;../osmnetworkreader/osmncr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt; property. It allows the user to configure the OsmNetworkReader. We differentiate between:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General settings&lt;/li&gt;
+&lt;li&gt;Settings specific to certain OSM entities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All &lt;em&gt;general settings&lt;/em&gt; are accessible directly via methods on this class. All &lt;em&gt;specific settings&lt;/em&gt; require accessing a dedicated settings or configuration property within this class. Currently, the following specific settings properties are available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;osmhighwaysettings&#34;&gt;Highway settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;osmrailwaysettings&#34;&gt;Railway settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;osmlaneconfiguration&#34;&gt;Lane configuration settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;em&gt;highway settings&lt;/em&gt; relate to all road infrastructure (including footways, bicycle  paths, busways etc.). The &lt;em&gt;railway settings&lt;/em&gt; relate to all track/rail based infrastructure (heavy rail, light rail, etc.). within these settings types of road/rail can be activated or deactivated, and modes can be added or removed by default if required. The &lt;em&gt;lane configuration&lt;/em&gt; settings relate to the user setting defaults for the number of lanes for the various road types, usefull when - for example - they are not explicitly tagged in the network and the user is not happy with the defaults .&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The terminology used within this settings class (highway, railway) is based on the naming conventions adopted by Open Street Maps and are not specific to Planit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;All methods marked as &lt;code&gt;Compulsory=YES&lt;/code&gt; in the &lt;a href=&#34;#methods&#34;&gt;Methods&lt;/a&gt; section are expected to be configured by the user explicitly.&lt;/p&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;A &lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt; instance exposes the following methods. The Compulsory column indicates it the user is expected to configure this setting explicitly or not.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_activate_highway_parser+&#34;&gt;&lt;code&gt;.activate_highway_parser(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TRUE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Parse highways or not (all non tracked roads are tagged as highways)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_activate_railway_parser+&#34;&gt;&lt;code&gt;.activate_railway_parser(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;FALSE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Parse railways or not (all tracked infrastructure falls under railways)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_deactivate_all_way_type_except+&#34;&gt;&lt;code&gt;.deactivate_all_osm_way_types_except(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Deactivate parsing all OSM way types except the ones flagged by user&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_exclude_osm_ways+&#34;&gt;&lt;code&gt;.exclude_osm_ways_from_parsing(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Explicitly mark certain osm ways from being parsed by their OSM way id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_overwrite_mode_access_way_id+&#34;&gt;&lt;code&gt;.overwrite_mode_access_by_osm_way_id(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Explicitly override the allowed modes for a certain osm way by its OSM way id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_always_keep_largest_subnetwork+&#34;&gt;&lt;code&gt;.set_always_keep_largest_subnetwork(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TRUE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Indicate keep largest subnetwork when removing dangling subnetworks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_bounding_box+&#34;&gt;&lt;code&gt;.set_bounding_box(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TRUE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mark a bounding box to which the reader is restricted within the OSM file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_discard_dangling_networks_above+&#34;&gt;&lt;code&gt;.set_discard_dangling_networks_above(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;Infinity&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set threshold of nodes above which a dangling subnetwork is removed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_discard_dangling_networks_below+&#34;&gt;&lt;code&gt;.set_discard_dangling_networks_below(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;20&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set threshold of nodes under which a dangling subnetwork is removed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_keep_ways_outside_bounding_box+&#34;&gt;&lt;code&gt;.set_keep_osm_ways_outside_bounding_box(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mark OSM ways to be kept even if they fall (partially) outside the user specified bounding box&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_input_file+&#34;&gt;&lt;code&gt;.set_input_file(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the input file (local file based) to parse by the OSM network reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_input_source+&#34;&gt;&lt;code&gt;.set_input_source(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the input source (URL streaming) to parse by the OSM network reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_set_remove_dangling_subnetworks+&#34;&gt;&lt;code&gt;.set_remove_dangling_subnetworks(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TRUE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Remove dangling subnetworks or not after parsing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Setting either the input file or input source suffices, both need not be set.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_highway_settings&#34;&gt;&lt;code&gt;.highway_settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to OSM entities tagged as &lt;code&gt;highway=&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_lane_configuration_settings&#34;&gt;&lt;code&gt;.lane_configuration&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to the configuration of OSM lanes in case tags are absent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;osmnrs_railway_settings&#34;&gt;&lt;code&gt;.railway_settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to OSM entities tagged as &lt;code&gt;railway=&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create a network converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example Open Street Map (OSM) network reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OSM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_file&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_file&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#or: osm_reader.settings.set_input_source(&amp;#34;&amp;lt;URL_to_input_source&amp;gt;&amp;#34;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example Planit network writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkWriterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_country&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;country_name&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../osmnetworkreader&#34;&gt;&lt;code&gt;OsmNetworkReader&lt;/code&gt;&lt;/a&gt; Osm network reader class these settings reside on&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;OsmNetworkReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PlanitIntermodalReader</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreader/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;PlanitIntermodalReader&lt;/code&gt; class instance can be created via the &lt;a href=&#34;../../converterfactory/intermodalconverter&#34;&gt;&lt;code&gt;IntermodalConverter&lt;/code&gt;&lt;/a&gt;. It provides the functionality to parse a Planit intermodal network and zoning (including transfer zones representing the intermodal component).&lt;/p&gt;
+&lt;p&gt;All configuration of this reader is performed via its &lt;code&gt;.settings&lt;/code&gt; property, providing access to the &lt;a href=&#34;../planitintermodalreadersettings&#34;&gt;&lt;code&gt;PlanitIntermodalReaderSettings&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;defaults-in-planit-intermodal-reader&#34;&gt;Defaults in Planit Intermodal Reader&lt;/h4&gt;
+&lt;p&gt;The Planit intermodal reader defaults are bassed on the settings of the two underlying readers (network and zoning). The user can change these defaults if they deem this necessary via their respective settings that are in turn are made available via the intermodal reader settings property.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If, after reading the documentation, you are still unsure what defaults are adopted, have a look at the generated logs when using the reader. Planit will log the majority of the adopted defaults in its output when performing the OSM intermodal network reading.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;The user is required to explicitly configure at least the following settings on an &lt;code&gt;PlanitIntermodalReader&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;set an InputFile via &lt;code&gt;.settings.set_input_directory(+)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;pimcr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Access to &lt;a href=&#34;../planitintermodalreadersettings&#34;&gt;&lt;code&gt;PlanitIntermodalReaderSettings&lt;/code&gt;&lt;/a&gt; to configure the reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create an intermodal converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;INTERMODAL&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# PLANit intermodal reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_files&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Matsim intermodal writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MATSIM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../planitintermodalreadersettings&#34;&gt;&lt;code&gt;PlanitIntermodalReaderSettings&lt;/code&gt;&lt;/a&gt;  for configuration of the Planit intermodal reader&lt;br&gt;
+&lt;a href=&#34;../../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; for the converter factory to create other types of converters&lt;br&gt;
+&lt;a href=&#34;../../enums/intermodalreadertype&#34;&gt;&lt;code&gt;IntermodalReaderType&lt;/code&gt;&lt;/a&gt; for the supported intermodal reader types&lt;br&gt;
+&lt;a href=&#34;../../enums/intermodalwritertype&#34;&gt;&lt;code&gt;IntermodalWriterType&lt;/code&gt;&lt;/a&gt; for the supported intermodal writer types&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitIntermodalReaderWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PlanitIntermodalReaderSettings</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitintermodalreadersettings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;PlanitIntermodalReaderSettings&lt;/code&gt; instance is accessible via the &lt;a href=&#34;../planitintermodalreader&#34;&gt;&lt;code&gt;PlanitIntermodalReader&lt;/code&gt;&lt;/a&gt; its &lt;a href=&#34;../planitintermodalreader/pimcr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt; property. It allows the user to configure the PlanitIntermodalReader. We differentiate between:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../planitnetworkreadersettings&#34;&gt;Network settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;planitzoningreadersettings&#34;&gt;Zoning Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;em&gt;network settings&lt;/em&gt; are identical to the settings exposed by the &lt;a href=&#34;../planitnetworkreader&#34;&gt;PlanitNetworkReader&lt;/a&gt; and are described in detail under &lt;a href=&#34;../planitnetworkreadersettings&#34;&gt;PlanitNetworkReaderSettings&lt;/a&gt;. These settings configure everything related to the physical road and/or rail network.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;zoning settings&lt;/em&gt; are additional settings for the physical infrastructure directly related to the zoning aspects, including the intermodal zoning component, of the reader, i.e., the parsing of (transfer) zones, such as od zones, but equally important and more important for the intermodal aspect of the reader; transfer zones such as bus stops, train stations, platforms, etc. They are described under &lt;a href=&#34;planitzoningreadersettings&#34;&gt;Zoning Settings&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;All methods marked as &lt;code&gt;Compulsory=YES&lt;/code&gt; in the &lt;a href=&#34;#methods&#34;&gt;Methods&lt;/a&gt; section are expected to be configured by the user explicitly.&lt;/p&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;A &lt;code&gt;PlanitIntermodalReaderSettings&lt;/code&gt; instance exposes the following methods. The Compulsory column indicates it the user is expected to configure this setting explicitly or not.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;pimrs_set_input_dir+&#34;&gt;&lt;code&gt;.set_input_directory(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the input directory to obtain the input files from&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;pimrs_network_settings&#34;&gt;&lt;code&gt;.network_settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to physical road infrastructure&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;pimrs_zoning_settings&#34;&gt;&lt;code&gt;.zoning_settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Settings specific to zoning (OD and transfer) infrastructure&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create an intermodal converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;INTERMODAL&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# PLANit intermodal reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_files&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Matsim intermodal writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;IntermodalReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MATSIM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;intermodal_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../planitintermodalreader&#34;&gt;&lt;code&gt;PlanitIntermodalReader&lt;/code&gt;&lt;/a&gt; intermodal reader class these settings reside on&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitIntermodalReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PlanitNetworkReader</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreader/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;PlanitNetworkReader&lt;/code&gt; class instance can be created via the &lt;a href=&#34;../../converterfactory/networkconverter&#34;&gt;&lt;code&gt;NetworkConverter&lt;/code&gt;&lt;/a&gt;. It provides the functionality to parse networks in the native Planit format, and possibly persist it in the same or another format using a NetworkWriter. Once created the user can configure its settings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For information on the Planit XML format, please consult the &lt;a href=&#34;../../../../inputoutput/input/planitdefault&#34;&gt;Data formats/Input/Default&lt;/a&gt; section&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;All configuration of this reader is performed via its &lt;code&gt;.settings&lt;/code&gt; property, providing access to the &lt;a href=&#34;../planitnetworkreadersettings&#34;&gt;&lt;code&gt;PlanitNetworkReaderSettings&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;The user is required to explicitly configure at least the following settings on PlanitmNetworkReader:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;set an input directory  via &lt;code&gt;.settings.set_inputdirectory(+)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;This class exposes the following properties:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Property&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Availability&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;pncr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Always&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Access to &lt;a href=&#34;../planitnetworkreadersettings&#34;&gt;&lt;code&gt;PlanitNetworkReaderSettings&lt;/code&gt;&lt;/a&gt; to configure the reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create a network converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# PLANit network reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_inputdirectory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_input_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example Matsim network writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkWriterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MATSIM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_dir&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../planitnetworkreadersettings&#34;&gt;&lt;code&gt;PlanitNetworkReaderSettings&lt;/code&gt;&lt;/a&gt;  for configuration of the Planit network reader&lt;br&gt;
+&lt;a href=&#34;../../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; for the converter factory to create other types of converters&lt;br&gt;
+&lt;a href=&#34;../../enums/networkreadertype&#34;&gt;&lt;code&gt;NetworkReaderType&lt;/code&gt;&lt;/a&gt; for the supported network reader types&lt;br&gt;
+&lt;a href=&#34;../../enums/networkwritertype&#34;&gt;&lt;code&gt;NetworkWriterType&lt;/code&gt;&lt;/a&gt; for the supported network writer types&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;PlanitNetworkReaderWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PlanitNetworkReaderSettings</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreadersettings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/planitnetworkreadersettings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;PlanitNetworkReaderSettings&lt;/code&gt; instance is accessible via the &lt;a href=&#34;../planitnetworkreader&#34;&gt;&lt;code&gt;PlanitNetworkReader&lt;/code&gt;&lt;/a&gt; its &lt;a href=&#34;../planitnetworkreader/pncr_settings&#34;&gt;&lt;code&gt;.settings&lt;/code&gt;&lt;/a&gt; property. It allows the user to configure the PlanitNetworkReader.&lt;/p&gt;
+&lt;h4 id=&#34;minimum-configuration-requirements&#34;&gt;Minimum configuration requirements&lt;/h4&gt;
+&lt;p&gt;All methods marked as &lt;code&gt;Compulsory=YES&lt;/code&gt; in the &lt;a href=&#34;#methods&#34;&gt;Methods&lt;/a&gt; section are expected to be configured by the user explicitly.&lt;/p&gt;
+&lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
+&lt;p&gt;A &lt;code&gt;PlanitNetworkReaderSettings&lt;/code&gt; instance exposes the following methods. The Compulsory column indicates it the user is expected to configure this setting explicitly or not.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Compulsory&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Default&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;prs_set_input_dir+&#34;&gt;&lt;code&gt;.set_input_directory(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;TRUE&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set the input directory to search for network XML file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;prs_set_xml_extension+&#34;&gt;&lt;code&gt;.set_xml_file_extension(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;xml&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Change the file extension to look consider in case the xml file does not use the regular &lt;code&gt;.xml&lt;/code&gt; extension&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h4 id=&#34;example-1---minimum-required-settings&#34;&gt;Example 1 - Minimum required settings&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create a network converter&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# PLANit XML network reader        &lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PLANIT&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;dir_to_input_file&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# example MATSim network writer&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkWriterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;MATSIM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to_output_dir&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;matsim_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../planitnetworkreader&#34;&gt;&lt;code&gt;PlanitNetworkReader&lt;/code&gt;&lt;/a&gt; PLANit network reader class these settings reside on&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;ReaderSettingsWrapper&lt;/code&gt; in &lt;code&gt;converterwrappers.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

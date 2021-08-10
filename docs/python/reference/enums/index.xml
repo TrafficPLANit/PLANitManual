@@ -30,19 +30,28 @@
 &lt;tr&gt;
 &lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
 &lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Instance documentation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;NETWORK&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Use to create a &lt;a href=&#34;../../converterfactory/networkconverter&#34;&gt;&lt;code&gt;NetworkConverter&lt;/code&gt;&lt;/a&gt; instance&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ZONING&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Use to create an &lt;a href=&#34;../../converterfactory/intermodalconverter&#34;&gt;&lt;code&gt;IntermodalConverter&lt;/code&gt;&lt;/a&gt; instance&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;INTERMODAL&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Use to create a &lt;a href=&#34;../../converterfactory/zoningconverter&#34;&gt;&lt;code&gt;ZoningConverter&lt;/code&gt;&lt;/a&gt; instance&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;SERVICE_NETWORK&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Use to create a &lt;code&gt;ServiceNetworkConverter&lt;/code&gt; instance (not available yet)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ROUTED_SERVICES&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Use to create a &lt;code&gt;RoutedServicesConverter&lt;/code&gt; instance (not available yet)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1066,6 +1075,82 @@
 &lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Assignment&lt;/a&gt; for the various assignment methods where one can set the physical cost on and how to retrieve the instantiated physical cost object.&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
 &lt;p&gt;Class &lt;code&gt;PhysicalCost&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: RoutedServicesReaderType.&lt;enum&gt;</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routedservicesreadertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routedservicesreadertype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available types as enums for creating a particular type of routed services reader compatible with the PLANit &lt;a href=&#34;../../converterfactory/routedservicesconverter&#34;&gt;&lt;code&gt;RoutedServicesConverter&lt;/code&gt;&lt;/a&gt;. Routed services are the services that exist on top of a service network which can have a frequency or a particular schedule (or both)&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PLANIT&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Use to create a PLANit routed services reader through &lt;a href=&#34;../../converterfactory/routedservicesconverter&#34;&gt;&lt;code&gt;RoutedServicesConverter&lt;/code&gt;&lt;/a&gt; instance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;NOT&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;YET&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AVAILABLE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit&#34;&gt;&lt;code&gt;Planit&lt;/code&gt;&lt;/a&gt; on how to access the ConverterFactory instance via PLANit instance&lt;br&gt;
+&lt;a href=&#34;../../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; for information on the ConverterFactory class
+&lt;a href=&#34;../../converterfactory/routedservicesconverter&#34;&gt;&lt;code&gt;RoutedServicesConverter&lt;/code&gt;&lt;/a&gt; for information on the RoutedServicesConverter class&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;RoutedServicesReaderType&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ServiceNetworkReaderType.&lt;enum&gt;</title>
+      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/servicenetworkreadertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/servicenetworkreadertype/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
+&lt;p&gt;Class exposing the available types as enums for creating a particular type of service network reader compatible with the PLANit &lt;a href=&#34;../../converterfactory/servicenetworkconverter&#34;&gt;&lt;code&gt;ServiceNetworkConverter&lt;/code&gt;&lt;/a&gt;. A service network is a network that exists on top of a physical network and defines services offered in the form of a network with legs between service nodes.&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;enum&amp;gt; Fields&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PLANIT&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Use to create a PLANit service network reader through &lt;a href=&#34;../../converterfactory/servicenetworkconverter&#34;&gt;&lt;code&gt;ServiceNetworkConverter&lt;/code&gt;&lt;/a&gt; instance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;NOT&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;YET&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AVAILABLE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;../../planit&#34;&gt;&lt;code&gt;Planit&lt;/code&gt;&lt;/a&gt; on how to access the ConverterFactory instance via PLANit instance&lt;br&gt;
+&lt;a href=&#34;../../converterfactory&#34;&gt;&lt;code&gt;ConverterFactory&lt;/code&gt;&lt;/a&gt; for information on the ConverterFactory class
+&lt;a href=&#34;../../converterfactory/servicenetworkconverter&#34;&gt;&lt;code&gt;ServiceNetworkConverter&lt;/code&gt;&lt;/a&gt; for information on the ServiceNetworkConverter class&lt;/p&gt;
+&lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
+&lt;p&gt;Class &lt;code&gt;ServiceNetworkReaderType&lt;/code&gt; in &lt;code&gt;enums.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
