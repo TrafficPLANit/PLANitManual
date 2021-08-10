@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how to configure a PLANit project
 ">
 
-<meta itemprop="wordCount" content="799">
+<meta itemprop="wordCount" content="801">
 
 
 
@@ -3234,7 +3234,8 @@ The inputs for the assignment (network, zoning, demands) are all automatically s
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">projectPath</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// *NEW*
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">InfrastructureNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">MacroscopicNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+    <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MacroscopicNetwork</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// *NEW*
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
@@ -3268,8 +3269,11 @@ The inputs for the assignment (network, zoning, demands) are all automatically s
   <span style="color:#8f5902;font-style:italic">// *NEW*
 </span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">projectPath</span><span style="color:#ce5c00;font-weight:bold">));</span>
   
-  <span style="color:#000">InfrastructureNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  <span style="color:#000">MacroscopicNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+    <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MacroscopicNetwork</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  
   <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  
   <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// *NEW*

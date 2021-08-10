@@ -3124,14 +3124,14 @@
 	<h1>Converter Factory</h1>
         <div class="lead">Converter Factory instance</div>
 	
-	<p>Reference documentation for the <code>ConverterFactory</code> class instance that can be collected from the top-level <code>Planit()</code> instance to create, i.e., manufacture, converters of a specific type. the most common use case for creating a converter would be to convert a network from one format into another, e.g., parse an OSM network and persist it as a planit network</p>
+	<p>Reference documentation for the <code>ConverterFactory</code> class instance that can be collected from the top-level <code>Planit()</code> instance to create, i.e., manufacture, converters of a specific type. The most common use case for creating a converter would be to convert a network from one format into another, e.g., parse an OSM network and persist it as a PLANit network for example</p>
 <p>Converters follow a specific format. they require:</p>
 <ul>
 <li>reader</li>
 <li>writer</li>
 <li>converter</li>
 </ul>
-<p>The reader extracts data from a certain input format and presents it to the converter internally as a planit memory model. The writer accepts a Planit memory model and persists it in its outputformat. The converter takes both a reader and writer and performs the conversion via a dedicated procedure.</p>
+<p>The reader extracts data from a certain input format and presents it to the converter internally as a PLANit memory model. The writer accepts a PLANit memory model and persists it in its output format. The converter takes both a reader and writer and performs the conversion via a dedicated procedure.</p>
 <p>PLANit-Python currently supports two types of converters:</p>
 <ul>
 <li>a <a href="networkconverter">NetworkConverter</a> that supports the conversion of road and/or rail infrastructure</li>

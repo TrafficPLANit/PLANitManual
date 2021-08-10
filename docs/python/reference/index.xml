@@ -265,14 +265,14 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
       <description>
         
         
-        &lt;p&gt;Reference documentation for the &lt;code&gt;ConverterFactory&lt;/code&gt; class instance that can be collected from the top-level &lt;code&gt;Planit()&lt;/code&gt; instance to create, i.e., manufacture, converters of a specific type. the most common use case for creating a converter would be to convert a network from one format into another, e.g., parse an OSM network and persist it as a planit network&lt;/p&gt;
+        &lt;p&gt;Reference documentation for the &lt;code&gt;ConverterFactory&lt;/code&gt; class instance that can be collected from the top-level &lt;code&gt;Planit()&lt;/code&gt; instance to create, i.e., manufacture, converters of a specific type. The most common use case for creating a converter would be to convert a network from one format into another, e.g., parse an OSM network and persist it as a PLANit network for example&lt;/p&gt;
 &lt;p&gt;Converters follow a specific format. they require:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;reader&lt;/li&gt;
 &lt;li&gt;writer&lt;/li&gt;
 &lt;li&gt;converter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The reader extracts data from a certain input format and presents it to the converter internally as a planit memory model. The writer accepts a Planit memory model and persists it in its outputformat. The converter takes both a reader and writer and performs the conversion via a dedicated procedure.&lt;/p&gt;
+&lt;p&gt;The reader extracts data from a certain input format and presents it to the converter internally as a PLANit memory model. The writer accepts a PLANit memory model and persists it in its output format. The converter takes both a reader and writer and performs the conversion via a dedicated procedure.&lt;/p&gt;
 &lt;p&gt;PLANit-Python currently supports two types of converters:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a &lt;a href=&#34;networkconverter&#34;&gt;NetworkConverter&lt;/a&gt; that supports the conversion of road and/or rail infrastructure&lt;/li&gt;

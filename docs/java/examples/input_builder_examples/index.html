@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how to configure PLANit project inputs
 ">
 
-<meta itemprop="wordCount" content="762">
+<meta itemprop="wordCount" content="755">
 
 
 
@@ -3142,7 +3142,7 @@
 	       
 	<p>Here we provide you with a number of examples to set-up your PLANit project by explicitly choosing a particular <code>InputBuilder</code>. the input builder is responsible for parsing project inputs (network, zoning, demands) in a particular format and provide them to PLANit as a valid PLANit memory model.</p>
 <p>For each input format that is supported an InputBuilder implementation is required. Each input format has its own configuration options exposed on the <code>InputBuilder</code> instance.</p>
-<p>The default <code>InputBuilder</code> compatible with the PLANit input data format is the <code>PLANitInputBuilder</code>. Other <code>InputBuilder</code> implementations - and therefore data formats - might either be supported by third parties, your own implementation, or the PLANit project itself. For example, we have an experimental <code>InputBuilder</code> for the <a href="https://github.com/bstabler/TransportationNetworks">TNTP format</a> as an example here.</p>
+<p>The default <code>InputBuilder</code> compatible with the PLANit input data format is the <code>PlanitInputBuilder</code>. Other <code>InputBuilder</code> implementations - and therefore data formats - might either be supported by third parties, your own implementation, or the PLANit project itself. For example, we have an experimental <code>InputBuilder</code> for the <a href="https://github.com/bstabler/TransportationNetworks">TNTP format</a> as an example here.</p>
 <p>Prerequisites:</p>
 <ul>
 <li>It is assumed you know how to set up a PLANit project, otherwise see <a href="../project_examples">Setting up a project</a></li>
@@ -3175,16 +3175,16 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 </table>
 <p>For all examples we adopt the following defaults, and/or settings regarding other components, unless indicated otherwise:</p>
 <ul>
-<li>project: <code>CustomPlanItProject</code>s</li>
-<li>outputs: <a href="../../../inputoutput/output/planitdefault">default PLANit XML/CSV output format</a>, with only link outputs activated, stored in input directory</li>
-<li>assignment: Traditional static assignment</li>
+<li>Project: <code>CustomPlanItProject</code></li>
+<li>Outputs: <a href="../../../inputoutput/output/planitdefault">default PLANit XML/CSV output format</a></li>
+<li>Assignment: Traditional static assignment</li>
 </ul>
 <h3 id="planit-input-format">PLANit input format</h3>
 <p>In this example we explicitly define the PLANit input format to be used. This will trigger the parser to look for XML input files in the PLANit XML input format in the designated project directory.
 Also, because we have access to the builder we can configure it or use some of its features if we want to beyond the basic input of the project path. For example by validating some of our XML files with an XSD schema before passing it on to PLANit.</p>
-<p>The input format is defined by providing an <code>InputBuilder</code>. The <code>InputBuilder</code> expects a particular input format for the input files. The default input format of PLANit itself, i.e., <code>PLANitInputBuilder</code>, is used here. We explicitly set this as the input builder. When you have access to an alternative implementation of input builder, for example because you implemented your own for your own data format, you must use the CusomPlanItProject to be able to use it.</p>
+<p>The input format is defined by providing an <code>InputBuilder</code>. The <code>InputBuilder</code> expects a particular input format for the input files. The default input format of PLANit itself, i.e., <code>PlanitInputBuilder</code>, is used here. We explicitly set this as the input builder. When you have access to an alternative implementation of input builder, for example because you implemented your own for your own data format, you must use the CusomPlanItProject to be able to use it.</p>
 <blockquote>
-<p>Note that when you use a <code>PLANitSimpleProject</code> or <code>PLANitProject</code>, PLANit will automatically create the PLANitInputbuilder for you.</p>
+<p>Note that when you use a <code>PlanitSimpleProject</code> or <code>PlanitProject</code>, PLANit will automatically create the PLANitInputbuilder for you.</p>
 </blockquote>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
 <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">projectPath</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
@@ -3192,13 +3192,13 @@ Also, because we have access to the builder we can configure it or use some of i
 <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
   
   <span style="color:#8f5902;font-style:italic">// *NEW*
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">PlanItInputBuilder</span> <span style="color:#000">inputFormat</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  <span style="color:#000">inputFormat</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">validateXmlInputFile</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert xml file location&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#4e9a06">&#34;&lt;insert xml schema location&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">PlanItInputBuilder</span> <span style="color:#000">inputBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert the project path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+  <span style="color:#000">inputBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">validateXmlInputFile</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;insert xml file location&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#4e9a06">&#34;&lt;insert xml schema location&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
   <span style="color:#8f5902;font-style:italic">// *NEW*
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">inputFormat</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">inputBuilder</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
-  <span style="color:#000">InfrastructureNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+  <span style="color:#000">MacroscopicNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MacroscopicNetwork</span><span style="color:#ce5c00;font-weight:bold">)</span>
     <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
   <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
@@ -3242,7 +3242,7 @@ Also, because we have access to the builder we can configure it or use some of i
    <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">defaultMaximumSpeed</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">25</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">0</span> <span style="color:#8f5902;font-style:italic">// in speed units
 </span><span style="color:#8f5902;font-style:italic"></span>
    <span style="color:#8f5902;font-style:italic">// * NEW *
-</span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">TntpInputBuilder</span> <span style="color:#000">tntp</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">TntpInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span>
+</span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">TntpInputBuilder</span> <span style="color:#000">tntpBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">TntpInputBuilder</span><span style="color:#ce5c00;font-weight:bold">(</span>
    	<span style="color:#4e9a06">&#34;&lt;network file location&#34;</span><span style="color:#ce5c00;font-weight:bold">&gt;,</span> 
    	<span style="color:#4e9a06">&#34;&lt;demand file location&#34;</span><span style="color:#ce5c00;font-weight:bold">&gt;,</span> 
    	<span style="color:#4e9a06">&#34;&lt;node coordinate file location - optional - &gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span>
@@ -3253,9 +3253,9 @@ Also, because we have access to the builder we can configure it or use some of i
    	<span style="color:#000">defaultMaximumSpeed</span><span style="color:#ce5c00;font-weight:bold">);</span>
      
    <span style="color:#8f5902;font-style:italic">// *NEW*
-</span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">tntp</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">CustomPlanItProject</span> <span style="color:#000">project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">CustomPlanItProject</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">tntpBuilder</span><span style="color:#ce5c00;font-weight:bold">);</span>
   
-   <span style="color:#000">InfrastructureNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+   <span style="color:#000">MacroscopicNetwork</span> <span style="color:#000">network</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">MacroscopicNetwork</span><span style="color:#ce5c00;font-weight:bold">)</span> 
     <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInfrastructureNetwork</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Network</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">MACROSCOPIC_NETWORK</span><span style="color:#ce5c00;font-weight:bold">);</span>
    <span style="color:#000">Zoning</span> <span style="color:#000">zoning</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterZoning</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
    <span style="color:#000">Demands</span> <span style="color:#000">demands</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterDemands</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">zoning</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">network</span><span style="color:#ce5c00;font-weight:bold">);</span>
