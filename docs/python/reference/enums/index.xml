@@ -1055,6 +1055,11 @@
 &lt;td align=&#34;left&#34;&gt;Bureau of Public Roads&lt;sup&gt;1&lt;/sup&gt; link performance function&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../physicalcost/bpr&#34;&gt;BPR Physical Cost&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;FREEFLOW&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cost always equates to free flow travel time&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;../../physicalcost/freeflow&#34;&gt;Free flow Physical Cost&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; United States, Bureau of Public Roads, Traffic assignment manual. (1964). Washington.&lt;/p&gt;
