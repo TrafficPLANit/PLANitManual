@@ -631,6 +631,10 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</loc>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</loc>
   </url>
   
@@ -704,6 +708,14 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/installation/planit-python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</loc>
   </url>
   
   <url>
@@ -836,6 +848,10 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/networkwritertype/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/normbased/</loc>
   </url>
   
   <url>
