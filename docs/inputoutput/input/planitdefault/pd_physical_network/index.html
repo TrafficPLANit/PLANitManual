@@ -30,7 +30,7 @@
 <meta itemprop="description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="4437">
+<meta itemprop="wordCount" content="4512">
 
 
 
@@ -3203,7 +3203,7 @@
       <ul>
         <li><a href="#default-mode">Default Mode</a></li>
         <li><a href="#default-link-segment-type">Default Link Segment Type</a></li>
-        <li><a href="#default-link-segment-type-mode-properties">Default Link Segment Type Mode Properties</a></li>
+        <li><a href="#default-link-segment-type-mode-access-properties">Default Link Segment Type Mode Access Properties</a></li>
       </ul>
     </li>
     <li><a href="#xml-elements">XML Elements</a></li>
@@ -3222,7 +3222,7 @@
         <li><a href="#-linksegmenttypes">&lt;&gt; <strong>&lt;linksegmenttypes&gt;</strong></a></li>
         <li><a href="#-linksegmenttype">&lt;&gt;&lt;&gt; <strong>&lt;linksegmenttype&gt;</strong></a></li>
         <li><a href="#-access">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;access&gt;</strong></a></li>
-        <li><a href="#-mode-1">&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;mode&gt;</strong></a></li>
+        <li><a href="#-accessgroup">&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;accessgroup&gt;</strong></a></li>
         <li><a href="#-nodes">&lt;&gt; <strong>&lt;nodes&gt;</strong></a></li>
         <li><a href="#-node">&lt;&gt;&lt;&gt; <strong>&lt;node&gt;</strong></a></li>
         <li><a href="#-links">&lt;&gt; <strong>&lt;links&gt;</strong></a></li>
@@ -4387,16 +4387,16 @@
 </tr>
 <tr>
 <td align="left">Mode specific properties</td>
-<td align="left"><a href="./#link-segment-type-mode-properties">Default Mode properties</a></td>
+<td align="left"><a href="./#link-segment-type-mode-properties">Default Mode access properties</a></td>
 <td align="left">N/A</td>
 <td align="left"><code>None</code></td>
-<td align="left">The default mode specific properties for a link segment type</td>
+<td align="left">The default mode access specific properties for a link segment type</td>
 </tr>
 </tbody>
 </table>
-<h3 id="default-link-segment-type-mode-properties">Default Link Segment Type Mode Properties</h3>
-<p>When one or more mode specific properties are not specified for a mode when configuring the <code>&lt;linksegmenttype&gt;</code> element under <a href="./#layer-configuration"><code>&lt;layerconfiguration&gt;</code></a> default values will be applied. It is not advisable to leave this out for anything else but testing purposes, since it is unlikely that the defaults accurately reflect the true conditions.</p>
-<p>The <strong>Default Link Segment Type Mode Properties</strong> has the following characteristics:</p>
+<h3 id="default-link-segment-type-mode-access-properties">Default Link Segment Type Mode Access Properties</h3>
+<p>When one or more mode specific properties are not specified for a mode when configuring the <code>&lt;linksegmenttype&gt;&lt;access&gt;</code> element under <a href="./#layer-configuration"><code>&lt;layerconfiguration&gt;</code></a>, then, default values will be applied. It is not advisable to leave this out for anything else but testing purposes, since it is unlikely that the defaults accurately reflect the true conditions.</p>
+<p>The <strong>Default Link Segment Type Mode Access Properties</strong> has the following characteristics:</p>
 <table>
 <thead>
 <tr>
@@ -4875,7 +4875,7 @@
 </tbody>
 </table>
 <h3 id="-access">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;access&gt;</strong></h3>
-<p>Modes allowed access for the link segment type. For each specified mode, dedicated properties for this link segment type can be specified.</p>
+<p>Here we define the groups of modes that are allowed access for links with this segment type. For each groupaccess entry one or more modes can be attached which will inherit the dedicated properties set within this group, most notably the maximum speed.</p>
 <p>When absent, all available <strong>road based</strong> modes are assumed to be allowed based on their properties, (possibly dynamically constrained by the physical link properties). when present, at least a single mode sub-element must be present.</p>
 <blockquote>
 <p>link segment types that represent rail, typically only allow a single rail based mode and typically do not allow road based modes. Therefore, we expect the user to explicitly include rail based modes at all times. When
@@ -4896,15 +4896,15 @@ no modes are defined, <strong>rail based</strong> modes are <strong>not</strong>
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="./#-mode-1"><code>&lt;mode&gt;</code></a></td>
+<td align="left"><a href="./#-mode-1"><code>&lt;accessgroup&gt;</code></a></td>
 <td align="left">YES</td>
 <td align="left">unbounded</td>
-<td align="left">Mode allowed on link segments with this type (and with specific settings)</td>
+<td align="left">The group defining properties for one or more modes allowed on link segments with this type (and with specific settings)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="-mode-1">&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;mode&gt;</strong></h3>
-<p>Mode allowed for the link segment type. Dedicated properties for this link segment type are specified here.</p>
+<h3 id="-accessgroup">&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;accessgroup&gt;</strong></h3>
+<p>Group of properties to be applied to the referenced modes that are allowed access for links with this segment type.</p>
 <blockquote>
 <p>The maximum speed that is eventually applied to a mode on a link segment is the minimum of the three available maximum speeds: (i) the physical speed limit on the link segment, (ii) the mode&rsquo;s maximum speed identified on the global definition for the mode, (iii) the maximum speed imposed via these mode properties specific to the link segment type applied to the link segment.</p>
 </blockquote>
@@ -4921,14 +4921,17 @@ no modes are defined, <strong>rail based</strong> modes are <strong>not</strong>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>ref</code></td>
+<td align="left"><code>moderefs</code></td>
 <td align="left">string</td>
 <td align="left"><code>None</code></td>
-<td align="left">YES</td>
-<td align="left">Mode XML id reference, when &lsquo;0&rsquo; it represents all available modes</td>
+<td align="left">NO</td>
+<td align="left">Mode XML id references, when absent all available road modes on the layer are assumed to be applicable.</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>When the moderefs attribute is left out, then only a single accessgroup for road modes can be defined, otherwise modes would be included in multiple access groups which is not allowed.</p>
+</blockquote>
 <p>This element has the following simple-elements:</p>
 <table>
 <thead>
