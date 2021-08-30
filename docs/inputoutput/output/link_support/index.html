@@ -32,7 +32,7 @@ We list the supported output properties for link (segment) ordered by their prio
 Some output properties are not only contingent on the output type but on the combination of output type and PLANit traffic assignment component, such as, for example, the type of traffic assignment. For those specialised output properties, we direct the reader to the appropriate page of the PLANit component where these properties are listed.
 We list the supported output properties for link (segment) ordered by their priority (id, input, output).">
 
-<meta itemprop="wordCount" content="395">
+<meta itemprop="wordCount" content="402">
 
 
 
@@ -3390,7 +3390,7 @@ We list the supported output properties for link (segment) ordered by their prio
 <td align="left"><code>CAPACITY_PER_LANE</code></td>
 <td align="left">The capacity flow rate for a lane</td>
 <td align="left">float</td>
-<td align="left"><code>veh/h(/l)</code></td>
+<td align="left"><code>pcu/h(/l)</code></td>
 </tr>
 <tr>
 <td align="left"><code>DOWNSTREAM_NODE_LOCATION</code></td>
@@ -3414,7 +3414,7 @@ We list the supported output properties for link (segment) ordered by their prio
 <td align="left"><code>MAXIMUM_DENSITY</code></td>
 <td align="left">The maximum density allowed on the link segment</td>
 <td align="left">float</td>
-<td align="left"><code>veh/km</code></td>
+<td align="left"><code>pcu/km</code></td>
 </tr>
 <tr>
 <td align="left"><code>MAXIMUM_SPEED</code></td>
@@ -3455,21 +3455,27 @@ We list the supported output properties for link (segment) ordered by their prio
 </tr>
 <tr>
 <td align="left"><code>COST_TIMES_FLOW</code></td>
-<td align="left">The cost (per vehicle) multiplied with the volume (per hour) on the entity</td>
+<td align="left">The cost (per pcu) multiplied with the volume (per hour) on the entity</td>
 <td align="left">float</td>
-<td align="left"><code>h</code> (i.e., (h/veh)*(veh/1)) <strong>TODO: should be in PCU</strong></td>
+<td align="left"><code>h</code> (i.e., (h/pcu)*(pcu/1))</td>
 </tr>
 <tr>
 <td align="left"><code>DENSITY</code></td>
 <td align="left">The density on the link segment</td>
 <td align="left">float</td>
-<td align="left"><code>veh/km</code></td>
+<td align="left"><code>pcu/km</code></td>
+</tr>
+<tr>
+<td align="left"><code>INFLOW</code></td>
+<td align="left">The inflow rate</td>
+<td align="left">float</td>
+<td align="left"><code>pcu/h</code></td>
 </tr>
 <tr>
 <td align="left"><code>FLOW</code></td>
 <td align="left">The flow rate</td>
 <td align="left">float</td>
-<td align="left"><code>veh/h</code></td>
+<td align="left"><code>pcu/h</code></td>
 </tr>
 <tr>
 <td align="left"><code>LINK_SEGMENT_COST</code></td>
@@ -3478,10 +3484,16 @@ We list the supported output properties for link (segment) ordered by their prio
 <td align="left"><code>h</code></td>
 </tr>
 <tr>
+<td align="left"><code>OUTFLOW</code></td>
+<td align="left">The inflow rate</td>
+<td align="left">float</td>
+<td align="left"><code>pcu/h</code></td>
+</tr>
+<tr>
 <td align="left"><code>VC_RATIO</code></td>
 <td align="left">The volume to capacity ratio</td>
 <td align="left">float</td>
-<td align="left"><code>None</code> (<code>(veh/h)/(veh/h)</code>)</td>
+<td align="left"><code>None</code> (<code>(pcu/h)/(pcu/h)</code>)</td>
 </tr>
 </tbody>
 </table>
