@@ -30,7 +30,7 @@
 <meta itemprop="description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="4512">
+<meta itemprop="wordCount" content="4631">
 
 
 
@@ -4394,6 +4394,9 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Note that the default for capacity is only used if the adopted assignment does not adopt a fundamental diagram or if the adopted fundamental diagram cannot infer a better estimate of the capacity based on the free flow speed, maximum density per lane and default backward wave speed.</p>
+</blockquote>
 <h3 id="default-link-segment-type-mode-access-properties">Default Link Segment Type Mode Access Properties</h3>
 <p>When one or more mode specific properties are not specified for a mode when configuring the <code>&lt;linksegmenttype&gt;&lt;access&gt;</code> element under <a href="./#layer-configuration"><code>&lt;layerconfiguration&gt;</code></a>, then, default values will be applied. It is not advisable to leave this out for anything else but testing purposes, since it is unlikely that the defaults accurately reflect the true conditions.</p>
 <p>The <strong>Default Link Segment Type Mode Access Properties</strong> has the following characteristics:</p>
@@ -4410,14 +4413,14 @@
 <tbody>
 <tr>
 <td align="left">maxspeed</td>
-<td align="left"><code>80</code></td>
+<td align="left">max speed of the mode</td>
 <td align="left">double</td>
 <td align="left"><code>km/h</code></td>
 <td align="left">Maximum speed for the mode on the link segment type</td>
 </tr>
 <tr>
 <td align="left">critspeed</td>
-<td align="left"><code>60</code></td>
+<td align="left">max speed of the mode</td>
 <td align="left">double</td>
 <td align="left"><code>km/h</code></td>
 <td align="left">Speed for the mode under capacity flow conditions</td>
@@ -4855,6 +4858,9 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Note that if capacity is absent, the default is only used if the adopted assignment does not support a fundamental diagram able to infer a better estimate for the capacity based on the free flow speed, maximum density per lane, and default backward wave speed.</p>
+</blockquote>
 <p>This element has the following sub-elements:</p>
 <table>
 <thead>
@@ -4958,12 +4964,14 @@ no modes are defined, <strong>rail based</strong> modes are <strong>not</strong>
 <td align="left">double</td>
 <td align="left"><code>km/h/</code></td>
 <td align="left">NO</td>
-<td align="left">60</td>
+<td align="left">mode&rsquo;s maximum speed</td>
 <td align="left">critical speed (at capacity) of this mode on links of this segment type</td>
 </tr>
 </tbody>
 </table>
-<p>When the max speed is absent it takes on the mode&rsquo;s maximum speed limit.</p>
+<blockquote>
+<p>When the max or critical speed is absent it takes on the mode&rsquo;s maximum speed restricted by the link segment&rsquo;s free speed on whatever link segment the type is applied.</p>
+</blockquote>
 <h3 id="-nodes">&lt;&gt; <strong>&lt;nodes&gt;</strong></h3>
 <p>Nodes represent the locations where links (roads) intersect and traffic interacts with each other. This container holds all the node specifications for the network</p>
 <p>This element has the following sub-elements:</p>

@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how to configure initial costs
 ">
 
-<meta itemprop="wordCount" content="1164">
+<meta itemprop="wordCount" content="947">
 
 
 
@@ -3201,7 +3201,6 @@
       <ul>
         <li><a href="#minimum-example">Minimum example</a></li>
         <li><a href="#initial-cost-by-time-period">Initial cost by time period</a></li>
-        <li><a href="#initial-cost-by-time-period-automatic">Initial cost by time period automatic</a></li>
         <li><a href="#hybrid-initial-cost">Hybrid initial cost</a></li>
       </ul>
     </li>
@@ -3266,7 +3265,7 @@
 	       
 	<p>Here we provide you with a number of examples to set-up initial costs in your PLANit project.</p>
 <p>Initial costs can be provided across time periods or specific to a time period. Depending on which you use different factory and registration methods are available to you, most of which are detailed in the examples below.</p>
-<p>Initial costs are registered on the project level and can be assigned to one or more traffic assignment instances. Therefore, the parsing of the initial costs occurs on the project level and then - in a second step - the user assigns the parsed initial costs to the relevant traffic assignment instance(s).</p>
+<p>Initial costs are registered on the project level and can be assigned to one or more traffic assignment instances. Therefore, the parsing of the initial costs occurs on the project level and then - in a second step - the user assigns the parsed initial costs to the relevant traffic assignment instance(s). The time periods used to identify which costs to parse and register on the project level need not necessarily be used 1:1 to use these costs on the assignment. It is possible to apply initial costs of any time period and apply them on the assignment via another time period. This to ensure maximum flexibility.</p>
 <p>Prerequisites:</p>
 <ul>
 <li>It is assumed you know how to set up a PLANit project, otherwise see <a href="../project_examples">Setting up a project</a></li>
@@ -3296,11 +3295,6 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 </tr>
 <tr>
 <td align="left">3</td>
-<td align="left"><a href="./#initial-cost-by-time-period-automatic">Link segment initial costs by time period (automatic) </a></td>
-<td align="left">Example of setting up initial link segment costs by time period by automatically sourcing the periods from the demands</td>
-</tr>
-<tr>
-<td align="left">4</td>
 <td align="left"><a href="./#hybrid-initial-cost">Hybrid initial link segment costs</a></td>
 <td align="left">Example of setting up initial link segment costs with and without a time period</td>
 </tr>
@@ -3317,7 +3311,7 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <ul>
 <li>The initial link segment costs are sourced from the Cost column in the CSV</li>
 <li>The initial link segment costs are not attributed to a particular time period when parsed</li>
-<li>The initial link segment costs are registered on the traffic assignment without attributing them to a particular time period either</li>
+<li>The initial link segment costs are registered on the traffic assignment without specifying a particular time period either, the entire initial cost instance is provided meaning, that <strong>all</strong> costs, both time period agnostic and time period specific (if any) are applied in a 1:1 fashion on the assignment.</li>
 </ul>
 <p>By not relating the initial link segment costs to any specific time period, all time periods in the underlying demands will be initialised with these initial link segment costs. If you want to attribute the costs to a particular time period, see other examples where we do so.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
@@ -3347,70 +3341,32 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <ul>
 <li>The initial link segment costs are sourced from the Cost column in the CSV</li>
 <li>The initial link segment costs are attributed to a particular time period when parsed</li>
-<li>Time periods are registered within the Demands instance that is populated automatically for a PLANitSimpleProject upon creation (it parses demands from input files expected to be available in the current working directory)</li>
-<li>The initial link segment costs are registered on the traffic assignment and attributed to the time period</li>
+<li>Time periods are used to both identify which initial costs to use (of that period) upon parsing, as well as how to apply them in the assignment</li>
+<li>The initial link segment costs are registered on the traffic assignment and attributed to the same time period (choice)</li>
 </ul>
 <p>By relating the initial link segment costs to a specific time period, only the indicated time period will receive the initial link segment costs.</p>
-<blockquote>
-<p>It is expected the time period on the project and the traffic assignment match, although technically this is not required.</p>
-</blockquote>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-<span style="color:#204a87;font-weight:bold">try</span><span style="color:#ce5c00;font-weight:bold">{</span>
-   
-  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">simpleProject</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">();</span>
-  
-  <span style="color:#8f5902;font-style:italic">// * NEW *
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">TimePeriod</span> <span style="color:#000">theTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getDemands</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">timePeriods</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriodById</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">);</span>  
-  <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span>
-      <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>  
+    <span style="color:#204a87;font-weight:bold">try</span><span style="color:#ce5c00;font-weight:bold">{</span>
+      
+      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">simpleProject</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">();</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">TimePeriod</span> <span style="color:#000">theTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getDemands</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">timePeriods</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getFirst</span><span style="color:#ce5c00;font-weight:bold">();</span>  
+      <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCost</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+          <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span>
+              <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>  
 
-  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  
-  <span style="color:#8f5902;font-style:italic">// * NEW *
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  
-  <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
-    
-<span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-  <span style="color:#8f5902;font-style:italic">// do something
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#ce5c00;font-weight:bold">}</span>
-</code></pre></div><h3 id="initial-cost-by-time-period-automatic">Initial cost by time period automatic</h3>
-<p>In this example, we parse initial link segments costs generated by an earlier generated CSV output file. This output file is consistent with the <a href="../../../inputoutput/output/planitdefault">PLANit default output format</a> and can be used as a source for initial costs.</p>
-<ul>
-<li>The initial link segment costs are sourced from the Cost column in the CSV</li>
-<li>The initial link segment costs are attributed to all time periods available in the provided Demands instance</li>
-<li>Time periods are registered within the Demands instance that is populated automatically for a PLANitsimpleProject upon creation (it parses demands from input files expected to be available in the current working directory)</li>
-<li>The initial link segment costs are registered on the traffic assignment and attributed to the time period</li>
-</ul>
-<p>By relating the initial link segment costs to a specific time period, only the indicated time period will receive the initial link segment costs.</p>
-<blockquote>
-<p>It is expected the time period on the project and the traffic assignment match, although technically this is not required.</p>
-</blockquote>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-<span style="color:#204a87;font-weight:bold">try</span><span style="color:#ce5c00;font-weight:bold">{</span>
-   
-  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">simpleProject</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">();</span>
-  
-  <span style="color:#8f5902;font-style:italic">// * NEW * source time periods from Demands instance and register initial costs on each one
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">List</span><span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#000">InitialLinkSegmentCostPeriod</span><span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">initialLinkSegmentCosts</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span>
-      <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getDemands</span><span style="color:#ce5c00;font-weight:bold">());</span>  
-
-  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  
-  <span style="color:#8f5902;font-style:italic">// * NEW * register for all available time periods
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">for</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">InitialLinkSegmentCostPeriod</span> <span style="color:#000">initialCost</span> <span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">initialLinkSegmentCosts</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-    <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriod</span><span style="color:#ce5c00;font-weight:bold">(),</span> <span style="color:#000">initialCost</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  <span style="color:#ce5c00;font-weight:bold">}</span>
-  
-  <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
-    
-<span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-  <span style="color:#8f5902;font-style:italic">// do something
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#ce5c00;font-weight:bold">}</span>
+      <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">taBuilder</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span>
+          <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW *
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">taBuilder</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriodCosts</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">));</span>
+      
+      <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        
+    <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
 </code></pre></div><h3 id="hybrid-initial-cost">Hybrid initial cost</h3>
 <p>In this example, we parse two different initial link segments costs generated by earlier generated CSV output files. Output files are consistent with the <a href="../../../inputoutput/output/planitdefault">PLANit default output format</a> and can be used as a source for initial costs.</p>
 <ul>
@@ -3420,38 +3376,35 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 <li>The initial link segment costs are registered on the traffic assignment and attributed to the time period (if any)</li>
 </ul>
 <p>when a time period in the assignment is not present with any initial link segment cost, it reverts to the non-specific initial link segment costs, otherwise it will utilise the specific initial link segment costs</p>
-<blockquote>
-<p>It is expected the time period on the project and the traffic assignment match, although technically this is not required.</p>
-</blockquote>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-<span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">initialCostCSVPath1</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path1 here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
-<span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">initialCostCSVPath2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path2 here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
-
-<span style="color:#204a87;font-weight:bold">try</span><span style="color:#ce5c00;font-weight:bold">{</span>
-   
-  <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">simpleProject</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">();</span>
-  
-  <span style="color:#8f5902;font-style:italic">// * NEW * initial cost WITHOUT time period
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCostNoTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#000">initialCostCSVPath1</span><span style="color:#ce5c00;font-weight:bold">);</span>
+    <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">initialCostCSVPath1</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path1 here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">String</span> <span style="color:#000">initialCostCSVPath2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&lt;insert the initial cost CSV file path2 here&gt;&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
     
-  <span style="color:#8f5902;font-style:italic">// * NEW * intial cost WITH time period
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">TimePeriod</span> <span style="color:#000">theTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getDemands</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">timePeriods</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriodById</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">);</span>  
-  <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#000">initialCostCSVPath2</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>      
-
-  <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
-    <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  
-  <span style="color:#8f5902;font-style:italic">// * NEW * register with and without time period
-</span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialLinkSegmentCostNoTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>
-  
-  <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+    <span style="color:#204a87;font-weight:bold">try</span><span style="color:#ce5c00;font-weight:bold">{</span>
+       
+      <span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">PlanItSimpleProject</span> <span style="color:#000">simpleProject</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">PlanItSimpleProject</span><span style="color:#ce5c00;font-weight:bold">();</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW * initial cost WITHOUT time period
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCostNoTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+          <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#000">initialCostCSVPath1</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        
+      <span style="color:#8f5902;font-style:italic">// * NEW * intial cost WITH time period
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">TimePeriod</span> <span style="color:#000">theTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getDemands</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">timePeriods</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getFirst</span><span style="color:#ce5c00;font-weight:bold">();</span>  
+      <span style="color:#000">InitialLinkSegmentCost</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+          <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getNetwork</span><span style="color:#ce5c00;font-weight:bold">(),</span><span style="color:#000">initialCostCSVPath2</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">);</span>      
     
-<span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-  <span style="color:#8f5902;font-style:italic">// do something
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#ce5c00;font-weight:bold">}</span>
+      <span style="color:#000">TraditionalStaticAssignmentConfigurator</span> <span style="color:#000">ta</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TraditionalStaticAssignmentConfigurator</span><span style="color:#ce5c00;font-weight:bold">)</span> 
+          <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">createAndRegisterTrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">TRADITIONAL_STATIC_ASSIGNMENT</span><span style="color:#ce5c00;font-weight:bold">);</span>
+      
+      <span style="color:#8f5902;font-style:italic">// * NEW * register with and without time period using a 1:1 mapping between parsed and applied time periods
+</span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">initialLinkSegmentCostNoTimePeriod</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriodAgnosticCosts</span><span style="color:#ce5c00;font-weight:bold">());</span>
+      <span style="color:#000">ta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">registerInitialLinkSegmentCost</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">initialLinkSegmentCostTimePeriod</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getTimePeriodCosts</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">theTimePeriod</span><span style="color:#ce5c00;font-weight:bold">));</span>
+      
+      <span style="color:#000">simpleProject</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">executeAllTrafficAssignments</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        
+    <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">final</span> <span style="color:#000">Exception</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+      <span style="color:#8f5902;font-style:italic">// do something
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#ce5c00;font-weight:bold">}</span>
 </code></pre></div>
 	
 	
