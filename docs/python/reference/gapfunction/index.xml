@@ -105,7 +105,6 @@
         &lt;h4 id=&#34;description&#34;&gt;Description&lt;/h4&gt;
 &lt;p&gt;Reference documentation for a simple norm based gap function (where if the norm is set to 1, i.e. &lt;span class=&#34;math inline&#34;&gt;\(p=1\)&lt;/span&gt;, we take the absolute difference).&lt;/p&gt;
 &lt;p&gt;This gap function utilises a norm based approach to computing the gap. It depends on the assignment method what variables are used to compute the gap. In general the user has to choose the norm (norm 1, norm 2, …, norm p) to apply and we also allow the user to choose whether or not the result is to be averaged or not, i.e., divide the result by the number of entries considered. It also hosts a stop criterion to determine when the gap is deemed small enough to be considered sufficient. This criterion is user configurable as well. Mathematically, the norm based gap is defined as follows:&lt;/p&gt;
-&lt;p&gt;CONTINUE HERE&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \delta = {1 \over |\mathbf{x}|} \sqrt[\leftroot{-3}\uproot{3}p]{ (x_1^{i-1}-x_1^i)^p + ... + (x_{|\mathbf{x}|}^{i-1}-x_{|\mathbf{x}|}^i)^p}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\delta = \textrm{gap},\\ p = \textrm{norm to apply, e.g. norm 2 requires } p=2,\\ i = \textrm{iteration},\\ \mathbf{x} = \textrm{vector of the variable }x \textrm{ we take the gap over between iterations, e.g., travel time cost},\\\)&lt;/span&gt;&lt;/p&gt;

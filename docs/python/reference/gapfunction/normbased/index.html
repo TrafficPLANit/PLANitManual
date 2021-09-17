@@ -3281,7 +3281,6 @@
 	<h4 id="description">Description</h4>
 <p>Reference documentation for a simple norm based gap function (where if the norm is set to 1, i.e. <span class="math inline">\(p=1\)</span>, we take the absolute difference).</p>
 <p>This gap function utilises a norm based approach to computing the gap. It depends on the assignment method what variables are used to compute the gap. In general the user has to choose the norm (norm 1, norm 2, …, norm p) to apply and we also allow the user to choose whether or not the result is to be averaged or not, i.e., divide the result by the number of entries considered. It also hosts a stop criterion to determine when the gap is deemed small enough to be considered sufficient. This criterion is user configurable as well. Mathematically, the norm based gap is defined as follows:</p>
-<p>CONTINUE HERE</p>
 <p><span class="math inline">\(\Large \delta = {1 \over |\mathbf{x}|} \sqrt[\leftroot{-3}\uproot{3}p]{ (x_1^{i-1}-x_1^i)^p + ... + (x_{|\mathbf{x}|}^{i-1}-x_{|\mathbf{x}|}^i)^p}\)</span></p>
 <p>with</p>
 <p><span class="math inline">\(\delta = \textrm{gap},\\ p = \textrm{norm to apply, e.g. norm 2 requires } p=2,\\ i = \textrm{iteration},\\ \mathbf{x} = \textrm{vector of the variable }x \textrm{ we take the gap over between iterations, e.g., travel time cost},\\\)</span></p>
