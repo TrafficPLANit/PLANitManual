@@ -75,6 +75,18 @@
   </url>
   
   <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_overrideopu&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/od/odc_overrideopu&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/path/pc_overrideopu&#43;/</loc>
+  </url>
+  
+  <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</loc>
   </url>
   
@@ -944,6 +956,10 @@
   
   <url>
     <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/unittype/</loc>
   </url>
   
   <url>
