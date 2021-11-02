@@ -6,4 +6,4 @@ the repo only contains the manual's statically generated HTML and nothing else
 	
 # Manual Website
 
-The actual website for PLANit is accessible on https://trafficplanit.github.io/PLANitManual/
+The actual website for PLANit is accessible on http://www.goplanit.org
