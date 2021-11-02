@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – OsmRailwaySettings</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</link>
     <description>Recent content in OsmRailwaySettings on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .activate_all_osm_railway_types()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</guid>
       <description>
         
         
@@ -53,10 +53,10 @@
     
     <item>
       <title>Docs: .activate_osm_railway_types(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</guid>
       <description>
         
         
@@ -115,10 +115,10 @@
     
     <item>
       <title>Docs: .deactivate_all_osm_railway_types()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</guid>
       <description>
         
         
@@ -157,10 +157,10 @@
     
     <item>
       <title>Docs: .deactivate_all_osm_railway_types_except(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</guid>
       <description>
         
         
@@ -219,10 +219,10 @@
     
     <item>
       <title>Docs: .deactivate_all_rail_modes_except(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</guid>
       <description>
         
         
@@ -278,10 +278,10 @@
     
     <item>
       <title>Docs: .deactivate_osm_railway_type(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</guid>
       <description>
         
         
@@ -341,10 +341,10 @@
     
     <item>
       <title>Docs: .deactivate_rail_modes(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</guid>
       <description>
         
         
@@ -400,10 +400,10 @@
     
     <item>
       <title>Docs: .overwrite_capacity_max_density_defaults(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</guid>
       <description>
         
         
@@ -479,10 +479,10 @@
     
     <item>
       <title>Docs: .remove_osm_rail_mode_planit_mode_mapping(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</guid>
       <description>
         
         

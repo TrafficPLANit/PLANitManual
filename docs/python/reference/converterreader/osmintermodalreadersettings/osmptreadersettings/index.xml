@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – OsmPublicTransportSettings</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</link>
     <description>Recent content in OsmPublicTransportSettings on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .exclude_osm_nodes_by_id(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</guid>
       <description>
         
         
@@ -76,10 +76,10 @@
     
     <item>
       <title>Docs: .exclude_osm_ways_by_id(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</guid>
       <description>
         
         
@@ -140,10 +140,10 @@
     
     <item>
       <title>Docs: overwrite_stop_location_waiting_area.(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</guid>
       <description>
         
         
@@ -223,10 +223,10 @@
     
     <item>
       <title>Docs: .overwrite_waiting_area_nominated_osm_way_for_stop_location(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</guid>
       <description>
         
         
@@ -305,10 +305,10 @@
     
     <item>
       <title>Docs: .set_remove_dangling_transfer_zone_groups(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</guid>
       <description>
         
         
@@ -363,10 +363,10 @@
     
     <item>
       <title>Docs: .set_remove_dangling_zones(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</guid>
       <description>
         
         
@@ -421,10 +421,10 @@
     
     <item>
       <title>Docs: .set_station_to_parallel_tracks_search_radius_meters(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</guid>
       <description>
         
         
@@ -483,10 +483,10 @@
     
     <item>
       <title>Docs: .set_station_to_waiting_area_search_radius_meters(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</guid>
       <description>
         
         
@@ -545,10 +545,10 @@
     
     <item>
       <title>Docs: .set_stop_to_waiting_area_search_radius_meters(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</guid>
       <description>
         
         

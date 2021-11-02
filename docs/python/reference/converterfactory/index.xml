@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Converter Factory</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterfactory/</link>
     <description>Recent content in Converter Factory on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterfactory/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .create(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/cf_create&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterfactory/cf_create&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/cf_create&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/cf_create&#43;/</guid>
       <description>
         
         
@@ -88,10 +88,10 @@ or&lt;br&gt;
     
     <item>
       <title>Docs: IntermodalConverter</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/intermodalconverter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/intermodalconverter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/</guid>
       <description>
         
         
@@ -157,10 +157,10 @@ or&lt;br&gt;
     
     <item>
       <title>Docs: NetworkConverter</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/networkconverter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/networkconverter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/</guid>
       <description>
         
         

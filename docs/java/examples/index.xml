@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Examples</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/</link>
+    <link>http://www.goplanit.org/docs/java/examples/</link>
     <description>Recent content in Examples on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/java/examples/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/java/examples/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Project examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/project_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/project_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/project_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/project_examples/</guid>
       <description>
         
         
@@ -178,10 +178,10 @@ The inputs for the assignment (network, zoning, demands) are all automatically s
     
     <item>
       <title>Docs: Input Builder examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/input_builder_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/input_builder_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/input_builder_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/input_builder_examples/</guid>
       <description>
         
         
@@ -323,10 +323,10 @@ Also, because we have access to the builder we can configure it or use some of i
     
     <item>
       <title>Docs: Initial cost examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/initial_cost_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/initial_cost_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/initial_cost_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/initial_cost_examples/</guid>
       <description>
         
         
@@ -478,10 +478,10 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
     
     <item>
       <title>Docs: Traffic Assignment examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/ta_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/ta_examples/</guid>
       <description>
         
         
@@ -706,10 +706,10 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
     
     <item>
       <title>Docs: Traffic Assignment Output examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_output_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/ta_output_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/ta_output_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/ta_output_examples/</guid>
       <description>
         
         
@@ -953,10 +953,10 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
     
     <item>
       <title>Docs: Intermodal Converter examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/intermodal_converter_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/intermodal_converter_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/intermodal_converter_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/intermodal_converter_examples/</guid>
       <description>
         
         
@@ -1182,10 +1182,10 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
     
     <item>
       <title>Docs: Converter Network examples</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/java/examples/network_converter_examples/</link>
+      <link>http://www.goplanit.org/docs/java/examples/network_converter_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/java/examples/network_converter_examples/</guid>
+      <guid>http://www.goplanit.org/docs/java/examples/network_converter_examples/</guid>
       <description>
         
         

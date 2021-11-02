@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – PLANit-Python Reference</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/</link>
+    <link>http://www.goplanit.org/docs/python/reference/</link>
     <description>Recent content in PLANit-Python Reference on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Planit()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planit/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planit/</guid>
       <description>
         
         
@@ -105,10 +105,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: PlanitProject</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/</guid>
       <description>
         
         
@@ -238,10 +238,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Assignment</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/assignment/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/</guid>
       <description>
         
         
@@ -258,10 +258,10 @@ For comprehensive examples, please have a look at the PLANit-Python &lt;a href=&
     
     <item>
       <title>Docs: Converter Factory</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterfactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterfactory/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/</guid>
       <description>
         
         
@@ -332,10 +332,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Converter Reader</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/</guid>
       <description>
         
         
@@ -359,10 +359,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Converter Writer</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/</guid>
       <description>
         
         
@@ -386,10 +386,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Demands</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/demands/</link>
+      <link>http://www.goplanit.org/docs/python/reference/demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/demands/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/demands/</guid>
       <description>
         
         
@@ -407,10 +407,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Enums</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/</guid>
       <description>
         
         
@@ -421,10 +421,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Gap Function</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/</link>
+      <link>http://www.goplanit.org/docs/python/reference/gapfunction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/gapfunction/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/gapfunction/</guid>
       <description>
         
         
@@ -445,10 +445,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Initial Cost</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/</link>
+      <link>http://www.goplanit.org/docs/python/reference/initialcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/initialcost/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/initialcost/</guid>
       <description>
         
         
@@ -519,10 +519,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Output Configuration</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</link>
+      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputconfiguration/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/</guid>
       <description>
         
         
@@ -539,10 +539,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Output Formatters</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/</link>
+      <link>http://www.goplanit.org/docs/python/reference/outputformatters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/outputformatters/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/</guid>
       <description>
         
         
@@ -561,10 +561,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Physical Cost</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/</link>
+      <link>http://www.goplanit.org/docs/python/reference/physicalcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/physicalcost/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/physicalcost/</guid>
       <description>
         
         
@@ -585,10 +585,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Physical Network</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/network/</link>
+      <link>http://www.goplanit.org/docs/python/reference/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/network/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/network/</guid>
       <description>
         
         
@@ -606,10 +606,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Smoothing</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/smoothing/</link>
+      <link>http://www.goplanit.org/docs/python/reference/smoothing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/smoothing/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/smoothing/</guid>
       <description>
         
         
@@ -628,10 +628,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Stop Criterion</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/</link>
+      <link>http://www.goplanit.org/docs/python/reference/stopcriterion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/stopcriterion/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/stopcriterion/</guid>
       <description>
         
         
@@ -650,10 +650,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Virtual Cost</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/</link>
+      <link>http://www.goplanit.org/docs/python/reference/virtualcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/virtualcost/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/virtualcost/</guid>
       <description>
         
         
@@ -674,10 +674,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Zoning</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/zoning/</link>
+      <link>http://www.goplanit.org/docs/python/reference/zoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/zoning/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/zoning/</guid>
       <description>
         
         

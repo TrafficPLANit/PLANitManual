@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – PlanitProject</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/</link>
+    <link>http://www.goplanit.org/docs/python/reference/planitproject/</link>
     <description>Recent content in PlanitProject on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/planitproject/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .activate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_activate&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_activate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_activate&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_activate&#43;/</guid>
       <description>
         
         
@@ -84,10 +84,10 @@
     
     <item>
       <title>Docs: .deactivate(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_deactivate&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_deactivate&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_deactivate&#43;/</guid>
       <description>
         
         
@@ -144,10 +144,10 @@
     
     <item>
       <title>Docs: .run()</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_run/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_run/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_run/</guid>
       <description>
         
         
@@ -185,10 +185,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_set&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_set&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_set&#43;/</guid>
       <description>
         
         
@@ -236,10 +236,10 @@
     
     <item>
       <title>Docs: .assignment</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_assignment/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_assignment/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_assignment/</guid>
       <description>
         
         
@@ -270,10 +270,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .demands</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_demands/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_demands/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_demands/</guid>
       <description>
         
         
@@ -298,10 +298,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .initial_costs</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_initial_costs/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_initial_costs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_initial_costs/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_initial_costs/</guid>
       <description>
         
         
@@ -331,10 +331,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .memory</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_memory/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_memory/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_memory/</guid>
       <description>
         
         
@@ -370,10 +370,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .network</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_network/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_network/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_network/</guid>
       <description>
         
         
@@ -398,10 +398,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .output</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_output/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_output/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_output/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_output/</guid>
       <description>
         
         
@@ -435,10 +435,10 @@ the traditional static assignment class, since this is the instance it returns&l
     
     <item>
       <title>Docs: .zoning</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_zoning/</link>
+      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_zoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/planitproject/project_zoning/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_zoning/</guid>
       <description>
         
         

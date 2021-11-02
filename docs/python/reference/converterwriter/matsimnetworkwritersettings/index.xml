@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – MatsimNetworkWriterSettings</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/</link>
     <description>Recent content in MatsimNetworkWriterSettings on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: .set_country(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</guid>
       <description>
         
         
@@ -83,10 +83,10 @@
     
     <item>
       <title>Docs: .set_generate_detailed_link_geometry_file(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</guid>
       <description>
         
         
@@ -148,10 +148,10 @@
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</guid>
       <description>
         
         
@@ -209,10 +209,10 @@
     
     <item>
       <title>Docs: .set_output_file_name(&#43;)</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</guid>
       <description>
         
         

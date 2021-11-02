@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Converter Writer</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterwriter/</link>
     <description>Recent content in Converter Writer on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: MatsimIntermodalWriter</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwriter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwriter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/</guid>
       <description>
         
         
@@ -86,10 +86,10 @@
     
     <item>
       <title>Docs: MatsimIntermodalWriterSettings</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimintermodalwritersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/</guid>
       <description>
         
         
@@ -178,10 +178,10 @@
     
     <item>
       <title>Docs: MatsimNetworkWriter</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwriter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwriter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/</guid>
       <description>
         
         
@@ -248,10 +248,10 @@
     
     <item>
       <title>Docs: MatsimNetworkWriterSettings</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/matsimnetworkwritersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/</guid>
       <description>
         
         
@@ -325,10 +325,10 @@
     
     <item>
       <title>Docs: PlanitIntermodalWriter</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwriter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwriter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/</guid>
       <description>
         
         
@@ -394,10 +394,10 @@
     
     <item>
       <title>Docs: PlanitIntermodalWriterSettings</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitintermodalwritersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/</guid>
       <description>
         
         
@@ -486,10 +486,10 @@
     
     <item>
       <title>Docs: PlanitNetworkWriter</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwriter/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwriter/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/</guid>
       <description>
         
         
@@ -553,10 +553,10 @@
     
     <item>
       <title>Docs: PlanitNetworkWriterSettings</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwritersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/converterwriter/planitnetworkwritersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/</guid>
       <description>
         
         

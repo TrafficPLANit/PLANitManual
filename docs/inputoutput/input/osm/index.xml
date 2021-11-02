@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Open Street Map Data format (XML/PBF)</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/osm/</link>
+    <link>http://www.goplanit.org/docs/inputoutput/input/osm/</link>
     <description>Recent content in Open Street Map Data format (XML/PBF) on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/inputoutput/input/osm/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/osm/index.xml" rel="self" type="application/rss+xml" />
     
     
       

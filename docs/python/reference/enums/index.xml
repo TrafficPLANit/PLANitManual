@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PLANit – Enums</title>
-    <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/</link>
+    <link>http://www.goplanit.org/docs/python/reference/enums/</link>
     <description>Recent content in Enums on PLANit</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/enums/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: ConverterType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/convertertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/convertertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/convertertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/convertertype/</guid>
       <description>
         
         
@@ -84,10 +84,10 @@
     
     <item>
       <title>Docs: IntermodalReaderType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/intermodalreadertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/intermodalreadertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/intermodalreadertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/intermodalreadertype/</guid>
       <description>
         
         
@@ -145,10 +145,10 @@
     
     <item>
       <title>Docs: IntermodalWriterType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/intermodalwritertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/intermodalwritertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/intermodalwritertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/intermodalwritertype/</guid>
       <description>
         
         
@@ -206,10 +206,10 @@
     
     <item>
       <title>Docs: NetworkReaderType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/networkreadertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/networkreadertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/networkreadertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/networkreadertype/</guid>
       <description>
         
         
@@ -267,10 +267,10 @@
     
     <item>
       <title>Docs: NetworkWriterType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/networkwritertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/networkwritertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/networkwritertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/networkwritertype/</guid>
       <description>
         
         
@@ -328,10 +328,10 @@
     
     <item>
       <title>Docs: OdSkimSubOutputType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/odskimsuboutputtype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/odskimsuboutputtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/odskimsuboutputtype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/odskimsuboutputtype/</guid>
       <description>
         
         
@@ -377,10 +377,10 @@
     
     <item>
       <title>Docs: OsmEntityType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/osmentitytype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/osmentitytype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/osmentitytype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/osmentitytype/</guid>
       <description>
         
         
@@ -439,10 +439,10 @@
     
     <item>
       <title>Docs: OutputFormatter.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputformattertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/outputformattertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputformattertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/outputformattertype/</guid>
       <description>
         
         
@@ -505,10 +505,10 @@
     
     <item>
       <title>Docs: OutputPropertyType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputpropertytype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/outputpropertytype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputpropertytype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/outputpropertytype/</guid>
       <description>
         
         
@@ -886,10 +886,10 @@
     
     <item>
       <title>Docs: OutputType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputtype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/outputtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/outputtype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/outputtype/</guid>
       <description>
         
         
@@ -969,10 +969,10 @@
     
     <item>
       <title>Docs: PathIdType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/pathidtype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/pathidtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/pathidtype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/pathidtype/</guid>
       <description>
         
         
@@ -1042,10 +1042,10 @@
     
     <item>
       <title>Docs: PhysicalCost.&lt;Enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/physicalcosttype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/physicalcosttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/physicalcosttype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/physicalcosttype/</guid>
       <description>
         
         
@@ -1098,10 +1098,10 @@
     
     <item>
       <title>Docs: RoutedServicesReaderType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routedservicesreadertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/routedservicesreadertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/routedservicesreadertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/routedservicesreadertype/</guid>
       <description>
         
         
@@ -1136,10 +1136,10 @@
     
     <item>
       <title>Docs: ServiceNetworkReaderType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/servicenetworkreadertype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/servicenetworkreadertype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/servicenetworkreadertype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/servicenetworkreadertype/</guid>
       <description>
         
         
@@ -1174,10 +1174,10 @@
     
     <item>
       <title>Docs: Smoothing.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/smoothingtype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/smoothingtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/smoothingtype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/smoothingtype/</guid>
       <description>
         
         
@@ -1228,10 +1228,10 @@
     
     <item>
       <title>Docs: UnitType.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/unittype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/unittype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/unittype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/unittype/</guid>
       <description>
         
         
@@ -1316,10 +1316,10 @@
     
     <item>
       <title>Docs: VirtualCost.&lt;enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/virtualcosttype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/virtualcosttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/virtualcosttype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/virtualcosttype/</guid>
       <description>
         
         
@@ -1373,10 +1373,10 @@
     
     <item>
       <title>Docs: TrafficAssignment.&lt;Enum&gt;</title>
-      <link>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/trafficassignmenttype/</link>
+      <link>http://www.goplanit.org/docs/python/reference/enums/trafficassignmenttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trafficplanit.github.io/PLANitManual/docs/python/reference/enums/trafficassignmenttype/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/enums/trafficassignmenttype/</guid>
       <description>
         
         
