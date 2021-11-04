@@ -50,7 +50,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
+&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . To know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
 &lt;p&gt;Each major input has a dedicated section that details its structure and use:&lt;/p&gt;
@@ -58,6 +58,12 @@
 &lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;pd_zoning_structure&#34;&gt;Zoning Structure&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;pd_demands&#34;&gt;Demands&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/code&gt; element&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, there are several extensions to this format to - for example - support routed services such as public transport. These are defined by means of a (virtual) service network on top of the physical network and routes services that
+are defined in relation to the service network:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;pd_service_network&#34;&gt;Service Network&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;servicenetwork&amp;gt;&lt;/code&gt; element&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_routed_services&#34;&gt;Routed services&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;routedservices&amp;gt;&lt;/code&gt; element&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Before diving into these sections however, it is advisable to quickly get acquainted with some basic concepts regarding XML and how PLANit, utilises this data format. At least have a quick look at the &lt;a href=&#34;./#basics&#34;&gt;Basics&lt;/a&gt; section detailing overall structure in a PLANit context and discussing the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
 &lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
@@ -67,6 +73,8 @@
 &lt;li&gt;&lt;code&gt;my_network.xml&lt;/code&gt;,&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;my_zoning.xml&lt;/code&gt;,&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;my_demands.xml&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_servicenetwork.xml&lt;/code&gt; (optional),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_routedservices.xml&lt;/code&gt; (optional),&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;or decide to store all inputs in the same file, e.g.&lt;/p&gt;
 &lt;ul&gt;
@@ -118,6 +126,8 @@
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicdemandinput.xsd&#34;&gt;&lt;code&gt;macroscopicdemandinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicnetworkinput.xsd&#34;&gt;&lt;code&gt;macroscopicnetworkinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopiczoninginput.xsd&#34;&gt;&lt;code&gt;macroscopiczoninginput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/servicenetworkinput.xsd&#34;&gt;&lt;code&gt;servicenetworkinput.xsd&lt;/code&gt;&lt;/a&gt; (optional)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/routedservicesinput.xsd&#34;&gt;&lt;code&gt;routedservicesinput.xsd&lt;/code&gt;&lt;/a&gt; (optional)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Schema definitions are also defined in XML, but are stored in files with the &lt;code&gt;.xsd&lt;/code&gt; extension. PLANit has XSD files for each of the major input components as well as the output meta-data XML.&lt;/p&gt;
 &lt;p&gt;In this manual we provide you with a user friendly description of the specification laid-out in the PLANit XSD files as well a references to the files themselves for the more technically inclined readers.&lt;/p&gt;
@@ -149,7 +159,7 @@
 &lt;li&gt;Flexible GIS support for optional location information via &lt;a href=&#34;http://www.ogc.org/standards/gml&#34;&gt;GML&lt;/a&gt; embedding and SRS support&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In its simplest form, the user provides a single xml file containing all mandatory components; network, demand, and zoning. See &lt;a href=&#34;./#minimum_example&#34;&gt;Minimum Example&lt;/a&gt;. Alternatively, these three main components can be provided separately.&lt;/p&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;h2 id=&#34;example-1&#34;&gt;Example 1&lt;/h2&gt;
 &lt;p&gt;Below you will find an example of a single XML file describing a simple - yet complete - set of inputs. The network contains:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One link having two directions, so&lt;/li&gt;

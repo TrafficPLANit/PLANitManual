@@ -30,7 +30,7 @@
 <meta itemprop="description" content="In this section of the manual we discuss the physical network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic network https://planitmanual.github.io/version//xsd/macroscopicnetworkinput.xsd  &lt;macroscopicnetwork&gt; Physical Network can be described in a stand alone XML file - only describing the network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="4631">
+<meta itemprop="wordCount" content="4664">
 
 
 
@@ -280,6 +280,18 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsinputoutputinputplanitdefaultpd_demands" href="/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsinputoutputinputplanitdefaultpd_service_network" href="/docs/inputoutput/input/planitdefault/pd_service_network/">&lt;servicenetwork&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsinputoutputinputplanitdefaultpd_routed_services" href="/docs/inputoutput/input/planitdefault/pd_routed_services/">&lt;routedservices&gt;</a>
       
       
     </li>
@@ -4660,7 +4672,7 @@
 </tbody>
 </table>
 <h2 id="infrastructurelayers">&lt;infrastructurelayers&gt;</h2>
-<p>The infrastructure layers element contains all the physical network infrastructure (layers) available. It consists of one or more layers, each containing for example nodes, links, and link segments. An optional Spatial Reference System (SRS) SRID string can be provided across all layers here to identify how to interpret the geo-spatial location information embedded in the elements via GML.</p>
+<p>The infrastructure layers element contains all the physical network infrastructure (layers) available. It consists of one or more layers, each containing for example nodes, links, and link segments. Each layer supports one or more modes that use this layer. Each mode can only be supported on one layer. Therefore, multi-modal trips require transfers between layers, which is dealt with through transfers(zones). An optional Spatial Reference System (SRS) SRID string can be provided across all layers here to identify how to interpret the geo-spatial location information embedded in the elements via GML.</p>
 <p>The SRS identifier is set through an attribute. When absent WGS84 is assumed for geo-information</p>
 <blockquote>
 <p>Geo-location information can be left out, but in that case, it is expected the user explicitly sets the lengths on all link (segments) since they cannot be computed based on the SRS.</p>
@@ -5117,7 +5129,7 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>&lt;link&gt;</code></td>
+<td align="left"><a href="./#-link"><code>&lt;link&gt;</code></a></td>
 <td align="left">No</td>
 <td align="left">unbounded</td>
 <td align="left">Representation  of a single link</td>
@@ -5214,7 +5226,7 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>&lt;linksegment&gt;</code></td>
+<td align="left"><a href="./#-linksegment"><code>&lt;linksegment&gt;</code></a></td>
 <td align="left">YES</td>
 <td align="left">2</td>
 <td align="left">Representation  of a single link segment in a particular direction</td>
@@ -5251,7 +5263,7 @@ It also must have a unique identifier (XML id) available as an attribute:</p>
 <span style="color:#204a87;font-weight:bold">&lt;/link&gt;</span>
 </code></pre></div><h3 id="-linksegment">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;linksegment&gt;</strong></h3>
 <p>A link segment is a directional connection between two nodes (node a and node b). This direction can be from a to b, or b to a depending on the configuration. There can however only be a single link segment in either direction for each link. In addition, a physical maximum speed can be defined as well as the number of lanes available. Lastly, each link segment can have exactly one link segment type, this type must be present, unless no link segment types have been defined on the network at all. In that case it can be omitted and the auto-generated default link segment type will automatically be attached to it.</p>
-<p>The direction is specified as an attribute, and each link segment has a unique user defined identifier, i.e., (external) id that is set via an attribute:</p>
+<p>The direction is specified as an attribute, and each link segment has a unique user defined identifier, i.e., (XML) id that is set via an attribute:</p>
 <table>
 <thead>
 <tr>

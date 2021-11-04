@@ -1083,6 +1083,10 @@
   </url>
   
   <url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_service_network/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.goplanit.org/docs/python/</loc>
   </url>
   
@@ -1092,6 +1096,10 @@
   
   <url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/trafficassignmenttype/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_routed_services/</loc>
   </url>
   
   <url>

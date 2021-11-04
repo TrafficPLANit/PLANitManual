@@ -274,6 +274,18 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsinputoutputinputplanitdefaultpd_demands" href="/docs/inputoutput/input/planitdefault/pd_demands/">&lt;macroscopicdemand&gt;</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsinputoutputinputplanitdefaultpd_service_network" href="/docs/inputoutput/input/planitdefault/pd_service_network/">&lt;servicenetwork&gt;</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsinputoutputinputplanitdefaultpd_routed_services" href="/docs/inputoutput/input/planitdefault/pd_routed_services/">&lt;routedservices&gt;</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -3223,7 +3235,7 @@
       </ul>
     </li>
     <li><a href="#features">Features</a></li>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#example-1">Example 1</a></li>
   </ul>
 </nav>
 
@@ -3311,7 +3323,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>Here we <strong>only</strong> focus on the <strong>structure of the data formats</strong> . If the reader wants to know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the <a href="../../../java">Java</a> and <a href="../../../python/reference/outputformatters">Python</a> API for more detailed information.</p>
+<p>Here we <strong>only</strong> focus on the <strong>structure of the data formats</strong> . To know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the <a href="../../../java">Java</a> and <a href="../../../python/reference/outputformatters">Python</a> API for more detailed information.</p>
 </blockquote>
 <h2 id="outline">Outline</h2>
 <p>Each major input has a dedicated section that details its structure and use:</p>
@@ -3319,6 +3331,12 @@
 <li><a href="pd_physical_network">Physical Network</a> XML Input format, i.e., <code>&lt;macroscopicnetwork&gt;</code> element</li>
 <li><a href="pd_zoning_structure">Zoning Structure</a> XML Input format, i.e., <code>&lt;macroscopiczoning&gt;</code> element</li>
 <li><a href="pd_demands">Demands</a> XML Input format, i.e., <code>&lt;macroscopicdemand&gt;</code> element</li>
+</ul>
+<p>In addition, there are several extensions to this format to - for example - support routed services such as public transport. These are defined by means of a (virtual) service network on top of the physical network and routes services that
+are defined in relation to the service network:</p>
+<ul>
+<li><a href="pd_service_network">Service Network</a> XML Input format, i.e., <code>&lt;servicenetwork&gt;</code> element</li>
+<li><a href="pd_routed_services">Routed services</a> XML Input format, i.e., <code>&lt;routedservices&gt;</code> element</li>
 </ul>
 <p>Before diving into these sections however, it is advisable to quickly get acquainted with some basic concepts regarding XML and how PLANit, utilises this data format. At least have a quick look at the <a href="./#basics">Basics</a> section detailing overall structure in a PLANit context and discussing the <a href="./features">main features</a>. A <a href="./#example">small example input file</a> is also provided to get you started.</p>
 <h2 id="basics">Basics</h2>
@@ -3328,6 +3346,8 @@
 <li><code>my_network.xml</code>,</li>
 <li><code>my_zoning.xml</code>,</li>
 <li><code>my_demands.xml</code>,</li>
+<li><code>my_servicenetwork.xml</code> (optional),</li>
+<li><code>my_routedservices.xml</code> (optional),</li>
 </ul>
 <p>or decide to store all inputs in the same file, e.g.</p>
 <ul>
@@ -3379,6 +3399,8 @@
 <li><a href="../../../../xsd/macroscopicdemandinput.xsd"><code>macroscopicdemandinput.xsd</code></a></li>
 <li><a href="../../../../xsd/macroscopicnetworkinput.xsd"><code>macroscopicnetworkinput.xsd</code></a></li>
 <li><a href="../../../../xsd/macroscopiczoninginput.xsd"><code>macroscopiczoninginput.xsd</code></a></li>
+<li><a href="../../../../xsd/servicenetworkinput.xsd"><code>servicenetworkinput.xsd</code></a> (optional)</li>
+<li><a href="../../../../xsd/routedservicesinput.xsd"><code>routedservicesinput.xsd</code></a> (optional)</li>
 </ul>
 <p>Schema definitions are also defined in XML, but are stored in files with the <code>.xsd</code> extension. PLANit has XSD files for each of the major input components as well as the output meta-data XML.</p>
 <p>In this manual we provide you with a user friendly description of the specification laid-out in the PLANit XSD files as well a references to the files themselves for the more technically inclined readers.</p>
@@ -3410,7 +3432,7 @@
 <li>Flexible GIS support for optional location information via <a href="http://www.ogc.org/standards/gml">GML</a> embedding and SRS support</li>
 </ul>
 <p>In its simplest form, the user provides a single xml file containing all mandatory components; network, demand, and zoning. See <a href="./#minimum_example">Minimum Example</a>. Alternatively, these three main components can be provided separately.</p>
-<h2 id="example">Example</h2>
+<h2 id="example-1">Example 1</h2>
 <p>Below you will find an example of a single XML file describing a simple - yet complete - set of inputs. The network contains:</p>
 <ul>
 <li>One link having two directions, so</li>
@@ -4064,9 +4086,27 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/inputoutput/input/planitdefault/pd_service_network/">Service Network Input Data format (XML)</a>
+                    </h5>
+                    <p></p>
+                </div>
+            
         
             
         
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/inputoutput/input/planitdefault/pd_routed_services/">Routed Services Input Data format (XML)</a>
+                    </h5>
+                    <p></p>
+                </div>
             
         
             
