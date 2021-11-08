@@ -108,7 +108,7 @@
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="http://http://www.goplanit.org">development</a>
+	<a class="dropdown-item" href="https://www.goplanit.org">development</a>
 	
 	<a class="dropdown-item" href="https://planitmanual.github.io/version/0_1_0">v0.1.0</a>
 	
@@ -3424,7 +3424,7 @@ In this getting started we will take you through the process of setting up the e
 <span style="color:#8f5902;font-style:italic"># main class</span>
 <span style="color:#000">plan_it</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Planit</span><span style="color:#000;font-weight:bold">()</span>
 <span style="color:#8f5902;font-style:italic"># access assignment project</span>
-<span style="color:#000">plan_it_project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">project</span>
+<span style="color:#000">plan_it_project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_project</span><span style="color:#000;font-weight:bold">()</span>
 
 <span style="color:#8f5902;font-style:italic"># COMPONENTS</span>
 <span style="color:#000">plan_it_project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>         
@@ -3452,8 +3452,8 @@ In this getting started we will take you through the process of setting up the e
 <p>You can give the instance any name you want, it is not tied to plan_it, it could also be <code>i_love_assignment</code>, or <code>p</code>, or <code>what_now</code>. Do note that a descriptive name is usually the best choice.</p>
 </blockquote>
 <p>Since we can do more than only assignments, you have to indicate you want to start an assignment project. This is done by collecting the assignment project from planit via</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8f5902;font-style:italic"># access assignment project</span>
-<span style="color:#000">plan_it_project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">project</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8f5902;font-style:italic"># create an assignment project</span>
+<span style="color:#000">plan_it_project</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">plan_it</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_project</span><span style="color:#000;font-weight:bold">()</span>
 </code></pre></div><p>This project instance allows you to configure the assignment. To do so, you must first decide on what traffic assignment components you want to use. The most important and first component that must be chosen is the type of traffic assignment. Here, we adopt the <a href="../reference/assignment/traditionalstatic">traditional static traffic assignment</a> model. It is configured by setting it on the project, via its <a href="../reference/planitproject/project_set+">set method</a>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">plan_it_project</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">TrafficAssignment</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">TRADITIONAL_STATIC</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><p>Like all components that the user can choose, you provide its enum identifier to initialise the underlying object(s). For traffic assignment options, this is the <a href="../reference/enums/trafficassignmenttype">TrafficAssignment.&lt;enum&gt;</a>.</p>
