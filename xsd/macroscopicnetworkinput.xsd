@@ -21,32 +21,6 @@
 		</xs:simpleContent>
 	</xs:complexType>
 
-	<xs:complexType name="accessmode">
-		<xs:annotation>
-			<xs:documentation>
-				Mode specific attributes associated with
-				the link segment type are the maximum and critical speed.
-				If a mode is not defined on the link segment type it is
-				assumed the mode is not allowed on the link segment.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element ref="maxspeed" minOccurs="0" maxOccurs="1" />
-			<xs:element ref="critspeed" minOccurs="0" maxOccurs="1" />
-		</xs:sequence>
-		<xs:attribute name="ref" type="xs:string">
-			<xs:annotation>
-				<xs:documentation>
-					Refers to the unique identifier for the
-					mode this information relates to. If '0' is used
-					all
-					non-defined modes on the link segment type will take on
-					the values provided for this 'all modes' entry.
-				</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-	</xs:complexType>
-
 	<!-- Simple types -->
 
 	<xs:simpleType name="vehicularType">
@@ -125,7 +99,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				Maximum capacity, i.e., throughput, of a lane in
-				veh/km/lane, default set to 1800
+				pcu/km/lane, default set to 1800
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -157,6 +131,30 @@
 	</xs:element>
 
 	<!-- Complex elements -->
+	
+  <xs:element name="accessgroup">
+    <xs:annotation>
+      <xs:documentation>
+        Define the link segment types maximum and critical speed for one or more modes.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>     
+	    <xs:sequence>
+	      <xs:element ref="maxspeed" minOccurs="0" maxOccurs="1" />
+	      <xs:element ref="critspeed" minOccurs="0" maxOccurs="1" />
+	    </xs:sequence>
+	    <xs:attribute name="moderefs" type="xs:string" use="optional">
+	      <xs:annotation>
+	        <xs:documentation>
+	          Refers to the modes this information relates to. If absent all
+	          modes available in the network layer will take on the values provided.
+	        </xs:documentation>
+	      </xs:annotation>
+	    </xs:attribute>
+    </xs:complexType> 	    
+  </xs:element>
+
+	
 	<xs:element name="configuration">
 		<xs:annotation>
 			<xs:documentation>
@@ -289,16 +287,15 @@
 				<xs:element ref="maxdensitylane" minOccurs="0">
 					<xs:annotation>
 						<xs:documentation>
-							When not present, the default maximum density per lane will be
-							applied
+							When not present, the default maximum density per lane will be applied
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element ref="capacitylane" minOccurs="0">
 					<xs:annotation>
 						<xs:documentation>
-							When not present, the default capacity per
-							lane will be applied
+							When not present, the default capacity per lane will be applied, unless the applied assignment can
+							create a more accurate estimate of the capacity based on its fundamental diagram definition and available free speed
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
@@ -312,8 +309,7 @@
 					</xs:annotation>
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="mode" type="accessmode"
-								minOccurs="0" maxOccurs="unbounded" />
+							<xs:element ref="accessgroup" minOccurs="0" maxOccurs="unbounded" />
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>

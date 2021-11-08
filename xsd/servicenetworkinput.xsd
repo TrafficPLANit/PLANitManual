@@ -24,9 +24,9 @@
 		  </xs:sequence>		  
 			<xs:attribute name="id" type="xs:string" use="required" />
 			<xs:attribute name="externalid" type="xs:string" use="optional"/>
-			<xs:attribute name="nodearef" type="xs:string" use="optional" />
-      <xs:attribute name="nodebref" type="xs:string" use="optional" />
-      <xs:attribute name="lrefs" type="xs:string" use="optional" >			
+			<xs:attribute name="nodearef" type="xs:string" use="required" />
+      <xs:attribute name="nodebref" type="xs:string" use="required" />
+      <xs:attribute name="lrefs" type="xs:string" use="required" >			
 				<xs:annotation>
 					<xs:documentation>
 						Comma separated list of parent network layer link ids portraying the link in order from node a towards node b

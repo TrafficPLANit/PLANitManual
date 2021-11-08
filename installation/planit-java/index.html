@@ -111,6 +111,8 @@
 	
 	<a class="dropdown-item" href="https://planitmanual.github.io/version/0_2_0">v0.2.0</a>
 	
+	<a class="dropdown-item" href="https://planitmanual.github.io/version/0_3_0">v0.3.0</a>
+	
 </div>
 
 			</li>
@@ -319,15 +321,138 @@
 </ol>
 <p>Open a new console window, and try <code>java -showversion</code>, it should now show the version and some additional options</p>
 <h3 id="installing-eclipse">Installing Eclipse</h3>
-<p>Eclipse is a versatile Integrated Development Environment (IDE) with very good Java support. You can download it here ( you likely want to go for the Eclipse IDE for Java Developers):</p>
+<p>Eclipse is a versatile Integrated Development Environment (IDE) with very good Java support. You can download it here (you likely want to go for the Eclipse IDE for Java Developers):</p>
 <ul>
 <li><a href="https://www.eclipse.org/downloads/packages/">Eclipse Java IDE</a></li>
 </ul>
-<h3 id="setting-up-planit-java">Setting up PLANit-Java</h3>
-<p>Currently, the PLANit-Java library is not yet available through a maven dependency. It is therefore easiest to obtain the jar by <a href="../planit-python">installing PLANit-Python</a> first.
-Then, the PLANitXXXX.jar can be copied from the share/planit directory that resides under the Python installation directory and added to your project dependencies in Eclipse.</p>
 <blockquote>
-<p>Alternatively, you can locally compile the various repositories needed to build the PLANitXXXX.jar. To do so, see the PLANitAll repository. This is however not recommended because it requires detailed knowledge of the project structure and/or a lot of experience with Java projects.</p>
+<p>You can of course use another IDE if you prefer</p>
+</blockquote>
+<h3 id="setting-up-planit-java">Setting up PLANit-Java</h3>
+<p>There are multiple ways to include PLANit into your Java project:</p>
+<ul>
+<li>Compile the sources yourself</li>
+<li>Download precompiled sources from this website</li>
+<li>Include PLANit repositories as Maven dependencies (<strong>recommended</strong>)</li>
+</ul>
+<h4 id="compiling-sources-yourself">Compiling sources yourself</h4>
+<p>To compile the sources yourself, head over to the <a href="../../community">community</a> section and follow the links to the source code repositories hosted on <a href="https://github.com/trafficplanit">GitHub</a>. In case trhe repository you&rsquo;re looking for is not (yet) public, please send an email with your request to <a href="mailto:info@goplanit.org">info@goplanit.org</a>.</p>
+<h4 id="download-precompiled-sources">download precompiled sources</h4>
+<p>For each release, we provide precompiled jars and sources on the website. To find the jars (and sources) first select the version you are after by going to the version specific website using the &ldquo;releases&rdquo; drop-down menu option in the top bar. Then go to the Documentation/PLANit-Java/Downloads section and you should find what you are looking for. Include the jars in your project and off you go!</p>
+<blockquote>
+<p>Make sure you also download the dependencies of each jar since they are not included. These can be found in the pom.xml file of each repository. Alternatively consider using Maven to build your project in which case you can add the dependencies there (which is much preferred)</p>
+</blockquote>
+<h4 id="add-planit-as-maven-dependency">Add PLANit as Maven dependency</h4>
+<p>The recommended way however to include PLANit in your workflow is to simply add it as a dependency via you Maven build process. Each PLANit repository has its own group id, artifact id and version to uniquely identify it. The projects are currently not (yet) hosted on Maven central or one of the other major repository locations. Instead, you will first need to add the PLANit repository to your pom by adding the following:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">
+...
+
+<span style="color:#204a87;font-weight:bold">&lt;repositories&gt;</span>
+  <span style="color:#204a87;font-weight:bold">&lt;repository&gt;</span>
+    <span style="color:#204a87;font-weight:bold">&lt;id&gt;</span>planit-repository.goplanit.org<span style="color:#204a87;font-weight:bold">&lt;/id&gt;</span>
+    <span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>PLANit Repository<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+    <span style="color:#204a87;font-weight:bold">&lt;url&gt;</span>http://repository.goplanit.org<span style="color:#204a87;font-weight:bold">&lt;/url&gt;</span>
+  <span style="color:#204a87;font-weight:bold">&lt;/repository&gt;</span>   
+<span style="color:#204a87;font-weight:bold">&lt;/repositories&gt;</span>
+
+...
+
+</code></pre></div><p>Now Maven will also look for repositories here and will find the recently released versions. To add specific dependencies to your project you then simply add them to your dependencies section of your pom via, for example,</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">
+...
+
+  <span style="color:#8f5902;font-style:italic">&lt;!-- including planit-core v 0.3.0 as a dependencies --&gt;</span> 
+  <span style="color:#204a87;font-weight:bold">&lt;dependencies&gt;</span>
+    <span style="color:#204a87;font-weight:bold">&lt;dependency&gt;</span>
+      <span style="color:#204a87;font-weight:bold">&lt;groupId&gt;</span>org.goplanit<span style="color:#204a87;font-weight:bold">&lt;/groupId&gt;</span>
+      <span style="color:#204a87;font-weight:bold">&lt;artifactId&gt;</span>planit-core<span style="color:#204a87;font-weight:bold">&lt;/artifactId&gt;</span>
+      <span style="color:#204a87;font-weight:bold">&lt;version&gt;</span>0.3.0<span style="color:#204a87;font-weight:bold">&lt;/version&gt;</span>
+    <span style="color:#204a87;font-weight:bold">&lt;/dependency&gt;</span>
+    
+  <span style="color:#a40000">&lt;</span>/dependencies
+...
+
+</code></pre></div><p>Below you will find the various PLANit repository dependencies snippets that can currently be used and are hosted on (repository.goplanit.org)[www.repository.goplanit.org].</p>
+<table>
+<thead>
+<tr>
+<th align="left">Repo</th>
+<th align="left">GroupId</th>
+<th align="left">ArtifactId</th>
+<th align="left">Earliest version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">PLANitParentPom</td>
+<td align="left"><code>org.goplanit.parentpom</code></td>
+<td align="left"><code>planit-parentpom</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitUtils</td>
+<td align="left"><code>org.goplanit.utils</code></td>
+<td align="left"><code>planit-utils</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANit</td>
+<td align="left"><code>org.goplanit</code></td>
+<td align="left"><code>planit-core</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitIO</td>
+<td align="left"><code>org.goplanit.io</code></td>
+<td align="left"><code>planit-io</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitXMLGenerator</td>
+<td align="left"><code>org.goplanit.xml</code></td>
+<td align="left"><code>planit-xml</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitOSM</td>
+<td align="left"><code>org.goplanit.osm</code></td>
+<td align="left"><code>planit-osm</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitMATSim</td>
+<td align="left"><code>org.goplanit.matsim</code></td>
+<td align="left"><code>planit-matsim</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitTNTP</td>
+<td align="left"><code>org.goplanit.tntp</code></td>
+<td align="left"><code>planit-tntp</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitGTFS</td>
+<td align="left"><code>org.goplanit.gtfs</code></td>
+<td align="left"><code>planit-gtfs</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitJ2Py</td>
+<td align="left"><code>org.goplanit.python</code></td>
+<td align="left"><code>planit-j2py</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+<tr>
+<td align="left">PLANitIntegrationTest</td>
+<td align="left"><code>org.goplanit.test.integration</code></td>
+<td align="left"><code>planit-integrationtest</code></td>
+<td align="left"><code>0.3.0</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Note that many PLANit repos depend on other PLANit repos. These are automatically resolved by Maven, so you do not need to worry about them (unlike when using any of the other build options)</p>
 </blockquote>
 <h2 id="getting-started">Getting Started</h2>
 <p>Now that you have installed all the necessary components. Have a look at the <a href="../../docs/java/getting-started">Getting Started</a>, to create your first PLANit-Java application</p>

@@ -369,7 +369,7 @@ are defined in relation to the service network:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;#osm-basics&#34;&gt;OSM basics&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#osm-road-network-support&#34;&gt;OSM road network support&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#osm-road-network-support&#34;&gt;OSM rail network support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[OSM public transport support]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#osm-public-transport-support&#34;&gt;OSM public transport support&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#osm-mode-support&#34;&gt;OSM mode support&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#bounding-box-edges&#34;&gt;Bounding box edges&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#logging-support&#34;&gt;Logging support&lt;/a&gt;&lt;/li&gt;

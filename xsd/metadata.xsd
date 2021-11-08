@@ -26,9 +26,11 @@
 	<xs:simpleType name="unitsvalues">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="veh/km" />
+			<xs:enumeration value="pcu/km" />
 			<xs:enumeration value="none" />
 			<xs:enumeration value="veh/h" />
-			<xs:enumeration value="km/h" />
+      <xs:enumeration value="pcu/h" />			
+			<xs:enumeration value="km/h" />		
 			<xs:enumeration value="h" />
 			<xs:enumeration value="km" />
 			<xs:enumeration value="srs" />

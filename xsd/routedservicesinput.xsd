@@ -26,8 +26,6 @@
 					</xs:annotation>
 				</xs:element>
 			</xs:sequence>
-			<xs:attribute name="id" type="xs:string" use="required" />
-			<xs:attribute name="externalid" type="xs:string" use="optional" />
 			<xs:attribute name="moderef" type="xs:string" use="required">
 				<xs:annotation>
 					<xs:documentation>
@@ -51,8 +49,7 @@
 				<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
 					<xs:annotation>
 						<xs:documentation>
-							the numberr of this service (can include
-							characters, e.g. M5, 370X, etc.)
+							the number of this service (can include characters, e.g. M5, 370X, etc.)
 						</xs:documentation>
 					</xs:annotation>
 				</xs:element>
@@ -104,8 +101,7 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="trip" minOccurs="1"
-					maxOccurs="unbounded">
+				<xs:element ref="trip" minOccurs="1" maxOccurs="unbounded">
 					<xs:annotation>
 						<xs:documentation>
 							An instance of a routed service
@@ -195,8 +191,7 @@
 						<xs:attribute name="time" type="xs:time" use="required">
 							<xs:annotation>
 								<xs:documentation>
-									The absolute within day departure time in
-									hh::mm:ss format
+									The absolute within day departure time in hh::mm:ss format
 								</xs:documentation>
 							</xs:annotation>
 						</xs:attribute>
