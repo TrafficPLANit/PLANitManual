@@ -255,13 +255,13 @@
 &lt;td align=&#34;left&#34;&gt;Set the country this zoning resides in, used to determine the coordinate reference system to apply&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;pzws_set_file_name+&#34;&gt;&lt;code&gt;.set_file_name(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;pzws_set_file_name+&#34;&gt;&lt;code&gt;.set_output_file(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;network.xml&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Set the zoning output file name to use (including extension)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;pzws_set_output_dir+&#34;&gt;&lt;code&gt;.set_output_directory(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;pzws_set_output_dir+&#34;&gt;&lt;code&gt;.set_output_dir(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Set the ouput directory to use for zoning XML file (only when the output directory is not set/differs from the intermodal writer settings, it should be set)&lt;/td&gt;

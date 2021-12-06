@@ -1659,6 +1659,30 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_country" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/">.set_country(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_matrix_pt_files" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/">.set_generate_matrix_based_pt_router_files(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_output_dir" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/">.set_output_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_output_file" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/">.set_output_file_name(&#43;)</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -3227,10 +3251,18 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#matsim-and-planit">MATSim and PLANit</a></li>
-    <li><a href="#outline">Outline</a></li>
     <li><a href="#matsim-basics">MATSim Basics</a></li>
-    <li><a href="#matsim-improved-geometry-generation">MATSim Improved Geometry generation</a></li>
+    <li><a href="#matsim-and-planit">MATSim and PLANit</a></li>
+    <li><a href="#matsim-and-planit-road-network">MATSim and PLANit Road network</a>
+      <ul>
+        <li><a href="#matsim-improved-geometry-generation">MATSim Improved Geometry generation</a></li>
+      </ul>
+    </li>
+    <li><a href="#matsim-and-public-transport">MATSim and Public transport</a>
+      <ul>
+        <li><a href="#matsim-matrixbasedrouter-support">MATSim MatrixBasedRouter support</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -3317,30 +3349,30 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>The MATsim network output is based on  <a href="http://www.matsim.org/files/dtd/network_v2.dtd">http://www.matsim.org/files/dtd/network_v2.dtd</a></li>
-<li>The MATsim (partially supported) public transport output is based on <a href="http://www.matsim.org/files/dtd/transitSchedule_v2.dtd">http://www.matsim.org/files/dtd/transitSchedule_v2.dtd</a></li>
-</ul>
-<p>More information on MATSim can be found on their website: <a href="http://www.matsim.org">www.matsim.org</a>. MATSim has no official user manual, but a good starting point is a book that has bundled a number of (white) papers on this open-source agent based platform, see <a href="https://www.matsim.org/docs/userguide/">https://www.matsim.org/docs/userguide/</a></p>
+<p>More general - and specific - information on MATSim can be found on their website: <a href="http://www.matsim.org">www.matsim.org</a>. MATSim has no official user manual, but a good starting point is a book that has bundled a number of (white) papers on this open-source agent based platform, see <a href="https://www.matsim.org/docs/userguide/">User guide</a>.</p>
+<h2 id="matsim-basics">MATSim Basics</h2>
+<p>MATSim is a Java based open-source traffic simulator that uses agents for its vehicles. It is multi-modal and has various extensions that can be added to the core functionality. Its data format for its network and public transport schedule is straightforward and somewhat simplified compared to PLANit&rsquo;s features, making it possible to convert any PLANit network to a MATsim network without loss of information (on the MATsim side).</p>
 <h2 id="matsim-and-planit">MATSim and PLANit</h2>
 <p>Any PLANit network/zoning memory model can be converted into a MATSim network/transit (schedule) using the available writers (network/intermodal).</p>
 <blockquote>
-<p>While MATSim supports complete transit schedules (frequency, schedule, pt vehicle fleet), PLANit does not (yet). Therefore only partof the transit schedule can be populated when persisting a PLANit network/zoning as a MATSim (intermodal) network.</p>
+<p>While MATSim supports complete transit schedules (frequency, schedule, pt vehicle fleet) as does the PLANit XML schema. Currently only part of the transit schedule can be populated when persisting a PLANit network/zoning as a MATSim (intermodal) network as the converter does not yet have support for transferring the schedules, only the stop facility infrastructure.</p>
 </blockquote>
 <blockquote>
 <p>Examples on how to perform a network conversion from PLANit or another input format to MATSim are provided in the respective PLANit-Python and PLANit-Java reference sections of this manual.</p>
 </blockquote>
-<h2 id="outline">Outline</h2>
-<ul>
-<li><a href="#matsim-basics">MATSim basics</a></li>
-<li><a href="#matsim-basics">MATSim improved geometry generation</a></li>
-</ul>
-<h2 id="matsim-basics">MATSim Basics</h2>
-<p>MATSim is a Java based open-source traffic simulator that uses agents for its vehicles. It is multi-modal and has various extensions that can be added to the core functionality. Its data format for its network and public transport schedule is straightforward and somewhat simplified compared to PLANit&rsquo;s features, making it possible to convert any PLANit network to a MATsim network without loss of information (on the MATsim side).</p>
-<h2 id="matsim-improved-geometry-generation">MATSim Improved Geometry generation</h2>
+<h2 id="matsim-and-planit-road-network">MATSim and PLANit Road network</h2>
+<p>The MATsim network output is based on  <a href="http://www.matsim.org/files/dtd/network_v2.dtd">http://www.matsim.org/files/dtd/network_v2.dtd</a>. PLANit can create MATSim network files based on its own macroscopic network representation.</p>
+<h3 id="matsim-improved-geometry-generation">MATSim Improved Geometry generation</h3>
 <p>MATSim links only carry two geo locations - for both extreme nodes - but it lacks any shaping internally. In larger networks and for longer links visualisation of MATSim networks is therefore somewhat confusing and chaotic because the shape of the road is largely lost. To overcome this problem the <a href="https://simunto.com/via/">VIA visualiser</a> (that supports MATSim) has defined an additional data format that provides the internal geometry of all MATsim links. This format can be found here:</p>
 <p><a href="https://docs.simunto.com/via/layers/network.html">https://docs.simunto.com/via/layers/network.html</a></p>
 <p>The MATSim writer has a feature to support the persistence of such detailed geometry alongside the MATSim network. this makes visualising networks (in VIA) much nicer. It is recommended to switch this on via the settings when relevant.</p>
+<h2 id="matsim-and-public-transport">MATSim and Public transport</h2>
+<p>The MATsim (partially supported) public transport output, namely the stop facilities in their transit schedule is based on <a href="http://www.matsim.org/files/dtd/transitSchedule_v2.dtd">http://www.matsim.org/files/dtd/transitSchedule_v2.dtd</a>.</p>
+<h3 id="matsim-matrixbasedrouter-support">MATSim MatrixBasedRouter support</h3>
+<p>There is an alternative way to output the stop facilities in a simplified form via a CSV file. This enables you to use the MATSim matrix based (pt) router (see <a href="https://github.com/matsim-org/matsim-libs/tree/master/contribs/matrixbasedptrouter/src/main/resources/example">MATSim example</a>). this is a simplified form of multi-modal assignment where public transport is included as a teleported mode rather than a simulated one, using the travel times between the stops of this CSV. If not explicit travel time matrix for this CSV stop file is created, then MATSim will generate one itself.</p>
+<blockquote>
+<p>By default, generating the stops CSV file for this router is enabled. So, whenever any public transport infrastructure is persisted/converted, this file is created (unless it is explicitly switched off)</p>
+</blockquote>
 
         <div class="section-index">
     
@@ -3348,6 +3380,14 @@
     
     
     <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
