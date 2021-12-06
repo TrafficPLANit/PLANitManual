@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Examples on how PLANit intermodal converter reader/writer implementations
 ">
 
-<meta itemprop="wordCount" content="1952">
+<meta itemprop="wordCount" content="1968">
 
 
 
@@ -1665,6 +1665,30 @@
   <ul>
     <li class="collapse " id="docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettings">
       
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_country" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/">.set_country(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_matrix_pt_files" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/">.set_generate_matrix_based_pt_router_files(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_output_dir" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/">.set_output_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_output_file" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/">.set_output_file_name(&#43;)</a>
       
       
     </li>
@@ -3429,6 +3453,9 @@ has access to an IDE (like Eclipse), where this is added to the Java file automa
 
 <span style="color:#8f5902;font-style:italic">/* settings -&gt; detailed geometry for network */</span>
 <span style="color:#000">matsimWriter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">getNetworkSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setGenerateDetailedLinkGeometryFile</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">/* settings -&gt; override, deactivate generating CSV(s) required for matrix based pt routing in MATSim*/</span>
+<span style="color:#000">matsimWriter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">getZoningSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setGenerateMatrixBasedPtRouterFiles</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">false</span><span style="color:#ce5c00;font-weight:bold">);</span>
 
 <span style="color:#8f5902;font-style:italic">/* settings -&gt; override destination crs for both network and zoning */</span>
 <span style="color:#000">matsimWriter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getSettings</span><span style="color:#ce5c00;font-weight:bold">().</span><span style="color:#c4a000">setDestinationCoordinateReferenceSystem</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">crs</span><span style="color:#ce5c00;font-weight:bold">);</span>

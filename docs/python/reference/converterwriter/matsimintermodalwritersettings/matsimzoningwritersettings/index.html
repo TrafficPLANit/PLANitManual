@@ -1662,6 +1662,30 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_country" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/">.set_country(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_matrix_pt_files" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/">.set_generate_matrix_based_pt_router_files(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_output_dir" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/">.set_output_directory(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceconverterwritermatsimintermodalwritersettingsmatsimzoningwritersettingsmzws_set_output_file" href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/">.set_output_file_name(&#43;)</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -3304,15 +3328,71 @@
 	<h1>MatsimZoningWriterSettings</h1>
         <div class="lead">MatsimZoningWriterSettings instance</div>
 	
-	<p>Currently no additional settings are available to the user yet.</p>
+	<p>The <code>MatsimZoningWriterSettings</code> instance is accessible via the <a href="../"><code>MatsimIntermodalWriterSettings</code></a> its <a href="../mimws_zoning_settings"><code>.zoning_settings</code></a> property. It allows the user to configure the (transfer) zoning aspects of the MatsimIntermodalWriter.</p>
 <h4 id="methods">Methods</h4>
-<p>N/A</p>
+<p>A <code>MatsimZoningWriterSettings</code> instance exposes the following methods. The Compulsory column indicates it the user is expected to configure this setting explicitly or not.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="left">Compulsory</th>
+<th align="left">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="mzws_set_matrix_pt_files+"><code>.set_generate_matrix_based_pt_router_files(+)</code></a></td>
+<td align="left">NO</td>
+<td align="left"><code>True</code></td>
+<td align="left">When true, generate additional CSV files for MATSimMatrixBasedPtRouter.</td>
+</tr>
+<tr>
+<td><a href="mzws_set_country+"><code>.set_country(+)</code></a></td>
+<td align="left">NO</td>
+<td align="left">Context dependent</td>
+<td align="left">Set the country this zoning resides in, used to determine the coordinate reference system to apply</td>
+</tr>
+<tr>
+<td><a href="mzws_set_output_dir+"><code>.set_output_directory(+)</code></a></td>
+<td align="left">NO</td>
+<td align="left">N/A</td>
+<td align="left">Set the output directory to persist the MATSim transit file(s) to</td>
+</tr>
+<tr>
+<td><a href="mzws_set_output_file+"><code>.set_output_file(+)</code></a></td>
+<td align="left">NO</td>
+<td align="left"><code>transitschedule</code></td>
+<td align="left">Set the MATSim transit schedule (XML) output file name to use (without extension)</td>
+</tr>
+</tbody>
+</table>
 <h4 id="properties">Properties</h4>
 <p>N/A</p>
 <h4 id="example-1">Example 1</h4>
-<p>N/A</p>
-<h4 id="see-also">See also</h4>
-<p>N/A</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
+
+<span style="color:#8f5902;font-style:italic"># create an intermodal converter</span>
+<span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Planit</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000">intermodal_converter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">converter_factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ConverterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">INTERMODAL</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># Open Street Map (OSM) intermodal reader        </span>
+<span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;&lt;country_name&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_input_file&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># MATSIM intermodal writer</span>
+<span style="color:#000">matsim_writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">IntermodalWriterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MATSIM</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic"># This updates zoning and network output dir </span>
+<span style="color:#000">matsim_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_output_directory</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;&lt;path_to_output_dir&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+
+<span style="color:#8f5902;font-style:italic"># switch off generation of additional CSV files to support Matrix based PT routing in MATSim</span>
+<span style="color:#000">matsim_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">zoning_settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">mzws_set_generate_matrix_based_pt_router_files</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">false</span><span style="color:#000;font-weight:bold">)</span> 
+
+<span style="color:#8f5902;font-style:italic"># perform conversion</span>
+<span style="color:#000">intermodal_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">convert</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">osm_reader</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">matsim_writer</span><span style="color:#000;font-weight:bold">)</span>
+
+</code></pre></div><h4 id="see-also">See also</h4>
+<p><a href="../"><code>MatsimIntermodalWriterSettings</code></a> MATSim intermodal writer settings class these zoning settings reside on</p>
 <h4 id="source-code">Source code</h4>
 <p>Class <code>WriterSettingsWrapper</code> in <code>converterwrappers.py</code></p>
 
@@ -3540,7 +3620,12 @@
             
         
             
-        
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/">.set_country(&#43;)</a>
+                    </h5>
+                    <p>MatsimZoningWriterSettings method</p>
+                </div>
             
         
             
@@ -3578,7 +3663,12 @@
             
         
             
-        
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/">.set_generate_matrix_based_pt_router_files(&#43;)</a>
+                    </h5>
+                    <p>MatsimZoningWriterSettings method</p>
+                </div>
             
         
             
@@ -3599,6 +3689,32 @@
         
             
         
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/">.set_output_directory(&#43;)</a>
+                    </h5>
+                    <p>MatsimZoningWriterSettings method</p>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/">.set_output_file_name(&#43;)</a>
+                    </h5>
+                    <p>MatsimZoningWriterSettings method</p>
+                </div>
             
         
             

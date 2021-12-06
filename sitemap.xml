@@ -435,6 +435,10 @@
   </url>
   
   <url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</loc>
   </url>
   
@@ -503,6 +507,10 @@
   </url>
   
   <url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_set_input_dir&#43;/</loc>
   </url>
   
@@ -539,6 +547,10 @@
   </url>
   
   <url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</loc>
   </url>
   
@@ -556,6 +568,10 @@
   
   <url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_output_dir&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/</loc>
   </url>
   
   <url>
