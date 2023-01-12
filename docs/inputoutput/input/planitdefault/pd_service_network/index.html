@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -30,7 +30,7 @@
 <meta itemprop="description" content="In this section of the manual we discuss the service network&rsquo;s XML input format used by PLANit.
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of service network https://www.goplanit.orgplanitmanual.github.io/version//xsd/servicenetworkinput.xsd  &lt;servicenetwork&gt; A Service Network can be described in a stand alone XML file - only describing the service network characteristics - or as part of a PLANit XML file describing all input components.">
 
-<meta itemprop="wordCount" content="1480">
+<meta itemprop="wordCount" content="1504">
 
 
 
@@ -43,8 +43,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.4b0bc5a606bedd0d3b11e66e8d8910d472bf6de69297acd005139beb588977c2.css" as="style">
-<link href="/scss/main.min.4b0bc5a606bedd0d3b11e66e8d8910d472bf6de69297acd005139beb588977c2.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.efdc754742f91a7d8116abf05ef20b5c792da0321b24e577c7126b76b66bbb67.css" as="style">
+<link href="/scss/main.min.efdc754742f91a7d8116abf05ef20b5c792da0321b24e577c7126b76b66bbb67.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -690,6 +690,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceassignmenttraditionalstatictsa_set" href="/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceassignmenttraditionalstatictsa_log_settings" href="/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/">.set_log_settings(&#43;)</a>
       
       
       
@@ -3545,7 +3551,8 @@
 </tbody>
 </table>
 <h3 id="-leg">&lt;&gt;&lt;&gt; <strong>&lt;leg&gt;</strong></h3>
-<p>A service leg is a non-directional connection between two service nodes (service node a and service node b). A service leg can hold two service leg segments, where each service leg segment has a single (opposing) direction. Its geometry (and length) is derived from its parent physical links its references. A service leg can reference one or more physical links which are to be referenced in logical contiguous order starting at nodearef and ending with physical link towards nodebref.</p>
+<p>A service leg is a non-directional connection between two service nodes (service node a and service node b). A service leg can hold two service leg segments, where each service leg segment has a single (opposing) direction. 
+It has no geometry nor length, those are to be extracted from the leg segments since these rely on their underlying phsical link segments for this information.</p>
 <blockquote>
 <p>When a service leg comrpises more than one physical link, it means that the intermediate physical nodes are not used by the services that use this leg</p>
 </blockquote>
@@ -3589,13 +3596,6 @@
 <td align="left">YES</td>
 <td align="left">Reference to node (XML) id for the b node</td>
 </tr>
-<tr>
-<td align="left"><code>lrefs</code></td>
-<td align="left">string</td>
-<td align="left"><code>None</code></td>
-<td align="left">YES</td>
-<td align="left">Reference(s) to physical links representing this leg from link starting at nodearef and ending at link towards nodebref</td>
-</tr>
 </tbody>
 </table>
 <p>This element has the following sub-elements:</p>
@@ -3623,7 +3623,9 @@
    <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>         
 <span style="color:#204a87;font-weight:bold">&lt;/leg&gt;</span>
 </code></pre></div><h3 id="-legsegment">&lt;&gt;&lt;&gt;&lt;&gt; <strong>&lt;legsegment&gt;</strong></h3>
-<p>A service leg segment is a directional version of a service leg between its two service nodes (a and b). This direction can be from a to b, or b to a depending on the configuration. There can however only be a single link segment in either direction for each link. All other information is derived from the underlying physical link (segments).</p>
+<p>A service leg segment is a directional version of a service leg between its two service nodes (a and b). This direction can be from a to b, or b to a depending on the configuration. There can however only be a single link segment in either direction for each link.
+Geometry (and length) is derived from its parent physical link segments its references. 
+A service leg can reference one or more physical link segments which are to be referenced in logical contiguous order starting at nodearef of the service leg and ending with physical link towards nodebref (if in ab direction and vice versa).</p>
 <p>The direction is specified as an attribute, and each service leg segment has a unique user defined identifier, i.e., XML id that is set via an attribute:</p>
 <table>
 <thead>
@@ -3657,6 +3659,13 @@
 <td align="left">YES</td>
 <td align="left">Direction from service node (a or b) to service node (b or a)</td>
 </tr>
+<tr>
+<td align="left"><code>lsrefs</code></td>
+<td align="left">string</td>
+<td align="left"><code>None</code></td>
+<td align="left">YES</td>
+<td align="left">Reference(s) to physical link segments representing this leg segment</td>
+</tr>
 </tbody>
 </table>
 <h2 id="expanded-example">Expanded Example</h2>
@@ -3672,14 +3681,15 @@
     <span style="color:#204a87;font-weight:bold">&lt;servicenodes&gt;</span>
       <span style="color:#204a87;font-weight:bold">&lt;servicenode</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">externalid=</span><span style="color:#4e9a06">&#34;someid&#34;</span> <span style="color:#c4a000">noderef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
     <span style="color:#204a87;font-weight:bold">&lt;/servicenodes&gt;</span>
-    <span style="color:#8f5902;font-style:italic">&lt;!-- service legs are links between service nodes (from/to) where multiple legs between the same service nodes are possible as long as the underlying physical link segments represent. A leg reflects a path on the underlying physical network via its lrefs (link refs) and leg segments --&gt;</span>
+    <span style="color:#8f5902;font-style:italic">&lt;!-- service legs are links between service nodes (from/to) where multiple legs between the same service nodes are possible as long as the underlying physical link segments are different. 
+</span><span style="color:#8f5902;font-style:italic">    A leg reflects a path on the underlying physical network via its lsrefs (link segment refs) per service leg segment --&gt;</span>
     <span style="color:#204a87;font-weight:bold">&lt;servicelegs&gt;</span>
-      <span style="color:#204a87;font-weight:bold">&lt;leg</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">externalid=</span><span style="color:#4e9a06">&#34;someid&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">lrefs=</span><span style="color:#4e9a06">&#34;11,22,33&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-         <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-         <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>         
+      <span style="color:#204a87;font-weight:bold">&lt;leg</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">externalid=</span><span style="color:#4e9a06">&#34;someid&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+         <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#c4a000">lsrefs=</span><span style="color:#4e9a06">&#34;11,22,33&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+         <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;b_a&#34;</span> <span style="color:#c4a000">lsrefs=</span><span style="color:#4e9a06">&#34;33,24, 26, 11&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>         
       <span style="color:#204a87;font-weight:bold">&lt;/leg&gt;</span>
-      <span style="color:#204a87;font-weight:bold">&lt;leg</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">lrefs=</span><span style="color:#4e9a06">&#34;44,45,46&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-         <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>         
+      <span style="color:#204a87;font-weight:bold">&lt;leg</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">nodearef=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">nodebref=</span><span style="color:#4e9a06">&#34;3&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+         <span style="color:#204a87;font-weight:bold">&lt;legsegment</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">dir=</span><span style="color:#4e9a06">&#34;a_b&#34;</span> <span style="color:#c4a000">lsrefs=</span><span style="color:#4e9a06">&#34;44,45,46&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>         
       <span style="color:#204a87;font-weight:bold">&lt;/leg&gt;</span>      
     <span style="color:#204a87;font-weight:bold">&lt;/servicelegs&gt;</span>
   <span style="color:#204a87;font-weight:bold">&lt;/servicenetworklayer&gt;</span>
@@ -3727,7 +3737,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2023 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/about/">About PLANit</a></p>
 	

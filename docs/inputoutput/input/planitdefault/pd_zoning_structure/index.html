@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -32,7 +32,7 @@
  If you are only interested to see an example file, jump to the Expanded Example. XML Schema of macroscopic zoning macroscopiczoninginput.xsd XML Schema of intermodal extension macroscopicintermodalinput.xsd  We distinguish between two types of zones in PLANit:
  Origin-Destination zones Transfer zones  Origin-Destination Zones are the geographical areas for which we construct travel demand which are loaded onto the network, typically via a single point known as centroids.">
 
-<meta itemprop="wordCount" content="3035">
+<meta itemprop="wordCount" content="3073">
 
 
 
@@ -46,8 +46,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.4b0bc5a606bedd0d3b11e66e8d8910d472bf6de69297acd005139beb588977c2.css" as="style">
-<link href="/scss/main.min.4b0bc5a606bedd0d3b11e66e8d8910d472bf6de69297acd005139beb588977c2.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.efdc754742f91a7d8116abf05ef20b5c792da0321b24e577c7126b76b66bbb67.css" as="style">
+<link href="/scss/main.min.efdc754742f91a7d8116abf05ef20b5c792da0321b24e577c7126b76b66bbb67.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -693,6 +693,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceassignmenttraditionalstatictsa_set" href="/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/">.set(&#43;)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspythonreferenceassignmenttraditionalstatictsa_log_settings" href="/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/">.set_log_settings(&#43;)</a>
       
       
       
@@ -3410,7 +3416,7 @@ and related content:</p>
 </tr>
 <tr>
 <td align="left"><a href="./#zones"><code>&lt;zones&gt;</code></a></td>
-<td align="left">YES</td>
+<td align="left">YES (unless intermodal zones present)</td>
 <td align="left">1</td>
 <td align="left">Container elements for all (OD) zones</td>
 </tr>
@@ -3883,6 +3889,14 @@ connectoid-zone combination can have allowable modes and one might enter via one
 <td align="left"><code>&quot;&quot;</code></td>
 <td align="left">Description for the zone</td>
 </tr>
+<tr>
+<td align="left"><code>&lt;platforms&gt;</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>None</code></td>
+<td align="left">NO</td>
+<td align="left"><code>&quot;&quot;</code></td>
+<td align="left">Description for the human-readable platform references, e.g. &ldquo;1,2&rdquo; in case the zone services multiple train platforms for example</td>
+</tr>
 </tbody>
 </table>
 <p>as well as the following sub-elements:</p>
@@ -4168,25 +4182,30 @@ where vehicles stop, or a location where people enter a waiting area to (dis)emb
 	<span style="color:#8f5902;font-style:italic">&lt;!-- optional extension for intermodal networks --&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;intermodal&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;transferzones&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;platform&#34;</span> <span style="color:#204a87;font-weight:bold">&gt;</span>
-				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>platform 1<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>						    	
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;platform&#34;</span> <span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Wynyard train station<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;platforms&gt;</span>3,4<span style="color:#204a87;font-weight:bold">&lt;/platforms&gt;</span>						    	
 			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;4&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;stop_pole&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;5&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;stop_pole&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>						    		
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;platform&#34;</span> <span style="color:#204a87;font-weight:bold">&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Wynyard train station<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+				<span style="color:#204a87;font-weight:bold">&lt;platforms&gt;</span>5,6<span style="color:#204a87;font-weight:bold">&lt;/platforms&gt;</span>						    	
+			<span style="color:#204a87;font-weight:bold">&lt;/zone&gt;</span>			
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;stop_pole&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;zone</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;4&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;stop_pole&#34;</span> <span style="color:#204a87;font-weight:bold">/&gt;</span>						    		
 		<span style="color:#204a87;font-weight:bold">&lt;/transferzones&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;transferzoneaccess&gt;</span>
-			<span style="color:#8f5902;font-style:italic">&lt;!-- access to road network for transfer zone 3 --&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;4&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bus&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;pt_veh_stop&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>
+			<span style="color:#8f5902;font-style:italic">&lt;!-- access to rail network for transfer zone 1 --&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;2&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;rail&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;pt_veh_stop&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>
 			<span style="color:#8f5902;font-style:italic">&lt;!-- access to active network for transfer zone 3 --&gt;</span>
 			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;3&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;8&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bicycle, walk&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;traveller_access&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>
 			<span style="color:#8f5902;font-style:italic">&lt;!-- example of transfer between different bus routes using two different poles, but same
 </span><span style="color:#8f5902;font-style:italic">			stop location for buses --&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;4,5&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;9&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bus&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;pt_veh_stop&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>		
+			<span style="color:#204a87;font-weight:bold">&lt;connectoid</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;3,4&#34;</span> <span style="color:#c4a000">lsref=</span><span style="color:#4e9a06">&#34;9&#34;</span> <span style="color:#c4a000">modes=</span><span style="color:#4e9a06">&#34;bus&#34;</span> <span style="color:#c4a000">type=</span><span style="color:#4e9a06">&#34;pt_veh_stop&#34;</span><span style="color:#204a87;font-weight:bold">/&gt;</span>		
 		<span style="color:#204a87;font-weight:bold">&lt;/transferzoneaccess&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;/intermodal&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;transferzonegroups&gt;</span>
-		<span style="color:#204a87;font-weight:bold">&lt;transfergroup</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;4,5&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
-			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>bus station<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
+		<span style="color:#204a87;font-weight:bold">&lt;transfergroup</span> <span style="color:#c4a000">id=</span><span style="color:#4e9a06">&#34;1&#34;</span> <span style="color:#c4a000">tzrefs=</span><span style="color:#4e9a06">&#34;1,2,3,4&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
+			<span style="color:#204a87;font-weight:bold">&lt;name&gt;</span>Wynyard station<span style="color:#204a87;font-weight:bold">&lt;/name&gt;</span>
 		<span style="color:#204a87;font-weight:bold">&lt;/transfergroup&gt;</span>
 	<span style="color:#204a87;font-weight:bold">&lt;/transferzonegroups&gt;</span>
 <span style="color:#204a87;font-weight:bold">&lt;/macroscopiczoning&gt;</span>
@@ -4233,7 +4252,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 PLANit development team All Rights Reserved</small>
+        <small class="text-white">&copy; 2023 PLANit development team All Rights Reserved</small>
 	
 		<p class="mt-2"><a href="/about/">About PLANit</a></p>
 	

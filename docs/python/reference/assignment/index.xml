@@ -90,6 +90,10 @@
 &lt;td&gt;&lt;a href=&#34;tsa_deactivate_output+&#34;&gt;&lt;code&gt;.deactivate_output(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;De-activate types of output to exclude them from the results&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;tsa_log_settings+&#34;&gt;&lt;code&gt;.set_log_settings(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;dis or enable logging of all assignment component settings used (default = enabled)&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
