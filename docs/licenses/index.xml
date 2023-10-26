@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – Licenses</title>
+    <title> – Licenses</title>
     <link>http://www.goplanit.org/docs/licenses/</link>
-    <description>Recent content in Licenses on PLANit</description>
+    <description>Recent content in Licenses on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/docs/licenses/index.xml" rel="self" type="application/rss+xml" />
     

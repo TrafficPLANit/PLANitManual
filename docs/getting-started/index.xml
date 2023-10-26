@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – Getting started</title>
+    <title> – Getting started</title>
     <link>http://www.goplanit.org/docs/getting-started/</link>
-    <description>Recent content in Getting started on PLANit</description>
+    <description>Recent content in Getting started on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     

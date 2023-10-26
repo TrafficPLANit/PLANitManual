@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – PLANit-Python</title>
+    <title> – PLANit-Python</title>
     <link>http://www.goplanit.org/installation/planit-python/</link>
-    <description>Recent content in PLANit-Python on PLANit</description>
+    <description>Recent content in PLANit-Python on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/installation/planit-python/index.xml" rel="self" type="application/rss+xml" />
     

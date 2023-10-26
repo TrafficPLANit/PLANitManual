@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – Installation</title>
+    <title> – Installation</title>
     <link>http://www.goplanit.org/installation/</link>
-    <description>Recent content in Installation on PLANit</description>
+    <description>Recent content in Installation on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/installation/index.xml" rel="self" type="application/rss+xml" />
     

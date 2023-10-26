@@ -1,1177 +1,1003 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://www.goplanit.org/docs/overview/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/getting-started/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_activate&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_activate&#43;/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_add&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_add&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_add&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/planit/planit_create_project&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_deactivate&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_deactivate&#43;/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_last_iteration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_is_only_final/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_overrideopu&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_overrideopu&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_overrideopu&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove_all/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove_all/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove_all/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_run/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/initialcost/ic_set&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_set&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_description&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/initialcost/ic_set&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_set&#43;/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/getting-started/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/getting-started/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planit/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/java/examples/project_examples/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_assignment/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/nc_convert&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planit/planit_converter_factory/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/cf_create&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/nc_create_reader&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/nc_create_writer&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_demands/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_initial_costs/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_memory/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_network/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_network_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_next/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_output/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planit/planit_project/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_remove_mode_mapping&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_remove_mode_mapping&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_country&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_road_lanes&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_rail_lanes&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_set_epsilon&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_file_name&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_set_input_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/planitzoningreadersettings/pzrs_set_input_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/prs_set_input_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_output_dir&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/planitzoningreadersettings/pzrs_set_xml_extension&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/prs_set_xml_extension&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreader/osmimcr_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreader/osmncr_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreader/pimcr_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreader/pncr_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/mimcw_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/mncw_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/pimcw_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/pncw_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/linkbasedrelative/lbrgf_stop_criterion/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_zoning/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_zoning_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_physical_network/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/java/examples/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/examples/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/fixed/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/freeflow/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/java/examples/input_builder_examples/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/installation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/smoothing/msa/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/installation/planit-java/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/installation/planit-python/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/speed/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/imc_convert&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/imc_create_reader&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/imc_create_writer&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_zoning_structure/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/assignment/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/enums/convertertype/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/inputoutput/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planit/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/java/examples/project_examples/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_all_types/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_types&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_types&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_waterway_parser&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_stop_routes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_add_log_stop_link_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_add_time_filter&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_assignment/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_collect_allowed_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/demandsconverter/dc_convert&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/nc_convert&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/zoningconverter/zc_convert&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planit/planit_converter_factory/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/demandsconverter/dc_create_reader&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/nc_create_reader&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/zoningconverter/zc_create_reader&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/demandsconverter/dc_create_writer&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/nc_create_writer&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/zoningconverter/zc_create_writer&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/cf_create&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_modes/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_all_types/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_deactivate_all_modes_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_deactivate_all_modes/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_deactivate_all_types_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_deactivate_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_deactivate_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_deactivate_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_deactivate_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_demands/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_disallow_stop_tz_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes_except&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_exclude_stops&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_node&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_nodes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_way&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_exclude_osm_ways&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_force_create_new_tz&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_speedlimit_by_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_default_speedlimit_by_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_default_speedlimit_by_type&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_get_epsilon/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_get_ferry_stop_to_route_search_radius&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_search_radius/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_get_keys/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrhs_get_mapped_osm_rail_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_osm_road_modes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_get_mapped_planit_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_planit_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_get_max_iterations/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_link_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_get_overwrite_waiting_area_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_get_time_filters_/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_get_values/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_has_next/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_has_stop_link_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_has_overwrite_waiting_area_osm_way&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_initial_costs/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_route&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_is_connect_dangling_ferry_/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_disallow_stop_tz_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_exclude_stop&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_is_exclude_osm_node&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_is_exclude_osm_way&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_extended_log_stop&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_group_trips/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_route_included&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_highway_parser_active&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_include_partial_trips/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_created_stops/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_stop_route&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_mapped_stops/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_activated&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_deactivated&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_is_railway_type_activated&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_is_railway_type_deactivated&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_is_waterway_type_activated&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_is_waterway_type_deactivated&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_overwrite_stop_location&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_stop_tz_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_railway_parser_active&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_is_remove_dangling_zone_groups/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_speed_default_urbanbased&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_is_suppress_osm_relation_stop_area_logging&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_waterway_parser_active&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_memory/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_network/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/gimws_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/mofi_next/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_output/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_overwrite_cap_max_density&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_overwrite_cap_max_density&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_link_mapping&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_waiting_area_osm_way&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_overwrite_stop_waiting_area&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planit/planit_project/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_pt_services_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/gimws_routed_services_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_routed_services_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/gimws_service_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_service_network_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_services_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/mpsws_set_await_departures&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_capacity_period&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_connect_dangling_ferry&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_connectoid_edges_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_connectoid_segments_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/gimws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/gnws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/grsws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/mpsws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_country&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_road_lanes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/osmnrlc_set_default_rail_lanes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_default_max_speed&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/bpr_set_default_parameters&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreadersettings/tdrs_set_demand_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_set_epsilon&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_ferry_stop_to_route_search_radius&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/prsws_set_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/psnws_set_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/fixed/set_fixed_cost&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/speed/set_fixed_speed&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_fftt_units&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_generate_detailed_geometry&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_matrix_pt_files&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_group_trips&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_search_radius&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_include_partial_trips&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreadersettings/pdrs_set_input_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_set_input_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/pnrs_set_input_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreadersettings/pzrs_set_input_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_length_units&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/gnws_set_links_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_created_stops&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_mapped_stops&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/prsws_log_services_without_trips&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/dsc_set_max_iterations&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_cols&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreadersettings/tzrs_set_network_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_node_coordinate_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/gnws_set_nodes_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_od_connectoids_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_od_zones_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/gimws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/gnws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/grsws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/mpsws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/prsws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/psnws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/pnws_set_output_dir&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/mpsws_set_output_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/mzws_set_output_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_set_output_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_overwrite_stop_location&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/bpr_set_parameters&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/gnws_set_persist_links&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/gnws_set_persist_nodes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_persist_od_connectoids&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_persist_od_zones&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_persist_transfer_zones&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_leg_segments&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_legs&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_nodes&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/grsws_set_persist_services&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_persist_transfer_connectoids&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_persist_virtual_network&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zone_groups&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_remove_dangling_zones&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_removed_unused_tz&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/mnws_restricted_link_speeds_by_mode&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_legs_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_nodes_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/grsws_set_services_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_leg_segments_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_speed_units&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreadersettings/tdrs_set_starttime&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_parallel_tracks_search_radius&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_station_waiting_area_search_radius&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_set_stop_waiting_area_search_radius&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreadersettings/tdrs_set_time_period_duration&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_transfer_connectoids_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/gzws_set_transfer_zones_file_name&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreadersettings/pdrs_set_xml_extension&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/pnrs_set_xml_extension&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreadersettings/pzrs_set_xml_extension&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreader/gtfsimcr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreader/osmimcr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreader/osmncr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreader/pdr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreader/pimcr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreader/pnr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreader/pzr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreader/tdr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreader/tnr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreader/tzr_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwriter/gimcw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwriter/gncw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwriter/gzcw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/mimcw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/mncw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/pimcw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/pncw_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/linkbasedrelative/lbrgf_stop_criterion/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/osmimrpts_suppress_osm_relation_stop_area_logging&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_waterway_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/planitproject/project_zoning/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_zoning_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/pimrs_zoning_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/gimws_zoning_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_physical_network/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/default/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/java/examples/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/examples/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/fixed/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/physicalcost/freeflow/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/java/examples/input_builder_examples/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/installation/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/iterator/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/outputformatters/memory/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/smoothing/msa/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/installation/planit-java/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/installation/planit-python/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/virtualcost/speed/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/imc_convert&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/imc_create_reader&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/imc_create_writer&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/zoningconverter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_set_input_file&#43;/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_zoning_structure/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/assignment/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/convertertype/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/inputoutput/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/dayofweek/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/output/planitdefault/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/default/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/demands/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterfactory/demandsconverter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/demandsreadertype/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/demandswritertype/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/gapfunction/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/initialcost/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/gtfs/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/idmappertype/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/examples/initial_cost_examples/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/initialcost/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/intermodalreadertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/intermodalwritertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/lengthunits/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/output/link_support/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/gapfunction/linkbasedrelative/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/matsim/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/networkreadertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/networkwritertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/output/od_support/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/odskimsuboutputtype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/osm/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/osmentitytype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/output/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputformatters/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/outputformattertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/outputpropertytype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/outputtype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/output/path_support/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/pathidtype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/physicalcost/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/network/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/physicalcosttype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/routedservicesreadertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/servicenetworkreadertype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/geoio/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/smoothingtype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/smoothing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/speedunits/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/stopcriterion/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/timeunits/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/inputoutput/input/tntp/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/tntpfilecolumntype/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/unittype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/virtualcost/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/virtualcosttype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/output/planitdefault/pd_meta_data/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/zoning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/zoningreadertype/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/enums/zoningwritertype/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreader/osm_network_reader_defaults/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/matsim_network_writer_defaults/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwriter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwriter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwriter/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreader/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreader/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreadersettings/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreader/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreader/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/planitzoningreadersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreadersettings/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreadersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreader/</loc>
+  </url><url>
+    <loc>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreadersettings/</loc>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_demands/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_service_network/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/examples/ta_examples/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/python/reference/enums/trafficassignmenttype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_routed_services/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/examples/ta_output_examples/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/units/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/download/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/examples/intermodal_converter_examples/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/java/examples/network_converter_examples/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/contribution-guidelines/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/licenses/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/docs/release-log/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/community/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.goplanit.org/search/</loc>
   </url>
-  
 </urlset>

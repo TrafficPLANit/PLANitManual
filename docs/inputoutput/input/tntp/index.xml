@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> – TNTP Data format (XML)</title>
+    <link>http://www.goplanit.org/docs/inputoutput/input/tntp/</link>
+    <description>Recent content in TNTP Data format (XML) on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/tntp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

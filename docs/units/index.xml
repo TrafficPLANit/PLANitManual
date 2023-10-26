@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – Units in PLANit</title>
+    <title> – Units in PLANit</title>
     <link>http://www.goplanit.org/docs/units/</link>
-    <description>Recent content in Units in PLANit on PLANit</description>
+    <description>Recent content in Units in PLANit on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/docs/units/index.xml" rel="self" type="application/rss+xml" />
     

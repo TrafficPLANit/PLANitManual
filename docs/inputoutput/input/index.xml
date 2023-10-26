@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – Input Data formats</title>
+    <title> – Input Data formats</title>
     <link>http://www.goplanit.org/docs/inputoutput/input/</link>
-    <description>Recent content in Input Data formats on PLANit</description>
+    <description>Recent content in Input Data formats on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/index.xml" rel="self" type="application/rss+xml" />
     
@@ -26,79 +27,88 @@
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Network&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Zoning&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Demands&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Status&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Network&lt;/th&gt;
+&lt;th&gt;(Public Transport) Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Demands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Python&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Java&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;PLANit default input format&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;input/planitdefault&#34;&gt;PLANit&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Supported&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt; . To know how to set up an assignment using input/output files of a specific format, we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt; API for more detailed information.&lt;/p&gt;
+&lt;p&gt;Here we &lt;strong&gt;only&lt;/strong&gt; focus on the &lt;strong&gt;structure of the data formats&lt;/strong&gt;.
+To know how to set up an assignment using input/output files of a specific format,
+we refer to the reference documentation on the &lt;a href=&#34;../../../java&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;../../../python/reference/outputformatters&#34;&gt;Python&lt;/a&gt;
+API for more detailed information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
 &lt;p&gt;Each major input has a dedicated section that details its structure and use:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt; element&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;pd_zoning_structure&#34;&gt;Zoning Structure&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt; element&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;pd_demands&#34;&gt;Demands&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/code&gt; element&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_physical_network&#34;&gt;Physical Network&lt;/a&gt;: nodes, links, link types, modes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_service_network&#34;&gt;Service Network&lt;/a&gt;: route legs and service nodes built on top of physical network&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_routed_services&#34;&gt;Routed services&lt;/a&gt;: (public transport) services running on the service network&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_zoning_structure&#34;&gt;Zoning Structure&lt;/a&gt;: origin-destination zones, transfer zones (pt platforms, poles)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;pd_demands&#34;&gt;Demands&lt;/a&gt;: origin-destination trip matrices&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In addition, there are several extensions to this format to - for example - support routed services such as public transport. These are defined by means of a (virtual) service network on top of the physical network and routes services that
-are defined in relation to the service network:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;pd_service_network&#34;&gt;Service Network&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;servicenetwork&amp;gt;&lt;/code&gt; element&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;pd_routed_services&#34;&gt;Routed services&lt;/a&gt; XML Input format, i.e., &lt;code&gt;&amp;lt;routedservices&amp;gt;&lt;/code&gt; element&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Before diving into these sections however, it is advisable to quickly get acquainted with some basic concepts regarding XML and how PLANit, utilises this data format. At least have a quick look at the &lt;a href=&#34;./#basics&#34;&gt;Basics&lt;/a&gt; section detailing overall structure in a PLANit context and discussing the &lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
+&lt;p&gt;We first discuss the &lt;a href=&#34;./#basics&#34;&gt;Basics&lt;/a&gt; detailing the data structure in a PLANit context and discussing the
+&lt;a href=&#34;./features&#34;&gt;main features&lt;/a&gt;. A &lt;a href=&#34;./#example&#34;&gt;small example input file&lt;/a&gt; is also provided to get you started.&lt;/p&gt;
 &lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
 &lt;h3 id=&#34;planit-project-one-file-or-multiple-input-files&#34;&gt;PLANit project, one file or multiple input files?&lt;/h3&gt;
-&lt;p&gt;The user can construct each major input (network, demands, zoning) separately in its own XML file, e.g.,&lt;/p&gt;
+&lt;p&gt;The user can construct each major input separately in its own XML file, e.g.,&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;my_network.xml&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;my_zoning.xml&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;my_demands.xml&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;my_servicenetwork.xml&lt;/code&gt; (optional),&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;my_routedservices.xml&lt;/code&gt; (optional),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;network.xml&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zoning.xml&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;demands.xml&lt;/code&gt; (optional - not used if only converting networks),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;servicenetwork.xml&lt;/code&gt; (optional - not used in private assignment),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;routedservices.xml&lt;/code&gt; (optional - not used in private assignment),&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;or decide to store all inputs in the same file, e.g.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;my_planit_input.xml&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The former is useful if you have a large project, where you - for example - have multiple zoning systems that you want to apply to the same network, or you have multiple networks that you want to test with the same demands. If however, you just want to run a single traffic assignment run with one network, one set of demands, and one zoning structure, it is probably easiest to just construct your inputs in a single file.&lt;/p&gt;
-&lt;p&gt;In practice, there is no difference in how the inputs are constructed. Each major input is identified with a particular XML element signature by PLANit. As long as there is an XML file - with any name - in the directory that contains the required XML element signature, PLANit will attempt to parse it accordingly.&lt;/p&gt;
+&lt;p&gt;The former is useful if you have a large project, where you - for example - have multiple zoning systems
+that you want to apply to the same network, or you have multiple networks that you want to test with the same demands.
+If however, you just want to run a single traffic assignment run with one network, one set of demands, and one zoning
+structure, it is probably easiest to just construct your inputs in a single file.&lt;/p&gt;
+&lt;p&gt;In practice, there is no difference in how the inputs are constructed.
+Each major input is identified with a particular XML element signature by PLANit. As long as there is an XML file - with any name -
+in the directory that contains the required XML element signature, PLANit will attempt to parse it accordingly.&lt;/p&gt;
 &lt;h3 id=&#34;planit&#34;&gt;&amp;lt;PLANit&amp;gt;&lt;/h3&gt;
-&lt;p&gt;For a single input file, the root element is &lt;code&gt;&amp;lt;PLANit&amp;gt;&lt;/code&gt; and each of the three major input components (&lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/code&gt;) are its sub-elements, resulting in a file that looks something like the following:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
-		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;						
-		...
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
-		...
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;	
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;					
-		...
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;	
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;For a single input file, the root element is &lt;code&gt;&amp;lt;PLANit&amp;gt;&lt;/code&gt; and each of the major input components (e.g., &lt;code&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/code&gt;, etc.)
+are sub-elements, resulting in a file that looks something like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;											
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/0_4_0/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;						
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;					
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    etc..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;If multiple files exist in the same directory, with the same root element, PLANit, will simply parse the first one it encounters.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;We refer the reader to the dedicated documentation pages for each of the major input components as provided in the &lt;a href=&#34;./#outline&#34;&gt;Outline&lt;/a&gt;.&lt;/p&gt;
@@ -108,15 +118,15 @@ are defined in relation to the service network:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;By default PLANit will NOT verify the inputs actively and instead just parse the contents to maximise performance. Leaving out the schema reference will therefore not result in issues as long as your input is valid PLANit XML conforming to the XSD.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/&amp;lt;version&amp;gt;/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-	
-	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Do things conform XSD Schema macroscopicinput.xsd --&amp;gt;&lt;/span&gt;
-	
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Below you will find which schema definition goes with what input file configuration.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/0_4_0/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Do things conform XSD Schema macroscopicinput.xsd --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Below you will find which schema definition goes with what input file configuration.&lt;/p&gt;
 &lt;p&gt;Single XML input file:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicinput.xsd&#34;&gt;&lt;code&gt;macroscopicinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
@@ -126,30 +136,32 @@ are defined in relation to the service network:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicdemandinput.xsd&#34;&gt;&lt;code&gt;macroscopicdemandinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopicnetworkinput.xsd&#34;&gt;&lt;code&gt;macroscopicnetworkinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../xsd/macroscopiczoninginput.xsd&#34;&gt;&lt;code&gt;macroscopiczoninginput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../../xsd/servicenetworkinput.xsd&#34;&gt;&lt;code&gt;servicenetworkinput.xsd&lt;/code&gt;&lt;/a&gt; (optional)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../../xsd/routedservicesinput.xsd&#34;&gt;&lt;code&gt;routedservicesinput.xsd&lt;/code&gt;&lt;/a&gt; (optional)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/servicenetworkinput.xsd&#34;&gt;&lt;code&gt;servicenetworkinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../xsd/routedservicesinput.xsd&#34;&gt;&lt;code&gt;routedservicesinput.xsd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Schema definitions are also defined in XML, but are stored in files with the &lt;code&gt;.xsd&lt;/code&gt; extension. PLANit has XSD files for each of the major input components as well as the output meta-data XML.&lt;/p&gt;
-&lt;p&gt;In this manual we provide you with a user friendly description of the specification laid-out in the PLANit XSD files as well a references to the files themselves for the more technically inclined readers.&lt;/p&gt;
+&lt;p&gt;Schema definitions are also defined in XML, but are stored in files with the &lt;code&gt;.xsd&lt;/code&gt; extension. PLANit has XSD files for
+each of the major input components as well as the output meta-data XML.&lt;/p&gt;
+&lt;p&gt;In this manual we provide you with a user-friendly description of the specification laid-out in the PLANit XSD files
+as well a references to the files themselves for the more technically inclined readers.&lt;/p&gt;
 &lt;h3 id=&#34;geo-spatial-xml--gml&#34;&gt;Geo-spatial XML = GML&lt;/h3&gt;
 &lt;p&gt;Geospatial information is becoming more and more common in transport models. In the default XML input format for PLANit, this feature is supported by incorporating elements of the Geography Markup Language (&lt;a href=&#34;http://www.ogc.org/standards/gml&#34;&gt;GML&lt;/a&gt;). GML is a standard to represent all kinds of geo spatial data in XML. In PLANit, many elements of the network and zoning have a spatial aspect to them. for those components we allow optional GML elements to be specified to embed geospatial information in your models.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Embedding GML in PLANit is entirely optional. It is equally possible to provide for example lengths for links and leave out geo spatial information on nodes, and zones.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Like the PLANit schemas, GML has its own XML schemas to ensure GML elements are used properly. In PLANit, we prefix all GML elements with the &amp;ldquo;namespace&amp;rdquo; &lt;code&gt;gml&lt;/code&gt;. In the example above this can be seen when including the schema definition for GML&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whenever you encounter an element in the PLANit input XML files that is prefixed with &lt;code&gt;gml&lt;/code&gt; it pertains to a GML element. For example a node can have a geo location identified by a &lt;code&gt;gml:point&lt;/code&gt; like the following:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructurelayers&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;srsname=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;EPSG:4326&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;roadlayer&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;												
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; 																
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;George Street roundabout&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt; 							
-                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt; 														
-                    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;150.512796 -34.900145&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
-                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;														
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/node&amp;gt;&lt;/span&gt;
-		...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;srsname&lt;/code&gt; attribute identifies what Coordinate Reference System is used. This signals how the software should interpret the coordinates provided. As you can see, the GML elements are prefixed with &lt;code&gt;gml&lt;/code&gt; to distinguish them from the regular PLANit elements.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Whenever you encounter an element in the PLANit input XML files that is prefixed with &lt;code&gt;gml&lt;/code&gt; it pertains to a GML element. For example a node can have a geo location identified by a &lt;code&gt;gml:point&lt;/code&gt; like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructurelayers&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;srsname=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;EPSG:4326&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;roadlayer&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;												
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; 																
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;George Street roundabout&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt; 							
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt; 														
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;150.512796 -34.900145&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;														
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/node&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;srsname&lt;/code&gt; attribute identifies what Coordinate Reference System is used. This signals how the software should interpret the coordinates provided. As you can see, the GML elements are prefixed with &lt;code&gt;gml&lt;/code&gt; to distinguish them from the regular PLANit elements.&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;p&gt;The PLANit native input format has the following key features:&lt;/p&gt;
 &lt;ul&gt;
@@ -158,7 +170,10 @@ are defined in relation to the service network:&lt;/p&gt;
 &lt;li&gt;Extensive use of default arguments (optional elements) to minimise user configuration&lt;/li&gt;
 &lt;li&gt;Flexible GIS support for optional location information via &lt;a href=&#34;http://www.ogc.org/standards/gml&#34;&gt;GML&lt;/a&gt; embedding and SRS support&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In its simplest form, the user provides a single xml file containing all mandatory components; network, demand, and zoning. See &lt;a href=&#34;./#minimum_example&#34;&gt;Minimum Example&lt;/a&gt;. Alternatively, these three main components can be provided separately.&lt;/p&gt;
+&lt;p&gt;In its simplest form, the user provides a single XML file containing all mandatory components; network, demand, and zoning.
+Usually you would not manually create such a file but instead construct the network from an existing network, for example extract it from
+an OpenStreetMap file and convert it to a PLANit network of which a number of examples are provided in the examples section.&lt;/p&gt;
+&lt;p&gt;to give some idea of what the result looks like, see this &lt;a href=&#34;./#minimum_example&#34;&gt;Minimum Example&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;example-1&#34;&gt;Example 1&lt;/h2&gt;
 &lt;p&gt;Below you will find an example of a single XML file describing a simple - yet complete - set of inputs. The network contains:&lt;/p&gt;
 &lt;ul&gt;
@@ -177,79 +192,228 @@ are defined in relation to the service network:&lt;/p&gt;
 &lt;li&gt;1 time period with a duration of 1 hour (3600s)&lt;/li&gt;
 &lt;li&gt;1 trip between zone 1 and zone 2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
-	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;path_to&amp;gt;/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-	
-	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Demand component --&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;
-	  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;d1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;demandconfiguration&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timeperiods&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timeperiod&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;duration&amp;gt;&lt;/span&gt;3600&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/duration&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timeperiod&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timeperiods&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/demandconfiguration&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;oddemands&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;odcellbycellmatrix&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;timeperiodref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;o&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;d&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/d&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/o&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/odcellbycellmatrix&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/oddemands&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;
-	
-	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Physical network component --&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;
-	  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;n1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructurelayers&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/nodes&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;links&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodearef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodebref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;a_b&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
-						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;b_a&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
-						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;length&amp;gt;&lt;/span&gt;10&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/length&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/links&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/layer&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/infrastructurelayers&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
-	
-	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- zoning structure component --&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
-	  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;z1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zones&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;									
-						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;2&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;
-						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
-					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
-				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
-			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
-		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zones&amp;gt;&lt;/span&gt;
-	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/XML/1998/namespace&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xsi:noNamespaceSchemaLocation=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://planitmanual.github.io/version/0_4_0/xsd/macroscopicinput.xsd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Demand component --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicdemand&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;d1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;demandconfiguration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timeperiods&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;timeperiod&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;duration&amp;gt;&lt;/span&gt;3600&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/duration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timeperiod&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/timeperiods&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/demandconfiguration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;oddemands&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;odcellbycellmatrix&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;timeperiodref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;o&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;d&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;ref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/d&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/o&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/odcellbycellmatrix&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/oddemands&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicdemand&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Physical network component --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopicnetwork&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;n1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;infrastructurelayers&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;nodes&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;node&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/nodes&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;links&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodearef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;nodebref=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;a_b&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;linksegment&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;dir=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;b_a&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;length&amp;gt;&lt;/span&gt;10&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/length&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/links&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/layer&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/infrastructurelayers&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopicnetwork&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- zoning structure component --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;macroscopiczoning&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;z1&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zones&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;									
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;zone&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;centroid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;2&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:Point&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;gml:pos&amp;gt;&lt;/span&gt;45.256 -110.45&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:pos&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/gml:Point&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/centroid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoids&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;					&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;connectoid&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;noderef=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/connectoids&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zone&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/zones&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/macroscopiczoning&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;/PLANit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GTFS Data format (XML)</title>
+      <link>http://www.goplanit.org/docs/inputoutput/input/gtfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.goplanit.org/docs/inputoutput/input/gtfs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the &lt;a href=&#34;https://gtfs.org/&#34;&gt;GTFS&lt;/a&gt; (General Transit Feed Specification) format in
+the context of PLANit supporting parsing this format.&lt;/p&gt;
+&lt;p&gt;This data format only prescribes public transport services and lacks an underlying network. Therefore, its PLANit GTFS reader
+requires an existing PLANit network (with or without existing transit stops in the form of transferzones) to overlay
+the GTFS services on.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Status&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Network&lt;/th&gt;
+&lt;th&gt;(Public Transport) Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Demands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Python&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Java&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;input/gtfs&#34;&gt;GTFS&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;GTFS&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Supported&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt; (No ODs)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;gtfs-and-planit&#34;&gt;GTFS and PLANit&lt;/h2&gt;
+&lt;p&gt;Any existing PLANit network/zoning can be supplemented with a service network and routed services constructed from a GTFS file.
+This network may already have information on existing stop locations. In this case the GTFS reader will attempt to match the GTFS stops
+to these existing stops if deemed compatible, otherwise it will create new stops (transfer zones).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Examples on how to supplement a PLANit network/zoning with GTFS services are provided in the
+respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;GTFS is an open source format for which a detailed description is available on their own website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gtfs.org/schedule/reference/&#34;&gt;GTFS file format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We refer the interested reader to the above links for in-depth information on the data format itself.
+With respect to PLANit, this page details what our GTFS reader does and does not support with respect to the data
+available in a typical GTFS file in the outline below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#mode-support&#34;&gt;Mode support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#stop-mapping&#34;&gt;Stop mapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#gtfs-misalignment&#34;&gt;GTFS misalignment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bounding-box&#34;&gt;Bounding box&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mode-support&#34;&gt;Mode support&lt;/h2&gt;
+&lt;p&gt;GTFS files have standardised modes for services. When parsing a GTFS file this information is present as a &lt;code&gt;route_type&lt;/code&gt;
+field in the &lt;code&gt;routes.txt&lt;/code&gt; file. These modes are either in the &lt;em&gt;basic&lt;/em&gt; (1-12) format or in the &lt;em&gt;extended&lt;/em&gt; format, see &lt;a href=&#34;https://developers.google.com/transit/gtfs/reference/extended-route-types&#34;&gt;here&lt;/a&gt;. When
+parsing a GTFS file the user configures which of the two is used. Also, the mapping from a GTFS mode to a predefined PLANit
+mode can be altered from the default mapping.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The mapping from GTFS to PLANit predefined mode is logged, so if unsure consider running with the default mapping first
+and then use the logs to manually override the mapping to your liking.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;stop-mapping&#34;&gt;Stop mapping&lt;/h2&gt;
+&lt;p&gt;If the underlying PLANit network/zoning has no public transport stops yet (transfer zones), then the GTFS reader will
+create a new transfer zone (stop) for each GTFS stop available in the dataset. However, if there already exist stops it
+will first try to match these. It does so as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Consider existing stops nearby in a user configurable search radius&lt;/li&gt;
+&lt;li&gt;Remove all possible matches that do not support the mode of the GTFS stop, i.e., avoiding matching a tram stop to a bus stop&lt;/li&gt;
+&lt;li&gt;Ony consider existing stops on the correct side of the road (only relevant for bus)&lt;/li&gt;
+&lt;li&gt;Exclude stops that were manually excluded based on user settings&lt;/li&gt;
+&lt;li&gt;Try to match to the most likely stop based on
+&lt;ol&gt;
+&lt;li&gt;platform/pole name&lt;/li&gt;
+&lt;li&gt;matching ideal &amp;lsquo;access link&amp;rsquo;, i.e., the road/rail segment the transit vehicle would stop on to service the platform/pole&lt;/li&gt;
+&lt;li&gt;match on closeness and angle of their respective ideal &amp;lsquo;access link&amp;rsquo; if 2) did not yield a match.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;If 5) did not yield an acceptable answer, we revert to creating a new transfer zone&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It should be noted that in case a match is found that is deemed possibly wrong, this is logged and the user is encouraged to verify correctness,
+similarly, if some possible matches were rejected but the algorithm could not reject them with a lot of certainty, again, a message will
+be logged prompting the user to verify if the rejection was valid.&lt;/p&gt;
+&lt;h2 id=&#34;gtfs-misalignment&#34;&gt;GTFS misalignment&lt;/h2&gt;
+&lt;p&gt;GTFS stops carry a location with them but lack any relation to a network. As a result there is the possibility of misalignment.
+this is especially prudent for bus stops which are expected to reside on a particular side of a road. In the situation that
+either the GTFS stop location and/or the underlying network link location is off, it might happen that a GTFS stop gets mapped
+to the wrong existing stop, causes a new PLANit stop to be created when it should have been matched, or the GTFS stop gets
+matched to the wrong network link.&lt;/p&gt;
+&lt;p&gt;The GTFS reader has been designed to identify such situations and make sure the user gets notified when in doubt for manual verification.
+This is done by:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;identifying the closest link to each GTFS stop at all times&lt;/li&gt;
+&lt;li&gt;identifying the closest compatible link to each GTFS stop at all times&lt;/li&gt;
+&lt;li&gt;Comparing the closest link and closest compatible stop and logging a situation when they differ as this might indicate misalignment&lt;/li&gt;
+&lt;li&gt;Comparing the road types of the chosen link, where when the algorithm was forced to choose a minor road over a major road to map to due to mode incompatibility, the user is notified&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When a user identifies that the automated solution is suboptimal various options are available to correct for this during the parsing.
+It is possible to override a GTFS stop location, it is possible to force a mapping to a particular PLANit link, it is possible to
+either force a mapping to an existing PLANit stop, or do the opposite, force the creation of a new stop. Lastly, it is possible
+to force extensive logging on how a particular GTFS stop gets mapped to the network, or to log every created/matched GTFS stop in more detail.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;bounding-box&#34;&gt;Bounding Box&lt;/h2&gt;
+&lt;p&gt;The GTFS parser will attempt to parse as much from the GTFS services and stops as possible. However, if stops fall outside
+the underlying network&amp;rsquo;s bounding box they cannot be parsed. In that case, we only ingest the GTFS stops that can be mapped
+to the network.&lt;/p&gt;
+&lt;p&gt;Services that partly run inside and partly run outside the bounding box will be split. Meaning that the service is considered
+to be terminating at the last stop within the bounding box. Then, a new transit service is created, for when it (re-)enters
+the network again.&lt;/p&gt;
+&lt;h2 id=&#34;logging-support-and-identifyingcorrecting-tagging-errors&#34;&gt;Logging support and identifying/correcting tagging errors&lt;/h2&gt;
+&lt;p&gt;As mentioned, the GTFS parser will log information, warnings, and other useful findings during parsing in a way that allows
+the user to sense check and/or correct for potential errors in the GTFS itself, misalignment between GTFS and network, or other issues
+that were found. For the GTFS reader this logging is particularly extensive because of the need to map to an existing network that
+by definition is sourced from elsewhere. It is very likely that some manual overrides based on the initial logging is required for
+any GTFS parsing exercise.&lt;/p&gt;
+&lt;p&gt;The GTFS parser has a number of salvage algorithms built-in to attempt to address the most common situations.
+For each of the issues found PLANit will inform the user if the GTFS entity has been:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discarded, e.g., &lt;code&gt;warning DISCARD: &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Savaged, e.g., &lt;code&gt;info SALVAGED: &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Possible bug in the parser or unexpected behaviour e.g., &lt;code&gt;severe &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A &lt;code&gt;DISCARD&lt;/code&gt; message indicates the parser was unable to convert the GTFS entity into a valid PLANit entity even though it
+was expected to. A &lt;code&gt;SALVAGED&lt;/code&gt; message indicates the GTFS entity could not be converted the way it was expected to,
+but the parser was able to derive a likely solution based on context. In both cases it is recommended to verify
+the result by checking the OSM entities referred to in the &lt;code&gt;DISCARD&lt;/code&gt; and &lt;code&gt;SALVAGED&lt;/code&gt; messages.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can often quickly lookup a GTFS stop location based on its id in online trip planners. For example
+in Melbourne (Victoria, Australia) one simply pastes the stop id into the departure field to find where this stop
+lives, see &lt;a href=&#34;https://www.ptv.vic.gov.au/journey&#34;&gt;https://www.ptv.vic.gov.au/journey&lt;/a&gt;. If the underlying network comes from
+OSM, then the external id of the links can be pasted into the OSM website to find information on that road, e.g.,
+&lt;a href=&#34;https://www.openstreetmap.org/way/485842787&#34;&gt;https://www.openstreetmap.org/way/485842787&lt;/a&gt; (using some way id)&lt;/p&gt;
+&lt;/blockquote&gt;
+
       </description>
     </item>
     
@@ -262,56 +426,89 @@ are defined in relation to the service network:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;In this section of the manual we discuss the MATSim XML network and public transport format. The MATSim writer requires a PLANit network/zoning memory model as input to be able to persist in MATSim XML format.&lt;/p&gt;
+        &lt;p&gt;In this section of the manual we discuss the MATSim XML network and public transport format. The MATSim writer requires a
+PLANit network/zoning (and optionally a service network and routed services) memory model as input to be able to persist
+in MATSim XML format.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Network&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Zoning&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Demands&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Status&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Network&lt;/th&gt;
+&lt;th&gt;(Public Transport) Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Demands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Python&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Java&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MATSim&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;input/matsim&#34;&gt;MATSim&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Supported&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt; (No ODs)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;More general - and specific - information on MATSim can be found on their website: &lt;a href=&#34;http://www.matsim.org&#34;&gt;www.matsim.org&lt;/a&gt;. MATSim has no official user manual, but a good starting point is a book that has bundled a number of (white) papers on this open-source agent based platform, see &lt;a href=&#34;https://www.matsim.org/docs/userguide/&#34;&gt;User guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More general - and specific - information on MATSim can be found on their website: &lt;a href=&#34;www.matsim.org&#34;&gt;www.matsim.org&lt;/a&gt;.
+MATSim has no official user manual, but a good starting point is a book that has bundled a number of (white) papers on
+this open-source agent based platform, see &lt;a href=&#34;https://www.matsim.org/docs/userguide/&#34;&gt;User guide&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;matsim-basics&#34;&gt;MATSim Basics&lt;/h2&gt;
-&lt;p&gt;MATSim is a Java based open-source traffic simulator that uses agents for its vehicles. It is multi-modal and has various extensions that can be added to the core functionality. Its data format for its network and public transport schedule is straightforward and somewhat simplified compared to PLANit&amp;rsquo;s features, making it possible to convert any PLANit network to a MATsim network without loss of information (on the MATsim side).&lt;/p&gt;
+&lt;p&gt;MATSim is a Java based open-source traffic simulator that uses agents for its vehicles. It is multi-modal and has
+various extensions that can be added to the core functionality.Its data format for its network and public transport schedule is
+straightforward and somewhat simplified compared to PLANit&amp;rsquo;s features, making it possible to convert any PLANit network
+to a MATSim network without loss of information (on the MATSim side).&lt;/p&gt;
 &lt;h2 id=&#34;matsim-and-planit&#34;&gt;MATSim and PLANit&lt;/h2&gt;
-&lt;p&gt;Any PLANit network/zoning memory model can be converted into a MATSim network/transit (schedule) using the available writers (network/intermodal).&lt;/p&gt;
+&lt;p&gt;Any PLANit network/zoning memory model can be converted into a MATSim network/transit (schedule) using the available
+writers (network/intermodal).&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;While MATSim supports complete transit schedules (frequency, schedule, pt vehicle fleet) as does the PLANit XML schema. Currently only part of the transit schedule can be populated when persisting a PLANit network/zoning as a MATSim (intermodal) network as the converter does not yet have support for transferring the schedules, only the stop facility infrastructure.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Examples on how to perform a network conversion from PLANit or another input format to MATSim are provided in the respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
+&lt;p&gt;Examples on how to perform a network conversion from PLANit or another input format to MATSim are provided in the
+respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;matsim-and-planit-road-network&#34;&gt;MATSim and PLANit Road network&lt;/h2&gt;
-&lt;p&gt;The MATsim network output is based on  &lt;a href=&#34;http://www.matsim.org/files/dtd/network_v2.dtd&#34;&gt;http://www.matsim.org/files/dtd/network_v2.dtd&lt;/a&gt;. PLANit can create MATSim network files based on its own macroscopic network representation.&lt;/p&gt;
+&lt;p&gt;The MATSim network output is based on [http://www.matsim.org/files/dtd/network_v2.dtd].
+PLANit can create MATSim network files based on its own macroscopic network representation.&lt;/p&gt;
 &lt;h3 id=&#34;matsim-improved-geometry-generation&#34;&gt;MATSim Improved Geometry generation&lt;/h3&gt;
-&lt;p&gt;MATSim links only carry two geo locations - for both extreme nodes - but it lacks any shaping internally. In larger networks and for longer links visualisation of MATSim networks is therefore somewhat confusing and chaotic because the shape of the road is largely lost. To overcome this problem the &lt;a href=&#34;https://simunto.com/via/&#34;&gt;VIA visualiser&lt;/a&gt; (that supports MATSim) has defined an additional data format that provides the internal geometry of all MATsim links. This format can be found here:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.simunto.com/via/layers/network.html&#34;&gt;https://docs.simunto.com/via/layers/network.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The MATSim writer has a feature to support the persistence of such detailed geometry alongside the MATSim network. this makes visualising networks (in VIA) much nicer. It is recommended to switch this on via the settings when relevant.&lt;/p&gt;
+&lt;p&gt;MATSim links only carry two geolocations - for both extreme nodes - but it lacks any shaping internally.
+In larger networks and for longer links visualisation of MATSim networks is therefore somewhat confusing and chaotic
+because the shape of the road is largely lost. To overcome this problem the &lt;a href=&#34;https://simunto.com/via/&#34;&gt;VIA visualiser&lt;/a&gt;
+(that supports MATSim) has defined an additional data format that provides the internal geometry of all MATSim links.
+This format can be found here: &lt;a href=&#34;https://docs.simunto.com/via/layers/network.html&#34;&gt;https://docs.simunto.com/via/layers/network.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The MATSim writer has a feature to support the persistence of such detailed geometry alongside the MATSim network.
+This makes visualising networks (in VIA) much nicer. It is recommended to switch this on via the settings when relevant.&lt;/p&gt;
 &lt;h2 id=&#34;matsim-and-public-transport&#34;&gt;MATSim and Public transport&lt;/h2&gt;
-&lt;p&gt;The MATsim (partially supported) public transport output, namely the stop facilities in their transit schedule is based on &lt;a href=&#34;http://www.matsim.org/files/dtd/transitSchedule_v2.dtd&#34;&gt;http://www.matsim.org/files/dtd/transitSchedule_v2.dtd&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The MATSim writer supports public transport output, namely the stop facilities and (optionally) their transit schedule.
+Depending on what is available in the network and how the writer is configured. Public transport output for Matsim is based
+on &lt;a href=&#34;http://www.matsim.org/files/dtd/transitSchedule_v2.dtd&#34;&gt;http://www.matsim.org/files/dtd/transitSchedule_v2.dtd&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Currently, two possible approaches for supporting public transport conversions are included:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Export network + stop facilities, but not public transport services&lt;/li&gt;
+&lt;li&gt;same as 1) only now also generate a services schedule&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Option 1) is available when the underlying PLANit network hs no services available but it does have information on Public
+transport infrastructure, e.g., when for example a network is parsed from OSM which does have information on poles and platforms
+but not so much on services. In that case the user can opt to generate supporting travel times by enabling the option for
+the &lt;a href=&#34;#matsim-matrixbasedbouter-support&#34;&gt;MatrixBasedRouter&lt;/a&gt; support&lt;/p&gt;
+&lt;p&gt;To generate a MATSim pt schedule, PLANit needs to have a fully serviced network available, meaning both a service network
+and routed services need to be present for this to work. The MATSim writer can then produce a full transit schedule bar any
+transit fleet information as this is something that it not present in PLANit and will need to be generated separately.&lt;/p&gt;
 &lt;h3 id=&#34;matsim-matrixbasedrouter-support&#34;&gt;MATSim MatrixBasedRouter support&lt;/h3&gt;
-&lt;p&gt;There is an alternative way to output the stop facilities in a simplified form via a CSV file. This enables you to use the MATSim matrix based (pt) router (see &lt;a href=&#34;https://github.com/matsim-org/matsim-libs/tree/master/contribs/matrixbasedptrouter/src/main/resources/example&#34;&gt;MATSim example&lt;/a&gt;). this is a simplified form of multi-modal assignment where public transport is included as a teleported mode rather than a simulated one, using the travel times between the stops of this CSV. If not explicit travel time matrix for this CSV stop file is created, then MATSim will generate one itself.&lt;/p&gt;
+&lt;p&gt;There is an option to output the stop facilities in a simplified form via a CSV file.
+This enables you to use the MATSim matrix based (pt) router
+(see &lt;a href=&#34;https://github.com/matsim-org/matsim-libs/tree/master/contribs/matrixbasedptrouter/src/main/resources/example&#34;&gt;MATSim example&lt;/a&gt;).
+This is a simplified form of multi-modal assignment where public transport is included as a teleported mode rather than
+a simulated one, using the travel times between the stops of this CSV. If not explicit travel time matrix for this CSV
+stop file is created, then MATSim will generate one itself.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;By default, generating the stops CSV file for this router is enabled. So, whenever any public transport infrastructure is persisted/converted, this file is created (unless it is explicitly switched off)&lt;/p&gt;
+&lt;p&gt;By default, generating the stops CSV file for this router is enabled. So, whenever any public transport infrastructure
+is persisted/converted, this file is created (unless it is explicitly switched off, or a schedule is being produced)&lt;/p&gt;
 &lt;/blockquote&gt;
 
       </description>
@@ -326,37 +523,49 @@ are defined in relation to the service network:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;In this section of the manual we discuss the Open street Map (OSM) XML and PBF format. The OSM parser requires a local file (XML or PBF) as input. Use for example &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Osmosis&#34;&gt;Osmosis&lt;/a&gt; to extract such a file from the cloud based on a predetermined bounding box.&lt;/p&gt;
+        &lt;p&gt;In this section of the manual we discuss the Open street Map (OSM) XML and PBF format.
+The OSM parser requires a local file (XML or PBF) as input. Use for example &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Osmosis&#34;&gt;Osmosis&lt;/a&gt;
+to extract such a file from the cloud based on a predetermined bounding box.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Data Format&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;File type&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Network&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Zoning&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Demands&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Python support&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Java support&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Status&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Network&lt;/th&gt;
+&lt;th&gt;(Public Transport) Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Demands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Python&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Java&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Open Street Map&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;/&lt;code&gt;PBF&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Supported&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;input/osm&#34;&gt;Open Street Map&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;/&lt;code&gt;PBF&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Supported&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Read&lt;/strong&gt; (platforms/poles only)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt; (No ODs)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;osm-and-planit&#34;&gt;OSM and PLANit&lt;/h2&gt;
-&lt;p&gt;Any OSM XML or PBF file can be converted into a PLANit memory model using the available readers. The resulting PLANit memory model can then be used to conduct an assignment (Java) or persist into another data format, e.g., PLANit XML, MATSim, etc. (Java, Python).&lt;/p&gt;
+&lt;h2 id=&#34;osm-gtfs-and-planit&#34;&gt;OSM (GTFS) and PLANit&lt;/h2&gt;
+&lt;p&gt;Any OSM XML or PBF file can be converted into a PLANit memory model using the available readers.
+The resulting PLANit memory model can then be used to conduct an assignment (Java) or persist into another data format,
+e.g., PLANit XML, MATSim, etc. (Java, Python).&lt;/p&gt;
+&lt;p&gt;The user has the option to either just extract a network, or supplement this with public transport infrastructure
+(poles, platforms, stations) available in the OSM data. Since the OSM data generally does not have good quality public transport
+service information, this is not supported, instead it is advised to ingest public transport services by utilising a GTFS reader
+which can be run after the OSM parser and which is capable of supplementing the network and stops with routed pt services and
+the underlying service network.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Examples on how to perform a network conversion from OSM to other data formats (PLANit, MATSim, etc.) are provided in the respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
+&lt;p&gt;Examples on how to perform a network conversion from OSM to other data formats (PLANit, MATSim, etc.)
+are provided in the respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
 &lt;p&gt;OSM has a detailed description of its XML and PBF formats available on their own Wiki:&lt;/p&gt;
@@ -382,65 +591,129 @@ are defined in relation to the service network:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;#osm-relations&#34;&gt;Relations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;osm-nodes&#34;&gt;OSM Nodes&lt;/h3&gt;
-&lt;p&gt;These are point locations with additional tags that identify what this point represents. For example, this can be a tree, but also an intersection, it can be a landmark, or a train station.&lt;/p&gt;
+&lt;p&gt;These are point locations with additional tags that identify what this point represents. For example, this can be a tree,
+but also an intersection, it can be a landmark, or a train station.&lt;/p&gt;
 &lt;h3 id=&#34;osm-ways&#34;&gt;OSM Ways&lt;/h3&gt;
-&lt;p&gt;These are either lines (open) or polygons (closed) with additional tags that identify what this way represents. For example, this can be a road, but also a building, it can be a train platform, but also a border.&lt;/p&gt;
+&lt;p&gt;These are either lines (open) or polygons (closed) with additional tags that identify what this way represents.
+For example, this can be a road, but also a building, it can be a train platform, but also a border.&lt;/p&gt;
 &lt;h3 id=&#34;osm-relations&#34;&gt;OSM Relations&lt;/h3&gt;
-&lt;p&gt;These are groups of OSM entities, where each member can either be an OSM node, OSM way, or OSM relation. For example, this can be a station with multiple platforms, or a group of buildings that belong together etc.&lt;/p&gt;
+&lt;p&gt;These are groups of OSM entities, where each member can either be an OSM node, OSM way, or OSM relation.
+For example, this can be a station with multiple platforms, or a group of buildings that belong together etc.&lt;/p&gt;
 &lt;h2 id=&#34;osm-road-network-support&#34;&gt;OSM Road Network Support&lt;/h2&gt;
-&lt;p&gt;In OSM the road network is represented by nodes and ways, where each way is tagged with &lt;code&gt;highway=&amp;lt;type&amp;gt;&lt;/code&gt;. A way consists of two or more nodes. These nodes can represent the shape of the internal road, or intersections.&lt;/p&gt;
-&lt;p&gt;PLANit supports all meaningful highway types and allows the user to configure which types to parse and which types to ignore. This way you can decide to parse a bicycle network, pedestrian network, bus, or main arterial private car network, or a combination of the former.&lt;/p&gt;
+&lt;p&gt;In OSM the road network is represented by nodes and ways, where each way is tagged with &lt;code&gt;highway=&amp;lt;type&amp;gt;&lt;/code&gt;.
+A way consists of two or more nodes. These nodes can represent the shape of the internal road, or intersections.&lt;/p&gt;
+&lt;p&gt;PLANit supports all meaningful highway types and allows the user to configure which types to parse and which types to ignore.
+This way you can decide to parse a bicycle network, pedestrian network, bus, or main arterial private car network,
+or a combination of the former.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If you activate &lt;code&gt;highway=footway&lt;/code&gt; but have the &lt;code&gt;pedestrian&lt;/code&gt; mode deactivated, footways will still not appear in the final result (unless default that we do not parse highway types without activated modes is overwritten). So, make sure that for your desired result the combination of activated modes, and way types makes sense.&lt;/p&gt;
+&lt;p&gt;If you activate &lt;code&gt;highway=footway&lt;/code&gt; but have the &lt;code&gt;pedestrian&lt;/code&gt; mode deactivated, footways will still not appear in the
+final result (unless default that we do not parse highway types without activated modes is overwritten).
+So, make sure that for your desired result the combination of activated modes, and way types makes sense.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;More information on the &lt;code&gt;highway=&lt;/code&gt; tag can be found under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:highway&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;topological-vs-non-topological&#34;&gt;Topological vs Non-topological&lt;/h3&gt;
-&lt;p&gt;OSM networks are not topological in the sense that OSM ways may intersect but at the point of intersection they either have no node, or they do have a node but the same OSM way continues beyond the intersection point. PLANit requires topological networks where each discontinuity in the road infrastructure leads to a node (intersection) and a new road (link) starts beyond the discontinuity.&lt;/p&gt;
-&lt;p&gt;Therefore, The OSM parser will automatically split all identified locations where OSM ways intersect in separate links. Each link will get its own unique PLANit id, however it will retain the OSM way id as its external id, so it can be identified after the fact if needed.&lt;/p&gt;
+&lt;p&gt;OSM networks are not topological in the sense that OSM ways may intersect but at the point of intersection they either
+have no node, or they do have a node but the same OSM way continues beyond the intersection point. PLANit requires
+topological networks where each discontinuity in the road infrastructure leads to a node (intersection) and a new
+road (link) starts beyond the discontinuity.&lt;/p&gt;
+&lt;p&gt;Therefore, The OSM parser will automatically split all identified locations where OSM ways intersect in separate links.
+Each link will get its own unique PLANit id, however it will retain the OSM way id as its external id, so it can be
+identified after the fact if needed.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If two OSM ways intersect but do not share a node it is assumed they are non-level crossings and PLANit will not split the links (tunnels, bridges etc.)&lt;/p&gt;
+&lt;p&gt;If two OSM ways intersect but do not share a node it is assumed they are non-level crossings and PLANit will not
+split the links (tunnels, bridges etc.)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The PLANit parser is quite sophisticated in that it can handle complex OSM way intersects, even to the point that it correctly disentangles self-intersection OSM ways. This sometimes occurs, especially for footways it is quite common.&lt;/p&gt;
+&lt;p&gt;The PLANit parser is quite sophisticated in that it can handle complex OSM way intersects, even to the point that
+it correctly disentangles self-intersection OSM ways. This sometimes occurs, especially for footways it is quite common.&lt;/p&gt;
 &lt;h2 id=&#34;osm-rail-network-support&#34;&gt;OSM Rail Network Support&lt;/h2&gt;
-&lt;p&gt;In OSM the rail network is represented by nodes and ways, just as roads, where each way is tagged with &lt;code&gt;railway=&amp;lt;type&amp;gt;&lt;/code&gt;. A way consists of two or more nodes. These nodes can represent the shape of the internal railway, or intersections/switches.&lt;/p&gt;
-&lt;p&gt;PLANit supports all meaningful railway types and allows the user to configure which types to parse and which types to ignore. This way you can decide to parse a tram network, lightrail network, rail, or even miniature railways, or a combination of the former.&lt;/p&gt;
-&lt;p&gt;Similar to road networks, the parser will split an OSM railway whenever it intersects with another OSM way, see &lt;a href=&#34;#topological-vs-non-topological&#34;&gt;topological vs non-topological&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In OSM the rail network is represented by nodes and ways, just as roads, where each way is tagged with &lt;code&gt;railway=&amp;lt;type&amp;gt;&lt;/code&gt;.
+A way consists of two or more nodes. These nodes can represent the shape of the internal railway, or intersections/switches.&lt;/p&gt;
+&lt;p&gt;PLANit supports all meaningful railway types and allows the user to configure which types to parse and which types to ignore.
+This way you can decide to parse a tram network, lightrail network, rail, or even miniature railways, or a combination of the former.&lt;/p&gt;
+&lt;p&gt;Similar to road networks, the parser will split an OSM railway whenever it intersects with another OSM way,
+see &lt;a href=&#34;#topological-vs-non-topological&#34;&gt;topological vs non-topological&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;More information on the &lt;code&gt;railway=&lt;/code&gt; tag can be found under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:railway&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:railway&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;osm-public-transport-support&#34;&gt;OSM Public transport support&lt;/h2&gt;
-&lt;p&gt;The OSM parser currently supports parsing of &lt;strong&gt;public transport infrastructure&lt;/strong&gt;, but &lt;strong&gt;not (yet) public transport services and/or lines&lt;/strong&gt;. This means that stations, platforms, bus stops, stop locations, and stop areas are all parseable, but no information on the lines utilising this infrastructure or their schedules/frequencies is available.&lt;/p&gt;
+&lt;p&gt;The OSM parser currently supports parsing of &lt;strong&gt;public transport infrastructure&lt;/strong&gt;, but &lt;strong&gt;not public transport services
+and/or lines&lt;/strong&gt;. This means that stations, platforms, bus stops, stop locations, and stop areas are all parsed,
+but no information on the lines utilising this infrastructure or their schedules/frequencies is available.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Support for lines/services might be added in future versions.&lt;/p&gt;
+&lt;p&gt;Support for lines/services is available through the separate GTFS parser.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;In OSM there exist various iterations of tagging schemes to identify public transport (pt) infrastructure. There are two dominant schemes, both of which are supported by this parser, see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Public_transport&#34;&gt;https://wiki.openstreetmap.org/wiki/Public_transport&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;In OSM there exist various iterations of tagging schemes to identify public transport (pt) infrastructure.
+There are two dominant schemes, both of which are supported by this parser, see also
+&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Public_transport&#34;&gt;https://wiki.openstreetmap.org/wiki/Public_transport&lt;/a&gt; :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Public transport scheme v1 (Ptv1), a.k.a. original public transport schema&lt;/li&gt;
 &lt;li&gt;Public transport scheme v2 (Ptv2), a.k.a. new public transport schema&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Ptv2 is backwards compatible with Ptv1. The OSM parser attempts to parse pt infrastructure as Ptv2 if possible (since it is more comprehensive and less ambiguous), but if insufficient tagging is available, it falls back onto Ptv1 parsing. alternatively, if incomplete Ptv2 features are identified, but additional Ptv1 tags are available to provide context, the parser will attempt to complete the parsing action using both sources of information.&lt;/p&gt;
-&lt;p&gt;The main difference between Ptv1 and Ptv2 is that Ptv1 largely identifies pt by value tags for existing keys, e.g. &lt;code&gt;highway=bus_stop&lt;/code&gt;, or &lt;code&gt;railway=station&lt;/code&gt;, whereas Ptv2 has its own dedicated key &lt;code&gt;public_transport=&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ptv2 is backwards compatible with Ptv1. The OSM parser attempts to parse pt infrastructure as Ptv2 if possible
+(since it is more comprehensive and less ambiguous), but if insufficient tagging is available, it falls
+back onto Ptv1 parsing. alternatively, if incomplete Ptv2 features are identified, but additional Ptv1 tags are
+available to provide context, the parser will attempt to complete the parsing action using both sources of information.&lt;/p&gt;
+&lt;p&gt;The main difference between Ptv1 and Ptv2 is that Ptv1 largely identifies pt by value tags for existing keys,
+e.g. &lt;code&gt;highway=bus_stop&lt;/code&gt;, or &lt;code&gt;railway=station&lt;/code&gt;, whereas Ptv2 has its own dedicated key &lt;code&gt;public_transport=&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;transfer-zones-and-connectoids&#34;&gt;Transfer Zones And Connectoids&lt;/h3&gt;
-&lt;p&gt;The OSM parser supports all common OSM public transport infrastructure entities such as platforms, platform_edges, bus_stops, and stations, that directly relate to the transfer from one mode to another. To enable this functionality the user must use an &lt;code&gt;INTERMODAL&lt;/code&gt; reader (representing the ability to transfer between modes within a trip), rather than the simpler &lt;code&gt;NETWORK&lt;/code&gt; reader. All parsed pt infrastructure is converted into transfer zones (geographic locations where intermodal transfers occur, e.g., platforms, stop poles) and connectoids (the location where a mode from a physical network can access the transfer zone, e.g., vehicle stop locations).&lt;/p&gt;
-&lt;p&gt;Public Transport infrastructure such as bus_stops, platforms, stations, generally reside next to the network and not on the network. While there are exceptions and frequent tagging errors (that the parser supports/identifies), the connectoid to the road network is typically achieved via the nearest node, or via explicit references between a road network node (stop_location) and the waiting area (platform, pole etc.). The OSM parser utilises the explicit references where present, adopts the nearest node strategy otherwise, or alternatively let&amp;rsquo;s the user override the mapping between waiting area and stop_location manually if desired.&lt;/p&gt;
+&lt;p&gt;The OSM parser supports all common OSM public transport infrastructure entities such as platforms,
+platform_edges, bus_stops, and stations, that directly relate to the transfer from one mode to another.
+To enable this functionality the user must use an &lt;code&gt;INTERMODAL&lt;/code&gt; reader
+(representing the ability to transfer between modes within a trip), rather than the simpler &lt;code&gt;NETWORK&lt;/code&gt; reader.
+All parsed pt infrastructure is converted into transfer zones (geographic locations where intermodal transfers occur,
+e.g., platforms, stop poles) and connectoids (the location where a mode from a physical network can access the transfer
+zone, e.g., vehicle stop locations).&lt;/p&gt;
+&lt;p&gt;Public Transport infrastructure such as bus_stops, platforms, stations, generally reside next to the
+network and not on the network. While there are exceptions and frequent tagging errors (that the parser supports/identifies),
+the connectoid to the road network is typically achieved via the nearest node, or via explicit references between a
+road network node (stop_location) and the waiting area (platform, pole etc.). The OSM parser utilises the explicit references
+where present, adopts the nearest node strategy otherwise, or alternatively let&amp;rsquo;s the user override the mapping between
+waiting area and stop_location manually if desired.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OSM &lt;code&gt;stop_location&lt;/code&gt; To PLANit &lt;code&gt;LinkSegment&lt;/code&gt;&lt;/strong&gt;
-A relation between a waiting area and stop_location in PLANit is registered on the connectoid. Each connectoid (stop_location) can have access to one or more transfer zones (waiting areas), and for each relation it has a dedicated list of modes that it allows for this transfer, all of which is parsed or derived from the available OSM tagging. The more detailed the tagging the more precise this information is. Finally, each connectoid is related to the physical network by referring to a particular link segment in PLANit, based on the OSM way the stop_location resides on. However, since a stop_location in OSM is a node, and a link segment in PLANit is not, the parser infers which link segment upstream to the (stop_location) node is the most likely choice. If something unusual is found, it will be logged for the user to make the right decision via the configuration.&lt;/p&gt;
+A relation between a waiting area and stop_location in PLANit is registered on the connectoid.
+Each connectoid (stop_location) can have access to one or more transfer zones (waiting areas),
+and for each relation it has a dedicated list of modes that it allows for this transfer,
+all of which is parsed or derived from the available OSM tagging. The more detailed the tagging the more precise this
+information is. Finally, each connectoid is related to
+the physical network by referring to a particular link segment in PLANit, based on the OSM way the stop_location
+resides on. However, since a stop_location in OSM is a node, and a link segment in PLANit is not, the parser infers
+which link segment upstream to the (stop_location) node is the most likely choice. If something unusual is found,
+it will be logged for the user to make the right decision via the configuration.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It is recommended to carefully check the logs for warnings and other information to determine if manual override action is required. Especially in public transport tagging many user errors exist due to the complexity of the tagging scheme. It is therefore likely that some action is required on the user&amp;rsquo;s part to achieve the desired result.&lt;/p&gt;
+&lt;p&gt;It is recommended to carefully check the logs for warnings and other information to determine if
+manual override action is required. Especially in public transport tagging many user errors exist due to the complexity
+of the tagging scheme. It is therefore likely that some action is required on the user&amp;rsquo;s part to achieve the desired result.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;OSM &lt;code&gt;station&lt;/code&gt; to PLANit&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;OSM nodes tagged with &lt;code&gt;railway=station&lt;/code&gt; are complex to parse because they can represent:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Just the name of a station, where the station is defined in Ptv2 format separately in the &lt;em&gt;same&lt;/em&gt; stop_area&lt;/li&gt;
 &lt;li&gt;Just the name of a station, where the station is defined in Ptv2 format separately in a &lt;em&gt;nearby&lt;/em&gt; stop_area&lt;/li&gt;
-&lt;li&gt;A stand alone train station, where the actual platforms are not available yet, due to lack of detail&lt;/li&gt;
+&lt;li&gt;A stand-alone train station, where the actual platforms are not available yet, due to lack of detail&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In the first case, the OSM parser will simply identify the station name and apply it to all entities in the stop_area if they do not have a name yet, and do nothing else. In the second case, the OSM parser will search for nearby platforms/stop_areas it likely needs to match the station to. If it finds one, it reverts to the action of bullet one, if it does not, it assumes the action for bullet three. In the last case, we assume there is a station but no detail on where platforms are. Therefore, the OSM parser will look for nearby train tracks of supported rail modes. If it finds any it will attempt to create (virtual) platforms on the nearest node (within threshold) if that seems feasible. At most it creates two platforms this way on nearby parallel train lines. If it cannot find any, it will log a warning to the user that the station could not be parsed.&lt;/p&gt;
+&lt;p&gt;In the first case, the OSM parser will simply identify the station name and apply it to all entities in the stop_area
+if they do not have a name yet, and do nothing else. In the second case, the OSM parser will search for nearby
+platforms/stop_areas it likely needs to match the station to. If it finds one, it reverts to the action of bullet one,
+if it does not, it assumes the action for bullet three. In the last case, we assume there is a station but no detail on
+where platforms are. Therefore, the OSM parser will look for nearby train tracks of supported rail modes. If it finds any
+it will attempt to create (virtual) platforms on the nearest node (within threshold) if that seems feasible. At most
+it creates two platforms this way on nearby parallel train lines. If it cannot find any, it will log a warning to the
+user that the station could not be parsed.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OSM Bus_stop location (on wrong side of the road)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Non rail based modes are assumed to have access to passengers only on one side of the vehicle (doors). This means that in left-hand drive countries all such stops, like bus_stop, should be located on the left-hand side of the road, whereas on right-hand drive countries they should reside on the right-hand side. The OSM parser verifies for each bus_stop if this is the case. This is a common tagging error source and The OSM parser will generate warning when a bus_stop is found that is located on the alleged wrong side of the road. To address any such tagging errors, explore the location of the stop in OSM and then overwrite the mapping explicitly if the stop should be kept (sometimes it is an invalid stop, sometimes due to the location it is mapped to the wrong waiting area, e.g., waiting area in other direction).&lt;/p&gt;
+&lt;p&gt;Non rail based modes are assumed to have access to passengers only on one side of the vehicle (doors).
+This means that in left-hand drive countries all such stops, like bus_stop, should be located on the left-hand side
+of the road, whereas on right-hand drive countries they should reside on the right-hand side. The OSM parser verifies
+for each bus_stop if this is the case. This is a common tagging error source and The OSM parser will generate warning
+when a bus_stop is found that is located on the alleged wrong side of the road. To address any such tagging errors,
+explore the location of the stop in OSM and then overwrite the mapping explicitly if the stop should be kept
+(sometimes it is an invalid stop, sometimes due to the location it is mapped to the wrong waiting area, e.g., waiting
+area in other direction).&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Carefully check all warnings related to this issue to avoid having mappings between the wrong stop_location and waiting area. there is little the parser can do about this, because often these are tagging errors in OSM.&lt;/p&gt;
+&lt;p&gt;Carefully check all warnings related to this issue to avoid having mappings between the wrong stop_location and waiting
+area. there is little the parser can do about this, because often these are tagging errors in OSM.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;parsing-osm-stop_areas&#34;&gt;Parsing OSM Stop_areas&lt;/h3&gt;
-&lt;p&gt;The OSM parser also supports stop_area relations. A stop_area relation groups a number of public transport entities that logically belong together, e.g. train station platforms and their bus_stops. In PLANit a stop_area is converted into a PLANit transfer zone group. All the OSM waiting areas are converted into transfer zones, and registered on the group.&lt;/p&gt;
+&lt;p&gt;The OSM parser also supports stop_area relations. A stop_area relation groups a number of public transport entities that
+logically belong together, e.g. train station platforms and their bus_stops. In PLANit a stop_area is converted into a
+PLANit transfer zone group. All the OSM waiting areas are converted into transfer zones, and registered on the group.&lt;/p&gt;
 &lt;h3 id=&#34;parsing-osm-stations&#34;&gt;Parsing OSM Stations&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The parser does not (yet) support&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
@@ -450,10 +723,20 @@ A relation between a waiting area and stop_location in PLANit is registered on t
 &lt;li&gt;Groups of stop_areas, these are simply ignored&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;osm-mode-support&#34;&gt;OSM Mode Support&lt;/h2&gt;
-&lt;p&gt;OSM supports a number of de-facto standard modes as listed under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:access&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:access&lt;/a&gt;. these modes are mapped to their respective PLANit counterparts. Currently PLANit supports all - arguably meaningful - modes listed (complete list in JavaDoc). By default a number of OSM modes is acivated and a number is deactivated. The user can overwrite these defaults to their liking, to, for example, only consider pedestrians, or bicycles, or cars, or a combination of the former.&lt;/p&gt;
+&lt;p&gt;OSM supports a number of de-facto standard modes as listed under &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:access&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:access&lt;/a&gt;.
+These modes are mapped to their respective PLANit counterparts. Currently, PLANit supports all - arguably meaningful - modes
+listed (complete list in JavaDoc). By default, a number of OSM modes is activated and a number is deactivated.
+The user can overwrite these defaults to their liking, to, for example, only consider pedestrians,
+or bicycles, or cars, or a combination of the former.&lt;/p&gt;
 &lt;h3 id=&#34;link-access-restrictions&#34;&gt;Link Access Restrictions&lt;/h3&gt;
-&lt;p&gt;Each OSM way has defaults regarding what modes it supports, these defaults differ per country as per &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access_restrictions&#34;&gt;https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access_restrictions&lt;/a&gt;. PLANit supports these country specific defaults. It provides out-of-the-box versions for a number of countries and a global default, all of which can be altered by the user if desired.&lt;/p&gt;
-&lt;p&gt;On top of the defaults each OSM way might have additional tags to indicate further restrictions specific to that way. PLANit supports a number of these additional tags and parses them accordingly. For each unique combination of mode access restrictions a PLANit (link segment) type is created in memory. Currently PLANit supports the following access restriction schemes either fully or partially:&lt;/p&gt;
+&lt;p&gt;Each OSM way has defaults regarding what modes it supports, these defaults differ per country as per
+&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access_restrictions&#34;&gt;https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access_restrictions&lt;/a&gt;.
+PLANit supports these country specific defaults. It provides out-of-the-box versions for a number of countries and a
+global default, all of which can be altered by the user if desired.&lt;/p&gt;
+&lt;p&gt;On top of the defaults each OSM way might have additional tags to indicate further restrictions specific to that way.
+PLANit supports a number of these additional tags and parses them accordingly. For each unique combination of mode
+access restrictions a PLANit (link segment) type is created in memory. Currently, PLANit supports the following access
+restriction schemes either fully or partially:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Mode direct, e.g. &lt;code&gt;bicycle=yes bus=yes&lt;/code&gt; etc.&lt;/li&gt;
 &lt;li&gt;Oneway restrictions &lt;code&gt;oneway=yes bus=yes&lt;/code&gt; etc.&lt;/li&gt;
@@ -463,33 +746,223 @@ A relation between a waiting area and stop_location in PLANit is registered on t
 &lt;li&gt;Lanes:mode scheme (a.k.a. Lane count information), e.g. &lt;code&gt;lanes:psv:forward=2, lanes:psv=4&lt;/code&gt; etc.&lt;/li&gt;
 &lt;li&gt;Mode:lanes scheme (a.k.a. Access information per lane), e.g. &lt;code&gt;psv:lanes:forward=2, psv:lanes=4&lt;/code&gt; etc.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;While the &amp;ldquo;mode:Lanes&amp;rdquo; scheme potentially provides per lane information on access for a mode, PLANit currently only identifies if any lane is accessible to the mode (implicitly assumed if this tag is available for the mode) and if so, the mode is allowed on the road. The same holds for the &amp;ldquo;Lanes: mode&amp;rdquo; scheme, since this tag is only available when at least one lane is available to that mode, hence, the mode can access that road. For the one way restrictions and bus way scheme the parse does interpret the values as they provide additional information on mode access, either in what direction or for other modes than the key describe.&lt;/p&gt;
+&lt;p&gt;While the &amp;ldquo;mode:Lanes&amp;rdquo; scheme potentially provides per lane information on access for a mode, PLANit currently only
+identifies if any lane is accessible to the mode (implicitly assumed if this tag is available for the mode) and if so,
+the mode is allowed on the road. The same holds for the &amp;ldquo;Lanes: mode&amp;rdquo; scheme, since this tag is only available when at
+least one lane is available to that mode, hence, the mode can access that road. For the one way restrictions and bus
+way scheme the parse does interpret the values as they provide additional information on mode access, either in what
+direction or for other modes than the key describe.&lt;/p&gt;
 &lt;p&gt;See also:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:access&#34;&gt;https://wiki.openstreetmap.org/wiki/Key:access&lt;/a&gt; (routing-restrictions section)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Bus_lanes&#34;&gt;https://wiki.openstreetmap.org/wiki/Bus_lanes&lt;/a&gt; (example on busway scheme, lanes:mode scheme and mode:lanes scheme)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;PLANit does not yet support&lt;/strong&gt;: Temporal/conditional mode access restrictions, see &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Conditional_restrictions&#34;&gt;https://wiki.openstreetmap.org/wiki/Conditional_restrictions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PLANit does not yet support&lt;/strong&gt;: Temporal/conditional mode access restrictions,
+see &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Conditional_restrictions&#34;&gt;https://wiki.openstreetmap.org/wiki/Conditional_restrictions&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;bounding-box-edges&#34;&gt;Bounding Box Edges&lt;/h2&gt;
-&lt;p&gt;The OSM parser will attempt to parse as much from the OSM infrastructrue as possible. However around the bounding box edges of the input file, it is likely that roads/tracks/platforms/stations are incomplete due to partly falling outside of the bounding box. If so, the parser will attempt to salve the OSM entity and provide feedback on whether this was successful or not.&lt;/p&gt;
+&lt;p&gt;The OSM parser will attempt to parse as much from the OSM infrastructure as possible. However around the bounding box
+edges of the input file, it is likely that roads/tracks/platforms/stations are incomplete due to partly falling outside
+the bounding box. If so, the parser will attempt to salve the OSM entity and provide feedback on whether this was successful or not.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;We recommend checking the logs to determine if the result is satisfactory or not and if needed exclude the compromised entity from parsing if so required.&lt;/p&gt;
+&lt;p&gt;We recommend checking the logs to determine if the result is satisfactory or not and if needed exclude
+the compromised entity from parsing if so required.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;logging-support&#34;&gt;Logging support&lt;/h2&gt;
-&lt;p&gt;the OSM parser will log information, warnings, and other useful information during parsing. For the OSM reader this logging is particularly extensive to inform the user of any issues. It is very likely that due to tagging mistakes some of the OSM features could not be parsed as expected.&lt;/p&gt;
-&lt;p&gt;The OSM parser has a number of salvage algorithms built-in to attempt to address the most common tagging errors, especially with respect to public transport. For each of the issues found PLANit will inform the user if the OSM entity has been:&lt;/p&gt;
+&lt;h2 id=&#34;logging-support-and-identifyingcorrecting-tagging-errors&#34;&gt;Logging support and identifying/correcting tagging errors&lt;/h2&gt;
+&lt;p&gt;The OSM parser will log information, warnings, and other useful information during parsing.
+For the OSM reader this logging is particularly extensive to inform the user of any issues. It is very likely that due
+to tagging mistakes some of the OSM features could not be parsed as expected.&lt;/p&gt;
+&lt;p&gt;The OSM parser has a number of salvage algorithms built-in to attempt to address the most common tagging errors,
+especially with respect to public transport. For each of the issues found PLANit will inform the user if the OSM entity has been:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Discarded, e.g., &lt;code&gt;warning DISCARD: &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Savaged, e.g., &lt;code&gt;info SALVAGED: &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Possible bug in the parser or unexpected behaviour e.g., &lt;code&gt;severe &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A &lt;code&gt;DISCARD&lt;/code&gt; message indicates the parser was unable to convert the OSM entity into a valid PLANit entity even though it was expected to. A &lt;code&gt;SALVAGED&lt;/code&gt; message indicates the OSM entity could not be converted the way it was expected to, but the parser was able to derive a likely solution based on context. In both cases it is recommended to verify the result by checking the OSM entities referred to in the &lt;code&gt;DISCARD&lt;/code&gt; and &lt;code&gt;SALVAGED&lt;/code&gt; messages.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;DISCARD&lt;/code&gt; message indicates the parser was unable to convert the OSM entity into a valid PLANit entity even though it
+was expected to. A &lt;code&gt;SALVAGED&lt;/code&gt; message indicates the OSM entity could not be converted the way it was expected to,
+but the parser was able to derive a likely solution based on context. In both cases it is recommended to verify
+the result by checking the OSM entities referred to in the &lt;code&gt;DISCARD&lt;/code&gt; and &lt;code&gt;SALVAGED&lt;/code&gt; messages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can quickly have a look at an OSM way in OSM via &lt;a href=&#34;https://www.openstreetmap.org/way/485842787&#34;&gt;https://www.openstreetmap.org/way/485842787&lt;/a&gt; (using some way id)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can quickly have a look at an OSM way in OSM via &lt;a href=&#34;https://www.openstreetmap.org/node/5397680278&#34;&gt;https://www.openstreetmap.org/node/5397680278&lt;/a&gt; (using some node id)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Shape Data format</title>
+      <link>http://www.goplanit.org/docs/inputoutput/input/geoio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.goplanit.org/docs/inputoutput/input/geoio/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the Shape file format in the context of the PLANit GeoIO exporter.&lt;/p&gt;
+&lt;p&gt;The GeoIO exporter provides a way to export GIS supporting PLANit inputs (network, zoning, service network, routed services)
+to a GIS Shape file for external analysis, in, for example, &lt;a href=&#34;https://qgis.org/en/site/&#34;&gt;QGIS&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For now, we only export to shape files, but in the future this is to be extended to also support other formats such as geopackages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Status&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Network&lt;/th&gt;
+&lt;th&gt;(Public Transport) Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Demands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Python&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Java&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Shape files&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;SHAPE&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;prototype&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Write&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;shape-files-and-planit&#34;&gt;SHAPE files and PLANit&lt;/h2&gt;
+&lt;p&gt;Any existing PLANit input with GIS information can be persisted as a shape file using the (GeoIO) shape file writer. As this
+writer is tailor-made for PLANit, each of these main components can be exported on a 1:1 basis. Currently, the following PLANit components
+can be exported:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PLANit physical network&lt;/li&gt;
+&lt;li&gt;PLANit zoning (ODs and Transfer zones)
+&lt;ul&gt;
+&lt;li&gt;PLANit virtual network (Optional):
+&lt;ul&gt;
+&lt;li&gt;Connectoids,&lt;/li&gt;
+&lt;li&gt;Connectoid edges,&lt;/li&gt;
+&lt;li&gt;Connectoid edge segments)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PLANit service network&lt;/li&gt;
+&lt;li&gt;PLANit routed services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Examples on how to export PLANit component using this exporter are provided in the
+respective PLANit-Python and PLANit-Java reference sections of this manual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;Shape files are a well-known standard in exporting GIS supporting data for spatial analysis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Shapefile&#34;&gt;Shape file format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With respect to PLANit, this page details what our GTFS reader does and does not support with respect to the data
+available in a typical GTFS file in the outline below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#flat-data&#34;&gt;Flat data vs Hierarchical data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#virtual-network-export&#34;&gt;Virtual network export&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;flat-data&#34;&gt;Flat data&lt;/h2&gt;
+&lt;p&gt;Shape files are partitioned into layers, where each layer has entities with spatial information and additional attributes.
+The main limitation of GIS layers such as Shape files is their lack of hierarchy or enforced structure. This means that
+there is no relation between a node id present as an attribute on a link in the link layer and the node with that same id
+on the node layer. Since networks in PLANit are hierarchical and use typing information, e.g., a link has a type where a
+type holds common properties, this information has to be repeated on every single link rather than just provide the type.&lt;/p&gt;
+&lt;p&gt;As a result of this flat structure, the shape files produced by the Shape exporter are comparatively large and do contain
+a lot of duplicate information. This however, is preferred over leaving out information, e.g., only including link type = 5
+would render it impossible to identify what properties this link type has because a link type in itself cannot be rendered
+spatially and therefore is not included in its own spatial layer.&lt;/p&gt;
+&lt;h2 id=&#34;virtual-network-export&#34;&gt;Virtual-network export&lt;/h2&gt;
+&lt;p&gt;One special feature of the Shape exporter is that is also allows for exporting the virtual network. The virtual network
+is a network that connects the physical network to the zoning by means of edges, and edge segments between the OD zones and
+transfer zones, and their connectoids, respectively (in a traditional context, these would be the connector links). This
+option can be switched on or off, but provides for a good way to visualise both network, zoning, and the interactions between the two.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: TNTP Data format (XML)</title>
+      <link>http://www.goplanit.org/docs/inputoutput/input/tntp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.goplanit.org/docs/inputoutput/input/tntp/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this section of the manual we discuss the &lt;a href=&#34;https://github.com/bstabler/TransportationNetworks&#34;&gt;TNTP&lt;/a&gt; (Transportation Networks) format in
+the context of PLANit supporting parsing this format.&lt;/p&gt;
+&lt;p&gt;This data format is specifically designed to provide a simple format for traditional (static) traffic assignment applications. It has a
+GitHub page: &lt;a href=&#34;https://github.com/bstabler/TransportationNetworks&#34;&gt;https://github.com/bstabler/TransportationNetworks&lt;/a&gt; with a number of predefined networks that can readily be used, some of them providing trip matrices as well.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Data Format&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Status&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Network&lt;/th&gt;
+&lt;th&gt;(Public Transport) Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Zoning&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Demands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Python&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Java&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/bstabler/TransportationNetworks&#34;&gt;TNTP&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;ASCII&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;prototype&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;YES&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;tntp-and-planit&#34;&gt;TNTP and PLANit&lt;/h2&gt;
+&lt;p&gt;A TNTP to PLANit parser is supported that can be configured to parse a good number of the networks provided in this format.
+The main difficulty with this format is that it does not prescribe the units used, nor the order of data in the provided files. This
+will always require manual intervention. In our case, the user has to configure this in the settings section of the TNTP parser.&lt;/p&gt;
+&lt;p&gt;The TNTP parsers that are supported can perform the following conversions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TNTP trips to PLANit demands&lt;/li&gt;
+&lt;li&gt;TNTP network/node files to PLANit (infrastructure) network&lt;/li&gt;
+&lt;li&gt;TNTP network/trips to PLANit zoning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;TNTP is an open source format for which a detailed description is available on their github page:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bstabler/TransportationNetworks#readme&#34;&gt;TNTP format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With respect to PLANit, this page details what our TNTP reader(s) support with respect to the data
+available in a typical TNTP network/trips file(s) in the outline below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#mode-support&#34;&gt;Mode support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#unit-support&#34;&gt;Unit support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#column-configuration&#34;&gt;Column configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mode-support&#34;&gt;Mode support&lt;/h2&gt;
+&lt;p&gt;TNTP is designed for private transport (car) assignment. Hence, PLANit will auto-activate the predefined mode car when
+parsing a TNTP network.&lt;/p&gt;
+&lt;h2 id=&#34;unit-support&#34;&gt;Unit support&lt;/h2&gt;
+&lt;p&gt;TNTP networks are not always provided in the same units. Therefore, the TNTP parser requires the user to configure the
+units to align with the units in the TNTP file, such that they can be converted appropriately. Options for this are provided
+on the parser settings.&lt;/p&gt;
+&lt;h2 id=&#34;column-configuration&#34;&gt;Column configuration&lt;/h2&gt;
+&lt;p&gt;TNTP networks do not enforce a particular order in which the columns (it is a CSV like format) are to be provided. Therefore,
+this differs from network to network. To ensure the networks can be parsed appropriately, the user can configure the
+column order as part of the settings in the parser.&lt;/p&gt;
 
       </description>
     </item>

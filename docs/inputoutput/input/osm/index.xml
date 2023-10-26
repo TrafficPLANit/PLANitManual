@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PLANit – Open Street Map Data format (XML/PBF)</title>
+    <title> – Open Street Map Data format (XML/PBF)</title>
     <link>http://www.goplanit.org/docs/inputoutput/input/osm/</link>
-    <description>Recent content in Open Street Map Data format (XML/PBF) on PLANit</description>
+    <description>Recent content in Open Street Map Data format (XML/PBF) on </description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/osm/index.xml" rel="self" type="application/rss+xml" />
     
