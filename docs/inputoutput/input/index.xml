@@ -542,7 +542,7 @@ to extract such a file from the cloud based on a predetermined bounding box.&lt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;input/osm&#34;&gt;Open Street Map&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.openstreetmap.org&#34;&gt;Open Street Map&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;XML&lt;/code&gt;/&lt;code&gt;PBF&lt;/code&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Supported&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Read&lt;/strong&gt;&lt;/td&gt;
