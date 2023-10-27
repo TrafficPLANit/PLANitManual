@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – PLANit-Java manual</title>
-    <link>http://www.goplanit.org/docs/java/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/java/</link>
     <description>Recent content in PLANit-Java manual on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/java/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/java/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Getting Started</title>
-      <link>http://www.goplanit.org/docs/java/getting-started/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/java/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/java/getting-started/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/java/getting-started/</guid>
       <description>
         
         
@@ -400,10 +400,10 @@ More information on this can be found under the &lt;a href=&#34;../reference/out
     
     <item>
       <title>Docs: Examples</title>
-      <link>http://www.goplanit.org/docs/java/examples/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/java/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/java/examples/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/java/examples/</guid>
       <description>
         
         
@@ -437,24 +437,24 @@ examples that do include public transport services&lt;/p&gt;
     
     <item>
       <title>Docs: PLANit Javadoc</title>
-      <link>http://www.goplanit.org/docs/java/javadoc/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/java/javadoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/java/javadoc/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/java/javadoc/</guid>
       <description>
         
         
-        &lt;p&gt;The PLANit-Java Javadocs can be found &lt;a href=&#34;../../javadoc&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;The PLANit-Java Javadocs can be found &lt;a href=&#34;../../../javadoc&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Downloads</title>
-      <link>http://www.goplanit.org/docs/java/download/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/java/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/java/download/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/java/download/</guid>
       <description>
         
         

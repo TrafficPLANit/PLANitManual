@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – TntpNetworkReaderSettings</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/</link>
     <description>Recent content in TntpNetworkReaderSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .set_capacity_period(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_capacity_period&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_capacity_period&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_capacity_period&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_capacity_period&#43;/</guid>
       <description>
         
         
@@ -78,10 +78,10 @@
     
     <item>
       <title>Docs: .set_default_maximum_speed(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_default_max_speed&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_default_max_speed&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_default_max_speed&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_default_max_speed&#43;/</guid>
       <description>
         
         
@@ -133,10 +133,10 @@ separately.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_free_flow_travel_time_units(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_fftt_units&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_fftt_units&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_fftt_units&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_fftt_units&#43;/</guid>
       <description>
         
         
@@ -188,10 +188,10 @@ The time unit is defined in the custom TNTP &lt;a href=&#34;../../../enums/timeu
     
     <item>
       <title>Docs: .set_length_units(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_length_units&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_length_units&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_length_units&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_length_units&#43;/</guid>
       <description>
         
         
@@ -242,10 +242,10 @@ The time unit is defined in the custom TNTP &lt;a href=&#34;../../../enums/timeu
     
     <item>
       <title>Docs: .set_network_file_columns(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_cols&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_cols&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_cols&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_cols&#43;/</guid>
       <description>
         
         
@@ -308,10 +308,10 @@ information is expected (zero base).&lt;/p&gt;
     
     <item>
       <title>Docs: .set_network_file(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_file&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_file&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_file&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_network_file&#43;/</guid>
       <description>
         
         
@@ -362,10 +362,10 @@ information is expected (zero base).&lt;/p&gt;
     
     <item>
       <title>Docs: .set_node_coordinate_file(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_node_coordinate_file&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_node_coordinate_file&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_node_coordinate_file&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_node_coordinate_file&#43;/</guid>
       <description>
         
         
@@ -417,10 +417,10 @@ This is a mandatory setting the user is expected to set.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_speed_units(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_speed_units&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_speed_units&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_speed_units&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/tnrs_set_speed_units&#43;/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Input Data formats</title>
-    <link>http://www.goplanit.org/docs/inputoutput/input/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/</link>
     <description>Recent content in Input Data formats on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: PLANit Default Input Data format (XML)</title>
-      <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/inputoutput/input/planitdefault/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/</guid>
       <description>
         
         
@@ -270,10 +270,10 @@ an OpenStreetMap file and convert it to a PLANit network of which a number of ex
     
     <item>
       <title>Docs: GTFS Data format (XML)</title>
-      <link>http://www.goplanit.org/docs/inputoutput/input/gtfs/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/gtfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/inputoutput/input/gtfs/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/gtfs/</guid>
       <description>
         
         
@@ -419,10 +419,10 @@ OSM, then the external id of the links can be pasted into the OSM website to fin
     
     <item>
       <title>Docs: MATSim Data format (XML)</title>
-      <link>http://www.goplanit.org/docs/inputoutput/input/matsim/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/matsim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/inputoutput/input/matsim/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/matsim/</guid>
       <description>
         
         
@@ -516,10 +516,10 @@ is persisted/converted, this file is created (unless it is explicitly switched o
     
     <item>
       <title>Docs: Open Street Map Data format (XML/PBF)</title>
-      <link>http://www.goplanit.org/docs/inputoutput/input/osm/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/osm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/inputoutput/input/osm/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/osm/</guid>
       <description>
         
         
@@ -794,10 +794,10 @@ the result by checking the OSM entities referred to in the &lt;code&gt;DISCARD&l
     
     <item>
       <title>Docs: Shape Data format</title>
-      <link>http://www.goplanit.org/docs/inputoutput/input/geoio/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/geoio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/inputoutput/input/geoio/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/geoio/</guid>
       <description>
         
         
@@ -891,10 +891,10 @@ option can be switched on or off, but provides for a good way to visualise both 
     
     <item>
       <title>Docs: TNTP Data format (XML)</title>
-      <link>http://www.goplanit.org/docs/inputoutput/input/tntp/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/tntp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/inputoutput/input/tntp/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/tntp/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Documentation</title>
-    <link>http://www.goplanit.org/docs/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/</link>
     <description>Recent content in Documentation on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .activate_output(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
       <description>
         
         
@@ -76,10 +76,10 @@
     
     <item>
       <title>Docs: .activate(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_activate&#43;/</guid>
       <description>
         
         
@@ -134,10 +134,10 @@
     
     <item>
       <title>Docs: .activate(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_activate&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_activate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_activate&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_activate&#43;/</guid>
       <description>
         
         
@@ -201,10 +201,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_add&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_add&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_add&#43;/</guid>
       <description>
         
         
@@ -257,10 +257,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_add&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_add&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_add&#43;/</guid>
       <description>
         
         
@@ -315,10 +315,10 @@
     
     <item>
       <title>Docs: .add(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_add&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_add&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_add&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_add&#43;/</guid>
       <description>
         
         
@@ -373,10 +373,10 @@
     
     <item>
       <title>Docs: .create_project(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/planit/planit_create_project&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_create_project&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planit/planit_create_project&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_create_project&#43;/</guid>
       <description>
         
         
@@ -432,10 +432,10 @@
     
     <item>
       <title>Docs: .deactivate_output(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
       <description>
         
         
@@ -492,10 +492,10 @@
     
     <item>
       <title>Docs: .deactivate(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_deactivate&#43;/</guid>
       <description>
         
         
@@ -550,10 +550,10 @@
     
     <item>
       <title>Docs: .deactivate(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_deactivate&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_deactivate&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_deactivate&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_deactivate&#43;/</guid>
       <description>
         
         
@@ -609,10 +609,10 @@
     
     <item>
       <title>Docs: .get_last_iteration()</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_last_iteration/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_last_iteration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_last_iteration/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_last_iteration/</guid>
       <description>
         
         
@@ -657,10 +657,10 @@
     
     <item>
       <title>Docs: .get_position_of_output_key_property(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_position_value_property&#43;/</guid>
       <description>
         
         
@@ -736,10 +736,10 @@
     
     <item>
       <title>Docs: .get_position_of_output_value_property(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_position_key_property&#43;/</guid>
       <description>
         
         
@@ -818,10 +818,10 @@
     
     <item>
       <title>Docs: .is_persist_only_final_iteration()</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_is_only_final/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_is_only_final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_is_only_final/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_is_only_final/</guid>
       <description>
         
         
@@ -853,10 +853,10 @@
     
     <item>
       <title>Docs: .is_persist_zero_flow()</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_is_persist_zero_flow/</guid>
       <description>
         
         
@@ -887,10 +887,10 @@
     
     <item>
       <title>Docs: .iterator(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/memory/mof_iterator&#43;/</guid>
       <description>
         
         
@@ -997,10 +997,10 @@
     
     <item>
       <title>Docs: .override_output_property_units(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_overrideopu&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_overrideopu&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_overrideopu&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_overrideopu&#43;/</guid>
       <description>
         
         
@@ -1076,10 +1076,10 @@
     
     <item>
       <title>Docs: .override_output_property_units(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_overrideopu&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_overrideopu&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_overrideopu&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_overrideopu&#43;/</guid>
       <description>
         
         
@@ -1155,10 +1155,10 @@
     
     <item>
       <title>Docs: .override_output_property_units(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_overrideopu&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_overrideopu&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_overrideopu&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_overrideopu&#43;/</guid>
       <description>
         
         
@@ -1225,10 +1225,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove_all/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove_all/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_remove_all/</guid>
       <description>
         
         
@@ -1263,10 +1263,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove_all/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove_all/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_remove_all/</guid>
       <description>
         
         
@@ -1303,10 +1303,10 @@
     
     <item>
       <title>Docs: .remove_all_properties()</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove_all/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_remove_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove_all/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_remove_all/</guid>
       <description>
         
         
@@ -1343,10 +1343,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/link/lc_remove&#43;/</guid>
       <description>
         
         
@@ -1402,10 +1402,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/od/odc_remove&#43;/</guid>
       <description>
         
         
@@ -1462,10 +1462,10 @@
     
     <item>
       <title>Docs: .remove(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_remove&#43;/</guid>
       <description>
         
         
@@ -1522,10 +1522,10 @@
     
     <item>
       <title>Docs: .run()</title>
-      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_run/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_run/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_run/</guid>
       <description>
         
         
@@ -1562,10 +1562,10 @@
     
     <item>
       <title>Docs: .set_csv_directory(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_csv_directory&#43;/</guid>
       <description>
         
         
@@ -1623,10 +1623,10 @@
     
     <item>
       <title>Docs: .set_csv_name_extension(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_csv_extension&#43;/</guid>
       <description>
         
         
@@ -1684,10 +1684,10 @@
     
     <item>
       <title>Docs: .set_csv_name_root(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_csv_prefix&#43;/</guid>
       <description>
         
         
@@ -1745,10 +1745,10 @@
     
     <item>
       <title>Docs: .set_description(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_description&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_description&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_description&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_description&#43;/</guid>
       <description>
         
         
@@ -1806,10 +1806,10 @@
     
     <item>
       <title>Docs: .set_log_settings(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</guid>
       <description>
         
         
@@ -1862,10 +1862,10 @@
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_output_directory&#43;/</guid>
       <description>
         
         
@@ -1926,10 +1926,10 @@
     
     <item>
       <title>Docs: .set_path_id_type(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/path/pc_set_path_id_type&#43;/</guid>
       <description>
         
         
@@ -1984,10 +1984,10 @@
     
     <item>
       <title>Docs: .set_persist_only_final_iteration(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_set_only_final&#43;/</guid>
       <description>
         
         
@@ -2043,10 +2043,10 @@
     
     <item>
       <title>Docs: .set_persist_zero_flow(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/general/oc_set_persist_zero_flow&#43;/</guid>
       <description>
         
         
@@ -2102,10 +2102,10 @@
     
     <item>
       <title>Docs: .set_xml_directory(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_xml_directory&#43;/</guid>
       <description>
         
         
@@ -2163,10 +2163,10 @@
     
     <item>
       <title>Docs: .set_xml_name_extension(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_xml_extension&#43;/</guid>
       <description>
         
         
@@ -2224,10 +2224,10 @@
     
     <item>
       <title>Docs: .set_xml_name_root(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/default/dof_set_xml_prefix&#43;/</guid>
       <description>
         
         
@@ -2285,10 +2285,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
       <description>
         
         
@@ -2403,10 +2403,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/initialcost/ic_set&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/initialcost/ic_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/initialcost/ic_set&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/initialcost/ic_set&#43;/</guid>
       <description>
         
         
@@ -2467,10 +2467,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/planitproject/project_set&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planitproject/project_set&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/project_set&#43;/</guid>
       <description>
         
         
@@ -2517,10 +2517,10 @@
     
     <item>
       <title>Docs: Project examples</title>
-      <link>http://www.goplanit.org/docs/java/examples/project_examples/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/java/examples/project_examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/java/examples/project_examples/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/java/examples/project_examples/</guid>
       <description>
         
         
@@ -2680,10 +2680,10 @@ The inputs for the assignment (network, zoning, demands) are all automatically s
     
     <item>
       <title>Docs: .day_of_week</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</guid>
       <description>
         
         
@@ -2735,10 +2735,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .activate_all_osm_highway_types()</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</guid>
       <description>
         
         
@@ -2771,10 +2771,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .activate_all_osm_railway_types()</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/osmnrrs_activate_all_types/</guid>
       <description>
         
         
@@ -2808,10 +2808,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .activate_all_osm_waterway_types()</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_all_types/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_all_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_all_types/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/osmnrws_activate_all_types/</guid>
       <description>
         
         
@@ -2845,10 +2845,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .activate_extended_logging_for_gtfs_zones(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</guid>
       <description>
         
         
@@ -2910,10 +2910,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .activate_highway_parser(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</guid>
       <description>
         
         
@@ -2971,10 +2971,10 @@ By default, the highway parser is activated. This call is delegated to the same 
     
     <item>
       <title>Docs: .activate_logging_for_gtfs_route_by_short_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</guid>
       <description>
         
         
@@ -3039,10 +3039,10 @@ By default, the highway parser is activated. This call is delegated to the same 
     
     <item>
       <title>Docs: .activate_osm_highway_type(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</guid>
       <description>
         
         

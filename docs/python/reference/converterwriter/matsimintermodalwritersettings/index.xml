@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – MatsimIntermodalWriterSettings</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/</link>
     <description>Recent content in MatsimIntermodalWriterSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .network_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_network_settings/</guid>
       <description>
         
         
@@ -60,10 +60,10 @@ persistence of the physical road and rail network and is therefore configured vi
     
     <item>
       <title>Docs: .pt_services_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_pt_services_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_pt_services_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_pt_services_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_pt_services_settings/</guid>
       <description>
         
         
@@ -103,10 +103,10 @@ service schedules aspects of the MATSim writer.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_country(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_country&#43;/</guid>
       <description>
         
         
@@ -176,10 +176,10 @@ see for example &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_ISO_3166_c
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_set_output_dir&#43;/</guid>
       <description>
         
         
@@ -238,10 +238,10 @@ otherwise the writer will fail.&lt;/p&gt;
     
     <item>
       <title>Docs: .zoning_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/mimws_zoning_settings/</guid>
       <description>
         
         
@@ -281,10 +281,10 @@ MATSim writer, e.g., regarding the public transport stop locations.&lt;/p&gt;
     
     <item>
       <title>Docs: MatsimPtServicesWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimptserviceswritersettings/</guid>
       <description>
         
         
@@ -364,10 +364,10 @@ expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: MatsimZoningWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/matsimzoningwritersettings/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Norm Based Gap Function</title>
-    <link>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/</link>
     <description>Recent content in Norm Based Gap Function on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/gapfunction/normbased/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .stop_criterion</title>
-      <link>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/nbgf_stop_criterion/</guid>
       <description>
         
         
@@ -51,10 +51,10 @@
     
     <item>
       <title>Docs: set_averaged(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/nbgf_set_averaged&#43;/</guid>
       <description>
         
         
@@ -110,10 +110,10 @@
     
     <item>
       <title>Docs: set_norm(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/normbased/nbgf_set_norm&#43;/</guid>
       <description>
         
         

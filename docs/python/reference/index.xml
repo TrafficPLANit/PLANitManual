@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – PLANit-Python Reference</title>
-    <link>http://www.goplanit.org/docs/python/reference/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/</link>
     <description>Recent content in PLANit-Python Reference on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Planit()</title>
-      <link>http://www.goplanit.org/docs/python/reference/planit/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planit/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/</guid>
       <description>
         
         
@@ -105,10 +105,10 @@ and then either collect/create an assignment project (to conduct a traffic assig
     
     <item>
       <title>Docs: PlanitProject</title>
-      <link>http://www.goplanit.org/docs/python/reference/planitproject/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planitproject/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planitproject/</guid>
       <description>
         
         
@@ -238,10 +238,10 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
     
     <item>
       <title>Docs: Assignment</title>
-      <link>http://www.goplanit.org/docs/python/reference/assignment/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/assignment/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/</guid>
       <description>
         
         
@@ -258,10 +258,10 @@ the &lt;em&gt;&lt;strong&gt;current working directory&lt;/strong&gt;&lt;/em&gt; 
     
     <item>
       <title>Docs: Converter Factory</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterfactory/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/</guid>
       <description>
         
         
@@ -348,10 +348,10 @@ each reader/writer page in this manual details these settings to avoid any confu
     
     <item>
       <title>Docs: Converter Reader</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/</guid>
       <description>
         
         
@@ -383,10 +383,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Converter Writer</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/</guid>
       <description>
         
         
@@ -415,10 +415,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Demands</title>
-      <link>http://www.goplanit.org/docs/python/reference/demands/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/demands/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/demands/</guid>
       <description>
         
         
@@ -436,10 +436,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Enums</title>
-      <link>http://www.goplanit.org/docs/python/reference/enums/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/enums/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/enums/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/enums/</guid>
       <description>
         
         
@@ -450,10 +450,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Gap Function</title>
-      <link>http://www.goplanit.org/docs/python/reference/gapfunction/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/gapfunction/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/gapfunction/</guid>
       <description>
         
         
@@ -474,10 +474,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Initial Cost</title>
-      <link>http://www.goplanit.org/docs/python/reference/initialcost/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/initialcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/initialcost/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/initialcost/</guid>
       <description>
         
         
@@ -547,10 +547,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Output Configuration</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputconfiguration/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputconfiguration/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputconfiguration/</guid>
       <description>
         
         
@@ -567,10 +567,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Output Formatters</title>
-      <link>http://www.goplanit.org/docs/python/reference/outputformatters/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/outputformatters/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/outputformatters/</guid>
       <description>
         
         
@@ -589,10 +589,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Physical Cost</title>
-      <link>http://www.goplanit.org/docs/python/reference/physicalcost/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/physicalcost/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/</guid>
       <description>
         
         
@@ -613,10 +613,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Physical Network</title>
-      <link>http://www.goplanit.org/docs/python/reference/network/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/network/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/network/</guid>
       <description>
         
         
@@ -634,10 +634,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Smoothing</title>
-      <link>http://www.goplanit.org/docs/python/reference/smoothing/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/smoothing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/smoothing/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/smoothing/</guid>
       <description>
         
         
@@ -656,10 +656,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Stop Criterion</title>
-      <link>http://www.goplanit.org/docs/python/reference/stopcriterion/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/stopcriterion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/stopcriterion/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/stopcriterion/</guid>
       <description>
         
         
@@ -678,10 +678,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Virtual Cost</title>
-      <link>http://www.goplanit.org/docs/python/reference/virtualcost/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/virtualcost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/virtualcost/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/virtualcost/</guid>
       <description>
         
         
@@ -702,10 +702,10 @@ particular input data source and either manipulate it in memory or convert it in
     
     <item>
       <title>Docs: Zoning</title>
-      <link>http://www.goplanit.org/docs/python/reference/zoning/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/zoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/zoning/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/zoning/</guid>
       <description>
         
         
