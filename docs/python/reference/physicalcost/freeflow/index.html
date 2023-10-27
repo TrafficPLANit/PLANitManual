@@ -2344,6 +2344,10 @@
   
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavajavadoc-li">
+  <input type="checkbox" id="m-docsjavajavadoc-check"/>
+  <label for="m-docsjavajavadoc-check"><a href="/docs/java/javadoc/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavajavadoc"><span class="">PLANit Javadoc</span></a></label>
+  
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavadownload-li">
   <input type="checkbox" id="m-docsjavadownload-check"/>
   <label for="m-docsjavadownload-check"><a href="/docs/java/download/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavadownload"><span class="">Downloads</span></a></label>
@@ -2418,16 +2422,10 @@
 		
 </header>
 	<h5 id="description">Description</h5>
-<p>Travel time on a link segment for any mode is based on the free flow
-travel time, e.g. Length divided by speed This function looks like the
-following:</p>
-<p><span class="math inline">\(\Large \tau_{a,m} = {L_a \over
-\vartheta_{a,m}}\)</span></p>
+<p>Travel time on a link segment for any mode is based on the free flow travel time, e.g. Length divided by speed This function looks like the following:</p>
+<p><span class="math inline">\(\Large \tau_{a,m} = {L_a \over \vartheta_{a,m}}\)</span></p>
 <p>with</p>
-<p><span class="math inline">\(\tau_{a,m}= \textrm{travel time on link
-segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow
-speed on link } a \textrm{ for mode } m,\\ L_a = \textrm {length of link
-segment} a,\)</span></p>
+<p><span class="math inline">\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow speed on link } a \textrm{ for mode } m,\\ L_a = \textrm {length of link segment} a,\)</span></p>
 <h4 id="defaults">Defaults</h4>
 <p>This class has no defaults (yet)</p>
 <h4 id="methods">Methods</h4>
@@ -2435,24 +2433,19 @@ segment} a,\)</span></p>
 <h4 id="properties">Properties</h4>
 <p>This class has no properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>planit_instance <span class="op">=</span> Planit()</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># set physical cost to FREE FLOW</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>planit_instance.project.assignment.<span class="bu">set</span>(PhysicalCost.FREEFLOW)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>planit_instance <span class="op">=</span> Planit()</span>
+<span id="cb1-4"><a href="#cb1-4"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># set physical cost to FREE FLOW</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>planit_instance.project.assignment.<span class="bu">set</span>(PhysicalCost.FREEFLOW)</span></code></pre></div>
 <h4 id="see-also">See also</h4>
-<p><a href="../../assignment">Traffic assignment</a> on assignments that
-support this physical cost implementation<br />
-<a href="../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for
-all available physical cost options<br />
-<a href="../">PhysicalCost</a> landing page for all available physical
-cost implementations</p>
+<p><a href="../../assignment">Traffic assignment</a> on assignments that support this physical cost implementation<br />
+<a href="../../enums/physicalcosttype">PhysicalCost.&lt;enum&gt;</a> for all available physical cost options<br />
+<a href="../">PhysicalCost</a> landing page for all available physical cost implementations</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>FreeFlowCostWrapper</code> in
-<code>projectwrappers.py</code></p>
+<p>Class <code>FreeFlowCostWrapper</code> in <code>projectwrappers.py</code></p>
 
   <div class="section-index">
     

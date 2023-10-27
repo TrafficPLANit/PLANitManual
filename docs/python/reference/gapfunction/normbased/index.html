@@ -2344,6 +2344,10 @@
   
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavajavadoc-li">
+  <input type="checkbox" id="m-docsjavajavadoc-check"/>
+  <label for="m-docsjavajavadoc-check"><a href="/docs/java/javadoc/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavajavadoc"><span class="">PLANit Javadoc</span></a></label>
+  
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavadownload-li">
   <input type="checkbox" id="m-docsjavadownload-check"/>
   <label for="m-docsjavadownload-check"><a href="/docs/java/download/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavadownload"><span class="">Downloads</span></a></label>
@@ -2418,60 +2422,33 @@
 		
 </header>
 	<h4 id="description">Description</h4>
-<p>Reference documentation for a simple norm based gap function (where
-if the norm is set to 1, i.e. <span class="math inline">\(p=1\)</span>,
-we take the absolute difference).</p>
-<p>This gap function utilises a norm based approach to computing the
-gap. It depends on the assignment method what variables are used to
-compute the gap. In general the user has to choose the norm (norm 1,
-norm 2, …, norm p) to apply and we also allow the user to choose whether
-or not the result is to be averaged or not, i.e., divide the result by
-the number of entries considered. It also hosts a stop criterion to
-determine when the gap is deemed small enough to be considered
-sufficient. This criterion is user configurable as well. Mathematically,
-the norm based gap is defined as follows:</p>
-<p><span class="math inline">\(\Large \delta = {1 \over |\mathbf{x}|}
-\sqrt[\leftroot{-3}\uproot{3}p]{ (x_1^{i-1}-x_1^i)^p + ... +
-(x_{|\mathbf{x}|}^{i-1}-x_{|\mathbf{x}|}^i)^p}\)</span></p>
+<p>Reference documentation for a simple norm based gap function (where if the norm is set to 1, i.e. <span class="math inline">\(p=1\)</span>, we take the absolute difference).</p>
+<p>This gap function utilises a norm based approach to computing the gap. It depends on the assignment method what variables are used to compute the gap. In general the user has to choose the norm (norm 1, norm 2, …, norm p) to apply and we also allow the user to choose whether or not the result is to be averaged or not, i.e., divide the result by the number of entries considered. It also hosts a stop criterion to determine when the gap is deemed small enough to be considered sufficient. This criterion is user configurable as well. Mathematically, the norm based gap is defined as follows:</p>
+<p><span class="math inline">\(\Large \delta = {1 \over |\mathbf{x}|} \sqrt[\leftroot{-3}\uproot{3}p]{ (x_1^{i-1}-x_1^i)^p + ... + (x_{|\mathbf{x}|}^{i-1}-x_{|\mathbf{x}|}^i)^p}\)</span></p>
 <p>with</p>
-<p><span class="math inline">\(\delta = \textrm{gap},\\ p = \textrm{norm
-to apply, e.g. norm 2 requires } p=2,\\ i = \textrm{iteration},\\
-\mathbf{x} = \textrm{vector of the variable }x \textrm{ we take the gap
-over between iterations, e.g., travel time cost},\\\)</span></p>
+<p><span class="math inline">\(\delta = \textrm{gap},\\ p = \textrm{norm to apply, e.g. norm 2 requires } p=2,\\ i = \textrm{iteration},\\ \mathbf{x} = \textrm{vector of the variable }x \textrm{ we take the gap over between iterations, e.g., travel time cost},\\\)</span></p>
 <blockquote>
-<p>When the averaged option is not activated, the portion of the
-equation where we multiply by <span class="math inline">\({1 \over
-|\mathbf{x}|}\)</span> is left out</p>
+<p>When the averaged option is not activated, the portion of the equation where we multiply by <span class="math inline">\({1 \over |\mathbf{x}|}\)</span> is left out</p>
 </blockquote>
 <h4 id="defaults">Defaults</h4>
 <table>
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 22%" />
-<col style="width: 27%" />
-<col style="width: 27%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Name</th>
 <th style="text-align: left;">Value</th>
 <th style="text-align: center;">Type</th>
-<th style="text-align: center;"><a
-href="../../../../units">Unit</a></th>
+<th style="text-align: center;"><a href="../../../../units">Unit</a></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="../../stopcriterion">Stop
-criterion</a></td>
+<td style="text-align: left;"><a href="../../stopcriterion">Stop criterion</a></td>
 <td style="text-align: left;">Object instance</td>
-<td style="text-align: center;"><a
-href="../../stopcriterion/default">Default Stop Criterion</a></td>
+<td style="text-align: center;"><a href="../../stopcriterion/default">Default Stop Criterion</a></td>
 <td style="text-align: center;">N/A</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><code>Norm</code> (<span
-class="math inline">\(p\)</span>)</td>
+<td style="text-align: left;"><code>Norm</code> (<span class="math inline">\(p\)</span>)</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: center;"><code>Integer</code></td>
 <td style="text-align: center;">N/A</td>
@@ -2487,10 +2464,6 @@ class="math inline">\(p\)</span>)</td>
 <h4 id="methods">Methods</h4>
 <p>This class exposes the following methods</p>
 <table>
-<colgroup>
-<col style="width: 42%" />
-<col style="width: 57%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
@@ -2500,8 +2473,7 @@ class="math inline">\(p\)</span>)</td>
 <tbody>
 <tr class="odd">
 <td><a href="nbgf_set_norm+"><code>.set_norm(+)</code></a></td>
-<td style="text-align: left;">Override the default norm <span
-class="math inline">\(p\)</span></td>
+<td style="text-align: left;">Override the default norm <span class="math inline">\(p\)</span></td>
 </tr>
 <tr class="even">
 <td><a href="nbgf_set_averaged+"><code>.set_averaged(+)</code></a></td>
@@ -2512,11 +2484,6 @@ class="math inline">\(p\)</span></td>
 <h4 id="properties">Properties</h4>
 <p>This class exposes the following properties:</p>
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Property</th>
@@ -2526,35 +2493,30 @@ class="math inline">\(p\)</span></td>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a
-href="nbgf_stop_criterion"><code>.stop_criterion</code></a></td>
+<td style="text-align: left;"><a href="nbgf_stop_criterion"><code>.stop_criterion</code></a></td>
 <td style="text-align: left;">Always</td>
 <td style="text-align: left;">Access to the stop criterion instance</td>
 </tr>
 </tbody>
 </table>
 <h4 id="example-1">Example 1</h4>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># choose to run PLANit with a the Static Link Transmission Model assignment method</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This has the norm based gap as a default already</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>planit_instance <span class="op">=</span> Planit()</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.SLTM)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># while not needed it can be set explicitly via</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># planit_instance.project.assignment.set(GapFunction.NORM_BASED) </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># change the norm to use from 1 to 2</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>planit_instance.project.assignment.gap_function.set_norm(<span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># choose to run PLANit with a the Static Link Transmission Model assignment method</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># This has the norm based gap as a default already</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>planit_instance <span class="op">=</span> Planit()</span>
+<span id="cb1-6"><a href="#cb1-6"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.SLTM)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co"># while not needed it can be set explicitly via</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># planit_instance.project.assignment.set(GapFunction.NORM_BASED) </span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># change the norm to use from 1 to 2</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>planit_instance.project.assignment.gap_function.set_norm(<span class="dv">2</span>)</span></code></pre></div>
 <h4 id="see-also">See also</h4>
-<p><a href="../../assignment">Traffic Assignment</a> on what traffic
-assignment methods are available<br />
-<a href="../../stopcriterion/default">StopCriterion</a> default
-implementation</p>
+<p><a href="../../assignment">Traffic Assignment</a> on what traffic assignment methods are available<br />
+<a href="../../stopcriterion/default">StopCriterion</a> default implementation</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>GapFunctionWrapper</code> in
-<code>projectwrappers.py</code></p>
+<p>Class <code>GapFunctionWrapper</code> in <code>projectwrappers.py</code></p>
 
   <div class="section-index">
     

@@ -2344,6 +2344,10 @@
   
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavajavadoc-li">
+  <input type="checkbox" id="m-docsjavajavadoc-check"/>
+  <label for="m-docsjavajavadoc-check"><a href="/docs/java/javadoc/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavajavadoc"><span class="">PLANit Javadoc</span></a></label>
+  
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavadownload-li">
   <input type="checkbox" id="m-docsjavadownload-check"/>
   <label for="m-docsjavadownload-check"><a href="/docs/java/download/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavadownload"><span class="">Downloads</span></a></label>
@@ -2418,25 +2422,11 @@
 		
 </header>
 	<h5 id="description">Description</h5>
-<p>The Method of successive averages is a very basic, yet powerful
-smoothing method. In this method, every iteration is weighed equally in
-the final result which is achieved by applying the following function to
-the data that is being smoothed (can be flow, can be cost, can be
-something else, this depends on the assignment method that is
-adopted).</p>
-<p><span class="math inline">\(\Large x_{i+1}=(1-s_i) \cdot x_{i} + s_i
-\cdot y \qquad \text{where } {s_i= {1 \over i} \qquad \text{with }
-i=1,...,I. }\)</span></p>
+<p>The Method of successive averages is a very basic, yet powerful smoothing method. In this method, every iteration is weighed equally in the final result which is achieved by applying the following function to the data that is being smoothed (can be flow, can be cost, can be something else, this depends on the assignment method that is adopted).</p>
+<p><span class="math inline">\(\Large x_{i+1}=(1-s_i) \cdot x_{i} + s_i \cdot y \qquad \text{where } {s_i= {1 \over i} \qquad \text{with } i=1,...,I. }\)</span></p>
 <p>Explanatino of variables:</p>
-<p><span class="math inline">\(i= \textrm{ iteration index given a total
-of } I \textrm{ iterations},\\ s_i= \textrm{ step size in iteration }
-i,\\ x_i= \textrm{ result of smoothed value in iteration } i,\\ y=
-\textrm{ new found value to update result},\\ \\\)</span></p>
-<p>As can be seen, the more iterations are conducted, the less the newly
-found value is incorporated in the result. Therefore, using MSA
-guarantees convergence of <span class="math inline">\(x\)</span>
-(although it does not guarantee convergemce of <span
-class="math inline">\(y\)</span>.</p>
+<p><span class="math inline">\(i= \textrm{ iteration index given a total of } I \textrm{ iterations},\\ s_i= \textrm{ step size in iteration } i,\\ x_i= \textrm{ result of smoothed value in iteration } i,\\ y= \textrm{ new found value to update result},\\ \\\)</span></p>
+<p>As can be seen, the more iterations are conducted, the less the newly found value is incorporated in the result. Therefore, using MSA guarantees convergence of <span class="math inline">\(x\)</span> (although it does not guarantee convergemce of <span class="math inline">\(y\)</span>.</p>
 <h4 id="defaults">Defaults</h4>
 <p>This class has no defaults (yet)</p>
 <h4 id="methods">Methods</h4>
@@ -2444,23 +2434,19 @@ class="math inline">\(y\)</span>.</p>
 <h4 id="properties">Properties</h4>
 <p>This class has no properties (yet)</p>
 <h4 id="example-1">Example 1</h4>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># choose to run Planit with a traditional static traffic assignment method</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>planit_instance <span class="op">=</span> Planit()</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># set smoothing to MSA</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>planit_instance.project.assignment.<span class="bu">set</span>(Smoothing.MSA)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># choose to run Planit with a traditional static traffic assignment method</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>planit_instance <span class="op">=</span> Planit()</span>
+<span id="cb1-5"><a href="#cb1-5"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># set smoothing to MSA</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>planit_instance.project.assignment.<span class="bu">set</span>(Smoothing.MSA)</span></code></pre></div>
 <h4 id="see-also">See also</h4>
-<p><a href="../../assignment">Traffic assignment</a> on assignments that
-support this virtual cost implementation<br />
-<a href="../../enums/smoothingtype">Smoothing.&lt;enum&gt;</a> for all
-available smoothing type options</p>
+<p><a href="../../assignment">Traffic assignment</a> on assignments that support this virtual cost implementation<br />
+<a href="../../enums/smoothingtype">Smoothing.&lt;enum&gt;</a> for all available smoothing type options</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>SmoothingWrapper</code> in
-<code>projectwrappers.py</code></p>
+<p>Class <code>SmoothingWrapper</code> in <code>projectwrappers.py</code></p>
 
   <div class="section-index">
     

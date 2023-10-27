@@ -2344,6 +2344,10 @@
   
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavajavadoc-li">
+  <input type="checkbox" id="m-docsjavajavadoc-check"/>
+  <label for="m-docsjavajavadoc-check"><a href="/docs/java/javadoc/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavajavadoc"><span class="">PLANit Javadoc</span></a></label>
+  
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsjavadownload-li">
   <input type="checkbox" id="m-docsjavadownload-check"/>
   <label for="m-docsjavadownload-check"><a href="/docs/java/download/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsjavadownload"><span class="">Downloads</span></a></label>
@@ -2419,60 +2423,29 @@
 </header>
 	<h4 id="description">Description</h4>
 <p>Reference documentation for the link based relative gap function.</p>
-<p>This gap function utilises the link costs across the network to
-establish a network wide gap. Its computation is based on the function
-mentioned in Bovy and Jansen (1983)<sup>1</sup>. In this approach, you
-simply construct a lower bound - each iteration - that consists of all
-current shortest paths for all Origin-Destination (OD) pairs multiplied
-with the OD demand and take the difference with actual system travel
-time. The latter is a simple multiplication of the link flows with the
-link costs - in the current iteration. One then divides this absolute
-gap by the total system travel time to obtain the relative gap. Hence
-its name, link based relative gap. Mathematically, it can be defined as
-follows:</p>
-<p><span class="math inline">\(\Large \delta^{\textrm relative} = {
-(\sum_{a}^{A} c_a \cdot f_a) \cdot (\sum_{w}^{W} c_w^* \cdot d_w) \over
-{\sum_{a}^{A} c_a \cdot f_a}}\)</span></p>
+<p>This gap function utilises the link costs across the network to establish a network wide gap. Its computation is based on the function mentioned in Bovy and Jansen (1983)<sup>1</sup>. In this approach, you simply construct a lower bound - each iteration - that consists of all current shortest paths for all Origin-Destination (OD) pairs multiplied with the OD demand and take the difference with actual system travel time. The latter is a simple multiplication of the link flows with the link costs - in the current iteration. One then divides this absolute gap by the total system travel time to obtain the relative gap. Hence its name, link based relative gap. Mathematically, it can be defined as follows:</p>
+<p><span class="math inline">\(\Large \delta^{\textrm relative} = { (\sum_{a}^{A} c_a \cdot f_a) \cdot (\sum_{w}^{W} c_w^* \cdot d_w) \over {\sum_{a}^{A} c_a \cdot f_a}}\)</span></p>
 <p>with</p>
-<p><span class="math inline">\(\delta^{\textrm relative}=
-\textrm{relative duality gap},\\ c_a= \textrm{cost (h) on link segment }
-a,\\ c_w^*= \textrm{ path minimum cost (h) connecting OD pair } w,\\
-d_w= \textrm{ total demand (veh/h) for OD pair } w,\\ f_a= \textrm{flow
-(veh/h) on link segment } a,\\ A= \textrm{ total number of links},\\ W=
-\textrm{ total number of OD pairs}\)</span></p>
+<p><span class="math inline">\(\delta^{\textrm relative}= \textrm{relative duality gap},\\ c_a= \textrm{cost (h) on link segment } a,\\ c_w^*= \textrm{ path minimum cost (h) connecting OD pair } w,\\ d_w= \textrm{ total demand (veh/h) for OD pair } w,\\ f_a= \textrm{flow (veh/h) on link segment } a,\\ A= \textrm{ total number of links},\\ W= \textrm{ total number of OD pairs}\)</span></p>
 <blockquote>
-<p>All link based gap functions are only suitable for traffic assignment
-methods that have link additive path costs, i.e., when we can add the
-link costs to construct the path cost, we can also use the link costs to
-determine the gap.</p>
+<p>All link based gap functions are only suitable for traffic assignment methods that have link additive path costs, i.e., when we can add the link costs to construct the path cost, we can also use the link costs to determine the gap.</p>
 </blockquote>
-<p><sup>1</sup> Bovy, P., &amp; Jansen, G. (1983). Network aggregation
-effects upon equilibrium assignment outcomes: An empirical
-investigation. Transportation Science, 17(3), 240-261.</p>
+<p><sup>1</sup> Bovy, P., &amp; Jansen, G. (1983). Network aggregation effects upon equilibrium assignment outcomes: An empirical investigation. Transportation Science, 17(3), 240-261.</p>
 <h4 id="defaults">Defaults</h4>
 <table>
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 22%" />
-<col style="width: 27%" />
-<col style="width: 27%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Name</th>
 <th style="text-align: left;">Value</th>
 <th style="text-align: center;">Type</th>
-<th style="text-align: center;"><a
-href="../../../../units">Unit</a></th>
+<th style="text-align: center;"><a href="../../../../units">Unit</a></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="../../stopcriterion">Stop
-criterion</a></td>
+<td style="text-align: left;"><a href="../../stopcriterion">Stop criterion</a></td>
 <td style="text-align: left;">Object instance</td>
-<td style="text-align: center;"><a
-href="../../stopcriterion/default">Default Stop Criterion</a></td>
+<td style="text-align: center;"><a href="../../stopcriterion/default">Default Stop Criterion</a></td>
 <td style="text-align: center;">N/A</td>
 </tr>
 </tbody>
@@ -2482,11 +2455,6 @@ href="../../stopcriterion/default">Default Stop Criterion</a></td>
 <h4 id="properties">Properties</h4>
 <p>This class exposes the following properties:</p>
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Property</th>
@@ -2496,35 +2464,30 @@ href="../../stopcriterion/default">Default Stop Criterion</a></td>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a
-href="lbrgf_stop_criterion"><code>.stop_criterion</code></a></td>
+<td style="text-align: left;"><a href="lbrgf_stop_criterion"><code>.stop_criterion</code></a></td>
 <td style="text-align: left;">Always</td>
 <td style="text-align: left;">Access to the stop criterion instance</td>
 </tr>
 </tbody>
 </table>
 <h4 id="example-1">Example 1</h4>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># choose to run PLANit with a traditional static traffic assignment method</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This has the link based relative gap as a default already</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>planit_instance <span class="op">=</span> Planit()</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># while not needed it can be set explicitly via</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># planit_instance.project.assignment.set(GapFunction.LINK_BASED_RELATIVE) </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># collect the stop criterion to do something</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>planit_instance.project.assignment.gap_function.stop_criterion.<span class="op">&lt;</span>call method<span class="op">&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> planit <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># choose to run PLANit with a traditional static traffic assignment method</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># This has the link based relative gap as a default already</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>planit_instance <span class="op">=</span> Planit()</span>
+<span id="cb1-6"><a href="#cb1-6"></a>planit_instance.project.<span class="bu">set</span>(TrafficAssignment.TRADITIONAL_STATIC)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co"># while not needed it can be set explicitly via</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># planit_instance.project.assignment.set(GapFunction.LINK_BASED_RELATIVE) </span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># collect the stop criterion to do something</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>planit_instance.project.assignment.gap_function.stop_criterion.<span class="op">&lt;</span>call method<span class="op">&gt;</span></span></code></pre></div>
 <h4 id="see-also">See also</h4>
-<p><a href="../../assignment">Traffic Assignment</a> on what traffic
-assignment methods are available<br />
-<a href="../../stopcriterion/default">StopCriterion</a> default
-implementation</p>
+<p><a href="../../assignment">Traffic Assignment</a> on what traffic assignment methods are available<br />
+<a href="../../stopcriterion/default">StopCriterion</a> default implementation</p>
 <h4 id="source-code">Source code</h4>
-<p>Class <code>GapFunctionWrapper</code> in
-<code>projectwrappers.py</code></p>
+<p>Class <code>GapFunctionWrapper</code> in <code>projectwrappers.py</code></p>
 
   <div class="section-index">
     
