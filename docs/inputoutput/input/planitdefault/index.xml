@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – PLANit Default Input Data format (XML)</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/</link>
+    <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/</link>
     <description>Recent content in PLANit Default Input Data format (XML) on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/planitdefault/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Physical Network Input Data format (XML)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_physical_network/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_physical_network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_physical_network/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_physical_network/</guid>
       <description>
         
         
@@ -2188,10 +2188,10 @@ i.e., in this case the link segment type&amp;rsquo;s speed limit. This to preven
     
     <item>
       <title>Docs: Zoning Structure Input Data format (XML)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_zoning_structure/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_zoning_structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_zoning_structure/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_zoning_structure/</guid>
       <description>
         
         
@@ -3046,10 +3046,10 @@ where vehicles stop, or a location where people enter a waiting area to (dis)emb
     
     <item>
       <title>Docs: Demands Input Data format (XML)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_demands/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_demands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_demands/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_demands/</guid>
       <description>
         
         
@@ -3949,10 +3949,10 @@ where vehicles stop, or a location where people enter a waiting area to (dis)emb
     
     <item>
       <title>Docs: Service Network Input Data format (XML)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_service_network/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_service_network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_service_network/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_service_network/</guid>
       <description>
         
         
@@ -4314,10 +4314,10 @@ A service leg can reference one or more physical link segments which are to be r
     
     <item>
       <title>Docs: Routed Services Input Data format (XML)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_routed_services/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_routed_services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/planitdefault/pd_routed_services/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/input/planitdefault/pd_routed_services/</guid>
       <description>
         
         

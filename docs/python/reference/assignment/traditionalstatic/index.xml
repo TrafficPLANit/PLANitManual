@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Traditional static assignment</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/</link>
+    <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/</link>
     <description>Recent content in Traditional static assignment on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .activate_output(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_activate_output&#43;/</guid>
       <description>
         
         
@@ -76,10 +76,10 @@
     
     <item>
       <title>Docs: .deactivate_output(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_deactivate_output&#43;/</guid>
       <description>
         
         
@@ -136,10 +136,10 @@
     
     <item>
       <title>Docs: .set_log_settings(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_log_settings&#43;/</guid>
       <description>
         
         
@@ -192,10 +192,10 @@
     
     <item>
       <title>Docs: .set(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_set&#43;/</guid>
       <description>
         
         
@@ -310,10 +310,10 @@
     
     <item>
       <title>Docs: .gap_function</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_gap_function/</guid>
       <description>
         
         
@@ -352,10 +352,10 @@
     
     <item>
       <title>Docs: .link_configuration</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_link_configuration/</guid>
       <description>
         
         
@@ -393,10 +393,10 @@
     
     <item>
       <title>Docs: .od_configuration</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_od_configuration/</guid>
       <description>
         
         
@@ -435,10 +435,10 @@
     
     <item>
       <title>Docs: .output_configuration</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_output_configuration/</guid>
       <description>
         
         
@@ -473,10 +473,10 @@
     
     <item>
       <title>Docs: .path_configuration</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_path_configuration/</guid>
       <description>
         
         
@@ -515,10 +515,10 @@
     
     <item>
       <title>Docs: .physical_cost</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_physical_cost/</guid>
       <description>
         
         
@@ -555,10 +555,10 @@
     
     <item>
       <title>Docs: .smoothing</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_smoothing/</guid>
       <description>
         
         
@@ -594,10 +594,10 @@
     
     <item>
       <title>Docs: .virtual_cost</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</link>
+      <link>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/assignment/traditionalstatic/tsa_virtual_cost/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – TNTP Data format (XML)</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/tntp/</link>
+    <link>http://www.goplanit.org/docs/inputoutput/input/tntp/</link>
     <description>Recent content in TNTP Data format (XML) on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/inputoutput/input/tntp/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/inputoutput/input/tntp/index.xml" rel="self" type="application/rss+xml" />
     
     
       

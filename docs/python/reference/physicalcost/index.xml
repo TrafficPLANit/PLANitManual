@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Physical Cost</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/</link>
+    <link>http://www.goplanit.org/docs/python/reference/physicalcost/</link>
     <description>Recent content in Physical Cost on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/physicalcost/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,46 +16,83 @@
     
     <item>
       <title>Docs: BPR</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/bpr/</link>
+      <link>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/bpr/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/physicalcost/bpr/</guid>
       <description>
         
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
-&lt;p&gt;Travel time on a link segment for a particular mode is computed using a specific link performance function that relates flow uniquely to a travel time utilising a strictly increasing monotonic function know as the BPR&lt;sup&gt;1&lt;/sup&gt; function. This function looks like the following&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm {freeflow}}(1+ \alpha({v_a \over C_a})^{\beta}) \qquad \textrm{where } \tau_{a,m}^{ \textrm {freeflow}}= {L_a \over \vartheta_{a,m}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Travel time on a link segment for a particular mode is computed using
+a specific link performance function that relates flow uniquely to a
+travel time utilising a strictly increasing monotonic function know as
+the BPR&lt;sup&gt;1&lt;/sup&gt; function. This function looks like the following&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \tau_{a,m} = \tau_{a,m}^{ \textrm
+{freeflow}}(1+ \alpha({v_a \over C_a})^{\beta}) \qquad \textrm{where }
+\tau_{a,m}^{ \textrm {freeflow}}= {L_a \over
+\vartheta_{a,m}}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow speed on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm {measured flow on link segment} a,\\ L_a = \textrm {length of link segment} a,\\ C_a = \textrm {saturation flow on link segment} a,\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; parameters can be configured hierarchically, where the most specific configuration takes precedence. The hierarchy is as follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{a,m}= \textrm{travel time on link
+segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow
+speed on link } a \textrm{ for mode } m,\\ \alpha = \textrm {calibration
+parameter},\\ \beta = \textrm {calibration parameter},\\ v_a = \textrm
+{measured flow on link segment} a,\\ L_a = \textrm {length of link
+segment} a,\\ C_a = \textrm {saturation flow on link segment}
+a,\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; parameters can be configured
+hierarchically, where the most specific configuration takes precedence.
+The hierarchy is as follows:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha_m\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_m\)&lt;/span&gt; by mode &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha_{m,s}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_{m,s}\)&lt;/span&gt; by mode &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and link segment type &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha_{m,l}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_{m,l}\)&lt;/span&gt; by mode &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and link segment &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha_m\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta_m\)&lt;/span&gt; by mode &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha_{m,s}\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta_{m,s}\)&lt;/span&gt; by mode &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and link segment type &lt;span
+class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;default &lt;span class=&#34;math inline&#34;&gt;\(\alpha_{m,l}\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta_{m,l}\)&lt;/span&gt; by mode &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and link segment &lt;span
+class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Whenever the more specific configuration is absent the next most specific configuration is checked and applied, until we reach the simulation wide default which have been pre-set (or overridden by the user).&lt;/p&gt;
-&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; United States, Bureau of Public Roads, Traffic assignment manual. (1964). Washington.&lt;/p&gt;
+&lt;p&gt;Whenever the more specific configuration is absent the next most
+specific configuration is checked and applied, until we reach the
+simulation wide default which have been pre-set (or overridden by the
+user).&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; United States, Bureau of Public Roads, Traffic
+assignment manual. (1964). Washington.&lt;/p&gt;
 &lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
 &lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 22%&#34; /&gt;
+&lt;col style=&#34;width: 22%&#34; /&gt;
+&lt;col style=&#34;width: 27%&#34; /&gt;
+&lt;col style=&#34;width: 27%&#34; /&gt;
+&lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr class=&#34;header&#34;&gt;
 &lt;th style=&#34;text-align: left;&#34;&gt;Name&lt;/th&gt;
 &lt;th style=&#34;text-align: left;&#34;&gt;Default&lt;/th&gt;
 &lt;th style=&#34;text-align: center;&#34;&gt;Type&lt;/th&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align: center;&#34;&gt;&lt;a
+href=&#34;../../../../units&#34;&gt;Unit&lt;/a&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align: left;&#34;&gt;0.5&lt;/td&gt;
 &lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;span
+class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align: left;&#34;&gt;4&lt;/td&gt;
 &lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align: center;&#34;&gt;&lt;code&gt;None&lt;/code&gt;&lt;/td&gt;
@@ -77,55 +114,72 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;&lt;a href=&#34;bpr_set_default_parameters+&#34;&gt;&lt;code&gt;.set_default_parameters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;Override the default &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; in various ways&lt;/td&gt;
+&lt;td&gt;&lt;a
+href=&#34;bpr_set_default_parameters+&#34;&gt;&lt;code&gt;.set_default_parameters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Override the default &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; in various ways&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;&lt;a href=&#34;bpr_set_parameters+&#34;&gt;&lt;code&gt;.set_parameters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;Override the &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; for specific link segments&lt;/td&gt;
+&lt;td&gt;&lt;a
+href=&#34;bpr_set_parameters+&#34;&gt;&lt;code&gt;.set_parameters(+)&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Override the &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; for specific link segments&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
 &lt;p&gt;This class has no properties (yet)&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
-&lt;div class=&#34;sourceCode&#34; id=&#34;cb1&#34;&gt;&lt;pre class=&#34;sourceCode python&#34;&gt;&lt;code class=&#34;sourceCode python&#34;&gt;&lt;span id=&#34;cb1-1&#34;&gt;&lt;a href=&#34;#cb1-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;im&#34;&gt;from&lt;/span&gt; planit &lt;span class=&#34;im&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;op&#34;&gt;*&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-2&#34;&gt;&lt;a href=&#34;#cb1-2&#34;&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-3&#34;&gt;&lt;a href=&#34;#cb1-3&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# choose to run Planit with a traditional static traffic assignment method&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-4&#34;&gt;&lt;a href=&#34;#cb1-4&#34;&gt;&lt;/a&gt;planit_instance &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; Planit()&lt;/span&gt;
-&lt;span id=&#34;cb1-5&#34;&gt;&lt;a href=&#34;#cb1-5&#34;&gt;&lt;/a&gt;planit_instance.project.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(TrafficAssignment.TRADITIONAL_STATIC)&lt;/span&gt;
-&lt;span id=&#34;cb1-6&#34;&gt;&lt;a href=&#34;#cb1-6&#34;&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-7&#34;&gt;&lt;a href=&#34;#cb1-7&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# set physical cost to BPR link performance function&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-8&#34;&gt;&lt;a href=&#34;#cb1-8&#34;&gt;&lt;/a&gt;planit_instance.project.assignment.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(PhysicalCost.BPR)&lt;/span&gt;
-&lt;span id=&#34;cb1-9&#34;&gt;&lt;a href=&#34;#cb1-9&#34;&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-10&#34;&gt;&lt;a href=&#34;#cb1-10&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# override the default alpha and beta&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-11&#34;&gt;&lt;a href=&#34;#cb1-11&#34;&gt;&lt;/a&gt;alpha &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;fl&#34;&gt;0.87&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-12&#34;&gt;&lt;a href=&#34;#cb1-12&#34;&gt;&lt;/a&gt;beta &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;dv&#34;&gt;5&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-13&#34;&gt;&lt;a href=&#34;#cb1-13&#34;&gt;&lt;/a&gt;planit_instance.project.assignment.physical_cost.set_default_parameter(alpha, beta)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;sourceCode&#34; id=&#34;cb1&#34;&gt;&lt;pre
+class=&#34;sourceCode python&#34;&gt;&lt;code class=&#34;sourceCode python&#34;&gt;&lt;span id=&#34;cb1-1&#34;&gt;&lt;a href=&#34;#cb1-1&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;im&#34;&gt;from&lt;/span&gt; planit &lt;span class=&#34;im&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;op&#34;&gt;*&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-2&#34;&gt;&lt;a href=&#34;#cb1-2&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-3&#34;&gt;&lt;a href=&#34;#cb1-3&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# choose to run Planit with a traditional static traffic assignment method&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-4&#34;&gt;&lt;a href=&#34;#cb1-4&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; Planit()&lt;/span&gt;
+&lt;span id=&#34;cb1-5&#34;&gt;&lt;a href=&#34;#cb1-5&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance.project.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(TrafficAssignment.TRADITIONAL_STATIC)&lt;/span&gt;
+&lt;span id=&#34;cb1-6&#34;&gt;&lt;a href=&#34;#cb1-6&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-7&#34;&gt;&lt;a href=&#34;#cb1-7&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# set physical cost to BPR link performance function&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-8&#34;&gt;&lt;a href=&#34;#cb1-8&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance.project.assignment.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(PhysicalCost.BPR)&lt;/span&gt;
+&lt;span id=&#34;cb1-9&#34;&gt;&lt;a href=&#34;#cb1-9&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-10&#34;&gt;&lt;a href=&#34;#cb1-10&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# override the default alpha and beta&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-11&#34;&gt;&lt;a href=&#34;#cb1-11&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;alpha &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;fl&#34;&gt;0.87&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-12&#34;&gt;&lt;a href=&#34;#cb1-12&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;beta &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;dv&#34;&gt;5&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-13&#34;&gt;&lt;a href=&#34;#cb1-13&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance.project.assignment.physical_cost.set_default_parameter(alpha, beta)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic assignment&lt;/a&gt; on assignments that support this physical cost implementation&lt;br /&gt;
-&lt;a href=&#34;../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available physical cost options&lt;br /&gt;
-&lt;a href=&#34;../&#34;&gt;PhysicalCost&lt;/a&gt; landing page for all available physical cost implementations&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic assignment&lt;/a&gt; on assignments that
+support this physical cost implementation&lt;br /&gt;
+&lt;a href=&#34;../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for
+all available physical cost options&lt;br /&gt;
+&lt;a href=&#34;../&#34;&gt;PhysicalCost&lt;/a&gt; landing page for all available physical
+cost implementations&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;BPRCostWrapper&lt;/code&gt; in &lt;code&gt;projectwrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;BPRCostWrapper&lt;/code&gt; in
+&lt;code&gt;projectwrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: FreeFlow Cost</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/freeflow/</link>
+      <link>http://www.goplanit.org/docs/python/reference/physicalcost/freeflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/physicalcost/freeflow/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/physicalcost/freeflow/</guid>
       <description>
         
         
         &lt;h5 id=&#34;description&#34;&gt;Description&lt;/h5&gt;
-&lt;p&gt;Travel time on a link segment for any mode is based on the free flow travel time, e.g. Length divided by speed This function looks like the following:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \tau_{a,m} = {L_a \over \vartheta_{a,m}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Travel time on a link segment for any mode is based on the free flow
+travel time, e.g. Length divided by speed This function looks like the
+following:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\Large \tau_{a,m} = {L_a \over
+\vartheta_{a,m}}\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{a,m}= \textrm{travel time on link segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow speed on link } a \textrm{ for mode } m,\\ L_a = \textrm {length of link segment} a,\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{a,m}= \textrm{travel time on link
+segment } a \textrm{ for mode } m,\\ \vartheta_{a,m} = \textrm{free flow
+speed on link } a \textrm{ for mode } m,\\ L_a = \textrm {length of link
+segment} a,\)&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;defaults&#34;&gt;Defaults&lt;/h4&gt;
 &lt;p&gt;This class has no defaults (yet)&lt;/p&gt;
 &lt;h4 id=&#34;methods&#34;&gt;Methods&lt;/h4&gt;
@@ -133,19 +187,24 @@
 &lt;h4 id=&#34;properties&#34;&gt;Properties&lt;/h4&gt;
 &lt;p&gt;This class has no properties (yet)&lt;/p&gt;
 &lt;h4 id=&#34;example-1&#34;&gt;Example 1&lt;/h4&gt;
-&lt;div class=&#34;sourceCode&#34; id=&#34;cb1&#34;&gt;&lt;pre class=&#34;sourceCode python&#34;&gt;&lt;code class=&#34;sourceCode python&#34;&gt;&lt;span id=&#34;cb1-1&#34;&gt;&lt;a href=&#34;#cb1-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;im&#34;&gt;from&lt;/span&gt; planit &lt;span class=&#34;im&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;op&#34;&gt;*&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-2&#34;&gt;&lt;a href=&#34;#cb1-2&#34;&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-3&#34;&gt;&lt;a href=&#34;#cb1-3&#34;&gt;&lt;/a&gt;planit_instance &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; Planit()&lt;/span&gt;
-&lt;span id=&#34;cb1-4&#34;&gt;&lt;a href=&#34;#cb1-4&#34;&gt;&lt;/a&gt;planit_instance.project.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(TrafficAssignment.TRADITIONAL_STATIC)&lt;/span&gt;
-&lt;span id=&#34;cb1-5&#34;&gt;&lt;a href=&#34;#cb1-5&#34;&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-6&#34;&gt;&lt;a href=&#34;#cb1-6&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# set physical cost to FREE FLOW&lt;/span&gt;&lt;/span&gt;
-&lt;span id=&#34;cb1-7&#34;&gt;&lt;a href=&#34;#cb1-7&#34;&gt;&lt;/a&gt;planit_instance.project.assignment.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(PhysicalCost.FREEFLOW)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;sourceCode&#34; id=&#34;cb1&#34;&gt;&lt;pre
+class=&#34;sourceCode python&#34;&gt;&lt;code class=&#34;sourceCode python&#34;&gt;&lt;span id=&#34;cb1-1&#34;&gt;&lt;a href=&#34;#cb1-1&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;im&#34;&gt;from&lt;/span&gt; planit &lt;span class=&#34;im&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;op&#34;&gt;*&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-2&#34;&gt;&lt;a href=&#34;#cb1-2&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-3&#34;&gt;&lt;a href=&#34;#cb1-3&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance &lt;span class=&#34;op&#34;&gt;=&lt;/span&gt; Planit()&lt;/span&gt;
+&lt;span id=&#34;cb1-4&#34;&gt;&lt;a href=&#34;#cb1-4&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance.project.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(TrafficAssignment.TRADITIONAL_STATIC)&lt;/span&gt;
+&lt;span id=&#34;cb1-5&#34;&gt;&lt;a href=&#34;#cb1-5&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-6&#34;&gt;&lt;a href=&#34;#cb1-6&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;&lt;span class=&#34;co&#34;&gt;# set physical cost to FREE FLOW&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&#34;cb1-7&#34;&gt;&lt;a href=&#34;#cb1-7&#34; aria-hidden=&#34;true&#34; tabindex=&#34;-1&#34;&gt;&lt;/a&gt;planit_instance.project.assignment.&lt;span class=&#34;bu&#34;&gt;set&lt;/span&gt;(PhysicalCost.FREEFLOW)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id=&#34;see-also&#34;&gt;See also&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic assignment&lt;/a&gt; on assignments that support this physical cost implementation&lt;br /&gt;
-&lt;a href=&#34;../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for all available physical cost options&lt;br /&gt;
-&lt;a href=&#34;../&#34;&gt;PhysicalCost&lt;/a&gt; landing page for all available physical cost implementations&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../assignment&#34;&gt;Traffic assignment&lt;/a&gt; on assignments that
+support this physical cost implementation&lt;br /&gt;
+&lt;a href=&#34;../../enums/physicalcosttype&#34;&gt;PhysicalCost.&amp;lt;enum&amp;gt;&lt;/a&gt; for
+all available physical cost options&lt;br /&gt;
+&lt;a href=&#34;../&#34;&gt;PhysicalCost&lt;/a&gt; landing page for all available physical
+cost implementations&lt;/p&gt;
 &lt;h4 id=&#34;source-code&#34;&gt;Source code&lt;/h4&gt;
-&lt;p&gt;Class &lt;code&gt;FreeFlowCostWrapper&lt;/code&gt; in &lt;code&gt;projectwrappers.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Class &lt;code&gt;FreeFlowCostWrapper&lt;/code&gt; in
+&lt;code&gt;projectwrappers.py&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>

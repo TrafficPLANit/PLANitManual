@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Output Data formats</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/</link>
+    <link>http://www.goplanit.org/docs/inputoutput/output/</link>
     <description>Recent content in Output Data formats on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/inputoutput/output/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: PLANit Default Output Data format (XML/CSV)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/planitdefault/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/output/planitdefault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/planitdefault/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/output/planitdefault/</guid>
       <description>
         
         
@@ -126,10 +126,10 @@ otherwise they are discarded after simulation.&lt;/p&gt;
     
     <item>
       <title>Docs: Link (segment) Output Property Support</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/link_support/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/output/link_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/link_support/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/output/link_support/</guid>
       <description>
         
         
@@ -400,10 +400,10 @@ otherwise they are discarded after simulation.&lt;/p&gt;
     
     <item>
       <title>Docs: Origin-Destination Output Property Support</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/od_support/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/output/od_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/od_support/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/output/od_support/</guid>
       <description>
         
         
@@ -537,10 +537,10 @@ otherwise they are discarded after simulation.&lt;/p&gt;
     
     <item>
       <title>Docs: Path Output Property Support</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/path_support/</link>
+      <link>http://www.goplanit.org/docs/inputoutput/output/path_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/inputoutput/output/path_support/</guid>
+      <guid>http://www.goplanit.org/docs/inputoutput/output/path_support/</guid>
       <description>
         
         

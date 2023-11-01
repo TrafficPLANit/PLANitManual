@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – GeometryServiceNetworkWriterSettings</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</link>
     <description>Recent content in GeometryServiceNetworkWriterSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .set_country(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_country&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_country&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_country&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_country&#43;/</guid>
       <description>
         
         
@@ -88,10 +88,10 @@ see for example &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_ISO_3166_c
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_output_dir&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_output_dir&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_output_dir&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_output_dir&#43;/</guid>
       <description>
         
         
@@ -152,10 +152,10 @@ otherwise the writer will fail.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_persist_service_leg_segments(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_leg_segments&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_leg_segments&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_leg_segments&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_leg_segments&#43;/</guid>
       <description>
         
         
@@ -222,10 +222,10 @@ link segments of the underlying physical road network.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_persist_service_legs(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_legs&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_legs&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_legs&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_legs&#43;/</guid>
       <description>
         
         
@@ -288,10 +288,10 @@ link segments of the underlying physical road network.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_persist_service_nodes(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_nodes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_nodes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_nodes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_persist_service_nodes&#43;/</guid>
       <description>
         
         
@@ -354,10 +354,10 @@ link segments of the underlying physical road network.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_service_legs_file_name(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_legs_file_name&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_legs_file_name&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_legs_file_name&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_legs_file_name&#43;/</guid>
       <description>
         
         
@@ -423,10 +423,10 @@ The structure of each file name is set up as follows:&lt;/p&gt;
     
     <item>
       <title>Docs: .set_service_nodes_file_name(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_nodes_file_name&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_nodes_file_name&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_nodes_file_name&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_nodes_file_name&#43;/</guid>
       <description>
         
         
@@ -492,10 +492,10 @@ The structure of each file name is set up as follows:&lt;/p&gt;
     
     <item>
       <title>Docs: .set_set_service_leg_segments_file_name(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_leg_segments_file_name&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_leg_segments_file_name&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_leg_segments_file_name&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/gsnws_set_service_leg_segments_file_name&#43;/</guid>
       <description>
         
         

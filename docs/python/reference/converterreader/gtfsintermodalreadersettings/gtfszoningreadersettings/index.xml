@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – GtfsZoningReaderSettings</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</link>
     <description>Recent content in GtfsZoningReaderSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .activate_extended_logging_for_gtfs_zones(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_extended_log_stops&#43;/</guid>
       <description>
         
         
@@ -81,10 +81,10 @@
     
     <item>
       <title>Docs: .add_log_gtfs_stop_to_link_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_add_log_stop_link_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_add_log_stop_link_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_add_log_stop_link_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_add_log_stop_link_mapping&#43;/</guid>
       <description>
         
         
@@ -147,10 +147,10 @@ chosen by the algorithm and possibly override this choice and/or verify the over
     
     <item>
       <title>Docs: .add_overwrite_gtfs_stop_transfer_zone_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_mapping&#43;/</guid>
       <description>
         
         
@@ -243,10 +243,10 @@ network/zoning has resulted in separate platforms, but the GTFS stop reflects al
     
     <item>
       <title>Docs: .disallow_gtfs_stop_to_transfer_zone_joint_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_disallow_stop_tz_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_disallow_stop_tz_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_disallow_stop_tz_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_disallow_stop_tz_mapping&#43;/</guid>
       <description>
         
         
@@ -317,10 +317,10 @@ this in an easy manner of so desired.&lt;/p&gt;
     
     <item>
       <title>Docs: .exclude_gtfs_stops_by_id(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_exclude_stops&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_exclude_stops&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_exclude_stops&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_exclude_stops&#43;/</guid>
       <description>
         
         
@@ -382,10 +382,10 @@ this in an easy manner of so desired.&lt;/p&gt;
     
     <item>
       <title>Docs: .force_create_new_transfer_zone_for_gtfs_stops(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_force_create_new_tz&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_force_create_new_tz&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_force_create_new_tz&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_force_create_new_tz&#43;/</guid>
       <description>
         
         
@@ -450,10 +450,10 @@ transfer zone.&lt;/p&gt;
     
     <item>
       <title>Docs: .get_gtfs_stop_to_transfer_zone_search_radius_meters()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_search_radius/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_search_radius/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_search_radius/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_search_radius/</guid>
       <description>
         
         
@@ -502,10 +502,10 @@ it will be chosen  as a valid match.&lt;/p&gt;
     
     <item>
       <title>Docs: .get_overwritten_gtfs_stop_to_link_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_link_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_link_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_link_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_link_mapping&#43;/</guid>
       <description>
         
         
@@ -553,10 +553,10 @@ it will be chosen  as a valid match.&lt;/p&gt;
     
     <item>
       <title>Docs: .get_overwritten_gtfs_stop_transfer_zone_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_get_stop_tz_mapping&#43;/</guid>
       <description>
         
         
@@ -608,10 +608,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .has_overwritten_gtfs_stop_to_link_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_has_stop_link_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_has_stop_link_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_has_stop_link_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_has_stop_link_mapping&#43;/</guid>
       <description>
         
         
@@ -654,10 +654,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_disallow_gtfs_stop_to_transfer_zone_joint_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_disallow_stop_tz_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_disallow_stop_tz_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_disallow_stop_tz_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_disallow_stop_tz_mapping&#43;/</guid>
       <description>
         
         
@@ -701,10 +701,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_excluded_gtfs_stop(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_exclude_stop&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_exclude_stop&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_exclude_stop&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_exclude_stop&#43;/</guid>
       <description>
         
         
@@ -746,10 +746,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_extended_logging_for_gtfs_zone_activated(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_extended_log_stop&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_extended_log_stop&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_extended_log_stop&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_extended_log_stop&#43;/</guid>
       <description>
         
         
@@ -791,10 +791,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_log_created_gtfs_zones()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_created_stops/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_created_stops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_created_stops/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_created_stops/</guid>
       <description>
         
         
@@ -838,10 +838,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_log_mapped_gtfs_zones()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_mapped_stops/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_mapped_stops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_mapped_stops/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_log_mapped_stops/</guid>
       <description>
         
         
@@ -885,10 +885,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_overwritten_gtfs_stop_location(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_overwrite_stop_location&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_overwrite_stop_location&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_overwrite_stop_location&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_overwrite_stop_location&#43;/</guid>
       <description>
         
         
@@ -930,10 +930,10 @@ but the GTFS stop reflects all platforms at once), the reader allows a single GT
     
     <item>
       <title>Docs: .is_overwritten_gtfs_stop_transfer_zone_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_stop_tz_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_stop_tz_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_stop_tz_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_is_stop_tz_mapping&#43;/</guid>
       <description>
         
         
@@ -977,10 +977,10 @@ a stop for example parsed from Open Street Map) exists.&lt;/p&gt;
     
     <item>
       <title>Docs: .overwrite_gtfs_stop_to_link_mapping(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_link_mapping&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_link_mapping&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_link_mapping&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_link_mapping&#43;/</guid>
       <description>
         
         
@@ -1069,10 +1069,10 @@ which one to use.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_gtfs_stop_to_transfer_zone_search_radius_meters(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_search_radius&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_search_radius&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_search_radius&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_stop_tz_search_radius&#43;/</guid>
       <description>
         
         
@@ -1137,10 +1137,10 @@ it will be chosen  as a valid match.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_log_created_gtfs_zones(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_created_stops&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_created_stops&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_created_stops&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_created_stops&#43;/</guid>
       <description>
         
         
@@ -1202,10 +1202,10 @@ it will be chosen  as a valid match.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_log_mapped_gtfs_zones(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_mapped_stops&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_mapped_stops&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_mapped_stops&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_log_mapped_stops&#43;/</guid>
       <description>
         
         
@@ -1267,10 +1267,10 @@ it will be chosen  as a valid match.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_overwrite_gtfs_stop_location(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_overwrite_stop_location&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_overwrite_stop_location&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_overwrite_stop_location&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_overwrite_stop_location&#43;/</guid>
       <description>
         
         
@@ -1354,10 +1354,10 @@ updating its location via this method.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_remove_unused_transfer_zones(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_removed_unused_tz&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_removed_unused_tz&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_removed_unused_tz&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/gtfsimrzs_removed_unused_tz&#43;/</guid>
       <description>
         
         
