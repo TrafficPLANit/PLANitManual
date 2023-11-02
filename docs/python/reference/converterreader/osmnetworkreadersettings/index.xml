@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – OsmNetworkReaderSettings</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/</link>
     <description>Recent content in OsmNetworkReaderSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .activate_highway_parser(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_highway_parser&#43;/</guid>
       <description>
         
         
@@ -77,10 +77,10 @@ By default, the highway parser is activated. This call is delegated to the same 
     
     <item>
       <title>Docs: .activate_railway_parser(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_railway_parser&#43;/</guid>
       <description>
         
         
@@ -140,10 +140,10 @@ When activated the parser will consider all activated osm railway types, when de
     
     <item>
       <title>Docs: .activate_waterway_parser(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_waterway_parser&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_waterway_parser&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_waterway_parser&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_activate_waterway_parser&#43;/</guid>
       <description>
         
         
@@ -205,10 +205,10 @@ none of them.&lt;/p&gt;
     
     <item>
       <title>Docs: .deactivate_all_osm_way_types_except(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_deactivate_all_way_type_except&#43;/</guid>
       <description>
         
         
@@ -269,10 +269,10 @@ none of them.&lt;/p&gt;
     
     <item>
       <title>Docs: .exclude_osm_ways_from_parsing(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_exclude_osm_ways&#43;/</guid>
       <description>
         
         
@@ -330,10 +330,10 @@ by the parser in an earlier run.&lt;/p&gt;
     
     <item>
       <title>Docs: .highway_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_highway_settings/</guid>
       <description>
         
         
@@ -363,10 +363,10 @@ by the parser in an earlier run.&lt;/p&gt;
     
     <item>
       <title>Docs: .is_highway_parser_active()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_highway_parser_active&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_highway_parser_active&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_highway_parser_active&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_highway_parser_active&#43;/</guid>
       <description>
         
         
@@ -401,10 +401,10 @@ when deactivated it considers none of them.&lt;/p&gt;
     
     <item>
       <title>Docs: .is_railway_parser_active()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_railway_parser_active&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_railway_parser_active&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_railway_parser_active&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_railway_parser_active&#43;/</guid>
       <description>
         
         
@@ -440,10 +440,10 @@ This call is delegated to the same method in &lt;code&gt;.railway_settings&lt;/c
     
     <item>
       <title>Docs: .is_waterway_parser_active()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_waterway_parser_active&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_waterway_parser_active&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_waterway_parser_active&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_is_waterway_parser_active&#43;/</guid>
       <description>
         
         
@@ -479,10 +479,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .overwrite_mode_access_by_osm_way_id(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_overwrite_mode_access_way_id&#43;/</guid>
       <description>
         
         
@@ -551,10 +551,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .railway_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_railway_settings/</guid>
       <description>
         
         
@@ -584,10 +584,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .set_always_keep_largest_subnetwork(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_always_keep_largest_subnetwork&#43;/</guid>
       <description>
         
         
@@ -645,10 +645,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .set_bounding_box(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_bounding_box&#43;/</guid>
       <description>
         
         
@@ -727,10 +727,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .set_discard_dangling_networks_above(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_above&#43;/</guid>
       <description>
         
         
@@ -788,10 +788,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .set_discard_dangling_networks_below(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_discard_dangling_networks_below&#43;/</guid>
       <description>
         
         
@@ -847,10 +847,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .set_input_file(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_file&#43;/</guid>
       <description>
         
         
@@ -917,10 +917,10 @@ This call is delegated to the same method in &lt;code&gt;.waterway_settings&lt;/
     
     <item>
       <title>Docs: .set_input_source(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_input_source&#43;/</guid>
       <description>
         
         
@@ -982,10 +982,10 @@ is able to parse this stream as if it is a local file.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_keep_osm_ways_outside_bounding_box(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_keep_ways_outside_bounding_box&#43;/</guid>
       <description>
         
         
@@ -1043,10 +1043,10 @@ is able to parse this stream as if it is a local file.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_remove_dangling_subnetworks(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_set_remove_dangling_subnetworks&#43;/</guid>
       <description>
         
         
@@ -1101,10 +1101,10 @@ is able to parse this stream as if it is a local file.&lt;/p&gt;
     
     <item>
       <title>Docs: .waterway_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_waterway_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_waterway_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_waterway_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmnrs_waterway_settings/</guid>
       <description>
         
         
@@ -1136,10 +1136,10 @@ the &lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: OsmHighwaySettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</guid>
       <description>
         
         
@@ -1284,10 +1284,10 @@ the &lt;code&gt;OsmNetworkReaderSettings&lt;/code&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: OsmLaneConfiguration</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmlaneconfiguration/</guid>
       <description>
         
         
@@ -1349,10 +1349,10 @@ This OSM reader adopts those same suggested lane defaults to be compliant. Howev
     
     <item>
       <title>Docs: OsmRailwaySettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmrailwaysettings/</guid>
       <description>
         
         
@@ -1479,10 +1479,10 @@ This OSM reader adopts those same suggested lane defaults to be compliant. Howev
     
     <item>
       <title>Docs: OsmWaterwaySettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmwaterwaysettings/</guid>
       <description>
         
         

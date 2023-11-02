@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – GtfsIntermodalReaderSettings</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/</link>
     <description>Recent content in GtfsIntermodalReaderSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .services_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_services_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_services_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_services_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_services_settings/</guid>
       <description>
         
         
@@ -58,10 +58,10 @@ public transport services.&lt;/p&gt;
     
     <item>
       <title>Docs: .zoning_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_zoning_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_zoning_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_zoning_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_zoning_settings/</guid>
       <description>
         
         
@@ -101,10 +101,10 @@ hence they are captured in &lt;code&gt;zoning_settings&lt;/code&gt;).&lt;/p&gt;
     
     <item>
       <title>Docs: .set_input_file(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_set_input_file&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_set_input_file&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_set_input_file&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsimrs_set_input_file&#43;/</guid>
       <description>
         
         
@@ -178,10 +178,10 @@ the &lt;code&gt;GtfsIntermodalReader&lt;/code&gt; is running.&lt;/p&gt;
     
     <item>
       <title>Docs: GtfsServicesReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</guid>
       <description>
         
         
@@ -327,10 +327,10 @@ which in turn is built on top of the physical road, rail, and water network.&lt;
     
     <item>
       <title>Docs: GtfsZoningReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfszoningreadersettings/</guid>
       <description>
         
         

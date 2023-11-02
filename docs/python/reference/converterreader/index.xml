@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Converter Reader</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/</link>
     <description>Recent content in Converter Reader on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: GtfsIntermodalReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreader/</guid>
       <description>
         
         
@@ -147,10 +147,10 @@ available to PLANit predefined mode types, which may be altered by the user if s
     
     <item>
       <title>Docs: GtfsIntermodalReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/</guid>
       <description>
         
         
@@ -255,10 +255,10 @@ is expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: OsmIntermodalReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreader/</guid>
       <description>
         
         
@@ -338,10 +338,10 @@ when performing the OSM intermodal network reading.&lt;/p&gt;
     
     <item>
       <title>Docs: OsmIntermodalReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/</guid>
       <description>
         
         
@@ -441,10 +441,10 @@ when performing the OSM intermodal network reading.&lt;/p&gt;
     
     <item>
       <title>Docs: OsmNetworkReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreader/</guid>
       <description>
         
         
@@ -521,10 +521,10 @@ will log the majority of the adopted defaults in its output when performing the 
     
     <item>
       <title>Docs: OsmNetworkReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/</guid>
       <description>
         
         
@@ -732,10 +732,10 @@ to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitDemandsReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitdemandsreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitdemandsreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreader/</guid>
       <description>
         
         
@@ -818,10 +818,10 @@ format.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitDemandsReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitdemandsreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitdemandsreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitdemandsreadersettings/</guid>
       <description>
         
         
@@ -881,10 +881,10 @@ is expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitIntermodalReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitintermodalreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitintermodalreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreader/</guid>
       <description>
         
         
@@ -956,10 +956,10 @@ the intermodal network reading.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitIntermodalReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitintermodalreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitintermodalreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitintermodalreadersettings/</guid>
       <description>
         
         
@@ -1061,10 +1061,10 @@ is expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitNetworkReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitnetworkreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitnetworkreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreader/</guid>
       <description>
         
         
@@ -1132,10 +1132,10 @@ the &lt;a href=&#34;../planitnetworkreadersettings&#34;&gt;&lt;code&gt;PlanitNet
     
     <item>
       <title>Docs: PlanitNetworkReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitnetworkreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitnetworkreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitnetworkreadersettings/</guid>
       <description>
         
         
@@ -1199,10 +1199,10 @@ expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitZoningReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitzoningreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitzoningreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreader/</guid>
       <description>
         
         
@@ -1279,10 +1279,10 @@ provided via a network reader.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitZoningReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitzoningreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/planitzoningreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/planitzoningreadersettings/</guid>
       <description>
         
         
@@ -1348,10 +1348,10 @@ expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: TntpDemandsReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpdemandsreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpdemandsreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreader/</guid>
       <description>
         
         
@@ -1433,10 +1433,10 @@ the &lt;a href=&#34;../tntpdemandsreadersettings&#34;&gt;&lt;code&gt;TntpDemands
     
     <item>
       <title>Docs: TntpDemandsReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpdemandsreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpdemandsreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpdemandsreadersettings/</guid>
       <description>
         
         
@@ -1513,10 +1513,10 @@ yet documented though, have a look in the source code for specifics.&lt;/p&gt;
     
     <item>
       <title>Docs: TntpNetworkReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreader/</guid>
       <description>
         
         
@@ -1592,10 +1592,10 @@ information to correctly parse the data, as well as defining the units in which 
     
     <item>
       <title>Docs: TntpNetworkReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpnetworkreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpnetworkreadersettings/</guid>
       <description>
         
         
@@ -1714,10 +1714,10 @@ yet documented though, have a look in the source code for specifics&lt;/p&gt;
     
     <item>
       <title>Docs: TntpZoningReader</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpzoningreader/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpzoningreader/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreader/</guid>
       <description>
         
         
@@ -1802,10 +1802,10 @@ connectoid cost on top of each zone to represent the (non-existent) connector.&l
     
     <item>
       <title>Docs: TntpZoningReaderSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpzoningreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/tntpzoningreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/tntpzoningreadersettings/</guid>
       <description>
         
         

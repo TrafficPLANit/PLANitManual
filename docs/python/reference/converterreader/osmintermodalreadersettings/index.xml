@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – OsmIntermodalReaderSettings</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/</link>
     <description>Recent content in OsmIntermodalReaderSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .network_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_network_settings/</guid>
       <description>
         
         
@@ -47,10 +47,10 @@
     
     <item>
       <title>Docs: .pt_settings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_pt_settings/</guid>
       <description>
         
         
@@ -78,10 +78,10 @@
     
     <item>
       <title>Docs: .set_bounding_box(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_bounding_box&#43;/</guid>
       <description>
         
         
@@ -159,10 +159,10 @@
     
     <item>
       <title>Docs: .set_input_file(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_file&#43;/</guid>
       <description>
         
         
@@ -231,10 +231,10 @@
     
     <item>
       <title>Docs: .set_input_source(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmimrs_set_input_source&#43;/</guid>
       <description>
         
         
@@ -296,10 +296,10 @@ is able to parse this stream as if it is a local file.&lt;/p&gt;
     
     <item>
       <title>Docs: OsmPublicTransportSettings</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmintermodalreadersettings/osmptreadersettings/</guid>
       <description>
         
         

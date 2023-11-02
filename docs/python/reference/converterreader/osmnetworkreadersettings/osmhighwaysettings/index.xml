@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – OsmHighwaySettings</title>
-    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</link>
+    <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/</link>
     <description>Recent content in OsmHighwaySettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .activate_all_osm_highway_types()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_all_types/</guid>
       <description>
         
         
@@ -52,10 +52,10 @@
     
     <item>
       <title>Docs: .activate_osm_highway_type(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_type&#43;/</guid>
       <description>
         
         
@@ -113,10 +113,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .activate_osm_highway_types(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_types&#43;/</guid>
       <description>
         
         
@@ -174,10 +174,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .activate_osm_road_mode(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_mode&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_mode&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_mode&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_activate_mode&#43;/</guid>
       <description>
         
         
@@ -234,10 +234,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .add_allowed_highway_modes(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_add_allowed_highway_modes&#43;/</guid>
       <description>
         
         
@@ -301,10 +301,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .collect_allowed_osm_highway_modes(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_collect_allowed_modes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_collect_allowed_modes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_collect_allowed_modes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_collect_allowed_modes&#43;/</guid>
       <description>
         
         
@@ -362,10 +362,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .deactivate_all_osm_highway_types_except(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_types_except&#43;/</guid>
       <description>
         
         
@@ -422,10 +422,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .deactivate_all_osm_road_modes_except(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_all_modes_except&#43;/</guid>
       <description>
         
         
@@ -482,10 +482,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .deactivate_osm_highway_type(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_type&#43;/</guid>
       <description>
         
         
@@ -543,10 +543,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .deactivate_osm_road_mode(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_mode&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_mode&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_mode&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_mode&#43;/</guid>
       <description>
         
         
@@ -603,10 +603,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .deactivate_osm_road_modes(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_deactivate_modes&#43;/</guid>
       <description>
         
         
@@ -663,10 +663,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .get_default_speed_limit_by_osm_highway_type(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_speedlimit_by_type&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_speedlimit_by_type&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_speedlimit_by_type&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_speedlimit_by_type&#43;/</guid>
       <description>
         
         
@@ -724,10 +724,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .get_mapped_osm_road_modes(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_osm_road_modes&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_osm_road_modes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_osm_road_modes&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_osm_road_modes&#43;/</guid>
       <description>
         
         
@@ -784,10 +784,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .get_mapped_planit_road_mode(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_planit_mode&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_planit_mode&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_planit_mode&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_get_mapped_planit_mode&#43;/</guid>
       <description>
         
         
@@ -844,10 +844,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .is_osm_highway_type_activated(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_activated&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_activated&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_activated&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_activated&#43;/</guid>
       <description>
         
         
@@ -906,10 +906,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .is_osm_highway_type_deactivated(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_deactivated&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_deactivated&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_deactivated&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_highway_type_deactivated&#43;/</guid>
       <description>
         
         
@@ -968,10 +968,10 @@ see also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt
     
     <item>
       <title>Docs: .is_speed_limit_defaults_based_on_urban_area()</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_speed_default_urbanbased&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_speed_default_urbanbased&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_speed_default_urbanbased&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_is_speed_default_urbanbased&#43;/</guid>
       <description>
         
         
@@ -1012,10 +1012,10 @@ in future versions.&lt;/p&gt;
     
     <item>
       <title>Docs: .overwrite_capacity_max_density_defaults(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_overwrite_cap_max_density&#43;/</guid>
       <description>
         
         
@@ -1090,10 +1090,10 @@ also &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Key:highway&#34;&gt;htt
     
     <item>
       <title>Docs: .set_default_when_osm_highway_type_unsupported(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_default_osm_way_unsupported&#43;/</guid>
       <description>
         
         
@@ -1168,10 +1168,10 @@ the default being the &lt;code&gt;tertiary&lt;/code&gt; OSM highway type. Here t
     
     <item>
       <title>Docs: .set_speed_limit_defaults_based_on_urban_area(&#43;)</title>
-      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</link>
+      <link>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</guid>
+      <guid>http://www.goplanit.org/docs/python/reference/converterreader/osmnetworkreadersettings/osmhighwaysettings/osmnrhs_speed_limits_urban_area&#43;/</guid>
       <description>
         
         
