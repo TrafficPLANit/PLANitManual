@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Converter Factory</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterfactory/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/</link>
     <description>Recent content in Converter Factory on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterfactory/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .create(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterfactory/cf_create&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/cf_create&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/cf_create&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/cf_create&#43;/</guid>
       <description>
         
         
@@ -99,10 +99,10 @@ running on the network&lt;/p&gt;
     
     <item>
       <title>Docs: IntermodalConverter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/intermodalconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/intermodalconverter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/intermodalconverter/</guid>
       <description>
         
         
@@ -200,10 +200,10 @@ service network and or services configuration.&lt;/p&gt;
     
     <item>
       <title>Docs: NetworkConverter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/networkconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/networkconverter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/networkconverter/</guid>
       <description>
         
         
@@ -277,10 +277,10 @@ clearly indicated. Failing to do so will cause the conversion to fail as informa
     
     <item>
       <title>Docs: ZoningConverter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterfactory/zoningconverter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/zoningconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/zoningconverter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/zoningconverter/</guid>
       <description>
         
         
@@ -373,10 +373,10 @@ construct an &amp;lsquo;all-in-one&amp;rsquo; intermodal reader instead, if avai
     
     <item>
       <title>Docs: DemandsConverter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterfactory/demandsconverter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/demandsconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterfactory/demandsconverter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterfactory/demandsconverter/</guid>
       <description>
         
         

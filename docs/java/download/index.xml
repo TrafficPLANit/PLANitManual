@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Downloads</title>
-    <link>http://www.goplanit.org/docs/java/download/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/java/download/</link>
     <description>Recent content in Downloads on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/java/download/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/java/download/index.xml" rel="self" type="application/rss+xml" />
     
     
       

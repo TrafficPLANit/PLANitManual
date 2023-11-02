@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – PlanitZoningWriterSettings</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</link>
     <description>Recent content in PlanitZoningWriterSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .set_country(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_country&#43;/</guid>
       <description>
         
         
@@ -93,10 +93,10 @@ but sometimes a country specific projection is required in which case the countr
     
     <item>
       <title>Docs: .set_file_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_file_name&#43;/</guid>
       <description>
         
         
@@ -159,10 +159,10 @@ file extension in the file name.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/pzws_set_output_dir&#43;/</guid>
       <description>
         
         

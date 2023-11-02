@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Planit()</title>
-    <link>http://www.goplanit.org/docs/python/reference/planit/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/</link>
     <description>Recent content in Planit() on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/planit/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .create_project(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/planit/planit_create_project&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_create_project&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planit/planit_create_project&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_create_project&#43;/</guid>
       <description>
         
         
@@ -75,10 +75,10 @@
     
     <item>
       <title>Docs: .converter_factory</title>
-      <link>http://www.goplanit.org/docs/python/reference/planit/planit_converter_factory/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_converter_factory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planit/planit_converter_factory/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_converter_factory/</guid>
       <description>
         
         
@@ -106,10 +106,10 @@
     
     <item>
       <title>Docs: .project</title>
-      <link>http://www.goplanit.org/docs/python/reference/planit/planit_project/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/planit/planit_project/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/planit/planit_project/</guid>
       <description>
         
         

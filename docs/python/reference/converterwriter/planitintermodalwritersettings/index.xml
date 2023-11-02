@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – PlanitIntermodalWriterSettings</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/</link>
     <description>Recent content in PlanitIntermodalWriterSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .network_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_network_settings/</guid>
       <description>
         
         
@@ -60,10 +60,10 @@ persistence of the physical road and rail network and is therefore configured vi
     
     <item>
       <title>Docs: .routed_services_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_routed_services_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_routed_services_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_routed_services_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_routed_services_settings/</guid>
       <description>
         
         
@@ -103,10 +103,10 @@ service network built on top of the physical road network (if present).&lt;/p&gt
     
     <item>
       <title>Docs: .service_network_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_service_network_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_service_network_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_service_network_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_service_network_settings/</guid>
       <description>
         
         
@@ -146,10 +146,10 @@ service network built on top of the physical road network (if present).&lt;/p&gt
     
     <item>
       <title>Docs: .set_country(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_country&#43;/</guid>
       <description>
         
         
@@ -219,10 +219,10 @@ cases, but sometimes a country specific projection is required in which case the
     
     <item>
       <title>Docs: .set_output_directory(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_set_output_dir&#43;/</guid>
       <description>
         
         
@@ -282,10 +282,10 @@ passed on to the underlying network and zoning (settings) automatically.&lt;/p&g
     
     <item>
       <title>Docs: .zoning_settings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/pimws_zoning_settings/</guid>
       <description>
         
         
@@ -325,10 +325,10 @@ zoning aspects of the Planit native XML writer, e.g., regarding the travel zones
     
     <item>
       <title>Docs: PlanitRoutedServicesWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitroutedserviceswritersettings/</guid>
       <description>
         
         
@@ -402,10 +402,10 @@ expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitServiceNetworkWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitservicenetworkwritersettings/</guid>
       <description>
         
         
@@ -473,10 +473,10 @@ expected to configure this setting explicitly or not.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitZoningWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/planitzoningwritersettings/</guid>
       <description>
         
         

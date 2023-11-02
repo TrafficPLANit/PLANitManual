@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – GtfsServicesReaderSettings</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/</link>
     <description>Recent content in GtfsServicesReaderSettings on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: .day_of_week</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_day_of_week/</guid>
       <description>
         
         
@@ -71,10 +71,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .activate_logging_for_gtfs_route_by_short_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_route&#43;/</guid>
       <description>
         
         
@@ -139,10 +139,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .add_log_gtfs_stop_routes(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_stop_routes&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_stop_routes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_stop_routes&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_log_stop_routes&#43;/</guid>
       <description>
         
         
@@ -204,10 +204,10 @@ the user decides which day of the week is chosen and only those GTFS routes that
     
     <item>
       <title>Docs: .add_time_period_filter(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_add_time_filter&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_add_time_filter&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_add_time_filter&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_add_time_filter&#43;/</guid>
       <description>
         
         
@@ -280,10 +280,10 @@ specified time filters.&lt;/p&gt;
     
     <item>
       <title>Docs: .exclude_all_gtfs_routes_except_by_short_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes_except&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes_except&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes_except&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes_except&#43;/</guid>
       <description>
         
         
@@ -349,10 +349,10 @@ for nodes that represent public transport can be bus stops, platforms, or statio
     
     <item>
       <title>Docs: .exclude_gtfs_routes_by_short_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_exclude_routes&#43;/</guid>
       <description>
         
         
@@ -414,10 +414,10 @@ for nodes that represent public transport can be bus stops, platforms, or statio
     
     <item>
       <title>Docs: .get_time_period_filters()</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_get_time_filters_/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_get_time_filters_/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_get_time_filters_/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_get_time_filters_/</guid>
       <description>
         
         
@@ -472,10 +472,10 @@ provides a single filter comprising the start and end time of the period, respec
     
     <item>
       <title>Docs: .is_activated_logging_for_gtfs_route_by_short_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_route&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_route&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_route&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_route&#43;/</guid>
       <description>
         
         
@@ -540,10 +540,10 @@ otherwise it is not.&lt;/p&gt;
     
     <item>
       <title>Docs: .is_group_identical_gtfs_trips()</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_group_trips/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_group_trips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_group_trips/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_group_trips/</guid>
       <description>
         
         
@@ -588,10 +588,10 @@ otherwise it is not&lt;/p&gt;
     
     <item>
       <title>Docs: .is_gtfs_route_included_by_short_name(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_route_included&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_route_included&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_route_included&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_route_included&#43;/</guid>
       <description>
         
         
@@ -657,10 +657,10 @@ included.&lt;/p&gt;
     
     <item>
       <title>Docs: .is_include_partial_gtfs_trips_if_stops_in_time_period()</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_include_partial_trips/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_include_partial_trips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_include_partial_trips/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_include_partial_trips/</guid>
       <description>
         
         
@@ -705,10 +705,10 @@ are considered, otherwise they are not.&lt;/p&gt;
     
     <item>
       <title>Docs: .is_log_gtfs_stop_route(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_stop_route&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_stop_route&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_stop_route&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_is_log_stop_route&#43;/</guid>
       <description>
         
         
@@ -773,10 +773,10 @@ otherwise it is not.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_group_identical_gtfs_trips(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_group_trips&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_group_trips&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_group_trips&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_group_trips&#43;/</guid>
       <description>
         
         
@@ -840,10 +840,10 @@ into a single schedule of consolidated departure times.&lt;/p&gt;
     
     <item>
       <title>Docs: .set_include_partial_gtfs_trips_if_stops_in_time_period(&#43;)</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_include_partial_trips&#43;/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_include_partial_trips&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_include_partial_trips&#43;/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterreader/gtfsintermodalreadersettings/gtfsservicesreadersettings/gtfsimrss_include_partial_trips&#43;/</guid>
       <description>
         
         

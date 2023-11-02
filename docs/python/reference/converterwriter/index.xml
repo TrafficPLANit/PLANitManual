@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Converter Writer</title>
-    <link>http://www.goplanit.org/docs/python/reference/converterwriter/</link>
+    <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/</link>
     <description>Recent content in Converter Writer on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://www.goplanit.org/docs/python/reference/converterwriter/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: GeometryIntermodalWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryintermodalwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryintermodalwriter/</guid>
       <description>
         
         
@@ -96,10 +96,10 @@ all information is persisted 1:1 compared to the original PLANit data (only in a
     
     <item>
       <title>Docs: GeometryIntermodalWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryintermodalwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryintermodalwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryintermodalwritersettings/</guid>
       <description>
         
         
@@ -215,10 +215,10 @@ routed services when they are set by the user.&lt;/p&gt;
     
     <item>
       <title>Docs: GeometryNetworkWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometrynetworkwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometrynetworkwriter/</guid>
       <description>
         
         
@@ -290,10 +290,10 @@ all information is persisted 1:1 compared to the original PLANit data (only in a
     
     <item>
       <title>Docs: GeometryNetworkWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometrynetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometrynetworkwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometrynetworkwritersettings/</guid>
       <description>
         
         
@@ -384,10 +384,10 @@ It allows the user to configure the GeometryNetworkWriter output.&lt;/p&gt;
     
     <item>
       <title>Docs: GeometryRoutedServicesWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryroutedserviceswritersettings/</guid>
       <description>
         
         
@@ -467,10 +467,10 @@ explicitly.&lt;/p&gt;
     
     <item>
       <title>Docs: GeometryServiceNetworkWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryservicenetworkwritersettings/</guid>
       <description>
         
         
@@ -577,10 +577,10 @@ explicitly.&lt;/p&gt;
     
     <item>
       <title>Docs: GeometryZoningWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryzoningwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryzoningwriter/</guid>
       <description>
         
         
@@ -659,10 +659,10 @@ all information is persisted 1:1 compared to the original PLANit data (only in a
     
     <item>
       <title>Docs: GeometryZoningWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryzoningwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/geometryzoningwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/geometryzoningwritersettings/</guid>
       <description>
         
         
@@ -800,10 +800,10 @@ It allows the user to configure the GeometryZoningWriter output.&lt;/p&gt;
     
     <item>
       <title>Docs: MatsimIntermodalWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwriter/</guid>
       <description>
         
         
@@ -882,10 +882,10 @@ MATSim intermodal network writing.&lt;/p&gt;
     
     <item>
       <title>Docs: MatsimIntermodalWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimintermodalwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimintermodalwritersettings/</guid>
       <description>
         
         
@@ -987,10 +987,10 @@ extracted from PLANit&amp;rsquo;s intermodal zoning component, e.g., transfer zo
     
     <item>
       <title>Docs: MatsimNetworkWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimnetworkwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimnetworkwriter/</guid>
       <description>
         
         
@@ -1062,10 +1062,10 @@ The majority of the adopted defaults are logged when performing the MATSim netwo
     
     <item>
       <title>Docs: MatsimNetworkWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimnetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/matsimnetworkwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/matsimnetworkwritersettings/</guid>
       <description>
         
         
@@ -1146,10 +1146,10 @@ The majority of the adopted defaults are logged when performing the MATSim netwo
     
     <item>
       <title>Docs: PlanitIntermodalWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwriter/</guid>
       <description>
         
         
@@ -1221,10 +1221,10 @@ when using the reader. PLANit will log the majority of the adopted defaults in i
     
     <item>
       <title>Docs: PlanitIntermodalWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitintermodalwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitintermodalwritersettings/</guid>
       <description>
         
         
@@ -1338,10 +1338,10 @@ a schedule or a frequency.&lt;/p&gt;
     
     <item>
       <title>Docs: PlanitNetworkWriter</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitnetworkwriter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwriter/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitnetworkwriter/</guid>
       <description>
         
         
@@ -1408,10 +1408,10 @@ the &lt;a href=&#34;../planitnetworkwritersettings&#34;&gt;&lt;code&gt;PlanitNet
     
     <item>
       <title>Docs: PlanitNetworkWriterSettings</title>
-      <link>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/</link>
+      <link>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitnetworkwritersettings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.goplanit.org/docs/python/reference/converterwriter/planitnetworkwritersettings/</guid>
+      <guid>https://planitmanual.github.io/version/0_4_0/docs/python/reference/converterwriter/planitnetworkwritersettings/</guid>
       <description>
         
         
