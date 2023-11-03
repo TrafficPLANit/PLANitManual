@@ -2396,8 +2396,7 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#my-first-traffic-assignment-application">My first traffic assignment application!</a>
+    <li><a href="#traffic-assignment">Traffic Assignment</a>
       <ul>
         <li><a href="#creating-inputs">Creating inputs</a></li>
         <li><a href="#demands">Demands</a></li>
@@ -2405,6 +2404,14 @@
         <li><a href="#planit-model-configuration">PLANit model configuration</a></li>
         <li><a href="#running-the-script">Running the script</a></li>
         <li><a href="#result-files">Result files</a></li>
+      </ul>
+    </li>
+    <li><a href="#network-converter">Network Converter</a>
+      <ul>
+        <li><a href="#downloading-inputs">Downloading inputs</a></li>
+        <li><a href="#planit-converter-configuration">PLANit converter configuration</a></li>
+        <li><a href="#running-the-script-1">Running the script</a></li>
+        <li><a href="#result-files-1">Result files</a></li>
       </ul>
     </li>
   </ul>
@@ -2435,21 +2442,29 @@
 	<header class="article-meta">
 		
 </header>
-	<p>The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly configurable.
-In this getting started we will take you through the process of setting up the environment and constructing your first PLANit assignment run.</p>
+	<p>The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly
+configurable. In this getting started we will take you through the process of setting up the environment and
+constructing your first PLANit assignment run.</p>
+<p>Alternatively you may want to create your first (network) <strong>Converter</strong>. We also provide an example that takes an OSM network and
+converts it into (GIS) Shape layers.</p>
+<ul>
+<li><a href="#traffic-assignment">Traffic assignment Example</a></li>
+<li><a href="#network-converter">Network conversion Example</a></li>
+</ul>
 <blockquote>
-<p>If you are not interested in conducting traffic assignment, but are looking on how to perform (network) data format
-conversions, please have a look at the related <a href="../examples#converters">examples section</a></p>
+<p>For more (but less detailed) examples have a look at the <a href="../examples">examples section</a></p>
 </blockquote>
-<h2 id="prerequisites">Prerequisites</h2>
+<blockquote>
 <p>Make sure you installed PLANit-Python, as per the <a href="../../../installation/planit-python">Installation guide</a></p>
-<h2 id="my-first-traffic-assignment-application">My first traffic assignment application!</h2>
-<p>In this section we will be creating our very first PLANit-Python traffic assignment application.</p>
+</blockquote>
+<h2 id="traffic-assignment">Traffic Assignment</h2>
+<p>In this section we will be creating our very first PLANit-Python traffic assignment application!</p>
 <h3 id="creating-inputs">Creating inputs</h3>
 <p>PLANit requires - at minimum - a network, demands, and zoning structure as inputs to be able to construct a valid
 transport network. Let&rsquo;s provide all three in the same XML file. Our XML file is based on
 the <a href="../../inputoutput/input/planitdefault">Default PLANit Data Format</a>. Copy the contents of the XML snippet below
-and save them somewhere on disk, e.g. <code>&quot;c:\Users\Public\planit_test\&quot;</code>, as - for example - <code>&quot;planit_input.xml&quot;</code>.</p>
+and save them somewhere on disk, e.g. <code>&quot;c:\Users\Public\planit_test\&quot;</code>, as - for example - <code>&quot;planit_input.xml&quot;</code>.
+Alternatively, use <a href="./static_xml/planit_input.xml"><code>planit_input.xml</code></a></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-XML" data-lang="XML"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;PLANit</span> <span style="color:#c4a000">xmlns:gml=</span><span style="color:#4e9a06">&#34;http://www.opengis.net/gml&#34;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#c4a000">xmlns:xsi=</span><span style="color:#4e9a06">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">&lt;!-- Demand component --&gt;</span>
@@ -2566,7 +2581,7 @@ as connectoids for one of the two zones.</p>
 your code, e.g. Eclipse with PyDev for example, Or Jetbrains PyCharm.</p>
 </blockquote>
 <ol start="2">
-<li>create a new Python script - for example -  <code>my_first_planit.py</code></li>
+<li>create a new Python script - for example -  <code>my_first_planit.py</code>, or alternatively download the below script <a href="./static_python/my_first_planit.py">here</a></li>
 <li>save it in the same directory as where you created the XML input file</li>
 </ol>
 <p>The <code>*.py</code> extension signals that this is a python script that can be interpreted and run by Python.</p>
@@ -2799,6 +2814,137 @@ chosen traffic assignment instance, such as:</p>
 </span></span></code></pre></div><p>If you run your script again, you will see that four additional files are created,
 two new XML files (one for paths, one for ODs) and two new CSV files (one for paths and one for ODs).</p>
 <p>This concludes your first assignment application. We hope you enjoyed it!</p>
+<h2 id="network-converter">Network Converter</h2>
+<p>The second examples shows how you can convert an Open Street Map network into a GIS Shape files using the PLANit converters.</p>
+<h3 id="downloading-inputs">Downloading inputs</h3>
+<p>The Open Street Map converter works best with pre-downloaded OSM files. You can directly stream from OSM but this is limited to
+a small area. For this example we will be parsing a section of the Sydney (Australia) network. If you want to download regions
+yourself perhaps have a look at the geofabrik website, for Oceania there are readily available downloads <a href="http://download.geofabrik.de/australia-oceania.html">here</a></p>
+<p>We will be using the following pre-downloaded portion of Sydney:  <a href="https://github.com/TrafficPLANit/PLANitOSM/blob/master/src/test/resources/osm/sydney-cbd/sydneycbd_2023.osm.pbf">github.com/TrafficPLANit/PLANitOSM/resources/osm/sydneycbd_2023.osm.pbf</a>
+Please download and save the file to a convenience location such as the directory you will be running your python script we are
+about to create from, e.g., <code>c:\Users\Public\sydneycbd_2023.osm.pbf</code></p>
+<h3 id="planit-converter-configuration">PLANit converter configuration</h3>
+<p>Let us now configure our converter script using the above input.</p>
+<ol>
+<li>Open a text editor to create our Python script.</li>
+</ol>
+<blockquote>
+<p>It is advised to use an editor that supports syntax highlighting for Python. Possibly even an IDE, so you can debug
+your code, e.g. Eclipse with PyDev for example, Or Jetbrains PyCharm.</p>
+</blockquote>
+<ol start="2">
+<li>create a new Python script - for example -  <code>my_first_converter.py</code>, or alternatively download the below script <a href="./static_python/my_first_converter.py">here</a></li>
+<li>save it in the same directory as where you downloaded the OSM PBF file to.</li>
+</ol>
+<p>The <code>*.py</code> extension signals that this is a python script that can be interpreted and run by Python.</p>
+<ol start="4">
+<li>Copy the below script into the file and save it (if you did not download the ready-made one).
+We will go through the script line by line to explain what is going on</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># create a network converter</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">planit_instance</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Planit</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">network_converter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">converter_factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ConverterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NETWORK</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">################### OSM READER ###########</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Australia&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">r</span><span style="color:#4e9a06">&#34;c:\Users\Public\sydneycbd_2023.osm.pbf&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">################### SHAPE WRITER ########</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkWriterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">SHAPE</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_output_directory</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">r</span><span style="color:#4e9a06">&#34;c:\Users\Public</span><span style="color:#4e9a06">\&#34;</span><span style="color:#4e9a06">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_country</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Australia&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Explicitly set what to persist from the network (these flags are the default, but are included for illustration purposes)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_nodes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">True</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_links</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">True</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># perform conversion</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">convert</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">osm_reader</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">geo_writer</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p>First, an instance of PLANit project is created, named <code>planit</code>, via</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">planit</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">planit</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Planit</span><span style="color:#000;font-weight:bold">()</span>
+</span></span></code></pre></div><p>The <code>Planit()</code> implementation is available as part of the planit module. Since we might need more than just the Planit()
+class we import the entire API functionality first via <code>from planit import *</code> before we instantiate it. Leaving out the
+import will cause the script to fail since it won&rsquo;t be able to find the necessary PLANit code.</p>
+<blockquote>
+<p>You can give the instance <code>planit</code> any name you want, it is not tied to <code>planit</code>, it could also be <code>i_love_assignment</code>,
+or <code>p</code>, or <code>what_now</code>. Do note that a descriptive name is usually the best choice.</p>
+</blockquote>
+<p>We now need to create a converter capable of performing network conversions. This is achieved by the following lines of
+code.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000">network_converter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">planit_instance</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">converter_factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ConverterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">NETWORK</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p>The <code>ConverterType</code> is set to <code>NETWORK</code> here to indicate we want a network converter. Other converters are also supported
+such as intermodal converters (combining multiple converters to support networks with public transport and zoning for example), or
+zoning and/or demand converters. See the reference documentation for examples.</p>
+<p>With the network converter available, you can creat network readers and writers of different types to configure and perform
+conversions. Here, we choose an OSM network reader to parse our Open Street Map inputs via</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000">osm_reader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkReaderType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">OSM</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Australia&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">osm_reader</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_input_file</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">r</span><span style="color:#4e9a06">&#34;c:\Users\Public\sydneycbd_2023.osm.pbf&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p>The first line indicates we want the OSM network reader <code>NetworkReaderType.OSM</code> and that we expect to parse an OSM file from an
+Australia context <code>&quot;Australia&quot;</code>. This matters because it impacts the driving rules, the default speed limits the reader will apply and
+the projection used to store the geospatial information. Then, each reader can be configured via its settings, i.e., <code>osm_reader.settings.&lt;something&gt;</code>.
+Have a look at the reference documentation for the options on the OSM reader. Here we stick with the defaults and only specify the
+location of the input file (which is mandatory). The notation used, i.e., <code>r&quot;c:\...&quot;</code> is the Python way to allow you to use paths with just
+single slashes, if you would leave out the <code>r</code> in front of the string, you would need to write &ldquo;c:\Users\Public&hellip; etc.&rdquo; which is messy.</p>
+<p>Next, we also need to configure a writer. Here we want to produce shape files to be able to explore the results in - for example -
+ArcGis, and/or QGis. We do so via</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000">geo_writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create_writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">NetworkWriterType</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">SHAPE</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_output_directory</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">r</span><span style="color:#4e9a06">&#34;c:\Users\Public</span><span style="color:#4e9a06">\&#34;</span><span style="color:#4e9a06">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_country</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Australia&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Explicitly set what to persist from the network (these flags are the default, but are included for illustration purposes)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_nodes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">True</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">geo_writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">settings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">set_persist_links</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">True</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p>First we create the writer, same as with the reader, only now ask for a writer and specify the writer type to be shape via
+<code>network_converter.create_writer</code> and <code>NetworkWriterType.SHAPE</code>, respectively. We then set the mandatory output location
+of the results via <code>geo_writer.settings.set_output_directory(r&quot;c:\Users\Public\&quot;)</code></p>
+<blockquote>
+<p>If you want to use a different output location just replace the example location with your preferred location. Just make sure
+the directory exists and you have permission to access it.</p>
+</blockquote>
+<p>We also indicate the country the results contains, this will allow PLANit to look up the most suitable projection that will be used.
+the used projection will be logged, so you always know what the chosen projection is.</p>
+<p>Then for the purpose of this example we have explicitly set some of the configuration options (you may leave them at as we choose
+settings that are the default). You can switch off the construction of certain Shape layers, here we state to generate both link
+and nodes layers. If they were set to <code>False</code> they would no longer be produced.</p>
+<h3 id="running-the-script-1">Running the script</h3>
+<p>Before running the script make sure it ends with the line:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000">network_converter</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">convert</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">osm_reader</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">geo_writer</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p>this will invoke the conversion with the created reader and writer provided. Make sure all configuration is conducted
+before calling this method, because otherwise it has no impact on the performed conversion.</p>
+<ol>
+<li>Open a new console window</li>
+<li>Go to the directory where you have placed your script</li>
+<li>If you have a virtual environment setup make sure it is active ofr the purpose of this test (optional)</li>
+<li>Execute the following command: <code>python my_first_converter.py</code></li>
+</ol>
+<blockquote>
+<p>Replace <code>my_first_converter.py</code> with your own script name if you chose a different name.</p>
+</blockquote>
+<p>If all went well the script should run. On the console you will see some information regarding the run, the located
+inputs, the generated outputs and logged anomalies and/or worthwhile other information.</p>
+<h3 id="result-files-1">Result files</h3>
+<p>Now go to the directory where your script stated the outputs should be saved to in your file explorer</p>
+<p>You should see that PLANit generated a large number of GIS files with various file extensions. You should at least
+have files with the extension *.shp for the following types of geospatial network components.</p>
+<ul>
+<li>layer_all_planit_links</li>
+<li>layer_all_planit_linksegments</li>
+<li>layer_all_planit_nodes</li>
+</ul>
+<p>Each of these has supporting files with the same name but different extensions as this is how the Shape format works.
+The <code>layer_all_planit_links</code> contains general information on road sections (without directional information), the directional
+information of these links is provided in <code>layer_all_planit_linksegments</code>. If a road is bi-directional, both directions will be given
+the same geometry, so they are placed on top of each other, when selecting them in a GIS software, you can verify the direction by
+looking at their directional information which relates to the nodes on either end. They either run from A to B node or vice versa.
+The nodes layer is separate and available through <code>layer_all_planit_nodes</code>. Lastly, we prefix all spatial layers with <code>layer_all_</code>. This
+has nothing to do with it being a spatial layer. The <code>layer</code> refers to layers as they exist in PLANit, where it is possible to have layers
+by mode. For this simple example though, all modes are combined in a single layer <code>all</code>, hence this prefix.</p>
+<p>Install or open ArcGis or QGis or another application that can display shape files and open the three above listed files (the ones
+with the *.shp extension) one by one. This should then allow you to see the network and should look something like the
+following:</p>
+<p><img src="img/sydney_shape.png" alt="Sydney network"></p>
 
   <div class="section-index">
     

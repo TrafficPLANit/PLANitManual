@@ -23,21 +23,29 @@
       <description>
         
         
-        &lt;p&gt;The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly configurable.
-In this getting started we will take you through the process of setting up the environment and constructing your first PLANit assignment run.&lt;/p&gt;
+        &lt;p&gt;The Python API of PLANit allows you to conduct traffic assignment runs quickly and easily, while still remaining highly
+configurable. In this getting started we will take you through the process of setting up the environment and
+constructing your first PLANit assignment run.&lt;/p&gt;
+&lt;p&gt;Alternatively you may want to create your first (network) &lt;strong&gt;Converter&lt;/strong&gt;. We also provide an example that takes an OSM network and
+converts it into (GIS) Shape layers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#traffic-assignment&#34;&gt;Traffic assignment Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#network-converter&#34;&gt;Network conversion Example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If you are not interested in conducting traffic assignment, but are looking on how to perform (network) data format
-conversions, please have a look at the related &lt;a href=&#34;../examples#converters&#34;&gt;examples section&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more (but less detailed) examples have a look at the &lt;a href=&#34;../examples&#34;&gt;examples section&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Make sure you installed PLANit-Python, as per the &lt;a href=&#34;../../../installation/planit-python&#34;&gt;Installation guide&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;my-first-traffic-assignment-application&#34;&gt;My first traffic assignment application!&lt;/h2&gt;
-&lt;p&gt;In this section we will be creating our very first PLANit-Python traffic assignment application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;traffic-assignment&#34;&gt;Traffic Assignment&lt;/h2&gt;
+&lt;p&gt;In this section we will be creating our very first PLANit-Python traffic assignment application!&lt;/p&gt;
 &lt;h3 id=&#34;creating-inputs&#34;&gt;Creating inputs&lt;/h3&gt;
 &lt;p&gt;PLANit requires - at minimum - a network, demands, and zoning structure as inputs to be able to construct a valid
 transport network. Let&amp;rsquo;s provide all three in the same XML file. Our XML file is based on
 the &lt;a href=&#34;../../inputoutput/input/planitdefault&#34;&gt;Default PLANit Data Format&lt;/a&gt;. Copy the contents of the XML snippet below
-and save them somewhere on disk, e.g. &lt;code&gt;&amp;quot;c:\Users\Public\planit_test\&amp;quot;&lt;/code&gt;, as - for example - &lt;code&gt;&amp;quot;planit_input.xml&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+and save them somewhere on disk, e.g. &lt;code&gt;&amp;quot;c:\Users\Public\planit_test\&amp;quot;&lt;/code&gt;, as - for example - &lt;code&gt;&amp;quot;planit_input.xml&amp;quot;&lt;/code&gt;.
+Alternatively, use &lt;a href=&#34;./static_xml/planit_input.xml&#34;&gt;&lt;code&gt;planit_input.xml&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-XML&#34; data-lang=&#34;XML&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;lt;PLANit&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:gml=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.opengis.net/gml&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#c4a000&#34;&gt;xmlns:xsi=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;!-- Demand component --&amp;gt;&lt;/span&gt;
@@ -154,7 +162,7 @@ as connectoids for one of the two zones.&lt;/p&gt;
 your code, e.g. Eclipse with PyDev for example, Or Jetbrains PyCharm.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;create a new Python script - for example -  &lt;code&gt;my_first_planit.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;create a new Python script - for example -  &lt;code&gt;my_first_planit.py&lt;/code&gt;, or alternatively download the below script &lt;a href=&#34;./static_python/my_first_planit.py&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;save it in the same directory as where you created the XML input file&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The &lt;code&gt;*.py&lt;/code&gt; extension signals that this is a python script that can be interpreted and run by Python.&lt;/p&gt;
@@ -387,6 +395,137 @@ chosen traffic assignment instance, such as:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you run your script again, you will see that four additional files are created,
 two new XML files (one for paths, one for ODs) and two new CSV files (one for paths and one for ODs).&lt;/p&gt;
 &lt;p&gt;This concludes your first assignment application. We hope you enjoyed it!&lt;/p&gt;
+&lt;h2 id=&#34;network-converter&#34;&gt;Network Converter&lt;/h2&gt;
+&lt;p&gt;The second examples shows how you can convert an Open Street Map network into a GIS Shape files using the PLANit converters.&lt;/p&gt;
+&lt;h3 id=&#34;downloading-inputs&#34;&gt;Downloading inputs&lt;/h3&gt;
+&lt;p&gt;The Open Street Map converter works best with pre-downloaded OSM files. You can directly stream from OSM but this is limited to
+a small area. For this example we will be parsing a section of the Sydney (Australia) network. If you want to download regions
+yourself perhaps have a look at the geofabrik website, for Oceania there are readily available downloads &lt;a href=&#34;http://download.geofabrik.de/australia-oceania.html&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We will be using the following pre-downloaded portion of Sydney:  &lt;a href=&#34;https://github.com/TrafficPLANit/PLANitOSM/blob/master/src/test/resources/osm/sydney-cbd/sydneycbd_2023.osm.pbf&#34;&gt;github.com/TrafficPLANit/PLANitOSM/resources/osm/sydneycbd_2023.osm.pbf&lt;/a&gt;
+Please download and save the file to a convenience location such as the directory you will be running your python script we are
+about to create from, e.g., &lt;code&gt;c:\Users\Public\sydneycbd_2023.osm.pbf&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;planit-converter-configuration&#34;&gt;PLANit converter configuration&lt;/h3&gt;
+&lt;p&gt;Let us now configure our converter script using the above input.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a text editor to create our Python script.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is advised to use an editor that supports syntax highlighting for Python. Possibly even an IDE, so you can debug
+your code, e.g. Eclipse with PyDev for example, Or Jetbrains PyCharm.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;create a new Python script - for example -  &lt;code&gt;my_first_converter.py&lt;/code&gt;, or alternatively download the below script &lt;a href=&#34;./static_python/my_first_converter.py&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;save it in the same directory as where you downloaded the OSM PBF file to.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;code&gt;*.py&lt;/code&gt; extension signals that this is a python script that can be interpreted and run by Python.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Copy the below script into the file and save it (if you did not download the ready-made one).
+We will go through the script line by line to explain what is going on&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create a network converter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;################### OSM READER ###########&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OSM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Australia&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_file&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\Users\Public\sydneycbd_2023.osm.pbf&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;################### SHAPE WRITER ########&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkWriterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;SHAPE&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\Users\Public&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_country&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Australia&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Explicitly set what to persist from the network (these flags are the default, but are included for illustration purposes)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_nodes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_links&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# perform conversion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;First, an instance of PLANit project is created, named &lt;code&gt;planit&lt;/code&gt;, via&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;planit&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Planit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;Planit()&lt;/code&gt; implementation is available as part of the planit module. Since we might need more than just the Planit()
+class we import the entire API functionality first via &lt;code&gt;from planit import *&lt;/code&gt; before we instantiate it. Leaving out the
+import will cause the script to fail since it won&amp;rsquo;t be able to find the necessary PLANit code.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can give the instance &lt;code&gt;planit&lt;/code&gt; any name you want, it is not tied to &lt;code&gt;planit&lt;/code&gt;, it could also be &lt;code&gt;i_love_assignment&lt;/code&gt;,
+or &lt;code&gt;p&lt;/code&gt;, or &lt;code&gt;what_now&lt;/code&gt;. Do note that a descriptive name is usually the best choice.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We now need to create a converter capable of performing network conversions. This is achieved by the following lines of
+code.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;planit_instance&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;converter_factory&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ConverterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NETWORK&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;ConverterType&lt;/code&gt; is set to &lt;code&gt;NETWORK&lt;/code&gt; here to indicate we want a network converter. Other converters are also supported
+such as intermodal converters (combining multiple converters to support networks with public transport and zoning for example), or
+zoning and/or demand converters. See the reference documentation for examples.&lt;/p&gt;
+&lt;p&gt;With the network converter available, you can creat network readers and writers of different types to configure and perform
+conversions. Here, we choose an OSM network reader to parse our Open Street Map inputs via&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkReaderType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OSM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Australia&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_input_file&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\Users\Public\sydneycbd_2023.osm.pbf&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first line indicates we want the OSM network reader &lt;code&gt;NetworkReaderType.OSM&lt;/code&gt; and that we expect to parse an OSM file from an
+Australia context &lt;code&gt;&amp;quot;Australia&amp;quot;&lt;/code&gt;. This matters because it impacts the driving rules, the default speed limits the reader will apply and
+the projection used to store the geospatial information. Then, each reader can be configured via its settings, i.e., &lt;code&gt;osm_reader.settings.&amp;lt;something&amp;gt;&lt;/code&gt;.
+Have a look at the reference documentation for the options on the OSM reader. Here we stick with the defaults and only specify the
+location of the input file (which is mandatory). The notation used, i.e., &lt;code&gt;r&amp;quot;c:\...&amp;quot;&lt;/code&gt; is the Python way to allow you to use paths with just
+single slashes, if you would leave out the &lt;code&gt;r&lt;/code&gt; in front of the string, you would need to write &amp;ldquo;c:\Users\Public&amp;hellip; etc.&amp;rdquo; which is messy.&lt;/p&gt;
+&lt;p&gt;Next, we also need to configure a writer. Here we want to produce shape files to be able to explore the results in - for example -
+ArcGis, and/or QGis. We do so via&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;create_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NetworkWriterType&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;SHAPE&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_output_directory&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;c:\Users\Public&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_country&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Australia&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Explicitly set what to persist from the network (these flags are the default, but are included for illustration purposes)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_nodes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;settings&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;set_persist_links&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;First we create the writer, same as with the reader, only now ask for a writer and specify the writer type to be shape via
+&lt;code&gt;network_converter.create_writer&lt;/code&gt; and &lt;code&gt;NetworkWriterType.SHAPE&lt;/code&gt;, respectively. We then set the mandatory output location
+of the results via &lt;code&gt;geo_writer.settings.set_output_directory(r&amp;quot;c:\Users\Public\&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you want to use a different output location just replace the example location with your preferred location. Just make sure
+the directory exists and you have permission to access it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We also indicate the country the results contains, this will allow PLANit to look up the most suitable projection that will be used.
+the used projection will be logged, so you always know what the chosen projection is.&lt;/p&gt;
+&lt;p&gt;Then for the purpose of this example we have explicitly set some of the configuration options (you may leave them at as we choose
+settings that are the default). You can switch off the construction of certain Shape layers, here we state to generate both link
+and nodes layers. If they were set to &lt;code&gt;False&lt;/code&gt; they would no longer be produced.&lt;/p&gt;
+&lt;h3 id=&#34;running-the-script-1&#34;&gt;Running the script&lt;/h3&gt;
+&lt;p&gt;Before running the script make sure it ends with the line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;network_converter&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;osm_reader&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;geo_writer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;this will invoke the conversion with the created reader and writer provided. Make sure all configuration is conducted
+before calling this method, because otherwise it has no impact on the performed conversion.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a new console window&lt;/li&gt;
+&lt;li&gt;Go to the directory where you have placed your script&lt;/li&gt;
+&lt;li&gt;If you have a virtual environment setup make sure it is active ofr the purpose of this test (optional)&lt;/li&gt;
+&lt;li&gt;Execute the following command: &lt;code&gt;python my_first_converter.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Replace &lt;code&gt;my_first_converter.py&lt;/code&gt; with your own script name if you chose a different name.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If all went well the script should run. On the console you will see some information regarding the run, the located
+inputs, the generated outputs and logged anomalies and/or worthwhile other information.&lt;/p&gt;
+&lt;h3 id=&#34;result-files-1&#34;&gt;Result files&lt;/h3&gt;
+&lt;p&gt;Now go to the directory where your script stated the outputs should be saved to in your file explorer&lt;/p&gt;
+&lt;p&gt;You should see that PLANit generated a large number of GIS files with various file extensions. You should at least
+have files with the extension *.shp for the following types of geospatial network components.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;layer_all_planit_links&lt;/li&gt;
+&lt;li&gt;layer_all_planit_linksegments&lt;/li&gt;
+&lt;li&gt;layer_all_planit_nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these has supporting files with the same name but different extensions as this is how the Shape format works.
+The &lt;code&gt;layer_all_planit_links&lt;/code&gt; contains general information on road sections (without directional information), the directional
+information of these links is provided in &lt;code&gt;layer_all_planit_linksegments&lt;/code&gt;. If a road is bi-directional, both directions will be given
+the same geometry, so they are placed on top of each other, when selecting them in a GIS software, you can verify the direction by
+looking at their directional information which relates to the nodes on either end. They either run from A to B node or vice versa.
+The nodes layer is separate and available through &lt;code&gt;layer_all_planit_nodes&lt;/code&gt;. Lastly, we prefix all spatial layers with &lt;code&gt;layer_all_&lt;/code&gt;. This
+has nothing to do with it being a spatial layer. The &lt;code&gt;layer&lt;/code&gt; refers to layers as they exist in PLANit, where it is possible to have layers
+by mode. For this simple example though, all modes are combined in a single layer &lt;code&gt;all&lt;/code&gt;, hence this prefix.&lt;/p&gt;
+&lt;p&gt;Install or open ArcGis or QGis or another application that can display shape files and open the three above listed files (the ones
+with the *.shp extension) one by one. This should then allow you to see the network and should look something like the
+following:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;img/sydney_shape.png&#34; alt=&#34;Sydney network&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
